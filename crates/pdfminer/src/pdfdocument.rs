@@ -139,7 +139,8 @@ impl Hash for ObjKey {
     }
 }
 
-/// `hash(x)` as a key: `TypeError` for unhashable objects.
+/// `hash(x)` as a dict key: `TypeError` for unhashable objects, with Python 3.14's message for
+/// a dict key (every caller stands for a dict operation).
 pub fn obj_key(x: &Value) -> PyResult<ObjKey> {
     Ok(match x {
         Value::None => ObjKey::None,
@@ -161,7 +162,10 @@ pub fn obj_key(x: &Value) -> PyResult<ObjKey> {
         Value::Stream(s) => ObjKey::Ptr(Rc::as_ptr(s) as *const u8 as usize),
         Value::Tuple(t) => ObjKey::Ptr(t.as_ptr() as usize),
         Value::List(_) | Value::Dict(_) => {
-            return Err(PyErr::new(ExcKind::TypeError, format!("unhashable type: '{}'", x.type_name())));
+            return Err(PyErr::new(
+                ExcKind::TypeError,
+                format!("cannot use '{0}' as a dict key (unhashable type: '{0}')", x.type_name()),
+            ));
         }
     })
 }

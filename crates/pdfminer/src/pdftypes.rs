@@ -10,7 +10,7 @@ use crate::ccitt::ccittfaxdecode;
 use crate::lzw::lzwdecode;
 use crate::pdfdocument::PDFDocument;
 use crate::pyrt::error::{ExcKind, PyErr, PyResult};
-use crate::pyrt::fmt::bytes_repr;
+use crate::pyrt::fmt::{bytes_repr, str_repr};
 use crate::pyrt::value::{DictRef, Value, dict_repr, py_eq};
 use crate::pyrt::zlib;
 use crate::runlength::rldecode;
@@ -382,13 +382,14 @@ impl PDFStream {
     /// `stream[name]`: `PDFKeyError` when missing.
     pub fn getitem(&self, name: &str) -> PyResult<Value> {
         self.attrs.borrow().get(name).cloned().ok_or_else(|| {
+            // str() of a KeyError is the repr of its argument
             PyErr::new(
                 ExcKind::PDFKeyError,
-                format!(
+                str_repr(&format!(
                     "PDF stream object {} does not have attribute '{}'",
                     self.objid.get().map_or("None".to_string(), |o| o.to_string()),
                     name
-                ),
+                )),
             )
         })
     }
