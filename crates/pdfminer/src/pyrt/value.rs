@@ -589,7 +589,7 @@ pub fn py_truediv(a: &Value, b: &Value) -> PyResult<Value> {
     }
     let (x, y) = (operand_f64(a)?, operand_f64(b)?);
     if y == 0.0 {
-        return Err(PyErr::new(ExcKind::ZeroDivisionError, "float division by zero"));
+        return Err(PyErr::new(ExcKind::ZeroDivisionError, "division by zero"));
     }
     Ok(Value::Float(x / y))
 }
@@ -629,13 +629,13 @@ pub fn py_floordiv(a: &Value, b: &Value) -> PyResult<Value> {
     }
     if a.is_int() && b.is_int() {
         if b.as_int() == Some(0) {
-            return Err(PyErr::new(ExcKind::ZeroDivisionError, "integer division or modulo by zero"));
+            return Err(PyErr::new(ExcKind::ZeroDivisionError, "division by zero"));
         }
         return Ok(int_binop(a, b, |x, y| x.checked_div_euclid(y).map(|_| int_floordiv(x, y)), |x, y| x.div_floor(&y)));
     }
     let (x, y) = (operand_f64(a)?, operand_f64(b)?);
     if y == 0.0 {
-        return Err(PyErr::new(ExcKind::ZeroDivisionError, "float floor division by zero"));
+        return Err(PyErr::new(ExcKind::ZeroDivisionError, "division by zero"));
     }
     Ok(Value::Float(float_floordiv(x, y)))
 }
@@ -703,13 +703,13 @@ pub fn py_mod(a: &Value, b: &Value) -> PyResult<Value> {
     }
     if a.is_int() && b.is_int() {
         if b.as_int() == Some(0) {
-            return Err(PyErr::new(ExcKind::ZeroDivisionError, "integer modulo by zero"));
+            return Err(PyErr::new(ExcKind::ZeroDivisionError, "division by zero"));
         }
         return Ok(int_binop(a, b, |x, y| x.checked_rem_euclid(y).map(|_| int_mod(x, y)), |x, y| x.mod_floor(&y)));
     }
     let (x, y) = (operand_f64(a)?, operand_f64(b)?);
     if y == 0.0 {
-        return Err(PyErr::new(ExcKind::ZeroDivisionError, "float modulo by zero"));
+        return Err(PyErr::new(ExcKind::ZeroDivisionError, "division by zero"));
     }
     Ok(Value::Float(float_mod(x, y)))
 }

@@ -24,7 +24,7 @@ impl Arcfour {
         let mut j: usize = 0;
         let klen = key.len();
         if klen == 0 {
-            return Err(PyErr::new(ExcKind::ZeroDivisionError, "integer modulo by zero"));
+            return Err(PyErr::new(ExcKind::ZeroDivisionError, "division by zero"));
         }
         for i in 0..256 {
             j = (j + s[i] as usize + key[i % klen] as usize) % 256;

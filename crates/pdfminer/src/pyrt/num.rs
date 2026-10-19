@@ -11,7 +11,7 @@ use super::value::{float_floordiv, float_mod};
 #[inline]
 pub fn div(a: f64, b: f64) -> PyResult<f64> {
     if b == 0.0 {
-        return Err(PyErr::new(ExcKind::ZeroDivisionError, "float division by zero"));
+        return Err(PyErr::new(ExcKind::ZeroDivisionError, "division by zero"));
     }
     Ok(a / b)
 }
@@ -20,7 +20,7 @@ pub fn div(a: f64, b: f64) -> PyResult<f64> {
 #[inline]
 pub fn floordiv(a: f64, b: f64) -> PyResult<f64> {
     if b == 0.0 {
-        return Err(PyErr::new(ExcKind::ZeroDivisionError, "float floor division by zero"));
+        return Err(PyErr::new(ExcKind::ZeroDivisionError, "division by zero"));
     }
     Ok(float_floordiv(a, b))
 }
@@ -29,7 +29,7 @@ pub fn floordiv(a: f64, b: f64) -> PyResult<f64> {
 #[inline]
 pub fn rem(a: f64, b: f64) -> PyResult<f64> {
     if b == 0.0 {
-        return Err(PyErr::new(ExcKind::ZeroDivisionError, "float modulo by zero"));
+        return Err(PyErr::new(ExcKind::ZeroDivisionError, "division by zero"));
     }
     Ok(float_mod(a, b))
 }

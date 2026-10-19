@@ -8,7 +8,10 @@ use std::hash::Hash;
 use crate::pyrt::error::{ExcKind, PyErr, PyResult};
 use crate::pyrt::fmt::fixed;
 use crate::pyrt::pystr::PyStr;
-use crate::pyrt::value::{float_to_int, int_floordiv, pymax, pymax_iter, pymin, pymin_iter};
+use crate::pyrt::value::{
+    Value, float_to_int, float_to_int_obj, int_floordiv, py_cmp, py_floordiv, pymax, pymax_iter, pymin, pymin_iter,
+};
+use num_traits::ToPrimitive;
 
 /// `INF = (1 << 31) - 1`: PDF still uses 32-bit ints.
 pub const INF: i64 = (1 << 31) - 1;
@@ -601,6 +604,8 @@ pub struct Plane {
     _seq: Vec<LTItem>,
     _objs: HashSet<LTItem>,
     _grid: indexmap::IndexMap<(i64, i64), Vec<LTItem>>,
+    /// The cells whose index is beyond i64 (coordinates beyond about 4.6e20).
+    _big_grid: std::collections::HashMap<(num_bigint::BigInt, num_bigint::BigInt), Vec<LTItem>>,
     pub gridsize: i64,
     pub x0: f64,
     pub y0: f64,
@@ -612,7 +617,17 @@ impl Plane {
     /// `Plane(bbox, gridsize)` (pdfminer passes the default `gridsize=50`).
     pub fn new(bbox: Rect, gridsize: i64) -> Self {
         let (x0, y0, x1, y1) = bbox;
-        Plane { _seq: Vec::new(), _objs: HashSet::new(), _grid: indexmap::IndexMap::new(), gridsize, x0, y0, x1, y1 }
+        Plane {
+            _seq: Vec::new(),
+            _objs: HashSet::new(),
+            _grid: indexmap::IndexMap::new(),
+            _big_grid: std::collections::HashMap::new(),
+            gridsize,
+            x0,
+            y0,
+            x1,
+            y1,
+        }
     }
 
     pub fn repr(&self) -> String {
@@ -639,32 +654,60 @@ impl Plane {
         self._objs.contains(obj)
     }
 
-    /// `drange(v0, v1, self.gridsize)`.
-    fn drange(&self, v0: f64, v1: f64) -> PyResult<std::ops::Range<i64>> {
-        if self.gridsize == 0 {
-            // `int(v0) // 0`
-            float_to_int(v0)?;
-            return Err(PyErr::new(ExcKind::ZeroDivisionError, "division by zero"));
-        }
-        drange(v0, v1, self.gridsize)
+    /// `drange(v0, v1, self.gridsize)`, exact: `(int(v0) // d, int(v1 + d) // d)`.
+    fn drange(&self, v0: f64, v1: f64) -> PyResult<(Value, Value)> {
+        let d = Value::Int(self.gridsize);
+        let a = py_floordiv(&float_to_int_obj(v0)?, &d)?;
+        let b = py_floordiv(&float_to_int_obj(v1 + self.gridsize as f64)?, &d)?;
+        Ok((a, b))
     }
 
     /// `_getrange(bbox)`: the grid cells the rectangle covers, row by row. Like Python's
     /// generator, the x range is only computed (and only raises) when there is a row.
-    fn _getrange(&self, bbox: Rect) -> PyResult<impl Iterator<Item = (i64, i64)> + use<>> {
+    ///
+    /// More than `limit` cells raise `MemoryError` (DIVERGE(plane-cells)): Python goes through
+    /// them one by one, filling memory in `add` and running for ever in `find`.
+    fn _getrange(&self, bbox: Rect, limit: u64) -> PyResult<Cells> {
         let (x0, y0, x1, y1) = bbox;
-        let (ys, xs) = if x1 <= self.x0 || self.x1 <= x0 || y1 <= self.y0 || self.y1 <= y0 {
-            (0..0, 0..0)
-        } else {
-            let x0 = pymax(self.x0, x0);
-            let y0 = pymax(self.y0, y0);
-            let x1 = pymin(self.x1, x1);
-            let y1 = pymin(self.y1, y1);
-            let ys = self.drange(y0, y1)?;
-            let xs = if ys.is_empty() { 0..0 } else { self.drange(x0, x1)? };
-            (ys, xs)
+        if x1 <= self.x0 || self.x1 <= x0 || y1 <= self.y0 || self.y1 <= y0 {
+            return Ok(Cells::Small(0..0, 0..0));
+        }
+        let x0 = pymax(self.x0, x0);
+        let y0 = pymax(self.y0, y0);
+        let x1 = pymin(self.x1, x1);
+        let y1 = pymin(self.y1, y1);
+        let ys = self.drange(y0, y1)?;
+        if !py_cmp(&ys.0, &ys.1, "<")? {
+            return Ok(Cells::Small(0..0, 0..0));
+        }
+        let xs = self.drange(x0, x1)?;
+        if let (Some(ya), Some(yb), Some(xa), Some(xb)) = (ys.0.as_int(), ys.1.as_int(), xs.0.as_int(), xs.1.as_int()) {
+            let n = (yb as i128 - ya as i128).max(0) * (xb as i128 - xa as i128).max(0);
+            if n > limit as i128 {
+                return Err(PyErr::new(ExcKind::MemoryError, ""));
+            }
+            return Ok(Cells::Small(ya..yb, xa..xb));
+        }
+        let len = |r: &(Value, Value)| -> num_bigint::BigInt {
+            let n = r.1.as_bigint().unwrap() - r.0.as_bigint().unwrap();
+            if n < num_bigint::BigInt::from(0) { num_bigint::BigInt::from(0) } else { n }
         };
-        Ok(ys.flat_map(move |grid_y| xs.clone().map(move |grid_x| (grid_x, grid_y))))
+        if len(&ys) * len(&xs) > num_bigint::BigInt::from(limit) {
+            return Err(PyErr::new(ExcKind::MemoryError, ""));
+        }
+        let mut cells = Vec::new();
+        let (ya, yb) = (ys.0.as_bigint().unwrap(), ys.1.as_bigint().unwrap());
+        let (xa, xb) = (xs.0.as_bigint().unwrap(), xs.1.as_bigint().unwrap());
+        let mut y = ya;
+        while y < yb {
+            let mut x = xa.clone();
+            while x < xb {
+                cells.push((x.clone(), y.clone()));
+                x += 1;
+            }
+            y += 1;
+        }
+        Ok(Cells::Big(cells))
     }
 
     /// `extend(objs)`.
@@ -677,19 +720,48 @@ impl Plane {
 
     /// `add(obj)`: place an object.
     pub fn add(&mut self, obj: LTItem) -> PyResult<()> {
-        for k in self._getrange((obj.x0(), obj.y0(), obj.x1(), obj.y1()))? {
-            self._grid.entry(k).or_default().push(obj.clone());
+        match self._getrange((obj.x0(), obj.y0(), obj.x1(), obj.y1()), PLANE_ADD_CELLS)? {
+            Cells::Small(ys, xs) => {
+                for y in ys {
+                    for x in xs.clone() {
+                        self._grid.entry((x, y)).or_default().push(obj.clone());
+                    }
+                }
+            }
+            Cells::Big(cells) => {
+                for k in cells {
+                    match (k.0.to_i64(), k.1.to_i64()) {
+                        (Some(x), Some(y)) => self._grid.entry((x, y)).or_default().push(obj.clone()),
+                        _ => self._big_grid.entry(k).or_default().push(obj.clone()),
+                    }
+                }
+            }
         }
         self._seq.push(obj.clone());
         self._objs.insert(obj);
         Ok(())
     }
 
+    /// The objects of a cell.
+    fn cell_mut(&mut self, k: CellKey) -> Option<&mut Vec<LTItem>> {
+        match k {
+            CellKey::Small(k) => self._grid.get_mut(&k),
+            CellKey::Big(k) => self._big_grid.get_mut(&k),
+        }
+    }
+
+    fn cell(&self, k: &CellKey) -> Option<&Vec<LTItem>> {
+        match k {
+            CellKey::Small(k) => self._grid.get(k),
+            CellKey::Big(k) => self._big_grid.get(k),
+        }
+    }
+
     /// `remove(obj)`: displace an object (`KeyError` if it is not in the plane).
     pub fn remove(&mut self, obj: &LTItem) -> PyResult<()> {
-        for k in self._getrange((obj.x0(), obj.y0(), obj.x1(), obj.y1()))? {
+        for k in self._getrange((obj.x0(), obj.y0(), obj.x1(), obj.y1()), PLANE_FIND_CELLS)?.keys() {
             // with contextlib.suppress(KeyError, ValueError): self._grid[k].remove(obj)
-            if let Some(r) = self._grid.get_mut(&k)
+            if let Some(r) = self.cell_mut(k)
                 && let Some(i) = r.iter().position(|o| o == obj)
             {
                 r.remove(i);
@@ -707,8 +779,8 @@ impl Plane {
         let (x0, y0, x1, y1) = bbox;
         let mut done: HashSet<&LTItem> = HashSet::new();
         let mut out = Vec::new();
-        for k in self._getrange(bbox)? {
-            let Some(objs) = self._grid.get(&k) else {
+        for k in self._getrange(bbox, PLANE_FIND_CELLS)?.keys() {
+            let Some(objs) = self.cell(&k) else {
                 continue;
             };
             for obj in objs {
@@ -722,6 +794,35 @@ impl Plane {
             }
         }
         Ok(out)
+    }
+}
+
+/// The most cells `Plane.add` fills for one object (about 200 bytes each in Python, which runs
+/// out of memory first on a 2 GB budget). DIVERGE(plane-cells).
+const PLANE_ADD_CELLS: u64 = 1 << 23;
+/// The most cells `Plane.find`/`remove` go through (Python takes hours beyond). DIVERGE(plane-cells).
+const PLANE_FIND_CELLS: u64 = 1 << 32;
+
+/// The cells of `_getrange`, `(x, y)` row by row.
+enum Cells {
+    Small(std::ops::Range<i64>, std::ops::Range<i64>),
+    Big(Vec<(num_bigint::BigInt, num_bigint::BigInt)>),
+}
+
+enum CellKey {
+    Small((i64, i64)),
+    Big((num_bigint::BigInt, num_bigint::BigInt)),
+}
+
+impl Cells {
+    fn keys(self) -> Box<dyn Iterator<Item = CellKey>> {
+        match self {
+            Cells::Small(ys, xs) => Box::new(ys.flat_map(move |y| xs.clone().map(move |x| CellKey::Small((x, y))))),
+            Cells::Big(cells) => Box::new(cells.into_iter().map(|k| match (k.0.to_i64(), k.1.to_i64()) {
+                (Some(x), Some(y)) => CellKey::Small((x, y)),
+                _ => CellKey::Big(k),
+            })),
+        }
     }
 }
 

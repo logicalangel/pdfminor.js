@@ -27,7 +27,7 @@ use sha2::{Sha256, Sha384, Sha512};
 
 use crate::_saslprep::saslprep;
 use crate::arcfour::Arcfour;
-use crate::casting::safe_int;
+use crate::casting::safe_int_obj;
 use crate::data_structures::NumberTree;
 use crate::pdfparser::{PDFParser, PDFStreamParser};
 use crate::pdftypes::{
@@ -39,7 +39,7 @@ use crate::pyrt::ctype::{bytes_isdigit, bytes_strip, py_isspace};
 use crate::pyrt::error::{ExcKind, PyErr, PyResult};
 use crate::pyrt::fmt::{bytes_repr, str_repr};
 use crate::pyrt::io::BytesIO;
-use crate::pyrt::value::{DictRef, Value, dict_repr, py_add, py_cmp, py_eq, py_int, py_lt, py_mul, py_sub};
+use crate::pyrt::value::{DictRef, Value, dict_repr, py_add, py_cmp, py_eq, py_int_obj, py_lt, py_mul, py_sub};
 use crate::settings;
 use crate::utils::{choplist, decode_text, format_int_alpha, format_int_roman, nunpack, unpad_aes};
 
@@ -370,8 +370,9 @@ fn md5_digest(parts: &[&[u8]]) -> Vec<u8> {
 // ---------------------------------------------------------------------------------------------
 // XRefs
 
-/// `(strmid, index, genno)` or `(None, pos, genno)`.
-pub type XRefPos = (Option<i64>, i64, i64);
+/// `(strmid, index, genno)` or `(None, pos, genno)`. A position is an exact int (a broken xref
+/// table can hold one beyond i64; seeking to it raises like Python's file).
+pub type XRefPos = (Option<i64>, Value, i64);
 
 /// `PDFXRef` (and `PDFXRefFallback`, which shares its state).
 pub struct PDFXRef {
@@ -395,7 +396,12 @@ impl PDFXRef {
     /// `self.offsets[objid] = pos` (an existing key keeps its key object and its place).
     fn set_offset(&mut self, objid: Value, pos: XRefPos) -> PyResult<()> {
         let key = obj_key(&objid)?;
-        self.offsets.entry(key).and_modify(|e| e.1 = pos).or_insert((objid, pos));
+        match self.offsets.entry(key) {
+            indexmap::map::Entry::Occupied(mut e) => e.get_mut().1 = pos,
+            indexmap::map::Entry::Vacant(e) => {
+                e.insert((objid, pos));
+            }
+        }
         Ok(())
     }
 
@@ -437,7 +443,7 @@ impl PDFXRef {
                 let error_msg = format!("Trailer not found: <PDFParser>: line={}", bytes_repr(&line));
                 return Err(PyErr::new(ExcKind::PDFNoValidXRef, error_msg));
             }
-            let parsed = py_int(&Value::bytes(f[0])).and_then(|s| Ok((s, py_int(&Value::bytes(f[1]))?)));
+            let parsed = py_int_obj(&Value::bytes(f[0])).and_then(|s| Ok((s, py_int_obj(&Value::bytes(f[1]))?)));
             let (start, nobjs) = match parsed {
                 Ok(v) => v,
                 Err(e) if e.is(ExcKind::ValueError) => {
@@ -447,9 +453,10 @@ impl PDFXRef {
                 }
                 Err(e) => return Err(e),
             };
-            let end = start.saturating_add(nobjs);
+            // `for objid in range(start, start + nobjs)`, exact
+            let end = py_add(&start, &nobjs)?;
             let mut objid = start;
-            while objid < end {
+            while py_lt(&objid, &end)? {
                 let line = {
                     let mut parser = doc.parser.borrow_mut();
                     match parser.nextline() {
@@ -468,22 +475,24 @@ impl PDFXRef {
                 }
                 let (pos_b, genno_b, use_b) = (f[0], f[1], f[2]);
                 if use_b != b"n" {
-                    objid += 1;
+                    objid = py_add(&objid, &Value::Int(1))?;
                     continue;
                 }
-                let pos_i = safe_int(&Value::bytes(pos_b))?;
-                let genno_i = safe_int(&Value::bytes(genno_b))?;
+                let pos_i = safe_int_obj(&Value::bytes(pos_b))?;
+                let genno_i = safe_int_obj(&Value::bytes(genno_b))?;
                 if let (Some(pos_i), Some(genno_i)) = (pos_i, genno_i) {
-                    self.set_offset(Value::Int(objid), (None, pos_i, genno_i))?;
+                    // DIVERGE(bigint): a generation number beyond i64 saturates.
+                    let genno_i = saturate_i64(&genno_i);
+                    self.set_offset(objid.clone(), (None, pos_i, genno_i))?;
                 } else {
                     warn!(
                         "Not adding object {} to xref because position {} or generation number {} cannot be parsed as an int",
-                        objid,
+                        objid.repr(),
                         bytes_repr(pos_b),
                         bytes_repr(genno_b)
                     );
                 }
-                objid += 1;
+                objid = py_add(&objid, &Value::Int(1))?;
             }
         }
         debug!("xref objects: {}", self.keys_repr());
@@ -545,7 +554,7 @@ impl PDFXRef {
             // DIVERGE(bigint): a generation number beyond i64 saturates.
             let genno = parse_digits(genno_s).as_int().unwrap_or(i64::MAX);
             let objid_int = objid.as_int();
-            self.set_offset(objid.clone(), (None, pos, genno))?;
+            self.set_offset(objid.clone(), (None, Value::Int(pos), genno))?;
             // expand ObjStm.
             let obj = {
                 let mut parser = doc.parser.borrow_mut();
@@ -587,12 +596,20 @@ impl PDFXRef {
                 let strmid = objid_int.unwrap_or(i64::MAX);
                 for index in 0..n.max(0) {
                     let objid1 = objs[(index * 2) as usize].clone();
-                    self.set_offset(objid1, (Some(strmid), index, 0))?;
+                    self.set_offset(objid1, (Some(strmid), Value::Int(index), 0))?;
                 }
             }
         }
         Ok(())
     }
+}
+
+/// An int, saturated to i64 (for uses where only the range check of a later `struct.pack`
+/// matters, or a recorded divergence).
+fn saturate_i64(v: &Value) -> i64 {
+    v.as_int().unwrap_or_else(|| {
+        if v.as_bigint().is_some_and(|b| num_traits::Signed::is_negative(&b)) { i64::MIN } else { i64::MAX }
+    })
 }
 
 /// `int(s)` of a run of ASCII digits.
@@ -773,9 +790,9 @@ impl PDFXRefStream {
         }
         let (f1, f2, f3) = self.fields(&index)?;
         if f1 == 1 {
-            Ok((None, f2, f3))
+            Ok((None, Value::Int(f2), f3))
         } else if f1 == 2 {
-            Ok((Some(f2), f3, 0))
+            Ok((Some(f2), Value::Int(f3), 0))
         } else {
             // this is a free object
             Err(PyErr::new(ExcKind::PDFKeyError, objid.repr()))
@@ -814,7 +831,7 @@ impl PDFBaseXRef {
         match self {
             PDFBaseXRef::XRef(x) | PDFBaseXRef::Fallback(x) => {
                 let key = obj_key(objid)?;
-                x.offsets.get(&key).map(|(_, p)| *p).ok_or_else(|| PyErr::new(ExcKind::KeyError, objid.repr()))
+                x.offsets.get(&key).map(|(_, p)| p.clone()).ok_or_else(|| PyErr::new(ExcKind::KeyError, objid.repr()))
             }
             PDFBaseXRef::Stream(x) => x.get_pos(objid),
         }
@@ -1641,7 +1658,10 @@ impl PDFDocument {
         }
     }
 
-    fn _getobj_parse(&self, pos: i64, objid: &Value) -> PyResult<Value> {
+    fn _getobj_parse(&self, pos: &Value, objid: &Value) -> PyResult<Value> {
+        let Some(pos) = pos.as_int() else {
+            return Err(self.fp.seek_beyond_i64_error());
+        };
         self.with_parser(|parser| {
             parser.seek(pos)?;
             let (_, mut objid1) = parser.nexttoken()?; // objid
@@ -1718,25 +1738,20 @@ impl PDFDocument {
             let r = (|| -> PyResult<Value> {
                 let obj = if let Some(strmid) = strmid {
                     let stream = stream_value(&self.getobj(strmid)?)?;
-                    self._getobj_objstm(&stream, index, objid)?
+                    // Object stream indexes come from the stream's own small ints.
+                    self._getobj_objstm(&stream, index.as_int().expect("an object stream index"), objid)?
                 } else {
                     // Python's frames for _getobj_parse -> nextobject -> do_keyword -> int_value
                     // -> resolve1 -> resolve, before a nested getobj.
                     let depth = self.depth.get();
                     self.depth.set(depth + 6);
-                    let obj = self._getobj_parse(index, objid);
+                    let obj = self._getobj_parse(&index, objid);
                     self.depth.set(depth);
                     let mut obj = obj?;
                     if let Some(decipher) = self.decipher() {
                         // An id beyond i64 saturates: decipher only uses it in `struct.pack("<L",
                         // objid)`, which rejects both alike (and only for strings in the object).
-                        let id = objid.as_int().unwrap_or_else(|| {
-                            if objid.as_bigint().is_some_and(|b| num_traits::Signed::is_negative(&b)) {
-                                i64::MIN
-                            } else {
-                                i64::MAX
-                            }
-                        });
+                        let id = saturate_i64(objid);
                         obj = decipher_all(&*decipher, id, genno, &obj)?;
                     }
                     obj
