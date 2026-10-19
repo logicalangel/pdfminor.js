@@ -115,6 +115,8 @@ fn index_int(v: &Value, slice: bool) -> PyResult<i64> {
     match v {
         Value::Int(i) => Ok(*i),
         Value::Bool(b) => Ok(*b as i64),
+        // Slice bounds clamp; `range(n)` of a big n runs out of memory or time either way.
+        Value::BigInt(b) => Ok(if num_traits::Signed::is_negative(&**b) { i64::MIN } else { i64::MAX }),
         _ if slice => {
             Err(PyErr::new(ExcKind::TypeError, "slice indices must be integers or None or have an __index__ method"))
         }

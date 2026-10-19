@@ -15,6 +15,9 @@ use std::fmt;
 use std::rc::Rc;
 
 use indexmap::IndexMap;
+use num_bigint::BigInt;
+use num_integer::Integer;
+use num_traits::{Signed, ToPrimitive, Zero};
 
 use super::error::{ExcKind, PyErr, PyResult};
 use super::fmt::{bytes_repr, float_repr, str_repr};
@@ -33,6 +36,9 @@ pub enum Value {
     /// A Python `int`. Ints beyond i64 (only in malformed files) are a recorded divergence:
     /// see `docs/DIVERGENCES.md`.
     Int(i64),
+    /// A Python `int` outside i64 (only ever outside: smaller ints are `Int`). Python ints are
+    /// unbounded, and malformed files carry such numbers (object ids, operands, lengths).
+    BigInt(Rc<BigInt>),
     Float(f64),
     Bytes(Rc<[u8]>),
     Str(Rc<str>),
@@ -75,7 +81,7 @@ impl Value {
         match self {
             Value::None => "NoneType",
             Value::Bool(_) => "bool",
-            Value::Int(_) => "int",
+            Value::Int(_) | Value::BigInt(_) => "int",
             Value::Float(_) => "float",
             Value::Bytes(_) => "bytes",
             Value::Str(_) => "str",
@@ -95,7 +101,7 @@ impl Value {
 
     /// `isinstance(x, int)` (true for `bool` too).
     pub fn is_int(&self) -> bool {
-        matches!(self, Value::Int(_) | Value::Bool(_))
+        matches!(self, Value::Int(_) | Value::BigInt(_) | Value::Bool(_))
     }
 
     /// `isinstance(x, float)`.
@@ -105,10 +111,26 @@ impl Value {
 
     /// `isinstance(x, (int, float))` (== `utils.isnumber(x)`).
     pub fn is_number(&self) -> bool {
-        matches!(self, Value::Int(_) | Value::Bool(_) | Value::Float(_))
+        matches!(self, Value::Int(_) | Value::BigInt(_) | Value::Bool(_) | Value::Float(_))
     }
 
-    /// The value of an `isinstance(x, int)` object.
+    /// An int as a `Value`: `Int` when it fits in i64, else `BigInt`.
+    pub fn int(i: BigInt) -> Value {
+        match i.to_i64() {
+            Some(v) => Value::Int(v),
+            None => Value::BigInt(Rc::new(i)),
+        }
+    }
+
+    /// The value of an `isinstance(x, int)` object, exact.
+    pub fn as_bigint(&self) -> Option<BigInt> {
+        match self {
+            Value::BigInt(b) => Some((**b).clone()),
+            _ => self.as_int().map(BigInt::from),
+        }
+    }
+
+    /// The value of an `isinstance(x, int)` object that fits in i64 (`None` for a `BigInt`).
     pub fn as_int(&self) -> Option<i64> {
         match self {
             Value::Int(i) => Some(*i),
@@ -117,10 +139,12 @@ impl Value {
         }
     }
 
-    /// The value of an `isinstance(x, (int, float))` object, as a float.
+    /// The value of an `isinstance(x, (int, float))` object, as a float (an int beyond the
+    /// float range is infinite here; `py_float` raises `OverflowError` for it like Python).
     pub fn as_f64(&self) -> Option<f64> {
         match self {
             Value::Int(i) => Some(*i as f64),
+            Value::BigInt(b) => Some(bigint_to_f64(b)),
             Value::Bool(b) => Some(*b as i64 as f64),
             Value::Float(f) => Some(*f),
             _ => None,
@@ -191,6 +215,7 @@ impl Value {
             Value::None => false,
             Value::Bool(b) => *b,
             Value::Int(i) => *i != 0,
+            Value::BigInt(_) => true,
             Value::Float(f) => *f != 0.0,
             Value::Bytes(b) => !b.is_empty(),
             Value::Str(s) => !s.is_empty(),
@@ -207,6 +232,7 @@ impl Value {
         match (self, other) {
             (Value::None, Value::None) => true,
             (Value::Bool(a), Value::Bool(b)) => a == b,
+            (Value::BigInt(a), Value::BigInt(b)) => Rc::ptr_eq(a, b),
             (Value::Literal(a), Value::Literal(b)) => a == b,
             (Value::Keyword(a), Value::Keyword(b)) => a == b,
             (Value::List(a), Value::List(b)) => Rc::ptr_eq(a, b),
@@ -227,6 +253,7 @@ impl Value {
             Value::Bool(true) => "True".into(),
             Value::Bool(false) => "False".into(),
             Value::Int(i) => i.to_string(),
+            Value::BigInt(b) => b.to_string(),
             Value::Float(f) => float_repr(*f),
             Value::Bytes(b) => bytes_repr(b),
             Value::Str(s) => str_repr(s),
@@ -325,13 +352,33 @@ fn int_float_cmp(i: i64, f: f64) -> Option<std::cmp::Ordering> {
     }
 }
 
+/// [`int_float_cmp`] for any int (`v.is_int()`).
+fn value_float_cmp(v: &Value, f: f64) -> Option<std::cmp::Ordering> {
+    use std::cmp::Ordering;
+    if let Some(i) = v.as_int() {
+        return int_float_cmp(i, f);
+    }
+    if f.is_nan() {
+        return None;
+    }
+    if f.is_infinite() {
+        return Some(if f > 0.0 { Ordering::Less } else { Ordering::Greater });
+    }
+    let fl = f.floor();
+    match v.as_bigint().unwrap().cmp(&BigInt::from_f64_exact(fl)) {
+        Ordering::Equal if f > fl => Some(Ordering::Less),
+        o => Some(o),
+    }
+}
+
 fn num_cmp(a: &Value, b: &Value) -> Option<Option<std::cmp::Ordering>> {
     match (a, b) {
         (Value::Float(x), Value::Float(y)) => Some(x.partial_cmp(y)),
-        (Value::Float(x), _) => b.as_int().map(|i| int_float_cmp(i, *x).map(|o| o.reverse())),
-        (_, Value::Float(y)) => a.as_int().map(|i| int_float_cmp(i, *y)),
+        (Value::Float(x), _) if b.is_int() => Some(value_float_cmp(b, *x).map(|o| o.reverse())),
+        (_, Value::Float(y)) if a.is_int() => Some(value_float_cmp(a, *y)),
         _ => match (a.as_int(), b.as_int()) {
             (Some(x), Some(y)) => Some(Some(x.cmp(&y))),
+            _ if a.is_int() && b.is_int() => Some(Some(a.as_bigint().unwrap().cmp(&b.as_bigint().unwrap()))),
             _ => None,
         },
     }
@@ -427,28 +474,42 @@ fn binop_type_error(op: &str, a: &Value, b: &Value) -> PyErr {
     )
 }
 
-/// Int result of an int operation, or the float approximation when it leaves i64 (Python would
-/// keep an exact big int: a recorded divergence).
-fn int_or_float(r: Option<i64>, approx: f64) -> Value {
-    match r {
-        Some(i) => Value::Int(i),
-        None => Value::Float(approx),
+/// An int operation of two ints: in i64 when it fits, else exact in `BigInt`.
+fn int_binop(a: &Value, b: &Value, small: fn(i64, i64) -> Option<i64>, big: fn(BigInt, BigInt) -> BigInt) -> Value {
+    if let (Some(x), Some(y)) = (a.as_int(), b.as_int())
+        && let Some(r) = small(x, y)
+    {
+        return Value::Int(r);
     }
+    Value::int(big(a.as_bigint().unwrap(), b.as_bigint().unwrap()))
 }
 
-fn repeat_count(n: &Value) -> Option<usize> {
-    n.as_int().map(|i| i.max(0) as usize)
+/// `float(i)` of a big int: correctly rounded, infinite beyond the float range.
+pub fn bigint_to_f64(b: &BigInt) -> f64 {
+    b.to_f64().unwrap_or(if b.is_negative() { f64::NEG_INFINITY } else { f64::INFINITY })
+}
+
+/// The float of a number operand of a float operation: `OverflowError` for an int beyond the
+/// float range, like Python.
+fn operand_f64(x: &Value) -> PyResult<f64> {
+    py_float(x)
+}
+
+/// The count of a sequence repetition (`seq * n`): negative counts repeat zero times.
+fn repeat_count(n: &Value) -> PyResult<usize> {
+    match n.as_int() {
+        Some(i) => Ok(i.max(0) as usize),
+        None if n.as_bigint().is_some_and(|b| b.is_negative()) => Ok(0),
+        None => Err(PyErr::new(ExcKind::OverflowError, "cannot fit 'int' into an index-sized integer")),
+    }
 }
 
 /// `a + b`.
 pub fn py_add(a: &Value, b: &Value) -> PyResult<Value> {
     match (a, b) {
-        (Value::Float(x), _) if b.is_number() => Ok(Value::Float(x + b.as_f64().unwrap())),
-        (_, Value::Float(y)) if a.is_number() => Ok(Value::Float(a.as_f64().unwrap() + y)),
-        _ if a.is_int() && b.is_int() => {
-            let (x, y) = (a.as_int().unwrap(), b.as_int().unwrap());
-            Ok(int_or_float(x.checked_add(y), x as f64 + y as f64))
-        }
+        (Value::Float(x), _) if b.is_number() => Ok(Value::Float(x + operand_f64(b)?)),
+        (_, Value::Float(y)) if a.is_number() => Ok(Value::Float(operand_f64(a)? + y)),
+        _ if a.is_int() && b.is_int() => Ok(int_binop(a, b, i64::checked_add, |x, y| x + y)),
         (Value::Bytes(x), Value::Bytes(y)) => Ok(Value::Bytes([&x[..], &y[..]].concat().into())),
         (Value::Str(x), Value::Str(y)) => Ok(Value::str(&format!("{x}{y}"))),
         (Value::List(x), Value::List(y)) => {
@@ -474,12 +535,9 @@ pub fn py_add(a: &Value, b: &Value) -> PyResult<Value> {
 /// `a - b`.
 pub fn py_sub(a: &Value, b: &Value) -> PyResult<Value> {
     match (a, b) {
-        (Value::Float(x), _) if b.is_number() => Ok(Value::Float(x - b.as_f64().unwrap())),
-        (_, Value::Float(y)) if a.is_number() => Ok(Value::Float(a.as_f64().unwrap() - y)),
-        _ if a.is_int() && b.is_int() => {
-            let (x, y) = (a.as_int().unwrap(), b.as_int().unwrap());
-            Ok(int_or_float(x.checked_sub(y), x as f64 - y as f64))
-        }
+        (Value::Float(x), _) if b.is_number() => Ok(Value::Float(x - operand_f64(b)?)),
+        (_, Value::Float(y)) if a.is_number() => Ok(Value::Float(operand_f64(a)? - y)),
+        _ if a.is_int() && b.is_int() => Ok(int_binop(a, b, i64::checked_sub, |x, y| x - y)),
         _ => Err(binop_type_error("-", a, b)),
     }
 }
@@ -487,20 +545,17 @@ pub fn py_sub(a: &Value, b: &Value) -> PyResult<Value> {
 /// `a * b`.
 pub fn py_mul(a: &Value, b: &Value) -> PyResult<Value> {
     match (a, b) {
-        (Value::Float(x), _) if b.is_number() => Ok(Value::Float(x * b.as_f64().unwrap())),
-        (_, Value::Float(y)) if a.is_number() => Ok(Value::Float(a.as_f64().unwrap() * y)),
-        _ if a.is_int() && b.is_int() => {
-            let (x, y) = (a.as_int().unwrap(), b.as_int().unwrap());
-            Ok(int_or_float(x.checked_mul(y), x as f64 * y as f64))
-        }
+        (Value::Float(x), _) if b.is_number() => Ok(Value::Float(x * operand_f64(b)?)),
+        (_, Value::Float(y)) if a.is_number() => Ok(Value::Float(operand_f64(a)? * y)),
+        _ if a.is_int() && b.is_int() => Ok(int_binop(a, b, i64::checked_mul, |x, y| x * y)),
         (Value::Bytes(x), n) | (n, Value::Bytes(x)) if n.is_int() => {
-            Ok(Value::Bytes(x.repeat(repeat_count(n).unwrap()).into()))
+            Ok(Value::Bytes(x.repeat(repeat_count(n)?).into()))
         }
-        (Value::Str(x), n) | (n, Value::Str(x)) if n.is_int() => Ok(Value::str(&x.repeat(repeat_count(n).unwrap()))),
+        (Value::Str(x), n) | (n, Value::Str(x)) if n.is_int() => Ok(Value::str(&x.repeat(repeat_count(n)?))),
         (Value::List(x), n) | (n, Value::List(x)) if n.is_int() => {
             let items = x.borrow();
             let mut v = Vec::new();
-            for _ in 0..repeat_count(n).unwrap() {
+            for _ in 0..repeat_count(n)? {
                 v.extend(items.iter().cloned());
             }
             Ok(Value::list(v))
@@ -520,13 +575,19 @@ pub fn py_truediv(a: &Value, b: &Value) -> PyResult<Value> {
         return Err(binop_type_error("/", a, b));
     }
     if a.is_int() && b.is_int() {
-        let (x, y) = (a.as_int().unwrap(), b.as_int().unwrap());
-        if y == 0 {
+        if let (Some(x), Some(y)) = (a.as_int(), b.as_int()) {
+            if y == 0 {
+                return Err(PyErr::new(ExcKind::ZeroDivisionError, "division by zero"));
+            }
+            return Ok(Value::Float(int_truediv(x, y)));
+        }
+        let (x, y) = (a.as_bigint().unwrap(), b.as_bigint().unwrap());
+        if y.is_zero() {
             return Err(PyErr::new(ExcKind::ZeroDivisionError, "division by zero"));
         }
-        return Ok(Value::Float(int_truediv(x, y)));
+        return Ok(Value::Float(bigint_truediv(&x, &y)?));
     }
-    let (x, y) = (a.as_f64().unwrap(), b.as_f64().unwrap());
+    let (x, y) = (operand_f64(a)?, operand_f64(b)?);
     if y == 0.0 {
         return Err(PyErr::new(ExcKind::ZeroDivisionError, "float division by zero"));
     }
@@ -547,19 +608,32 @@ pub fn int_truediv(x: i64, y: i64) -> f64 {
     if neg { -q } else { q }
 }
 
+/// `x / y` of two ints, one beyond i64. DIVERGE(int-truediv): rounded twice when both are
+/// beyond 2**53 (Python rounds once).
+fn bigint_truediv(x: &BigInt, y: &BigInt) -> PyResult<f64> {
+    let (fx, fy) = (bigint_to_f64(x), bigint_to_f64(y));
+    if fx.is_finite() && fy.is_finite() {
+        return Ok(fx / fy);
+    }
+    let q = bigint_to_f64(&(x / y));
+    if q.is_infinite() {
+        return Err(PyErr::new(ExcKind::OverflowError, "integer division result too large for a float"));
+    }
+    Ok(q)
+}
+
 /// `a // b`.
 pub fn py_floordiv(a: &Value, b: &Value) -> PyResult<Value> {
     if !(a.is_number() && b.is_number()) {
         return Err(binop_type_error("//", a, b));
     }
     if a.is_int() && b.is_int() {
-        let (x, y) = (a.as_int().unwrap(), b.as_int().unwrap());
-        if y == 0 {
+        if b.as_int() == Some(0) {
             return Err(PyErr::new(ExcKind::ZeroDivisionError, "integer division or modulo by zero"));
         }
-        return Ok(Value::Int(int_floordiv(x, y)));
+        return Ok(int_binop(a, b, |x, y| x.checked_div_euclid(y).map(|_| int_floordiv(x, y)), |x, y| x.div_floor(&y)));
     }
-    let (x, y) = (a.as_f64().unwrap(), b.as_f64().unwrap());
+    let (x, y) = (operand_f64(a)?, operand_f64(b)?);
     if y == 0.0 {
         return Err(PyErr::new(ExcKind::ZeroDivisionError, "float floor division by zero"));
     }
@@ -628,13 +702,12 @@ pub fn py_mod(a: &Value, b: &Value) -> PyResult<Value> {
         return Err(binop_type_error("%", a, b));
     }
     if a.is_int() && b.is_int() {
-        let (x, y) = (a.as_int().unwrap(), b.as_int().unwrap());
-        if y == 0 {
+        if b.as_int() == Some(0) {
             return Err(PyErr::new(ExcKind::ZeroDivisionError, "integer modulo by zero"));
         }
-        return Ok(Value::Int(int_mod(x, y)));
+        return Ok(int_binop(a, b, |x, y| x.checked_rem_euclid(y).map(|_| int_mod(x, y)), |x, y| x.mod_floor(&y)));
     }
-    let (x, y) = (a.as_f64().unwrap(), b.as_f64().unwrap());
+    let (x, y) = (operand_f64(a)?, operand_f64(b)?);
     if y == 0.0 {
         return Err(PyErr::new(ExcKind::ZeroDivisionError, "float modulo by zero"));
     }
@@ -645,10 +718,10 @@ pub fn py_mod(a: &Value, b: &Value) -> PyResult<Value> {
 pub fn py_neg(a: &Value) -> PyResult<Value> {
     match a {
         Value::Float(x) => Ok(Value::Float(-x)),
-        _ if a.is_int() => {
-            let x = a.as_int().unwrap();
-            Ok(int_or_float(x.checked_neg(), -(x as f64)))
-        }
+        _ if a.is_int() => Ok(match a.as_int().and_then(i64::checked_neg) {
+            Some(r) => Value::Int(r),
+            None => Value::int(-a.as_bigint().unwrap()),
+        }),
         _ => Err(PyErr::new(ExcKind::TypeError, format!("bad operand type for unary -: '{}'", a.type_name()))),
     }
 }
@@ -657,10 +730,10 @@ pub fn py_neg(a: &Value) -> PyResult<Value> {
 pub fn py_abs(a: &Value) -> PyResult<Value> {
     match a {
         Value::Float(x) => Ok(Value::Float(x.abs())),
-        _ if a.is_int() => {
-            let x = a.as_int().unwrap();
-            Ok(int_or_float(x.checked_abs(), (x as f64).abs()))
-        }
+        _ if a.is_int() => Ok(match a.as_int().and_then(i64::checked_abs) {
+            Some(r) => Value::Int(r),
+            None => Value::int(a.as_bigint().unwrap().abs()),
+        }),
         _ => Err(PyErr::new(ExcKind::TypeError, format!("bad operand type for abs(): '{}'", a.type_name()))),
     }
 }
@@ -687,13 +760,16 @@ fn numeric_text(s: &str) -> Option<String> {
     Some(t.replace('_', ""))
 }
 
-fn parse_py_int(text: &str) -> Option<i64> {
+fn parse_py_int(text: &str) -> Option<Value> {
     let t = numeric_text(text)?;
     let digits = t.strip_prefix(['+', '-']).unwrap_or(&t);
     if digits.is_empty() || !digits.bytes().all(|c| c.is_ascii_digit()) {
         return None;
     }
-    t.parse::<i64>().ok()
+    Some(match t.parse::<i64>() {
+        Ok(i) => Value::Int(i),
+        Err(_) => Value::int(t.trim_start_matches('+').parse::<BigInt>().ok()?),
+    })
 }
 
 fn parse_py_float(text: &str) -> Option<f64> {
@@ -727,12 +803,19 @@ fn text_of(x: &Value) -> Option<String> {
     }
 }
 
-/// `int(x)`.
+/// `int(x)` where the port needs it in i64: `OverflowError` for an int beyond i64
+/// (DIVERGE(bigint): Python goes on with the big int).
 pub fn py_int(x: &Value) -> PyResult<i64> {
+    let v = py_int_obj(x)?;
+    v.as_int().ok_or_else(|| PyErr::new(ExcKind::OverflowError, "int too large for the port (i64)"))
+}
+
+/// `int(x)`, exact.
+pub fn py_int_obj(x: &Value) -> PyResult<Value> {
     match x {
-        Value::Int(i) => Ok(*i),
-        Value::Bool(b) => Ok(*b as i64),
-        Value::Float(f) => float_to_int(*f),
+        Value::Int(_) | Value::BigInt(_) => Ok(x.clone()),
+        Value::Bool(b) => Ok(Value::Int(*b as i64)),
+        Value::Float(f) => float_to_int_obj(*f),
         Value::Str(_) | Value::Bytes(_) => {
             let t = text_of(x).unwrap();
             parse_py_int(&t).ok_or_else(|| {
@@ -746,8 +829,14 @@ pub fn py_int(x: &Value) -> PyResult<i64> {
     }
 }
 
-/// `int(f)` of a float: truncation, `ValueError` for NaN, `OverflowError` for infinities.
+/// `int(f)` of a float where the port needs it in i64 (see [`py_int`]).
 pub fn float_to_int(f: f64) -> PyResult<i64> {
+    let v = float_to_int_obj(f)?;
+    v.as_int().ok_or_else(|| PyErr::new(ExcKind::OverflowError, "int too large for the port (i64)"))
+}
+
+/// `int(f)` of a float: truncation, `ValueError` for NaN, `OverflowError` for infinities.
+pub fn float_to_int_obj(f: f64) -> PyResult<Value> {
     if f.is_nan() {
         return Err(PyErr::new(ExcKind::ValueError, "cannot convert float NaN to integer"));
     }
@@ -756,10 +845,20 @@ pub fn float_to_int(f: f64) -> PyResult<i64> {
     }
     let t = f.trunc();
     if t >= 9.223_372_036_854_776e18 || t < -9.223_372_036_854_776e18 {
-        // Python returns a big int here: recorded divergence.
-        return Err(PyErr::new(ExcKind::OverflowError, "int too large for the port (i64)"));
+        return Ok(Value::int(BigInt::from_f64_exact(t)));
     }
-    Ok(t as i64)
+    Ok(Value::Int(t as i64))
+}
+
+/// The exact int of an integral float.
+trait FromF64Exact {
+    fn from_f64_exact(f: f64) -> BigInt;
+}
+
+impl FromF64Exact for BigInt {
+    fn from_f64_exact(f: f64) -> BigInt {
+        num_traits::FromPrimitive::from_f64(f).expect("finite float")
+    }
 }
 
 /// `float(x)`.
@@ -767,6 +866,13 @@ pub fn py_float(x: &Value) -> PyResult<f64> {
     match x {
         Value::Float(f) => Ok(*f),
         Value::Int(i) => Ok(*i as f64),
+        Value::BigInt(b) => {
+            let f = bigint_to_f64(b);
+            if f.is_infinite() {
+                return Err(PyErr::new(ExcKind::OverflowError, "int too large to convert to float"));
+            }
+            Ok(f)
+        }
         Value::Bool(b) => Ok(*b as i64 as f64),
         Value::Str(_) | Value::Bytes(_) => {
             let t = text_of(x).unwrap();
@@ -839,6 +945,36 @@ mod tests {
         assert!(py_lt(&Value::Int(9007199254740993), &Value::Float(9007199254740992.0)).is_ok());
         assert!(!py_lt(&Value::Int(9007199254740993), &Value::Float(9007199254740992.0)).unwrap());
         assert!(py_lt(&Value::bytes(b"a"), &Value::Int(1)).is_err());
+    }
+
+    #[test]
+    fn ints_beyond_i64_are_exact() {
+        let big = |s: &str| Value::int(s.parse::<BigInt>().unwrap());
+        let b = big("99999999999999999999");
+        assert_eq!(b.repr(), "99999999999999999999");
+        assert_eq!(b.type_name(), "int");
+        assert!(b.is_int() && b.as_int().is_none());
+        assert_eq!(py_add(&b, &Value::Int(1)).unwrap().repr(), "100000000000000000000");
+        assert_eq!(py_sub(&py_add(&b, &Value::Int(1)).unwrap(), &b).unwrap().repr(), "1");
+        assert_eq!(py_add(&Value::Int(i64::MAX), &Value::Int(1)).unwrap().repr(), "9223372036854775808");
+        assert_eq!(py_neg(&Value::Int(i64::MIN)).unwrap().repr(), "9223372036854775808");
+        assert_eq!(py_floordiv(&py_neg(&b).unwrap(), &Value::Int(7)).unwrap().repr(), "-14285714285714285715");
+        assert_eq!(py_mod(&py_neg(&b).unwrap(), &Value::Int(7)).unwrap().repr(), "6");
+        assert_eq!(py_float(&b).unwrap(), 1e20);
+        assert_eq!(py_float(&Value::Float(1.5)).unwrap(), 1.5);
+        assert!(py_eq(&big("100000000000000000000"), &Value::Float(1e20)));
+        assert!(py_lt(&b, &Value::Float(1e20)).unwrap());
+        assert!(py_lt(&Value::Int(5), &b).unwrap());
+        let huge = big(&format!("1{}", "0".repeat(400)));
+        assert!(py_float(&huge).unwrap_err().is(ExcKind::OverflowError));
+        assert!(py_add(&huge, &Value::Float(1.0)).unwrap_err().is(ExcKind::OverflowError));
+        assert!(py_lt(&Value::Float(f64::MAX), &huge).unwrap());
+        assert_eq!(py_int_obj(&Value::Float(1e20)).unwrap().repr(), "100000000000000000000");
+        assert_eq!(py_int_obj(&Value::str("-99999999999999999999")).unwrap().repr(), "-99999999999999999999");
+        assert!(py_int(&b).unwrap_err().is(ExcKind::OverflowError));
+        assert!(py_mul(&Value::bytes(b"x"), &b).unwrap_err().is(ExcKind::OverflowError));
+        assert_eq!(py_mul(&Value::bytes(b"x"), &py_neg(&b).unwrap()).unwrap().repr(), "b''");
+        assert_eq!(py_truediv(&b, &Value::Int(4)).unwrap().repr(), "2.5e+19");
     }
 
     #[test]

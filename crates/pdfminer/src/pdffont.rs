@@ -40,6 +40,8 @@ use crate::utils::{Rect, choplist};
 #[derive(Clone, Debug, PartialEq, Eq, Hash)]
 pub enum WidthKey {
     Int(i64),
+    /// An int key beyond i64; it can never be looked up (cids are small).
+    BigInt(num_bigint::BigInt),
     Str(PyStr),
     /// A float key that equals no int (its bits); it can never be looked up.
     Float(u64),
@@ -56,7 +58,10 @@ impl WidthKey {
                     WidthKey::Float(f.to_bits())
                 }
             }
-            _ => WidthKey::Int(v.as_int().expect("a number")),
+            _ => match v.as_int() {
+                Some(i) => WidthKey::Int(i),
+                None => WidthKey::BigInt(v.as_bigint().expect("an int")),
+            },
         }
     }
 }
@@ -98,10 +103,35 @@ pub(crate) fn py_unpack(x: &Value, n: usize) -> PyResult<Vec<Value>> {
 }
 
 /// `range(v)` argument: an int (bools included), else `TypeError`.
-fn range_arg(v: &Value) -> PyResult<i64> {
-    v.as_int().ok_or_else(|| {
-        PyErr::new(ExcKind::TypeError, format!("'{}' object cannot be interpreted as an integer", v.type_name()))
-    })
+fn range_arg(v: &Value) -> PyResult<()> {
+    if v.is_int() {
+        return Ok(());
+    }
+    Err(PyErr::new(ExcKind::TypeError, format!("'{}' object cannot be interpreted as an integer", v.type_name())))
+}
+
+/// `for i in range(start, stop): f(i)` with the keys Python's dict gets. A range longer than i64
+/// can count is one Python fills until memory runs out: `MemoryError`.
+fn for_range(start: &Value, stop: &Value, mut f: impl FnMut(WidthKey)) -> PyResult<()> {
+    range_arg(start)?;
+    range_arg(stop)?;
+    if let (Some(a), Some(b)) = (start.as_int(), stop.as_int()) {
+        for i in a..b {
+            f(WidthKey::Int(i));
+        }
+        return Ok(());
+    }
+    let (a, b) = (start.as_bigint().unwrap(), stop.as_bigint().unwrap());
+    if b <= a {
+        return Ok(());
+    }
+    let Some(n) = num_traits::ToPrimitive::to_i64(&(&b - &a)) else {
+        return Err(PyErr::new(ExcKind::MemoryError, ""));
+    };
+    for k in 0..n {
+        f(WidthKey::from_number(&Value::int(&a + k)));
+    }
+    Ok(())
 }
 
 /// Build a mapping of character widths for horizontal writing.
@@ -124,10 +154,10 @@ pub fn get_widths(seq: &[Value]) -> PyResult<FontWidthDict> {
             r.push(v);
             if r.len() == 3 {
                 let (char1, char2, w) = (&r[0], &r[1], &r[2]);
-                if let (Some(c1), Some(c2)) = (char1.as_int(), char2.as_int()) {
-                    for i in c1..=c2 {
-                        widths.insert(WidthKey::Int(i), w.clone());
-                    }
+                if char1.is_int() && char2.is_int() {
+                    for_range(char1, &py_add(char2, &Value::Int(1))?, |k| {
+                        widths.insert(k, w.clone());
+                    })?;
                 } else {
                     warn!(
                         "Skipping invalid font width specification for {} to {} because either of them is not an int",
@@ -165,11 +195,9 @@ pub fn get_widths2(seq: &[Value]) -> PyResult<IndexMap<WidthKey, Width2>> {
             r.push(v.clone());
             if r.len() == 5 {
                 let (char1, char2, w, vx, vy) = (&r[0], &r[1], &r[2], &r[3], &r[4]);
-                let start = range_arg(char1)?;
-                let stop = range_arg(&py_add(char2, &Value::Int(1))?)?;
-                for i in start..stop {
-                    widths.insert(WidthKey::Int(i), (w.clone(), (vx.clone(), vy.clone())));
-                }
+                for_range(char1, &py_add(char2, &Value::Int(1))?, |k| {
+                    widths.insert(k, (w.clone(), (vx.clone(), vy.clone())));
+                })?;
                 r.clear();
             }
         }
@@ -1063,6 +1091,8 @@ fn py_sum(xs: Vec<Value>) -> PyResult<Value> {
             if let Some(x) = match &item {
                 Value::Float(x) => Some(*x),
                 Value::Int(_) | Value::Bool(_) => item.as_f64(),
+                // `float(i)`: `OverflowError` beyond the float range
+                Value::BigInt(_) => Some(py_float(&item)?),
                 _ => None,
             } {
                 let t = hi + x;

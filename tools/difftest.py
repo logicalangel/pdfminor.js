@@ -21,6 +21,7 @@ import hashlib
 import json
 import os
 import re
+import resource
 import subprocess
 import sys
 from concurrent.futures import ThreadPoolExecutor
@@ -61,9 +62,9 @@ KNOWN_DIVERGENCES = {
     ("contrib/issue-598-cmap-other-fonts.pdf", "txt-tag"): "charset-normalizer",
 }
 
-# DIVERGE(bigint): Python ints beyond i64 are floats in the port. Fuzzed files make them at
-# random, so instead of listing files, a difference counts as this divergence when it goes away
-# once every int of 19+ digits is written as the float the port keeps (repr(float(n))).
+# DIVERGE(bigint): a few i64 uses of an int beyond i64 differ (see docs/DIVERGENCES.md). Fuzzed
+# files make such ints at random, so instead of listing files, a difference counts as this
+# divergence when it goes away once every int of 19+ digits is written as repr(float(n)).
 BIG_INT = re.compile(rb"(?<![\w.])-?[0-9]{19,}(?![\w.])")
 
 
@@ -138,9 +139,26 @@ TIMEOUT = 600
 TIMED_OUT = (-999, b"TIMEOUT")
 
 
-def run(cmd: list[str]) -> tuple[int, bytes]:
+# Address space of each Python reference run (--python-memory; None: no limit). Some fuzzed
+# files make pdfminer.six allocate without bound (a /W range up to 10**20); the cap turns that
+# into the MemoryError Python raises on a machine without the memory, instead of the OOM killer
+# taking the runner. The port raises MemoryError for those ranges too.
+PYTHON_MEMORY: int | None = None
+
+
+def _limit_memory() -> None:
+    assert PYTHON_MEMORY is not None
+    resource.setrlimit(resource.RLIMIT_AS, (PYTHON_MEMORY, PYTHON_MEMORY))
+
+
+def run(cmd: list[str], limit_memory: bool = False) -> tuple[int, bytes]:
     try:
-        p = subprocess.run(cmd, capture_output=True, timeout=TIMEOUT)
+        p = subprocess.run(
+            cmd,
+            capture_output=True,
+            timeout=TIMEOUT,
+            preexec_fn=_limit_memory if limit_memory and PYTHON_MEMORY else None,
+        )
     except subprocess.TimeoutExpired:
         return TIMED_OUT
     return (p.returncode, p.stdout)
@@ -155,9 +173,9 @@ def python_result(case: Case, commit: str) -> tuple[int, bytes]:
         data = cache.read_bytes()
         code, _, out = data.partition(b"\n")
         return (int(code), out)
-    code, out = run(python_cmd(case))
-    if (code, out) == TIMED_OUT:
-        return (code, out)  # not cached: rerun with a longer --timeout
+    code, out = run(python_cmd(case), limit_memory=True)
+    if (code, out) == TIMED_OUT or code < 0:
+        return (code, out)  # not cached: rerun with a longer --timeout, or after a kill
     cache.parent.mkdir(parents=True, exist_ok=True)
     cache.write_bytes(str(code).encode() + b"\n" + out)
     return (code, out)
@@ -207,10 +225,13 @@ def main() -> int:
     p.add_argument("-j", type=int, default=os.cpu_count() or 4)
     p.add_argument("--no-build", action="store_true", help="do not run cargo build --release first")
     p.add_argument("--max-report", type=int, default=50)
+    p.add_argument("--python-memory", type=int, help="address space limit of each Python run, in MB")
     p.add_argument("--timeout", type=int, default=TIMEOUT, help="seconds per run (Python takes 17 minutes on "
                    "nonfree/i1040nr.pdf rotated)")
     args = p.parse_args()
     globals()["TIMEOUT"] = args.timeout
+    if args.python_memory:
+        globals()["PYTHON_MEMORY"] = args.python_memory << 20
 
     if not args.no_build:
         subprocess.run(["cargo", "build", "--release", "-q", "-p", "pdfminer-cli"], cwd=ROOT, check=True)

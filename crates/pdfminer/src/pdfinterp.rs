@@ -837,7 +837,8 @@ impl PDFPageInterpreter {
                     dict_value(&v)?.borrow().iter().map(|(k, v)| (k.clone(), v.clone())).collect();
                 for (fontid, spec) in fonts {
                     let objid = match &spec {
-                        Value::Ref(r) => Some(r.objid()),
+                        // An id beyond i64 is a font no other ref shares in practice: not cached.
+                        Value::Ref(r) => r.objid(),
                         _ => None,
                     };
                     let spec = dict_value(&spec)?;

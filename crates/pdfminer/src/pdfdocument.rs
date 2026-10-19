@@ -91,7 +91,9 @@ fn dcontains(d: &DictRef, key: &str) -> bool {
 pub enum ObjKey {
     None,
     Int(i64),
-    /// A float that is not equal to any `i64` (its bits).
+    /// An int beyond i64, or an integral float equal to one.
+    BigInt(Rc<num_bigint::BigInt>),
+    /// A float that is not equal to any int (its bits).
     Float(u64),
     Bytes(Rc<[u8]>),
     Str(Rc<str>),
@@ -108,6 +110,7 @@ impl PartialEq for ObjKey {
         match (self, other) {
             (ObjKey::None, ObjKey::None) => true,
             (ObjKey::Int(a), ObjKey::Int(b)) => a == b,
+            (ObjKey::BigInt(a), ObjKey::BigInt(b)) => a == b,
             (ObjKey::Float(a), ObjKey::Float(b)) => a == b,
             (ObjKey::Bytes(a), ObjKey::Bytes(b)) => a == b,
             (ObjKey::Str(a), ObjKey::Str(b)) => a == b,
@@ -128,12 +131,13 @@ impl Hash for ObjKey {
         match self {
             ObjKey::None => {}
             ObjKey::Int(i) => i.hash(state),
+            ObjKey::BigInt(i) => i.hash(state),
             ObjKey::Float(b) => b.hash(state),
             ObjKey::Bytes(b) => b.hash(state),
             ObjKey::Str(s) => s.hash(state),
             ObjKey::Literal(l) => l.hash(state),
             ObjKey::Keyword(k) => k.hash(state),
-            ObjKey::Ref(r) => r.objid().hash(state),
+            ObjKey::Ref(r) => r.objid().hash(state), // equal refs are the same object
             ObjKey::Ptr(p) => p.hash(state),
         }
     }
@@ -146,10 +150,15 @@ pub fn obj_key(x: &Value) -> PyResult<ObjKey> {
         Value::None => ObjKey::None,
         Value::Bool(b) => ObjKey::Int(*b as i64),
         Value::Int(i) => ObjKey::Int(*i),
+        Value::BigInt(i) => ObjKey::BigInt(i.clone()),
         Value::Float(f) => {
             let f = *f;
-            if f.fract() == 0.0 && (-9.223_372_036_854_776e18..9.223_372_036_854_776e18).contains(&f) {
-                ObjKey::Int(f as i64)
+            if f.is_finite() && f.fract() == 0.0 {
+                match crate::pyrt::value::float_to_int_obj(f).expect("integral float") {
+                    Value::Int(i) => ObjKey::Int(i),
+                    Value::BigInt(i) => ObjKey::BigInt(i),
+                    _ => unreachable!(),
+                }
             } else {
                 ObjKey::Float(f.to_bits())
             }
@@ -586,12 +595,12 @@ impl PDFXRef {
     }
 }
 
-/// `int(s)` of a run of ASCII digits (a float beyond i64: `DIVERGE(bigint)`).
+/// `int(s)` of a run of ASCII digits.
 fn parse_digits(s: &[u8]) -> Value {
     let text = std::str::from_utf8(s).expect("digits");
     match text.parse::<i64>() {
         Ok(i) => Value::Int(i),
-        Err(_) => Value::Float(text.parse::<f64>().unwrap_or(f64::INFINITY)),
+        Err(_) => Value::int(text.parse::<num_bigint::BigInt>().expect("digits")),
     }
 }
 

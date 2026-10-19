@@ -14,6 +14,15 @@ pub fn safe_int(o: &Value) -> PyResult<Option<i64>> {
     }
 }
 
+/// `safe_int(o)`, exact (an int beyond i64 stays one).
+pub fn safe_int_obj(o: &Value) -> PyResult<Option<Value>> {
+    match crate::pyrt::value::py_int_obj(o) {
+        Ok(v) => Ok(Some(v)),
+        Err(e) if e.is_any(&[ExcKind::TypeError, ExcKind::ValueError]) => Ok(None),
+        Err(e) => Err(e),
+    }
+}
+
 /// `safe_float(o)`: `float(o)`, or `None` on `TypeError`/`ValueError`/`OverflowError`.
 pub fn safe_float(o: &Value) -> Option<f64> {
     py_float(o).ok()

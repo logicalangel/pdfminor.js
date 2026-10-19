@@ -6,7 +6,7 @@ use std::rc::Rc;
 
 use log::{debug, warn};
 
-use crate::pdfdocument::{ObjidIter, PDFDocument, PageLabelsIter, RECURSION_LIMIT, py_iter_items};
+use crate::pdfdocument::{ObjKey, ObjidIter, PDFDocument, PageLabelsIter, RECURSION_LIMIT, obj_key, py_iter_items};
 use crate::pdfparser::PDFParser;
 use crate::pdftypes::{dict_value, int_value, list_value, resolve1};
 use crate::pyrt::error::{ExcKind, PyErr, PyResult};
@@ -241,7 +241,7 @@ pub struct CreatePages {
     stack: Vec<Frame>,
     /// A node to visit next: `(obj, parent)`.
     pending: Option<(Value, DictRef)>,
-    visited: HashSet<Option<i64>>,
+    visited: HashSet<ObjKey>,
     phase: Phase,
     pages: bool,
     xref_idx: usize,
@@ -268,14 +268,14 @@ impl CreatePages {
         let copy = |d: DictRef| Rc::new(RefCell::new(d.borrow().clone()));
         let obj_is_int = obj.is_int();
         let obj_value = obj.clone();
-        let (object_id, object_properties): (Option<i64>, DictRef) = if let Some(id) = obj.as_int() {
-            (Some(id), copy(dict_value(&self.doc.getobj_value(&obj)?)?))
+        let (object_id, object_properties): (Value, DictRef) = if obj_is_int {
+            (obj.clone(), copy(dict_value(&self.doc.getobj_value(&obj)?)?))
         } else {
             // This looks broken. obj.objid means obj could be either
             // PDFObjRef or PDFStream, but neither is valid for dict_value.
             let object_id = match &obj {
-                Value::Ref(r) => Some(r.objid()),
-                Value::Stream(s) => s.objid.get(),
+                Value::Ref(r) => r.objid_value(),
+                Value::Stream(s) => s.objid.get().map_or(Value::None, Value::Int),
                 other => {
                     return Err(PyErr::new(
                         ExcKind::AttributeError,
@@ -287,10 +287,11 @@ impl CreatePages {
         };
 
         // Avoid recursion errors by keeping track of visited nodes
-        if self.visited.contains(&object_id) {
+        let key = obj_key(&object_id)?;
+        if self.visited.contains(&key) {
             return Ok(None);
         }
-        self.visited.insert(object_id);
+        self.visited.insert(key);
 
         let parent_items: Vec<(Rc<str>, Value)> = parent.borrow().iter().map(|(k, v)| (k.clone(), v.clone())).collect();
         for (k, v) in parent_items {
@@ -307,7 +308,7 @@ impl CreatePages {
         let object_type = object_type.unwrap_or(Value::None);
 
         // `object_id` itself (an int object from the Kids array stays as it was, e.g. `True`).
-        let pageid = if obj_is_int { obj_value } else { object_id.map_or(Value::None, Value::Int) };
+        let pageid = if obj_is_int { obj_value } else { object_id };
         if is_lit(&object_type, LITERAL_PAGES) && object_properties.borrow().contains_key("Kids") {
             let kids = dget(&object_properties, "Kids").unwrap();
             debug!("Pages: Kids={}", kids.repr());

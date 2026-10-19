@@ -311,6 +311,7 @@ impl CMapBase {
                 PyStr::decode_utf16be_ignore(b)
             }
             Value::Int(_) | Value::Bool(_) => PyStr::chr(code.as_int().unwrap())?,
+            Value::BigInt(_) => return Err(PyErr::new(ExcKind::ValueError, "chr() arg not in range(0x110000)")),
             other => return Err(PyErr::new(ExcKind::PDFTypeError, other.py_str())),
         };
 

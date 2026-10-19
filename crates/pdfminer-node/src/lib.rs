@@ -310,6 +310,8 @@ unsafe fn node(env: sys::napi_env, n: &Node) -> Result<sys::napi_value> {
             Node::Bool(b) => check(sys::napi_get_boolean(env, *b, &mut out))?,
             // A JS number: exact up to 2**53, like JSON.parse.
             Node::Int(i) => check(sys::napi_create_double(env, *i as f64, &mut out))?,
+            // A JS number, like the JSON of the dump reads back (ints beyond 2**53 are rounded)
+            Node::BigInt(i) => check(sys::napi_create_double(env, pdfminer::pyrt::value::bigint_to_f64(i), &mut out))?,
             Node::Float(f) => check(sys::napi_create_double(env, *f, &mut out))?,
             Node::Str(s) => out = utf16(env, s)?,
             Node::List(items) => {

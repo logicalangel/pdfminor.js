@@ -43,7 +43,13 @@ pub type DecipherCallable = dyn Fn(i64, i64, &[u8], Option<&DictRef>) -> PyResul
 
 struct ObjRefInner {
     doc: Option<Weak<PDFDocument>>,
-    objid: i64,
+    objid: ObjId,
+}
+
+/// An object id: an int, beyond i64 only in malformed files.
+enum ObjId {
+    Small(i64),
+    Big(Rc<num_bigint::BigInt>),
 }
 
 /// `PDFObjRef`. Python compares refs by identity (no `__eq__`), so a ref is an `Rc` and
@@ -54,14 +60,35 @@ pub struct PDFObjRef(Rc<ObjRefInner>);
 impl PDFObjRef {
     /// `PDFObjRef(doc, objid)`.
     pub fn new(doc: Option<Weak<PDFDocument>>, objid: i64) -> PyResult<Self> {
-        if objid == 0 && settings::STRICT {
+        Self::new_value(doc, Value::Int(objid))
+    }
+
+    /// `PDFObjRef(doc, objid)` for any int.
+    pub fn new_value(doc: Option<Weak<PDFDocument>>, objid: Value) -> PyResult<Self> {
+        if objid.as_int() == Some(0) && settings::STRICT {
             return Err(PyErr::new(ExcKind::PDFValueError, "PDF object id cannot be 0."));
         }
+        let objid = match objid {
+            Value::BigInt(b) => ObjId::Big(b),
+            other => ObjId::Small(other.as_int().expect("an int")),
+        };
         Ok(PDFObjRef(Rc::new(ObjRefInner { doc, objid })))
     }
 
-    pub fn objid(&self) -> i64 {
-        self.0.objid
+    /// The object id when it fits in i64 (`None` for ids beyond, which no xref holds).
+    pub fn objid(&self) -> Option<i64> {
+        match &self.0.objid {
+            ObjId::Small(i) => Some(*i),
+            ObjId::Big(_) => None,
+        }
+    }
+
+    /// `ref.objid`.
+    pub fn objid_value(&self) -> Value {
+        match &self.0.objid {
+            ObjId::Small(i) => Value::Int(*i),
+            ObjId::Big(b) => Value::BigInt(b.clone()),
+        }
     }
 
     pub fn doc(&self) -> Option<Rc<PDFDocument>> {
@@ -73,7 +100,7 @@ impl PDFObjRef {
     }
 
     pub fn repr(&self) -> String {
-        format!("<PDFObjRef:{}>", self.0.objid)
+        format!("<PDFObjRef:{}>", self.objid_value().repr())
     }
 
     /// `ref.resolve(default)`.
@@ -82,7 +109,7 @@ impl PDFObjRef {
             // `assert self.doc is not None`
             return Err(PyErr::new(ExcKind::AssertionError, ""));
         };
-        match doc.getobj(self.0.objid) {
+        match doc.getobj_value(&self.objid_value()) {
             Ok(v) => Ok(v),
             Err(e) if e.is(ExcKind::PDFObjectNotFound) => Ok(default.clone()),
             Err(e) => Err(e),

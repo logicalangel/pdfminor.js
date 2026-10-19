@@ -607,8 +607,7 @@ fn parse_int_token(tok: &[u8]) -> Option<Value> {
     }
     match s.parse::<i64>() {
         Ok(v) => Some(Value::Int(v)),
-        // A Python int beyond i64: recorded divergence (kept as the nearest float).
-        Err(_) => s.parse::<f64>().ok().map(Value::Float),
+        Err(_) => s.trim_start_matches('+').parse::<num_bigint::BigInt>().ok().map(Value::int),
     }
 }
 
@@ -837,6 +836,7 @@ pub trait PSStackParserImpl {
             let (pos, token) = self.nexttoken()?;
             match &token {
                 Value::Int(_)
+                | Value::BigInt(_)
                 | Value::Float(_)
                 | Value::Bool(_)
                 | Value::Str(_)

@@ -134,7 +134,7 @@ fn dumpxml(out: Out<'_>, obj: &Value, codec: Option<&str>, depth: usize) -> PyRe
                 write(out, "</stream>")
             }
         }
-        Value::Ref(r) => write(out, &format!("<ref id=\"{}\" />", r.objid())),
+        Value::Ref(r) => write(out, &format!("<ref id=\"{}\" />", r.objid_value().repr())),
         Value::Keyword(k) => {
             // Likely bug: obj.name is bytes, not str
             write(out, &format!("<keyword>{}</keyword>", bytes_repr(&k.name)))
@@ -148,6 +148,7 @@ fn dumpxml(out: Out<'_>, obj: &Value, codec: Option<&str>, depth: usize) -> PyRe
             write(out, &format!("<literal>{name}</literal>"))
         }
         Value::Int(i) => write(out, &format!("<number>{i}</number>")),
+        Value::BigInt(i) => write(out, &format!("<number>{i}</number>")),
         Value::Float(f) => write(out, &format!("<number>{}</number>", float_repr(*f))),
         Value::Bool(b) => write(out, &format!("<number>{}</number>", if *b { "True" } else { "False" })),
         Value::Tuple(_) => Err(PyErr::new(ExcKind::PDFTypeError, obj.py_str())),
@@ -243,7 +244,7 @@ fn getitem0(v: &Value) -> PyResult<Value> {
 /// `x.objid`.
 fn objid_of(v: &Value) -> PyResult<Value> {
     match v {
-        Value::Ref(r) => Ok(Value::Int(r.objid())),
+        Value::Ref(r) => Ok(r.objid_value()),
         Value::Stream(s) => Ok(s.objid.get().map_or(Value::None, Value::Int)),
         other => {
             Err(PyErr::new(ExcKind::AttributeError, format!("'{}' object has no attribute 'objid'", other.type_name())))
@@ -406,8 +407,9 @@ fn extractembedded(stdout: &mut dyn PyFile, fname: &str, password: &str, extract
             ));
         }
         let objid_str = match objid {
-            Value::Int(i) if *i < 0 => format!("-{:05}", -i),
+            Value::Int(i) if *i < 0 => format!("-{:05}", -(*i as i128)),
             Value::Int(i) => format!("{i:06}"),
+            Value::BigInt(i) => i.to_string(), // longer than the width
             other => {
                 return Err(PyErr::new(
                     ExcKind::ValueError,
