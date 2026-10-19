@@ -4287,8 +4287,5 @@ pub static GLYPHNAME2UNICODE: &[(&str, &str)] = &[
 
 /// `glyphname2unicode[name]`, or `None` for a missing key.
 pub fn glyphname2unicode(name: &str) -> Option<&'static str> {
-    GLYPHNAME2UNICODE
-        .binary_search_by(|(k, _)| (*k).cmp(name))
-        .ok()
-        .map(|i| GLYPHNAME2UNICODE[i].1)
+    GLYPHNAME2UNICODE.binary_search_by(|(k, _)| (*k).cmp(name)).ok().map(|i| GLYPHNAME2UNICODE[i].1)
 }

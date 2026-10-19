@@ -183,10 +183,7 @@ impl CMapBase {
     pub fn new(class: CMapClass, attrs: &[(&str, Value)]) -> Self {
         CMapBase {
             class,
-            attrs: attrs
-                .iter()
-                .map(|(k, v)| (k.to_string(), v.clone()))
-                .collect(),
+            attrs: attrs.iter().map(|(k, v)| (k.to_string(), v.clone())).collect(),
             code2cid: Rc::new(Code2Cid::new()),
             cid2unichr: Rc::new(HashMap::new()),
         }
@@ -204,28 +201,19 @@ impl CMapBase {
 
     /// `isinstance(x, CMap)`.
     pub fn is_cmap(&self) -> bool {
-        matches!(
-            self.class,
-            CMapClass::CMap | CMapClass::FileCMap | CMapClass::PyCMap
-        )
+        matches!(self.class, CMapClass::CMap | CMapClass::FileCMap | CMapClass::PyCMap)
     }
 
     /// `isinstance(x, IdentityCMap)`.
     pub fn is_identity_cmap(&self) -> bool {
-        matches!(
-            self.class,
-            CMapClass::IdentityCMap | CMapClass::IdentityCMapByte
-        )
+        matches!(self.class, CMapClass::IdentityCMap | CMapClass::IdentityCMapByte)
     }
 
     /// `isinstance(x, UnicodeMap)`.
     pub fn is_unicode_map(&self) -> bool {
         matches!(
             self.class,
-            CMapClass::UnicodeMap
-                | CMapClass::IdentityUnicodeMap
-                | CMapClass::FileUnicodeMap
-                | CMapClass::PyUnicodeMap
+            CMapClass::UnicodeMap | CMapClass::IdentityUnicodeMap | CMapClass::FileUnicodeMap | CMapClass::PyUnicodeMap
         )
     }
 
@@ -242,11 +230,7 @@ impl CMapBase {
 
     /// `repr(cmap)`.
     pub fn repr(&self) -> String {
-        let name = || {
-            self.attrs
-                .get("CMapName")
-                .map_or("None".to_string(), |v| v.py_str())
-        };
+        let name = || self.attrs.get("CMapName").map_or("None".to_string(), |v| v.py_str());
         if self.is_cmap() {
             format!("<CMap: {}>", name())
         } else if self.is_unicode_map() {
@@ -280,12 +264,8 @@ impl CMapBase {
                             d.insert(ci, Code2CidValue::Dict(sub));
                             Ok(())
                         }
-                        Some(Code2CidValue::Cid(_)) => {
-                            Err(non_dict_error(rest.first().copied(), "int"))
-                        }
-                        Some(Code2CidValue::Other(t)) => {
-                            Err(non_dict_error(rest.first().copied(), t))
-                        }
+                        Some(Code2CidValue::Cid(_)) => Err(non_dict_error(rest.first().copied(), "int")),
+                        Some(Code2CidValue::Other(t)) => Err(non_dict_error(rest.first().copied(), t)),
                         None => {
                             let mut t = Code2Cid::new();
                             add(&mut t, rest, last, cid)?;
@@ -299,14 +279,8 @@ impl CMapBase {
         /// `ci in d` (or `d[ci] = cid`) on a non-dict `d`.
         fn non_dict_error(next: Option<char>, t: &str) -> PyErr {
             match next {
-                Some(_) => PyErr::new(
-                    ExcKind::TypeError,
-                    format!("argument of type '{t}' is not iterable"),
-                ),
-                None => PyErr::new(
-                    ExcKind::TypeError,
-                    format!("'{t}' object does not support item assignment"),
-                ),
+                Some(_) => PyErr::new(ExcKind::TypeError, format!("argument of type '{t}' is not iterable")),
+                None => PyErr::new(ExcKind::TypeError, format!("'{t}' object does not support item assignment")),
             }
         }
         add(Rc::make_mut(&mut self.code2cid), init, *last, cid)
@@ -344,12 +318,7 @@ impl CMapBase {
             return Ok(());
         };
         // A0 = non-breaking space, some weird fonts can have a collision on a cid here.
-        if unichr.as_bytes() == "\u{a0}".as_bytes()
-            && self
-                .cid2unichr
-                .get(&cid)
-                .is_some_and(|u| u.as_bytes() == b" ")
-        {
+        if unichr.as_bytes() == "\u{a0}".as_bytes() && self.cid2unichr.get(&cid).is_some_and(|u| u.as_bytes() == b" ") {
             return Ok(());
         }
         Rc::make_mut(&mut self.cid2unichr).insert(cid, unichr);
@@ -380,11 +349,7 @@ impl CMapBase {
     pub fn decode(&self, code: &[u8]) -> PyResult<Vec<i64>> {
         match self.class {
             CMapClass::CMap | CMapClass::FileCMap | CMapClass::PyCMap => {
-                debug!(
-                    "decode: {}, {}",
-                    self.repr(),
-                    crate::pyrt::fmt::bytes_repr(code)
-                );
+                debug!("decode: {}, {}", self.repr(), crate::pyrt::fmt::bytes_repr(code));
                 let root: &Code2Cid = &self.code2cid;
                 let mut d: Result<&Code2Cid, &'static str> = Ok(root);
                 let mut out = Vec::new();
@@ -414,10 +379,7 @@ impl CMapBase {
             CMapClass::IdentityCMap => {
                 // struct.unpack(f">{n}H", code[: n * 2]) with n = len(code) // 2
                 let (pairs, _) = code.as_chunks::<2>();
-                Ok(pairs
-                    .iter()
-                    .map(|c| u16::from_be_bytes(*c) as i64)
-                    .collect())
+                Ok(pairs.iter().map(|c| u16::from_be_bytes(*c) as i64).collect())
             }
             CMapClass::IdentityCMapByte => Ok(code.iter().map(|&b| b as i64).collect()),
             _ => Err(PyErr::new(ExcKind::NotImplementedError, "")),
@@ -434,17 +396,11 @@ impl CMapBase {
             }
             _ if self.is_unicode_map() => {
                 debug!("get_unichr: {}, {}", self.repr(), cid);
-                self.cid2unichr
-                    .get(&cid)
-                    .cloned()
-                    .ok_or_else(|| PyErr::new(ExcKind::KeyError, cid.to_string()))
+                self.cid2unichr.get(&cid).cloned().ok_or_else(|| PyErr::new(ExcKind::KeyError, cid.to_string()))
             }
             _ => Err(PyErr::new(
                 ExcKind::AttributeError,
-                format!(
-                    "'{}' object has no attribute 'get_unichr'",
-                    self.class.name()
-                ),
+                format!("'{}' object has no attribute 'get_unichr'", self.class.name()),
             )),
         }
     }
@@ -466,18 +422,12 @@ impl CMapBase {
                     Code2CidKey::Str(_) => unreachable!(),
                 });
                 for (k, v) in items {
-                    let Code2CidKey::Int(k) = k else {
-                        unreachable!()
-                    };
+                    let Code2CidKey::Int(k) = k else { unreachable!() };
                     code.push(k);
                     match v {
                         Code2CidValue::Cid(cid) => {
                             let c: Vec<String> = code.iter().map(|x| x.to_string()).collect();
-                            let c = if c.len() == 1 {
-                                format!("({},)", c[0])
-                            } else {
-                                format!("({})", c.join(", "))
-                            };
+                            let c = if c.len() == 1 { format!("({},)", c[0]) } else { format!("({})", c.join(", ")) };
                             out.push_str(&format!("code {c} = cid {cid}\n"));
                         }
                         Code2CidValue::Dict(sub) => walk(out, sub, code)?,
@@ -516,24 +466,15 @@ struct CMapModule {
 
 impl CMapModule {
     fn missing(&self, attr: &str) -> PyErr {
-        PyErr::new(
-            ExcKind::AttributeError,
-            format!("type object '{}' has no attribute '{}'", self.name, attr),
-        )
+        PyErr::new(ExcKind::AttributeError, format!("type object '{}' has no attribute '{}'", self.name, attr))
     }
 }
 
 /// `PyCMap(name, module)`.
 fn py_cmap(name: &str, module: &CMapModule) -> PyResult<CMapBase> {
     let mut cmap = CMapBase::new(CMapClass::PyCMap, &[("CMapName", Value::str(name))]);
-    cmap.code2cid = module
-        .code2cid
-        .clone()
-        .ok_or_else(|| module.missing("CODE2CID"))?;
-    if module
-        .is_vertical
-        .ok_or_else(|| module.missing("IS_VERTICAL"))?
-    {
+    cmap.code2cid = module.code2cid.clone().ok_or_else(|| module.missing("CODE2CID"))?;
+    if module.is_vertical.ok_or_else(|| module.missing("IS_VERTICAL"))? {
         cmap.attrs.insert("WMode".into(), Value::Int(1));
     }
     Ok(cmap)
@@ -543,16 +484,10 @@ fn py_cmap(name: &str, module: &CMapModule) -> PyResult<CMapBase> {
 fn py_unicode_map(name: &str, module: &CMapModule, vertical: bool) -> PyResult<CMapBase> {
     let mut umap = CMapBase::new(CMapClass::PyUnicodeMap, &[("CMapName", Value::str(name))]);
     if vertical {
-        umap.cid2unichr = module
-            .cid2unichr_v
-            .clone()
-            .ok_or_else(|| module.missing("CID2UNICHR_V"))?;
+        umap.cid2unichr = module.cid2unichr_v.clone().ok_or_else(|| module.missing("CID2UNICHR_V"))?;
         umap.attrs.insert("WMode".into(), Value::Int(1));
     } else {
-        umap.cid2unichr = module
-            .cid2unichr_h
-            .clone()
-            .ok_or_else(|| module.missing("CID2UNICHR_H"))?;
+        umap.cid2unichr = module.cid2unichr_h.clone().ok_or_else(|| module.missing("CID2UNICHR_H"))?;
     }
     Ok(umap)
 }
@@ -600,10 +535,7 @@ fn find_cmap_file(name: &str) -> Option<&'static [u8]> {
     let file = stack[base.len()];
     // DIVERGE(cmap-case): exact (case-sensitive) file names, as on Linux; on a case-insensitive
     // file system (macOS by default) Python also finds e.g. "h" for "H".
-    data::CMAP_FILES
-        .binary_search_by(|(n, _)| n.cmp(&file))
-        .ok()
-        .map(|i| data::CMAP_FILES[i].1)
+    data::CMAP_FILES.binary_search_by(|(n, _)| n.cmp(&file)).ok().map(|i| data::CMAP_FILES[i].1)
 }
 
 fn json_type_name(v: &serde_json::Value) -> &'static str {
@@ -626,10 +558,7 @@ fn json_key_int(k: &str) -> PyResult<i64> {
 /// The cmap JSON file names are not user data: the pinned files only hold what this converts
 /// (checked by the differential test of every embedded cmap).
 fn json_shape_error(name: &str, what: &str) -> PyErr {
-    PyErr::new(
-        ExcKind::TypeError,
-        format!("unexpected {what} in cmap data {name}"),
-    )
+    PyErr::new(ExcKind::TypeError, format!("unexpected {what} in cmap data {name}"))
 }
 
 pub struct CMapDB;
@@ -646,12 +575,8 @@ impl CMapDB {
             };
             // Recursively convert nested dictionaries
             let value = match v {
-                serde_json::Value::Object(o) => {
-                    Code2CidValue::Dict(Rc::new(CMapDB::_convert_code2cid_keys(o)))
-                }
-                serde_json::Value::Number(n) if n.is_i64() => {
-                    Code2CidValue::Cid(n.as_i64().unwrap())
-                }
+                serde_json::Value::Object(o) => Code2CidValue::Dict(Rc::new(CMapDB::_convert_code2cid_keys(o))),
+                serde_json::Value::Number(n) if n.is_i64() => Code2CidValue::Cid(n.as_i64().unwrap()),
                 serde_json::Value::Bool(b) => Code2CidValue::Cid(*b as i64),
                 other => Code2CidValue::Other(json_type_name(other)),
             };
@@ -687,8 +612,8 @@ impl CMapDB {
         flate2::read::GzDecoder::new(gz)
             .read_to_end(&mut raw)
             .map_err(|e| PyErr::new(ExcKind::OSError, e.to_string()))?;
-        let data: serde_json::Value = serde_json::from_slice(&raw)
-            .map_err(|e| PyErr::new(ExcKind::ValueError, e.to_string()))?;
+        let data: serde_json::Value =
+            serde_json::from_slice(&raw).map_err(|e| PyErr::new(ExcKind::ValueError, e.to_string()))?;
         let serde_json::Value::Object(data) = data else {
             return Err(json_shape_error(&name, "top-level value"));
         };
@@ -733,28 +658,16 @@ impl CMapDB {
     pub fn get_cmap(name: &str) -> PyResult<Rc<CMapBase>> {
         match name {
             "Identity-H" => {
-                return Ok(Rc::new(CMapBase::new(
-                    CMapClass::IdentityCMap,
-                    &[("WMode", Value::Int(0))],
-                )));
+                return Ok(Rc::new(CMapBase::new(CMapClass::IdentityCMap, &[("WMode", Value::Int(0))])));
             }
             "Identity-V" => {
-                return Ok(Rc::new(CMapBase::new(
-                    CMapClass::IdentityCMap,
-                    &[("WMode", Value::Int(1))],
-                )));
+                return Ok(Rc::new(CMapBase::new(CMapClass::IdentityCMap, &[("WMode", Value::Int(1))])));
             }
             "OneByteIdentityH" => {
-                return Ok(Rc::new(CMapBase::new(
-                    CMapClass::IdentityCMapByte,
-                    &[("WMode", Value::Int(0))],
-                )));
+                return Ok(Rc::new(CMapBase::new(CMapClass::IdentityCMapByte, &[("WMode", Value::Int(0))])));
             }
             "OneByteIdentityV" => {
-                return Ok(Rc::new(CMapBase::new(
-                    CMapClass::IdentityCMapByte,
-                    &[("WMode", Value::Int(1))],
-                )));
+                return Ok(Rc::new(CMapBase::new(CMapClass::IdentityCMapByte, &[("WMode", Value::Int(1))])));
             }
             _ => {}
         }
@@ -773,10 +686,7 @@ impl CMapDB {
             return Ok(m[vertical as usize].clone());
         }
         let data = CMapDB::_load_data(&format!("to-unicode-{name}"))?;
-        let maps = [
-            Rc::new(py_unicode_map(name, &data, false)?),
-            Rc::new(py_unicode_map(name, &data, true)?),
-        ];
+        let maps = [Rc::new(py_unicode_map(name, &data, false)?), Rc::new(py_unicode_map(name, &data, true)?)];
         let m = maps[vertical as usize].clone();
         UMAP_CACHE.with(|c| c.borrow_mut().insert(name.to_string(), maps));
         Ok(m)
@@ -784,10 +694,7 @@ impl CMapDB {
 
     /// The names of the embedded cmap files (without `.json.gz`).
     pub fn embedded_names() -> Vec<&'static str> {
-        data::CMAP_FILES
-            .iter()
-            .map(|(n, _)| n.strip_suffix(".json.gz").unwrap())
-            .collect()
+        data::CMAP_FILES.iter().map(|(n, _)| n.strip_suffix(".json.gz").unwrap()).collect()
     }
 }
 
@@ -830,10 +737,7 @@ fn wide_cid(v: Option<i128>) -> Option<i64> {
 /// `struct.pack(">L", v)`.
 fn pack_ulong(v: i128) -> PyResult<[u8; 4]> {
     if !(0..=0xFFFF_FFFF).contains(&v) {
-        return Err(PyErr::new(
-            ExcKind::StructError,
-            "'L' format requires 0 <= number <= 4294967295",
-        ));
+        return Err(PyErr::new(ExcKind::StructError, "'L' format requires 0 <= number <= 4294967295"));
     }
     Ok((v as u32).to_be_bytes())
 }
@@ -841,11 +745,7 @@ fn pack_ulong(v: i128) -> PyResult<[u8; 4]> {
 /// `prefix + struct.pack(">L", v)[-vlen:]` (`[-0:]` is the whole packed value).
 fn prefixed(prefix: &[u8], v: i128, vlen: usize) -> PyResult<Value> {
     let packed = pack_ulong(v)?;
-    let tail = if vlen == 0 {
-        &packed[..]
-    } else {
-        &packed[4 - vlen.min(4)..]
-    };
+    let tail = if vlen == 0 { &packed[..] } else { &packed[4 - vlen.min(4)..] };
     let mut x = prefix.to_vec();
     x.extend_from_slice(tail);
     Ok(Value::bytes(&x))
@@ -861,10 +761,7 @@ fn unpack_popped(popped: Vec<(i64, Value)>, n: usize) -> PyResult<Vec<Value>> {
     if popped.len() != n {
         return Err(PyErr::new(
             ExcKind::ValueError,
-            format!(
-                "not enough values to unpack (expected {n}, got {})",
-                popped.len()
-            ),
+            format!("not enough values to unpack (expected {n}, got {})", popped.len()),
         ));
     }
     Ok(popped.into_iter().map(|(_, v)| v).collect())
@@ -881,12 +778,7 @@ pub struct CMapParser<'a> {
 
 impl<'a> CMapParser<'a> {
     pub fn new(cmap: &'a mut CMapBase, fp: BytesIO) -> Self {
-        CMapParser {
-            ps: PSStackParser::new(Some(fp)),
-            cmap,
-            _in_cmap: true,
-            _warnings: HashSet::new(),
-        }
+        CMapParser { ps: PSStackParser::new(Some(fp)), cmap, _in_cmap: true, _warnings: HashSet::new() }
     }
 
     pub fn run(&mut self) -> PyResult<()> {
@@ -972,17 +864,13 @@ impl<'a> CMapParser<'a> {
                     continue;
                 };
                 if start_byte.len() != end_byte.len() {
-                    self._warn_once(
-                        "The start and end byte of begincidrange have different lengths.",
-                    );
+                    self._warn_once("The start and end byte of begincidrange have different lengths.");
                     continue;
                 }
                 let (start_prefix, svar) = split4(start_byte);
                 let (end_prefix, evar) = split4(end_byte);
                 if start_prefix != end_prefix {
-                    self._warn_once(
-                        "The prefix of the start and end byte of begincidrange are not the same.",
-                    );
+                    self._warn_once("The prefix of the start and end byte of begincidrange are not the same.");
                     continue;
                 }
                 let start = nunpack(svar, 0);
@@ -990,8 +878,7 @@ impl<'a> CMapParser<'a> {
                 let vlen = svar.len();
                 for i in 0..(end - start + 1).max(0) {
                     let x = prefixed(start_prefix, (start + i) as i128, vlen)?;
-                    self.cmap
-                        .add_cid2unichr_wide(wide_cid(Some(cid as i128 + i as i128)), &x)?;
+                    self.cmap.add_cid2unichr_wide(wide_cid(Some(cid as i128 + i as i128)), &x)?;
                 }
             }
             return Ok(());
@@ -1045,14 +932,9 @@ impl<'a> CMapParser<'a> {
                             "The difference between the start and end offsets does not match the code length.",
                         );
                     }
-                    for (i, unicode_value) in code
-                        .iter()
-                        .enumerate()
-                        .take(count.min(usize::MAX as i128) as usize)
-                    {
+                    for (i, unicode_value) in code.iter().enumerate().take(count.min(usize::MAX as i128) as usize) {
                         let cid = start.map(|s| s + i as i128);
-                        self.cmap
-                            .add_cid2unichr_wide(wide_cid(cid), unicode_value)?;
+                        self.cmap.add_cid2unichr_wide(wide_cid(cid), unicode_value)?;
                     }
                 } else {
                     let Value::Bytes(code) = code else {
@@ -1064,8 +946,7 @@ impl<'a> CMapParser<'a> {
                     let mut i: i128 = 0;
                     while i < count {
                         let x = prefixed(prefix, base + i, vlen)?;
-                        self.cmap
-                            .add_cid2unichr_wide(wide_cid(start.map(|s| s + i)), &x)?;
+                        self.cmap.add_cid2unichr_wide(wide_cid(start.map(|s| s + i)), &x)?;
                         i += 1;
                     }
                 }
@@ -1082,8 +963,7 @@ impl<'a> CMapParser<'a> {
             let objs = self.objs();
             for t in choplist(2, objs) {
                 if let (Value::Bytes(cid), Value::Bytes(_)) = (&t[0], &t[1]) {
-                    self.cmap
-                        .add_cid2unichr_wide(wide_cid(nunpack_wide(cid)), &t[1])?;
+                    self.cmap.add_cid2unichr_wide(wide_cid(nunpack_wide(cid)), &t[1])?;
                 }
             }
             return Ok(());
@@ -1139,10 +1019,7 @@ mod tests {
     fn test_identity_cmap_even_length_buffer() {
         let even_buffer = be16(0..10);
         assert_eq!(even_buffer.len(), 20);
-        assert_eq!(
-            identity().decode(&even_buffer).unwrap(),
-            (0..10).collect::<Vec<i64>>()
-        );
+        assert_eq!(identity().decode(&even_buffer).unwrap(), (0..10).collect::<Vec<i64>>());
     }
 
     #[test]
@@ -1180,10 +1057,7 @@ mod tests {
     fn test_identity_cmap_max_values() {
         let max_values = [65535u16, 65534, 65533, 65532, 65531];
         let result = identity().decode(&be16(max_values)).unwrap();
-        assert_eq!(
-            result,
-            max_values.iter().map(|&v| v as i64).collect::<Vec<i64>>()
-        );
+        assert_eq!(result, max_values.iter().map(|&v| v as i64).collect::<Vec<i64>>());
     }
 
     // Port of tests/test_cmapdb_security.py (CVE-2025-64512).
@@ -1207,10 +1081,7 @@ mod tests {
         let cmap = CMapDB::get_cmap("H").unwrap();
         fn check_keys(d: &Code2Cid) {
             for (k, v) in d.items() {
-                assert!(
-                    matches!(k, Code2CidKey::Int(_)),
-                    "Expected int key, got {k:?}"
-                );
+                assert!(matches!(k, Code2CidKey::Int(_)), "Expected int key, got {k:?}");
                 if let Code2CidValue::Dict(sub) = v {
                     check_keys(sub);
                 }
@@ -1244,16 +1115,8 @@ mod tests {
             }
         }
         // A unicode map file read as a cmap has no CODE2CID.
-        assert!(
-            CMapDB::get_cmap("to-unicode-Adobe-Japan1")
-                .unwrap_err()
-                .is(ExcKind::AttributeError)
-        );
-        assert!(
-            CMapDB::get_unicode_map("x/../../cmap/H", false)
-                .unwrap_err()
-                .is(ExcKind::AttributeError)
-        );
+        assert!(CMapDB::get_cmap("to-unicode-Adobe-Japan1").unwrap_err().is(ExcKind::AttributeError));
+        assert!(CMapDB::get_unicode_map("x/../../cmap/H", false).unwrap_err().is(ExcKind::AttributeError));
         assert_eq!(CMapDB::embedded_names().len(), 148);
     }
 
@@ -1286,32 +1149,17 @@ endcmap CMapName currentdict /CMap defineresource pop end end";
         // cidchar pairs are read as (cid, code): only the "int bytes" pair is used.
         assert_eq!(get(7).as_deref(), Some("c"));
         assert_eq!(get(0x64), None);
-        assert_eq!(
-            m.attrs.get("CMapName").unwrap().repr(),
-            "/'Adobe-Identity-UCS'"
-        );
+        assert_eq!(m.attrs.get("CMapName").unwrap().repr(), "/'Adobe-Identity-UCS'");
     }
 
     #[test]
     fn tounicode_cmap_errors() {
         // `def` with one object on the stack: ValueError from the unpacking.
-        assert!(
-            parse_unicode_map(b"begincmap /A def")
-                .unwrap_err()
-                .is(ExcKind::ValueError)
-        );
+        assert!(parse_unicode_map(b"begincmap /A def").unwrap_err().is(ExcKind::ValueError));
         // bfrange past 0xFFFFFFFF: struct.error.
-        assert!(
-            parse_unicode_map(b"<00> <02> <FFFFFFFF> endbfrange")
-                .unwrap_err()
-                .is(ExcKind::StructError)
-        );
+        assert!(parse_unicode_map(b"<00> <02> <FFFFFFFF> endbfrange").unwrap_err().is(ExcKind::StructError));
         // bfrange whose code is neither bytes nor a list: AssertionError.
-        assert!(
-            parse_unicode_map(b"<00> <02> 5 endbfrange")
-                .unwrap_err()
-                .is(ExcKind::AssertionError)
-        );
+        assert!(parse_unicode_map(b"<00> <02> 5 endbfrange").unwrap_err().is(ExcKind::AssertionError));
         // An empty start/end: `[-0:]` keeps the four packed bytes.
         let m = parse_unicode_map(b"<> <> 9 endcidrange").unwrap();
         assert_eq!(m.get_unichr(9).unwrap().to_utf16(), vec![0, 0]);
@@ -1329,25 +1177,15 @@ endcmap CMapName currentdict /CMap defineresource pop end end";
         c.add_code2cid("\u{81}\u{40}", 633).unwrap();
         c.add_code2cid("A", 34).unwrap();
         assert_eq!(c.decode(b"\x81\x40A\x81B").unwrap(), vec![633, 34]);
-        assert!(
-            c.add_code2cid("A\u{1}", 1)
-                .unwrap_err()
-                .is(ExcKind::TypeError)
-        );
+        assert!(c.add_code2cid("A\u{1}", 1).unwrap_err().is(ExcKind::TypeError));
         let mut c2 = CMapBase::new(CMapClass::FileCMap, &[]);
         let parsed = {
             let mut p = CMapParser::new(&mut c2, BytesIO::from_vec(b"/H usecmap".to_vec()));
             p.run()
         };
         parsed.unwrap();
-        assert_eq!(
-            c2.decode(b"\x21\x21").unwrap(),
-            CMapDB::get_cmap("H").unwrap().decode(b"\x21\x21").unwrap()
-        );
-        assert_eq!(
-            c2.dump().unwrap(),
-            CMapDB::get_cmap("H").unwrap().dump().unwrap()
-        );
+        assert_eq!(c2.decode(b"\x21\x21").unwrap(), CMapDB::get_cmap("H").unwrap().decode(b"\x21\x21").unwrap());
+        assert_eq!(c2.dump().unwrap(), CMapDB::get_cmap("H").unwrap().dump().unwrap());
         let mut c3 = CMapBase::new(CMapClass::FileCMap, &[]);
         let r = CMapParser::new(&mut c3, BytesIO::from_vec(b"/Identity-H usecmap".to_vec())).run();
         assert!(r.unwrap_err().is(ExcKind::AssertionError));

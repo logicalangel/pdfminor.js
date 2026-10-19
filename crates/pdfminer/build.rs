@@ -10,22 +10,14 @@ use std::path::PathBuf;
 fn main() {
     let manifest = PathBuf::from(env::var("CARGO_MANIFEST_DIR").unwrap());
     let dir = manifest.join("../../upstream/pdfminer.six/pdfminer/cmap");
-    let dir = dir.canonicalize().unwrap_or_else(|_| {
-        panic!(
-            "{} is missing: run `git submodule update --init`",
-            dir.display()
-        )
-    });
+    let dir = dir
+        .canonicalize()
+        .unwrap_or_else(|_| panic!("{} is missing: run `git submodule update --init`", dir.display()));
     println!("cargo:rerun-if-changed={}", dir.display());
 
     let mut names: Vec<String> = fs::read_dir(&dir)
         .unwrap()
-        .map(|e| {
-            e.unwrap()
-                .file_name()
-                .into_string()
-                .expect("cmap file names are UTF-8")
-        })
+        .map(|e| e.unwrap().file_name().into_string().expect("cmap file names are UTF-8"))
         .filter(|n| n.ends_with(".json.gz"))
         .collect();
     // Sorted by file name, for a binary search.
@@ -37,11 +29,7 @@ fn main() {
     for n in &names {
         let path = dir.join(n);
         println!("cargo:rerun-if-changed={}", path.display());
-        out.push_str(&format!(
-            "    ({:?}, include_bytes!({:?})),\n",
-            n,
-            path.display().to_string()
-        ));
+        out.push_str(&format!("    ({:?}, include_bytes!({:?})),\n", n, path.display().to_string()));
     }
     out.push_str("];\n");
     let dest = PathBuf::from(env::var("OUT_DIR").unwrap()).join("cmap_files.rs");
