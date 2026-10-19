@@ -3,6 +3,7 @@
 use std::rc::Rc;
 
 use crate::psparser::{LIT, PSLiteral};
+use crate::pyrt::value::Value;
 
 pub fn literal_device_gray() -> PSLiteral {
     LIT("DeviceGray")
@@ -26,17 +27,31 @@ pub fn literal_inline_device_cmyk() -> PSLiteral {
 
 /// `PDFColorSpace(name, ncomponents)`. Shared (`Rc`) because Python shares the instances of
 /// `PREDEFINED_COLORSPACE` and the resource color spaces between states.
-#[derive(Clone, Debug, PartialEq)]
+#[derive(Clone, Debug)]
 pub struct PDFColorSpace(pub Rc<PDFColorSpaceInner>);
 
-#[derive(Debug, PartialEq)]
+#[derive(Debug)]
 pub struct PDFColorSpaceInner {
     pub name: String,
-    pub ncomponents: i64,
+    /// Usually an int, but an `ICCBased` color space keeps its stream's `/N` as is (any object),
+    /// and `scn` pops that many operands.
+    pub ncomponents: Value,
+}
+
+/// Python compares color spaces by identity (no `__eq__`).
+impl PartialEq for PDFColorSpace {
+    fn eq(&self, other: &Self) -> bool {
+        Rc::ptr_eq(&self.0, &other.0)
+    }
 }
 
 impl PDFColorSpace {
     pub fn new(name: &str, ncomponents: i64) -> Self {
+        Self::new_value(name, Value::Int(ncomponents))
+    }
+
+    /// `PDFColorSpace(name, ncomponents)` with an untyped `ncomponents`.
+    pub fn new_value(name: &str, ncomponents: Value) -> Self {
         PDFColorSpace(Rc::new(PDFColorSpaceInner { name: name.to_string(), ncomponents }))
     }
 
@@ -44,12 +59,13 @@ impl PDFColorSpace {
         &self.0.name
     }
 
-    pub fn ncomponents(&self) -> i64 {
-        self.0.ncomponents
+    /// `cs.ncomponents` (the Python object).
+    pub fn ncomponents(&self) -> &Value {
+        &self.0.ncomponents
     }
 
     pub fn repr(&self) -> String {
-        format!("<PDFColorSpace: {}, ncomponents={}>", self.0.name, self.0.ncomponents)
+        format!("<PDFColorSpace: {}, ncomponents={}>", self.0.name, self.0.ncomponents.repr())
     }
 }
 

@@ -30,14 +30,31 @@ pub fn make_compat_bytes(in_str: &str) -> Vec<u8> {
     in_str.as_bytes().to_vec()
 }
 
-/// `make_compat_str(o)` for `bytes`: Python guesses the encoding with charset_normalizer. The
-/// port decodes UTF-8 and otherwise returns `str(o)` (recorded divergence: see
-/// docs/DIVERGENCES.md; pdfminer only reaches this for font names that are not `str`).
+/// `make_compat_str(o)` for `bytes`: Python guesses the encoding with charset_normalizer, a
+/// heuristic the port does not reproduce (DIVERGE(charset-normalizer)). The port follows it
+/// where it is predictable: text with a byte order mark (PDF text strings are UTF-16BE with a
+/// BOM, e.g. tag properties) is decoded without the mark, as charset_normalizer does for nearly
+/// all such text (all of 18,000 ASCII samples but a few long ones); otherwise UTF-8, and
+/// `str(o)` for what is not UTF-8.
 pub fn make_compat_str_bytes(o: &[u8]) -> String {
-    match std::str::from_utf8(o) {
-        Ok(s) => s.to_string(),
-        Err(_) => crate::pyrt::fmt::bytes_repr(o),
-    }
+    let utf16 = |rest: &[u8], be: bool| -> Option<String> {
+        if !rest.len().is_multiple_of(2) {
+            return None;
+        }
+        let units =
+            rest.as_chunks::<2>().0.iter().map(|&c| if be { u16::from_be_bytes(c) } else { u16::from_le_bytes(c) });
+        char::decode_utf16(units).collect::<Result<String, _>>().ok()
+    };
+    let decoded = if let Some(rest) = o.strip_prefix(b"\xfe\xff") {
+        utf16(rest, true)
+    } else if let Some(rest) = o.strip_prefix(b"\xff\xfe") {
+        utf16(rest, false)
+    } else if let Some(rest) = o.strip_prefix(b"\xef\xbb\xbf") {
+        std::str::from_utf8(rest).ok().map(str::to_string)
+    } else {
+        std::str::from_utf8(o).ok().map(str::to_string)
+    };
+    decoded.unwrap_or_else(|| crate::pyrt::fmt::bytes_repr(o))
 }
 
 /// `shorten_str(s, size)`.
@@ -197,11 +214,8 @@ pub fn apply_png_predictor(
             4 => {
                 for (j, &paeth_x) in line_encoded.iter().enumerate() {
                     let j = j as i64;
-                    let (raw_x_bpp, prior_x_bpp) = if j - bpp < 0 {
-                        (0, 0)
-                    } else {
-                        (at(&raw, j - bpp)?, at(&line_above, j - bpp)?)
-                    };
+                    let (raw_x_bpp, prior_x_bpp) =
+                        if j - bpp < 0 { (0, 0) } else { (at(&raw, j - bpp)?, at(&line_above, j - bpp)?) };
                     let prior_x = at(&line_above, j)?;
                     let paeth = paeth_predictor(raw_x_bpp, prior_x, prior_x_bpp);
                     let raw_x = (paeth_x as i64 + paeth) & 255;
@@ -209,10 +223,7 @@ pub fn apply_png_predictor(
                 }
             }
             _ => {
-                return Err(PyErr::new(
-                    ExcKind::PDFValueError,
-                    format!("Unsupported predictor value: {filter_type}"),
-                ));
+                return Err(PyErr::new(ExcKind::PDFValueError, format!("Unsupported predictor value: {filter_type}")));
             }
         }
         buf.extend(raw.iter().map(|&v| v as u8));
@@ -469,15 +480,7 @@ pub fn bbox2str(bbox: Rect) -> String {
 /// `matrix2str(m)`.
 pub fn matrix2str(m: Matrix) -> String {
     let (a, b, c, d, e, f) = m;
-    format!(
-        "[{},{},{},{}, ({},{})]",
-        fixed(a, 2),
-        fixed(b, 2),
-        fixed(c, 2),
-        fixed(d, 2),
-        fixed(e, 2),
-        fixed(f, 2)
-    )
+    format!("[{},{},{},{}, ({},{})]", fixed(a, 2), fixed(b, 2), fixed(c, 2), fixed(d, 2), fixed(e, 2), fixed(f, 2))
 }
 
 const ROMAN_ONES: [&str; 4] = ["i", "x", "c", "m"];
