@@ -68,11 +68,15 @@ pub enum ExcKind {
     PDFTextExtractionNotAllowed,
     // cmapdb.py
     CMapError,
+    /// `CMapDB.CMapNotFound`
+    CMapNotFound,
     // lzw.py
     CorruptDataError,
     // pdffont.py
     PDFFontError,
     PDFUnicodeNotDefined,
+    /// `TrueTypeFont.CMapNotFound`
+    TTFCMapNotFound,
     // pdfinterp.py
     PDFResourceError,
     PDFInterpreterError,
@@ -114,6 +118,8 @@ impl ExcKind {
             }
             PDFPasswordIncorrect | PDFTextExtractionNotAllowed => &[PDFEncryptionError],
             CMapError => &[PDFException],
+            CMapNotFound => &[CMapError],
+            TTFCMapNotFound => &[PDFException],
             CorruptDataError => &[PDFException],
             PDFFontError => &[PDFException],
             PDFUnicodeNotDefined => &[PDFFontError],
@@ -137,6 +143,7 @@ impl ExcKind {
             CCITTInvalidData => "InvalidData",
             CCITTByteSkip => "ByteSkip",
             CCITTEOFB => "EOFB",
+            CMapNotFound | TTFCMapNotFound => "CMapNotFound",
             other => other.debug_name(),
         }
     }
@@ -154,7 +161,7 @@ impl ExcKind {
             PDFValueError, PDFObjectNotFound, PDFNotImplementedError, PDFKeyError, PDFEOFError,
             PDFIOError, PDFSyntaxError, PDFNoValidXRef, PDFNoOutlines, PDFNoPageLabels,
             PDFDestinationNotFound, PDFEncryptionError, PDFPasswordIncorrect,
-            PDFTextExtractionNotAllowed, CMapError, CorruptDataError, PDFFontError,
+            PDFTextExtractionNotAllowed, CMapError, CMapNotFound, TTFCMapNotFound, CorruptDataError, PDFFontError,
             PDFUnicodeNotDefined, PDFResourceError, PDFInterpreterError, CCITTInvalidData,
             CCITTByteSkip, CCITTEOFB,
         )

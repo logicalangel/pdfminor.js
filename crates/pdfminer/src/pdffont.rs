@@ -727,16 +727,14 @@ impl CFFFont {
     }
 }
 
-/// `TrueTypeFont.CMapNotFound`, a `PDFException` subclass. It is the only `PDFException`
-/// `create_unicode_map` can raise, so it is represented by the plain [`ExcKind::PDFException`]
-/// and recognised by [`is_ttf_cmap_not_found`]; it is always caught.
+/// `TrueTypeFont.CMapNotFound()`.
 pub fn ttf_cmap_not_found() -> PyErr {
-    PyErr::new(ExcKind::PDFException, "")
+    PyErr::new(ExcKind::TTFCMapNotFound, "")
 }
 
 /// `isinstance(e, TrueTypeFont.CMapNotFound)` for an error of `create_unicode_map`.
 pub fn is_ttf_cmap_not_found(e: &PyErr) -> bool {
-    e.kind == ExcKind::PDFException
+    e.is(ExcKind::TTFCMapNotFound)
 }
 
 /// `TrueTypeFont`.

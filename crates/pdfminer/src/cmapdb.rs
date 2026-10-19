@@ -38,16 +38,14 @@ mod data {
 
 /// `CMapError`.
 ///
-/// `CMapDB.CMapNotFound` is the only `CMapError` pdfminer raises, so it is represented by
-/// [`ExcKind::CMapError`] itself: `except CMapDB.CMapNotFound` is `e.is(ExcKind::CMapError)`
-/// (see [`is_cmap_not_found`]). It never escapes pdfminer in non-strict mode.
+/// `CMapDB.CMapNotFound(name)`.
 pub fn cmap_not_found(name: &str) -> PyErr {
-    PyErr::new(ExcKind::CMapError, str_repr(name))
+    PyErr::new(ExcKind::CMapNotFound, str_repr(name))
 }
 
 /// `isinstance(e, CMapDB.CMapNotFound)`.
 pub fn is_cmap_not_found(e: &PyErr) -> bool {
-    e.is(ExcKind::CMapError)
+    e.is(ExcKind::CMapNotFound)
 }
 
 /// A key of a `code2cid` dict: an int, or a string key `int()` could not convert.
