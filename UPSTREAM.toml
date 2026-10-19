@@ -277,19 +277,19 @@ synced_blob = "6af42fd4f05f7b46facb07e72af53c999f920164"
 
 [[file]]
 python = "tests/test_pdfminer_ccitt.py"
-rust = "crates/pdfminer/tests/test_pdfminer_ccitt.rs"
+rust = "crates/pdfminer/src/ccitt.rs (mod tests)"
 how = "test"
 synced_blob = "685b043f7b5fe85bb43d445b14ff3a6b987694c7"
 
 [[file]]
 python = "tests/test_pdfminer_crypto.py"
-rust = "crates/pdfminer/tests/test_pdfminer_crypto.rs"
+rust = "crates/pdfminer/src/{ascii85,lzw,runlength,arcfour}.rs (mod tests)"
 how = "test"
 synced_blob = "e7acf4ddc64d840a696d30216dd80f0f9412ef5b"
 
 [[file]]
 python = "tests/test_pdfminer_psparser.py"
-rust = "crates/pdfminer/tests/test_pdfminer_psparser.rs"
+rust = "crates/pdfminer/src/psparser.rs (mod tests)"
 how = "test"
 synced_blob = "3543de92c95f1f8685cfd4c2e6c3b2d12a2f1cac"
 
