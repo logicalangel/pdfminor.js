@@ -1,0 +1,54 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+      - uses: dtolnay/rust-toolchain@master
+        with:
+          toolchain: "1.99.0"
+          components: rustfmt, clippy
+      - uses: Swatinem/rust-cache@v2
+      - uses: astral-sh/setup-uv@v6
+      - run: cargo fmt --all --check
+      - run: cargo clippy --workspace --all-targets -- -D warnings
+      - run: cargo test --workspace
+      - run: uv sync
+      - run: uv run python tools/upstream.py status
+      - name: Python vs Rust on the corpus
+        run: uv run python tools/difftest.py
+      - name: Python vs Rust on mutated files
+        run: |
+          uv run python tools/fuzz_corpus.py --count 300 --seed ${{ github.run_number }}
+          uv run python tools/difftest.py --no-build --corpus tests/out/fuzz -k layout-default
+
+  node:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+      - uses: dtolnay/rust-toolchain@master
+        with:
+          toolchain: "1.99.0"
+      - uses: Swatinem/rust-cache@v2
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm ci
+        working-directory: crates/pdfminer-node
+      - run: npm run build
+        working-directory: crates/pdfminer-node
+      - run: npm test
+        working-directory: crates/pdfminer-node
