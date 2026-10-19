@@ -1728,10 +1728,15 @@ impl PDFDocument {
                     self.depth.set(depth);
                     let mut obj = obj?;
                     if let Some(decipher) = self.decipher() {
-                        // `struct.pack("<L", objid)`: object ids reaching here are ints.
-                        let id = objid
-                            .as_int()
-                            .ok_or_else(|| PyErr::new(ExcKind::StructError, "required argument is not an integer"))?;
+                        // An id beyond i64 saturates: decipher only uses it in `struct.pack("<L",
+                        // objid)`, which rejects both alike (and only for strings in the object).
+                        let id = objid.as_int().unwrap_or_else(|| {
+                            if objid.as_bigint().is_some_and(|b| num_traits::Signed::is_negative(&b)) {
+                                i64::MIN
+                            } else {
+                                i64::MAX
+                            }
+                        });
                         obj = decipher_all(&*decipher, id, genno, &obj)?;
                     }
                     obj

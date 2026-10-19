@@ -110,12 +110,19 @@ fn range_arg(v: &Value) -> PyResult<()> {
     Err(PyErr::new(ExcKind::TypeError, format!("'{}' object cannot be interpreted as an integer", v.type_name())))
 }
 
-/// `for i in range(start, stop): f(i)` with the keys Python's dict gets. A range longer than i64
-/// can count is one Python fills until memory runs out: `MemoryError`.
+/// The longest `/W` or `/W2` range filled in. DIVERGE(width-range-alloc): pdfminer.six fills any
+/// range until memory runs out (about 100 bytes per entry); the port raises `MemoryError` for a
+/// longer range at once instead of allocating gigabytes.
+const MAX_WIDTH_RANGE: i128 = 1 << 24;
+
+/// `for i in range(start, stop): f(i)` with the keys Python's dict gets.
 fn for_range(start: &Value, stop: &Value, mut f: impl FnMut(WidthKey)) -> PyResult<()> {
     range_arg(start)?;
     range_arg(stop)?;
     if let (Some(a), Some(b)) = (start.as_int(), stop.as_int()) {
+        if b as i128 - a as i128 > MAX_WIDTH_RANGE {
+            return Err(PyErr::new(ExcKind::MemoryError, ""));
+        }
         for i in a..b {
             f(WidthKey::Int(i));
         }
@@ -125,7 +132,7 @@ fn for_range(start: &Value, stop: &Value, mut f: impl FnMut(WidthKey)) -> PyResu
     if b <= a {
         return Ok(());
     }
-    let Some(n) = num_traits::ToPrimitive::to_i64(&(&b - &a)) else {
+    let Some(n) = num_traits::ToPrimitive::to_i64(&(&b - &a)).filter(|&n| n as i128 <= MAX_WIDTH_RANGE) else {
         return Err(PyErr::new(ExcKind::MemoryError, ""));
     };
     for k in 0..n {
