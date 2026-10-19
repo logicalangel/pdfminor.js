@@ -11,7 +11,7 @@ use crate::psparser::NameType;
 use crate::pyrt::ctype::py_isspace;
 use crate::pyrt::error::{ExcKind, PyErr, PyResult};
 use crate::pyrt::pystr::PyStr;
-use crate::pyrt::value::Value;
+use crate::pyrt::value::{Value, py_add};
 
 /// `HEXADECIMAL = re.compile(r"[0-9a-fA-F]+")`: `HEXADECIMAL.match(s)` succeeds when the first
 /// character is an ASCII hex digit.
@@ -310,10 +310,13 @@ impl EncodingDB {
                 if x.is_int() {
                     cid = x.clone();
                 } else if let Value::Literal(lit) = x {
-                    let key = cid.as_int().expect("cid is an int");
+                    // A cid beyond i64 is a key no lookup can reach.
+                    let key = cid.as_int();
                     match name2unicode_arg(NameArg::from(&lit.name)) {
                         Ok(u) => {
-                            copy.insert(key, u);
+                            if let Some(key) = key {
+                                copy.insert(key, u);
+                            }
                         }
                         // `except (KeyError, ValueError)`: the only classes name2unicode raises.
                         Err(e) => {
@@ -322,7 +325,7 @@ impl EncodingDB {
                         }
                     }
                     // `cid += 1` (a bool becomes an int)
-                    cid = Value::Int(key.wrapping_add(1));
+                    cid = py_add(&cid, &Value::Int(1)).expect("int + 1");
                 }
             }
             cid2unicode = Rc::new(copy);

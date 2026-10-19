@@ -28,7 +28,7 @@ jobs:
       - name: Python vs Rust on mutated files
         run: |
           uv run python tools/fuzz_corpus.py --count 300 --seed ${{ github.run_number }}
-          uv run python tools/difftest.py --no-build --corpus tests/out/fuzz -k layout-default
+          uv run python tools/difftest.py --no-build --corpus tests/out/fuzz -k layout-default --python-memory 2048
 
   node:
     runs-on: ${{ matrix.os }}

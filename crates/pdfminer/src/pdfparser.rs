@@ -4,7 +4,7 @@ use std::rc::{Rc, Weak};
 
 use log::debug;
 
-use crate::casting::safe_int;
+use crate::casting::safe_int_obj;
 use crate::pdfdocument::PDFDocument;
 use crate::pdftypes::{PDFObjRef, PDFStream, dict_value, int_value};
 use crate::psparser::{PSKeyword, PSStackParser, PSStackParserImpl};
@@ -51,9 +51,9 @@ impl PDFParser {
             // reference to indirect object
             if self.ps.curstack.len() >= 2 {
                 let popped = self.ps.pop(2);
-                let object_id = safe_int(&popped[0].1)?;
+                let object_id = safe_int_obj(&popped[0].1)?;
                 if let Some(object_id) = object_id {
-                    let obj = PDFObjRef::new(self.doc.clone(), object_id)?;
+                    let obj = PDFObjRef::new_value(self.doc.clone(), object_id)?;
                     self.ps.push((pos, Value::Ref(obj)));
                 }
             }
@@ -201,9 +201,9 @@ impl PSStackParserImpl for PDFStreamParser {
                     format!("not enough values to unpack (expected 2, got {})", popped.len()),
                 ));
             }
-            let object_id = safe_int(&popped[0].1)?;
+            let object_id = safe_int_obj(&popped[0].1)?;
             if let Some(object_id) = object_id {
-                let obj = PDFObjRef::new(self.p.doc.clone(), object_id)?;
+                let obj = PDFObjRef::new_value(self.p.doc.clone(), object_id)?;
                 self.p.ps.push((pos, Value::Ref(obj)));
             }
             return Ok(());

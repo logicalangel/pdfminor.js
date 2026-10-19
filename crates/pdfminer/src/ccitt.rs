@@ -804,6 +804,10 @@ fn repeat_count(v: &Value) -> PyResult<i64> {
     match v {
         Value::Int(i) => Ok(*i),
         Value::Bool(b) => Ok(*b as i64),
+        // `[1] * n` of a big n: `OverflowError`, or `[]` when negative (DIVERGE(bigint): the
+        // width is then i64::MIN, not Python's value; only its sign is used).
+        Value::BigInt(b) if num_traits::Signed::is_negative(&**b) => Ok(i64::MIN),
+        Value::BigInt(_) => Err(PyErr::new(ExcKind::OverflowError, "cannot fit 'int' into an index-sized integer")),
         other => Err(PyErr::new(
             ExcKind::TypeError,
             format!("can't multiply sequence by non-int of type '{}'", other.type_name()),

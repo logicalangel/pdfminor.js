@@ -34,6 +34,8 @@ pub enum Node {
     Null,
     Bool(bool),
     Int(i64),
+    /// An int beyond i64 (`Value::BigInt`).
+    BigInt(num_bigint::BigInt),
     Float(f64),
     Str(PyStr),
     List(Vec<Node>),
@@ -56,6 +58,9 @@ impl Node {
             Node::Null => out.push_str("null"),
             Node::Bool(b) => out.push_str(if *b { "true" } else { "false" }),
             Node::Int(i) => {
+                let _ = write!(out, "{i}");
+            }
+            Node::BigInt(i) => {
                 let _ = write!(out, "{i}");
             }
             Node::Float(x) => json_float(*x, out),
@@ -135,6 +140,7 @@ pub fn enc(v: &Value) -> Node {
         Value::None => Node::Null,
         Value::Bool(b) => Node::Bool(*b),
         Value::Int(i) => Node::Int(*i),
+        Value::BigInt(i) => Node::BigInt((**i).clone()),
         Value::Float(f) => Node::Float(*f),
         Value::Str(s) => Node::str(s),
         Value::Bytes(b) => bytes_node(b),
@@ -152,7 +158,7 @@ pub fn enc(v: &Value) -> Node {
             "dict",
             Node::List(d.borrow().iter().map(|(k, x)| Node::List(vec![Node::str(k), enc(x)])).collect()),
         )]),
-        Value::Ref(r) => Node::Object(vec![("ref", Node::Int(r.objid()))]),
+        Value::Ref(r) => Node::Object(vec![("ref", enc(&r.objid_value()))]),
         Value::Stream(s) => Node::Object(vec![("stream", opt_int(s.objid.get()))]),
     }
 }
