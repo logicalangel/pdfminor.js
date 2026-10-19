@@ -1,0 +1,63 @@
+%PDF-1.7
+%‚„œ”
+1 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Times-Roman >>
+endobj
+2 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier /Encoding /MacRomanEncoding >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Symbol >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /TrueType /BaseFont /Arial,Bold >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Unknown-Font /FirstChar 32 /Widths [250 300] >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding << /BaseEncoding /PDFDocEncoding /Differences [128 /Euro /bullet /notaglyph 200 /space] >> >>
+endobj
+7 0 obj
+<<  /Length 384 >>
+stream
+BT /F0 11 Tf 72 700 Td (Hello \200\201\202\310\377 \(x\)) Tj ET
+BT /F1 11 Tf 72 670 Td (Hello \200\201\202\310\377 \(x\)) Tj ET
+BT /F2 11 Tf 72 640 Td (Hello \200\201\202\310\377 \(x\)) Tj ET
+BT /F3 11 Tf 72 610 Td (Hello \200\201\202\310\377 \(x\)) Tj ET
+BT /F4 11 Tf 72 580 Td (Hello \200\201\202\310\377 \(x\)) Tj ET
+BT /F5 11 Tf 72 550 Td (Hello \200\201\202\310\377 \(x\)) Tj ET
+
+endstream
+endobj
+8 0 obj
+<< /Font << /F0 1 0 R /F1 2 0 R /F2 3 0 R /F3 4 0 R /F4 5 0 R /F5 6 0 R >> >>
+endobj
+9 0 obj
+<< /Type /Page /Parent 10 0 R /MediaBox [0 0 612 792] /Resources 8 0 R /Contents [7 0 R]  >>
+endobj
+10 0 obj
+<< /Type /Pages /Kids [9 0 R] /Count 1 >>
+endobj
+11 0 obj
+<< /Type /Catalog /Pages 10 0 R >>
+endobj
+xref
+0 12
+0000000000 65535 f 
+0000000015 00000 n 
+0000000087 00000 n 
+0000000183 00000 n 
+0000000250 00000 n 
+0000000324 00000 n 
+0000000429 00000 n 
+0000000600 00000 n 
+0000001036 00000 n 
+0000001129 00000 n 
+0000001237 00000 n 
+0000001295 00000 n 
+trailer
+<< /Size 12 /Root 11 0 R >>
+startxref
+1346
+%%EOF

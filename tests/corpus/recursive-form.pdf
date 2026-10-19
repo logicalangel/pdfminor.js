@@ -1,0 +1,47 @@
+%PDF-1.7
+%‚„œ”
+1 0 obj
+<< /Type /XObject /Subtype /Form /BBox [0 0 10 10] /Resources << /XObject << /Me 1 0 R >> >> /Length 19 >>
+stream
+0 0 5 5 re f /Me Do
+endstream
+endobj
+2 0 obj
+<< /Type /XObject /Subtype /Form /BBox [0 0 10] /Matrix [1 0 (x) 1 0 0] /Length 12 >>
+stream
+0 0 5 5 re f
+endstream
+endobj
+3 0 obj
+<<  /Length 14 >>
+stream
+/Me Do /Bad Do
+endstream
+endobj
+4 0 obj
+<< /XObject << /Me 1 0 R /Bad 2 0 R >> >>
+endobj
+5 0 obj
+<< /Type /Page /Parent 6 0 R /MediaBox [0 0 612 792] /Resources 4 0 R /Contents [3 0 R]  >>
+endobj
+6 0 obj
+<< /Type /Pages /Kids [5 0 R] /Count 1 >>
+endobj
+7 0 obj
+<< /Type /Catalog /Pages 6 0 R >>
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000015 00000 n 
+0000000174 00000 n 
+0000000305 00000 n 
+0000000370 00000 n 
+0000000427 00000 n 
+0000000534 00000 n 
+0000000591 00000 n 
+trailer
+<< /Size 8 /Root 7 0 R >>
+startxref
+640
+%%EOF

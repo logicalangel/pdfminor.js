@@ -1,0 +1,46 @@
+%PDF-1.7
+%‚„œ”
+1 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+2 0 obj
+<<  /Length 573 >>
+stream
+BT /F1 12 Tf 72 700 Td (black) Tj ET
+1 0 0 rg BT /F1 12 Tf 72 680 Td (red then green) Tj ET 0 1 0 rg
+q 0 0 1 rg BT /F1 12 Tf 72 660 Td (blue in q) Tj ET 0.5 g Q
+BT /F1 12 Tf 72 640 Td (after Q) Tj ET 0 0 0 1 k
+q BT /F1 12 Tf 72 620 Td (before q copy) Tj ET q 1 1 0 rg Q Q
+/DeviceRGB cs 0.2 0.4 0.6 sc BT /F1 12 Tf 72 600 Td (sc) Tj ET
+/Pattern cs /P1 scn BT /F1 12 Tf 72 580 Td (pattern) Tj ET
+3 w 72 560 m 200 560 l S 0.25 0.5 0.75 RG 1 0 0 1 0 0 cm 72 540 m 200 540 l S
+[3 2] 1 d 72 520 m 200 520 l S 1 J 2 j 4 M /RI ri 0.5 i
+BT /F1 12 Tf 72 500 Td 3 Tr (invisible) Tj ET
+endstream
+endobj
+3 0 obj
+<< /Font << /F1 1 0 R >> >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 5 0 R /MediaBox [0 0 612 792] /Resources 3 0 R /Contents [2 0 R]  >>
+endobj
+5 0 obj
+<< /Type /Pages /Kids [4 0 R] /Count 1 >>
+endobj
+6 0 obj
+<< /Type /Catalog /Pages 5 0 R >>
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000015 00000 n 
+0000000112 00000 n 
+0000000737 00000 n 
+0000000780 00000 n 
+0000000887 00000 n 
+0000000944 00000 n 
+trailer
+<< /Size 7 /Root 6 0 R >>
+startxref
+993
+%%EOF

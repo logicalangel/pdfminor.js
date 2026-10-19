@@ -1,0 +1,45 @@
+%PDF-1.7
+%‚„œ”
+1 0 obj
+<< /Type /FontDescriptor /FontName /TestCID /Flags 4 /FontBBox [0 -200 1000 900] /Ascent 800 /Descent -200 /ItalicAngle 0 /CapHeight 700 /StemV 80 >>
+endobj
+2 0 obj
+<< /Type /Font /Subtype /CIDFontType2 /BaseFont /TestCID /CIDSystemInfo << /Registry (Adobe) /Ordering (Identity) /Supplement 0 >> /FontDescriptor 1 0 R /W [1 [500 600 700] 100 200 450]  >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type0 /BaseFont /TestCID /Encoding /Identity-H /DescendantFonts [2 0 R] /ToUnicode /Identity-H >>
+endobj
+4 0 obj
+<<  /Length 59 >>
+stream
+BT /F1 12 Tf 72 700 Td <D800DC000041DFFF0020D83DDE00> Tj ET
+endstream
+endobj
+5 0 obj
+<< /Font << /F1 3 0 R >> >>
+endobj
+6 0 obj
+<< /Type /Page /Parent 7 0 R /MediaBox [0 0 612 792] /Resources 5 0 R /Contents [4 0 R]  >>
+endobj
+7 0 obj
+<< /Type /Pages /Kids [6 0 R] /Count 1 >>
+endobj
+8 0 obj
+<< /Type /Catalog /Pages 7 0 R >>
+endobj
+xref
+0 9
+0000000000 65535 f 
+0000000015 00000 n 
+0000000180 00000 n 
+0000000385 00000 n 
+0000000523 00000 n 
+0000000633 00000 n 
+0000000676 00000 n 
+0000000783 00000 n 
+0000000840 00000 n 
+trailer
+<< /Size 9 /Root 8 0 R >>
+startxref
+889
+%%EOF

@@ -1,0 +1,49 @@
+%PDF-1.7
+%‚„œ”
+1 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+2 0 obj
+<<  /Length 780 >>
+stream
+BT /F1 12 Tf 72 700 Td (ok) Tj ET
+BT /X /Y Td (a) Tf /F1 (12) Tf 72 650 Td (string size) Tj ET
+BT /F1 12 Tf [1 2] 0 0 1 72 600 Tm (array matrix) Tj ET
+BT /F1 12 Tf 72 550 Td /Name Tc (literal Tc) Tj (x) Tw (string Tw) Tj ET
+BT /F1 12 Tf 72 500 Td 0 Tz (zero scaling) Tj -50 Tz (negative scaling) Tj ET
+BT /F1 0 Tf 72 450 Td (zero size) Tj /F1 -12 Tf (negative size) Tj ET
+BT /F1 12 Tf 72 400 Td [(A) /lit (B) -200 (C) [1] (D)] TJ ET
+BT /Missing 12 Tf 72 350 Td (missing font) Tj ET
+q Q Q Q BT /F1 12 Tf 72 300 Td (extra Q) Tj ET
+ET ET BT BT /F1 12 Tf 72 250 Td (nested BT) Tj ET
+/a /b /c d (x) 1 2 3 4 5 6 7 8 9 re (y) w /z g 1 2 rg (p) (q) (r) k
+BT /F1 12 Tf 72 200 Td 2 Tr (render 2) Tj 1 0 0 1 0 0 Tm T* (T*) Tj ' " ET
+BT /F1 12 Tf 72 150 Td 10 20 (a) " (b) ' 5 TL T* (c) Tj ET
+endstream
+endobj
+3 0 obj
+<< /Font << /F1 1 0 R >> >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 5 0 R /MediaBox [0 0 612 792] /Resources 3 0 R /Contents [2 0 R]  >>
+endobj
+5 0 obj
+<< /Type /Pages /Kids [4 0 R] /Count 1 >>
+endobj
+6 0 obj
+<< /Type /Catalog /Pages 5 0 R >>
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000015 00000 n 
+0000000112 00000 n 
+0000000944 00000 n 
+0000000987 00000 n 
+0000001094 00000 n 
+0000001151 00000 n 
+trailer
+<< /Size 7 /Root 6 0 R >>
+startxref
+1200
+%%EOF
