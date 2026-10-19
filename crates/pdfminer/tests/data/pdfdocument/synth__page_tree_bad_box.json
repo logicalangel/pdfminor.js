@@ -1,0 +1,306 @@
+{
+"path": "synth/page_tree_bad_box.pdf",
+"runs": [
+{
+"password": "",
+"variant": "orig",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRef: offsets=dict_keys([1, 2, 3, 4])>",
+"trailer": "{'Size': 5, 'Root': <PDFObjRef:1>}",
+"ids": [
+[
+"1",
+"(None, 9, 0)"
+],
+[
+"2",
+"(None, 58, 0)"
+],
+[
+"3",
+"(None, 121, 0)"
+],
+[
+"4",
+"(None, 192, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /'Catalog', 'Pages': <PDFObjRef:2>}",
+"info": "[]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"1",
+"{'Type': /'Catalog', 'Pages': <PDFObjRef:2>}",
+null
+],
+[
+"2",
+"{'Type': /'Pages', 'Kids': [<PDFObjRef:3>, <PDFObjRef:4>], 'Count': 2}",
+null
+],
+[
+"3",
+"{'Type': /'Page', 'Parent': <PDFObjRef:2>, 'MediaBox': [0, 0, 612, 792]}",
+null
+],
+[
+"4",
+"{'Type': /'Page', 'MediaBox': [0, 0, /'A', 1]}",
+null
+]
+],
+"pages": [
+{
+"pageid": "3",
+"label": null,
+"mediabox": "(0.0, 0.0, 612.0, 792.0)",
+"cropbox": "(0.0, 0.0, 612.0, 792.0)",
+"rotate": 0,
+"resources": [],
+"contents": [],
+"attrs": [
+"Type",
+"Parent",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={}, MediaBox=(0.0, 0.0, 612.0, 792.0)>"
+},
+"!TypeError"
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "half",
+"open": "!PSEOF"
+},
+{
+"password": "",
+"variant": "3q",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "noxref",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "shifted",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRefFallback: offsets=dict_keys([1, 2, 3, 4])>",
+"trailer": "{'Size': 5, 'Root': <PDFObjRef:1>}",
+"ids": [
+[
+"1",
+"(None, 15, 0)"
+],
+[
+"2",
+"(None, 64, 0)"
+],
+[
+"3",
+"(None, 127, 0)"
+],
+[
+"4",
+"(None, 198, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /'Catalog', 'Pages': <PDFObjRef:2>}",
+"info": "[]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"1",
+"{'Type': /'Catalog', 'Pages': <PDFObjRef:2>}",
+null
+],
+[
+"2",
+"{'Type': /'Pages', 'Kids': [<PDFObjRef:3>, <PDFObjRef:4>], 'Count': 2}",
+null
+],
+[
+"3",
+"{'Type': /'Page', 'Parent': <PDFObjRef:2>, 'MediaBox': [0, 0, 612, 792]}",
+null
+],
+[
+"4",
+"{'Type': /'Page', 'MediaBox': [0, 0, /'A', 1]}",
+null
+]
+],
+"pages": [
+{
+"pageid": "3",
+"label": null,
+"mediabox": "(0.0, 0.0, 612.0, 792.0)",
+"cropbox": "(0.0, 0.0, 612.0, 792.0)",
+"rotate": 0,
+"resources": [],
+"contents": [],
+"attrs": [
+"Type",
+"Parent",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={}, MediaBox=(0.0, 0.0, 612.0, 792.0)>"
+},
+"!TypeError"
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "tail",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "corrupt0",
+"open": "!PSSyntaxError"
+},
+{
+"password": "",
+"variant": "corrupt1",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "corrupt2",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "corrupt3",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRefFallback: offsets=dict_keys([1, 2, 3, 4])>",
+"trailer": "{'Size': 5, 'Root': <PDFObjRef:1>}",
+"ids": [
+[
+"1",
+"(None, 9, 0)"
+],
+[
+"2",
+"(None, 58, 0)"
+],
+[
+"3",
+"(None, 121, 0)"
+],
+[
+"4",
+"(None, 192, 0)"
+]
+]
+}
+],
+"catalog": "{}",
+"info": "[]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"1",
+"/'Typer'",
+null
+],
+[
+"2",
+"{'Type': /'Pages', 'Kids': [<PDFObjRef:3>, <PDFObjRef:4>], 'Count': 2}",
+null
+],
+[
+"3",
+"{'Type': /'Page', 'Parent': <PDFObjRef:2>, 'MediaBox': [0, 0, 612, 792]}",
+null
+],
+[
+"4",
+"/'PageP'",
+null
+]
+],
+"pages": [
+{
+"pageid": "3",
+"label": null,
+"mediabox": "(0.0, 0.0, 612.0, 792.0)",
+"cropbox": "(0.0, 0.0, 612.0, 792.0)",
+"rotate": 0,
+"resources": [],
+"contents": [],
+"attrs": [
+"Type",
+"Parent",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={}, MediaBox=(0.0, 0.0, 612.0, 792.0)>"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+}
+]
+}

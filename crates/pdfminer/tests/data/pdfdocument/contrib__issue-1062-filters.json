@@ -1,0 +1,2251 @@
+{
+"path": "contrib/issue-1062-filters.pdf",
+"runs": [
+{
+"password": "",
+"variant": "orig",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRef: offsets=dict_keys([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32])>",
+"trailer": "{'Size': 33, 'Root': <PDFObjRef:32>, 'Info': <PDFObjRef:31>}",
+"ids": [
+[
+"1",
+"(None, 34844, 0)"
+],
+[
+"2",
+"(None, 49, 0)"
+],
+[
+"3",
+"(None, 373, 0)"
+],
+[
+"4",
+"(None, 351, 0)"
+],
+[
+"5",
+"(None, 408, 0)"
+],
+[
+"6",
+"(None, 12773, 0)"
+],
+[
+"7",
+"(None, 12749, 0)"
+],
+[
+"8",
+"(None, 12875, 0)"
+],
+[
+"9",
+"(None, 13060, 0)"
+],
+[
+"10",
+"(None, 13095, 0)"
+],
+[
+"11",
+"(None, 13811, 0)"
+],
+[
+"12",
+"(None, 14002, 0)"
+],
+[
+"13",
+"(None, 14726, 0)"
+],
+[
+"14",
+"(None, 14908, 0)"
+],
+[
+"15",
+"(None, 15629, 0)"
+],
+[
+"16",
+"(None, 15829, 0)"
+],
+[
+"17",
+"(None, 16493, 0)"
+],
+[
+"18",
+"(None, 18872, 0)"
+],
+[
+"19",
+"(None, 18848, 0)"
+],
+[
+"20",
+"(None, 18908, 0)"
+],
+[
+"21",
+"(None, 19161, 0)"
+],
+[
+"22",
+"(None, 19489, 0)"
+],
+[
+"23",
+"(None, 19466, 0)"
+],
+[
+"24",
+"(None, 19525, 0)"
+],
+[
+"25",
+"(None, 31895, 0)"
+],
+[
+"26",
+"(None, 31870, 0)"
+],
+[
+"27",
+"(None, 31931, 0)"
+],
+[
+"28",
+"(None, 33805, 0)"
+],
+[
+"29",
+"(None, 33781, 0)"
+],
+[
+"30",
+"(None, 33841, 0)"
+],
+[
+"31",
+"(None, 34081, 0)"
+],
+[
+"32",
+"(None, 34922, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /'Catalog', 'Pages': <PDFObjRef:1>, 'PageMode': /'UseNone'}",
+"info": "[{'Author': b'SAPBATCH ', 'CreationDate': b'D:20170303000600', 'Creator': b'Form ZLB_BIL_INVOICE NL', 'Producer': b'SAP NetWeaver 740 '}]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"1",
+"{'Type': /'Pages', 'Kids': [<PDFObjRef:20>, <PDFObjRef:30>], 'Count': 2}",
+null
+],
+[
+"2",
+"<PDFStream(2): raw=226, {'Filter': <PDFObjRef:3>, 'Length': <PDFObjRef:4>}>",
+"9c5c3309d1218c901ea56ad5beed049da7bea3c6a928f06f825174dd54a9f6f3"
+],
+[
+"3",
+"[/'FlateDecode']",
+null
+],
+[
+"4",
+"226",
+null
+],
+[
+"5",
+"<PDFStream(5): raw=12126, {'Type': /'XObject', 'Subtype': /'Image', 'Filter': <PDFObjRef:6>, 'Length': <PDFObjRef:7>, 'Name': /'00005', 'Width': 650, 'Height': 413, 'BitsPerComponent': 8, 'ColorSpace': [/'Indexed', /'DeviceRGB', 255, <PDFObjRef:2>]}>",
+"781cb3f0dc2f62dd0df2d8f46cf8abd7436146e94dc63ed419f584241b82de30"
+],
+[
+"6",
+"[/'FlateDecode']",
+null
+],
+[
+"7",
+"12126",
+null
+],
+[
+"8",
+"{'Type': /'FontDescriptor', 'Ascent': 718, 'CapHeight': 718, 'Descent': -207, 'Flags': 32, 'FontBBox': [-166, -225, 1000, 931], 'FontName': /'Helvetica', 'ItalicAngle': 0, 'StemV': 105}",
+null
+],
+[
+"9",
+"/'WinAnsiEncoding'",
+null
+],
+[
+"10",
+"sha256:20d60e0607aa0d918f63653998939242fa3bb2bd3c6675ffb1f487969713629c",
+null
+],
+[
+"11",
+"{'Type': /'FontDescriptor', 'Ascent': 718, 'CapHeight': 718, 'Descent': -207, 'Flags': 32, 'FontBBox': [-170, -228, 1003, 962], 'FontName': /'Helvetica-Bold', 'ItalicAngle': 0, 'StemV': 105}",
+null
+],
+[
+"12",
+"sha256:ce2214719d8f8f174d9c2ac022ac4fc269a4f4348603a5df9d7d29b71da5f9b4",
+null
+],
+[
+"13",
+"{'Type': /'FontDescriptor', 'Ascent': 629, 'CapHeight': 562, 'Descent': -157, 'Flags': 35, 'FontBBox': [-23, -250, 715, 805], 'FontName': /'Courier', 'ItalicAngle': 0, 'StemV': 105}",
+null
+],
+[
+"14",
+"sha256:18cacba1ae24aeb1ee6b2650b2640972d36452bc1fa10d571f4446f57e16c844",
+null
+],
+[
+"15",
+"{'Type': /'FontDescriptor', 'Ascent': 718, 'CapHeight': 718, 'Descent': -207, 'Flags': 96, 'FontBBox': [-174, -228, 1114, 962], 'FontName': /'Helvetica-BoldOblique', 'ItalicAngle': -12, 'StemV': 105}",
+null
+],
+[
+"16",
+"sha256:dee27a6c14a55c4d42ccbbe73405bec182700a733e592b1278c986bb5241b651",
+null
+],
+[
+"17",
+"<PDFStream(17): raw=2276, {'Filter': <PDFObjRef:18>, 'Length': <PDFObjRef:19>}>",
+"5785be211c5fde661913a8d963907a5c0400ff9ecb8c02d394b4584214315e04"
+],
+[
+"18",
+"[/'FlateDecode']",
+null
+],
+[
+"19",
+"2276",
+null
+],
+[
+"20",
+"{'Type': /'Page', 'MediaBox': [0, 0, 595, 842], 'Parent': <PDFObjRef:1>, 'Resources': {'ProcSet': [/'PDF', /'Text', /'ImageI'], 'Font': {'C001': <PDFObjRef:10>, 'C002': <PDFObjRef:12>, 'C003': <PDFObjRef:14>, 'C004': <PDFObjRef:16>}, 'XObject': {'00005': <PDFObjRef:5>}}, 'Contents': <PDFObjRef:17>}",
+null
+],
+[
+"21",
+"<PDFStream(21): raw=226, {'Filter': <PDFObjRef:22>, 'Length': <PDFObjRef:23>}>",
+"9c5c3309d1218c901ea56ad5beed049da7bea3c6a928f06f825174dd54a9f6f3"
+],
+[
+"22",
+"[/'FlateDecode']",
+null
+],
+[
+"23",
+"226",
+null
+],
+[
+"24",
+"<PDFStream(24): raw=12126, {'Type': /'XObject', 'Subtype': /'Image', 'Filter': <PDFObjRef:25>, 'Length': <PDFObjRef:26>, 'Name': /'00024', 'Width': 650, 'Height': 413, 'BitsPerComponent': 8, 'ColorSpace': [/'Indexed', /'DeviceRGB', 255, <PDFObjRef:21>]}>",
+"781cb3f0dc2f62dd0df2d8f46cf8abd7436146e94dc63ed419f584241b82de30"
+],
+[
+"25",
+"[/'FlateDecode']",
+null
+],
+[
+"26",
+"12126",
+null
+],
+[
+"27",
+"<PDFStream(27): raw=1771, {'Filter': <PDFObjRef:28>, 'Length': <PDFObjRef:29>}>",
+"477c69fcdbc47eebe479752e61673d8c28af4c0e6d397dbb4789fe1d19fa6bcf"
+],
+[
+"28",
+"[/'FlateDecode']",
+null
+],
+[
+"29",
+"1771",
+null
+],
+[
+"30",
+"{'Type': /'Page', 'MediaBox': [0, 0, 595, 842], 'Parent': <PDFObjRef:1>, 'Resources': {'ProcSet': [/'PDF', /'Text', /'ImageI'], 'Font': {'C001': <PDFObjRef:10>, 'C002': <PDFObjRef:12>, 'C003': <PDFObjRef:14>}, 'XObject': {'00024': <PDFObjRef:24>}}, 'Contents': <PDFObjRef:27>}",
+null
+],
+[
+"31",
+"{'Author': b'SAPBATCH ', 'CreationDate': b'D:20170303000600', 'Creator': b'Form ZLB_BIL_INVOICE NL', 'Producer': b'SAP NetWeaver 740 '}",
+null
+],
+[
+"32",
+"{'Type': /'Catalog', 'Pages': <PDFObjRef:1>, 'PageMode': /'UseNone'}",
+null
+]
+],
+"pages": [
+{
+"pageid": "20",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [
+"Font",
+"ProcSet",
+"XObject"
+],
+"contents": [
+"<PDFStream(17): len=12187, {'Filter': <PDFObjRef:18>, 'Length': <PDFObjRef:19>}>"
+],
+"attrs": [
+"Type",
+"MediaBox",
+"Parent",
+"Resources",
+"Contents"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageI'], 'Font': {'C001': <PDFObjRef:10>, 'C002': <PDFObjRef:12>, 'C003': <PDFObjRef:14>, 'C004': <PDFObjRef:16>}, 'XObject': {'00005': <PDFObjRef:5>}}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+},
+{
+"pageid": "30",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [
+"Font",
+"ProcSet",
+"XObject"
+],
+"contents": [
+"<PDFStream(27): len=9216, {'Filter': <PDFObjRef:28>, 'Length': <PDFObjRef:29>}>"
+],
+"attrs": [
+"Type",
+"MediaBox",
+"Parent",
+"Resources",
+"Contents"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageI'], 'Font': {'C001': <PDFObjRef:10>, 'C002': <PDFObjRef:12>, 'C003': <PDFObjRef:14>}, 'XObject': {'00024': <PDFObjRef:24>}}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "half",
+"open": "!PSEOF"
+},
+{
+"password": "",
+"variant": "3q",
+"open": "!PSEOF"
+},
+{
+"password": "",
+"variant": "noxref",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "shifted",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRefFallback: offsets=dict_keys([2, 4, 3, 5, 7, 6, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 19, 18, 20, 21, 23, 22, 24, 26, 25, 27, 29, 28, 30, 31, 1, 32])>",
+"trailer": "{'Size': 33, 'Root': <PDFObjRef:32>, 'Info': <PDFObjRef:31>}",
+"ids": [
+[
+"2",
+"(None, 55, 0)"
+],
+[
+"4",
+"(None, 357, 0)"
+],
+[
+"3",
+"(None, 379, 0)"
+],
+[
+"5",
+"(None, 414, 0)"
+],
+[
+"7",
+"(None, 12755, 0)"
+],
+[
+"6",
+"(None, 12779, 0)"
+],
+[
+"8",
+"(None, 12881, 0)"
+],
+[
+"9",
+"(None, 13066, 0)"
+],
+[
+"10",
+"(None, 13101, 0)"
+],
+[
+"11",
+"(None, 13817, 0)"
+],
+[
+"12",
+"(None, 14008, 0)"
+],
+[
+"13",
+"(None, 14732, 0)"
+],
+[
+"14",
+"(None, 14914, 0)"
+],
+[
+"15",
+"(None, 15635, 0)"
+],
+[
+"16",
+"(None, 15835, 0)"
+],
+[
+"17",
+"(None, 16499, 0)"
+],
+[
+"19",
+"(None, 18854, 0)"
+],
+[
+"18",
+"(None, 18878, 0)"
+],
+[
+"20",
+"(None, 18914, 0)"
+],
+[
+"21",
+"(None, 19167, 0)"
+],
+[
+"23",
+"(None, 19472, 0)"
+],
+[
+"22",
+"(None, 19495, 0)"
+],
+[
+"24",
+"(None, 19531, 0)"
+],
+[
+"26",
+"(None, 31876, 0)"
+],
+[
+"25",
+"(None, 31901, 0)"
+],
+[
+"27",
+"(None, 31937, 0)"
+],
+[
+"29",
+"(None, 33787, 0)"
+],
+[
+"28",
+"(None, 33811, 0)"
+],
+[
+"30",
+"(None, 33847, 0)"
+],
+[
+"31",
+"(None, 34087, 0)"
+],
+[
+"1",
+"(None, 34850, 0)"
+],
+[
+"32",
+"(None, 34928, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /'Catalog', 'Pages': <PDFObjRef:1>, 'PageMode': /'UseNone'}",
+"info": "[{'Author': b'SAPBATCH ', 'CreationDate': b'D:20170303000600', 'Creator': b'Form ZLB_BIL_INVOICE NL', 'Producer': b'SAP NetWeaver 740 '}]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"2",
+"<PDFStream(2): raw=228, {'Filter': <PDFObjRef:3>, 'Length': <PDFObjRef:4>}>",
+"9c5c3309d1218c901ea56ad5beed049da7bea3c6a928f06f825174dd54a9f6f3"
+],
+[
+"4",
+"226",
+null
+],
+[
+"3",
+"[/'FlateDecode']",
+null
+],
+[
+"5",
+"<PDFStream(5): raw=12128, {'Type': /'XObject', 'Subtype': /'Image', 'Filter': <PDFObjRef:6>, 'Length': <PDFObjRef:7>, 'Name': /'00005', 'Width': 650, 'Height': 413, 'BitsPerComponent': 8, 'ColorSpace': [/'Indexed', /'DeviceRGB', 255, <PDFObjRef:2>]}>",
+"781cb3f0dc2f62dd0df2d8f46cf8abd7436146e94dc63ed419f584241b82de30"
+],
+[
+"7",
+"12126",
+null
+],
+[
+"6",
+"[/'FlateDecode']",
+null
+],
+[
+"8",
+"{'Type': /'FontDescriptor', 'Ascent': 718, 'CapHeight': 718, 'Descent': -207, 'Flags': 32, 'FontBBox': [-166, -225, 1000, 931], 'FontName': /'Helvetica', 'ItalicAngle': 0, 'StemV': 105}",
+null
+],
+[
+"9",
+"/'WinAnsiEncoding'",
+null
+],
+[
+"10",
+"sha256:20d60e0607aa0d918f63653998939242fa3bb2bd3c6675ffb1f487969713629c",
+null
+],
+[
+"11",
+"{'Type': /'FontDescriptor', 'Ascent': 718, 'CapHeight': 718, 'Descent': -207, 'Flags': 32, 'FontBBox': [-170, -228, 1003, 962], 'FontName': /'Helvetica-Bold', 'ItalicAngle': 0, 'StemV': 105}",
+null
+],
+[
+"12",
+"sha256:ce2214719d8f8f174d9c2ac022ac4fc269a4f4348603a5df9d7d29b71da5f9b4",
+null
+],
+[
+"13",
+"{'Type': /'FontDescriptor', 'Ascent': 629, 'CapHeight': 562, 'Descent': -157, 'Flags': 35, 'FontBBox': [-23, -250, 715, 805], 'FontName': /'Courier', 'ItalicAngle': 0, 'StemV': 105}",
+null
+],
+[
+"14",
+"sha256:18cacba1ae24aeb1ee6b2650b2640972d36452bc1fa10d571f4446f57e16c844",
+null
+],
+[
+"15",
+"{'Type': /'FontDescriptor', 'Ascent': 718, 'CapHeight': 718, 'Descent': -207, 'Flags': 96, 'FontBBox': [-174, -228, 1114, 962], 'FontName': /'Helvetica-BoldOblique', 'ItalicAngle': -12, 'StemV': 105}",
+null
+],
+[
+"16",
+"sha256:dee27a6c14a55c4d42ccbbe73405bec182700a733e592b1278c986bb5241b651",
+null
+],
+[
+"17",
+"<PDFStream(17): raw=2278, {'Filter': <PDFObjRef:18>, 'Length': <PDFObjRef:19>}>",
+"5785be211c5fde661913a8d963907a5c0400ff9ecb8c02d394b4584214315e04"
+],
+[
+"19",
+"2276",
+null
+],
+[
+"18",
+"[/'FlateDecode']",
+null
+],
+[
+"20",
+"{'Type': /'Page', 'MediaBox': [0, 0, 595, 842], 'Parent': <PDFObjRef:1>, 'Resources': {'ProcSet': [/'PDF', /'Text', /'ImageI'], 'Font': {'C001': <PDFObjRef:10>, 'C002': <PDFObjRef:12>, 'C003': <PDFObjRef:14>, 'C004': <PDFObjRef:16>}, 'XObject': {'00005': <PDFObjRef:5>}}, 'Contents': <PDFObjRef:17>}",
+null
+],
+[
+"21",
+"<PDFStream(21): raw=228, {'Filter': <PDFObjRef:22>, 'Length': <PDFObjRef:23>}>",
+"9c5c3309d1218c901ea56ad5beed049da7bea3c6a928f06f825174dd54a9f6f3"
+],
+[
+"23",
+"226",
+null
+],
+[
+"22",
+"[/'FlateDecode']",
+null
+],
+[
+"24",
+"<PDFStream(24): raw=12128, {'Type': /'XObject', 'Subtype': /'Image', 'Filter': <PDFObjRef:25>, 'Length': <PDFObjRef:26>, 'Name': /'00024', 'Width': 650, 'Height': 413, 'BitsPerComponent': 8, 'ColorSpace': [/'Indexed', /'DeviceRGB', 255, <PDFObjRef:21>]}>",
+"781cb3f0dc2f62dd0df2d8f46cf8abd7436146e94dc63ed419f584241b82de30"
+],
+[
+"26",
+"12126",
+null
+],
+[
+"25",
+"[/'FlateDecode']",
+null
+],
+[
+"27",
+"<PDFStream(27): raw=1773, {'Filter': <PDFObjRef:28>, 'Length': <PDFObjRef:29>}>",
+"477c69fcdbc47eebe479752e61673d8c28af4c0e6d397dbb4789fe1d19fa6bcf"
+],
+[
+"29",
+"1771",
+null
+],
+[
+"28",
+"[/'FlateDecode']",
+null
+],
+[
+"30",
+"{'Type': /'Page', 'MediaBox': [0, 0, 595, 842], 'Parent': <PDFObjRef:1>, 'Resources': {'ProcSet': [/'PDF', /'Text', /'ImageI'], 'Font': {'C001': <PDFObjRef:10>, 'C002': <PDFObjRef:12>, 'C003': <PDFObjRef:14>}, 'XObject': {'00024': <PDFObjRef:24>}}, 'Contents': <PDFObjRef:27>}",
+null
+],
+[
+"31",
+"{'Author': b'SAPBATCH ', 'CreationDate': b'D:20170303000600', 'Creator': b'Form ZLB_BIL_INVOICE NL', 'Producer': b'SAP NetWeaver 740 '}",
+null
+],
+[
+"1",
+"{'Type': /'Pages', 'Kids': [<PDFObjRef:20>, <PDFObjRef:30>], 'Count': 2}",
+null
+],
+[
+"32",
+"{'Type': /'Catalog', 'Pages': <PDFObjRef:1>, 'PageMode': /'UseNone'}",
+null
+]
+],
+"pages": [
+{
+"pageid": "20",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [
+"Font",
+"ProcSet",
+"XObject"
+],
+"contents": [
+"<PDFStream(17): len=12187, {'Filter': <PDFObjRef:18>, 'Length': <PDFObjRef:19>}>"
+],
+"attrs": [
+"Type",
+"MediaBox",
+"Parent",
+"Resources",
+"Contents"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageI'], 'Font': {'C001': <PDFObjRef:10>, 'C002': <PDFObjRef:12>, 'C003': <PDFObjRef:14>, 'C004': <PDFObjRef:16>}, 'XObject': {'00005': <PDFObjRef:5>}}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+},
+{
+"pageid": "30",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [
+"Font",
+"ProcSet",
+"XObject"
+],
+"contents": [
+"<PDFStream(27): len=9216, {'Filter': <PDFObjRef:28>, 'Length': <PDFObjRef:29>}>"
+],
+"attrs": [
+"Type",
+"MediaBox",
+"Parent",
+"Resources",
+"Contents"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageI'], 'Font': {'C001': <PDFObjRef:10>, 'C002': <PDFObjRef:12>, 'C003': <PDFObjRef:14>}, 'XObject': {'00024': <PDFObjRef:24>}}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "tail",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "corrupt0",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRef: offsets=dict_keys([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32])>",
+"trailer": "{'Size': 33, 'Root': <PDFObjRef:32>, 'Info': <PDFObjRef:31>}",
+"ids": [
+[
+"1",
+"(None, 34844, 0)"
+],
+[
+"2",
+"(None, 49, 0)"
+],
+[
+"3",
+"(None, 373, 0)"
+],
+[
+"4",
+"(None, 351, 0)"
+],
+[
+"5",
+"(None, 408, 0)"
+],
+[
+"6",
+"(None, 12773, 0)"
+],
+[
+"7",
+"(None, 12749, 0)"
+],
+[
+"8",
+"(None, 12875, 0)"
+],
+[
+"9",
+"(None, 13060, 0)"
+],
+[
+"10",
+"(None, 13095, 0)"
+],
+[
+"11",
+"(None, 13811, 0)"
+],
+[
+"12",
+"(None, 14002, 0)"
+],
+[
+"13",
+"(None, 14726, 0)"
+],
+[
+"14",
+"(None, 14908, 0)"
+],
+[
+"15",
+"(None, 15629, 0)"
+],
+[
+"16",
+"(None, 15829, 0)"
+],
+[
+"17",
+"(None, 16493, 0)"
+],
+[
+"18",
+"(None, 18872, 0)"
+],
+[
+"19",
+"(None, 18848, 0)"
+],
+[
+"20",
+"(None, 18908, 0)"
+],
+[
+"21",
+"(None, 19161, 0)"
+],
+[
+"22",
+"(None, 19489, 0)"
+],
+[
+"23",
+"(None, 19466, 0)"
+],
+[
+"24",
+"(None, 19525, 0)"
+],
+[
+"25",
+"(None, 31895, 0)"
+],
+[
+"26",
+"(None, 31870, 0)"
+],
+[
+"27",
+"(None, 31931, 0)"
+],
+[
+"28",
+"(None, 33805, 0)"
+],
+[
+"29",
+"(None, 33781, 0)"
+],
+[
+"30",
+"(None, 33841, 0)"
+],
+[
+"31",
+"(None, 34081, 0)"
+],
+[
+"32",
+"(None, 34922, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /'Catalog', 'Pages': <PDFObjRef:1>, 'PageMode': /'UseNone'}",
+"info": "[{'Author': b'SAPBATCH ', 'CreationDate': b'D:20170303000600', 'Creator': b'Form ZLB_BIL_INVOICE NL', 'Producer': b'SAP NetWeaver 740 '}]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"1",
+"{'Type': /'Pages', 'Kids': [<PDFObjRef:20>, <PDFObjRef:30>], 'Count': 2}",
+null
+],
+[
+"2",
+"<PDFStream(2): raw=226, {'Filter': <PDFObjRef:3>, 'Length': <PDFObjRef:4>}>",
+"9c5c3309d1218c901ea56ad5beed049da7bea3c6a928f06f825174dd54a9f6f3"
+],
+[
+"3",
+"[/'FlateDecode']",
+null
+],
+[
+"4",
+"226",
+null
+],
+[
+"5",
+"<PDFStream(5): raw=12126, {'Type': /'XObject', 'Subtype': /'Image', 'Filter': <PDFObjRef:6>, 'Length': <PDFObjRef:7>, 'Name': /'00005', 'Width': 650, 'Height': 413, 'BitsPerComponent': 8, 'ColorSpace': [/'Indexed', /'DeviceRGB', 255, <PDFObjRef:2>]}>",
+"43d3096ab085b5ef1fc62f656d0a88a6145c7c98a6319a6127fe632e9e6bd03e"
+],
+[
+"6",
+"[/'FlateDecode']",
+null
+],
+[
+"7",
+"12126",
+null
+],
+[
+"8",
+"{'Type': /'FontDescriptor', 'Ascent': 718, 'CapHeight': 718, 'Descent': -207, 'Flags': 32, 'FontBBox': [-166, -225, 1000, 931], 'FontName': /'Helvetica', 'ItalicAngle': 0, 'StemV': 105}",
+null
+],
+[
+"9",
+"/'WinAnsiEncoding'",
+null
+],
+[
+"10",
+"sha256:20d60e0607aa0d918f63653998939242fa3bb2bd3c6675ffb1f487969713629c",
+null
+],
+[
+"11",
+"{'Type': /'FontDescriptor', 'Ascent': 718, 'CapHeight': 718, 'Descent': -207, 'Flags': 32, 'FontBBox': [-170, -228, 1003, 962], 'FontName': /'Helvetica-Bold', 'ItalicAngle': 0, 'StemV': 105}",
+null
+],
+[
+"12",
+"sha256:ce2214719d8f8f174d9c2ac022ac4fc269a4f4348603a5df9d7d29b71da5f9b4",
+null
+],
+[
+"13",
+"{'Type': /'FontDescriptor', 'Ascent': 629, 'CapHeight': 562, 'Descent': -157, 'Flags': 35, 'FontBBox': [-23, -250, 715, 805], 'FontName': /'Courier', 'ItalicAngle': 0, 'StemV': 105}",
+null
+],
+[
+"14",
+"sha256:18cacba1ae24aeb1ee6b2650b2640972d36452bc1fa10d571f4446f57e16c844",
+null
+],
+[
+"15",
+"{'Type': /'FontDescriptor', 'Ascent': 718, 'CapHeight': 718, 'Descent': -207, 'Flags': 96, 'FontBBox': [-174, -228, 1114, 962], 'FontName': /'Helvetica-BoldOblique', 'ItalicAngle': -12, 'StemV': 105}",
+null
+],
+[
+"16",
+"sha256:dee27a6c14a55c4d42ccbbe73405bec182700a733e592b1278c986bb5241b651",
+null
+],
+[
+"17",
+"<PDFStream(17): raw=2276, {'Filter': <PDFObjRef:18>, 'Length': <PDFObjRef:19>}>",
+"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+],
+[
+"18",
+"[/'FlateDecode']",
+null
+],
+[
+"19",
+"2276",
+null
+],
+[
+"20",
+"{'Type': /'Page', 'MediaBox': [0, 0, 595, 842], 'Parent': <PDFObjRef:1>, 'Resources': {'ProcSet': [/'PDF', /'Text', /'ImageI'], 'Font': {'C001': <PDFObjRef:10>, 'C002': <PDFObjRef:12>, 'C003': <PDFObjRef:14>, 'C004': <PDFObjRef:16>}, 'XObject': {'00005': <PDFObjRef:5>}}, 'Contents': <PDFObjRef:17>}",
+null
+],
+[
+"21",
+"<PDFStream(21): raw=226, {'Filter': <PDFObjRef:22>, 'Length': <PDFObjRef:23>}>",
+"9c5c3309d1218c901ea56ad5beed049da7bea3c6a928f06f825174dd54a9f6f3"
+],
+[
+"22",
+"[/'FlateDecode']",
+null
+],
+[
+"23",
+"226",
+null
+],
+[
+"24",
+"<PDFStream(24): raw=12126, {'Type': /'XObject', 'Subtype': /'Image', 'Filter': <PDFObjRef:25>, 'Length': <PDFObjRef:26>, 'Name': /'00024', 'Width': 650, 'Height': 413, 'BitsPerComponent': 8, 'ColorSpace': [/'Indexed', /'DeviceRGB', 255, <PDFObjRef:21>]}>",
+"03778542b62548a7c1fa318dd02b5c1535599f9579e3ebcb18a1b5fae6269a5e"
+],
+[
+"25",
+"[/'FlateDecode']",
+null
+],
+[
+"26",
+"12126",
+null
+],
+[
+"27",
+"<PDFStream(27): raw=1771, {'Filter': <PDFObjRef:28>, 'Length': <PDFObjRef:29>}>",
+"477c69fcdbc47eebe479752e61673d8c28af4c0e6d397dbb4789fe1d19fa6bcf"
+],
+[
+"28",
+"[/'FlateDecode']",
+null
+],
+[
+"29",
+"1771",
+null
+],
+[
+"30",
+"{'Type': /'Page', 'MediaBox': [0, 0, 595, 842], 'Parent': <PDFObjRef:1>, 'Resources': {'ProcSet': [/'PDF', /'Text', /'ImageI'], 'Font': {'C001': <PDFObjRef:10>, 'C002': <PDFObjRef:12>, 'C003': <PDFObjRef:14>}, 'XObject': {'00024': <PDFObjRef:24>}}, 'Contents': <PDFObjRef:27>}",
+null
+],
+[
+"31",
+"{'Author': b'SAPBATCH ', 'CreationDate': b'D:20170303000600', 'Creator': b'Form ZLB_BIL_INVOICE NL', 'Producer': b'SAP NetWeaver 740 '}",
+null
+],
+[
+"32",
+"{'Type': /'Catalog', 'Pages': <PDFObjRef:1>, 'PageMode': /'UseNone'}",
+null
+]
+],
+"pages": [
+{
+"pageid": "20",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [
+"Font",
+"ProcSet",
+"XObject"
+],
+"contents": [
+"<PDFStream(17): len=0, {'Filter': <PDFObjRef:18>, 'Length': <PDFObjRef:19>}>"
+],
+"attrs": [
+"Type",
+"MediaBox",
+"Parent",
+"Resources",
+"Contents"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageI'], 'Font': {'C001': <PDFObjRef:10>, 'C002': <PDFObjRef:12>, 'C003': <PDFObjRef:14>, 'C004': <PDFObjRef:16>}, 'XObject': {'00005': <PDFObjRef:5>}}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+},
+{
+"pageid": "30",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [
+"Font",
+"ProcSet",
+"XObject"
+],
+"contents": [
+"<PDFStream(27): len=9216, {'Filter': <PDFObjRef:28>, 'Length': <PDFObjRef:29>}>"
+],
+"attrs": [
+"Type",
+"MediaBox",
+"Parent",
+"Resources",
+"Contents"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageI'], 'Font': {'C001': <PDFObjRef:10>, 'C002': <PDFObjRef:12>, 'C003': <PDFObjRef:14>}, 'XObject': {'00024': <PDFObjRef:24>}}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "corrupt1",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRef: offsets=dict_keys([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32])>",
+"trailer": "{'Size': 33, 'Root': <PDFObjRef:32>, 'Info': <PDFObjRef:31>}",
+"ids": [
+[
+"1",
+"(None, 34844, 0)"
+],
+[
+"2",
+"(None, 49, 0)"
+],
+[
+"3",
+"(None, 373, 0)"
+],
+[
+"4",
+"(None, 351, 0)"
+],
+[
+"5",
+"(None, 408, 0)"
+],
+[
+"6",
+"(None, 12773, 0)"
+],
+[
+"7",
+"(None, 12749, 0)"
+],
+[
+"8",
+"(None, 12875, 0)"
+],
+[
+"9",
+"(None, 13060, 0)"
+],
+[
+"10",
+"(None, 13095, 0)"
+],
+[
+"11",
+"(None, 13811, 0)"
+],
+[
+"12",
+"(None, 14002, 0)"
+],
+[
+"13",
+"(None, 14726, 0)"
+],
+[
+"14",
+"(None, 14908, 0)"
+],
+[
+"15",
+"(None, 15629, 0)"
+],
+[
+"16",
+"(None, 15829, 0)"
+],
+[
+"17",
+"(None, 16493, 0)"
+],
+[
+"18",
+"(None, 18872, 0)"
+],
+[
+"19",
+"(None, 18848, 0)"
+],
+[
+"20",
+"(None, 18908, 0)"
+],
+[
+"21",
+"(None, 19161, 0)"
+],
+[
+"22",
+"(None, 19489, 0)"
+],
+[
+"23",
+"(None, 19466, 0)"
+],
+[
+"24",
+"(None, 19525, 0)"
+],
+[
+"25",
+"(None, 31895, 0)"
+],
+[
+"26",
+"(None, 31870, 0)"
+],
+[
+"27",
+"(None, 31931, 0)"
+],
+[
+"28",
+"(None, 33805, 0)"
+],
+[
+"29",
+"(None, 33781, 0)"
+],
+[
+"30",
+"(None, 33841, 0)"
+],
+[
+"31",
+"(None, 34081, 0)"
+],
+[
+"32",
+"(None, 34922, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /'Catalog', 'Pages': <PDFObjRef:1>, 'PageMode': /'UseNone'}",
+"info": "[{'Author': b'SAPBATCH ', 'CreationDate': b'D:20170303000600', 'Creator': b'Form ZLB_BIL_INVOICE NL', 'Producer': b'SAP NetWeaver 740 '}]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"1",
+"{'Type': /'Pages', 'Kids': [<PDFObjRef:20>, <PDFObjRef:30>], 'Count': 2}",
+null
+],
+[
+"2",
+"<PDFStream(2): raw=226, {'Filter': <PDFObjRef:3>, 'Length': <PDFObjRef:4>}>",
+"9c5c3309d1218c901ea56ad5beed049da7bea3c6a928f06f825174dd54a9f6f3"
+],
+[
+"3",
+"[/'FlateDecode']",
+null
+],
+[
+"4",
+"226",
+null
+],
+[
+"5",
+"<PDFStream(5): raw=12126, {'Type': /'XObject', 'Subtype': /'Image', 'Filter': <PDFObjRef:6>, 'Length': <PDFObjRef:7>, 'Name': /'00005', 'Width': 650, 'Height': 413, 'BitsPerComponent': 8, 'ColorSpace': [/'Indexed', /'DeviceRGB', 255, <PDFObjRef:2>]}>",
+"ac79e0548bbf2430c93a82a59ffc6ec8081692c52d9adfa63bcfa3c6b0d5dd6e"
+],
+[
+"6",
+"[/'FlateDecode']",
+null
+],
+[
+"7",
+"12126",
+null
+],
+[
+"8",
+"{'Type': /'FontDescriptor', 'Ascent': 718, 'CapHeight': 718, 'Descent': -207, 'Flags': 32, 'FontBBox': [-166, -225, 1000, 931], 'FontName': /'Helvetica', 'ItalicAngle': 0, 'StemV': 105}",
+null
+],
+[
+"9",
+"/'WinAnsiEncoding'",
+null
+],
+[
+"10",
+"sha256:2581a9344aa827393f116a7fcb8f00fd70c4ec0920df627d5a52b8f01bfbba50",
+null
+],
+[
+"11",
+"{'Type': /'FontDescriptor', 'Ascent': 718, 'CapHeight': 718, 'Descent': -207, 'Flags': 32, 'FontBBox': [-170, -228, 1003, 962], 'FontName': /'Helvetica-Bold', 'ItalicAngle': 0, 'StemV': 105}",
+null
+],
+[
+"12",
+"sha256:ce2214719d8f8f174d9c2ac022ac4fc269a4f4348603a5df9d7d29b71da5f9b4",
+null
+],
+[
+"13",
+"{'Type': /'FontDescriptor', 'Ascent': 629, 'CapHeight': 562, 'Descent': -157, 'Flags': 35, 'FontBBox': [-23, -250, 715, 805], 'FontName': /'Courier', 'ItalicAngle': 0, 'StemV': 105}",
+null
+],
+[
+"14",
+"sha256:18cacba1ae24aeb1ee6b2650b2640972d36452bc1fa10d571f4446f57e16c844",
+null
+],
+[
+"15",
+"{'Type': /'FontDescriptor', 'Ascent': 718, 'CapHeight': 718, 'Descent': -207, 'Flags': 96, 'FontBBox': [-174, -228, 1114, 962], 'FontName': /'Helvetica-BoldOblique', 'ItalicAngle': -12, 'StemV': 105}",
+null
+],
+[
+"16",
+"sha256:dee27a6c14a55c4d42ccbbe73405bec182700a733e592b1278c986bb5241b651",
+null
+],
+[
+"17",
+"<PDFStream(17): raw=2276, {'Filter': <PDFObjRef:18>, 'Length': <PDFObjRef:19>}>",
+"5785be211c5fde661913a8d963907a5c0400ff9ecb8c02d394b4584214315e04"
+],
+[
+"18",
+"[/'FlateDecode']",
+null
+],
+[
+"19",
+"2276",
+null
+],
+[
+"20",
+"{'Type': /'Page', 'MediaBox': [0, 0, 595, 842], 'Parent': <PDFObjRef:1>, 'Resources': {'ProcSet': [/'PDF', /'Text', /'ImageI'], 'Font': {'C001': <PDFObjRef:10>, 'C002': <PDFObjRef:12>, 'C003': <PDFObjRef:14>, 'C004': <PDFObjRef:16>}, 'XObject': {'00005': <PDFObjRef:5>}}, 'Contents': <PDFObjRef:17>}",
+null
+],
+[
+"21",
+"<PDFStream(21): raw=226, {'Filter': <PDFObjRef:22>, 'Length': <PDFObjRef:23>}>",
+"9c5c3309d1218c901ea56ad5beed049da7bea3c6a928f06f825174dd54a9f6f3"
+],
+[
+"22",
+"[/'FlateDecode']",
+null
+],
+[
+"23",
+"226",
+null
+],
+[
+"24",
+"<PDFStream(24): raw=12126, {'Type': /'XObject', 'Subtype': /'Image', 'Filter': <PDFObjRef:25>, 'Length': <PDFObjRef:26>, 'Name': /b'\\xba0024', 'Width': 650, 'Height': 413, 'BitsPerComponent': 8, 'ColorSpace': [/'Indexed', /'DeviceRGB', 255, <PDFObjRef:21>]}>",
+"781cb3f0dc2f62dd0df2d8f46cf8abd7436146e94dc63ed419f584241b82de30"
+],
+[
+"25",
+"[/'FlateDecode']",
+null
+],
+[
+"26",
+"12126",
+null
+],
+[
+"27",
+"<PDFStream(27): raw=1771, {'Filter': <PDFObjRef:28>, 'Length': <PDFObjRef:29>}>",
+"477c69fcdbc47eebe479752e61673d8c28af4c0e6d397dbb4789fe1d19fa6bcf"
+],
+[
+"28",
+"[/'FlateDecode']",
+null
+],
+[
+"29",
+"1771",
+null
+],
+[
+"30",
+"{'Type': /'Page', 'MediaBox': [0, 0, 595, 842], 'Parent': <PDFObjRef:1>, 'Resources': {'ProcSet': [/'PDF', /'Text', /'ImageI'], 'Font': {'C001': <PDFObjRef:10>, 'C002': <PDFObjRef:12>, 'C003': <PDFObjRef:14>}, 'XObject': {'00024': <PDFObjRef:24>}}, 'Contents': <PDFObjRef:27>}",
+null
+],
+[
+"31",
+"{'Author': b'SAPBATCH ', 'CreationDate': b'D:20170303000600', 'Creator': b'Form ZLB_BIL_INVOICE NL', 'Producer': b'SAP NetWeaver 740 '}",
+null
+],
+[
+"32",
+"{'Type': /'Catalog', 'Pages': <PDFObjRef:1>, 'PageMode': /'UseNone'}",
+null
+]
+],
+"pages": [
+{
+"pageid": "20",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [
+"Font",
+"ProcSet",
+"XObject"
+],
+"contents": [
+"<PDFStream(17): len=12187, {'Filter': <PDFObjRef:18>, 'Length': <PDFObjRef:19>}>"
+],
+"attrs": [
+"Type",
+"MediaBox",
+"Parent",
+"Resources",
+"Contents"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageI'], 'Font': {'C001': <PDFObjRef:10>, 'C002': <PDFObjRef:12>, 'C003': <PDFObjRef:14>, 'C004': <PDFObjRef:16>}, 'XObject': {'00005': <PDFObjRef:5>}}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+},
+{
+"pageid": "30",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [
+"Font",
+"ProcSet",
+"XObject"
+],
+"contents": [
+"<PDFStream(27): len=9216, {'Filter': <PDFObjRef:28>, 'Length': <PDFObjRef:29>}>"
+],
+"attrs": [
+"Type",
+"MediaBox",
+"Parent",
+"Resources",
+"Contents"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageI'], 'Font': {'C001': <PDFObjRef:10>, 'C002': <PDFObjRef:12>, 'C003': <PDFObjRef:14>}, 'XObject': {'00024': <PDFObjRef:24>}}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "corrupt2",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRef: offsets=dict_keys([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32])>",
+"trailer": "{'Size': 33, 'Root': <PDFObjRef:32>, 'Info': <PDFObjRef:31>}",
+"ids": [
+[
+"1",
+"(None, 34844, 0)"
+],
+[
+"2",
+"(None, 49, 0)"
+],
+[
+"3",
+"(None, 373, 0)"
+],
+[
+"4",
+"(None, 351, 0)"
+],
+[
+"5",
+"(None, 408, 0)"
+],
+[
+"6",
+"(None, 12773, 0)"
+],
+[
+"7",
+"(None, 12749, 0)"
+],
+[
+"8",
+"(None, 12875, 0)"
+],
+[
+"9",
+"(None, 13060, 0)"
+],
+[
+"10",
+"(None, 13095, 0)"
+],
+[
+"11",
+"(None, 13811, 0)"
+],
+[
+"12",
+"(None, 14002, 0)"
+],
+[
+"13",
+"(None, 14726, 0)"
+],
+[
+"14",
+"(None, 14908, 0)"
+],
+[
+"15",
+"(None, 15629, 0)"
+],
+[
+"16",
+"(None, 15829, 0)"
+],
+[
+"17",
+"(None, 16493, 0)"
+],
+[
+"18",
+"(None, 18872, 0)"
+],
+[
+"19",
+"(None, 18848, 0)"
+],
+[
+"20",
+"(None, 18908, 0)"
+],
+[
+"21",
+"(None, 19161, 0)"
+],
+[
+"22",
+"(None, 19489, 0)"
+],
+[
+"23",
+"(None, 19466, 0)"
+],
+[
+"24",
+"(None, 19525, 0)"
+],
+[
+"25",
+"(None, 31895, 0)"
+],
+[
+"26",
+"(None, 31870, 0)"
+],
+[
+"27",
+"(None, 31931, 0)"
+],
+[
+"28",
+"(None, 33805, 0)"
+],
+[
+"29",
+"(None, 33781, 0)"
+],
+[
+"30",
+"(None, 33841, 0)"
+],
+[
+"31",
+"(None, 34081, 0)"
+],
+[
+"32",
+"(None, 34922, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /'Catalog', 'Pages': <PDFObjRef:1>, 'PageMode': /'UseNone'}",
+"info": "[{'Author': b'SAPBATCH ', 'CreationDate': b'D:20170303000600', 'Creator': b'Form ZLB_BIL_INVOICE NL', 'Producer': b'SAP NetWeaver 740 '}]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"1",
+"{'Type': /'Pages', 'Kids': [<PDFObjRef:20>, <PDFObjRef:30>], 'Count': 2}",
+null
+],
+[
+"2",
+"<PDFStream(2): raw=226, {'Filter': <PDFObjRef:3>, 'Length': <PDFObjRef:4>}>",
+"9c5c3309d1218c901ea56ad5beed049da7bea3c6a928f06f825174dd54a9f6f3"
+],
+[
+"3",
+"[/'FlateDecode']",
+null
+],
+[
+"4",
+"226",
+null
+],
+[
+"5",
+"<PDFStream(5): raw=12126, {'Type': /'XObject', 'Subtype': /'Image', 'Filter': <PDFObjRef:6>, 'Length': <PDFObjRef:7>, 'Name': /'00005', 'Width': 650, 'Height': 413, 'BitsPerComponent': 8, 'ColorSpace': [/'Indexed', /'DeviceRGB', 255, <PDFObjRef:2>]}>",
+"c75b2a2dd06936f16eb4162eefec39efbc6ab059ec4953ac5a848d8d05d16dc4"
+],
+[
+"6",
+"[/'FlateDecode']",
+null
+],
+[
+"7",
+"12126",
+null
+],
+[
+"8",
+"{'Type': /'FontDescriptor', 'Ascent': 718, 'CapHeight': 718, 'Descent': -207, 'Flags': 32, 'FontBBox': [-166, -225, 1000, 931], 'FontName': /'Helvetica', 'ItalicAngle': 0, 'StemV': 105}",
+null
+],
+[
+"9",
+"/'WinAnsiEncoding'",
+null
+],
+[
+"10",
+"sha256:20d60e0607aa0d918f63653998939242fa3bb2bd3c6675ffb1f487969713629c",
+null
+],
+[
+"11",
+"{'Type': /'FontDescriptor', 'Ascent': 718, 'CapHeight': 718, 'Descent': -207, 'Flags': 32, 'FontBBox': [-170, -228, 1003, 962], 'FontName': /'Helvetica-Bold', 'ItalicAngle': 0, 'StemV': 105}",
+null
+],
+[
+"12",
+"sha256:ce2214719d8f8f174d9c2ac022ac4fc269a4f4348603a5df9d7d29b71da5f9b4",
+null
+],
+[
+"13",
+"{'Type': /'FontDescriptor', 'Ascent': 629, 'CapHeight': 562, 'Descent': -157, 'Flags': 35, 'FontBBox': [-23, -250, 715, 805], 'FontName': /'Courier', 'ItalicAngle': 0, 'StemV': 105}",
+null
+],
+[
+"14",
+"sha256:18cacba1ae24aeb1ee6b2650b2640972d36452bc1fa10d571f4446f57e16c844",
+null
+],
+[
+"15",
+"{'Type': /'FontDescriptor', 'Ascent': 718, 'CapHeight': 718, 'Descent': -207, \"b'Fl\\\\x9ags'\": 96, 'FontBBox': [-174, -228, 1114, 962], 'FontName': /'Helvetica-BoldOblique', 'ItalicAngle': -12, 'StemV': 105}",
+null
+],
+[
+"16",
+"sha256:dee27a6c14a55c4d42ccbbe73405bec182700a733e592b1278c986bb5241b651",
+null
+],
+[
+"17",
+"<PDFStream(17): raw=2276, {'Filter': <PDFObjRef:18>, 'Length': <PDFObjRef:19>}>",
+"5785be211c5fde661913a8d963907a5c0400ff9ecb8c02d394b4584214315e04"
+],
+[
+"18",
+"[/'FlateDecode']",
+null
+],
+[
+"19",
+"2276",
+null
+],
+[
+"20",
+"{'Type': /'Page', 'MediaBox': [0, 0, 595, 842], 'Parent': <PDFObjRef:1>, 'Resources': {'ProcSet': [/'PDF', /'Text', /'ImageI'], 'Font': {'C001': <PDFObjRef:10>, 'C002': <PDFObjRef:12>, 'C003': <PDFObjRef:14>, 'C004': <PDFObjRef:16>}, 'XObject': {'00005': <PDFObjRef:5>}}, 'Contents': <PDFObjRef:17>}",
+null
+],
+[
+"21",
+"<PDFStream(21): raw=226, {'Filter': <PDFObjRef:22>, 'Length': <PDFObjRef:23>}>",
+"9c5c3309d1218c901ea56ad5beed049da7bea3c6a928f06f825174dd54a9f6f3"
+],
+[
+"22",
+"[/'FlateDecode']",
+null
+],
+[
+"23",
+"226",
+null
+],
+[
+"24",
+"<PDFStream(24): raw=12126, {'Type': /'XObject', 'Subtype': /'Image', 'Filter': <PDFObjRef:25>, 'Length': <PDFObjRef:26>, 'Name': /'00024', 'Width': 650, 'Height': 413, 'BitsPerComponent': 8, 'ColorSpace': [/'Indexed', /'DeviceRGB', 255, <PDFObjRef:21>]}>",
+"91246d32953bec86d678295ff5ca2c2d7f789f2a337ebd724894a8a62fa4d8d3"
+],
+[
+"25",
+"[/'FlateDecode']",
+null
+],
+[
+"26",
+"12126",
+null
+],
+[
+"27",
+"<PDFStream(27): raw=1771, {'Filter': <PDFObjRef:28>, 'Length': <PDFObjRef:29>}>",
+"477c69fcdbc47eebe479752e61673d8c28af4c0e6d397dbb4789fe1d19fa6bcf"
+],
+[
+"28",
+"[/'FlateDecode']",
+null
+],
+[
+"29",
+"1771",
+null
+],
+[
+"30",
+"{'Type': /'Page', 'MediaBox': [0, 0, 595, 842], 'Parent': <PDFObjRef:1>, 'Resources': {'ProcSet': [/'PDF', /'Text', /'ImageI'], 'Font': {'C001': <PDFObjRef:10>, 'C002': <PDFObjRef:12>, 'C003': <PDFObjRef:14>}, 'XObject': {'00024': <PDFObjRef:24>}}, 'Contents': <PDFObjRef:27>}",
+null
+],
+[
+"31",
+"{'Author': b'SAPBATCH ', 'CreationDate': b'D:20170303000600', 'Creator': b'Form ZLB_BIL_INVOICE NL', 'Producer': b'SAP NetWeaver 740 '}",
+null
+],
+[
+"32",
+"{'Type': /'Catalog', 'Pages': <PDFObjRef:1>, 'PageMode': /'UseNone'}",
+null
+]
+],
+"pages": [
+{
+"pageid": "20",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [
+"Font",
+"ProcSet",
+"XObject"
+],
+"contents": [
+"<PDFStream(17): len=12187, {'Filter': <PDFObjRef:18>, 'Length': <PDFObjRef:19>}>"
+],
+"attrs": [
+"Type",
+"MediaBox",
+"Parent",
+"Resources",
+"Contents"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageI'], 'Font': {'C001': <PDFObjRef:10>, 'C002': <PDFObjRef:12>, 'C003': <PDFObjRef:14>, 'C004': <PDFObjRef:16>}, 'XObject': {'00005': <PDFObjRef:5>}}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+},
+{
+"pageid": "30",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [
+"Font",
+"ProcSet",
+"XObject"
+],
+"contents": [
+"<PDFStream(27): len=9216, {'Filter': <PDFObjRef:28>, 'Length': <PDFObjRef:29>}>"
+],
+"attrs": [
+"Type",
+"MediaBox",
+"Parent",
+"Resources",
+"Contents"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageI'], 'Font': {'C001': <PDFObjRef:10>, 'C002': <PDFObjRef:12>, 'C003': <PDFObjRef:14>}, 'XObject': {'00024': <PDFObjRef:24>}}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "corrupt3",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRef: offsets=dict_keys([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32])>",
+"trailer": "{'Size': 33, 'Root': <PDFObjRef:32>, 'Info': <PDFObjRef:31>}",
+"ids": [
+[
+"1",
+"(None, 34844, 0)"
+],
+[
+"2",
+"(None, 49, 0)"
+],
+[
+"3",
+"(None, 373, 0)"
+],
+[
+"4",
+"(None, 351, 0)"
+],
+[
+"5",
+"(None, 408, 0)"
+],
+[
+"6",
+"(None, 12773, 0)"
+],
+[
+"7",
+"(None, 12749, 0)"
+],
+[
+"8",
+"(None, 12875, 0)"
+],
+[
+"9",
+"(None, 13060, 0)"
+],
+[
+"10",
+"(None, 13095, 0)"
+],
+[
+"11",
+"(None, 13811, 0)"
+],
+[
+"12",
+"(None, 14002, 0)"
+],
+[
+"13",
+"(None, 14726, 0)"
+],
+[
+"14",
+"(None, 14908, 0)"
+],
+[
+"15",
+"(None, 15629, 0)"
+],
+[
+"16",
+"(None, 15829, 0)"
+],
+[
+"17",
+"(None, 16493, 0)"
+],
+[
+"18",
+"(None, 18872, 0)"
+],
+[
+"19",
+"(None, 18848, 0)"
+],
+[
+"20",
+"(None, 18908, 0)"
+],
+[
+"21",
+"(None, 19161, 0)"
+],
+[
+"22",
+"(None, 19489, 0)"
+],
+[
+"23",
+"(None, 19466, 0)"
+],
+[
+"24",
+"(None, 19525, 0)"
+],
+[
+"25",
+"(None, 31895, 0)"
+],
+[
+"26",
+"(None, 31870, 0)"
+],
+[
+"27",
+"(None, 31931, 0)"
+],
+[
+"28",
+"(None, 33805, 0)"
+],
+[
+"29",
+"(None, 33781, 0)"
+],
+[
+"30",
+"(None, 33841, 0)"
+],
+[
+"31",
+"(None, 34081, 0)"
+],
+[
+"32",
+"(None, 34922, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /'Catalog', 'Pages': <PDFObjRef:1>, 'PageMode': /'UseNone'}",
+"info": "[{'Author': b'SAPBATCH ', 'CreationDate': b'D:20170303000600', 'Creator': b'Form ZLB_BIL_INVOICE NL', 'Producer': b'SAP NetWeaver 740 '}]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"1",
+"{'Type': /'Pages', 'Kids': [<PDFObjRef:20>, <PDFObjRef:30>], 'Count': 2}",
+null
+],
+[
+"2",
+"<PDFStream(2): raw=226, {'Filter': <PDFObjRef:3>, 'Length': <PDFObjRef:4>}>",
+"9c5c3309d1218c901ea56ad5beed049da7bea3c6a928f06f825174dd54a9f6f3"
+],
+[
+"3",
+"[/'FlateDecode']",
+null
+],
+[
+"4",
+"226",
+null
+],
+[
+"5",
+"<PDFStream(5): raw=12126, {'Type': /'XObject', 'Subtype': /'Image', 'Filter': <PDFObjRef:6>, 'Length': <PDFObjRef:7>, 'Name': /'00005', 'Width': 650, 'Height': 413, 'BitsPerComponent': 8, 'ColorSpace': [/'Indexed', /'DeviceRGB', 255, <PDFObjRef:2>]}>",
+"781cb3f0dc2f62dd0df2d8f46cf8abd7436146e94dc63ed419f584241b82de30"
+],
+[
+"6",
+"[/'FlateDecode']",
+null
+],
+[
+"7",
+"12126",
+null
+],
+[
+"8",
+"{'Type': /'FontDescriptor', 'Ascent': 718, 'CapHeight': 718, 'Descent': -207, 'Flags': 32, 'FontBBox': [-166, -225, 1000, 931], 'FontName': /'Helvetica', 'ItalicAngle': 0, 'StemV': 105}",
+null
+],
+[
+"9",
+"/'WinAnsiEncoding'",
+null
+],
+[
+"10",
+"sha256:20d60e0607aa0d918f63653998939242fa3bb2bd3c6675ffb1f487969713629c",
+null
+],
+[
+"11",
+"{'Type': /'FontDescriptor', 'Ascent': 718, 'CapHeight': 718, 'Descent': -207, 'Flags': 32, 'FontBBox': [-170, -228, 1003, 962], 'FontName': /'Helvetica-Bold', 'ItalicAngle': 0, 'StemV': 105}",
+null
+],
+[
+"12",
+"sha256:ce2214719d8f8f174d9c2ac022ac4fc269a4f4348603a5df9d7d29b71da5f9b4",
+null
+],
+[
+"13",
+"{'Type': /'FontDescriptor', 'Ascent': 629, 'CapHeight': 562, 'Descent': -157, 'Flags': 35, 'FontBBox': [-23, -250, 715, 805], 'FontName': /'Courier', 'ItalicAngle': 0, 'StemV': 105}",
+null
+],
+[
+"14",
+"sha256:18cacba1ae24aeb1ee6b2650b2640972d36452bc1fa10d571f4446f57e16c844",
+null
+],
+[
+"15",
+"{'Type': /'FontDescriptor', 'Ascent': 718, 'CapHeight': 718, 'Descent': -207, 'Flags': 96, 'FontBBox': [-174, -228, 1114, 962], 'FontName': /'Helvetica-BoldOblique', 'ItalicAngle': -12, 'StemV': 105}",
+null
+],
+[
+"16",
+"sha256:dee27a6c14a55c4d42ccbbe73405bec182700a733e592b1278c986bb5241b651",
+null
+],
+[
+"17",
+"<PDFStream(17): raw=2276, {'Filter': <PDFObjRef:18>, 'Length': <PDFObjRef:19>}>",
+"5785be211c5fde661913a8d963907a5c0400ff9ecb8c02d394b4584214315e04"
+],
+[
+"18",
+"[/'FlateDecode']",
+null
+],
+[
+"19",
+"2276",
+null
+],
+[
+"20",
+"{'Type': /'Page', 'MediaBox': [0, 0, 595, 842], 'Parent': <PDFObjRef:1>, 'Resources': {'ProcSet': [/'PDF', /'Text', /'ImageI'], 'Font': {'C001': <PDFObjRef:10>, 'C002': <PDFObjRef:12>, 'C003': <PDFObjRef:14>, 'C004': <PDFObjRef:16>}, 'XObject': {'00005': <PDFObjRef:5>}}, 'Contents': <PDFObjRef:17>}",
+null
+],
+[
+"21",
+"<PDFStream(21): raw=226, {'Filter': <PDFObjRef:22>, 'Length': <PDFObjRef:23>}>",
+"9c5c3309d1218c901ea56ad5beed049da7bea3c6a928f06f825174dd54a9f6f3"
+],
+[
+"22",
+"[/'FlateDecode']",
+null
+],
+[
+"23",
+"226",
+null
+],
+[
+"24",
+"<PDFStream(24): raw=12126, {'Type': /'XObject', 'Subtype': /'Image', 'Filter': <PDFObjRef:25>, 'Length': <PDFObjRef:26>, 'Name': /'00024', 'Width': 650, 'Height': 413, 'BitsPerComponent': 8, 'ColorSpace': [/'Indexed', /'DeviceRGB', 255, <PDFObjRef:21>]}>",
+"35b64b6e9682ff7fad7c0dd5b7f64edcba5475f8eb14bb4dda7856048a5a607c"
+],
+[
+"25",
+"[/'FlateDecode']",
+null
+],
+[
+"26",
+"12126",
+null
+],
+[
+"27",
+"<PDFStream(27): raw=1771, {'Filter': <PDFObjRef:28>, 'Length': <PDFObjRef:29>}>",
+"477c69fcdbc47eebe479752e61673d8c28af4c0e6d397dbb4789fe1d19fa6bcf"
+],
+[
+"28",
+"[/'FlateDecode']",
+null
+],
+[
+"29",
+"1771",
+null
+],
+[
+"30",
+"{'Type': /'Page', 'MediaBox': [0, 0, 595, 842], 'Parent': <PDFObjRef:1>, 'Resources': {'ProcSet': [/'PDF', /'Text', /'ImageI'], 'Font': {'C001': <PDFObjRef:10>, 'C002': <PDFObjRef:12>, 'C003': <PDFObjRef:14>}, 'XObject': {'00024': <PDFObjRef:24>}}, 'Contents': <PDFObjRef:27>}",
+null
+],
+[
+"31",
+"{'Author': b'SAPBATCH ', 'CreationDate': b'D:20170303000600', 'Creator': b'Form ZLB_BIL_INVOICE NL', 'Producer': b'SAP NetWeaver 740 '}",
+null
+],
+[
+"32",
+"{'Type': /'Catalog', 'Pages': <PDFObjRef:1>, 'PageMode': /'UseNone'}",
+null
+]
+],
+"pages": [
+{
+"pageid": "20",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [
+"Font",
+"ProcSet",
+"XObject"
+],
+"contents": [
+"<PDFStream(17): len=12187, {'Filter': <PDFObjRef:18>, 'Length': <PDFObjRef:19>}>"
+],
+"attrs": [
+"Type",
+"MediaBox",
+"Parent",
+"Resources",
+"Contents"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageI'], 'Font': {'C001': <PDFObjRef:10>, 'C002': <PDFObjRef:12>, 'C003': <PDFObjRef:14>, 'C004': <PDFObjRef:16>}, 'XObject': {'00005': <PDFObjRef:5>}}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+},
+{
+"pageid": "30",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [
+"Font",
+"ProcSet",
+"XObject"
+],
+"contents": [
+"<PDFStream(27): len=9216, {'Filter': <PDFObjRef:28>, 'Length': <PDFObjRef:29>}>"
+],
+"attrs": [
+"Type",
+"MediaBox",
+"Parent",
+"Resources",
+"Contents"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageI'], 'Font': {'C001': <PDFObjRef:10>, 'C002': <PDFObjRef:12>, 'C003': <PDFObjRef:14>}, 'XObject': {'00024': <PDFObjRef:24>}}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+}
+]
+}

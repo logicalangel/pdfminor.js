@@ -1,0 +1,55 @@
+{
+"path": "synth/trailer_assert.pdf",
+"runs": [
+{
+"password": "",
+"variant": "orig",
+"open": "!AssertionError"
+},
+{
+"password": "",
+"variant": "half",
+"open": "!PSEOF"
+},
+{
+"password": "",
+"variant": "3q",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "noxref",
+"open": "!AssertionError"
+},
+{
+"password": "",
+"variant": "shifted",
+"open": "!AssertionError"
+},
+{
+"password": "",
+"variant": "tail",
+"open": "!AssertionError"
+},
+{
+"password": "",
+"variant": "corrupt0",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "corrupt1",
+"open": "!AssertionError"
+},
+{
+"password": "",
+"variant": "corrupt2",
+"open": "!AssertionError"
+},
+{
+"password": "",
+"variant": "corrupt3",
+"open": "!AssertionError"
+}
+]
+}

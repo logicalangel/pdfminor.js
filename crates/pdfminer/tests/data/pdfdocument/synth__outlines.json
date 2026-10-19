@@ -1,0 +1,748 @@
+{
+"path": "synth/outlines.pdf",
+"runs": [
+{
+"password": "",
+"variant": "orig",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRef: offsets=dict_keys([1, 2, 3, 10, 11, 12, 13, 20, 21, 22])>",
+"trailer": "{'Size': 23, 'Root': <PDFObjRef:1>}",
+"ids": [
+[
+"1",
+"(None, 9, 0)"
+],
+[
+"2",
+"(None, 133, 0)"
+],
+[
+"3",
+"(None, 190, 0)"
+],
+[
+"10",
+"(None, 261, 0)"
+],
+[
+"11",
+"(None, 310, 0)"
+],
+[
+"12",
+"(None, 410, 0)"
+],
+[
+"13",
+"(None, 487, 0)"
+],
+[
+"20",
+"(None, 541, 0)"
+],
+[
+"21",
+"(None, 585, 0)"
+],
+[
+"22",
+"(None, 679, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /'Catalog', 'Pages': <PDFObjRef:2>, 'Outlines': <PDFObjRef:10>, 'Names': {'Dests': <PDFObjRef:20>}, 'Dests': {'foo': [<PDFObjRef:3>, /'Fit']}}",
+"info": "[]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"1",
+"{'Type': /'Catalog', 'Pages': <PDFObjRef:2>, 'Outlines': <PDFObjRef:10>, 'Names': {'Dests': <PDFObjRef:20>}, 'Dests': {'foo': [<PDFObjRef:3>, /'Fit']}}",
+null
+],
+[
+"2",
+"{'Type': /'Pages', 'Kids': [<PDFObjRef:3>], 'Count': 1}",
+null
+],
+[
+"3",
+"{'Type': /'Page', 'Parent': <PDFObjRef:2>, 'MediaBox': [0, 0, 612, 792]}",
+null
+],
+[
+"10",
+"{'First': <PDFObjRef:11>, 'Last': <PDFObjRef:12>}",
+null
+],
+[
+"11",
+"{'Title': b'One', 'Dest': [<PDFObjRef:3>, /'XYZ', 0, 0, 0], 'Next': <PDFObjRef:12>, 'First': <PDFObjRef:13>, 'Last': <PDFObjRef:13>}",
+null
+],
+[
+"12",
+"{'Title': b'\\xfe\\xff\\x00T', 'A': {'S': /'GoTo', 'D': b'foo'}, 'SE': <PDFObjRef:3>}",
+null
+],
+[
+"13",
+"{'Title': b'Child', 'Dest': b'Chapter1'}",
+null
+],
+[
+"20",
+"{'Kids': [<PDFObjRef:21>, <PDFObjRef:22>]}",
+null
+],
+[
+"21",
+"{'Limits': [b'A', b'C'], 'Names': [b'Bar', 1, b'Chapter1', [<PDFObjRef:3>, /'Fit'], b'Chapter1', 2]}",
+null
+],
+[
+"22",
+"{'Limits': [b'D', b'Z'], 'Names': [b'foo', 5]}",
+null
+]
+],
+"pages": [
+{
+"pageid": "3",
+"label": null,
+"mediabox": "(0.0, 0.0, 612.0, 792.0)",
+"cropbox": "(0.0, 0.0, 612.0, 792.0)",
+"rotate": 0,
+"resources": [],
+"contents": [],
+"attrs": [
+"Type",
+"Parent",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={}, MediaBox=(0.0, 0.0, 612.0, 792.0)>"
+}
+],
+"outlines": [
+[
+1,
+"One",
+"[<PDFObjRef:3>, /'XYZ', 0, 0, 0]",
+"None",
+"None"
+],
+[
+2,
+"Child",
+"b'Chapter1'",
+"None",
+"None"
+],
+[
+1,
+"T",
+"None",
+"{'S': /'GoTo', 'D': b'foo'}",
+"<PDFObjRef:3>"
+]
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!TypeError",
+"!PDFDestinationNotFound",
+"!TypeError",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "half",
+"open": "!PSEOF"
+},
+{
+"password": "",
+"variant": "3q",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "noxref",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "shifted",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRefFallback: offsets=dict_keys([1, 2, 3, 10, 11, 12, 13, 20, 21, 22])>",
+"trailer": "{'Size': 23, 'Root': <PDFObjRef:1>}",
+"ids": [
+[
+"1",
+"(None, 15, 0)"
+],
+[
+"2",
+"(None, 139, 0)"
+],
+[
+"3",
+"(None, 196, 0)"
+],
+[
+"10",
+"(None, 267, 0)"
+],
+[
+"11",
+"(None, 316, 0)"
+],
+[
+"12",
+"(None, 416, 0)"
+],
+[
+"13",
+"(None, 493, 0)"
+],
+[
+"20",
+"(None, 547, 0)"
+],
+[
+"21",
+"(None, 591, 0)"
+],
+[
+"22",
+"(None, 685, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /'Catalog', 'Pages': <PDFObjRef:2>, 'Outlines': <PDFObjRef:10>, 'Names': {'Dests': <PDFObjRef:20>}, 'Dests': {'foo': [<PDFObjRef:3>, /'Fit']}}",
+"info": "[]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"1",
+"{'Type': /'Catalog', 'Pages': <PDFObjRef:2>, 'Outlines': <PDFObjRef:10>, 'Names': {'Dests': <PDFObjRef:20>}, 'Dests': {'foo': [<PDFObjRef:3>, /'Fit']}}",
+null
+],
+[
+"2",
+"{'Type': /'Pages', 'Kids': [<PDFObjRef:3>], 'Count': 1}",
+null
+],
+[
+"3",
+"{'Type': /'Page', 'Parent': <PDFObjRef:2>, 'MediaBox': [0, 0, 612, 792]}",
+null
+],
+[
+"10",
+"{'First': <PDFObjRef:11>, 'Last': <PDFObjRef:12>}",
+null
+],
+[
+"11",
+"{'Title': b'One', 'Dest': [<PDFObjRef:3>, /'XYZ', 0, 0, 0], 'Next': <PDFObjRef:12>, 'First': <PDFObjRef:13>, 'Last': <PDFObjRef:13>}",
+null
+],
+[
+"12",
+"{'Title': b'\\xfe\\xff\\x00T', 'A': {'S': /'GoTo', 'D': b'foo'}, 'SE': <PDFObjRef:3>}",
+null
+],
+[
+"13",
+"{'Title': b'Child', 'Dest': b'Chapter1'}",
+null
+],
+[
+"20",
+"{'Kids': [<PDFObjRef:21>, <PDFObjRef:22>]}",
+null
+],
+[
+"21",
+"{'Limits': [b'A', b'C'], 'Names': [b'Bar', 1, b'Chapter1', [<PDFObjRef:3>, /'Fit'], b'Chapter1', 2]}",
+null
+],
+[
+"22",
+"{'Limits': [b'D', b'Z'], 'Names': [b'foo', 5]}",
+null
+]
+],
+"pages": [
+{
+"pageid": "3",
+"label": null,
+"mediabox": "(0.0, 0.0, 612.0, 792.0)",
+"cropbox": "(0.0, 0.0, 612.0, 792.0)",
+"rotate": 0,
+"resources": [],
+"contents": [],
+"attrs": [
+"Type",
+"Parent",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={}, MediaBox=(0.0, 0.0, 612.0, 792.0)>"
+}
+],
+"outlines": [
+[
+1,
+"One",
+"[<PDFObjRef:3>, /'XYZ', 0, 0, 0]",
+"None",
+"None"
+],
+[
+2,
+"Child",
+"b'Chapter1'",
+"None",
+"None"
+],
+[
+1,
+"T",
+"None",
+"{'S': /'GoTo', 'D': b'foo'}",
+"<PDFObjRef:3>"
+]
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!TypeError",
+"!PDFDestinationNotFound",
+"!TypeError",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "tail",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "corrupt0",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRef: offsets=dict_keys([1, 2, 10, 11, 12, 13, 20, 21, 22])>",
+"trailer": "{'Size': 23, 'Root': 1, '0': /b'RK'}",
+"ids": [
+[
+"1",
+"(None, 9, 0)"
+],
+[
+"2",
+"(None, 133, 0)"
+],
+[
+"10",
+"(None, 261, 0)"
+],
+[
+"11",
+"(None, 310, 0)"
+],
+[
+"12",
+"(None, 410, 0)"
+],
+[
+"13",
+"(None, 487, 0)"
+],
+[
+"20",
+"(None, 541, 0)"
+],
+[
+"21",
+"(None, 585, 0)"
+],
+[
+"22",
+"(None, 679, 0)"
+]
+]
+}
+],
+"catalog": "{}",
+"info": "[]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"1",
+"{'Type': /'Catalog', 'Pages': <PDFObjRef:2>, 'Outlines': <PDFObjRef:10>, 'Names': {'Dests': <PDFObjRef:20>}, 'Dests': {'foo': [<PDFObjRef:3>, /'Fit']}}",
+null
+],
+[
+"2",
+"{'Type': /'Pages', 'Kids': [], 'Count': 1}",
+null
+],
+[
+"10",
+"{'First': <PDFObjRef:11>, 'Last': <PDFObjRef:12>}",
+null
+],
+[
+"11",
+"{'Title': b'One', 'Dest': [<PDFObjRef:3>, /'XYZ', 0, 0, 0], 'Next': <PDFObjRef:12>, 'First': <PDFObjRef:13>, 'Last': <PDFObjRef:13>}",
+null
+],
+[
+"12",
+"{'Title': b'\\xfe\\xff\\x00T', 'A': {'S': /'GoTo', 'D': b'foo'}, 'SE': <PDFObjRef:3>}",
+null
+],
+[
+"13",
+"/'Title'",
+null
+],
+[
+"20",
+"{'Kids': [<PDFObjRef:21>, <PDFObjRef:22>]}",
+null
+],
+[
+"21",
+"{'Limits': [b'A', b'C'], 'Name': [b'Bar', 1, b'Chapter1', [<PDFObjRef:3>, /'Fit'], b'Chapter1', 2]}",
+null
+],
+[
+"22",
+"{'Limits': [b'D', b'Z'], 'Names': [b'foo', 5]}",
+null
+]
+],
+"pages": [],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "corrupt1",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRef: offsets=dict_keys([1, 2, 3, 11, 12, 13, 20, 21, 22])>",
+"trailer": "{'Size': 23, 'Root': <PDFObjRef:1>}",
+"ids": [
+[
+"1",
+"(None, 9, 0)"
+],
+[
+"2",
+"(None, 133, 0)"
+],
+[
+"3",
+"(None, 190, 0)"
+],
+[
+"11",
+"(None, 310, 0)"
+],
+[
+"12",
+"(None, 410, 0)"
+],
+[
+"13",
+"(None, 487, 0)"
+],
+[
+"20",
+"(None, 541, 0)"
+],
+[
+"21",
+"(None, 585, 0)"
+],
+[
+"22",
+"(None, 679, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /'Catalog', 'Pages': <PDFObjRef:2>, 'Outlines': <PDFObjRef:10>, 'Names': {'Dests': <PDFObjRef:20>}, 'Dests': {'foo': [<PDFObjRef:3>, /'Fit']}}",
+"info": "[]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"1",
+"{'Type': /'Catalog', 'Pages': <PDFObjRef:2>, 'Outlines': <PDFObjRef:10>, 'Names': {'Dests': <PDFObjRef:20>}, 'Dests': {'foo': [<PDFObjRef:3>, /'Fit']}}",
+null
+],
+[
+"2",
+"{'Type': /'Pages', 'Kids': [<PDFObjRef:3>], 'Count': 1}",
+null
+],
+[
+"3",
+"{'Type': /'Page', 'Parent': <PDFObjRef:2>, 'MediaBox': [0, 0, 612, 792]}",
+null
+],
+[
+"11",
+"{'Title': b'One', 'Dest': [<PDFObjRef:3>, /'XYZ', 0, 0, 0], \"b'Nex\\\\xfc'\": <PDFObjRef:12>, 'First': <PDFObjRef:13>, 'Last': <PDFObjRef:13>}",
+null
+],
+[
+"12",
+"{'Title': b'\\xfe\\xff\\x00T', 'A': {'S': /b'GoTo\\xb2', 'D': b'foo'}, 'SE': <PDFObjRef:3>}",
+null
+],
+[
+"13",
+"{'Title': b'Child', 'Dest': b'Chapter1'}",
+null
+],
+[
+"20",
+"{'Kids': [<PDFObjRef:21>, <PDFObjRef:22>]}",
+null
+],
+[
+"21",
+"{'Limits': [b'A', b'C'], 'Names': [b'Bar', 1, b'Chapter1', [<PDFObjRef:3>, /'Fit'], b'Chapter1', 2]}",
+null
+],
+[
+"22",
+"{'Limits': [b'D', b'Z'], \"b'Nam\\\\xa6s'\": [b'foo', 5]}",
+null
+]
+],
+"pages": [
+{
+"pageid": "3",
+"label": null,
+"mediabox": "(0.0, 0.0, 612.0, 792.0)",
+"cropbox": "(0.0, 0.0, 612.0, 792.0)",
+"rotate": 0,
+"resources": [],
+"contents": [],
+"attrs": [
+"Type",
+"Parent",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={}, MediaBox=(0.0, 0.0, 612.0, 792.0)>"
+}
+],
+"outlines": [],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!TypeError",
+"!PDFDestinationNotFound",
+"!TypeError",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "corrupt2",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRefFallback: offsets=dict_keys([1, 2, 3, 10, 11, 12, 13, 21, 22])>",
+"trailer": "{'Size': 23, 'Root': <PDFObjRef:1>}",
+"ids": [
+[
+"1",
+"(None, 9, 0)"
+],
+[
+"2",
+"(None, 133, 0)"
+],
+[
+"3",
+"(None, 190, 0)"
+],
+[
+"10",
+"(None, 261, 0)"
+],
+[
+"11",
+"(None, 310, 0)"
+],
+[
+"12",
+"(None, 410, 0)"
+],
+[
+"13",
+"(None, 487, 0)"
+],
+[
+"21",
+"(None, 585, 0)"
+],
+[
+"22",
+"(None, 679, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /'Catalog', 'Pages': <PDFObjRef:2>, 'Outlines': <PDFObjRef:10>, 'Names': {'Dests': <PDFObjRef:20>}, 'Dests': {'foo': [<PDFObjRef:3>, /'Fit']}}",
+"info": "[]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"1",
+"{'Type': /'Catalog', 'Pages': <PDFObjRef:2>, 'Outlines': <PDFObjRef:10>, 'Names': {'Dests': <PDFObjRef:20>}, 'Dests': {'foo': [<PDFObjRef:3>, /'Fit']}}",
+null
+],
+[
+"2",
+"{'Type': /'Pages', 'Kids': [<PDFObjRef:3>], 'Count': 1}",
+null
+],
+[
+"3",
+"{'Type': /'Page', 'Parent': <PDFObjRef:2>, 'MediaBox': [0, 0, 612, 792]}",
+null
+],
+[
+"10",
+"{'First': <PDFObjRef:11>, 'Last': <PDFObjRef:12>}",
+null
+],
+[
+"11",
+"{'Title': b'One', 'Dest': [<PDFObjRef:3>, /'XYZ', 0, 0, 0], 'Next': <PDFObjRef:12>, 'First': <PDFObjRef:13>, 'Last': <PDFObjRef:13>}",
+null
+],
+[
+"12",
+"{'Title': b'\\xfe\\xff\\x00T', 'A': {'S': /'GoTo', 'D': b'foo'}, 'SE': <PDFObjRef:3>}",
+null
+],
+[
+"13",
+"20",
+null
+],
+[
+"21",
+"{'Limits': [b'A', b'C'], 'Names': [b'Bar', 1, b'Chapter1', [<PDFObjRef:3>, /'Fit'], b'Chapter1', 2]}",
+null
+],
+[
+"22",
+"{'Limits': [b'D', b'Z'], 'Names': [b'foo', 5]}",
+null
+]
+],
+"pages": [
+{
+"pageid": "3",
+"label": null,
+"mediabox": "(0.0, 0.0, 612.0, 792.0)",
+"cropbox": "(0.0, 0.0, 612.0, 792.0)",
+"rotate": 0,
+"resources": [],
+"contents": [],
+"attrs": [
+"Type",
+"Parent",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={}, MediaBox=(0.0, 0.0, 612.0, 792.0)>"
+}
+],
+"outlines": [
+[
+1,
+"One",
+"[<PDFObjRef:3>, /'XYZ', 0, 0, 0]",
+"None",
+"None"
+],
+[
+1,
+"T",
+"None",
+"{'S': /'GoTo', 'D': b'foo'}",
+"<PDFObjRef:3>"
+]
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"[<PDFObjRef:3>, /'Fit']",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "corrupt3",
+"open": "!PDFSyntaxError"
+}
+]
+}

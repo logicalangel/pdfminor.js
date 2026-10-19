@@ -1,0 +1,1330 @@
+{
+"path": "contrib/matplotlib.pdf",
+"runs": [
+{
+"password": "",
+"variant": "orig",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRef: offsets=dict_keys([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22])>",
+"trailer": "{'Info': <PDFObjRef:22>, 'Root': <PDFObjRef:1>, 'Size': 23}",
+"ids": [
+[
+"1",
+"(None, 16, 0)"
+],
+[
+"2",
+"(None, 4788, 0)"
+],
+[
+"3",
+"(None, 4321, 0)"
+],
+[
+"4",
+"(None, 4353, 0)"
+],
+[
+"5",
+"(None, 4452, 0)"
+],
+[
+"6",
+"(None, 4473, 0)"
+],
+[
+"7",
+"(None, 4494, 0)"
+],
+[
+"8",
+"(None, 65, 0)"
+],
+[
+"9",
+"(None, 399, 0)"
+],
+[
+"10",
+"(None, 208, 0)"
+],
+[
+"11",
+"(None, 1004, 0)"
+],
+[
+"12",
+"(None, 4526, 0)"
+],
+[
+"13",
+"(None, 3182, 0)"
+],
+[
+"14",
+"(None, 2982, 0)"
+],
+[
+"15",
+"(None, 2645, 0)"
+],
+[
+"16",
+"(None, 4235, 0)"
+],
+[
+"17",
+"(None, 1024, 0)"
+],
+[
+"18",
+"(None, 1489, 0)"
+],
+[
+"19",
+"(None, 1651, 0)"
+],
+[
+"20",
+"(None, 2041, 0)"
+],
+[
+"21",
+"(None, 2362, 0)"
+],
+[
+"22",
+"(None, 4848, 0)"
+]
+]
+}
+],
+"catalog": "{'Pages': <PDFObjRef:2>, 'Type': /'Catalog'}",
+"info": "[{'CreationDate': b\"D:20181103223013-07'00'\", 'Creator': b'matplotlib 3.0.0, http://matplotlib.org', 'Producer': b'matplotlib pdf backend 3.0.0'}]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"1",
+"{'Pages': <PDFObjRef:2>, 'Type': /'Catalog'}",
+null
+],
+[
+"2",
+"{'Count': 1, 'Kids': [<PDFObjRef:10>], 'Type': /'Pages'}",
+null
+],
+[
+"3",
+"{'F1': <PDFObjRef:15>}",
+null
+],
+[
+"4",
+"{'A1': {'CA': 0, 'Type': /'ExtGState', 'ca': 1}, 'A2': {'CA': 1, 'Type': /'ExtGState', 'ca': 1}}",
+null
+],
+[
+"5",
+"{}",
+null
+],
+[
+"6",
+"{}",
+null
+],
+[
+"7",
+"{'M0': <PDFObjRef:12>}",
+null
+],
+[
+"8",
+"{'ExtGState': <PDFObjRef:4>, 'Font': <PDFObjRef:3>, 'Pattern': <PDFObjRef:5>, 'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI'], 'Shading': <PDFObjRef:6>, 'XObject': <PDFObjRef:7>}",
+null
+],
+[
+"9",
+"<PDFStream(9): raw=530, {'Filter': /'FlateDecode', 'Length': <PDFObjRef:11>}>",
+"e67f4efbaebf8a9892f9d57243d88cae438faab0373bcc4df0458e1ade818bd9"
+],
+[
+"10",
+"{'Annots': [], 'Contents': <PDFObjRef:9>, 'Group': {'CS': /'DeviceRGB', 'S': /'Transparency', 'Type': /'Group'}, 'MediaBox': [0, 0, 388.379375, 300.683875], 'Parent': <PDFObjRef:2>, 'Resources': <PDFObjRef:8>, 'Type': /'Page'}",
+null
+],
+[
+"11",
+"530",
+null
+],
+[
+"12",
+"<PDFStream(12): raw=131, {'BBox': [-3.5, -3.5, 3.5, 3.5], 'Filter': /'FlateDecode', 'Length': 131, 'Subtype': /'Form', 'Type': /'XObject'}>",
+"dedbedca4d51e5544fedf9140e1caf15c22428b8906a2433be3e3b3f05d21ae8"
+],
+[
+"13",
+"sha256:19756d2da6f211b45a94d0cfbd6087af86826167aa2ffc0b72e5507004fece8b",
+null
+],
+[
+"14",
+"{'Ascent': 929, 'CapHeight': 0, 'Descent': -236, 'Flags': 32, 'FontBBox': [-1021, -463, 1794, 1233], 'FontName': /'DejaVuSans', 'ItalicAngle': 0, 'MaxWidth': 1342, 'StemV': 0, 'Type': /'FontDescriptor', 'XHeight': 0}",
+null
+],
+[
+"15",
+"sha256:8b9433ad96c6a2c25b4ae9a3402e5661d23f8a70843a25a64f2f2571d34d0cd2",
+null
+],
+[
+"16",
+"{'eight': <PDFObjRef:17>, 'four': <PDFObjRef:18>, 'six': <PDFObjRef:19>, 'two': <PDFObjRef:20>, 'zero': <PDFObjRef:21>}",
+null
+],
+[
+"17",
+"<PDFStream(17): raw=392, {'Filter': /'FlateDecode', 'Length': 392}>",
+"8e663b76079d726f15c81d3bc4f8212cecf324ca66e4664adc37819cdaad8b33"
+],
+[
+"18",
+"<PDFStream(18): raw=90, {'Filter': /'FlateDecode', 'Length': 90}>",
+"ece0259b81c63e78eaacfbc3b925ed87f36e7a0defc8380d888de8e0e72d5f52"
+],
+[
+"19",
+"<PDFStream(19): raw=317, {'Filter': /'FlateDecode', 'Length': 317}>",
+"e869ffc9c6a66abc07760814d718427af0ea5aeb05ef0994b19688e2ada8b881"
+],
+[
+"20",
+"<PDFStream(20): raw=248, {'Filter': /'FlateDecode', 'Length': 248}>",
+"8ac746f71180db522d7fbdb0f607c6a518c83ac88255013eceae7509313b6b78"
+],
+[
+"21",
+"<PDFStream(21): raw=210, {'Filter': /'FlateDecode', 'Length': 210}>",
+"18bd0fe824c08d0733abfdfb4535b75ec61a45214765a379249bba665a454670"
+],
+[
+"22",
+"{'CreationDate': b\"D:20181103223013-07'00'\", 'Creator': b'matplotlib 3.0.0, http://matplotlib.org', 'Producer': b'matplotlib pdf backend 3.0.0'}",
+null
+]
+],
+"pages": [
+{
+"pageid": "10",
+"label": null,
+"mediabox": "(0.0, 0.0, 388.379375, 300.683875)",
+"cropbox": "(0.0, 0.0, 388.379375, 300.683875)",
+"rotate": 0,
+"resources": [
+"ExtGState",
+"Font",
+"Pattern",
+"ProcSet",
+"Shading",
+"XObject"
+],
+"contents": [
+"<PDFStream(9): len=2052, {'Filter': /'FlateDecode', 'Length': <PDFObjRef:11>}>"
+],
+"attrs": [
+"Annots",
+"Contents",
+"Group",
+"MediaBox",
+"Parent",
+"Resources",
+"Type"
+],
+"repr": "<PDFPage: Resources={'ExtGState': <PDFObjRef:4>, 'Font': <PDFObjRef:3>, 'Pattern': <PDFObjRef:5>, 'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI'], 'Shading': <PDFObjRef:6>, 'XObject': <PDFObjRef:7>}, MediaBox=(0.0, 0.0, 388.379375, 300.683875)>"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "half",
+"open": "!PSEOF"
+},
+{
+"password": "",
+"variant": "3q",
+"open": "!PSEOF"
+},
+{
+"password": "",
+"variant": "noxref",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "shifted",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRefFallback: offsets=dict_keys([1, 8, 10, 9, 11, 17, 18, 19, 20, 21, 15, 14, 13, 16, 3, 4, 5, 6, 7, 12, 2, 22])>",
+"trailer": "{'Info': <PDFObjRef:22>, 'Root': <PDFObjRef:1>, 'Size': 23}",
+"ids": [
+[
+"1",
+"(None, 22, 0)"
+],
+[
+"8",
+"(None, 71, 0)"
+],
+[
+"10",
+"(None, 214, 0)"
+],
+[
+"9",
+"(None, 405, 0)"
+],
+[
+"11",
+"(None, 1010, 0)"
+],
+[
+"17",
+"(None, 1030, 0)"
+],
+[
+"18",
+"(None, 1495, 0)"
+],
+[
+"19",
+"(None, 1657, 0)"
+],
+[
+"20",
+"(None, 2047, 0)"
+],
+[
+"21",
+"(None, 2368, 0)"
+],
+[
+"15",
+"(None, 2651, 0)"
+],
+[
+"14",
+"(None, 2988, 0)"
+],
+[
+"13",
+"(None, 3188, 0)"
+],
+[
+"16",
+"(None, 4241, 0)"
+],
+[
+"3",
+"(None, 4327, 0)"
+],
+[
+"4",
+"(None, 4359, 0)"
+],
+[
+"5",
+"(None, 4458, 0)"
+],
+[
+"6",
+"(None, 4479, 0)"
+],
+[
+"7",
+"(None, 4500, 0)"
+],
+[
+"12",
+"(None, 4532, 0)"
+],
+[
+"2",
+"(None, 4794, 0)"
+],
+[
+"22",
+"(None, 4854, 0)"
+]
+]
+}
+],
+"catalog": "{'Pages': <PDFObjRef:2>, 'Type': /'Catalog'}",
+"info": "[{'CreationDate': b\"D:20181103223013-07'00'\", 'Creator': b'matplotlib 3.0.0, http://matplotlib.org', 'Producer': b'matplotlib pdf backend 3.0.0'}]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"1",
+"{'Pages': <PDFObjRef:2>, 'Type': /'Catalog'}",
+null
+],
+[
+"8",
+"{'ExtGState': <PDFObjRef:4>, 'Font': <PDFObjRef:3>, 'Pattern': <PDFObjRef:5>, 'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI'], 'Shading': <PDFObjRef:6>, 'XObject': <PDFObjRef:7>}",
+null
+],
+[
+"10",
+"{'Annots': [], 'Contents': <PDFObjRef:9>, 'Group': {'CS': /'DeviceRGB', 'S': /'Transparency', 'Type': /'Group'}, 'MediaBox': [0, 0, 388.379375, 300.683875], 'Parent': <PDFObjRef:2>, 'Resources': <PDFObjRef:8>, 'Type': /'Page'}",
+null
+],
+[
+"9",
+"<PDFStream(9): raw=531, {'Filter': /'FlateDecode', 'Length': <PDFObjRef:11>}>",
+"e67f4efbaebf8a9892f9d57243d88cae438faab0373bcc4df0458e1ade818bd9"
+],
+[
+"11",
+"530",
+null
+],
+[
+"17",
+"<PDFStream(17): raw=393, {'Filter': /'FlateDecode', 'Length': 392}>",
+"8e663b76079d726f15c81d3bc4f8212cecf324ca66e4664adc37819cdaad8b33"
+],
+[
+"18",
+"<PDFStream(18): raw=91, {'Filter': /'FlateDecode', 'Length': 90}>",
+"ece0259b81c63e78eaacfbc3b925ed87f36e7a0defc8380d888de8e0e72d5f52"
+],
+[
+"19",
+"<PDFStream(19): raw=318, {'Filter': /'FlateDecode', 'Length': 317}>",
+"e869ffc9c6a66abc07760814d718427af0ea5aeb05ef0994b19688e2ada8b881"
+],
+[
+"20",
+"<PDFStream(20): raw=249, {'Filter': /'FlateDecode', 'Length': 248}>",
+"8ac746f71180db522d7fbdb0f607c6a518c83ac88255013eceae7509313b6b78"
+],
+[
+"21",
+"<PDFStream(21): raw=211, {'Filter': /'FlateDecode', 'Length': 210}>",
+"18bd0fe824c08d0733abfdfb4535b75ec61a45214765a379249bba665a454670"
+],
+[
+"15",
+"sha256:8b9433ad96c6a2c25b4ae9a3402e5661d23f8a70843a25a64f2f2571d34d0cd2",
+null
+],
+[
+"14",
+"{'Ascent': 929, 'CapHeight': 0, 'Descent': -236, 'Flags': 32, 'FontBBox': [-1021, -463, 1794, 1233], 'FontName': /'DejaVuSans', 'ItalicAngle': 0, 'MaxWidth': 1342, 'StemV': 0, 'Type': /'FontDescriptor', 'XHeight': 0}",
+null
+],
+[
+"13",
+"sha256:19756d2da6f211b45a94d0cfbd6087af86826167aa2ffc0b72e5507004fece8b",
+null
+],
+[
+"16",
+"{'eight': <PDFObjRef:17>, 'four': <PDFObjRef:18>, 'six': <PDFObjRef:19>, 'two': <PDFObjRef:20>, 'zero': <PDFObjRef:21>}",
+null
+],
+[
+"3",
+"{'F1': <PDFObjRef:15>}",
+null
+],
+[
+"4",
+"{'A1': {'CA': 0, 'Type': /'ExtGState', 'ca': 1}, 'A2': {'CA': 1, 'Type': /'ExtGState', 'ca': 1}}",
+null
+],
+[
+"5",
+"{}",
+null
+],
+[
+"6",
+"{}",
+null
+],
+[
+"7",
+"{'M0': <PDFObjRef:12>}",
+null
+],
+[
+"12",
+"<PDFStream(12): raw=132, {'BBox': [-3.5, -3.5, 3.5, 3.5], 'Filter': /'FlateDecode', 'Length': 131, 'Subtype': /'Form', 'Type': /'XObject'}>",
+"dedbedca4d51e5544fedf9140e1caf15c22428b8906a2433be3e3b3f05d21ae8"
+],
+[
+"2",
+"{'Count': 1, 'Kids': [<PDFObjRef:10>], 'Type': /'Pages'}",
+null
+],
+[
+"22",
+"{'CreationDate': b\"D:20181103223013-07'00'\", 'Creator': b'matplotlib 3.0.0, http://matplotlib.org', 'Producer': b'matplotlib pdf backend 3.0.0'}",
+null
+]
+],
+"pages": [
+{
+"pageid": "10",
+"label": null,
+"mediabox": "(0.0, 0.0, 388.379375, 300.683875)",
+"cropbox": "(0.0, 0.0, 388.379375, 300.683875)",
+"rotate": 0,
+"resources": [
+"ExtGState",
+"Font",
+"Pattern",
+"ProcSet",
+"Shading",
+"XObject"
+],
+"contents": [
+"<PDFStream(9): len=2052, {'Filter': /'FlateDecode', 'Length': <PDFObjRef:11>}>"
+],
+"attrs": [
+"Annots",
+"Contents",
+"Group",
+"MediaBox",
+"Parent",
+"Resources",
+"Type"
+],
+"repr": "<PDFPage: Resources={'ExtGState': <PDFObjRef:4>, 'Font': <PDFObjRef:3>, 'Pattern': <PDFObjRef:5>, 'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI'], 'Shading': <PDFObjRef:6>, 'XObject': <PDFObjRef:7>}, MediaBox=(0.0, 0.0, 388.379375, 300.683875)>"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "tail",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "corrupt0",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRef: offsets=dict_keys([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22])>",
+"trailer": "{'Info': <PDFObjRef:22>, 'Root': <PDFObjRef:1>, 'Size': 23}",
+"ids": [
+[
+"1",
+"(None, 16, 0)"
+],
+[
+"2",
+"(None, 4788, 0)"
+],
+[
+"3",
+"(None, 4321, 0)"
+],
+[
+"4",
+"(None, 4353, 0)"
+],
+[
+"5",
+"(None, 4452, 0)"
+],
+[
+"6",
+"(None, 4473, 0)"
+],
+[
+"7",
+"(None, 4494, 0)"
+],
+[
+"8",
+"(None, 65, 0)"
+],
+[
+"9",
+"(None, 399, 0)"
+],
+[
+"10",
+"(None, 208, 0)"
+],
+[
+"11",
+"(None, 1004, 0)"
+],
+[
+"12",
+"(None, 4526, 0)"
+],
+[
+"13",
+"(None, 3182, 0)"
+],
+[
+"14",
+"(None, 2982, 0)"
+],
+[
+"15",
+"(None, 2645, 0)"
+],
+[
+"16",
+"(None, 4235, 0)"
+],
+[
+"17",
+"(None, 1024, 0)"
+],
+[
+"18",
+"(None, 1489, 0)"
+],
+[
+"19",
+"(None, 1651, 0)"
+],
+[
+"20",
+"(None, 2041, 0)"
+],
+[
+"21",
+"(None, 2362, 0)"
+],
+[
+"22",
+"(None, 4848, 0)"
+]
+]
+}
+],
+"catalog": "{'Pages': <PDFObjRef:2>, 'Type': /'Catalog'}",
+"info": "[{'C\\x0feationDate': b\"D:20181103223013-07'00'\", 'Creator': b'matplotlib 3.0.0, http://matplotlib.org', 'Producer': b'matplotlib pdf backend 3.0.0'}]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"1",
+"{'Pages': <PDFObjRef:2>, 'Type': /'Catalog'}",
+null
+],
+[
+"2",
+"{'Count': 1, 'Kids': [<PDFObjRef:10>], 'Type': /'Pages'}",
+null
+],
+[
+"3",
+"{'F1': <PDFObjRef:15>}",
+null
+],
+[
+"4",
+"{'A1': {'CA': 0, 'Type': /'ExtGState', 'ca': 1}, 'A2': {'CA': 1, 'Type': /'ExtGState', 'ca': 1}}",
+null
+],
+[
+"5",
+"{}",
+null
+],
+[
+"6",
+"{}",
+null
+],
+[
+"7",
+"{'M0': <PDFObjRef:12>}",
+null
+],
+[
+"8",
+"{'ExtGState': <PDFObjRef:4>, 'Font': <PDFObjRef:3>, 'Pattern': <PDFObjRef:5>, 'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI'], 'Shading': <PDFObjRef:6>, 'XObject': <PDFObjRef:7>}",
+null
+],
+[
+"9",
+"<PDFStream(9): raw=530, {'Filter': /'FlateDecode', 'Length': <PDFObjRef:11>}>",
+"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+],
+[
+"10",
+"{'Annots': [], 'Contents': <PDFObjRef:9>, 'Group': {'CS': /'DeviceRGB', 'S': /'Transparency', 'Type': /'Group'}, 'MediaBox': [0, 0, 388.379375, 300.683875], 'Parent': <PDFObjRef:2>, 'Resources': <PDFObjRef:8>, 'Type': /'Page'}",
+null
+],
+[
+"11",
+"530",
+null
+],
+[
+"12",
+"<PDFStream(12): raw=131, {'BBox': [-3.5, -3.5, 3.5, 3.5], 'Filter': /'FlateDecode', 'Length': 131, 'Subtype': /'Form', 'Type': /'XObject'}>",
+"dedbedca4d51e5544fedf9140e1caf15c22428b8906a2433be3e3b3f05d21ae8"
+],
+[
+"13",
+"sha256:90ffc2e819468c4b6eee523e5b6366823fc8a3c8ac1540e7d61fff6b60dde533",
+null
+],
+[
+"14",
+"{'Ascent': 929, 'CapHeight': 0, 'Descent': -236, 'Flags': 32, 'FontBBox': [-1021, -463, 1794, 1233], 'FontName': /'DejaVuSans', 'ItalicAngle': 0, 'MaxWidth': 1342, 'StemV': 0, 'Type': /'FontDescriptor', 'XHeight': 0}",
+null
+],
+[
+"15",
+"sha256:8b9433ad96c6a2c25b4ae9a3402e5661d23f8a70843a25a64f2f2571d34d0cd2",
+null
+],
+[
+"16",
+"{'eight': <PDFObjRef:17>, 'four': <PDFObjRef:18>, 'six': <PDFObjRef:19>, 'two': <PDFObjRef:20>, 'zero': <PDFObjRef:21>}",
+null
+],
+[
+"17",
+"<PDFStream(17): raw=392, {'Filter': /'FlateDecode', 'Length': 392}>",
+"8e663b76079d726f15c81d3bc4f8212cecf324ca66e4664adc37819cdaad8b33"
+],
+[
+"18",
+"<PDFStream(18): raw=90, {'Filter': /'FlateDecode', 'Length': 90}>",
+"ece0259b81c63e78eaacfbc3b925ed87f36e7a0defc8380d888de8e0e72d5f52"
+],
+[
+"19",
+"<PDFStream(19): raw=317, {'Filter': /'FlateDecode', 'Length': 317}>",
+"e869ffc9c6a66abc07760814d718427af0ea5aeb05ef0994b19688e2ada8b881"
+],
+[
+"20",
+"<PDFStream(20): raw=248, {'Filter': /'FlateDecode', 'Length': 248}>",
+"8ac746f71180db522d7fbdb0f607c6a518c83ac88255013eceae7509313b6b78"
+],
+[
+"21",
+"<PDFStream(21): raw=210, {'Filter': /'FlateDecode', 'Length': 210}>",
+"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+],
+[
+"22",
+"{'C\\x0feationDate': b\"D:20181103223013-07'00'\", 'Creator': b'matplotlib 3.0.0, http://matplotlib.org', 'Producer': b'matplotlib pdf backend 3.0.0'}",
+null
+]
+],
+"pages": [
+{
+"pageid": "10",
+"label": null,
+"mediabox": "(0.0, 0.0, 388.379375, 300.683875)",
+"cropbox": "(0.0, 0.0, 388.379375, 300.683875)",
+"rotate": 0,
+"resources": [
+"ExtGState",
+"Font",
+"Pattern",
+"ProcSet",
+"Shading",
+"XObject"
+],
+"contents": [
+"<PDFStream(9): len=0, {'Filter': /'FlateDecode', 'Length': <PDFObjRef:11>}>"
+],
+"attrs": [
+"Annots",
+"Contents",
+"Group",
+"MediaBox",
+"Parent",
+"Resources",
+"Type"
+],
+"repr": "<PDFPage: Resources={'ExtGState': <PDFObjRef:4>, 'Font': <PDFObjRef:3>, 'Pattern': <PDFObjRef:5>, 'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI'], 'Shading': <PDFObjRef:6>, 'XObject': <PDFObjRef:7>}, MediaBox=(0.0, 0.0, 388.379375, 300.683875)>"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "corrupt1",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "corrupt2",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRef: offsets=dict_keys([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22])>",
+"trailer": "{'Info': <PDFObjRef:22>, 'Root': <PDFObjRef:1>, 'Size': 23}",
+"ids": [
+[
+"1",
+"(None, 16, 0)"
+],
+[
+"2",
+"(None, 4788, 0)"
+],
+[
+"3",
+"(None, 4321, 0)"
+],
+[
+"4",
+"(None, 4353, 0)"
+],
+[
+"5",
+"(None, 4452, 0)"
+],
+[
+"6",
+"(None, 4473, 0)"
+],
+[
+"7",
+"(None, 4494, 0)"
+],
+[
+"8",
+"(None, 65, 0)"
+],
+[
+"9",
+"(None, 399, 0)"
+],
+[
+"10",
+"(None, 208, 0)"
+],
+[
+"11",
+"(None, 1004, 0)"
+],
+[
+"12",
+"(None, 4526, 0)"
+],
+[
+"13",
+"(None, 3182, 0)"
+],
+[
+"14",
+"(None, 2982, 0)"
+],
+[
+"15",
+"(None, 2645, 0)"
+],
+[
+"16",
+"(None, 4235, 0)"
+],
+[
+"17",
+"(None, 1024, 0)"
+],
+[
+"18",
+"(None, 1489, 0)"
+],
+[
+"19",
+"(None, 1651, 0)"
+],
+[
+"20",
+"(None, 2041, 0)"
+],
+[
+"21",
+"(None, 2362, 0)"
+],
+[
+"22",
+"(None, 4848, 0)"
+]
+]
+}
+],
+"catalog": "{'Pages': <PDFObjRef:2>, 'Type': /'Catalog'}",
+"info": "[{'CreationDate': b\"D:20181103223013-07'00'\", 'Creator': b'matplotlib 3.0.0, http://matplotlib.org', 'Producer': b'matplotlib pdf backend 3.0.0'}]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"1",
+"{'Pages': <PDFObjRef:2>, 'Type': /'Catalog'}",
+null
+],
+[
+"2",
+"{'Count': 1, 'Kids': [<PDFObjRef:10>], 'Type': /'Pages'}",
+null
+],
+[
+"3",
+"{'F1': <PDFObjRef:15>}",
+null
+],
+[
+"4",
+"{'A1': {'CA': 0, 'Type': /'ExtGState', 'ca': 1}, 'A2': {'CA': 1, 'Type': /'ExtGState', 'ca': 1}}",
+null
+],
+[
+"5",
+"{}",
+null
+],
+[
+"6",
+"{}",
+null
+],
+[
+"7",
+"{'M0': <PDFObjRef:12>}",
+null
+],
+[
+"8",
+"10",
+null
+],
+[
+"9",
+"<PDFStream(9): raw=530, {'Filter': /'FlateDecode', 'Length': <PDFObjRef:11>}>",
+"e67f4efbaebf8a9892f9d57243d88cae438faab0373bcc4df0458e1ade818bd9"
+],
+[
+"10",
+"{'Annots': [], 'Contents': <PDFObjRef:9>, 'Group': {'CS': /'DeviceRGB', 'S': /'Transparency', 'Type': /'Group'}, 'MediaBox': [0, 0, 388.379375, 300.683875], 'Parent': <PDFObjRef:2>, 'Resources': <PDFObjRef:8>, 'Type': /'Page'}",
+null
+],
+[
+"11",
+"530",
+null
+],
+[
+"12",
+"<PDFStream(12): raw=131, {'BBox': [-3.5, -3.5, 3.5, 3.5], 'Filter': /'FlateDecode', 'Length': 131, 'Subtype': /'Form', 'Type': /'XObject'}>",
+"dedbedca4d51e5544fedf9140e1caf15c22428b8906a2433be3e3b3f05d21ae8"
+],
+[
+"13",
+"sha256:4ddb35f9bc709d9b6c0e5e9e443ad3cbb06fd18bb5540378922bc9d91e6ba373",
+null
+],
+[
+"14",
+"{'Ascent': 929, 'CapHeight': 0, 'Descent': -236, 'Flags': 32, 'FontBBox': [-1021, -463, 1794, 1233], 'FontName': /'DejaVuSans', 'ItalicAngle': 0, 'MaxWidth': 1342, 'StemV': 0, 'Type': /'FontDescriptor', 'XHeight': 0}",
+null
+],
+[
+"15",
+"sha256:6a28d01bf380d1401ea3ff027550c2abecf81ab2bbe7738d90df4a3315f056ff",
+null
+],
+[
+"16",
+"{'eight': <PDFObjRef:17>, 'four': <PDFObjRef:18>, 'six': <PDFObjRef:19>, 'two': <PDFObjRef:20>, 'zero': <PDFObjRef:21>}",
+null
+],
+[
+"17",
+"<PDFStream(17): raw=392, {'Filter': /'FlateDecode', 'Length': 392}>",
+"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+],
+[
+"18",
+"<PDFStream(18): raw=90, {'Filter': /'FlateDecode', 'Length': 90}>",
+"ece0259b81c63e78eaacfbc3b925ed87f36e7a0defc8380d888de8e0e72d5f52"
+],
+[
+"19",
+"<PDFStream(19): raw=317, {'Filter': /'FlateDecode', 'Length': 317}>",
+"e869ffc9c6a66abc07760814d718427af0ea5aeb05ef0994b19688e2ada8b881"
+],
+[
+"20",
+"<PDFStream(20): raw=248, {'Filter': /'FlateDecode', 'Length': 248}>",
+"4d4e4ce600f9a267949c2803303c2192821216beb99deefe1c8ea47c3c5aa4b4"
+],
+[
+"21",
+"<PDFStream(21): raw=210, {'Filter': /'FlateDecode', 'Length': 210}>",
+"18bd0fe824c08d0733abfdfb4535b75ec61a45214765a379249bba665a454670"
+],
+[
+"22",
+"{'CreationDate': b\"D:20181103223013-07'00'\", 'Creator': b'matplotlib 3.0.0, http://matplotlib.org', 'Producer': b'matplotlib pdf backend 3.0.0'}",
+null
+]
+],
+"pages": [
+{
+"pageid": "10",
+"label": null,
+"mediabox": "(0.0, 0.0, 388.379375, 300.683875)",
+"cropbox": "(0.0, 0.0, 388.379375, 300.683875)",
+"rotate": 0,
+"resources": "type:int",
+"contents": [
+"<PDFStream(9): len=2052, {'Filter': /'FlateDecode', 'Length': <PDFObjRef:11>}>"
+],
+"attrs": [
+"Annots",
+"Contents",
+"Group",
+"MediaBox",
+"Parent",
+"Resources",
+"Type"
+],
+"repr": "<PDFPage: Resources=10, MediaBox=(0.0, 0.0, 388.379375, 300.683875)>"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "corrupt3",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRef: offsets=dict_keys([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 20, 21, 22])>",
+"trailer": "{'Info': <PDFObjRef:22>, 'Root': <PDFObjRef:1>, 'Size': 23}",
+"ids": [
+[
+"1",
+"(None, 16, 0)"
+],
+[
+"2",
+"(None, 4788, 0)"
+],
+[
+"3",
+"(None, 4321, 0)"
+],
+[
+"4",
+"(None, 4353, 0)"
+],
+[
+"5",
+"(None, 4452, 0)"
+],
+[
+"6",
+"(None, 4473, 0)"
+],
+[
+"7",
+"(None, 4494, 0)"
+],
+[
+"8",
+"(None, 65, 0)"
+],
+[
+"9",
+"(None, 399, 0)"
+],
+[
+"10",
+"(None, 208, 0)"
+],
+[
+"11",
+"(None, 1004, 0)"
+],
+[
+"12",
+"(None, 4526, 0)"
+],
+[
+"13",
+"(None, 3182, 0)"
+],
+[
+"14",
+"(None, 2982, 0)"
+],
+[
+"15",
+"(None, 2645, 0)"
+],
+[
+"16",
+"(None, 4235, 0)"
+],
+[
+"17",
+"(None, 1024, 0)"
+],
+[
+"18",
+"(None, 1489, 0)"
+],
+[
+"20",
+"(None, 2041, 0)"
+],
+[
+"21",
+"(None, 2362, 0)"
+],
+[
+"22",
+"(None, 4848, 0)"
+]
+]
+}
+],
+"catalog": "{'Pages': <PDFObjRef:2>, 'Type': /'Catalog'}",
+"info": "[{'CreationDate': b\"D:20181103223013-07'00'\", 'Creator': b'matplotlib 3.0.0, http://matplotlib.org', 'Producer': b'matplotlib pdf backend 3.0.0'}]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"1",
+"{'Pages': <PDFObjRef:2>, 'Type': /'Catalog'}",
+null
+],
+[
+"2",
+"{'Count': 1, 'Kids': [<PDFObjRef:10>], 'Type': /'Pages'}",
+null
+],
+[
+"3",
+"{'F1': <PDFObjRef:15>}",
+null
+],
+[
+"4",
+"{'A1': {'CA': 0, 'Type': /'ExtGState', 'ca': 1}, 'A2': {'CA': 1, 'Type': /'ExtGState', 'ca': 1}}",
+null
+],
+[
+"5",
+"{}",
+null
+],
+[
+"6",
+"{}",
+null
+],
+[
+"7",
+"{'M0': <PDFObjRef:12>}",
+null
+],
+[
+"8",
+"{'ExtGState': <PDFObjRef:4>, 'Font': <PDFObjRef:3>, 'Pattern': 5, '0': /b'R\\xe1', 'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI'], 'Shadi\\x17g': <PDFObjRef:6>, 'XObject': <PDFObjRef:7>}",
+null
+],
+[
+"9",
+"<PDFStream(9): raw=530, {'Filter': /'FlateDecode', 'Length': <PDFObjRef:11>}>",
+"4357f98e6a89a752f273c8050604e4ea1881f4bf2f0f27930bffbd571c5210d3"
+],
+[
+"10",
+"{'Annots': [], 'Contents': 9, 'Group': {'CS': /'DeviceRGB', 'S': /'Transparency', 'Type': /'Group'}, 'MediaBox': [0, 0, 388.379375, 300.683875], 'Parent': <PDFObjRef:2>, 'Resources': <PDFObjRef:8>, 'Type': /'Page'}",
+null
+],
+[
+"11",
+"530",
+null
+],
+[
+"12",
+"<PDFStream(12): raw=131, {'BBox': [-3.5, -3.5, 3.5, 3.5], 'Filter': /'FlateDecode', 'Length': 131, 'Subtype': /'Form', 'Type': /'XObject'}>",
+"dedbedca4d51e5544fedf9140e1caf15c22428b8906a2433be3e3b3f05d21ae8"
+],
+[
+"13",
+"sha256:19756d2da6f211b45a94d0cfbd6087af86826167aa2ffc0b72e5507004fece8b",
+null
+],
+[
+"14",
+"{'Ascent': 929, 'CapHeight': 0, 'Descent': -236, 'Flags': 32, 'FontBBox': [-1021, -463, 1794, 1233], 'FontName': /'DejaVuSans', 'ItalicAngle': 0, 'MaxWidth': 1342, 'StemV': 0, 'Type': /'FontDescriptor', 'XHeight': 0}",
+null
+],
+[
+"15",
+"sha256:8b9433ad96c6a2c25b4ae9a3402e5661d23f8a70843a25a64f2f2571d34d0cd2",
+null
+],
+[
+"16",
+"{'eight': <PDFObjRef:17>, 'four': <PDFObjRef:18>, 'six': <PDFObjRef:19>, 'two': <PDFObjRef:20>, 'zero': <PDFObjRef:21>}",
+null
+],
+[
+"17",
+"<PDFStream(17): raw=392, {'Filter': /'FlateDecode', 'Length': 392}>",
+"8e663b76079d726f15c81d3bc4f8212cecf324ca66e4664adc37819cdaad8b33"
+],
+[
+"18",
+"<PDFStream(18): raw=90, {'Filter': /'FlateDecode', 'Length': 90}>",
+"ece0259b81c63e78eaacfbc3b925ed87f36e7a0defc8380d888de8e0e72d5f52"
+],
+[
+"20",
+"<PDFStream(20): raw=248, {'Filter': /'FlateDecode', 'Length': 248}>",
+"8ac746f71180db522d7fbdb0f607c6a518c83ac88255013eceae7509313b6b78"
+],
+[
+"21",
+"<PDFStream(21): raw=210, {'Filter': /'FlateDecode', 'Length': 210}>",
+"6818cf2b61813c186834fe1d700cfcfeee37104f99e89e624ace6c0295ff47f6"
+],
+[
+"22",
+"{'CreationDate': b\"D:20181103223013-07'00'\", 'Creator': b'matplotlib 3.0.0, http://matplotlib.org', 'Producer': b'matplotlib pdf backend 3.0.0'}",
+null
+]
+],
+"pages": [
+{
+"pageid": "10",
+"label": null,
+"mediabox": "(0.0, 0.0, 388.379375, 300.683875)",
+"cropbox": "(0.0, 0.0, 388.379375, 300.683875)",
+"rotate": 0,
+"resources": [
+"0",
+"ExtGState",
+"Font",
+"Pattern",
+"ProcSet",
+"Shadi\u0017g",
+"XObject"
+],
+"contents": [
+"9"
+],
+"attrs": [
+"Annots",
+"Contents",
+"Group",
+"MediaBox",
+"Parent",
+"Resources",
+"Type"
+],
+"repr": "<PDFPage: Resources={'ExtGState': <PDFObjRef:4>, 'Font': <PDFObjRef:3>, 'Pattern': 5, '0': /b'R\\xe1', 'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI'], 'Shadi\\x17g': <PDFObjRef:6>, 'XObject': <PDFObjRef:7>}, MediaBox=(0.0, 0.0, 388.379375, 300.683875)>"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+}
+]
+}

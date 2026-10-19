@@ -1,0 +1,422 @@
+{
+"path": "synth/xref_weird_lines.pdf",
+"runs": [
+{
+"password": "",
+"variant": "orig",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRef: offsets=dict_keys([1, 2, 3])>",
+"trailer": "{'Size': 4, 'Root': <PDFObjRef:1>}",
+"ids": [
+[
+"1",
+"(None, 9, 0)"
+],
+[
+"2",
+"(None, 58, 0)"
+],
+[
+"3",
+"(None, 115, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /'Catalog', 'Pages': <PDFObjRef:2>}",
+"info": "[]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"1",
+"{'Type': /'Catalog', 'Pages': <PDFObjRef:2>}",
+null
+],
+[
+"2",
+"{'Type': /'Pages', 'Kids': [<PDFObjRef:3>], 'Count': 1}",
+null
+],
+[
+"3",
+"{'Type': /'Page', 'Parent': <PDFObjRef:2>, 'MediaBox': [0, 0, 612, 792]}",
+null
+]
+],
+"pages": [
+{
+"pageid": "3",
+"label": null,
+"mediabox": "(0.0, 0.0, 612.0, 792.0)",
+"cropbox": "(0.0, 0.0, 612.0, 792.0)",
+"rotate": 0,
+"resources": [],
+"contents": [],
+"attrs": [
+"Type",
+"Parent",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={}, MediaBox=(0.0, 0.0, 612.0, 792.0)>"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "half",
+"open": "!PSEOF"
+},
+{
+"password": "",
+"variant": "3q",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "noxref",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "shifted",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRefFallback: offsets=dict_keys([1, 2, 3])>",
+"trailer": "{'Size': 4, 'Root': <PDFObjRef:1>}",
+"ids": [
+[
+"1",
+"(None, 15, 0)"
+],
+[
+"2",
+"(None, 64, 0)"
+],
+[
+"3",
+"(None, 121, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /'Catalog', 'Pages': <PDFObjRef:2>}",
+"info": "[]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"1",
+"{'Type': /'Catalog', 'Pages': <PDFObjRef:2>}",
+null
+],
+[
+"2",
+"{'Type': /'Pages', 'Kids': [<PDFObjRef:3>], 'Count': 1}",
+null
+],
+[
+"3",
+"{'Type': /'Page', 'Parent': <PDFObjRef:2>, 'MediaBox': [0, 0, 612, 792]}",
+null
+]
+],
+"pages": [
+{
+"pageid": "3",
+"label": null,
+"mediabox": "(0.0, 0.0, 612.0, 792.0)",
+"cropbox": "(0.0, 0.0, 612.0, 792.0)",
+"rotate": 0,
+"resources": [],
+"contents": [],
+"attrs": [
+"Type",
+"Parent",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={}, MediaBox=(0.0, 0.0, 612.0, 792.0)>"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "tail",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "corrupt0",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRef: offsets=dict_keys([1])>",
+"trailer": "{'Size': 4, 'Root': <PDFObjRef:1>}",
+"ids": [
+[
+"1",
+"(None, 9, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /b'C\\xb0tal\\xf6g', 'Pages': <PDFObjRef:2>}",
+"info": "[]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"1",
+"{'Type': /b'C\\xb0tal\\xf6g', 'Pages': <PDFObjRef:2>}",
+null
+]
+],
+"pages": [],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "corrupt1",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRef: offsets=dict_keys([1, 2, 3])>",
+"trailer": "{'Size': 4, 'Root': <PDFObjRef:1>}",
+"ids": [
+[
+"1",
+"(None, 9, 0)"
+],
+[
+"2",
+"(None, 58, 0)"
+],
+[
+"3",
+"(None, 115, 0)"
+]
+]
+}
+],
+"catalog": "{}",
+"info": "[]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"1",
+"3",
+null
+],
+[
+"2",
+"3",
+null
+],
+[
+"3",
+"{'Type': /'Page', 'Parent': <PDFObjRef:2>, \"b'M\\\\xffdiaBox'\": [0, 0, 6, /b'\\xaf', 2, 792]}",
+null
+]
+],
+"pages": [
+{
+"pageid": "3",
+"label": null,
+"mediabox": "(0.0, 0.0, 612.0, 792.0)",
+"cropbox": "(0.0, 0.0, 612.0, 792.0)",
+"rotate": 0,
+"resources": [],
+"contents": [],
+"attrs": [
+"Type",
+"Parent",
+"b'M\\xffdiaBox'"
+],
+"repr": "<PDFPage: Resources={}, MediaBox=(0.0, 0.0, 612.0, 792.0)>"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "corrupt2",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRefFallback: offsets=dict_keys([2])>",
+"trailer": "{'Size': 4, 'Root': <PDFObjRef:1>}",
+"ids": [
+[
+"2",
+"(None, 58, 0)"
+]
+]
+}
+],
+"catalog": "{}",
+"info": "[]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"2",
+"3",
+null
+]
+],
+"pages": [],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "corrupt3",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRefFallback: offsets=dict_keys([2, 3])>",
+"trailer": "{'Size': 4, 'Root': <PDFObjRef:1>}",
+"ids": [
+[
+"2",
+"(None, 58, 0)"
+],
+[
+"3",
+"(None, 115, 0)"
+]
+]
+}
+],
+"catalog": "{}",
+"info": "[]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"2",
+"{'Type': /b'\\xb0ages', 'Kids': [<PDFObjRef:3>], 'Count': 1}",
+null
+],
+[
+"3",
+"{'Type': /'Page', 'Parent': <PDFObjRef:2>, \"b'\\\\xd8ediaBox'\": [0, 0, 612, 792]}",
+null
+]
+],
+"pages": [
+{
+"pageid": "3",
+"label": null,
+"mediabox": "(0.0, 0.0, 612.0, 792.0)",
+"cropbox": "(0.0, 0.0, 612.0, 792.0)",
+"rotate": 0,
+"resources": [],
+"contents": [],
+"attrs": [
+"Type",
+"Parent",
+"b'\\xd8ediaBox'"
+],
+"repr": "<PDFPage: Resources={}, MediaBox=(0.0, 0.0, 612.0, 792.0)>"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+}
+]
+}

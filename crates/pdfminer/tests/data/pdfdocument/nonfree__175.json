@@ -1,0 +1,774 @@
+{
+"path": "nonfree/175.pdf",
+"runs": [
+{
+"password": "",
+"variant": "orig",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRef: offsets=dict_keys([2, 3, 4, 5, 6, 7, 8, 9, 10])>",
+"trailer": "{'Size': 10, 'Root': <PDFObjRef:8>, 'Info': <PDFObjRef:9>}",
+"ids": [
+[
+"2",
+"(None, 9, 0)"
+],
+[
+"3",
+"(None, 400798, 0)"
+],
+[
+"4",
+"(None, 400895, 0)"
+],
+[
+"5",
+"(None, 773855, 0)"
+],
+[
+"6",
+"(None, 401082, 0)"
+],
+[
+"7",
+"(None, 773571, 0)"
+],
+[
+"8",
+"(None, 773668, 0)"
+],
+[
+"9",
+"(None, 773919, 0)"
+],
+[
+"10",
+"(None, 773970, 0)"
+]
+]
+}
+],
+"catalog": "{}",
+"info": "[{}]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"2",
+"!PDFObjectNotFound",
+null
+],
+[
+"3",
+"!PDFObjectNotFound",
+null
+],
+[
+"4",
+"!PDFObjectNotFound",
+null
+],
+[
+"5",
+"!PDFObjectNotFound",
+null
+],
+[
+"6",
+"!PDFObjectNotFound",
+null
+],
+[
+"7",
+"!PDFObjectNotFound",
+null
+],
+[
+"8",
+"!PDFObjectNotFound",
+null
+],
+[
+"9",
+"!PDFObjectNotFound",
+null
+],
+[
+"10",
+"!PDFObjectNotFound",
+null
+]
+],
+"pages": [],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "half",
+"open": "!PSEOF"
+},
+{
+"password": "",
+"variant": "3q",
+"open": "!PSEOF"
+},
+{
+"password": "",
+"variant": "noxref",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "shifted",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRefFallback: offsets=dict_keys([1, 2, 3, 5, 6, 7, 4, 8, 9])>",
+"trailer": "{'Size': 10, 'Root': <PDFObjRef:8>, 'Info': <PDFObjRef:9>}",
+"ids": [
+[
+"1",
+"(None, 9, 0)"
+],
+[
+"2",
+"(None, 400804, 0)"
+],
+[
+"3",
+"(None, 400901, 0)"
+],
+[
+"5",
+"(None, 401088, 0)"
+],
+[
+"6",
+"(None, 773577, 0)"
+],
+[
+"7",
+"(None, 773674, 0)"
+],
+[
+"4",
+"(None, 773861, 0)"
+],
+[
+"8",
+"(None, 773925, 0)"
+],
+[
+"9",
+"(None, 773976, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /'Catalog', 'Pages': <PDFObjRef:4>}",
+"info": "[{'Creator': b'', 'CreationDate': b'', 'Author': b'', 'Producer': b'', 'Title': b'', 'Subject': b''}]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"1",
+"<PDFStream(1): raw=400611, {'Type': /'XObject', 'Subtype': /'Image', 'Name': /'Im1', 'Width': 1700, 'Height': 2200, 'Length': 400605, 'ColorSpace': /'DeviceRGB', 'BitsPerComponent': 8, 'Filter': [/'DCTDecode']}>",
+null
+],
+[
+"2",
+"<PDFStream(2): raw=47, {'Length': 47}>",
+"c2da42e6289d11d875d3a8b437e9580a6b02ca84b8ad6a3d255234926e0c9cdf"
+],
+[
+"3",
+"{'Type': /'Page', 'MediaBox': [0, 0, 612, 792], 'Parent': <PDFObjRef:4>, 'Rotate': 0, 'Resources': {'ProcSet': [/'PDF', /'ImageC', /'ImageB', /'ImageI'], 'XObject': {'Im1': <PDFObjRef:1>}}, 'Contents': [<PDFObjRef:2>]}",
+null
+],
+[
+"5",
+"<PDFStream(5): raw=372305, {'Type': /'XObject', 'Subtype': /'Image', 'Name': /'Im2', 'Width': 1700, 'Height': 2200, 'Length': 372305, 'ColorSpace': /'DeviceRGB', 'BitsPerComponent': 8, 'Filter': [/'DCTDecode']}>",
+null
+],
+[
+"6",
+"<PDFStream(6): raw=47, {'Length': 47}>",
+"bfe0aec3fea385de6e505c1c947c1cd7ab48ad8b13320a23a871b08b3e547da1"
+],
+[
+"7",
+"{'Type': /'Page', 'MediaBox': [0, 0, 612, 792], 'Parent': <PDFObjRef:4>, 'Rotate': 0, 'Resources': {'ProcSet': [/'PDF', /'ImageC', /'ImageB', /'ImageI'], 'XObject': {'Im2': <PDFObjRef:5>}}, 'Contents': [<PDFObjRef:6>]}",
+null
+],
+[
+"4",
+"{'Type': /'Pages', 'Kids': [<PDFObjRef:3>, <PDFObjRef:7>], 'Count': 2}",
+null
+],
+[
+"8",
+"{'Type': /'Catalog', 'Pages': <PDFObjRef:4>}",
+null
+],
+[
+"9",
+"{'Creator': b'', 'CreationDate': b'', 'Author': b'', 'Producer': b'', 'Title': b'', 'Subject': b''}",
+null
+]
+],
+"pages": [
+{
+"pageid": "3",
+"label": null,
+"mediabox": "(0.0, 0.0, 612.0, 792.0)",
+"cropbox": "(0.0, 0.0, 612.0, 792.0)",
+"rotate": 0,
+"resources": [
+"ProcSet",
+"XObject"
+],
+"contents": [
+"<PDFObjRef:2>"
+],
+"attrs": [
+"Type",
+"MediaBox",
+"Parent",
+"Rotate",
+"Resources",
+"Contents"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'ImageC', /'ImageB', /'ImageI'], 'XObject': {'Im1': <PDFObjRef:1>}}, MediaBox=(0.0, 0.0, 612.0, 792.0)>"
+},
+{
+"pageid": "7",
+"label": null,
+"mediabox": "(0.0, 0.0, 612.0, 792.0)",
+"cropbox": "(0.0, 0.0, 612.0, 792.0)",
+"rotate": 0,
+"resources": [
+"ProcSet",
+"XObject"
+],
+"contents": [
+"<PDFObjRef:6>"
+],
+"attrs": [
+"Type",
+"MediaBox",
+"Parent",
+"Rotate",
+"Resources",
+"Contents"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'ImageC', /'ImageB', /'ImageI'], 'XObject': {'Im2': <PDFObjRef:5>}}, MediaBox=(0.0, 0.0, 612.0, 792.0)>"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "tail",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "corrupt0",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRef: offsets=dict_keys([2, 3, 4, 5, 6, 7, 8, 9, 10])>",
+"trailer": "{'Size': 10, 'Root': <PDFObjRef:8>, 'Info': <PDFObjRef:9>}",
+"ids": [
+[
+"2",
+"(None, 9, 0)"
+],
+[
+"3",
+"(None, 400798, 0)"
+],
+[
+"4",
+"(None, 400895, 0)"
+],
+[
+"5",
+"(None, 773855, 0)"
+],
+[
+"6",
+"(None, 401082, 0)"
+],
+[
+"7",
+"(None, 773571, 0)"
+],
+[
+"8",
+"(None, 773668, 0)"
+],
+[
+"9",
+"(None, 773919, 0)"
+],
+[
+"10",
+"(None, 773970, 0)"
+]
+]
+}
+],
+"catalog": "{}",
+"info": "[{}]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"2",
+"!PDFObjectNotFound",
+null
+],
+[
+"3",
+"!PDFObjectNotFound",
+null
+],
+[
+"4",
+"!PDFObjectNotFound",
+null
+],
+[
+"5",
+"!PDFObjectNotFound",
+null
+],
+[
+"6",
+"!PDFObjectNotFound",
+null
+],
+[
+"7",
+"!PDFObjectNotFound",
+null
+],
+[
+"8",
+"!PDFObjectNotFound",
+null
+],
+[
+"9",
+"!PDFObjectNotFound",
+null
+],
+[
+"10",
+"!PDFObjectNotFound",
+null
+]
+],
+"pages": [],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "corrupt1",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRef: offsets=dict_keys([2, 3, 4, 5, 6, 7, 8, 9, 10])>",
+"trailer": "{'Size': 10, 'Root': <PDFObjRef:8>, 'Info': <PDFObjRef:9>}",
+"ids": [
+[
+"2",
+"(None, 9, 0)"
+],
+[
+"3",
+"(None, 400798, 0)"
+],
+[
+"4",
+"(None, 400895, 0)"
+],
+[
+"5",
+"(None, 773855, 0)"
+],
+[
+"6",
+"(None, 401082, 0)"
+],
+[
+"7",
+"(None, 773571, 0)"
+],
+[
+"8",
+"(None, 773668, 0)"
+],
+[
+"9",
+"(None, 773919, 0)"
+],
+[
+"10",
+"(None, 773970, 0)"
+]
+]
+}
+],
+"catalog": "{}",
+"info": "[{}]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"2",
+"!PDFObjectNotFound",
+null
+],
+[
+"3",
+"!PDFObjectNotFound",
+null
+],
+[
+"4",
+"!PDFObjectNotFound",
+null
+],
+[
+"5",
+"!PDFObjectNotFound",
+null
+],
+[
+"6",
+"!PDFObjectNotFound",
+null
+],
+[
+"7",
+"!PDFObjectNotFound",
+null
+],
+[
+"8",
+"!PDFObjectNotFound",
+null
+],
+[
+"9",
+"!PDFObjectNotFound",
+null
+],
+[
+"10",
+"!PDFObjectNotFound",
+null
+]
+],
+"pages": [],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "corrupt2",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRef: offsets=dict_keys([2, 3, 4, 5, 6, 7, 8, 9, 10])>",
+"trailer": "{'Size': 10, 'Root': <PDFObjRef:8>, 'Info': <PDFObjRef:9>}",
+"ids": [
+[
+"2",
+"(None, 9, 0)"
+],
+[
+"3",
+"(None, 400798, 0)"
+],
+[
+"4",
+"(None, 400895, 0)"
+],
+[
+"5",
+"(None, 773855, 0)"
+],
+[
+"6",
+"(None, 401082, 0)"
+],
+[
+"7",
+"(None, 773571, 0)"
+],
+[
+"8",
+"(None, 773668, 0)"
+],
+[
+"9",
+"(None, 773919, 0)"
+],
+[
+"10",
+"(None, 773970, 0)"
+]
+]
+}
+],
+"catalog": "{}",
+"info": "[{}]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"2",
+"!PDFObjectNotFound",
+null
+],
+[
+"3",
+"!PDFObjectNotFound",
+null
+],
+[
+"4",
+"!PDFObjectNotFound",
+null
+],
+[
+"5",
+"!PDFObjectNotFound",
+null
+],
+[
+"6",
+"!PDFObjectNotFound",
+null
+],
+[
+"7",
+"!PDFObjectNotFound",
+null
+],
+[
+"8",
+"!PDFObjectNotFound",
+null
+],
+[
+"9",
+"!PDFObjectNotFound",
+null
+],
+[
+"10",
+"!PDFObjectNotFound",
+null
+]
+],
+"pages": [],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "corrupt3",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRef: offsets=dict_keys([2, 3, 4, 5, 6, 7, 8, 9, 10])>",
+"trailer": "{'Size': 10, 'Root': <PDFObjRef:8>, 'Info': <PDFObjRef:9>}",
+"ids": [
+[
+"2",
+"(None, 9, 0)"
+],
+[
+"3",
+"(None, 400798, 0)"
+],
+[
+"4",
+"(None, 400895, 0)"
+],
+[
+"5",
+"(None, 773855, 0)"
+],
+[
+"6",
+"(None, 401082, 0)"
+],
+[
+"7",
+"(None, 773571, 0)"
+],
+[
+"8",
+"(None, 773668, 0)"
+],
+[
+"9",
+"(None, 773919, 0)"
+],
+[
+"10",
+"(None, 773970, 0)"
+]
+]
+}
+],
+"catalog": "{}",
+"info": "[{}]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"2",
+"!PDFObjectNotFound",
+null
+],
+[
+"3",
+"!PDFObjectNotFound",
+null
+],
+[
+"4",
+"!PDFObjectNotFound",
+null
+],
+[
+"5",
+"!PDFObjectNotFound",
+null
+],
+[
+"6",
+"!PDFObjectNotFound",
+null
+],
+[
+"7",
+"!PDFObjectNotFound",
+null
+],
+[
+"8",
+"!PDFObjectNotFound",
+null
+],
+[
+"9",
+"!PDFObjectNotFound",
+null
+],
+[
+"10",
+"!PDFObjectNotFound",
+null
+]
+],
+"pages": [],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+}
+]
+}

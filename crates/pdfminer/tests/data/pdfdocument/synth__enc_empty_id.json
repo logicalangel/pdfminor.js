@@ -1,0 +1,55 @@
+{
+"path": "synth/enc_empty_id.pdf",
+"runs": [
+{
+"password": "",
+"variant": "orig",
+"open": "!IndexError"
+},
+{
+"password": "",
+"variant": "half",
+"open": "!PSEOF"
+},
+{
+"password": "",
+"variant": "3q",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "noxref",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "shifted",
+"open": "!IndexError"
+},
+{
+"password": "",
+"variant": "tail",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "corrupt0",
+"open": "!PSSyntaxError"
+},
+{
+"password": "",
+"variant": "corrupt1",
+"open": "!IndexError"
+},
+{
+"password": "",
+"variant": "corrupt2",
+"open": "!PSSyntaxError"
+},
+{
+"password": "",
+"variant": "corrupt3",
+"open": "!PSSyntaxError"
+}
+]
+}

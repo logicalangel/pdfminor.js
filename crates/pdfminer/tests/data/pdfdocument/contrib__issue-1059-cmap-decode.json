@@ -1,0 +1,861 @@
+{
+"path": "contrib/issue-1059-cmap-decode.pdf",
+"runs": [
+{
+"password": "",
+"variant": "orig",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRef: offsets=dict_keys([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12])>",
+"trailer": "{'Size': 13, 'Info': <PDFObjRef:11>, 'Root': <PDFObjRef:1>}",
+"ids": [
+[
+"1",
+"(None, 16, 0)"
+],
+[
+"2",
+"(None, 62, 0)"
+],
+[
+"3",
+"(None, 114, 0)"
+],
+[
+"4",
+"(None, 259, 0)"
+],
+[
+"5",
+"(None, 286, 0)"
+],
+[
+"6",
+"(None, 310, 0)"
+],
+[
+"7",
+"(None, 346, 0)"
+],
+[
+"8",
+"(None, 366, 0)"
+],
+[
+"9",
+"(None, 510, 0)"
+],
+[
+"10",
+"(None, 1010, 0)"
+],
+[
+"11",
+"(None, 1421, 0)"
+],
+[
+"12",
+"(None, 1576, 0)"
+]
+]
+}
+],
+"catalog": "{'Pages': <PDFObjRef:2>, 'Type': /'Catalog'}",
+"info": "[{'Author': b'IEUser', 'CreationDate': b\"D:20200205092701-08'00'\", 'ModDate': b\"D:20200205092701-08'00'\", 'Producer': b'Microsoft: Print To PDF', 'Title': b'Book1'}]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"1",
+"{'Pages': <PDFObjRef:2>, 'Type': /'Catalog'}",
+null
+],
+[
+"2",
+"{'Count': 1, 'Kids': [<PDFObjRef:3>], 'Type': /'Pages'}",
+null
+],
+[
+"3",
+"{'Contents': <PDFObjRef:12>, 'CropBox': [0, 0, 612, 792], 'MediaBox': [0, 0, 612, 792], 'Parent': <PDFObjRef:2>, 'Resources': {'Font': {'F1': <PDFObjRef:10>}}, 'Rotate': 0, 'Type': /'Page'}",
+null
+],
+[
+"4",
+"b'Identity'",
+null
+],
+[
+"5",
+"b'Adobe'",
+null
+],
+[
+"6",
+"[-506, -268, 506, 952]",
+null
+],
+[
+"7",
+"506",
+null
+],
+[
+"8",
+"[1005, 1005, 506, 1006, 1006, 506, 1007, 1007, 506, 1008, 1008, 506, 1009, 1009, 506, 1010, 1010, 506, 1011, 1011, 506, 1012, 1012, 506, 1013, 1013, 506]",
+null
+],
+[
+"9",
+"<PDFStream(9): raw=450, {'Length': 450}>",
+"84efda1b08da62928a092467a3a7bdb3090d534ecd2b0211ebd644a3239170da"
+],
+[
+"10",
+"sha256:d0b6964cf7e40f7835f61c8b5ae7ae86086b37ba78f1334829ec21e9c23a0d79",
+null
+],
+[
+"11",
+"{'Author': b'IEUser', 'CreationDate': b\"D:20200205092701-08'00'\", 'ModDate': b\"D:20200205092701-08'00'\", 'Producer': b'Microsoft: Print To PDF', 'Title': b'Book1'}",
+null
+],
+[
+"12",
+"<PDFStream(12): raw=1821, {'Length': 1821}>",
+"b7a07b97bc4632cfa4d37d1f2f161f0e94af5f680b736da2879ad74d7017d920"
+]
+],
+"pages": [
+{
+"pageid": "3",
+"label": null,
+"mediabox": "(0.0, 0.0, 612.0, 792.0)",
+"cropbox": "(0.0, 0.0, 612.0, 792.0)",
+"rotate": 0,
+"resources": [
+"Font"
+],
+"contents": [
+"<PDFStream(12): len=1821, {'Length': 1821}>"
+],
+"attrs": [
+"Contents",
+"CropBox",
+"MediaBox",
+"Parent",
+"Resources",
+"Rotate",
+"Type"
+],
+"repr": "<PDFPage: Resources={'Font': {'F1': <PDFObjRef:10>}}, MediaBox=(0.0, 0.0, 612.0, 792.0)>"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "half",
+"open": "!PSEOF"
+},
+{
+"password": "",
+"variant": "3q",
+"open": "!PSEOF"
+},
+{
+"password": "",
+"variant": "noxref",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "shifted",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRefFallback: offsets=dict_keys([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12])>",
+"trailer": "{'Size': 13, 'Info': <PDFObjRef:11>, 'Root': <PDFObjRef:1>}",
+"ids": [
+[
+"1",
+"(None, 22, 0)"
+],
+[
+"2",
+"(None, 68, 0)"
+],
+[
+"3",
+"(None, 120, 0)"
+],
+[
+"4",
+"(None, 265, 0)"
+],
+[
+"5",
+"(None, 292, 0)"
+],
+[
+"6",
+"(None, 316, 0)"
+],
+[
+"7",
+"(None, 352, 0)"
+],
+[
+"8",
+"(None, 372, 0)"
+],
+[
+"9",
+"(None, 516, 0)"
+],
+[
+"10",
+"(None, 1016, 0)"
+],
+[
+"11",
+"(None, 1427, 0)"
+],
+[
+"12",
+"(None, 1582, 0)"
+]
+]
+}
+],
+"catalog": "{'Pages': <PDFObjRef:2>, 'Type': /'Catalog'}",
+"info": "[{'Author': b'IEUser', 'CreationDate': b\"D:20200205092701-08'00'\", 'ModDate': b\"D:20200205092701-08'00'\", 'Producer': b'Microsoft: Print To PDF', 'Title': b'Book1'}]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"1",
+"{'Pages': <PDFObjRef:2>, 'Type': /'Catalog'}",
+null
+],
+[
+"2",
+"{'Count': 1, 'Kids': [<PDFObjRef:3>], 'Type': /'Pages'}",
+null
+],
+[
+"3",
+"{'Contents': <PDFObjRef:12>, 'CropBox': [0, 0, 612, 792], 'MediaBox': [0, 0, 612, 792], 'Parent': <PDFObjRef:2>, 'Resources': {'Font': {'F1': <PDFObjRef:10>}}, 'Rotate': 0, 'Type': /'Page'}",
+null
+],
+[
+"4",
+"b'Identity'",
+null
+],
+[
+"5",
+"b'Adobe'",
+null
+],
+[
+"6",
+"[-506, -268, 506, 952]",
+null
+],
+[
+"7",
+"506",
+null
+],
+[
+"8",
+"[1005, 1005, 506, 1006, 1006, 506, 1007, 1007, 506, 1008, 1008, 506, 1009, 1009, 506, 1010, 1010, 506, 1011, 1011, 506, 1012, 1012, 506, 1013, 1013, 506]",
+null
+],
+[
+"9",
+"<PDFStream(9): raw=451, {'Length': 450}>",
+"8301e912e334d3bb92a565e76da24c7b906b9ca0186131cff6f00f4454d71917"
+],
+[
+"10",
+"sha256:d0b6964cf7e40f7835f61c8b5ae7ae86086b37ba78f1334829ec21e9c23a0d79",
+null
+],
+[
+"11",
+"{'Author': b'IEUser', 'CreationDate': b\"D:20200205092701-08'00'\", 'ModDate': b\"D:20200205092701-08'00'\", 'Producer': b'Microsoft: Print To PDF', 'Title': b'Book1'}",
+null
+],
+[
+"12",
+"<PDFStream(12): raw=1822, {'Length': 1821}>",
+"6fd16e22ecd2205fa8cfe68562bb0221f3dbf2702db000f65205259b374feaf8"
+]
+],
+"pages": [
+{
+"pageid": "3",
+"label": null,
+"mediabox": "(0.0, 0.0, 612.0, 792.0)",
+"cropbox": "(0.0, 0.0, 612.0, 792.0)",
+"rotate": 0,
+"resources": [
+"Font"
+],
+"contents": [
+"<PDFStream(12): len=1822, {'Length': 1821}>"
+],
+"attrs": [
+"Contents",
+"CropBox",
+"MediaBox",
+"Parent",
+"Resources",
+"Rotate",
+"Type"
+],
+"repr": "<PDFPage: Resources={'Font': {'F1': <PDFObjRef:10>}}, MediaBox=(0.0, 0.0, 612.0, 792.0)>"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "tail",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "corrupt0",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRef: offsets=dict_keys([1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12])>",
+"trailer": "{'Size': 13, 'Info': <PDFObjRef:11>, 'Root': <PDFObjRef:1>}",
+"ids": [
+[
+"1",
+"(None, 16, 0)"
+],
+[
+"2",
+"(None, 62, 0)"
+],
+[
+"3",
+"(None, 114, 0)"
+],
+[
+"5",
+"(None, 286, 0)"
+],
+[
+"6",
+"(None, 310, 0)"
+],
+[
+"7",
+"(None, 346, 0)"
+],
+[
+"8",
+"(None, 366, 0)"
+],
+[
+"9",
+"(None, 510, 0)"
+],
+[
+"10",
+"(None, 1010, 0)"
+],
+[
+"11",
+"(None, 1421, 0)"
+],
+[
+"12",
+"(None, 1576, 0)"
+]
+]
+}
+],
+"catalog": "{'Pages': <PDFObjRef:2>, 'Type': /'Catalog'}",
+"info": "[{'Author': b'IEUser', 'CreationDate': b\"D:20200205092701-08'00'\", 'ModDate': b\"D:20200205092701-08'00f\", 'Producer': b'Microsoft: Print To PDF', 'Title': b'Book1'}]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"1",
+"{'Pages': <PDFObjRef:2>, 'Type': /'Catalog'}",
+null
+],
+[
+"2",
+"{'Count': 1, 'Kids': [<PDFObjRef:3>], 'Type': /'Pages'}",
+null
+],
+[
+"3",
+"{'Contents': <PDFObjRef:12>, 'CropBox': [0, 0, 612, 792], 'MediaBox': [0, 0, 612, 792], 'Parent': <PDFObjRef:2>, 'Resources': {'Font': {'F1': <PDFObjRef:10>}}, 'Rotate': 0, 'Type': /'Page'}",
+null
+],
+[
+"5",
+"b'Adobe'",
+null
+],
+[
+"6",
+"[-506, -268, 506, 952]",
+null
+],
+[
+"7",
+"506",
+null
+],
+[
+"8",
+"[1005, 1005, 506, 1006, 1006, 506, 1007, 1007, 506, 1008, 1008, 506, 1009, 1009, 506, 1010, 1010, 506, 1011, 1011, 506, 1012, 10, /b'\\xb2', 2, 506, 1, /b'\\xcc', 13, 1013, 506]",
+null
+],
+[
+"9",
+"<PDFStream(9): raw=450, {'Length': 450}>",
+"84efda1b08da62928a092467a3a7bdb3090d534ecd2b0211ebd644a3239170da"
+],
+[
+"10",
+"sha256:d0b6964cf7e40f7835f61c8b5ae7ae86086b37ba78f1334829ec21e9c23a0d79",
+null
+],
+[
+"11",
+"{'Author': b'IEUser', 'CreationDate': b\"D:20200205092701-08'00'\", 'ModDate': b\"D:20200205092701-08'00f\", 'Producer': b'Microsoft: Print To PDF', 'Title': b'Book1'}",
+null
+],
+[
+"12",
+"<PDFStream(12): raw=1821, {'Length': 1821}>",
+"9b21eb11f90e9210e6c12b1ef8821f2cfd91b12a35cb202d4c4cc8f1da436373"
+]
+],
+"pages": [
+{
+"pageid": "3",
+"label": null,
+"mediabox": "(0.0, 0.0, 612.0, 792.0)",
+"cropbox": "(0.0, 0.0, 612.0, 792.0)",
+"rotate": 0,
+"resources": [
+"Font"
+],
+"contents": [
+"<PDFStream(12): len=1821, {'Length': 1821}>"
+],
+"attrs": [
+"Contents",
+"CropBox",
+"MediaBox",
+"Parent",
+"Resources",
+"Rotate",
+"Type"
+],
+"repr": "<PDFPage: Resources={'Font': {'F1': <PDFObjRef:10>}}, MediaBox=(0.0, 0.0, 612.0, 792.0)>"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "corrupt1",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "corrupt2",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRef: offsets=dict_keys([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12])>",
+"trailer": "{'Size': 13, 'Info': <PDFObjRef:11>, 'Root': <PDFObjRef:1>}",
+"ids": [
+[
+"1",
+"(None, 16, 0)"
+],
+[
+"2",
+"(None, 62, 0)"
+],
+[
+"3",
+"(None, 114, 0)"
+],
+[
+"4",
+"(None, 259, 0)"
+],
+[
+"5",
+"(None, 286, 0)"
+],
+[
+"6",
+"(None, 310, 0)"
+],
+[
+"7",
+"(None, 346, 0)"
+],
+[
+"8",
+"(None, 366, 0)"
+],
+[
+"9",
+"(None, 510, 0)"
+],
+[
+"10",
+"(None, 1010, 0)"
+],
+[
+"11",
+"(None, 1421, 0)"
+],
+[
+"12",
+"(None, 1576, 0)"
+]
+]
+}
+],
+"catalog": "{'Pages': <PDFObjRef:2>, 'Type': /'Catalog'}",
+"info": "[{'Author': b'IEUser', 'CreationDate': b\"D:20200205092701-08'00'\", 'ModDate': b\"D:20200205092701-08'00'\", 'Producer': b'Microsoft: Print To PDF', 'Title': b'Book1'}]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"1",
+"{'Pages': <PDFObjRef:2>, 'Type': /'Catalog'}",
+null
+],
+[
+"2",
+"{'Count': 1, 'Kids': [<PDFObjRef:3>], 'Type': /'Pages'}",
+null
+],
+[
+"3",
+"{'Contents': <PDFObjRef:12>, 'CropBox': [0, 0, 612, 792], 'MediaBox': [0, 0, 612, 792], 'Parent': <PDFObjRef:2>, 'Resources': {'Font': {'F1': <PDFObjRef:10>}}, 'Rotate': 0, 'Type': /'Page'}",
+null
+],
+[
+"4",
+"!PDFObjectNotFound",
+null
+],
+[
+"5",
+"b'Adobe'",
+null
+],
+[
+"6",
+"[-506, -268, 506, 952]",
+null
+],
+[
+"7",
+"506",
+null
+],
+[
+"8",
+"[1005, 1005, 506, 1006, 1006, 506, 1007, 1007, 506, 1008, 1008, 506, 1009, 1009, 506, 1010, 1010, 506, 1011, 1011, 506, 1012, 1012, 506, 1013, 1013, 506]",
+null
+],
+[
+"9",
+"<PDFStream(9): raw=450, {'Length': 450}>",
+"5a53763ffefd7c2fdf8c4f46d7803420f6138140f2ece1eeee4976a00b3702a1"
+],
+[
+"10",
+"sha256:a347bb342008c93b1e9658d021f8e4776a33ce5b6c2a88b21226c8f63c25134e",
+null
+],
+[
+"11",
+"{'Author': b'IEUser', 'CreationDate': b\"D:20200205092701-08'00'\", 'ModDate': b\"D:20200205092701-08'00'\", 'Producer': b'Microsoft: Print To PDF', 'Title': b'Book1'}",
+null
+],
+[
+"12",
+"<PDFStream(12): raw=1821, {'Length': 1821}>",
+"ded0404281587f6b4a39e1d54b5fee1fe5935145e614d9eec7160ec13f507c73"
+]
+],
+"pages": [
+{
+"pageid": "3",
+"label": null,
+"mediabox": "(0.0, 0.0, 612.0, 792.0)",
+"cropbox": "(0.0, 0.0, 612.0, 792.0)",
+"rotate": 0,
+"resources": [
+"Font"
+],
+"contents": [
+"<PDFStream(12): len=1821, {'Length': 1821}>"
+],
+"attrs": [
+"Contents",
+"CropBox",
+"MediaBox",
+"Parent",
+"Resources",
+"Rotate",
+"Type"
+],
+"repr": "<PDFPage: Resources={'Font': {'F1': <PDFObjRef:10>}}, MediaBox=(0.0, 0.0, 612.0, 792.0)>"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "corrupt3",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRef: offsets=dict_keys([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12])>",
+"trailer": "{'Size': 3, 'Info': <PDFObjRef:11>, 'Root': <PDFObjRef:1>}",
+"ids": [
+[
+"1",
+"(None, 16, 0)"
+],
+[
+"2",
+"(None, 62, 0)"
+],
+[
+"3",
+"(None, 114, 0)"
+],
+[
+"4",
+"(None, 259, 0)"
+],
+[
+"5",
+"(None, 286, 0)"
+],
+[
+"6",
+"(None, 310, 0)"
+],
+[
+"7",
+"(None, 346, 0)"
+],
+[
+"8",
+"(None, 366, 0)"
+],
+[
+"9",
+"(None, 510, 0)"
+],
+[
+"10",
+"(None, 1010, 0)"
+],
+[
+"11",
+"(None, 1421, 0)"
+],
+[
+"12",
+"(None, 1576, 0)"
+]
+]
+}
+],
+"catalog": "{'Pages': <PDFObjRef:2>, 'Type': /'Catalog'}",
+"info": "[{}]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"1",
+"{'Pages': <PDFObjRef:2>, 'Type': /'Catalog'}",
+null
+],
+[
+"2",
+"{'Count': 1, 'Kids': [<PDFObjRef:3>], 'Type': /'Pages'}",
+null
+],
+[
+"3",
+"{'Contents': <PDFObjRef:12>, 'CropBox': [0, 0, 612, 792], 'MediaBox': [0, 0, 612, 792], 'Parent': <PDFObjRef:2>, 'Resources': {'Font': {'F1': <PDFObjRef:10>}}, 'Rotate': 0, 'Type': /'Page'}",
+null
+],
+[
+"4",
+"b'Identity'",
+null
+],
+[
+"5",
+"b'Adobe'",
+null
+],
+[
+"6",
+"[-506, -268, 506, 952]",
+null
+],
+[
+"7",
+"506",
+null
+],
+[
+"8",
+"[1005, 1005, 506, 1006, 1006, 506, 1007, 1007, 506, 1008, 1008, 506, 1009, 1009, 506, 1010, 1010, 506, 1011, 1011, 506, 1012, 1012, 506, 1013, 1013, 506]",
+null
+],
+[
+"9",
+"<PDFStream(9): raw=450, {'Length': 450}>",
+"c179d3b3006b4f305e3a37e41042b4c92b615e490d622166b9ee9f13245b14b9"
+],
+[
+"10",
+"sha256:d0b6964cf7e40f7835f61c8b5ae7ae86086b37ba78f1334829ec21e9c23a0d79",
+null
+],
+[
+"11",
+"!PDFObjectNotFound",
+null
+],
+[
+"12",
+"<PDFStream(12): raw=1821, {'Length': 1821}>",
+"e6163b041bc889d5211b84b3693ecfce99de862083839bc651da7338cddfeac6"
+]
+],
+"pages": [
+{
+"pageid": "3",
+"label": null,
+"mediabox": "(0.0, 0.0, 612.0, 792.0)",
+"cropbox": "(0.0, 0.0, 612.0, 792.0)",
+"rotate": 0,
+"resources": [
+"Font"
+],
+"contents": [
+"<PDFStream(12): len=1821, {'Length': 1821}>"
+],
+"attrs": [
+"Contents",
+"CropBox",
+"MediaBox",
+"Parent",
+"Resources",
+"Rotate",
+"Type"
+],
+"repr": "<PDFPage: Resources={'Font': {'F1': <PDFObjRef:10>}}, MediaBox=(0.0, 0.0, 612.0, 792.0)>"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+}
+]
+}

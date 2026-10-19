@@ -1,0 +1,690 @@
+{
+"path": "contrib/pdf-with-jbig2.pdf",
+"runs": [
+{
+"password": "",
+"variant": "orig",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRef: offsets=dict_keys([1, 2, 3, 4, 5, 6, 7, 8])>",
+"trailer": "{'Size': 9, 'Root': <PDFObjRef:1>, 'Info': <PDFObjRef:8>, 'ID': [b'\\x04\\xad\\xb8\\xd3\\xd7~\\x02\\x86\\xb0\\xf3\\xf4xY$\\xee\\x1d', b'\\x04\\xad\\xb8\\xd3\\xd7~\\x02\\x86\\xb0\\xf3\\xf4xY$\\xee\\x1d']}",
+"ids": [
+[
+"1",
+"(None, 9377, 0)"
+],
+[
+"2",
+"(None, 9427, 0)"
+],
+[
+"3",
+"(None, 133, 0)"
+],
+[
+"4",
+"(None, 16, 0)"
+],
+[
+"5",
+"(None, 9485, 0)"
+],
+[
+"6",
+"(None, 234, 0)"
+],
+[
+"7",
+"(None, 9220, 0)"
+],
+[
+"8",
+"(None, 9752, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /'Catalog', 'Pages': <PDFObjRef:2>}",
+"info": "[{'CreationDate': b\"D:20110713120943-08'00'\", 'Creator': b'Xerox WorkCentre 5030', 'Producer': b'Xerox WorkCentre 5030'}]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"1",
+"{'Type': /'Catalog', 'Pages': <PDFObjRef:2>}",
+null
+],
+[
+"2",
+"{'Type': /'Pages', 'Kids': [<PDFObjRef:4>], 'Count': 1}",
+null
+],
+[
+"3",
+"{'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI'], 'XObject': {'XIPLAYER0': <PDFObjRef:6>}}",
+null
+],
+[
+"4",
+"{'Type': /'Page', 'Parent': <PDFObjRef:2>, 'Resources': <PDFObjRef:3>, 'MediaBox': [0, 0, 792, 612], 'Rotate': 270, 'Contents': <PDFObjRef:7>}",
+null
+],
+[
+"5",
+"<PDFStream(5): raw=213, {'Length': 213}>",
+"264e4fd65465c5c4d96717b7aa02a3a9c176a02ebeea2529c872bbd73922d495"
+],
+[
+"6",
+"<PDFStream(6): raw=8778, {'Length': 8778, 'Type': /'XObject', 'Subtype': /'Image', 'BitsPerComponent': 1, 'Width': 3296, 'Height': 2551, 'ImageMask': True, 'Filter': /'JBIG2Decode', 'DecodeParms': {'JBIG2Globals': <PDFObjRef:5>}}>",
+null
+],
+[
+"7",
+"<PDFStream(7): raw=103, {'Length': 103}>",
+"e09a671b1bbe9381e3538e49d9cbb821bacd7e7831ca7a5aec8ebb576e279957"
+],
+[
+"8",
+"{'CreationDate': b\"D:20110713120943-08'00'\", 'Creator': b'Xerox WorkCentre 5030', 'Producer': b'Xerox WorkCentre 5030'}",
+null
+]
+],
+"pages": [
+{
+"pageid": "4",
+"label": null,
+"mediabox": "(0.0, 0.0, 792.0, 612.0)",
+"cropbox": "(0.0, 0.0, 792.0, 612.0)",
+"rotate": 270,
+"resources": [
+"ProcSet",
+"XObject"
+],
+"contents": [
+"<PDFStream(7): len=103, {'Length': 103}>"
+],
+"attrs": [
+"Type",
+"Parent",
+"Resources",
+"MediaBox",
+"Rotate",
+"Contents"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI'], 'XObject': {'XIPLAYER0': <PDFObjRef:6>}}, MediaBox=(0.0, 0.0, 792.0, 612.0)>"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "half",
+"open": "!PSEOF"
+},
+{
+"password": "",
+"variant": "3q",
+"open": "!PSEOF"
+},
+{
+"password": "",
+"variant": "noxref",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "shifted",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRefFallback: offsets=dict_keys([4, 3, 6, 7, 1, 2, 5, 8])>",
+"trailer": "{'Size': 9, 'Root': <PDFObjRef:1>, 'Info': <PDFObjRef:8>, 'ID': [b'\\x04\\xad\\xb8\\xd3\\xd7~\\x02\\x86\\xb0\\xf3\\xf4xY$\\xee\\x1d', b'\\x04\\xad\\xb8\\xd3\\xd7~\\x02\\x86\\xb0\\xf3\\xf4xY$\\xee\\x1d']}",
+"ids": [
+[
+"4",
+"(None, 22, 0)"
+],
+[
+"3",
+"(None, 139, 0)"
+],
+[
+"6",
+"(None, 240, 0)"
+],
+[
+"7",
+"(None, 9226, 0)"
+],
+[
+"1",
+"(None, 9383, 0)"
+],
+[
+"2",
+"(None, 9433, 0)"
+],
+[
+"5",
+"(None, 9491, 0)"
+],
+[
+"8",
+"(None, 9758, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /'Catalog', 'Pages': <PDFObjRef:2>}",
+"info": "[{'CreationDate': b\"D:20110713120943-08'00'\", 'Creator': b'Xerox WorkCentre 5030', 'Producer': b'Xerox WorkCentre 5030'}]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"4",
+"{'Type': /'Page', 'Parent': <PDFObjRef:2>, 'Resources': <PDFObjRef:3>, 'MediaBox': [0, 0, 792, 612], 'Rotate': 270, 'Contents': <PDFObjRef:7>}",
+null
+],
+[
+"3",
+"{'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI'], 'XObject': {'XIPLAYER0': <PDFObjRef:6>}}",
+null
+],
+[
+"6",
+"<PDFStream(6): raw=8779, {'Length': 8778, 'Type': /'XObject', 'Subtype': /'Image', 'BitsPerComponent': 1, 'Width': 3296, 'Height': 2551, 'ImageMask': True, 'Filter': /'JBIG2Decode', 'DecodeParms': {'JBIG2Globals': <PDFObjRef:5>}}>",
+null
+],
+[
+"7",
+"<PDFStream(7): raw=104, {'Length': 103}>",
+"5cf5ae1ead02f15ed9097f65f8d4063df3ee4517d8923408b96101bc0e810cc8"
+],
+[
+"1",
+"{'Type': /'Catalog', 'Pages': <PDFObjRef:2>}",
+null
+],
+[
+"2",
+"{'Type': /'Pages', 'Kids': [<PDFObjRef:4>], 'Count': 1}",
+null
+],
+[
+"5",
+"<PDFStream(5): raw=214, {'Length': 213}>",
+"d254713cb0ffa3061454185068af25a8531cb31c051940231a9dc3d5beaf031c"
+],
+[
+"8",
+"{'CreationDate': b\"D:20110713120943-08'00'\", 'Creator': b'Xerox WorkCentre 5030', 'Producer': b'Xerox WorkCentre 5030'}",
+null
+]
+],
+"pages": [
+{
+"pageid": "4",
+"label": null,
+"mediabox": "(0.0, 0.0, 792.0, 612.0)",
+"cropbox": "(0.0, 0.0, 792.0, 612.0)",
+"rotate": 270,
+"resources": [
+"ProcSet",
+"XObject"
+],
+"contents": [
+"<PDFStream(7): len=104, {'Length': 103}>"
+],
+"attrs": [
+"Type",
+"Parent",
+"Resources",
+"MediaBox",
+"Rotate",
+"Contents"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI'], 'XObject': {'XIPLAYER0': <PDFObjRef:6>}}, MediaBox=(0.0, 0.0, 792.0, 612.0)>"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "tail",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "corrupt0",
+"open": "!PSSyntaxError"
+},
+{
+"password": "",
+"variant": "corrupt1",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRef: offsets=dict_keys([1, 2, 3, 4, 5, 6, 7, 8])>",
+"trailer": "{'Size': 9, 'Root': <PDFObjRef:1>, 'Info': <PDFObjRef:8>, 'ID': [b'\\x04\\xad\\xb8\\xd3\\xd7~\\x02\\x86\\xb0\\xf3\\xf4xY$\\xee\\x1d', b'\\x04\\xad\\xb8\\xd3\\xd7~\\x02\\x86\\xb0\\xf3\\xf4xY$\\xee\\x1d']}",
+"ids": [
+[
+"1",
+"(None, 9377, 0)"
+],
+[
+"2",
+"(None, 9427, 0)"
+],
+[
+"3",
+"(None, 133, 0)"
+],
+[
+"4",
+"(None, 16, 0)"
+],
+[
+"5",
+"(None, 9485, 0)"
+],
+[
+"6",
+"(None, 234, 0)"
+],
+[
+"7",
+"(None, 9220, 0)"
+],
+[
+"8",
+"(None, 9752, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /'Catalog', 'Pages': <PDFObjRef:2>}",
+"info": "[{'CreationDate': b\"D:20110713120943-08'00'\", 'Creator': b'Xerox WorkCentre 5030', 'Producer': b'Xerox WorkCentre 5030'}]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"1",
+"{'Type': /'Catalog', 'Pages': <PDFObjRef:2>}",
+null
+],
+[
+"2",
+"{'Type': /'Pages', 'Kids': [<PDFObjRef:4>], 'Count': 1}",
+null
+],
+[
+"3",
+"{'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI'], 'XObject': {'XIPLAYER0': <PDFObjRef:6>}}",
+null
+],
+[
+"4",
+"{'Type': /'Page', 'Parent': <PDFObjRef:2>, 'Resources': <PDFObjRef:3>, 'MediaBox': [0, 0, 792, 612], 'Rotate': 270, 'Contents': <PDFObjRef:7>}",
+null
+],
+[
+"5",
+"<PDFStream(5): raw=213, {'Length': 213}>",
+"264e4fd65465c5c4d96717b7aa02a3a9c176a02ebeea2529c872bbd73922d495"
+],
+[
+"6",
+"<PDFStream(6): raw=8778, {'Length': 8778, 'Type': /'XObject', 'Subtype': /'Image', 'BitsPerComponent': 1, 'Width': 3296, 'Height': 2551, 'ImageMask': True, 'Filter': /'JBIG2Decode', 'DecodeParms': {'JBIG2Globals': <PDFObjRef:5>}}>",
+null
+],
+[
+"7",
+"<PDFStream(7): raw=103, {'Length': 103}>",
+"e09a671b1bbe9381e3538e49d9cbb821bacd7e7831ca7a5aec8ebb576e279957"
+],
+[
+"8",
+"{'CreationDate': b\"D:20110713120943-08'00'\", 'Creator': b'Xerox WorkCentre 5030', 'Producer': b'Xerox WorkCentre 5030'}",
+null
+]
+],
+"pages": [
+{
+"pageid": "4",
+"label": null,
+"mediabox": "(0.0, 0.0, 792.0, 612.0)",
+"cropbox": "(0.0, 0.0, 792.0, 612.0)",
+"rotate": 270,
+"resources": [
+"ProcSet",
+"XObject"
+],
+"contents": [
+"<PDFStream(7): len=103, {'Length': 103}>"
+],
+"attrs": [
+"Type",
+"Parent",
+"Resources",
+"MediaBox",
+"Rotate",
+"Contents"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI'], 'XObject': {'XIPLAYER0': <PDFObjRef:6>}}, MediaBox=(0.0, 0.0, 792.0, 612.0)>"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "corrupt2",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRef: offsets=dict_keys([1, 2, 3, 4, 5, 6, 7, 8])>",
+"trailer": "{'Size': 9, 'Root': <PDFObjRef:1>, 'Info': <PDFObjRef:8>, 'ID': [b'\\x04\\xad\\xb8\\xd3\\xd7~\\x02\\x86\\xb0\\xf3\\xf4xY$\\xee\\x1d', b'\\x04\\xad\\xb8\\xd3\\xd7~\\x02\\x86\\xb0\\xf3\\xf4xY$\\xee\\x1d']}",
+"ids": [
+[
+"1",
+"(None, 9377, 0)"
+],
+[
+"2",
+"(None, 9427, 0)"
+],
+[
+"3",
+"(None, 133, 0)"
+],
+[
+"4",
+"(None, 16, 0)"
+],
+[
+"5",
+"(None, 9485, 0)"
+],
+[
+"6",
+"(None, 234, 0)"
+],
+[
+"7",
+"(None, 9220, 0)"
+],
+[
+"8",
+"(None, 9752, 0)"
+]
+]
+}
+],
+"catalog": "{}",
+"info": "[{'CreationDate': b\"D:20110713120943-08'00'\", 'Creator': b'Xerox WorkCentre 5030', 'Producer': b'Xerox WorkCentre 5030'}]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"1",
+"2",
+null
+],
+[
+"2",
+"{'Type': /'Pages', 'Kids': [<PDFObjRef:4>], 'Count': 1}",
+null
+],
+[
+"3",
+"{'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI'], 'XObject': {'XIPLAYER0': <PDFObjRef:6>}}",
+null
+],
+[
+"4",
+"{'Type': /'Page', 'Parent': <PDFObjRef:2>, 'Resources': <PDFObjRef:3>, 'MediaBox': [0, 0, 792, 612], 'Rotate': 270, 'Contents': <PDFObjRef:7>}",
+null
+],
+[
+"5",
+"<PDFStream(5): raw=213, {'Length': 213}>",
+"264e4fd65465c5c4d96717b7aa02a3a9c176a02ebeea2529c872bbd73922d495"
+],
+[
+"6",
+"<PDFStream(6): raw=8778, {'Length': 8778, 'Type': /'XObject', 'Subtype': /'Image', 'BitsPerComponent': 1, 'Width': 3296, 'Height': 2551, 'ImageMask': True, 'Filter': /'JBIG2Decode', 'DecodeParms': {'JBIG2Globals': <PDFObjRef:5>}}>",
+null
+],
+[
+"7",
+"<PDFStream(7): raw=103, {'Length': 103}>",
+"e09a671b1bbe9381e3538e49d9cbb821bacd7e7831ca7a5aec8ebb576e279957"
+],
+[
+"8",
+"{'CreationDate': b\"D:20110713120943-08'00'\", 'Creator': b'Xerox WorkCentre 5030', 'Producer': b'Xerox WorkCentre 5030'}",
+null
+]
+],
+"pages": [
+{
+"pageid": "4",
+"label": null,
+"mediabox": "(0.0, 0.0, 792.0, 612.0)",
+"cropbox": "(0.0, 0.0, 792.0, 612.0)",
+"rotate": 270,
+"resources": [
+"ProcSet",
+"XObject"
+],
+"contents": [
+"<PDFStream(7): len=103, {'Length': 103}>"
+],
+"attrs": [
+"Type",
+"Parent",
+"Resources",
+"MediaBox",
+"Rotate",
+"Contents"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI'], 'XObject': {'XIPLAYER0': <PDFObjRef:6>}}, MediaBox=(0.0, 0.0, 792.0, 612.0)>"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "corrupt3",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRef: offsets=dict_keys([1, 2, 3, 4, 5, 6, 7, 8])>",
+"trailer": "{'Size': 9, 'Root': <PDFObjRef:1>, 'Info': <PDFObjRef:8>, 'ID': [b'\\x04\\xad\\xb8\\xd3\\xd7~\\x02\\x86\\xb0\\xf3\\xf4xY$\\xee\\x1d', b'\\x04\\xad\\xb8\\xd3\\xd7~\\x02\\x86\\xb0\\xf3\\xf4xY$\\xee\\x1d']}",
+"ids": [
+[
+"1",
+"(None, 9377, 0)"
+],
+[
+"2",
+"(None, 9427, 0)"
+],
+[
+"3",
+"(None, 133, 0)"
+],
+[
+"4",
+"(None, 16, 0)"
+],
+[
+"5",
+"(None, 9485, 0)"
+],
+[
+"6",
+"(None, 234, 0)"
+],
+[
+"7",
+"(None, 9220, 0)"
+],
+[
+"8",
+"(None, 9752, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /'Catalog', 'Pages': <PDFObjRef:2>}",
+"info": "[{'CreationDate': b\"D:20110713120943-08'00'\", 'Creator': b'Xerox WorkCentre 5030', 'Producer': b'Xerox WorkCentre 5030'}]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"1",
+"{'Type': /'Catalog', 'Pages': <PDFObjRef:2>}",
+null
+],
+[
+"2",
+"{'Type': /'Pages', 'Kids': [<PDFObjRef:4>], 'Count': 1}",
+null
+],
+[
+"3",
+"{'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI'], 'XObject': {'XIPLAYER0': <PDFObjRef:6>}}",
+null
+],
+[
+"4",
+"{'Type': /'Page', 'Parent': <PDFObjRef:2>, 'Resources': <PDFObjRef:3>, 'MediaBox': [0, 0, 792, 612], 'Rotate': 270, 'Contents': <PDFObjRef:7>}",
+null
+],
+[
+"5",
+"<PDFStream(5): raw=213, {'Length': 213}>",
+"1be81169c060a406e95ad39a7d4beb588140746c065e321a19af2a5249160f3d"
+],
+[
+"6",
+"<PDFStream(6): raw=8778, {'Length': 8778, 'Type': /'XObject', 'Subtype': /'Image', 'BitsPerComponent': 1, 'Width': 3296, 'Height': 2551, 'ImageMask': True, 'Filter': /'JBIG2Decode', 'DecodeParms': {'JBIG2Globals': <PDFObjRef:5>}}>",
+null
+],
+[
+"7",
+"<PDFStream(7): raw=103, {'Length': 103}>",
+"e09a671b1bbe9381e3538e49d9cbb821bacd7e7831ca7a5aec8ebb576e279957"
+],
+[
+"8",
+"{'CreationDate': b\"D:20110713120943-08'00'\", 'Creator': b'Xerox WorkCentre 5030', 'Producer': b'Xerox WorkCentre 5030'}",
+null
+]
+],
+"pages": [
+{
+"pageid": "4",
+"label": null,
+"mediabox": "(0.0, 0.0, 792.0, 612.0)",
+"cropbox": "(0.0, 0.0, 792.0, 612.0)",
+"rotate": 270,
+"resources": [
+"ProcSet",
+"XObject"
+],
+"contents": [
+"<PDFStream(7): len=103, {'Length': 103}>"
+],
+"attrs": [
+"Type",
+"Parent",
+"Resources",
+"MediaBox",
+"Rotate",
+"Contents"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI'], 'XObject': {'XIPLAYER0': <PDFObjRef:6>}}, MediaBox=(0.0, 0.0, 792.0, 612.0)>"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+}
+]
+}

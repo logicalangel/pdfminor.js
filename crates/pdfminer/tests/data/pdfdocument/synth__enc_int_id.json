@@ -1,0 +1,55 @@
+{
+"path": "synth/enc_int_id.pdf",
+"runs": [
+{
+"password": "",
+"variant": "orig",
+"open": "!TypeError"
+},
+{
+"password": "",
+"variant": "half",
+"open": "!PSEOF"
+},
+{
+"password": "",
+"variant": "3q",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "noxref",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "shifted",
+"open": "!TypeError"
+},
+{
+"password": "",
+"variant": "tail",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "corrupt0",
+"open": "!PDFEncryptionError"
+},
+{
+"password": "",
+"variant": "corrupt1",
+"open": "!PDFEncryptionError"
+},
+{
+"password": "",
+"variant": "corrupt2",
+"open": "!TypeError"
+},
+{
+"password": "",
+"variant": "corrupt3",
+"open": "!PSSyntaxError"
+}
+]
+}

@@ -1,0 +1,1466 @@
+{
+"path": "encryption/encrypted_doc_no_id.pdf",
+"runs": [
+{
+"password": "",
+"variant": "orig",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRef: offsets=dict_keys([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15])>",
+"trailer": "{'Size': 16, 'Root': <PDFObjRef:9>, 'Info': <PDFObjRef:8>, 'Encrypt': <PDFObjRef:10>}",
+"ids": [
+[
+"1",
+"(None, 16, 0)"
+],
+[
+"2",
+"(None, 69, 0)"
+],
+[
+"3",
+"(None, 184, 0)"
+],
+[
+"4",
+"(None, 291, 0)"
+],
+[
+"5",
+"(None, 396, 0)"
+],
+[
+"6",
+"(None, 617, 0)"
+],
+[
+"7",
+"(None, 693, 0)"
+],
+[
+"8",
+"(None, 914, 0)"
+],
+[
+"9",
+"(None, 990, 0)"
+],
+[
+"10",
+"(None, 1103, 0)"
+],
+[
+"11",
+"(None, 1297, 0)"
+],
+[
+"12",
+"(None, 12862, 0)"
+],
+[
+"13",
+"(None, 12957, 0)"
+],
+[
+"14",
+"(None, 13085, 0)"
+],
+[
+"15",
+"(None, 13180, 0)"
+]
+]
+}
+],
+"catalog": "{'Outlines': <PDFObjRef:1>, 'Pages': <PDFObjRef:15>, 'OpenAction': [<PDFObjRef:13>, /'FitH', 842], 'PageMode': /'UseNone', 'Type': /'Catalog'}",
+"info": "[{'Producer': b'European Patent Office'}]",
+"flags": [
+false,
+true,
+true
+],
+"objects": [
+[
+"1",
+"{'First': <PDFObjRef:2>, 'Count': 3, 'Last': <PDFObjRef:4>}",
+null
+],
+[
+"2",
+"{'Title': b'Bibliographic data', 'Parent': <PDFObjRef:1>, 'Dest': [<PDFObjRef:12>, /'FitH', 842], 'Next': <PDFObjRef:3>}",
+null
+],
+[
+"3",
+"{'Title': b'Abstract', 'Parent': <PDFObjRef:1>, 'Dest': [<PDFObjRef:12>, /'FitH', 842], 'Next': <PDFObjRef:4>, 'Prev': <PDFObjRef:2>}",
+null
+],
+[
+"4",
+"{'Title': b'Search Report', 'Parent': <PDFObjRef:1>, 'Dest': [<PDFObjRef:14>, /'FitH', 842], 'Prev': <PDFObjRef:3>}",
+null
+],
+[
+"5",
+"{'F': b'pdfdoc?DB=EPODOC&IDX=CA2464325&F=1&RPN=EP1444629&DOC=deb45b02b9732ae4a15c15d29a54fbcb72&PGN=1', 'S': /'GoToR'}",
+null
+],
+[
+"6",
+"<PDFStream(6): raw=28, {'Length': 28}>",
+"57ffbffef2914beb3fcd2ccd9c2260ad7fc7c76362151c05517a116ede6cb7a8"
+],
+[
+"7",
+"{'F': b'pdfdoc?DB=EPODOC&IDX=CA2464325&F=1&RPN=EP1444629&DOC=deb45b02b9732ae4a15c15d29a54fbcb72&PGN=3', 'S': /'GoToR'}",
+null
+],
+[
+"8",
+"{'Producer': b'European Patent Office'}",
+null
+],
+[
+"9",
+"{'Outlines': <PDFObjRef:1>, 'Pages': <PDFObjRef:15>, 'OpenAction': [<PDFObjRef:13>, /'FitH', 842], 'PageMode': /'UseNone', 'Type': /'Catalog'}",
+null
+],
+[
+"10",
+"{'R': 2, 'P': -8, 'O': b' U\\xc7V\\xc7.\\x1a\\xd7\\x02`\\x8e\\x81\\x96\\xac\\xadDz\\xd3-\\x17\\xcf\\xf5\\x83#_m\\xd1_\\xed}\\xabg', 'Filter': /'Standard', 'V': 1, 'U': b'=\\xd1\\x0fh\\xc6\"\\xf7| /\\xc5:5\\xf61^N|\\xe5=\\x04;\\x06\\xc3k\\x9c\\x9d\\xabU\\xd9\\x04\\xfd'}",
+null
+],
+[
+"11",
+"<PDFStream(11): raw=11367, {'ColorSpace': /'DeviceGray', 'Subtype': /'Image', 'Filter': /'CCITTFaxDecode', 'Length': 11367, 'DecodeParms': {'K': -1, 'Columns': 2479}, 'Width': 2479, 'Height': 3507, 'BitsPerComponent': 1}>",
+null
+],
+[
+"12",
+"{'Resources': {}, 'Parent': <PDFObjRef:15>, 'AA': {'O': <PDFObjRef:5>, 'D': [0, /'FitH', 842]}, 'Type': /'Page'}",
+null
+],
+[
+"13",
+"{'Resources': {'XObject': {'I1': <PDFObjRef:11>}, 'ProcSet': [/'PDF', /'ImageB']}, 'Parent': <PDFObjRef:15>, 'Contents': [<PDFObjRef:6>], 'Type': /'Page'}",
+null
+],
+[
+"14",
+"{'Resources': {}, 'Parent': <PDFObjRef:15>, 'AA': {'O': <PDFObjRef:7>, 'D': [2, /'FitH', 842]}, 'Type': /'Page'}",
+null
+],
+[
+"15",
+"{'MediaBox': [0, 0, 595, 842], 'Kids': [<PDFObjRef:12>, <PDFObjRef:13>, <PDFObjRef:14>], 'Count': 3, 'Type': /'Pages'}",
+null
+]
+],
+"pages": [
+{
+"pageid": "12",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [],
+"contents": [],
+"attrs": [
+"Resources",
+"Parent",
+"AA",
+"Type",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+},
+{
+"pageid": "13",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [
+"ProcSet",
+"XObject"
+],
+"contents": [
+"<PDFObjRef:6>"
+],
+"attrs": [
+"Resources",
+"Parent",
+"Contents",
+"Type",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={'XObject': {'I1': <PDFObjRef:11>}, 'ProcSet': [/'PDF', /'ImageB']}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+},
+{
+"pageid": "14",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [],
+"contents": [],
+"attrs": [
+"Resources",
+"Parent",
+"AA",
+"Type",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+}
+],
+"outlines": [
+[
+1,
+"Bibliographic data",
+"[<PDFObjRef:12>, /'FitH', 842]",
+"None",
+"None"
+],
+[
+1,
+"Abstract",
+"[<PDFObjRef:12>, /'FitH', 842]",
+"None",
+"None"
+],
+[
+1,
+"Search Report",
+"[<PDFObjRef:14>, /'FitH', 842]",
+"None",
+"None"
+]
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "half",
+"open": "!PSEOF"
+},
+{
+"password": "",
+"variant": "3q",
+"open": "!PSEOF"
+},
+{
+"password": "",
+"variant": "noxref",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "shifted",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRefFallback: offsets=dict_keys([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15])>",
+"trailer": "{'Size': 16, 'Root': <PDFObjRef:9>, 'Info': <PDFObjRef:8>, 'Encrypt': <PDFObjRef:10>}",
+"ids": [
+[
+"1",
+"(None, 22, 0)"
+],
+[
+"2",
+"(None, 75, 0)"
+],
+[
+"3",
+"(None, 190, 0)"
+],
+[
+"4",
+"(None, 297, 0)"
+],
+[
+"5",
+"(None, 402, 0)"
+],
+[
+"6",
+"(None, 623, 0)"
+],
+[
+"7",
+"(None, 699, 0)"
+],
+[
+"8",
+"(None, 920, 0)"
+],
+[
+"9",
+"(None, 996, 0)"
+],
+[
+"10",
+"(None, 1109, 0)"
+],
+[
+"11",
+"(None, 1303, 0)"
+],
+[
+"12",
+"(None, 12868, 0)"
+],
+[
+"13",
+"(None, 12963, 0)"
+],
+[
+"14",
+"(None, 13091, 0)"
+],
+[
+"15",
+"(None, 13186, 0)"
+]
+]
+}
+],
+"catalog": "{'Outlines': <PDFObjRef:1>, 'Pages': <PDFObjRef:15>, 'OpenAction': [<PDFObjRef:13>, /'FitH', 842], 'PageMode': /'UseNone', 'Type': /'Catalog'}",
+"info": "[{'Producer': b'European Patent Office'}]",
+"flags": [
+false,
+true,
+true
+],
+"objects": [
+[
+"1",
+"{'First': <PDFObjRef:2>, 'Count': 3, 'Last': <PDFObjRef:4>}",
+null
+],
+[
+"2",
+"{'Title': b'Bibliographic data', 'Parent': <PDFObjRef:1>, 'Dest': [<PDFObjRef:12>, /'FitH', 842], 'Next': <PDFObjRef:3>}",
+null
+],
+[
+"3",
+"{'Title': b'Abstract', 'Parent': <PDFObjRef:1>, 'Dest': [<PDFObjRef:12>, /'FitH', 842], 'Next': <PDFObjRef:4>, 'Prev': <PDFObjRef:2>}",
+null
+],
+[
+"4",
+"{'Title': b'Search Report', 'Parent': <PDFObjRef:1>, 'Dest': [<PDFObjRef:14>, /'FitH', 842], 'Prev': <PDFObjRef:3>}",
+null
+],
+[
+"5",
+"{'F': b'pdfdoc?DB=EPODOC&IDX=CA2464325&F=1&RPN=EP1444629&DOC=deb45b02b9732ae4a15c15d29a54fbcb72&PGN=1', 'S': /'GoToR'}",
+null
+],
+[
+"6",
+"<PDFStream(6): raw=28, {'Length': 28}>",
+"57ffbffef2914beb3fcd2ccd9c2260ad7fc7c76362151c05517a116ede6cb7a8"
+],
+[
+"7",
+"{'F': b'pdfdoc?DB=EPODOC&IDX=CA2464325&F=1&RPN=EP1444629&DOC=deb45b02b9732ae4a15c15d29a54fbcb72&PGN=3', 'S': /'GoToR'}",
+null
+],
+[
+"8",
+"{'Producer': b'European Patent Office'}",
+null
+],
+[
+"9",
+"{'Outlines': <PDFObjRef:1>, 'Pages': <PDFObjRef:15>, 'OpenAction': [<PDFObjRef:13>, /'FitH', 842], 'PageMode': /'UseNone', 'Type': /'Catalog'}",
+null
+],
+[
+"10",
+"{'R': 2, 'P': -8, 'O': b' U\\xc7V\\xc7.\\x1a\\xd7\\x02`\\x8e\\x81\\x96\\xac\\xadDz\\xd3-\\x17\\xcf\\xf5\\x83#_m\\xd1_\\xed}\\xabg', 'Filter': /'Standard', 'V': 1, 'U': b'=\\xd1\\x0fh\\xc6\"\\xf7| /\\xc5:5\\xf61^N|\\xe5=\\x04;\\x06\\xc3k\\x9c\\x9d\\xabU\\xd9\\x04\\xfd'}",
+null
+],
+[
+"11",
+"<PDFStream(11): raw=11367, {'ColorSpace': /'DeviceGray', 'Subtype': /'Image', 'Filter': /'CCITTFaxDecode', 'Length': 11367, 'DecodeParms': {'K': -1, 'Columns': 2479}, 'Width': 2479, 'Height': 3507, 'BitsPerComponent': 1}>",
+null
+],
+[
+"12",
+"{'Resources': {}, 'Parent': <PDFObjRef:15>, 'AA': {'O': <PDFObjRef:5>, 'D': [0, /'FitH', 842]}, 'Type': /'Page'}",
+null
+],
+[
+"13",
+"{'Resources': {'XObject': {'I1': <PDFObjRef:11>}, 'ProcSet': [/'PDF', /'ImageB']}, 'Parent': <PDFObjRef:15>, 'Contents': [<PDFObjRef:6>], 'Type': /'Page'}",
+null
+],
+[
+"14",
+"{'Resources': {}, 'Parent': <PDFObjRef:15>, 'AA': {'O': <PDFObjRef:7>, 'D': [2, /'FitH', 842]}, 'Type': /'Page'}",
+null
+],
+[
+"15",
+"{'MediaBox': [0, 0, 595, 842], 'Kids': [<PDFObjRef:12>, <PDFObjRef:13>, <PDFObjRef:14>], 'Count': 3, 'Type': /'Pages'}",
+null
+]
+],
+"pages": [
+{
+"pageid": "12",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [],
+"contents": [],
+"attrs": [
+"Resources",
+"Parent",
+"AA",
+"Type",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+},
+{
+"pageid": "13",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [
+"ProcSet",
+"XObject"
+],
+"contents": [
+"<PDFObjRef:6>"
+],
+"attrs": [
+"Resources",
+"Parent",
+"Contents",
+"Type",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={'XObject': {'I1': <PDFObjRef:11>}, 'ProcSet': [/'PDF', /'ImageB']}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+},
+{
+"pageid": "14",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [],
+"contents": [],
+"attrs": [
+"Resources",
+"Parent",
+"AA",
+"Type",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+}
+],
+"outlines": [
+[
+1,
+"Bibliographic data",
+"[<PDFObjRef:12>, /'FitH', 842]",
+"None",
+"None"
+],
+[
+1,
+"Abstract",
+"[<PDFObjRef:12>, /'FitH', 842]",
+"None",
+"None"
+],
+[
+1,
+"Search Report",
+"[<PDFObjRef:14>, /'FitH', 842]",
+"None",
+"None"
+]
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "tail",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "corrupt0",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRef: offsets=dict_keys([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15])>",
+"trailer": "{'Size': 16, 'Root': <PDFObjRef:9>, 'Info': <PDFObjRef:8>, 'Encrypt': <PDFObjRef:10>}",
+"ids": [
+[
+"1",
+"(None, 16, 0)"
+],
+[
+"2",
+"(None, 69, 0)"
+],
+[
+"3",
+"(None, 184, 0)"
+],
+[
+"4",
+"(None, 291, 0)"
+],
+[
+"5",
+"(None, 396, 0)"
+],
+[
+"6",
+"(None, 617, 0)"
+],
+[
+"7",
+"(None, 693, 0)"
+],
+[
+"8",
+"(None, 914, 0)"
+],
+[
+"9",
+"(None, 990, 0)"
+],
+[
+"10",
+"(None, 1103, 0)"
+],
+[
+"11",
+"(None, 1297, 0)"
+],
+[
+"12",
+"(None, 12862, 0)"
+],
+[
+"13",
+"(None, 12957, 0)"
+],
+[
+"14",
+"(None, 13085, 0)"
+],
+[
+"15",
+"(None, 13180, 0)"
+]
+]
+}
+],
+"catalog": "{'Outlines': <PDFObjRef:1>, 'Pages': <PDFObjRef:15>, 'OpenAction': [<PDFObjRef:13>, /'FitH', 842], 'PageMode': /'UseNone', 'Type': /'Catalog'}",
+"info": "[{'Producer': b'European Patent Office'}]",
+"flags": [
+false,
+true,
+true
+],
+"objects": [
+[
+"1",
+"{'First': <PDFObjRef:2>, 'Count': 3, 'Last': <PDFObjRef:4>}",
+null
+],
+[
+"2",
+"{'Title': b'Bibliographic data', 'Parent': <PDFObjRef:1>, 'Dest': [<PDFObjRef:12>, /'FitH', 842], 'Next': <PDFObjRef:3>}",
+null
+],
+[
+"3",
+"{'Title': b'Abstract', 'Parent': <PDFObjRef:1>, 'Dest': [<PDFObjRef:12>, /'FitH', 842], 'Next': <PDFObjRef:4>, 'Prev': <PDFObjRef:2>}",
+null
+],
+[
+"4",
+"{'Title': b'Search Report', 'Parent': <PDFObjRef:1>, 'Dest': [<PDFObjRef:14>, /'FitH', 842], 'Prev': <PDFObjRef:3>}",
+null
+],
+[
+"5",
+"{'F': b'pdfdoc?DB=EPODOC&IDX=CA2464325&F=1&RPN=EP1444629&DOC=deb45b02b9732ae4a15c15d29a54fbcb72&PGN=1', 'S': /'GoToR'}",
+null
+],
+[
+"6",
+"<PDFStream(6): raw=28, {'Length': 28}>",
+"57ffbffef2914beb3fcd2ccd9c2260ad7fc7c76362151c05517a116ede6cb7a8"
+],
+[
+"7",
+"!PSSyntaxError",
+null
+],
+[
+"8",
+"{'Producer': b'European Patent Office'}",
+null
+],
+[
+"9",
+"{'Outlines': <PDFObjRef:1>, 'Pages': <PDFObjRef:15>, 'OpenAction': [<PDFObjRef:13>, /'FitH', 842], 'PageMode': /'UseNone', 'Type': /'Catalog'}",
+null
+],
+[
+"10",
+"{'R': 2, 'P': -8, 'O': b' U\\xc7V\\xc7.\\x1a\\xd7\\x02`\\x8e\\x81\\x96\\xac\\xadDz\\xd3-\\x17\\xcf\\xf5\\x83#_m\\xd1_\\xed}\\xabg', 'Filter': /'Standard', 'V': 1, 'U': b'=\\xd1\\x0fh\\xc6\"\\xf7| /\\xc5:5\\xf61^N|\\xe5=\\x04;\\x06\\xc3k\\x9c\\x9d\\xabU\\xd9\\x04\\xfd'}",
+null
+],
+[
+"11",
+"<PDFStream(11): raw=11367, {'ColorSpace': /'DeviceGray', 'Subtype': /'Image', 'Filter': /'CCITTFaxDecode', 'Length': 11367, 'DecodeParms': {'K': -1, 'Columns': 2479}, 'Width': 2479, 'Height': 3507, 'BitsPerComponent': 1}>",
+null
+],
+[
+"12",
+"{'Resources': {}, 'Parent': <PDFObjRef:15>, 'AA': {'O': <PDFObjRef:5>, 'D': [0, /'FitH', 842]}, 'Type': /'Page'}",
+null
+],
+[
+"13",
+"{'Resources': {'XObject': {'I1': <PDFObjRef:11>}, 'ProcSet': [/'PDF', /'ImageB']}, 'Parent': <PDFObjRef:15>, 'Contents': [<PDFObjRef:6>], 'Type': /'Page'}",
+null
+],
+[
+"14",
+"{'Resources': {}, 'Parent': <PDFObjRef:15>, 'AA': {'O': <PDFObjRef:7>, 'D': [2, /'FitH', 842]}, 'Type': /'Page'}",
+null
+],
+[
+"15",
+"{'MediaBox': [0, 0, 595, 842], 'Kids': [<PDFObjRef:12>, <PDFObjRef:13>, <PDFObjRef:14>], 'Count': 3, 'Type': /'Pages'}",
+null
+]
+],
+"pages": [
+{
+"pageid": "12",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [],
+"contents": [],
+"attrs": [
+"Resources",
+"Parent",
+"AA",
+"Type",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+},
+{
+"pageid": "13",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [
+"ProcSet",
+"XObject"
+],
+"contents": [
+"<PDFObjRef:6>"
+],
+"attrs": [
+"Resources",
+"Parent",
+"Contents",
+"Type",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={'XObject': {'I1': <PDFObjRef:11>}, 'ProcSet': [/'PDF', /'ImageB']}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+},
+{
+"pageid": "14",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [],
+"contents": [],
+"attrs": [
+"Resources",
+"Parent",
+"AA",
+"Type",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+}
+],
+"outlines": [
+[
+1,
+"Bibliographic data",
+"[<PDFObjRef:12>, /'FitH', 842]",
+"None",
+"None"
+],
+[
+1,
+"Abstract",
+"[<PDFObjRef:12>, /'FitH', 842]",
+"None",
+"None"
+],
+[
+1,
+"Search Report",
+"[<PDFObjRef:14>, /'FitH', 842]",
+"None",
+"None"
+]
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "corrupt1",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRef: offsets=dict_keys([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15])>",
+"trailer": "{'Size': 16, 'Root': <PDFObjRef:9>, 'Info': <PDFObjRef:8>, 'Encrypt': <PDFObjRef:10>}",
+"ids": [
+[
+"1",
+"(None, 16, 0)"
+],
+[
+"2",
+"(None, 69, 0)"
+],
+[
+"3",
+"(None, 184, 0)"
+],
+[
+"4",
+"(None, 291, 0)"
+],
+[
+"5",
+"(None, 396, 0)"
+],
+[
+"6",
+"(None, 617, 0)"
+],
+[
+"7",
+"(None, 693, 0)"
+],
+[
+"8",
+"(None, 914, 0)"
+],
+[
+"9",
+"(None, 990, 0)"
+],
+[
+"10",
+"(None, 1103, 0)"
+],
+[
+"11",
+"(None, 1297, 0)"
+],
+[
+"12",
+"(None, 12862, 0)"
+],
+[
+"13",
+"(None, 12957, 0)"
+],
+[
+"14",
+"(None, 13085, 0)"
+],
+[
+"15",
+"(None, 13180, 0)"
+]
+]
+}
+],
+"catalog": "{'Outlines': <PDFObjRef:1>, 'Pages': <PDFObjRef:15>, 'OpenAction': [<PDFObjRef:13>, /'FitH', 842], 'PageMode': /'UseNone', 'Type': /'Catalog'}",
+"info": "[{'Producer': b'European Patent Office'}]",
+"flags": [
+false,
+true,
+true
+],
+"objects": [
+[
+"1",
+"{'First': <PDFObjRef:2>, 'Count': 3, 'Last': <PDFObjRef:4>}",
+null
+],
+[
+"2",
+"{'Title': b'Bibliographic data', 'Parent': <PDFObjRef:1>, 'Dest': [<PDFObjRef:12>, /'FitH', 842], 'Next': <PDFObjRef:3>}",
+null
+],
+[
+"3",
+"{'Title': b'Abstract', 'Parent': <PDFObjRef:1>, 'Dest': [<PDFObjRef:12>, /'FitH', 842], 'Next': <PDFObjRef:4>, 'Prev': <PDFObjRef:2>}",
+null
+],
+[
+"4",
+"{'Title': b'Search Report', 'Parent': <PDFObjRef:1>, 'Dest': [<PDFObjRef:14>, /'FitH', 842], 'Prev': <PDFObjRef:3>}",
+null
+],
+[
+"5",
+"{'F': b'pdfdoc?DB=EPODOC&IDX=CA2464325&F=1&RPN=EP1444629&DOC=deb45b02b9732ae4a15c15d29a54fbcb72&PGN=1', 'S': /'GoToR'}",
+null
+],
+[
+"6",
+"<PDFStream(6): raw=28, {'Length': 28}>",
+"57ffbffef2914beb3fcd2ccd9c2260ad7fc7c76362151c05517a116ede6cb7a8"
+],
+[
+"7",
+"{'F': b'pdfdoc?DB=EPODOC&IDX=CA2464325&F=1&RPN=EP1444629&DOC=deb45b02b9732ae4a15c15d29a54fbcb72&PGN=3', 'S': /'GoToR'}",
+null
+],
+[
+"8",
+"{'Producer': b'European Patent Office'}",
+null
+],
+[
+"9",
+"{'Outlines': <PDFObjRef:1>, 'Pages': <PDFObjRef:15>, 'OpenAction': [<PDFObjRef:13>, /'FitH', 842], 'PageMode': /'UseNone', 'Type': /'Catalog'}",
+null
+],
+[
+"10",
+"{'R': 2, 'P': -8, 'O': b' U\\xc7V\\xc7.\\x1a\\xd7\\x02`\\x8e\\x81\\x96\\xac\\xadDz\\xd3-\\x17\\xcf\\xf5\\x83#_m\\xd1_\\xed}\\xabg', 'Filter': /'Standard', 'V': 1, 'U': b'=\\xd1\\x0fh\\xc6\"\\xf7| /\\xc5:5\\xf61^N|\\xe5=\\x04;\\x06\\xc3k\\x9c\\x9d\\xabU\\xd9\\x04\\xfd'}",
+null
+],
+[
+"11",
+"<PDFStream(11): raw=11367, {'ColorSpace': /'DeviceGray', 'Subtype': /'Image', 'Filter': /'CCITTFaxDecode', 'Length': 11367, 'DecodeParms': {'K': -1, 'Columns': 2479}, 'Width': 2479, 'Height': 3507, 'BitsPerComponent': 1}>",
+null
+],
+[
+"12",
+"{'Resources': {}, 'Parent': <PDFObjRef:15>, 'AA': {'O': <PDFObjRef:5>, 'D': [0, /'FitH', 842]}, 'Type': /'Page'}",
+null
+],
+[
+"13",
+"{'Resvurces': {'XObject': {'I1': <PDFObjRef:11>}, 'ProcSet': [/'PDF', /'ImageB']}, 'Parent': <PDFObjRef:15>, 'Contents': [<PDFObjRef:6>], 'Type': /'Page'}",
+null
+],
+[
+"14",
+"{'Resources': {}, 'Parent': <PDFObjRef:15>, 'AA': {'O': <PDFObjRef:7>, 'D': [2, /'FitH', 842]}, 'Type': /'Page'}",
+null
+],
+[
+"15",
+"{'MediaBox': [0, 0, 595, 842], 'Kids': [<PDFObjRef:12>, <PDFObjRef:13>, <PDFObjRef:14>], 'Count': 3, 'Type': /'Pages'}",
+null
+]
+],
+"pages": [
+{
+"pageid": "12",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [],
+"contents": [],
+"attrs": [
+"Resources",
+"Parent",
+"AA",
+"Type",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+},
+{
+"pageid": "13",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [],
+"contents": [
+"<PDFObjRef:6>"
+],
+"attrs": [
+"Resvurces",
+"Parent",
+"Contents",
+"Type",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+},
+{
+"pageid": "14",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [],
+"contents": [],
+"attrs": [
+"Resources",
+"Parent",
+"AA",
+"Type",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+}
+],
+"outlines": [
+[
+1,
+"Bibliographic data",
+"[<PDFObjRef:12>, /'FitH', 842]",
+"None",
+"None"
+],
+[
+1,
+"Abstract",
+"[<PDFObjRef:12>, /'FitH', 842]",
+"None",
+"None"
+],
+[
+1,
+"Search Report",
+"[<PDFObjRef:14>, /'FitH', 842]",
+"None",
+"None"
+]
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "corrupt2",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRef: offsets=dict_keys([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15])>",
+"trailer": "{'Size': 16, 'Root': <PDFObjRef:9>, 'Info': <PDFObjRef:8>, 'Encrypt': <PDFObjRef:10>}",
+"ids": [
+[
+"1",
+"(None, 16, 0)"
+],
+[
+"2",
+"(None, 69, 0)"
+],
+[
+"3",
+"(None, 184, 0)"
+],
+[
+"4",
+"(None, 291, 0)"
+],
+[
+"5",
+"(None, 396, 0)"
+],
+[
+"6",
+"(None, 617, 0)"
+],
+[
+"7",
+"(None, 693, 0)"
+],
+[
+"8",
+"(None, 914, 0)"
+],
+[
+"9",
+"(None, 990, 0)"
+],
+[
+"10",
+"(None, 1103, 0)"
+],
+[
+"11",
+"(None, 1297, 0)"
+],
+[
+"12",
+"(None, 12862, 0)"
+],
+[
+"13",
+"(None, 12957, 0)"
+],
+[
+"14",
+"(None, 13085, 0)"
+],
+[
+"15",
+"(None, 13180, 0)"
+]
+]
+}
+],
+"catalog": "{'Outlines': <PDFObjRef:1>, 'Pages': <PDFObjRef:15>, 'OpenAction': [<PDFObjRef:13>, /'FitH', 842], 'PageMode': /'UseNone', 'Type': /'Catalog'}",
+"info": "[{'Producer': b'European Patent Office'}]",
+"flags": [
+false,
+true,
+true
+],
+"objects": [
+[
+"1",
+"{'First': <PDFObjRef:2>, 'Count': 3, 'Last': <PDFObjRef:4>}",
+null
+],
+[
+"2",
+"{'Title': b'Bibliographic data', 'Parent': <PDFObjRef:1>, 'Dest': [<PDFObjRef:12>, /'FitH', 842], 'Next': <PDFObjRef:3>}",
+null
+],
+[
+"3",
+"{'Title': b'Abstract', 'Parent': <PDFObjRef:1>, 'Dest': [<PDFObjRef:12>, /'FitH', 842], 'Next': <PDFObjRef:4>, 'Prev': <PDFObjRef:2>}",
+null
+],
+[
+"4",
+"{'Title': b'Search Report', 'Parent': <PDFObjRef:1>, 'Dest': [<PDFObjRef:14>, /'FitH', 842], 'Prev': <PDFObjRef:3>}",
+null
+],
+[
+"5",
+"{'F': b'pdfdoc?DB=EPODOC&IDX=CA2464325&F=1&RPN=EP1444629&DOC=deb45b02b9732ae4a15c15d29a54fbcb72&PGN=1', 'S': /'GoToR'}",
+null
+],
+[
+"6",
+"<PDFStream(6): raw=28, {'Length': 28}>",
+"57ffbffef2914beb3fcd2ccd9c2260ad7fc7c76362151c05517a116ede6cb7a8"
+],
+[
+"7",
+"{'F': b'pdfdoc?DB=EPODOC&IDX=CA2464325&F=1&RPN=EP1444629&DOC=deb45b02b9732ae4a15c15d29a54fbcb72&PGN=3', 'S': /'GoToR'}",
+null
+],
+[
+"8",
+"{'Producer': b'European Patent Office'}",
+null
+],
+[
+"9",
+"{'Outlines': <PDFObjRef:1>, 'Pages': <PDFObjRef:15>, 'OpenAction': [<PDFObjRef:13>, /'FitH', 842], 'PageMode': /'UseNone', 'Type': /'Catalog'}",
+null
+],
+[
+"10",
+"{'R': 2, 'P': -8, 'O': b' U\\xc7V\\xc7.\\x1a\\xd7\\x02`\\x8e\\x81\\x96\\xac\\xadDz\\xd3-\\x17\\xcf\\xf5\\x83#_m\\xd1_\\xed}\\xabg', 'Filter': /'Standard', 'V': 1, 'U': b'=\\xd1\\x0fh\\xc6\"\\xf7| /\\xc5:5\\xf61^N|\\xe5=\\x04;\\x06\\xc3k\\x9c\\x9d\\xabU\\xd9\\x04\\xfd'}",
+null
+],
+[
+"11",
+"<PDFStream(11): raw=11367, {'ColorSpace': /'DeviceGray', 'Subtype': /'Image', 'Filter': /'CCITTFaxDecode', 'Length': 11367, 'DecodeParms': {'K': -1, 'Columns': 2479}, 'Width': 2479, 'Height': 3507, 'BitsPerComponent': 1}>",
+null
+],
+[
+"12",
+"{'Resources': {}, 'Parent': <PDFObjRef:15>, 'AA': {'O': <PDFObjRef:5>, 'D': [0, /'FitH', 842]}, 'Type': /'Page'}",
+null
+],
+[
+"13",
+"{'Resources': {'XObject': {'I1': <PDFObjRef:11>}, 'ProcSet': [/'PDF', /'ImageB']}, 'Parent': <PDFObjRef:15>, 'Contents': [<PDFObjRef:6>], 'Type': /b'Pa\\x80e'}",
+null
+],
+[
+"14",
+"{'Resources': {}, 'Parent': <PDFObjRef:15>, 'AA': {'O': <PDFObjRef:7>, 'D': [2, /'FitH', 842]}, 'Type': /'Page'}",
+null
+],
+[
+"15",
+"{'MediaBox': [0, 0, 595, 842], 'Kids': [<PDFObjRef:12>, <PDFObjRef:13>, <PDFObjRef:14>], 'Count': 3, 'Type': /'Pages'}",
+null
+]
+],
+"pages": [
+{
+"pageid": "12",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [],
+"contents": [],
+"attrs": [
+"Resources",
+"Parent",
+"AA",
+"Type",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+},
+{
+"pageid": "14",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [],
+"contents": [],
+"attrs": [
+"Resources",
+"Parent",
+"AA",
+"Type",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+}
+],
+"outlines": [
+[
+1,
+"Bibliographic data",
+"[<PDFObjRef:12>, /'FitH', 842]",
+"None",
+"None"
+],
+[
+1,
+"Abstract",
+"[<PDFObjRef:12>, /'FitH', 842]",
+"None",
+"None"
+],
+[
+1,
+"Search Report",
+"[<PDFObjRef:14>, /'FitH', 842]",
+"None",
+"None"
+]
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "corrupt3",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRef: offsets=dict_keys([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15])>",
+"trailer": "{'Size': 16, 'Root': <PDFObjRef:9>, 'Info': <PDFObjRef:8>, 'Encrypt': <PDFObjRef:10>}",
+"ids": [
+[
+"1",
+"(None, 16, 0)"
+],
+[
+"2",
+"(None, 69, 0)"
+],
+[
+"3",
+"(None, 184, 0)"
+],
+[
+"4",
+"(None, 291, 0)"
+],
+[
+"5",
+"(None, 396, 0)"
+],
+[
+"6",
+"(None, 617, 0)"
+],
+[
+"7",
+"(None, 693, 0)"
+],
+[
+"8",
+"(None, 914, 0)"
+],
+[
+"9",
+"(None, 990, 0)"
+],
+[
+"10",
+"(None, 1103, 0)"
+],
+[
+"11",
+"(None, 1297, 0)"
+],
+[
+"12",
+"(None, 12862, 0)"
+],
+[
+"13",
+"(None, 12957, 0)"
+],
+[
+"14",
+"(None, 13085, 0)"
+],
+[
+"15",
+"(None, 13180, 0)"
+]
+]
+}
+],
+"catalog": "{'Outlines': <PDFObjRef:1>, 'Pages': <PDFObjRef:15>, 'OpenAction': [<PDFObjRef:13>, /'FitH', 842], 'PageMode': /'UseNone', 'Type': /'Catalog'}",
+"info": "[{'Producer': b'European Patent Office'}]",
+"flags": [
+false,
+true,
+true
+],
+"objects": [
+[
+"1",
+"2",
+null
+],
+[
+"2",
+"{'Title': b'Bibliographic data', 'Parent': <PDFObjRef:1>, 'Dest': [<PDFObjRef:12>, /'FitH', 842], 'Next': <PDFObjRef:3>}",
+null
+],
+[
+"3",
+"{'Title': b'Abstract', 'Parent': <PDFObjRef:1>, 'Dest': [<PDFObjRef:12>, /'FitH', 842], 'Next': <PDFObjRef:4>, 'Prev': <PDFObjRef:2>}",
+null
+],
+[
+"4",
+"{'Title': b'Search Report', 'Parent': <PDFObjRef:1>, 'Dest': [<PDFObjRef:14>, /'FitH', 842], 'Prev': <PDFObjRef:3>}",
+null
+],
+[
+"5",
+"{'F': b'pdfdoc?DB=EPODOC&IDX=CA2464325&F=1&RPN=EP1444629&DOC=deb45b02b9732ae4a15c15d29a54fbcb72&PGN=1', 'S': /'GoToR'}",
+null
+],
+[
+"6",
+"<PDFStream(6): raw=28, {'Length': 28}>",
+"57ffbffef2914beb3fcd2ccd9c2260ad7fc7c76362151c05517a116ede6cb7a8"
+],
+[
+"7",
+"{'F': b'pdfdoc?DB=EPODOC&IDX=CA2464325&F=1&RPN=EP1444629&DOC=deb45b02b9732ae4a15c15d29a54fbcb72&PGN=3', 'S': /'GoToR'}",
+null
+],
+[
+"8",
+"{'Producer': b'European Patent Office'}",
+null
+],
+[
+"9",
+"{'Outlines': <PDFObjRef:1>, 'Pages': <PDFObjRef:15>, 'OpenAction': [<PDFObjRef:13>, /'FitH', 842], 'PageMode': /'UseNone', 'Type': /'Catalog'}",
+null
+],
+[
+"10",
+"{'R': 2, 'P': -8, 'O': b' U\\xc7V\\xc7.\\x1a\\xd7\\x02`\\x8e\\x81\\x96\\xac\\xadDz\\xd3-\\x17\\xcf\\xf5\\x83#_m\\xd1_\\xed}\\xabg', 'Filter': /'Standard', 'V': 1, 'U': b'=\\xd1\\x0fh\\xc6\"\\xf7| /\\xc5:5\\xf61^N|\\xe5=\\x04;\\x06\\xc3k\\x9c\\x9d\\xabU\\xd9\\x04\\xfd'}",
+null
+],
+[
+"11",
+"<PDFStream(11): raw=113, {'ColorSpace': /'DeviceGray', 'Subtype': /'Image', 'Filter': /'CCITTFaxDecode', 'Length': 113, \"/b'\\\\x19'\": 7, 'DecodeParms': {'K': -1, 'Columns': 2479}, 'Width': 2479, 'Height': 3507, 'BitsPerComponent': 1}>",
+null
+],
+[
+"12",
+"{'Resources': {}, 'Parent': <PDFObjRef:15>, 'AA': {'O': <PDFObjRef:5>, 'D': [0, /'FitH', 842]}, 'Type': /'Page'}",
+null
+],
+[
+"13",
+"{'Resources': {'XObject': {'I1': <PDFObjRef:11>}, 'ProcSet': [/'PDF', /'ImageB']}, 'Parent': <PDFObjRef:15>, 'Contents': [<PDFObjRef:6>], 'Type': /'Page'}",
+null
+],
+[
+"14",
+"{'Resources': {}, 'Parent': <PDFObjRef:15>, 'AA': {'O': <PDFObjRef:7>, 'D': [2, /'FitH', 842]}, 'Type': /'Page'}",
+null
+],
+[
+"15",
+"{'MediaBox': [0, 0, 595, 842], 'Kids': [<PDFObjRef:12>, <PDFObjRef:13>, <PDFObjRef:14>], 'Count': 3, 'Type': /'Pages'}",
+null
+]
+],
+"pages": [
+{
+"pageid": "12",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [],
+"contents": [],
+"attrs": [
+"Resources",
+"Parent",
+"AA",
+"Type",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+},
+{
+"pageid": "13",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [
+"ProcSet",
+"XObject"
+],
+"contents": [
+"<PDFObjRef:6>"
+],
+"attrs": [
+"Resources",
+"Parent",
+"Contents",
+"Type",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={'XObject': {'I1': <PDFObjRef:11>}, 'ProcSet': [/'PDF', /'ImageB']}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+},
+{
+"pageid": "14",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [],
+"contents": [],
+"attrs": [
+"Resources",
+"Parent",
+"AA",
+"Type",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+}
+],
+"outlines": [],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+}
+]
+}

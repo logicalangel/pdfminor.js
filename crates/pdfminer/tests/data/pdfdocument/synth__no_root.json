@@ -1,0 +1,55 @@
+{
+"path": "synth/no_root.pdf",
+"runs": [
+{
+"password": "",
+"variant": "orig",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "half",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "3q",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "noxref",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "shifted",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "tail",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "corrupt0",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "corrupt1",
+"open": "!AssertionError"
+},
+{
+"password": "",
+"variant": "corrupt2",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "corrupt3",
+"open": "!PDFSyntaxError"
+}
+]
+}
