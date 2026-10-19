@@ -26,7 +26,11 @@ import math
 import sys
 from typing import Any
 
-from pdfminer.high_level import extract_pages
+import pyref
+
+pyref.apply()
+
+from pdfminer.high_level import extract_pages  # noqa: E402
 from pdfminer.layout import (
     LAParams,
     LTAnno,

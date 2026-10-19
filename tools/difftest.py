@@ -96,7 +96,7 @@ def python_cmd(case: Case) -> list[str]:
     if case.mode in LAYOUT_MODES:
         return [PY, str(ROOT / "tools" / "oracle.py"), "layout", str(case.pdf),
                 "--laparams", LAYOUT_MODES[case.mode], "--password", case.password]
-    return [PY, str(UPSTREAM / "tools" / "pdf2txt.py"), *PDF2TXT_MODES[case.mode],
+    return [PY, str(ROOT / "tools" / "pdf2txt_ref.py"), *PDF2TXT_MODES[case.mode],
             "-P", case.password, str(case.pdf)]
 
 

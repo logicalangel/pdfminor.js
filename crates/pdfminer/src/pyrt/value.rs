@@ -512,6 +512,11 @@ pub fn py_mul(a: &Value, b: &Value) -> PyResult<Value> {
             }
             Ok(Value::list(v))
         }
+        (Value::Bytes(_) | Value::Str(_) | Value::List(_) | Value::Tuple(_), n)
+        | (n, Value::Bytes(_) | Value::Str(_) | Value::List(_) | Value::Tuple(_)) => Err(PyErr::new(
+            ExcKind::TypeError,
+            format!("can't multiply sequence by non-int of type '{}'", n.type_name()),
+        )),
         _ => Err(binop_type_error("*", a, b)),
     }
 }
