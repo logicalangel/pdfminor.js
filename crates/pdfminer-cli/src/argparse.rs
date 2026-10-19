@@ -129,6 +129,7 @@ impl ArgumentParser {
     }
 
     /// `add_argument(...)` to `group`; returns the action's index.
+    #[allow(clippy::too_many_arguments)]
     pub fn add_argument(
         &mut self,
         group: usize,
@@ -329,9 +330,7 @@ impl ArgumentParser {
             let s = &arg_strings[i];
             if s == "--" {
                 pattern.push(b'-');
-                for _ in i + 1..arg_strings.len() {
-                    pattern.push(b'A');
-                }
+                pattern.extend(std::iter::repeat_n(b'A', arg_strings.len() - i - 1));
                 break;
             }
             match self.parse_optional(s) {
@@ -796,18 +795,18 @@ impl ArgumentParser {
         let action_width = help_position as i64 - current_indent as i64 - 2;
         let header = Self::invocation(action);
         let mut parts = String::new();
-        let indent_first;
         if action.help.is_empty() {
             parts.push_str(&format!("{}{}\n", " ".repeat(current_indent), header));
             return parts;
-        } else if header.chars().count() as i64 <= action_width {
+        }
+        let indent_first = if header.chars().count() as i64 <= action_width {
             let pad = action_width as usize - header.chars().count();
             parts.push_str(&format!("{}{}{}  ", " ".repeat(current_indent), header, " ".repeat(pad)));
-            indent_first = 0;
+            0
         } else {
             parts.push_str(&format!("{}{}\n", " ".repeat(current_indent), header));
-            indent_first = help_position;
-        }
+            help_position
+        };
         let lines = wrap(&normalize_ws(&action.help), help_width);
         if let Some(first) = lines.first() {
             parts.push_str(&format!("{}{}\n", " ".repeat(indent_first), first));
@@ -956,22 +955,18 @@ fn wrap(text: &str, width: usize) -> Vec<String> {
     while !chunks.is_empty() {
         let mut cur_line: Vec<String> = Vec::new();
         let mut cur_len = 0usize;
-        if chunks.last().unwrap().trim().is_empty() && !lines.is_empty() {
-            chunks.pop();
+        if !lines.is_empty() {
+            chunks.pop_if(|c| c.trim().is_empty());
         }
-        while let Some(c) = chunks.last() {
-            let l = c.chars().count();
-            if cur_len + l <= width {
-                cur_len += l;
-                cur_line.push(chunks.pop().unwrap());
-            } else {
-                break;
-            }
+        while let Some(c) = chunks.pop_if(|c| cur_len + c.chars().count() <= width) {
+            cur_len += c.chars().count();
+            cur_line.push(c);
         }
+        // _handle_long_word: splits the last chunk in place, or takes it whole.
+        #[allow(clippy::manual_pop_if)]
         if let Some(c) = chunks.last()
             && c.chars().count() > width
         {
-            // _handle_long_word
             let space_left = if width < 1 { 1 } else { width - cur_len };
             if space_left > 0 {
                 let chunk: Vec<char> = c.chars().collect();
@@ -992,9 +987,7 @@ fn wrap(text: &str, width: usize) -> Vec<String> {
                 cur_line.push(chunks.pop().unwrap());
             }
         }
-        if cur_line.last().is_some_and(|s| s.trim().is_empty()) {
-            cur_line.pop();
-        }
+        cur_line.pop_if(|s| s.trim().is_empty());
         if !cur_line.is_empty() {
             lines.push(cur_line.concat());
         }

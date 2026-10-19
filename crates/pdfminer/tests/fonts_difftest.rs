@@ -30,17 +30,12 @@ fn data_dir() -> PathBuf {
 fn load(path: &Path) -> J {
     let gz = std::fs::read(path).unwrap();
     let mut s = String::new();
-    flate2::read::GzDecoder::new(&gz[..])
-        .read_to_string(&mut s)
-        .unwrap();
+    flate2::read::GzDecoder::new(&gz[..]).read_to_string(&mut s).unwrap();
     serde_json::from_str(&s).unwrap()
 }
 
 fn unhex(s: &str) -> Vec<u8> {
-    (0..s.len())
-        .step_by(2)
-        .map(|i| u8::from_str_radix(&s[i..i + 2], 16).unwrap())
-        .collect()
+    (0..s.len()).step_by(2).map(|i| u8::from_str_radix(&s[i..i + 2], 16).unwrap()).collect()
 }
 
 fn hex(b: &[u8]) -> String {
@@ -48,11 +43,7 @@ fn hex(b: &[u8]) -> String {
 }
 
 fn cps_string(j: &J) -> String {
-    j.as_array()
-        .unwrap()
-        .iter()
-        .map(|c| char::from_u32(c.as_u64().unwrap() as u32).unwrap())
-        .collect()
+    j.as_array().unwrap().iter().map(|c| char::from_u32(c.as_u64().unwrap() as u32).unwrap()).collect()
 }
 
 fn sha256(s: &str) -> String {
@@ -168,39 +159,20 @@ fn cmap_dump_hash(m: &CMapBase) -> String {
 #[test]
 fn cmaps_match_python() {
     let data = load(&data_dir().join("cmaps.json.gz"));
-    let samples: Vec<Vec<u8>> = data["samples"]
-        .as_array()
-        .unwrap()
-        .iter()
-        .map(|s| unhex(s.as_str().unwrap()))
-        .collect();
+    let samples: Vec<Vec<u8>> =
+        data["samples"].as_array().unwrap().iter().map(|s| unhex(s.as_str().unwrap())).collect();
     let mut d = Diffs(vec![]);
     let cmaps = data["cmaps"].as_array().unwrap();
     let umaps = data["unicode_maps"].as_array().unwrap();
-    assert_eq!(
-        cmaps.len() + umaps.len() / 2,
-        CMapDB::embedded_names().len()
-    );
+    assert_eq!(cmaps.len() + umaps.len() / 2, CMapDB::embedded_names().len());
     for c in cmaps {
         let name = c["name"].as_str().unwrap();
         let m = CMapDB::get_cmap(name).unwrap();
         d.check(|| format!("{name} repr"), json!(m.repr()), &c["repr"]);
-        d.check(
-            || format!("{name} is_vertical"),
-            json!(m.is_vertical()),
-            &c["is_vertical"],
-        );
-        d.check(
-            || format!("{name} dump"),
-            json!(cmap_dump_hash(&m)),
-            &c["dump"],
-        );
+        d.check(|| format!("{name} is_vertical"), json!(m.is_vertical()), &c["is_vertical"]);
+        d.check(|| format!("{name} dump"), json!(cmap_dump_hash(&m)), &c["dump"]);
         for (s, want) in samples.iter().zip(c["decode"].as_array().unwrap()) {
-            d.check(
-                || format!("{name} decode"),
-                json!(m.decode(s).unwrap()),
-                want,
-            );
+            d.check(|| format!("{name} decode"), json!(m.decode(s).unwrap()), want);
         }
     }
     for u in umaps {
@@ -208,16 +180,8 @@ fn cmaps_match_python() {
         let v = u["vertical"].as_bool().unwrap();
         let m = CMapDB::get_unicode_map(name, v).unwrap();
         d.check(|| format!("{name}/{v} repr"), json!(m.repr()), &u["repr"]);
-        d.check(
-            || format!("{name}/{v} is_vertical"),
-            json!(m.is_vertical()),
-            &u["is_vertical"],
-        );
-        d.check(
-            || format!("{name}/{v} dump"),
-            json!(cmap_dump_hash(&m)),
-            &u["dump"],
-        );
+        d.check(|| format!("{name}/{v} is_vertical"), json!(m.is_vertical()), &u["is_vertical"]);
+        d.check(|| format!("{name}/{v} dump"), json!(cmap_dump_hash(&m)), &u["dump"]);
     }
     let name_result = |r: PyResult<Rc<CMapBase>>| match r {
         Ok(_) => json!("ok"),
@@ -226,23 +190,10 @@ fn cmaps_match_python() {
     };
     for n in data["names"].as_array().unwrap() {
         let name = n[0].as_str().unwrap();
-        d.check(
-            || format!("get_cmap({name:?})"),
-            name_result(CMapDB::get_cmap(name)),
-            &n[1],
-        );
-        d.check(
-            || format!("get_unicode_map({name:?})"),
-            name_result(CMapDB::get_unicode_map(name, false)),
-            &n[2],
-        );
+        d.check(|| format!("get_cmap({name:?})"), name_result(CMapDB::get_cmap(name)), &n[1]);
+        d.check(|| format!("get_unicode_map({name:?})"), name_result(CMapDB::get_unicode_map(name, false)), &n[2]);
     }
-    assert!(
-        d.0.is_empty(),
-        "{} differences:\n{}",
-        d.0.len(),
-        d.0.join("\n")
-    );
+    assert!(d.0.is_empty(), "{} differences:\n{}", d.0.len(), d.0.join("\n"));
 }
 
 fn cff_name(n: &CFFString) -> J {
@@ -294,9 +245,7 @@ fn font_file(spec: &Value, key: &str) -> Option<Vec<u8>> {
 fn check_font(d: &mut Diffs, pdf: &str, idx: usize, rec: &J) {
     let class = rec["class"].as_str().unwrap();
     let spec = dec(&rec["spec"]);
-    let Value::Dict(spec_dict) = &spec else {
-        panic!("spec is not a dict")
-    };
+    let Value::Dict(spec_dict) = &spec else { panic!("spec is not a dict") };
     let at = |what: &str| format!("{pdf} font #{idx} ({class}) {what}");
     let font = match class {
         "PDFType1Font" => PDFFont::new_type1(spec_dict),
@@ -314,42 +263,22 @@ fn check_font(d: &mut Diffs, pdf: &str, idx: usize, rec: &J) {
             f
         }
         Err(e) => {
-            d.check(
-                || at("constructor"),
-                json!(exc(&e)),
-                rec.get("error").unwrap_or(&json!("ok")),
-            );
+            d.check(|| at("constructor"), json!(exc(&e)), rec.get("error").unwrap_or(&json!("ok")));
             return;
         }
     };
     d.check(|| at("repr"), json!(font.repr()), &rec["repr"]);
     d.check(|| at("fontname"), enc(font.fontname()), &rec["fontname"]);
-    d.check(
-        || at("is_vertical"),
-        json!(font.is_vertical()),
-        &rec["is_vertical"],
-    );
-    d.check(
-        || at("is_multibyte"),
-        json!(font.is_multibyte()),
-        &rec["is_multibyte"],
-    );
+    d.check(|| at("is_vertical"), json!(font.is_vertical()), &rec["is_vertical"]);
+    d.check(|| at("is_multibyte"), json!(font.is_multibyte()), &rec["is_multibyte"]);
     let fr = |r: PyResult<f64>| res(r, |x| json!(float_repr(x)));
     d.check(|| at("ascent"), fr(font.get_ascent()), &rec["ascent"]);
     d.check(|| at("descent"), fr(font.get_descent()), &rec["descent"]);
-    d.check(
-        || at("width"),
-        res(font.get_width_value(), |v| json!(v.repr())),
-        &rec["width"],
-    );
+    d.check(|| at("width"), res(font.get_width_value(), |v| json!(v.repr())), &rec["width"]);
     d.check(|| at("height"), fr(font.get_height()), &rec["height"]);
     for dc in rec["decode"].as_array().unwrap() {
         let s = unhex(dc[0].as_str().unwrap());
-        d.check(
-            || at(&format!("decode({})", dc[0])),
-            res(font.decode(&s), |v| json!(v)),
-            &dc[1],
-        );
+        d.check(|| at(&format!("decode({})", dc[0])), res(font.decode(&s), |v| json!(v)), &dc[1]);
     }
     for sw in rec["string_width"].as_array().unwrap() {
         let s = unhex(sw[0].as_str().unwrap());
@@ -361,35 +290,15 @@ fn check_font(d: &mut Diffs, pdf: &str, idx: usize, rec: &J) {
     }
     for c in rec["cids"].as_array().unwrap() {
         let cid = c[0].as_i64().unwrap();
-        d.check(
-            || at(&format!("char_width({cid})")),
-            res(font.char_width_value(cid), |v| json!(v.repr())),
-            &c[1],
-        );
-        d.check(
-            || at(&format!("char_disp({cid})")),
-            res(font.char_disp(cid), |v| enc(&v)),
-            &c[2],
-        );
-        d.check(
-            || at(&format!("to_unichr({cid})")),
-            res(font.to_unichr(cid), |s| pystr_cps(&s)),
-            &c[3],
-        );
+        d.check(|| at(&format!("char_width({cid})")), res(font.char_width_value(cid), |v| json!(v.repr())), &c[1]);
+        d.check(|| at(&format!("char_disp({cid})")), res(font.char_disp(cid), |v| enc(&v)), &c[2]);
+        d.check(|| at(&format!("to_unichr({cid})")), res(font.to_unichr(cid), |s| pystr_cps(&s)), &c[3]);
     }
     if let Some(want) = rec.get("cff") {
-        d.check(
-            || at("cff"),
-            cff_result(&font_file(&spec, "FontFile3").unwrap()),
-            want,
-        );
+        d.check(|| at("cff"), cff_result(&font_file(&spec, "FontFile3").unwrap()), want);
     }
     if let Some(want) = rec.get("ttf") {
-        d.check(
-            || at("ttf"),
-            ttf_result(&font_file(&spec, "FontFile2").unwrap()),
-            want,
-        );
+        d.check(|| at("ttf"), ttf_result(&font_file(&spec, "FontFile2").unwrap()), want);
     }
 }
 
@@ -398,9 +307,7 @@ fn sample_fonts_match_python() {
     let mut files: Vec<PathBuf> = std::fs::read_dir(data_dir())
         .unwrap()
         .map(|e| e.unwrap().path())
-        .filter(|p| {
-            p.file_name().unwrap() != "cmaps.json.gz" && p.file_name().unwrap() != "fuzz.json.gz"
-        })
+        .filter(|p| p.file_name().unwrap() != "cmaps.json.gz" && p.file_name().unwrap() != "fuzz.json.gz")
         .collect();
     files.sort();
     let mut d = Diffs(vec![]);
@@ -414,12 +321,7 @@ fn sample_fonts_match_python() {
         }
     }
     assert!(n > 200, "only {n} fonts");
-    assert!(
-        d.0.is_empty(),
-        "{} differences:\n{}",
-        d.0.len(),
-        d.0.join("\n")
-    );
+    assert!(d.0.is_empty(), "{} differences:\n{}", d.0.len(), d.0.join("\n"));
 }
 
 /// Random inputs (from `fuzz_main` in the generator) that exercise the error paths: mutated font
@@ -447,47 +349,22 @@ fn fuzz_cases_match_python() {
     }
     for (i, c) in data["type1"].as_array().unwrap().iter().enumerate() {
         let input = unhex(c[0].as_str().unwrap());
-        let got = res(
-            Type1FontHeaderParser::new(BytesIO::from_vec(input)).get_encoding(),
-            |e| {
-                let mut items: Vec<_> = e.into_iter().collect();
-                items.sort_by_key(|(k, _)| *k);
-                J::Array(
-                    items
-                        .into_iter()
-                        .map(|(k, v)| json!([k, pystr_cps(&v)]))
-                        .collect(),
-                )
-            },
-        );
+        let got = res(Type1FontHeaderParser::new(BytesIO::from_vec(input)).get_encoding(), |e| {
+            let mut items: Vec<_> = e.into_iter().collect();
+            items.sort_by_key(|(k, _)| *k);
+            J::Array(items.into_iter().map(|(k, v)| json!([k, pystr_cps(&v)])).collect())
+        });
         d.check(|| format!("type1 #{i} {}", c[0]), got, &c[1]);
     }
     for c in data["names"].as_array().unwrap() {
         let name = cps_string(&c[0]);
-        d.check(
-            || format!("name2unicode({name:?})"),
-            res(name2unicode(&name), |s| pystr_cps(&s)),
-            &c[1],
-        );
+        d.check(|| format!("name2unicode({name:?})"), res(name2unicode(&name), |s| pystr_cps(&s)), &c[1]);
     }
     for (i, c) in data["ttf"].as_array().unwrap().iter().enumerate() {
-        d.check(
-            || format!("ttf #{i} {}", c[0]),
-            ttf_result(&unhex(c[0].as_str().unwrap())),
-            &c[1],
-        );
+        d.check(|| format!("ttf #{i} {}", c[0]), ttf_result(&unhex(c[0].as_str().unwrap())), &c[1]);
     }
     for (i, c) in data["cff"].as_array().unwrap().iter().enumerate() {
-        d.check(
-            || format!("cff #{i} {}", c[0]),
-            cff_result(&unhex(c[0].as_str().unwrap())),
-            &c[1],
-        );
+        d.check(|| format!("cff #{i} {}", c[0]), cff_result(&unhex(c[0].as_str().unwrap())), &c[1]);
     }
-    assert!(
-        d.0.is_empty(),
-        "{} differences:\n{}",
-        d.0.len(),
-        d.0.join("\n")
-    );
+    assert!(d.0.is_empty(), "{} differences:\n{}", d.0.len(), d.0.join("\n"));
 }

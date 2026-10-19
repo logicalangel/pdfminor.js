@@ -9,11 +9,7 @@ use super::unicode_tables::{NONPRINTABLE_RANGES, SPACE_CODE_POINTS};
 /// `chr(cp).isspace()`.
 #[inline]
 pub fn py_isspace(cp: u32) -> bool {
-    if cp < 0x80 {
-        matches!(cp, 0x09..=0x0D | 0x1C..=0x20)
-    } else {
-        SPACE_CODE_POINTS.binary_search(&cp).is_ok()
-    }
+    if cp < 0x80 { matches!(cp, 0x09..=0x0D | 0x1C..=0x20) } else { SPACE_CODE_POINTS.binary_search(&cp).is_ok() }
 }
 
 /// `chr(cp).isprintable()` (used by `repr` of a `str`).

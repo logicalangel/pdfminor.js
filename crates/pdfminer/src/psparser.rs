@@ -694,11 +694,7 @@ impl PSStackParser {
         if self.curtype != Some(type_) {
             return Err(PyErr::new(
                 ExcKind::PSTypeError,
-                format!(
-                    "Type mismatch: {} != {}",
-                    self.curtype.map_or("None".to_string(), str_repr),
-                    str_repr(type_)
-                ),
+                format!("Type mismatch: {} != {}", self.curtype.map_or("None".to_string(), str_repr), str_repr(type_)),
             ));
         }
         let objs: Vec<Value> = self.curstack.drain(..).map(|(_, obj)| obj).collect();
@@ -840,7 +836,12 @@ pub trait PSStackParserImpl {
         while self.ps().results.is_empty() {
             let (pos, token) = self.nexttoken()?;
             match &token {
-                Value::Int(_) | Value::Float(_) | Value::Bool(_) | Value::Str(_) | Value::Bytes(_) | Value::Literal(_) => {
+                Value::Int(_)
+                | Value::Float(_)
+                | Value::Bool(_)
+                | Value::Str(_)
+                | Value::Bytes(_)
+                | Value::Literal(_) => {
                     // normal token
                     self.ps_mut().push((pos, token));
                 }
@@ -1044,26 +1045,80 @@ func/a/b{(c)do*}def
     }
 
     const TOKENS: &[(i64, &str)] = &[
-        (5, "/b'begin'"), (11, "/b'end'"), (16, "/b'\"'"), (19, "/b'@'"), (21, "/b'#'"),
-        (23, "/'a'"), (25, "/'BCD'"), (30, "/'Some_Name'"), (41, "/'foo_xbaa'"), (54, "0"),
-        (56, "1"), (59, "-2"), (62, "0.5"), (65, "1.234"), (71, "b'abc'"), (77, "b''"),
-        (80, "b'abc ( def ) ghi'"), (98, "b'def \\x00 4ghi'"), (118, "b'bach\\\\slask'"),
-        (132, "b'foo\\nbaa'"), (143, "b'this % is not a comment.'"), (170, "b'foo\\nbaa'"),
-        (180, "b'foobaa'"), (191, "b''"), (194, "b' '"), (199, "b'@@ '"),
-        (211, "b'\\xab\\xcd\\x00\\x124\\x05'"), (226, "/b'func'"), (230, "/'a'"), (232, "/'b'"),
-        (234, "/b'{'"), (235, "b'c'"), (238, "/b'do*'"), (241, "/b'}'"), (242, "/b'def'"),
-        (246, "/b'['"), (248, "1"), (250, "b'z'"), (254, "/b'!'"), (256, "/b']'"),
-        (258, "/b'<<'"), (261, "/'foo'"), (266, "b'bar'"), (272, "/b'>>'"),
+        (5, "/b'begin'"),
+        (11, "/b'end'"),
+        (16, "/b'\"'"),
+        (19, "/b'@'"),
+        (21, "/b'#'"),
+        (23, "/'a'"),
+        (25, "/'BCD'"),
+        (30, "/'Some_Name'"),
+        (41, "/'foo_xbaa'"),
+        (54, "0"),
+        (56, "1"),
+        (59, "-2"),
+        (62, "0.5"),
+        (65, "1.234"),
+        (71, "b'abc'"),
+        (77, "b''"),
+        (80, "b'abc ( def ) ghi'"),
+        (98, "b'def \\x00 4ghi'"),
+        (118, "b'bach\\\\slask'"),
+        (132, "b'foo\\nbaa'"),
+        (143, "b'this % is not a comment.'"),
+        (170, "b'foo\\nbaa'"),
+        (180, "b'foobaa'"),
+        (191, "b''"),
+        (194, "b' '"),
+        (199, "b'@@ '"),
+        (211, "b'\\xab\\xcd\\x00\\x124\\x05'"),
+        (226, "/b'func'"),
+        (230, "/'a'"),
+        (232, "/'b'"),
+        (234, "/b'{'"),
+        (235, "b'c'"),
+        (238, "/b'do*'"),
+        (241, "/b'}'"),
+        (242, "/b'def'"),
+        (246, "/b'['"),
+        (248, "1"),
+        (250, "b'z'"),
+        (254, "/b'!'"),
+        (256, "/b']'"),
+        (258, "/b'<<'"),
+        (261, "/'foo'"),
+        (266, "b'bar'"),
+        (272, "/b'>>'"),
     ];
 
     const OBJS: &[(i64, &str)] = &[
-        (23, "/'a'"), (25, "/'BCD'"), (30, "/'Some_Name'"), (41, "/'foo_xbaa'"), (54, "0"),
-        (56, "1"), (59, "-2"), (62, "0.5"), (65, "1.234"), (71, "b'abc'"), (77, "b''"),
-        (80, "b'abc ( def ) ghi'"), (98, "b'def \\x00 4ghi'"), (118, "b'bach\\\\slask'"),
-        (132, "b'foo\\nbaa'"), (143, "b'this % is not a comment.'"), (170, "b'foo\\nbaa'"),
-        (180, "b'foobaa'"), (191, "b''"), (194, "b' '"), (199, "b'@@ '"),
-        (211, "b'\\xab\\xcd\\x00\\x124\\x05'"), (230, "/'a'"), (232, "/'b'"), (234, "[b'c']"),
-        (246, "[1, b'z']"), (258, "{'foo': b'bar'}"),
+        (23, "/'a'"),
+        (25, "/'BCD'"),
+        (30, "/'Some_Name'"),
+        (41, "/'foo_xbaa'"),
+        (54, "0"),
+        (56, "1"),
+        (59, "-2"),
+        (62, "0.5"),
+        (65, "1.234"),
+        (71, "b'abc'"),
+        (77, "b''"),
+        (80, "b'abc ( def ) ghi'"),
+        (98, "b'def \\x00 4ghi'"),
+        (118, "b'bach\\\\slask'"),
+        (132, "b'foo\\nbaa'"),
+        (143, "b'this % is not a comment.'"),
+        (170, "b'foo\\nbaa'"),
+        (180, "b'foobaa'"),
+        (191, "b''"),
+        (194, "b' '"),
+        (199, "b'@@ '"),
+        (211, "b'\\xab\\xcd\\x00\\x124\\x05'"),
+        (230, "/'a'"),
+        (232, "/'b'"),
+        (234, "[b'c']"),
+        (246, "[1, b'z']"),
+        (258, "{'foo': b'bar'}"),
     ];
 
     #[test]

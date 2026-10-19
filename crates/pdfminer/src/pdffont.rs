@@ -22,8 +22,7 @@ use crate::cmapdb::{CMapBase, CMapClass, CMapDB, CMapParser, is_cmap_not_found, 
 use crate::encodingdb::{Cid2Unicode, EncodingDB, name2unicode};
 use crate::fontmetrics::{FontMetricValue, font_metrics};
 use crate::pdftypes::{
-    PDFStream, dict_value, int_value, list_value, num_value, py_getitem_str, resolve_all, resolve1,
-    stream_value,
+    PDFStream, dict_value, int_value, list_value, num_value, py_getitem_str, resolve_all, resolve1, stream_value,
 };
 use crate::psparser::{LIT, PSKeyword, PSStackParser, PSStackParserImpl, literal_name};
 use crate::pyrt::codecs::latin1_decode;
@@ -89,17 +88,11 @@ pub(crate) fn py_unpack(x: &Value, n: usize) -> PyResult<Vec<Value>> {
     if items.len() < n {
         return Err(PyErr::new(
             ExcKind::ValueError,
-            format!(
-                "not enough values to unpack (expected {n}, got {})",
-                items.len()
-            ),
+            format!("not enough values to unpack (expected {n}, got {})", items.len()),
         ));
     }
     if items.len() > n {
-        return Err(PyErr::new(
-            ExcKind::ValueError,
-            format!("too many values to unpack (expected {n})"),
-        ));
+        return Err(PyErr::new(ExcKind::ValueError, format!("too many values to unpack (expected {n})")));
     }
     Ok(items)
 }
@@ -107,13 +100,7 @@ pub(crate) fn py_unpack(x: &Value, n: usize) -> PyResult<Vec<Value>> {
 /// `range(v)` argument: an int (bools included), else `TypeError`.
 fn range_arg(v: &Value) -> PyResult<i64> {
     v.as_int().ok_or_else(|| {
-        PyErr::new(
-            ExcKind::TypeError,
-            format!(
-                "'{}' object cannot be interpreted as an integer",
-                v.type_name()
-            ),
-        )
+        PyErr::new(ExcKind::TypeError, format!("'{}' object cannot be interpreted as an integer", v.type_name()))
     })
 }
 
@@ -151,10 +138,7 @@ pub fn get_widths(seq: &[Value]) -> PyResult<FontWidthDict> {
                 r.clear();
             }
         } else {
-            warn!(
-                "Skipping invalid font width specification for {} because it is not a number or a list",
-                v.py_str()
-            );
+            warn!("Skipping invalid font width specification for {} because it is not a number or a list", v.py_str());
         }
     }
     Ok(widths)
@@ -208,16 +192,11 @@ impl FontMetricsDB {
                 FontMetricValue::Str(s) => Value::str(s),
                 FontMetricValue::Int(i) => Value::Int(*i),
                 FontMetricValue::Float(f) => Value::Float(*f),
-                FontMetricValue::FloatTuple(t) => {
-                    Value::tuple(t.iter().map(|f| Value::Float(*f)).collect())
-                }
+                FontMetricValue::FloatTuple(t) => Value::tuple(t.iter().map(|f| Value::Float(*f)).collect()),
             };
             d.insert(Rc::from(*k), v);
         }
-        let w = widths
-            .iter()
-            .map(|(k, v)| (WidthKey::Str(PyStr::from(*k)), Value::Int(*v)))
-            .collect();
+        let w = widths.iter().map(|(k, v)| (WidthKey::Str(PyStr::from(*k)), Value::Int(*v))).collect();
         Ok((Rc::new(std::cell::RefCell::new(d)), w))
     }
 }
@@ -227,10 +206,7 @@ fn unpack_popped(popped: Vec<(i64, Value)>, n: usize) -> PyResult<Vec<Value>> {
     if popped.len() != n {
         return Err(PyErr::new(
             ExcKind::ValueError,
-            format!(
-                "not enough values to unpack (expected {n}, got {})",
-                popped.len()
-            ),
+            format!("not enough values to unpack (expected {n}, got {})", popped.len()),
         ));
     }
     Ok(popped.into_iter().map(|(_, v)| v).collect())
@@ -244,10 +220,7 @@ pub struct Type1FontHeaderParser {
 
 impl Type1FontHeaderParser {
     pub fn new(data: BytesIO) -> Self {
-        Type1FontHeaderParser {
-            ps: PSStackParser::new(Some(data)),
-            _cid2unicode: HashMap::new(),
-        }
+        Type1FontHeaderParser { ps: PSStackParser::new(Some(data)), _cid2unicode: HashMap::new() }
     }
 
     /// Parse the font encoding.
@@ -269,9 +242,7 @@ impl Type1FontHeaderParser {
                 Err(e) if e.is(ExcKind::PSEOF) => break,
                 Err(e) => return Err(e),
             };
-            let Value::Str(name) = name else {
-                unreachable!("only add_results produces objects")
-            };
+            let Value::Str(name) = name else { unreachable!("only add_results produces objects") };
             match name2unicode(&name) {
                 Ok(u) => {
                     self._cid2unicode.insert(cid, u);
@@ -333,10 +304,7 @@ pub fn identity_encoder(name: &str) -> &str {
 
 /// `struct.error` for a short buffer.
 fn struct_error(n: usize) -> PyErr {
-    PyErr::new(
-        ExcKind::StructError,
-        format!("unpack requires a buffer of {n} bytes"),
-    )
+    PyErr::new(ExcKind::StructError, format!("unpack requires a buffer of {n} bytes"))
 }
 
 /// `fp.read(n)` checked to be exactly `n` bytes, as `struct.unpack` requires (`n < 0` reads to
@@ -372,10 +340,7 @@ fn read_u16s(fp: &mut BytesIO, n: i64) -> PyResult<Vec<i64>> {
 fn ord_read(fp: &mut BytesIO) -> PyResult<i64> {
     match fp.read(1).first() {
         Some(&b) => Ok(b as i64),
-        None => Err(PyErr::new(
-            ExcKind::TypeError,
-            "ord() expected a character, but string of length 0 found",
-        )),
+        None => Err(PyErr::new(ExcKind::TypeError, "ord() expected a character, but string of length 0 found")),
     }
 }
 
@@ -502,12 +467,8 @@ pub struct INDEX {
 
 /// `fp.seek(pos)` / `fp.read(n)` argument: `OverflowError` beyond `Py_ssize_t`.
 fn ssize(v: Option<i128>) -> PyResult<i64> {
-    v.and_then(|v| i64::try_from(v).ok()).ok_or_else(|| {
-        PyErr::new(
-            ExcKind::OverflowError,
-            "Python int too large to convert to C ssize_t",
-        )
-    })
+    v.and_then(|v| i64::try_from(v).ok())
+        .ok_or_else(|| PyErr::new(ExcKind::OverflowError, "Python int too large to convert to C ssize_t"))
 }
 
 impl INDEX {
@@ -561,14 +522,8 @@ pub enum CFFString {
 fn unpack1(v: &[Value]) -> PyResult<Value> {
     match v.len() {
         1 => Ok(v[0].clone()),
-        0 => Err(PyErr::new(
-            ExcKind::ValueError,
-            "not enough values to unpack (expected 1, got 0)",
-        )),
-        _ => Err(PyErr::new(
-            ExcKind::ValueError,
-            "too many values to unpack (expected 1)",
-        )),
+        0 => Err(PyErr::new(ExcKind::ValueError, "not enough values to unpack (expected 1, got 0)")),
+        _ => Err(PyErr::new(ExcKind::ValueError, "too many values to unpack (expected 1)")),
     }
 }
 
@@ -578,10 +533,7 @@ fn seek_value(fp: &mut BytesIO, pos: &Value) -> PyResult<()> {
         Some(p) => fp.seek(p),
         None => Err(PyErr::new(
             ExcKind::TypeError,
-            format!(
-                "'{}' object cannot be interpreted as an integer",
-                pos.type_name()
-            ),
+            format!("'{}' object cannot be interpreted as an integer", pos.type_name()),
         )),
     }
 }
@@ -701,10 +653,7 @@ impl CFFFont {
             }
         } else if format == b"\x02" {
             // Format 2
-            return Err(PyErr::new(
-                ExcKind::AssertionError,
-                format!("('Unhandled', {})", bytes_repr(&format)),
-            ));
+            return Err(PyErr::new(ExcKind::AssertionError, format!("('Unhandled', {})", bytes_repr(&format))));
         } else {
             return Err(PyErr::new(
                 ExcKind::PDFValueError,
@@ -720,10 +669,7 @@ impl CFFFont {
         if sid < STANDARD_STRINGS.len() as i64 {
             return Ok(CFFString::Str(STANDARD_STRINGS[sid as usize]));
         }
-        Ok(CFFString::Bytes(self.string_index.get(
-            &mut self.fp,
-            (sid - STANDARD_STRINGS.len() as i64) as usize,
-        )?))
+        Ok(CFFString::Bytes(self.string_index.get(&mut self.fp, (sid - STANDARD_STRINGS.len() as i64) as usize)?))
     }
 }
 
@@ -757,17 +703,11 @@ impl TrueTypeFont {
                 let Ok(t) = read_exact(&mut fp, 16) else {
                     break;
                 };
-                let (name_bytes, offset, length) =
-                    (t[..4].to_vec(), be_u32(&t[8..12]), be_u32(&t[12..16]));
+                let (name_bytes, offset, length) = (t[..4].to_vec(), be_u32(&t[8..12]), be_u32(&t[12..16]));
                 tables.insert(name_bytes, (offset, length));
             }
         }
-        TrueTypeFont {
-            name: name.to_string(),
-            fp,
-            tables,
-            fonttype,
-        }
+        TrueTypeFont { name: name.to_string(), fp, tables, fonttype }
     }
 
     /// The `FileUnicodeMap` of the font's Unicode `cmap` table.
@@ -802,10 +742,7 @@ impl TrueTypeFont {
                 10 => Self::parse_cmap_format_10(fp, &mut char2gid)?,
                 12 => Self::parse_cmap_format_12(fp, &mut char2gid)?,
                 _ => {
-                    return Err(PyErr::new(
-                        ExcKind::AssertionError,
-                        format!("('Unhandled', {fmttype})"),
-                    ));
+                    return Err(PyErr::new(ExcKind::AssertionError, format!("('Unhandled', {fmttype})")));
                 }
             }
         }
@@ -823,11 +760,7 @@ impl TrueTypeFont {
     /// Parse cmap subtable format 0
     fn parse_cmap_format_0(fp: &mut BytesIO, char2gid: &mut IndexMap<i64, i64>) -> PyResult<()> {
         let h = read_exact(fp, 4)?;
-        debug!(
-            "parse_cmap_format: fmtlen={}, fmtlang={}",
-            be_u16(&h[..2]),
-            be_u16(&h[2..])
-        );
+        debug!("parse_cmap_format: fmtlen={}, fmtlang={}", be_u16(&h[..2]), be_u16(&h[2..]));
         for (i, g) in read_exact(fp, 256)?.into_iter().enumerate() {
             char2gid.insert(i as i64, g as i64);
         }
@@ -837,11 +770,7 @@ impl TrueTypeFont {
     /// Parse cmap subtable format 2
     fn parse_cmap_format_2(fp: &mut BytesIO, char2gid: &mut IndexMap<i64, i64>) -> PyResult<()> {
         let h = read_exact(fp, 4)?;
-        debug!(
-            "parse_cmap_format: fmtlen={}, fmtlang={}",
-            be_u16(&h[..2]),
-            be_u16(&h[2..])
-        );
+        debug!("parse_cmap_format: fmtlen={}, fmtlang={}", be_u16(&h[..2]), be_u16(&h[2..]));
         let subheaderkeys = read_u16s(fp, 256)?;
         let mut firstbytes = vec![0i64; 8192];
         for (i, &k) in subheaderkeys.iter().enumerate() {
@@ -851,12 +780,8 @@ impl TrueTypeFont {
         let mut hdrs: Vec<(i64, i64, i64, i64, i64)> = Vec::new();
         for i in 0..nhdrs {
             let t = read_exact(fp, 8)?;
-            let (firstcode, entcount, delta, offset) = (
-                be_u16(&t[..2]),
-                be_u16(&t[2..4]),
-                be_i16(&t[4..6]),
-                be_u16(&t[6..8]),
-            );
+            let (firstcode, entcount, delta, offset) =
+                (be_u16(&t[..2]), be_u16(&t[2..4]), be_i16(&t[4..6]), be_u16(&t[6..8]));
             hdrs.push((i, firstcode, entcount, delta, fp.tell() - 2 + offset));
         }
         for (i, firstcode, entcount, delta, pos) in hdrs {
@@ -879,22 +804,13 @@ impl TrueTypeFont {
     /// Parse cmap subtable format 4
     fn parse_cmap_format_4(fp: &mut BytesIO, char2gid: &mut IndexMap<i64, i64>) -> PyResult<()> {
         let h = read_exact(fp, 4)?;
-        debug!(
-            "parse_cmap_format: fmtlen={}, fmtlang={}",
-            be_u16(&h[..2]),
-            be_u16(&h[2..])
-        );
+        debug!("parse_cmap_format: fmtlen={}, fmtlang={}", be_u16(&h[..2]), be_u16(&h[2..]));
         let t = read_exact(fp, 8)?;
         let segcount = be_u16(&t[..2]) / 2;
         let ecs = read_u16s(fp, segcount)?;
         fp.read(2);
         let scs = read_u16s(fp, segcount)?;
-        let idds: Vec<i64> = read_exact(fp, 2 * segcount)?
-            .as_chunks::<2>()
-            .0
-            .iter()
-            .map(|c| be_i16(c))
-            .collect();
+        let idds: Vec<i64> = read_exact(fp, 2 * segcount)?.as_chunks::<2>().0.iter().map(|c| be_i16(c)).collect();
         let pos = fp.tell();
         let idrs = read_u16s(fp, segcount)?;
         for (((ec, sc), idd), idr) in ecs.into_iter().zip(scs).zip(idds).zip(idrs) {
@@ -916,11 +832,7 @@ impl TrueTypeFont {
     /// Parse cmap subtable format 6
     fn parse_cmap_format_6(fp: &mut BytesIO, char2gid: &mut IndexMap<i64, i64>) -> PyResult<()> {
         let h = read_exact(fp, 4)?;
-        debug!(
-            "parse_cmap_format: fmtlen={}, fmtlang={}",
-            be_u16(&h[..2]),
-            be_u16(&h[2..])
-        );
+        debug!("parse_cmap_format: fmtlen={}, fmtlang={}", be_u16(&h[..2]), be_u16(&h[2..]));
         let t = read_exact(fp, 4)?;
         let (firstcode, entcount) = (be_u16(&t[..2]), be_u16(&t[2..]));
         let gids = read_u16s(fp, entcount)?;
@@ -1080,13 +992,7 @@ fn dcontains(d: &DictRef, key: &str) -> bool {
 /// matrices) raises the `TypeError` Python raises as soon as the caller multiplies it by a float.
 fn value_f64(v: Value) -> PyResult<f64> {
     v.as_f64().ok_or_else(|| {
-        PyErr::new(
-            ExcKind::TypeError,
-            format!(
-                "unsupported operand type(s) for *: '{}' and 'float'",
-                v.type_name()
-            ),
-        )
+        PyErr::new(ExcKind::TypeError, format!("unsupported operand type(s) for *: '{}' and 'float'", v.type_name()))
     })
 }
 
@@ -1148,11 +1054,7 @@ fn py_sum(xs: Vec<Value>) -> PyResult<Value> {
     if let Value::Float(f) = result {
         let (mut hi, mut lo) = (f, 0.0f64);
         let cs_to_double = |hi: f64, lo: f64| {
-            if lo != 0.0 && lo.is_finite() {
-                hi + lo
-            } else {
-                hi
-            }
+            if lo != 0.0 && lo.is_finite() { hi + lo } else { hi }
         };
         loop {
             let Some(item) = it.next() else {
@@ -1185,11 +1087,7 @@ fn py_sum(xs: Vec<Value>) -> PyResult<Value> {
 impl PDFFont {
     /// `PDFFont.__init__(descriptor, widths, default_width)`; `Value::None` is the default
     /// `None` of `default_width`.
-    pub fn new_base(
-        descriptor: DictRef,
-        widths: FontWidthDict,
-        default_width: Value,
-    ) -> PyResult<PDFFont> {
+    pub fn new_base(descriptor: DictRef, widths: FontWidthDict, default_width: Value) -> PyResult<PDFFont> {
         Self::pdffont_init(descriptor, widths, default_width, PDFFontKind::Base(None))
     }
 
@@ -1200,12 +1098,7 @@ impl PDFFont {
         default_width: Value,
         to_unichr: ToUnichrFn,
     ) -> PyResult<PDFFont> {
-        Self::pdffont_init(
-            descriptor,
-            widths,
-            default_width,
-            PDFFontKind::Base(Some(to_unichr)),
-        )
+        Self::pdffont_init(descriptor, widths, default_width, PDFFontKind::Base(Some(to_unichr)))
     }
 
     fn pdffont_init(
@@ -1306,10 +1199,7 @@ impl PDFFont {
             CMapParser::new(&mut m, BytesIO::new(strm.get_data()?)).run()?;
             unicode_map = Some(Rc::new(m));
         }
-        Ok(SimpleFont {
-            cid2unicode,
-            unicode_map,
-        })
+        Ok(SimpleFont { cid2unicode, unicode_map })
     }
 
     /// `PDFType1Font(rsrcmgr, spec)`.
@@ -1337,15 +1227,10 @@ impl PDFFont {
             Ok(x) => x,
             Err(_) => {
                 // KeyError
-                let descriptor =
-                    dict_value(&dget_or(spec, "FontDescriptor", Value::dict(Dict::new())))?;
+                let descriptor = dict_value(&dget_or(spec, "FontDescriptor", Value::dict(Dict::new())))?;
                 let firstchar = int_value(&dget_or(spec, "FirstChar", Value::Int(0)))?;
                 // lastchar = int_value(spec.get('LastChar', 255))
-                let width_list = list_value(&dget_or(
-                    spec,
-                    "Widths",
-                    Value::list(vec![Value::Int(0); 256]),
-                ))?;
+                let width_list = list_value(&dget_or(spec, "Widths", Value::list(vec![Value::Int(0); 256])))?;
                 let mut widths = FontWidthDict::new();
                 for (i, w) in width_list.iter().enumerate() {
                     widths.insert(WidthKey::Int(i as i64 + firstchar), resolve1(w)?);
@@ -1354,16 +1239,8 @@ impl PDFFont {
             }
         };
         let simple = Self::simple_init(spec)?;
-        let t1 = Type1Font {
-            simple,
-            basefont,
-            fontfile: None,
-        };
-        let kind = if truetype {
-            PDFFontKind::TrueType(t1)
-        } else {
-            PDFFontKind::Type1(t1)
-        };
+        let t1 = Type1Font { simple, basefont, fontfile: None };
+        let kind = if truetype { PDFFontKind::TrueType(t1) } else { PDFFontKind::Type1(t1) };
         let mut font = Self::pdffont_init(descriptor.clone(), widths, Value::None, kind)?;
         if !dcontains(spec, "Encoding") && dcontains(&descriptor, "FontFile") {
             // try to recover the missing encoding info from the font file.
@@ -1373,9 +1250,7 @@ impl PDFFont {
             let data = slice_to(&data, length1);
             let mut parser = Type1FontHeaderParser::new(BytesIO::from_vec(data.to_vec()));
             let cid2unicode = parser.get_encoding()?;
-            let (PDFFontKind::Type1(t1) | PDFFontKind::TrueType(t1)) = &mut font.kind else {
-                unreachable!()
-            };
+            let (PDFFontKind::Type1(t1) | PDFFontKind::TrueType(t1)) = &mut font.kind else { unreachable!() };
             t1.fontfile = Some(fontfile);
             t1.simple.cid2unicode = Rc::new(cid2unicode);
         }
@@ -1386,11 +1261,7 @@ impl PDFFont {
     pub fn new_type3(spec: &DictRef) -> PyResult<PDFFont> {
         let firstchar = int_value(&dget_or(spec, "FirstChar", Value::Int(0)))?;
         // lastchar = int_value(spec.get('LastChar', 0))
-        let width_list = list_value(&dget_or(
-            spec,
-            "Widths",
-            Value::list(vec![Value::Int(0); 256]),
-        ))?;
+        let width_list = list_value(&dget_or(spec, "Widths", Value::list(vec![Value::Int(0); 256])))?;
         let mut widths = FontWidthDict::new();
         for (i, w) in width_list.into_iter().enumerate() {
             widths.insert(WidthKey::Int(i as i64 + firstchar), w);
@@ -1405,10 +1276,7 @@ impl PDFFont {
             Rc::new(std::cell::RefCell::new(d))
         };
         let simple = Self::simple_init(spec)?;
-        let kind = PDFFontKind::Type3(Type3Font {
-            simple,
-            matrix: Vec::new(),
-        });
+        let kind = PDFFontKind::Type3(Type3Font { simple, matrix: Vec::new() });
         let mut font = Self::pdffont_init(descriptor, widths, Value::None, kind)?;
         let matrix = list_value(&dget_or(spec, "FontMatrix", Value::None))?;
         let (_, descent, _, ascent) = font.bbox;
@@ -1417,9 +1285,7 @@ impl PDFFont {
         let (hscale, vscale) = apply_matrix_norm_values(&matrix)?;
         font.hscale = hscale;
         font.vscale = vscale;
-        let PDFFontKind::Type3(t3) = &mut font.kind else {
-            unreachable!()
-        };
+        let PDFFontKind::Type3(t3) = &mut font.kind else { unreachable!() };
         t3.matrix = matrix;
         Ok(font)
     }
@@ -1436,16 +1302,8 @@ impl PDFFont {
             }
         };
         let cidsysteminfo = dict_value(&dget_or(spec, "CIDSystemInfo", Value::dict(Dict::new())))?;
-        let cid_registry = decode_latin1(&resolve1(&dget_or(
-            &cidsysteminfo,
-            "Registry",
-            Value::bytes(b"unknown"),
-        ))?)?;
-        let cid_ordering = decode_latin1(&resolve1(&dget_or(
-            &cidsysteminfo,
-            "Ordering",
-            Value::bytes(b"unknown"),
-        ))?)?;
+        let cid_registry = decode_latin1(&resolve1(&dget_or(&cidsysteminfo, "Registry", Value::bytes(b"unknown")))?)?;
+        let cid_ordering = decode_latin1(&resolve1(&dget_or(&cidsysteminfo, "Ordering", Value::bytes(b"unknown")))?)?;
         let cidcoding = format!("{}-{}", str_strip(&cid_registry), str_strip(&cid_ordering));
         let cmap = Self::get_cmap_from_spec(spec, strict)?;
 
@@ -1453,10 +1311,7 @@ impl PDFFont {
             Some(d) => dict_value(&d)?,
             None => {
                 if strict {
-                    return Err(PyErr::new(
-                        ExcKind::PDFFontError,
-                        "FontDescriptor is missing",
-                    ));
+                    return Err(PyErr::new(ExcKind::PDFFontError, "FontDescriptor is missing"));
                 }
                 Value::new_dict()
             }
@@ -1478,9 +1333,7 @@ impl PDFFont {
             } else {
                 let cmap_name = literal_name(&tu)?;
                 let encoding = literal_name(&dgetitem(spec, "Encoding")?)?;
-                if cid_ordering.contains("Identity")
-                    || cmap_name.contains("Identity")
-                    || encoding.contains("Identity")
+                if cid_ordering.contains("Identity") || cmap_name.contains("Identity") || encoding.contains("Identity")
                 {
                     unicode_map = Some(Rc::new(CMapBase::new(CMapClass::IdentityUnicodeMap, &[])));
                 }
@@ -1511,15 +1364,9 @@ impl PDFFont {
             let widths2 = get_widths2(&list_value(&dget_or(spec, "W2", Value::list(vec![])))?)?;
             disps = widths2
                 .iter()
-                .map(|(cid, (_, (vx, vy)))| {
-                    (cid.clone(), Value::tuple(vec![vx.clone(), vy.clone()]))
-                })
+                .map(|(cid, (_, (vx, vy)))| (cid.clone(), Value::tuple(vec![vx.clone(), vy.clone()])))
                 .collect();
-            let dw2 = resolve1(&dget_or(
-                spec,
-                "DW2",
-                Value::list(vec![Value::Int(880), Value::Int(-1000)]),
-            ))?;
+            let dw2 = resolve1(&dget_or(spec, "DW2", Value::list(vec![Value::Int(880), Value::Int(-1000)])))?;
             let vy_w = py_unpack(&dw2, 2)?;
             default_disp = Value::tuple(vec![Value::None, vy_w[0].clone()]);
             widths = widths2.into_iter().map(|(cid, (w, _))| (cid, w)).collect();
@@ -1602,10 +1449,7 @@ impl PDFFont {
 
     /// `isinstance(font, PDFSimpleFont)`.
     pub fn is_simple_font(&self) -> bool {
-        matches!(
-            self.kind,
-            PDFFontKind::Type1(_) | PDFFontKind::TrueType(_) | PDFFontKind::Type3(_)
-        )
+        matches!(self.kind, PDFFontKind::Type1(_) | PDFFontKind::TrueType(_) | PDFFontKind::Type3(_))
     }
 
     /// `isinstance(font, PDFType1Font)` (true for `PDFTrueTypeFont` too).
@@ -1711,11 +1555,7 @@ impl PDFFont {
 
         match self.to_unichr(cid) {
             Ok(str_cid) => {
-                if let Some(cid_width) = self
-                    .widths
-                    .get(&WidthKey::Str(str_cid))
-                    .and_then(safe_float)
-                {
+                if let Some(cid_width) = self.widths.get(&WidthKey::Str(str_cid)).and_then(safe_float) {
                     return py_mul(&Value::Float(cid_width), &self.hscale);
                 }
             }
@@ -1735,11 +1575,9 @@ impl PDFFont {
     /// `(vx or None, vy)` for vertical fonts. Kept as the Python object.
     pub fn char_disp(&self, cid: i64) -> PyResult<Value> {
         match &self.kind {
-            PDFFontKind::CID(c) => Ok(c
-                .disps
-                .get(&WidthKey::Int(cid))
-                .cloned()
-                .unwrap_or_else(|| c.default_disp.clone())),
+            PDFFontKind::CID(c) => {
+                Ok(c.disps.get(&WidthKey::Int(cid)).cloned().unwrap_or_else(|| c.default_disp.clone()))
+            }
             _ => Ok(Value::Int(0)),
         }
     }
@@ -1772,9 +1610,7 @@ impl PDFFont {
                     Some(m) => m.get_unichr(cid),
                 };
                 match r {
-                    Err(e) if e.is(ExcKind::KeyError) => {
-                        Err(unicode_not_defined(Some(&c.cidcoding), cid))
-                    }
+                    Err(e) if e.is(ExcKind::KeyError) => Err(unicode_not_defined(Some(&c.cidcoding), cid)),
                     r => r,
                 }
             }
@@ -1787,11 +1623,7 @@ impl PDFFont {
                         Err(e) => return Err(e),
                     }
                 }
-                simple
-                    .cid2unicode
-                    .get(&cid)
-                    .cloned()
-                    .ok_or_else(|| unicode_not_defined(None, cid))
+                simple.cid2unicode.get(&cid).cloned().ok_or_else(|| unicode_not_defined(None, cid))
             }
         }
     }
@@ -1806,11 +1638,7 @@ impl PDFFont {
             }
             PDFFontKind::Type3(_) => "<PDFType3Font>".to_string(),
             PDFFontKind::CID(c) => {
-                format!(
-                    "<PDFCIDFont: basefont={}, cidcoding={}>",
-                    str_repr(&c.basefont),
-                    str_repr(&c.cidcoding)
-                )
+                format!("<PDFCIDFont: basefont={}, cidcoding={}>", str_repr(&c.basefont), str_repr(&c.cidcoding))
             }
         }
     }
@@ -1856,26 +1684,10 @@ mod tests {
     fn test_pdffont_char_width_defaults() {
         let cases: Vec<(&str, Vec<(WidthKey, Value)>, f64)> = vec![
             ("No widths should use default", vec![], 0.1),
-            (
-                "Int cid widths should be used",
-                vec![(WidthKey::Int(0), Value::Float(50.0))],
-                0.05,
-            ),
-            (
-                "Str cid widths should be used",
-                vec![(WidthKey::Str(PyStr::from("0")), Value::Float(200.0))],
-                0.2,
-            ),
-            (
-                "Invalid cid widths should use default",
-                vec![(WidthKey::Int(0), Value::None)],
-                0.1,
-            ),
-            (
-                "Invalid cid widths should use default",
-                vec![(WidthKey::Str(PyStr::from("0")), Value::None)],
-                0.1,
-            ),
+            ("Int cid widths should be used", vec![(WidthKey::Int(0), Value::Float(50.0))], 0.05),
+            ("Str cid widths should be used", vec![(WidthKey::Str(PyStr::from("0")), Value::Float(200.0))], 0.2),
+            ("Invalid cid widths should use default", vec![(WidthKey::Int(0), Value::None)], 0.1),
+            ("Invalid cid widths should use default", vec![(WidthKey::Str(PyStr::from("0")), Value::None)], 0.1),
         ];
         for (msg, widths, expected) in cases {
             let pdffont = PDFFont::new_base_with_to_unichr(
@@ -1891,31 +1703,14 @@ mod tests {
 
     #[test]
     fn test_pdffont_get_widths() {
-        let w = get_widths(&[
-            Value::Int(0),
-            Value::list(vec![
-                Value::Int(1),
-                Value::Int(2),
-                Value::Int(3),
-                Value::Int(4),
-            ]),
-        ])
-        .unwrap();
+        let w =
+            get_widths(&[Value::Int(0), Value::list(vec![Value::Int(1), Value::Int(2), Value::Int(3), Value::Int(4)])])
+                .unwrap();
         let got: Vec<(WidthKey, String)> = w.into_iter().map(|(k, v)| (k, v.repr())).collect();
-        assert_eq!(
-            got,
-            (0..4)
-                .map(|i| (WidthKey::Int(i), (i + 1).to_string()))
-                .collect::<Vec<_>>()
-        );
+        assert_eq!(got, (0..4).map(|i| (WidthKey::Int(i), (i + 1).to_string())).collect::<Vec<_>>());
         let w = get_widths(&[Value::Int(0), Value::Int(4), Value::Int(3)]).unwrap();
         let got: Vec<(WidthKey, String)> = w.into_iter().map(|(k, v)| (k, v.repr())).collect();
-        assert_eq!(
-            got,
-            (0..5)
-                .map(|i| (WidthKey::Int(i), "3".to_string()))
-                .collect::<Vec<_>>()
-        );
+        assert_eq!(got, (0..5).map(|i| (WidthKey::Int(i), "3".to_string())).collect::<Vec<_>>());
     }
 
     #[test]
@@ -1931,38 +1726,18 @@ mod tests {
         assert_eq!(f.fontname().repr(), "'Helvetica'");
         assert_eq!(f.char_width(65).unwrap(), 0.667);
         assert_eq!(f.to_unichr(0x80).unwrap().as_str(), Some("\u{20ac}"));
-        assert!(
-            f.to_unichr(0x81)
-                .unwrap_err()
-                .is(ExcKind::PDFUnicodeNotDefined)
-        );
+        assert!(f.to_unichr(0x81).unwrap_err().is(ExcKind::PDFUnicodeNotDefined));
         assert_eq!(f.get_descent().unwrap(), -207.0 * 0.001);
         assert_eq!(f.char_disp(65).unwrap().repr(), "0");
 
         // Type3 without a FontMatrix: unpacking () raises ValueError.
         let spec = dict(vec![("FontBBox", Value::list(vec![Value::Int(0); 4]))]);
-        assert!(
-            PDFFont::new_type3(&spec)
-                .unwrap_err()
-                .is(ExcKind::ValueError)
-        );
+        assert!(PDFFont::new_type3(&spec).unwrap_err().is(ExcKind::ValueError));
         // Without a FontBBox: KeyError.
-        assert!(
-            PDFFont::new_type3(&dict(vec![]))
-                .unwrap_err()
-                .is(ExcKind::KeyError)
-        );
+        assert!(PDFFont::new_type3(&dict(vec![])).unwrap_err().is(ExcKind::KeyError));
         // An integer FontMatrix keeps integer scales.
         let spec = dict(vec![
-            (
-                "FontBBox",
-                Value::list(vec![
-                    Value::Int(0),
-                    Value::Int(-2),
-                    Value::Int(10),
-                    Value::Int(8),
-                ]),
-            ),
+            ("FontBBox", Value::list(vec![Value::Int(0), Value::Int(-2), Value::Int(10), Value::Int(8)])),
             (
                 "FontMatrix",
                 Value::list(vec![
@@ -2014,10 +1789,7 @@ mod tests {
         ]);
         let f = PDFFont::new_cid(&spec, false).unwrap();
         assert!(f.is_vertical() && f.is_multibyte());
-        assert_eq!(
-            f.repr(),
-            "<PDFCIDFont: basefont='X', cidcoding='Adobe-Japan1'>"
-        );
+        assert_eq!(f.repr(), "<PDFCIDFont: basefont='X', cidcoding='Adobe-Japan1'>");
         assert_eq!(f.char_disp(1).unwrap().repr(), "(10, 880)");
         assert_eq!(f.char_disp(6).unwrap().repr(), "(20, 800)");
         assert_eq!(f.char_disp(7).unwrap().repr(), "(None, 880)");
@@ -2035,26 +1807,14 @@ mod tests {
                 d
             }),
         )]);
-        assert!(
-            PDFFont::new_cid(&spec, false)
-                .unwrap_err()
-                .is(ExcKind::AttributeError)
-        );
+        assert!(PDFFont::new_cid(&spec, false).unwrap_err().is(ExcKind::AttributeError));
 
         // No unicode map: to_unichr raises PDFUnicodeNotDefined; an unknown cmap is an empty CMap.
         let spec = dict(vec![("Encoding", Value::Literal(LIT("NoSuchCMap")))]);
         let f = PDFFont::new_cid(&spec, false).unwrap();
-        assert!(
-            f.to_unichr(3)
-                .unwrap_err()
-                .is(ExcKind::PDFUnicodeNotDefined)
-        );
+        assert!(f.to_unichr(3).unwrap_err().is(ExcKind::PDFUnicodeNotDefined));
         assert!(f.decode(b"abc").unwrap().is_empty());
-        assert!(
-            PDFFont::new_cid(&spec, true)
-                .unwrap_err()
-                .is(ExcKind::PDFFontError)
-        );
+        assert!(PDFFont::new_cid(&spec, true).unwrap_err().is(ExcKind::PDFFontError));
         assert_eq!(f.char_width(3).unwrap(), 1.0);
 
         // A non-stream ToUnicode with "Identity" in the names: chr(cid).
@@ -2069,54 +1829,25 @@ mod tests {
 
     #[test]
     fn python_sum_is_compensated() {
-        let f = |xs: &[f64]| {
-            py_sum(xs.iter().map(|&x| Value::Float(x)).collect())
-                .unwrap()
-                .repr()
-        };
+        let f = |xs: &[f64]| py_sum(xs.iter().map(|&x| Value::Float(x)).collect()).unwrap().repr();
         assert_eq!(f(&[0.1, 0.2, 0.3]), "0.6");
         assert_eq!(f(&[1e16, 1.0, -1e16]), "1.0");
         assert_eq!(f(&[]), "0");
         // Ints after a float are compensated too (CPython 3.14).
         let v = py_sum(vec![Value::Float(1e16), Value::Int(1), Value::Float(-1e16)]).unwrap();
         assert_eq!(v.repr(), "1.0");
-        assert_eq!(
-            py_sum(vec![Value::Int(1), Value::Bool(true)])
-                .unwrap()
-                .repr(),
-            "2"
-        );
+        assert_eq!(py_sum(vec![Value::Int(1), Value::Bool(true)]).unwrap().repr(), "2");
     }
 
     #[test]
     fn cff_getdict() {
         // 1 0 r (real 1.5) operator 17; int forms.
-        let d = getdict(&[
-            139, 0, 0x1e, 0x1a, 0x5f, 17, 247, 0, 28, 0xff, 0xff, 29, 0, 1, 0, 2, 5,
-        ])
-        .unwrap();
-        assert_eq!(
-            d[&0].iter().map(|v| v.repr()).collect::<Vec<_>>(),
-            vec!["0"]
-        );
-        assert_eq!(
-            d[&17].iter().map(|v| v.repr()).collect::<Vec<_>>(),
-            vec!["1.5"]
-        );
-        assert_eq!(
-            d[&5].iter().map(|v| v.repr()).collect::<Vec<_>>(),
-            vec!["108", "-1", "65538"]
-        );
-        assert!(
-            getdict(&[0x1e, 0xd0])
-                .unwrap_err()
-                .is(ExcKind::AssertionError)
-        );
+        let d = getdict(&[139, 0, 0x1e, 0x1a, 0x5f, 17, 247, 0, 28, 0xff, 0xff, 29, 0, 1, 0, 2, 5]).unwrap();
+        assert_eq!(d[&0].iter().map(|v| v.repr()).collect::<Vec<_>>(), vec!["0"]);
+        assert_eq!(d[&17].iter().map(|v| v.repr()).collect::<Vec<_>>(), vec!["1.5"]);
+        assert_eq!(d[&5].iter().map(|v| v.repr()).collect::<Vec<_>>(), vec!["108", "-1", "65538"]);
+        assert!(getdict(&[0x1e, 0xd0]).unwrap_err().is(ExcKind::AssertionError));
         assert!(getdict(&[0x1e]).unwrap_err().is(ExcKind::TypeError));
-        assert!(
-            getdict(&[29, 0, 0, 1])
-                .unwrap_err()
-                .is(ExcKind::StructError)
-        );
+        assert!(getdict(&[29, 0, 0, 1]).unwrap_err().is(ExcKind::StructError));
     }
 }

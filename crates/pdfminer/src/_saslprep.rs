@@ -558,13 +558,8 @@ pub(crate) const BIDI_L: &[(u32, u32)] = &[
 ];
 
 /// CPython's `normalization_3_2_0`: `(code, original mapping)`.
-pub(crate) const NORMALIZATION_CORRECTIONS: &[(u32, u32)] = &[
-    (0x2F868, 0x2136A),
-    (0x2F874, 0x5F33),
-    (0x2F91F, 0x43AB),
-    (0x2F95F, 0x7AAE),
-    (0x2F9BF, 0x4D57),
-];
+pub(crate) const NORMALIZATION_CORRECTIONS: &[(u32, u32)] =
+    &[(0x2F868, 0x2136A), (0x2F874, 0x5F33), (0x2F91F, 0x43AB), (0x2F95F, 0x7AAE), (0x2F9BF, 0x4D57)];
 // END GENERATED
 
 #[cfg(test)]
