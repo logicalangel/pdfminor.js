@@ -109,7 +109,7 @@ fn dump_doc(data: Vec<u8>, password: &str) -> J {
             match objid {
                 Ok(objid) => {
                     let pos = match xref.get_pos(&objid) {
-                        Ok((a, b, c)) => format!("({}, {}, {})", opt_repr(a), b, c),
+                        Ok((a, b, c)) => format!("({}, {}, {})", opt_repr(a), b.repr(), c),
                         Err(e) => exc(&e),
                     };
                     ids.push(json!([objid.repr(), pos]));

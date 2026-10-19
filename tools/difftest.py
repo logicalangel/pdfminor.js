@@ -226,6 +226,9 @@ def main() -> int:
     p.add_argument("--no-build", action="store_true", help="do not run cargo build --release first")
     p.add_argument("--max-report", type=int, default=50)
     p.add_argument("--python-memory", type=int, help="address space limit of each Python run, in MB")
+    p.add_argument("--skip-python-timeouts", action="store_true",
+                   help="report cases Python cannot finish as skipped, not different (for fuzzed files, where "
+                   "pdfminer.six can loop for hours, e.g. over 10**18 grid cells)")
     p.add_argument("--timeout", type=int, default=TIMEOUT, help="seconds per run (Python takes 17 minutes on "
                    "nonfree/i1040nr.pdf rotated)")
     args = p.parse_args()
@@ -240,10 +243,12 @@ def main() -> int:
     todo = cases(corpus(args.corpus, args.files), args.keyword)
 
     bigint: dict[str, str] = {}
+    timed_out: set[str] = set()
 
     def check(case: Case) -> tuple[Case, str | None]:
         py = python_result(case, commit)
         if py == TIMED_OUT:
+            timed_out.add(case.name)
             return (case, f"python timed out after {TIMEOUT}s (rerun with a longer --timeout)")
         rs = run(rust_cmd(case))
         if py == rs:
@@ -256,11 +261,16 @@ def main() -> int:
 
     failures = []
     known = []
+    skipped = []
     with ThreadPoolExecutor(max_workers=args.j) as pool:
         for case, diff in pool.map(check, todo):
             if diff is None:
                 continue
             rel = str(case.pdf.relative_to(SAMPLES)) if case.pdf.is_relative_to(SAMPLES) else str(case.pdf)
+            if case.name in timed_out and args.skip_python_timeouts:
+                skipped.append(case)
+                print(f"SKIP {case.name} (python timed out after {TIMEOUT}s: no reference)", flush=True)
+                continue
             divergence = KNOWN_DIVERGENCES.get((rel, case.mode)) or bigint.get(case.name)
             if divergence:
                 known.append(case)
@@ -270,8 +280,9 @@ def main() -> int:
             if len(failures) <= args.max_report:
                 print(f"DIFF {case.name}\n  {diff}\n", flush=True)
     print(
-        f"{len(todo) - len(failures) - len(known)}/{len(todo)} identical, {len(known)} known divergences, "
-        f"{len(failures)} different"
+        f"{len(todo) - len(failures) - len(known) - len(skipped)}/{len(todo)} identical, "
+        f"{len(known)} known divergences, {len(failures)} different"
+        + (f", {len(skipped)} skipped (python timed out)" if skipped else "")
     )
     return 1 if failures else 0
 

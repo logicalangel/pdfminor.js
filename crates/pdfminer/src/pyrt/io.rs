@@ -42,6 +42,14 @@ impl BytesIO {
         Ok(())
     }
 
+    /// What `fp.seek(pos)` raises for a position beyond i64.
+    pub fn seek_beyond_i64_error(&self) -> PyErr {
+        match self.negative_seek {
+            ExcKind::OSError => PyErr::new(ExcKind::ValueError, "cannot fit 'int' into an offset-sized integer"),
+            _ => PyErr::new(ExcKind::OverflowError, "Python int too large to convert to C ssize_t"),
+        }
+    }
+
     /// `fp.seek(0, io.SEEK_END)`.
     pub fn seek_end(&mut self) {
         self.pos = self.data.len();
