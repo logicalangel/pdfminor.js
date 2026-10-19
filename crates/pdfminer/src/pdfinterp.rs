@@ -1,5 +1,6 @@
 //! Port of `pdfminer/pdfinterp.py`: only the text and graphic states so far.
 
+use std::cell::RefCell;
 use std::rc::Rc;
 
 use crate::pdfcolor::{PDFColorSpace, predefined};
@@ -87,6 +88,16 @@ impl StandardColor {
     }
 }
 
+/// A `PDFGraphicState` object, shared like Python shares it.
+///
+/// `LTChar.graphicstate` keeps a reference to the interpreter's current graphic state, and the
+/// interpreter keeps mutating that same object (`do_rg` sets `ncolor` in place) until `Q`
+/// replaces it with the copy saved by `q`. So a character's `graphicstate.ncolor` is the color at
+/// the end of its graphics-state block, not at the time it was drawn. Callers (FuelFwd's
+/// invisible-text check) read it, so the port shares the state the same way: mutate through the
+/// `RefCell`, and `copy()` makes a new `Rc`.
+pub type PDFGraphicStateRef = Rc<RefCell<PDFGraphicState>>;
+
 /// `PDFGraphicState`.
 #[derive(Clone)]
 pub struct PDFGraphicState {
@@ -129,8 +140,8 @@ impl PDFGraphicState {
         }
     }
 
-    /// `graphicstate.copy()`.
-    pub fn copy(&self) -> Self {
-        self.clone()
+    /// `graphicstate.copy()`: a new, separate object.
+    pub fn copy(&self) -> PDFGraphicStateRef {
+        Rc::new(RefCell::new(self.clone()))
     }
 }
