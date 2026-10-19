@@ -157,6 +157,44 @@ impl ExcKind {
         }
     }
 
+    /// The name a traceback prints: `module.qualname` for classes outside `builtins`
+    /// (`pdfminer.pdfparser.PDFSyntaxError`, `struct.error`).
+    pub fn qualified_name(self) -> String {
+        let module = match self {
+            StructError => "struct",
+            ZlibError => "zlib",
+            BinasciiError => "binascii",
+            PSException | PSEOF | PSSyntaxError | PSTypeError | PSValueError => "pdfminer.psexceptions",
+            PDFException
+            | PDFTypeError
+            | PDFValueError
+            | PDFObjectNotFound
+            | PDFNotImplementedError
+            | PDFKeyError
+            | PDFEOFError
+            | PDFIOError => "pdfminer.pdfexceptions",
+            PDFSyntaxError => "pdfminer.pdfparser",
+            PDFNoValidXRef
+            | PDFNoOutlines
+            | PDFNoPageLabels
+            | PDFDestinationNotFound
+            | PDFEncryptionError
+            | PDFPasswordIncorrect
+            | PDFTextExtractionNotAllowed => "pdfminer.pdfdocument",
+            CMapError => "pdfminer.cmapdb",
+            CMapNotFound => return "pdfminer.cmapdb.CMapDB.CMapNotFound".into(),
+            CorruptDataError => "pdfminer.lzw",
+            PDFFontError | PDFUnicodeNotDefined => "pdfminer.pdffont",
+            TTFCMapNotFound => return "pdfminer.pdffont.TrueTypeFont.CMapNotFound".into(),
+            PDFResourceError | PDFInterpreterError => "pdfminer.pdfinterp",
+            CCITTInvalidData | CCITTByteSkip | CCITTEOFB => {
+                return format!("pdfminer.ccitt.CCITTG4Parser.{}", self.name());
+            }
+            _ => return self.name().into(),
+        };
+        format!("{module}.{}", self.name())
+    }
+
     fn debug_name(self) -> &'static str {
         macro_rules! names {
             ($($k:ident),* $(,)?) => { match self { $($k => stringify!($k),)* } };

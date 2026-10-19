@@ -54,6 +54,12 @@ LAYOUT_MODES = {
     "layout-tight": json.dumps({"char_margin": 1.0, "line_margin": 0.3, "word_margin": 0.2, "boxes_flow": -0.5}),
 }
 
+# Differences that are documented divergences (docs/DIVERGENCES.md): reported, not failures.
+KNOWN_DIVERGENCES = {
+    # A tag property Python decodes with charset_normalizer's heuristics (BOM + U+FF09).
+    ("contrib/issue-598-cmap-other-fonts.pdf", "txt-tag"): "charset-normalizer",
+}
+
 PDF2TXT_MODES = {
     "txt-text": ["-t", "text"],
     "txt-text-nolaparams": ["-t", "text", "-n"],
@@ -107,11 +113,15 @@ def rust_cmd(case: Case) -> list[str]:
     return [str(RUST_BIN), "pdf2txt", *PDF2TXT_MODES[case.mode], "-P", case.password, str(case.pdf)]
 
 
+TIMEOUT = 600
+TIMED_OUT = (-999, b"TIMEOUT")
+
+
 def run(cmd: list[str]) -> tuple[int, bytes]:
     try:
-        p = subprocess.run(cmd, capture_output=True, timeout=600)
+        p = subprocess.run(cmd, capture_output=True, timeout=TIMEOUT)
     except subprocess.TimeoutExpired:
-        return (-999, b"TIMEOUT")
+        return TIMED_OUT
     return (p.returncode, p.stdout)
 
 
@@ -125,6 +135,8 @@ def python_result(case: Case, commit: str) -> tuple[int, bytes]:
         code, _, out = data.partition(b"\n")
         return (int(code), out)
     code, out = run(python_cmd(case))
+    if (code, out) == TIMED_OUT:
+        return (code, out)  # not cached: rerun with a longer --timeout
     cache.parent.mkdir(parents=True, exist_ok=True)
     cache.write_bytes(str(code).encode() + b"\n" + out)
     return (code, out)
@@ -174,7 +186,10 @@ def main() -> int:
     p.add_argument("-j", type=int, default=os.cpu_count() or 4)
     p.add_argument("--no-build", action="store_true", help="do not run cargo build --release first")
     p.add_argument("--max-report", type=int, default=50)
+    p.add_argument("--timeout", type=int, default=TIMEOUT, help="seconds per run (Python takes 17 minutes on "
+                   "nonfree/i1040nr.pdf rotated)")
     args = p.parse_args()
+    globals()["TIMEOUT"] = args.timeout
 
     if not args.no_build:
         subprocess.run(["cargo", "build", "--release", "-q", "-p", "pdfminer-cli"], cwd=ROOT, check=True)
@@ -184,6 +199,8 @@ def main() -> int:
 
     def check(case: Case) -> tuple[Case, str | None]:
         py = python_result(case, commit)
+        if py == TIMED_OUT:
+            return (case, f"python timed out after {TIMEOUT}s (rerun with a longer --timeout)")
         rs = run(rust_cmd(case))
         if py == rs:
             return (case, None)
@@ -192,13 +209,24 @@ def main() -> int:
         return (case, first_difference(py[1], rs[1]))
 
     failures = []
+    known = []
     with ThreadPoolExecutor(max_workers=args.j) as pool:
         for case, diff in pool.map(check, todo):
-            if diff is not None:
-                failures.append((case, diff))
-                if len(failures) <= args.max_report:
-                    print(f"DIFF {case.name}\n  {diff}\n", flush=True)
-    print(f"{len(todo) - len(failures)}/{len(todo)} identical, {len(failures)} different")
+            if diff is None:
+                continue
+            rel = str(case.pdf.relative_to(SAMPLES)) if case.pdf.is_relative_to(SAMPLES) else str(case.pdf)
+            divergence = KNOWN_DIVERGENCES.get((rel, case.mode))
+            if divergence:
+                known.append(case)
+                print(f"KNOWN {case.name} (DIVERGE({divergence}))", flush=True)
+                continue
+            failures.append((case, diff))
+            if len(failures) <= args.max_report:
+                print(f"DIFF {case.name}\n  {diff}\n", flush=True)
+    print(
+        f"{len(todo) - len(failures) - len(known)}/{len(todo)} identical, {len(known)} known divergences, "
+        f"{len(failures)} different"
+    )
     return 1 if failures else 0
 
 
