@@ -1,0 +1,1135 @@
+{
+"path": "contrib/issue-1008-inline-ascii85.pdf",
+"runs": [
+{
+"password": "",
+"variant": "orig",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRef: offsets=dict_keys([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14])>",
+"trailer": "{'Size': 15, 'Info': <PDFObjRef:2>, 'Root': <PDFObjRef:1>}",
+"ids": [
+[
+"1",
+"(None, 10, 0)"
+],
+[
+"2",
+"(None, 85, 0)"
+],
+[
+"3",
+"(None, 566243, 0)"
+],
+[
+"4",
+"(None, 181, 0)"
+],
+[
+"5",
+"(None, 561652, 0)"
+],
+[
+"6",
+"(None, 561677, 0)"
+],
+[
+"7",
+"(None, 561882, 0)"
+],
+[
+"8",
+"(None, 562067, 0)"
+],
+[
+"9",
+"(None, 562261, 0)"
+],
+[
+"10",
+"(None, 563496, 0)"
+],
+[
+"11",
+"(None, 564717, 0)"
+],
+[
+"12",
+"(None, 565942, 0)"
+],
+[
+"13",
+"(None, 566040, 0)"
+],
+[
+"14",
+"(None, 566127, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /'Catalog', 'Pages': <PDFObjRef:3>, 'PageMode': /'UseNone'}",
+"info": "[{'Creator': b'ESRI ArcMap 9.0.0.580', 'CreationDate': b'D:20050526155503-05'}]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"1",
+"{'Type': /'Catalog', 'Pages': <PDFObjRef:3>, 'PageMode': /'UseNone'}",
+null
+],
+[
+"2",
+"{'Creator': b'ESRI ArcMap 9.0.0.580', 'CreationDate': b'D:20050526155503-05'}",
+null
+],
+[
+"3",
+"{'Type': /'Pages', 'Kids': [<PDFObjRef:14>], 'Count': 1}",
+null
+],
+[
+"4",
+"<PDFStream(4): raw=561387, {'Length': <PDFObjRef:5>, 'Filter': /'FlateDecode'}>",
+"66b32d4f438e0a3da4fb3f53fad4eba9ea0253a72d5ea2a26c9abc3372fcf59c"
+],
+[
+"5",
+"561387",
+null
+],
+[
+"6",
+"{'Type': /'FontDescriptor', 'FontName': /'TimesNewRomanPS-ItalicMT', 'Flags': 96, 'FontBBox': [-1019, -628, 2294, 2096], 'ItalicAngle': -164, 'Ascent': 1422, 'Descent': -442, 'CapHeight': 2096, 'StemV': 0}",
+null
+],
+[
+"7",
+"{'Type': /'FontDescriptor', 'FontName': /'ArialMT', 'Flags': 32, 'FontBBox': [-1361, -665, 4154, 2060], 'ItalicAngle': 0, 'Ascent': 1491, 'Descent': -431, 'CapHeight': 2060, 'StemV': 0}",
+null
+],
+[
+"8",
+"{'Type': /'FontDescriptor', 'FontName': /'Arial-BoldMT', 'Flags': 262176, 'FontBBox': [-1286, -771, 4165, 2069], 'ItalicAngle': 0, 'Ascent': 1491, 'Descent': -431, 'CapHeight': 2069, 'StemV': 0}",
+null
+],
+[
+"9",
+"sha256:02517ad0cd376223893bcf8492939114bdd7b437b096db1dffa2e74dc15c0928",
+null
+],
+[
+"10",
+"sha256:3f4934d7382a7c74fd05791a035cda7af4f05f987d2da3101625a7616f8db088",
+null
+],
+[
+"11",
+"sha256:b377b601ca5944f8acd3d33a033828ded55c156eba20b7aa52bc7be10efb9e32",
+null
+],
+[
+"12",
+"{'TimesNewRomanPS-ItalicMT': <PDFObjRef:9>, 'ArialMT': <PDFObjRef:10>, 'Arial-BoldMT': <PDFObjRef:11>}",
+null
+],
+[
+"13",
+"{'Font': <PDFObjRef:12>, 'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI']}",
+null
+],
+[
+"14",
+"{'Type': /'Page', 'MediaBox': [0, 0, 1224, 792], 'Parent': <PDFObjRef:3>, 'Contents': <PDFObjRef:4>, 'Resources': <PDFObjRef:13>}",
+null
+]
+],
+"pages": [
+{
+"pageid": "14",
+"label": null,
+"mediabox": "(0.0, 0.0, 1224.0, 792.0)",
+"cropbox": "(0.0, 0.0, 1224.0, 792.0)",
+"rotate": 0,
+"resources": [
+"Font",
+"ProcSet"
+],
+"contents": [
+"<PDFStream(4): len=713643, {'Length': <PDFObjRef:5>, 'Filter': /'FlateDecode'}>"
+],
+"attrs": [
+"Type",
+"MediaBox",
+"Parent",
+"Contents",
+"Resources"
+],
+"repr": "<PDFPage: Resources={'Font': <PDFObjRef:12>, 'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI']}, MediaBox=(0.0, 0.0, 1224.0, 792.0)>"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "half",
+"open": "!PSEOF"
+},
+{
+"password": "",
+"variant": "3q",
+"open": "!PSEOF"
+},
+{
+"password": "",
+"variant": "noxref",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "shifted",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRefFallback: offsets=dict_keys([1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 3])>",
+"trailer": "{'Size': 15, 'Info': <PDFObjRef:2>, 'Root': <PDFObjRef:1>}",
+"ids": [
+[
+"1",
+"(None, 16, 0)"
+],
+[
+"2",
+"(None, 91, 0)"
+],
+[
+"4",
+"(None, 187, 0)"
+],
+[
+"5",
+"(None, 561658, 0)"
+],
+[
+"6",
+"(None, 561683, 0)"
+],
+[
+"7",
+"(None, 561888, 0)"
+],
+[
+"8",
+"(None, 562073, 0)"
+],
+[
+"9",
+"(None, 562267, 0)"
+],
+[
+"10",
+"(None, 563502, 0)"
+],
+[
+"11",
+"(None, 564723, 0)"
+],
+[
+"12",
+"(None, 565948, 0)"
+],
+[
+"13",
+"(None, 566046, 0)"
+],
+[
+"14",
+"(None, 566133, 0)"
+],
+[
+"3",
+"(None, 566249, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /'Catalog', 'Pages': <PDFObjRef:3>, 'PageMode': /'UseNone'}",
+"info": "[{'Creator': b'ESRI ArcMap 9.0.0.580', 'CreationDate': b'D:20050526155503-05'}]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"1",
+"{'Type': /'Catalog', 'Pages': <PDFObjRef:3>, 'PageMode': /'UseNone'}",
+null
+],
+[
+"2",
+"{'Creator': b'ESRI ArcMap 9.0.0.580', 'CreationDate': b'D:20050526155503-05'}",
+null
+],
+[
+"4",
+"<PDFStream(4): raw=561389, {'Length': <PDFObjRef:5>, 'Filter': /'FlateDecode'}>",
+"66b32d4f438e0a3da4fb3f53fad4eba9ea0253a72d5ea2a26c9abc3372fcf59c"
+],
+[
+"5",
+"561387",
+null
+],
+[
+"6",
+"{'Type': /'FontDescriptor', 'FontName': /'TimesNewRomanPS-ItalicMT', 'Flags': 96, 'FontBBox': [-1019, -628, 2294, 2096], 'ItalicAngle': -164, 'Ascent': 1422, 'Descent': -442, 'CapHeight': 2096, 'StemV': 0}",
+null
+],
+[
+"7",
+"{'Type': /'FontDescriptor', 'FontName': /'ArialMT', 'Flags': 32, 'FontBBox': [-1361, -665, 4154, 2060], 'ItalicAngle': 0, 'Ascent': 1491, 'Descent': -431, 'CapHeight': 2060, 'StemV': 0}",
+null
+],
+[
+"8",
+"{'Type': /'FontDescriptor', 'FontName': /'Arial-BoldMT', 'Flags': 262176, 'FontBBox': [-1286, -771, 4165, 2069], 'ItalicAngle': 0, 'Ascent': 1491, 'Descent': -431, 'CapHeight': 2069, 'StemV': 0}",
+null
+],
+[
+"9",
+"sha256:02517ad0cd376223893bcf8492939114bdd7b437b096db1dffa2e74dc15c0928",
+null
+],
+[
+"10",
+"sha256:3f4934d7382a7c74fd05791a035cda7af4f05f987d2da3101625a7616f8db088",
+null
+],
+[
+"11",
+"sha256:b377b601ca5944f8acd3d33a033828ded55c156eba20b7aa52bc7be10efb9e32",
+null
+],
+[
+"12",
+"{'TimesNewRomanPS-ItalicMT': <PDFObjRef:9>, 'ArialMT': <PDFObjRef:10>, 'Arial-BoldMT': <PDFObjRef:11>}",
+null
+],
+[
+"13",
+"{'Font': <PDFObjRef:12>, 'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI']}",
+null
+],
+[
+"14",
+"{'Type': /'Page', 'MediaBox': [0, 0, 1224, 792], 'Parent': <PDFObjRef:3>, 'Contents': <PDFObjRef:4>, 'Resources': <PDFObjRef:13>}",
+null
+],
+[
+"3",
+"{'Type': /'Pages', 'Kids': [<PDFObjRef:14>], 'Count': 1}",
+null
+]
+],
+"pages": [
+{
+"pageid": "14",
+"label": null,
+"mediabox": "(0.0, 0.0, 1224.0, 792.0)",
+"cropbox": "(0.0, 0.0, 1224.0, 792.0)",
+"rotate": 0,
+"resources": [
+"Font",
+"ProcSet"
+],
+"contents": [
+"<PDFStream(4): len=713643, {'Length': <PDFObjRef:5>, 'Filter': /'FlateDecode'}>"
+],
+"attrs": [
+"Type",
+"MediaBox",
+"Parent",
+"Contents",
+"Resources"
+],
+"repr": "<PDFPage: Resources={'Font': <PDFObjRef:12>, 'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI']}, MediaBox=(0.0, 0.0, 1224.0, 792.0)>"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "tail",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "corrupt0",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRef: offsets=dict_keys([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14])>",
+"trailer": "{'Size': 15, 'Info': <PDFObjRef:2>, 'Root': <PDFObjRef:1>}",
+"ids": [
+[
+"1",
+"(None, 10, 0)"
+],
+[
+"2",
+"(None, 85, 0)"
+],
+[
+"3",
+"(None, 566243, 0)"
+],
+[
+"4",
+"(None, 181, 0)"
+],
+[
+"5",
+"(None, 561652, 0)"
+],
+[
+"6",
+"(None, 561677, 0)"
+],
+[
+"7",
+"(None, 561882, 0)"
+],
+[
+"8",
+"(None, 562067, 0)"
+],
+[
+"9",
+"(None, 562261, 0)"
+],
+[
+"10",
+"(None, 563496, 0)"
+],
+[
+"11",
+"(None, 564717, 0)"
+],
+[
+"12",
+"(None, 565942, 0)"
+],
+[
+"13",
+"(None, 566040, 0)"
+],
+[
+"14",
+"(None, 566127, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /'Catalog', 'Pages': <PDFObjRef:3>, 'PageMode': /'UseNone'}",
+"info": "[{'Creator': b'ESRI ArcMap 9.0.0.580', 'CreationDate': b'D:20050526155503-05'}]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"1",
+"{'Type': /'Catalog', 'Pages': <PDFObjRef:3>, 'PageMode': /'UseNone'}",
+null
+],
+[
+"2",
+"{'Creator': b'ESRI ArcMap 9.0.0.580', 'CreationDate': b'D:20050526155503-05'}",
+null
+],
+[
+"3",
+"{'Type': /'Pages', 'Kids': [<PDFObjRef:14>], 'Count': 1}",
+null
+],
+[
+"4",
+"<PDFStream(4): raw=561387, {'Length': <PDFObjRef:5>, 'Filter': /'FlateDecode'}>",
+"9d63141f72bca978dcd669b8dda0c4f433124045f81bbac67ef244632d241971"
+],
+[
+"5",
+"561387",
+null
+],
+[
+"6",
+"{'Type': /'FontDescriptor', 'FontName': /'TimesNewRomanPS-ItalicMT', 'Flags': 96, 'FontBBox': [-1019, -628, 2294, 2096], 'ItalicAngle': -164, 'Ascent': 1422, 'Descent': -442, 'CapHeight': 2096, 'StemV': 0}",
+null
+],
+[
+"7",
+"{'Type': /'FontDescriptor', 'FontName': /'ArialMT', 'Flags': 32, 'FontBBox': [-1361, -665, 4154, 2060], 'ItalicAngle': 0, 'Ascent': 1491, 'Descent': -431, 'CapHeight': 2060, 'StemV': 0}",
+null
+],
+[
+"8",
+"{'Type': /'FontDescriptor', 'FontName': /'Arial-BoldMT', 'Flags': 262176, 'FontBBox': [-1286, -771, 4165, 2069], 'ItalicAngle': 0, 'Ascent': 1491, 'Descent': -431, 'CapHeight': 2069, 'StemV': 0}",
+null
+],
+[
+"9",
+"sha256:02517ad0cd376223893bcf8492939114bdd7b437b096db1dffa2e74dc15c0928",
+null
+],
+[
+"10",
+"sha256:bcd8e441062c91c31132696b57d307443641d6adc639a85c0951035f02fd85e2",
+null
+],
+[
+"11",
+"sha256:b377b601ca5944f8acd3d33a033828ded55c156eba20b7aa52bc7be10efb9e32",
+null
+],
+[
+"12",
+"{'TimesNewRomanPS-ItalicMT': <PDFObjRef:9>, 'ArialMT': <PDFObjRef:10>, 'Arial-BoldMT': <PDFObjRef:11>}",
+null
+],
+[
+"13",
+"{'Font': <PDFObjRef:12>, 'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI']}",
+null
+],
+[
+"14",
+"{'Type': /'Page', 'MediaBox': [0, 0, 1224, 792], 'Parent': <PDFObjRef:3>, 'Contents': <PDFObjRef:4>, 'Resources': <PDFObjRef:13>}",
+null
+]
+],
+"pages": [
+{
+"pageid": "14",
+"label": null,
+"mediabox": "(0.0, 0.0, 1224.0, 792.0)",
+"cropbox": "(0.0, 0.0, 1224.0, 792.0)",
+"rotate": 0,
+"resources": [
+"Font",
+"ProcSet"
+],
+"contents": [
+"<PDFStream(4): len=713644, {'Length': <PDFObjRef:5>, 'Filter': /'FlateDecode'}>"
+],
+"attrs": [
+"Type",
+"MediaBox",
+"Parent",
+"Contents",
+"Resources"
+],
+"repr": "<PDFPage: Resources={'Font': <PDFObjRef:12>, 'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI']}, MediaBox=(0.0, 0.0, 1224.0, 792.0)>"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "corrupt1",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRef: offsets=dict_keys([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14])>",
+"trailer": "{'Size': 15, 'Info': <PDFObjRef:2>, 'Root': <PDFObjRef:1>}",
+"ids": [
+[
+"1",
+"(None, 10, 0)"
+],
+[
+"2",
+"(None, 85, 0)"
+],
+[
+"3",
+"(None, 566243, 0)"
+],
+[
+"4",
+"(None, 181, 0)"
+],
+[
+"5",
+"(None, 561652, 0)"
+],
+[
+"6",
+"(None, 561677, 0)"
+],
+[
+"7",
+"(None, 561882, 0)"
+],
+[
+"8",
+"(None, 562067, 0)"
+],
+[
+"9",
+"(None, 562261, 0)"
+],
+[
+"10",
+"(None, 563496, 0)"
+],
+[
+"11",
+"(None, 564717, 0)"
+],
+[
+"12",
+"(None, 565942, 0)"
+],
+[
+"13",
+"(None, 566040, 0)"
+],
+[
+"14",
+"(None, 566127, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /'Catalog', 'Pages': <PDFObjRef:3>, 'PageMode': /'UseNone'}",
+"info": "[{'Creator': b'ESRI ArcMap 9.0.0.580', 'CreationDate': b'D:20050526155503-05'}]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"1",
+"{'Type': /'Catalog', 'Pages': <PDFObjRef:3>, 'PageMode': /'UseNone'}",
+null
+],
+[
+"2",
+"{'Creator': b'ESRI ArcMap 9.0.0.580', 'CreationDate': b'D:20050526155503-05'}",
+null
+],
+[
+"3",
+"{'Type': /'Pages', 'Kids': [<PDFObjRef:14>], 'Count': 1}",
+null
+],
+[
+"4",
+"<PDFStream(4): raw=561387, {'Length': <PDFObjRef:5>, 'Filter': /'FlateDecode'}>",
+"3d130291e6be9f6a3f39e8ef187fea9e9a2d67b66024567d1883078aa24358ed"
+],
+[
+"5",
+"561387",
+null
+],
+[
+"6",
+"{'Type': /'FontDescriptor', 'FontName': /'TimesNewRomanPS-ItalicMT', 'Flags': 96, 'FontBBox': [-1019, -628, 2294, 2096], 'ItalicAngle': -164, 'Ascent': 1422, 'Descent': -442, 'CapHeight': 2096, 'StemV': 0}",
+null
+],
+[
+"7",
+"{'Type': /'FontDescriptor', 'FontName': /'ArialMT', 'Flags': 32, 'FontBBox': [-1361, -665, 4154, 2060], 'ItalicAngle': 0, 'Ascent': 1491, 'Descent': -431, 'CapHeight': 2060, 'StemV': 0}",
+null
+],
+[
+"8",
+"{'Type': /'FontDescriptor', 'FontName': /'Arial-BoldMT', 'Flags': 262176, 'FontBBox': [-1286, -771, 4165, 2069], 'ItalicAngle': 0, 'Ascent': 1491, 'Descent': -431, 'CapHeight': 2069, 'StemV': 0}",
+null
+],
+[
+"9",
+"sha256:02517ad0cd376223893bcf8492939114bdd7b437b096db1dffa2e74dc15c0928",
+null
+],
+[
+"10",
+"sha256:3f4934d7382a7c74fd05791a035cda7af4f05f987d2da3101625a7616f8db088",
+null
+],
+[
+"11",
+"sha256:b377b601ca5944f8acd3d33a033828ded55c156eba20b7aa52bc7be10efb9e32",
+null
+],
+[
+"12",
+"{'TimesNewRomanPS-ItalicMT': <PDFObjRef:9>, 'ArialMT': <PDFObjRef:10>, 'Arial-BoldMT': <PDFObjRef:11>}",
+null
+],
+[
+"13",
+"{'Font': <PDFObjRef:12>, 'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI']}",
+null
+],
+[
+"14",
+"{'Type': /'Page', 'MediaBox': [0, 0, 1224, 792], 'Parent': <PDFObjRef:3>, 'Contents': <PDFObjRef:4>, 'Resources': <PDFObjRef:13>}",
+null
+]
+],
+"pages": [
+{
+"pageid": "14",
+"label": null,
+"mediabox": "(0.0, 0.0, 1224.0, 792.0)",
+"cropbox": "(0.0, 0.0, 1224.0, 792.0)",
+"rotate": 0,
+"resources": [
+"Font",
+"ProcSet"
+],
+"contents": [
+"<PDFStream(4): len=713643, {'Length': <PDFObjRef:5>, 'Filter': /'FlateDecode'}>"
+],
+"attrs": [
+"Type",
+"MediaBox",
+"Parent",
+"Contents",
+"Resources"
+],
+"repr": "<PDFPage: Resources={'Font': <PDFObjRef:12>, 'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI']}, MediaBox=(0.0, 0.0, 1224.0, 792.0)>"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "corrupt2",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRef: offsets=dict_keys([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14])>",
+"trailer": "{'Size': 15, 'Info': <PDFObjRef:2>, 'Root': <PDFObjRef:1>}",
+"ids": [
+[
+"1",
+"(None, 10, 0)"
+],
+[
+"2",
+"(None, 85, 0)"
+],
+[
+"3",
+"(None, 566243, 0)"
+],
+[
+"4",
+"(None, 181, 0)"
+],
+[
+"5",
+"(None, 561652, 0)"
+],
+[
+"6",
+"(None, 561677, 0)"
+],
+[
+"7",
+"(None, 561882, 0)"
+],
+[
+"8",
+"(None, 562067, 0)"
+],
+[
+"9",
+"(None, 562261, 0)"
+],
+[
+"10",
+"(None, 563496, 0)"
+],
+[
+"11",
+"(None, 564717, 0)"
+],
+[
+"12",
+"(None, 565942, 0)"
+],
+[
+"13",
+"(None, 566040, 0)"
+],
+[
+"14",
+"(None, 566127, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /'Catalog', 'Pages': <PDFObjRef:3>, 'PageMode': /'UseNone'}",
+"info": "[{'Creator': b'ESRI ArcMap 9.0.0.580', 'CreationDate': b'D:20050526155503-05'}]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"1",
+"{'Type': /'Catalog', 'Pages': <PDFObjRef:3>, 'PageMode': /'UseNone'}",
+null
+],
+[
+"2",
+"{'Creator': b'ESRI ArcMap 9.0.0.580', 'CreationDate': b'D:20050526155503-05'}",
+null
+],
+[
+"3",
+"{'Type': /'Pages', 'Kids': [<PDFObjRef:14>], 'Count': 1}",
+null
+],
+[
+"4",
+"<PDFStream(4): raw=561387, {'Length': <PDFObjRef:5>, 'Filter': /'FlateDecode'}>",
+"dad0e952fc5d3cfca39466897ff2e8261a14c5e4d82b688b1430d26630f99c74"
+],
+[
+"5",
+"561387",
+null
+],
+[
+"6",
+"{'Type': /'FontDescriptor', 'FontName': /'TimesNewRomanPS-ItalicMT', 'Flags': 96, 'FontBBox': [-1019, -628, 2294, 2096], 'ItalicAngle': -164, 'Ascent': 1422, 'Descent': -442, 'CapHeight': 2096, 'StemV': 0}",
+null
+],
+[
+"7",
+"{'Type': /'FontDescriptor', 'FontName': /'ArialMT', 'Flags': 32, 'FontBBox': [-1361, -665, 4154, 2060], 'ItalicAngle': 0, 'Ascent': 1491, 'Descent': -431, 'CapHeight': 2060, 'StemV': 0}",
+null
+],
+[
+"8",
+"{'Type': /'FontDescriptor', 'FontName': /'Arial-BoldMT', 'Flags': 262176, 'FontBBox': [-1286, -771, 4165, 2069], 'ItalicAngle': 0, 'Ascent': 1491, 'Descent': -431, 'CapHeight': 2069, 'StemV': 0}",
+null
+],
+[
+"9",
+"sha256:02517ad0cd376223893bcf8492939114bdd7b437b096db1dffa2e74dc15c0928",
+null
+],
+[
+"10",
+"sha256:3f4934d7382a7c74fd05791a035cda7af4f05f987d2da3101625a7616f8db088",
+null
+],
+[
+"11",
+"sha256:b377b601ca5944f8acd3d33a033828ded55c156eba20b7aa52bc7be10efb9e32",
+null
+],
+[
+"12",
+"{'TimesNewRomanPS-ItalicMT': <PDFObjRef:9>, 'ArialMT': <PDFObjRef:10>, 'Arial-BoldMT': <PDFObjRef:11>}",
+null
+],
+[
+"13",
+"{'Font': <PDFObjRef:12>, 'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI']}",
+null
+],
+[
+"14",
+"{'Type': /'Page', 'MediaBox': [0, 0, 1224, 792], 'Parent': <PDFObjRef:3>, 'Contents': <PDFObjRef:4>, 'Resources': <PDFObjRef:13>}",
+null
+]
+],
+"pages": [
+{
+"pageid": "14",
+"label": null,
+"mediabox": "(0.0, 0.0, 1224.0, 792.0)",
+"cropbox": "(0.0, 0.0, 1224.0, 792.0)",
+"rotate": 0,
+"resources": [
+"Font",
+"ProcSet"
+],
+"contents": [
+"<PDFStream(4): len=713643, {'Length': <PDFObjRef:5>, 'Filter': /'FlateDecode'}>"
+],
+"attrs": [
+"Type",
+"MediaBox",
+"Parent",
+"Contents",
+"Resources"
+],
+"repr": "<PDFPage: Resources={'Font': <PDFObjRef:12>, 'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI']}, MediaBox=(0.0, 0.0, 1224.0, 792.0)>"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "corrupt3",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRef: offsets=dict_keys([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14])>",
+"trailer": "{'Size': 15, 'Info': <PDFObjRef:2>, 'Root': <PDFObjRef:1>}",
+"ids": [
+[
+"1",
+"(None, 10, 0)"
+],
+[
+"2",
+"(None, 85, 0)"
+],
+[
+"3",
+"(None, 566243, 0)"
+],
+[
+"4",
+"(None, 181, 0)"
+],
+[
+"5",
+"(None, 561652, 0)"
+],
+[
+"6",
+"(None, 561677, 0)"
+],
+[
+"7",
+"(None, 561882, 0)"
+],
+[
+"8",
+"(None, 562067, 0)"
+],
+[
+"9",
+"(None, 562261, 0)"
+],
+[
+"10",
+"(None, 563496, 0)"
+],
+[
+"11",
+"(None, 564717, 0)"
+],
+[
+"12",
+"(None, 565942, 0)"
+],
+[
+"13",
+"(None, 566040, 0)"
+],
+[
+"14",
+"(None, 566127, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /'Catalog', 'Pages': <PDFObjRef:3>, 'PageMode': /'UseNone'}",
+"info": "[{'Creator': b'ESRI ArcMap 9.0.0.580', 'CreationDate': b'D:20050526155503-05'}]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"1",
+"{'Type': /'Catalog', 'Pages': <PDFObjRef:3>, 'PageMode': /'UseNone'}",
+null
+],
+[
+"2",
+"{'Creator': b'ESRI ArcMap 9.0.0.580', 'CreationDate': b'D:20050526155503-05'}",
+null
+],
+[
+"3",
+"{'Type': /'Pages', 'Kids': [<PDFObjRef:14>], 'Count': 1}",
+null
+],
+[
+"4",
+"<PDFStream(4): raw=561387, {'Length': <PDFObjRef:5>, 'Filter': /'FlateDecode'}>",
+"79317df533f76342af62270f9c80ca1290b195717bd533a9844a8df185d8101b"
+],
+[
+"5",
+"561387",
+null
+],
+[
+"6",
+"{'Type': /'FontDescriptor', 'FontName': /'TimesNewRomanPS-ItalicMT', 'Flags': 96, 'FontBBox': [-1019, -628, 2294, 2096], 'ItalicAngle': -164, 'Ascent': 1422, 'Descent': -442, 'CapHeight': 2096, 'StemV': 0}",
+null
+],
+[
+"7",
+"{'Type': /'FontDescriptor', 'FontName': /'ArialMT', 'Flags': 32, 'FontBBox': [-1361, -665, 4154, 2060], 'ItalicAngle': 0, 'Ascent': 1491, 'Descent': -431, 'CapHeight': 2060, 'StemV': 0}",
+null
+],
+[
+"8",
+"{'Type': /'FontDescriptor', 'FontName': /'Arial-BoldMT', 'Flags': 262176, 'FontBBox': [-1286, -771, 4165, 2069], 'ItalicAngle': 0, 'Ascent': 1491, 'Descent': -431, 'CapHeight': 2069, 'StemV': 0}",
+null
+],
+[
+"9",
+"sha256:02517ad0cd376223893bcf8492939114bdd7b437b096db1dffa2e74dc15c0928",
+null
+],
+[
+"10",
+"sha256:3f4934d7382a7c74fd05791a035cda7af4f05f987d2da3101625a7616f8db088",
+null
+],
+[
+"11",
+"sha256:b377b601ca5944f8acd3d33a033828ded55c156eba20b7aa52bc7be10efb9e32",
+null
+],
+[
+"12",
+"{'TimesNewRomanPS-ItalicMT': <PDFObjRef:9>, 'ArialMT': <PDFObjRef:10>, 'Arial-BoldMT': <PDFObjRef:11>}",
+null
+],
+[
+"13",
+"{'Font': <PDFObjRef:12>, 'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI']}",
+null
+],
+[
+"14",
+"{'Type': /'Page', 'MediaBox': [0, 0, 1224, 792], 'Parent': <PDFObjRef:3>, 'Contents': <PDFObjRef:4>, 'Resources': <PDFObjRef:13>}",
+null
+]
+],
+"pages": [
+{
+"pageid": "14",
+"label": null,
+"mediabox": "(0.0, 0.0, 1224.0, 792.0)",
+"cropbox": "(0.0, 0.0, 1224.0, 792.0)",
+"rotate": 0,
+"resources": [
+"Font",
+"ProcSet"
+],
+"contents": [
+"<PDFStream(4): len=713648, {'Length': <PDFObjRef:5>, 'Filter': /'FlateDecode'}>"
+],
+"attrs": [
+"Type",
+"MediaBox",
+"Parent",
+"Contents",
+"Resources"
+],
+"repr": "<PDFPage: Resources={'Font': <PDFObjRef:12>, 'ProcSet': [/'PDF', /'Text', /'ImageB', /'ImageC', /'ImageI']}, MediaBox=(0.0, 0.0, 1224.0, 792.0)>"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+}
+]
+}

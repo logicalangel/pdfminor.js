@@ -1,0 +1,476 @@
+{
+"path": "encryption/aes-256-r6.pdf",
+"runs": [
+{
+"password": "usersecret",
+"variant": "orig",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRefStream: ranges=[(0, 1), (1, 7)]>",
+"trailer": "{'W': [1, 8, 2], 'Type': /'XRef', 'Filter': /'FlateDecode', 'Root': <PDFObjRef:1>, 'Info': <PDFObjRef:2>, 'Encrypt': <PDFObjRef:6>, 'ID': [b'^\\x9bT\\xf4\\r\\x14\\xfa\\xa4\\xbc\\xd592\\xcfqh\\x9a', b'j\\xe9)\\xfa\\xc6\\xce\\x9f\"\\xb7\\xa56\\x95\\x8by>\\xce'], 'Size': 8, 'Index': [0, 1, 1, 7], 'Length': 41}",
+"ids": [
+[
+"2",
+"(None, 66, 0)"
+],
+[
+"3",
+"(None, 164, 0)"
+],
+[
+"4",
+"(None, 249, 0)"
+],
+[
+"5",
+"(None, 402, 0)"
+],
+[
+"6",
+"(None, 532, 0)"
+],
+[
+"7",
+"(None, 1101, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /'Catalog', 'Pages': <PDFObjRef:3>}",
+"info": "[{'Producer': b'pyhanko'}]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"2",
+"{'Producer': b'pyhanko'}",
+null
+],
+[
+"3",
+"{'Type': /'Pages', 'Kids': [<PDFObjRef:4>], 'Count': 1, 'MediaBox': [0, 0, 300, 144]}",
+null
+],
+[
+"4",
+"{'Type': /'Page', 'Parent': <PDFObjRef:3>, 'Resources': {'Font': {'F1': {'Type': /'Font', 'Subtype': /'Type1', 'BaseFont': /'Times-Roman'}}}, 'Contents': <PDFObjRef:5>}",
+null
+],
+[
+"5",
+"<PDFStream(5): raw=80, {'Length': 80}>",
+"376aca3649e390631f1bdf56a37334dbd5577dfc24393ba9f69c0ef07ea625a8"
+],
+[
+"6",
+"sha256:fce91f3819509f7349d06d720bb53e3e77e9a9a19f0d848f34817fbf0498d2c5",
+null
+],
+[
+"7",
+"sha256:ac091bca562b4301d28763b8337c5d929021637b6f2ec3e153875d17fb869d51",
+"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+]
+],
+"pages": [
+{
+"pageid": "4",
+"label": null,
+"mediabox": "(0.0, 0.0, 300.0, 144.0)",
+"cropbox": "(0.0, 0.0, 300.0, 144.0)",
+"rotate": 0,
+"resources": [
+"Font"
+],
+"contents": [
+"<PDFStream(5): len=55, {'Length': 80}>"
+],
+"attrs": [
+"Type",
+"Parent",
+"Resources",
+"Contents",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={'Font': {'F1': {'Type': /'Font', 'Subtype': /'Type1', 'BaseFont': /'Times-Roman'}}}, MediaBox=(0.0, 0.0, 300.0, 144.0)>"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "usersecret",
+"variant": "half",
+"open": "!PSEOF"
+},
+{
+"password": "usersecret",
+"variant": "3q",
+"open": "!PSEOF"
+},
+{
+"password": "usersecret",
+"variant": "noxref",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "usersecret",
+"variant": "shifted",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "usersecret",
+"variant": "tail",
+"open": "!PSEOF"
+},
+{
+"password": "usersecret",
+"variant": "corrupt0",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRefStream: ranges=[(0, 1), (1, 7)]>",
+"trailer": "{'W': [1, 8, 2], 'Type': /'XRef', 'Filter': /'FlateDecode', 'Root': <PDFObjRef:1>, 'Info': <PDFObjRef:2>, 'Encrypt': <PDFObjRef:6>, 'ID': [b'^\\x9bT\\xf4', /b'\\xbc', /b'd14faa4bcd53932cf71689a', b'j\\xe9)\\xfa\\xc6\\xce\\x9f\"\\xb7\\xa56\\x95\\x8by>\\xce'], 'Size': 8, 'Index': [0, 1, 1, 7], 'Length': 41}",
+"ids": [
+[
+"2",
+"(None, 66, 0)"
+],
+[
+"3",
+"(None, 164, 0)"
+],
+[
+"4",
+"(None, 249, 0)"
+],
+[
+"5",
+"(None, 402, 0)"
+],
+[
+"6",
+"(None, 532, 0)"
+],
+[
+"7",
+"(None, 1101, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /'Catalog', 'Pages': <PDFObjRef:3>}",
+"info": "[{'Producer': b'pyhanko'}]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"2",
+"{'Producer': b'pyhanko'}",
+null
+],
+[
+"3",
+"{'Type': /'Pages', 'Kids': [<PDFObjRef:4>], 'Count': 1, 'MediaBox': [0, 0, 300, 144]}",
+null
+],
+[
+"4",
+"{'Type': /'Page', 'Parent': <PDFObjRef:3>, 'Resources': {'Font': {'F1': {'Type': /'Font', 'Subtype': /'Type1', 'BaseFont': /'Times-Roman'}}}, 'Contents': <PDFObjRef:5>}",
+null
+],
+[
+"5",
+"<PDFStream(5): raw=80, {'Length': 80}>",
+"376aca3649e390631f1bdf56a37334dbd5577dfc24393ba9f69c0ef07ea625a8"
+],
+[
+"6",
+"sha256:b33f75e9a752508a180ed9166a96e041f0cf61f2a2362927cb3f474f8121a255",
+null
+],
+[
+"7",
+"sha256:2e34620f97190ba087b490cf4ca7e2f423f23add39401fa1c717f109e1b14bc2",
+"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+]
+],
+"pages": [
+{
+"pageid": "4",
+"label": null,
+"mediabox": "(0.0, 0.0, 300.0, 144.0)",
+"cropbox": "(0.0, 0.0, 300.0, 144.0)",
+"rotate": 0,
+"resources": [
+"Font"
+],
+"contents": [
+"<PDFStream(5): len=55, {'Length': 80}>"
+],
+"attrs": [
+"Type",
+"Parent",
+"Resources",
+"Contents",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={'Font': {'F1': {'Type': /'Font', 'Subtype': /'Type1', 'BaseFont': /'Times-Roman'}}}, MediaBox=(0.0, 0.0, 300.0, 144.0)>"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "usersecret",
+"variant": "corrupt1",
+"open": "!PSSyntaxError"
+},
+{
+"password": "usersecret",
+"variant": "corrupt2",
+"open": "!PDFEncryptionError"
+},
+{
+"password": "usersecret",
+"variant": "corrupt3",
+"open": "!PDFEncryptionError"
+},
+{
+"password": "ownersecret",
+"variant": "orig",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRefStream: ranges=[(0, 1), (1, 7)]>",
+"trailer": "{'W': [1, 8, 2], 'Type': /'XRef', 'Filter': /'FlateDecode', 'Root': <PDFObjRef:1>, 'Info': <PDFObjRef:2>, 'Encrypt': <PDFObjRef:6>, 'ID': [b'^\\x9bT\\xf4\\r\\x14\\xfa\\xa4\\xbc\\xd592\\xcfqh\\x9a', b'j\\xe9)\\xfa\\xc6\\xce\\x9f\"\\xb7\\xa56\\x95\\x8by>\\xce'], 'Size': 8, 'Index': [0, 1, 1, 7], 'Length': 41}",
+"ids": [
+[
+"2",
+"(None, 66, 0)"
+],
+[
+"3",
+"(None, 164, 0)"
+],
+[
+"4",
+"(None, 249, 0)"
+],
+[
+"5",
+"(None, 402, 0)"
+],
+[
+"6",
+"(None, 532, 0)"
+],
+[
+"7",
+"(None, 1101, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /'Catalog', 'Pages': <PDFObjRef:3>}",
+"info": "[{'Producer': b'pyhanko'}]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"2",
+"{'Producer': b'pyhanko'}",
+null
+],
+[
+"3",
+"{'Type': /'Pages', 'Kids': [<PDFObjRef:4>], 'Count': 1, 'MediaBox': [0, 0, 300, 144]}",
+null
+],
+[
+"4",
+"{'Type': /'Page', 'Parent': <PDFObjRef:3>, 'Resources': {'Font': {'F1': {'Type': /'Font', 'Subtype': /'Type1', 'BaseFont': /'Times-Roman'}}}, 'Contents': <PDFObjRef:5>}",
+null
+],
+[
+"5",
+"<PDFStream(5): raw=80, {'Length': 80}>",
+"376aca3649e390631f1bdf56a37334dbd5577dfc24393ba9f69c0ef07ea625a8"
+],
+[
+"6",
+"sha256:fce91f3819509f7349d06d720bb53e3e77e9a9a19f0d848f34817fbf0498d2c5",
+null
+],
+[
+"7",
+"sha256:ac091bca562b4301d28763b8337c5d929021637b6f2ec3e153875d17fb869d51",
+"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+]
+],
+"pages": [
+{
+"pageid": "4",
+"label": null,
+"mediabox": "(0.0, 0.0, 300.0, 144.0)",
+"cropbox": "(0.0, 0.0, 300.0, 144.0)",
+"rotate": 0,
+"resources": [
+"Font"
+],
+"contents": [
+"<PDFStream(5): len=55, {'Length': 80}>"
+],
+"attrs": [
+"Type",
+"Parent",
+"Resources",
+"Contents",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={'Font': {'F1': {'Type': /'Font', 'Subtype': /'Type1', 'BaseFont': /'Times-Roman'}}}, MediaBox=(0.0, 0.0, 300.0, 144.0)>"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "ownersecret",
+"variant": "half",
+"open": "!PSEOF"
+},
+{
+"password": "ownersecret",
+"variant": "3q",
+"open": "!PSEOF"
+},
+{
+"password": "ownersecret",
+"variant": "noxref",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "ownersecret",
+"variant": "shifted",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "ownersecret",
+"variant": "tail",
+"open": "!PSEOF"
+},
+{
+"password": "ownersecret",
+"variant": "corrupt0",
+"open": "!PDFPasswordIncorrect"
+},
+{
+"password": "ownersecret",
+"variant": "corrupt1",
+"open": "!PSSyntaxError"
+},
+{
+"password": "ownersecret",
+"variant": "corrupt2",
+"open": "!PDFEncryptionError"
+},
+{
+"password": "ownersecret",
+"variant": "corrupt3",
+"open": "!PDFEncryptionError"
+},
+{
+"password": "wrong",
+"variant": "orig",
+"open": "!PDFPasswordIncorrect"
+},
+{
+"password": "wrong",
+"variant": "half",
+"open": "!PSEOF"
+},
+{
+"password": "wrong",
+"variant": "3q",
+"open": "!PSEOF"
+},
+{
+"password": "wrong",
+"variant": "noxref",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "wrong",
+"variant": "shifted",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "wrong",
+"variant": "tail",
+"open": "!PSEOF"
+},
+{
+"password": "wrong",
+"variant": "corrupt0",
+"open": "!PDFPasswordIncorrect"
+},
+{
+"password": "wrong",
+"variant": "corrupt1",
+"open": "!PSSyntaxError"
+},
+{
+"password": "wrong",
+"variant": "corrupt2",
+"open": "!PDFEncryptionError"
+},
+{
+"password": "wrong",
+"variant": "corrupt3",
+"open": "!PDFEncryptionError"
+}
+]
+}

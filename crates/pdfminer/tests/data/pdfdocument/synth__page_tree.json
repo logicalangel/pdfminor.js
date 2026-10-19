@@ -1,0 +1,841 @@
+{
+"path": "synth/page_tree.pdf",
+"runs": [
+{
+"password": "",
+"variant": "orig",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRef: offsets=dict_keys([1, 2, 3, 4, 5, 6, 7, 8, 9])>",
+"trailer": "{'Size': 10, 'Root': <PDFObjRef:1>}",
+"ids": [
+[
+"1",
+"(None, 9, 0)"
+],
+[
+"2",
+"(None, 58, 0)"
+],
+[
+"3",
+"(None, 185, 0)"
+],
+[
+"4",
+"(None, 350, 0)"
+],
+[
+"5",
+"(None, 417, 0)"
+],
+[
+"6",
+"(None, 270, 0)"
+],
+[
+"7",
+"(None, 496, 0)"
+],
+[
+"8",
+"(None, 599, 0)"
+],
+[
+"9",
+"(None, 649, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /'Catalog', 'Pages': <PDFObjRef:2>}",
+"info": "[]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"1",
+"{'Type': /'Catalog', 'Pages': <PDFObjRef:2>}",
+null
+],
+[
+"2",
+"{'Type': /'Pages', 'Kids': [<PDFObjRef:3>, <PDFObjRef:6>, <PDFObjRef:2>, <PDFObjRef:7>, <PDFObjRef:3>, <PDFObjRef:8>], 'Count': 4, 'Resources': {'Font': {}}, 'Rotate': 90}",
+null
+],
+[
+"3",
+"{'Type': /'Page', 'Parent': <PDFObjRef:2>, 'MediaBox': b'\\x00\\x00\\x01\\x02', 'CropBox': [1, 2, 3]}",
+null
+],
+[
+"4",
+"{'type': /'Page', 'Rotate': -450, 'CropBox': [b'a', 0, 0, 0]}",
+null
+],
+[
+"5",
+"{'Type': /'Page', 'MediaBox': [0, 0, 1, 2, 3], 'Contents': [<PDFObjRef:9>, <PDFObjRef:9>]}",
+null
+],
+[
+"6",
+"{'Type': /'Pages', 'Kids': [<PDFObjRef:4>, <PDFObjRef:5>], 'MediaBox': [0, 0, 100, b'200']}",
+null
+],
+[
+"7",
+"{'Type': /'Page', 'MediaBox': [0.5, 1.25, -3, 1, /b'e3'], 'LastModified': b'D:2020', 'Annots': [1, 2], 'B': 3}",
+null
+],
+[
+"8",
+"{'Type': /'Page', 'MediaBox': <PDFObjRef:99>}",
+null
+],
+[
+"9",
+"<PDFStream(9): raw=2, {'Length': 2}>",
+"6cf2ef110471150d29cb72a3379622da7f9242dd5ad59a0f6c2cdb6846919b0d"
+]
+],
+"pages": [
+{
+"pageid": "3",
+"label": null,
+"mediabox": "(0.0, 0.0, 1.0, 2.0)",
+"cropbox": "(0.0, 0.0, 1.0, 2.0)",
+"rotate": 90,
+"resources": [
+"Font"
+],
+"contents": [],
+"attrs": [
+"Type",
+"Parent",
+"MediaBox",
+"CropBox",
+"Resources",
+"Rotate"
+],
+"repr": "<PDFPage: Resources={'Font': {}}, MediaBox=(0.0, 0.0, 1.0, 2.0)>"
+},
+{
+"pageid": "4",
+"label": null,
+"mediabox": "(0.0, 0.0, 100.0, 200.0)",
+"cropbox": "(0.0, 0.0, 100.0, 200.0)",
+"rotate": 270,
+"resources": [
+"Font"
+],
+"contents": [],
+"attrs": [
+"type",
+"Rotate",
+"CropBox",
+"MediaBox",
+"Resources"
+],
+"repr": "<PDFPage: Resources={'Font': {}}, MediaBox=(0.0, 0.0, 100.0, 200.0)>"
+},
+{
+"pageid": "5",
+"label": null,
+"mediabox": "(0.0, 0.0, 612.0, 792.0)",
+"cropbox": "(0.0, 0.0, 612.0, 792.0)",
+"rotate": 90,
+"resources": [
+"Font"
+],
+"contents": [
+"<PDFObjRef:9>",
+"<PDFObjRef:9>"
+],
+"attrs": [
+"Type",
+"MediaBox",
+"Contents",
+"Resources",
+"Rotate"
+],
+"repr": "<PDFPage: Resources={'Font': {}}, MediaBox=(0.0, 0.0, 612.0, 792.0)>"
+},
+{
+"pageid": "7",
+"label": null,
+"mediabox": "(0.0, 0.0, 612.0, 792.0)",
+"cropbox": "(0.0, 0.0, 612.0, 792.0)",
+"rotate": 90,
+"resources": [
+"Font"
+],
+"contents": [],
+"attrs": [
+"Type",
+"MediaBox",
+"LastModified",
+"Annots",
+"B",
+"Resources",
+"Rotate"
+],
+"repr": "<PDFPage: Resources={'Font': {}}, MediaBox=(0.0, 0.0, 612.0, 792.0)>"
+},
+"!TypeError"
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "half",
+"open": "!PSEOF"
+},
+{
+"password": "",
+"variant": "3q",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "noxref",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "shifted",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRefFallback: offsets=dict_keys([1, 2, 3, 6, 4, 5, 7, 8, 9])>",
+"trailer": "{'Size': 10, 'Root': <PDFObjRef:1>}",
+"ids": [
+[
+"1",
+"(None, 15, 0)"
+],
+[
+"2",
+"(None, 64, 0)"
+],
+[
+"3",
+"(None, 191, 0)"
+],
+[
+"6",
+"(None, 276, 0)"
+],
+[
+"4",
+"(None, 356, 0)"
+],
+[
+"5",
+"(None, 423, 0)"
+],
+[
+"7",
+"(None, 502, 0)"
+],
+[
+"8",
+"(None, 605, 0)"
+],
+[
+"9",
+"(None, 655, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /'Catalog', 'Pages': <PDFObjRef:2>}",
+"info": "[]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"1",
+"{'Type': /'Catalog', 'Pages': <PDFObjRef:2>}",
+null
+],
+[
+"2",
+"{'Type': /'Pages', 'Kids': [<PDFObjRef:3>, <PDFObjRef:6>, <PDFObjRef:2>, <PDFObjRef:7>, <PDFObjRef:3>, <PDFObjRef:8>], 'Count': 4, 'Resources': {'Font': {}}, 'Rotate': 90}",
+null
+],
+[
+"3",
+"{'Type': /'Page', 'Parent': <PDFObjRef:2>, 'MediaBox': b'\\x00\\x00\\x01\\x02', 'CropBox': [1, 2, 3]}",
+null
+],
+[
+"6",
+"{'Type': /'Pages', 'Kids': [<PDFObjRef:4>, <PDFObjRef:5>], 'MediaBox': [0, 0, 100, b'200']}",
+null
+],
+[
+"4",
+"{'type': /'Page', 'Rotate': -450, 'CropBox': [b'a', 0, 0, 0]}",
+null
+],
+[
+"5",
+"{'Type': /'Page', 'MediaBox': [0, 0, 1, 2, 3], 'Contents': [<PDFObjRef:9>, <PDFObjRef:9>]}",
+null
+],
+[
+"7",
+"{'Type': /'Page', 'MediaBox': [0.5, 1.25, -3, 1, /b'e3'], 'LastModified': b'D:2020', 'Annots': [1, 2], 'B': 3}",
+null
+],
+[
+"8",
+"{'Type': /'Page', 'MediaBox': <PDFObjRef:99>}",
+null
+],
+[
+"9",
+"<PDFStream(9): raw=4, {'Length': 2}>",
+"d30de5fc037f95db747a3d21aa13c2c5c0ae19f0e3b777ddb265515e44b43580"
+]
+],
+"pages": [
+{
+"pageid": "3",
+"label": null,
+"mediabox": "(0.0, 0.0, 1.0, 2.0)",
+"cropbox": "(0.0, 0.0, 1.0, 2.0)",
+"rotate": 90,
+"resources": [
+"Font"
+],
+"contents": [],
+"attrs": [
+"Type",
+"Parent",
+"MediaBox",
+"CropBox",
+"Resources",
+"Rotate"
+],
+"repr": "<PDFPage: Resources={'Font': {}}, MediaBox=(0.0, 0.0, 1.0, 2.0)>"
+},
+{
+"pageid": "4",
+"label": null,
+"mediabox": "(0.0, 0.0, 100.0, 200.0)",
+"cropbox": "(0.0, 0.0, 100.0, 200.0)",
+"rotate": 270,
+"resources": [
+"Font"
+],
+"contents": [],
+"attrs": [
+"type",
+"Rotate",
+"CropBox",
+"MediaBox",
+"Resources"
+],
+"repr": "<PDFPage: Resources={'Font': {}}, MediaBox=(0.0, 0.0, 100.0, 200.0)>"
+},
+{
+"pageid": "5",
+"label": null,
+"mediabox": "(0.0, 0.0, 612.0, 792.0)",
+"cropbox": "(0.0, 0.0, 612.0, 792.0)",
+"rotate": 90,
+"resources": [
+"Font"
+],
+"contents": [
+"<PDFObjRef:9>",
+"<PDFObjRef:9>"
+],
+"attrs": [
+"Type",
+"MediaBox",
+"Contents",
+"Resources",
+"Rotate"
+],
+"repr": "<PDFPage: Resources={'Font': {}}, MediaBox=(0.0, 0.0, 612.0, 792.0)>"
+},
+{
+"pageid": "7",
+"label": null,
+"mediabox": "(0.0, 0.0, 612.0, 792.0)",
+"cropbox": "(0.0, 0.0, 612.0, 792.0)",
+"rotate": 90,
+"resources": [
+"Font"
+],
+"contents": [],
+"attrs": [
+"Type",
+"MediaBox",
+"LastModified",
+"Annots",
+"B",
+"Resources",
+"Rotate"
+],
+"repr": "<PDFPage: Resources={'Font': {}}, MediaBox=(0.0, 0.0, 612.0, 792.0)>"
+},
+"!TypeError"
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "tail",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "corrupt0",
+"open": "!PSSyntaxError"
+},
+{
+"password": "",
+"variant": "corrupt1",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRef: offsets=dict_keys([1, 2, 3, 4, 5, 6, 7, 8, 9])>",
+"trailer": "{'Size': 10, 'Root': <PDFObjRef:1>}",
+"ids": [
+[
+"1",
+"(None, 9, 0)"
+],
+[
+"2",
+"(None, 58, 0)"
+],
+[
+"3",
+"(None, 185, 0)"
+],
+[
+"4",
+"(None, 350, 0)"
+],
+[
+"5",
+"(None, 417, 0)"
+],
+[
+"6",
+"(None, 270, 0)"
+],
+[
+"7",
+"(None, 496, 0)"
+],
+[
+"8",
+"(None, 599, 0)"
+],
+[
+"9",
+"(None, 649, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /'Catalog', 'Pages': <PDFObjRef:2>}",
+"info": "[]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"1",
+"{'Type': /'Catalog', 'Pages': <PDFObjRef:2>}",
+null
+],
+[
+"2",
+"{'Type': /'Pages', 'Kids': [<PDFObjRef:3>, <PDFObjRef:6>, <PDFObjRef:2>, <PDFObjRef:7>, <PDFObjRef:3>, <PDFObjRef:8>], 'Count': 4, 'Resources': {'Font': {}}, \"b'Rotat\\\\xf8'\": 90}",
+null
+],
+[
+"3",
+"{'Type': /'Page', 'Parent': <PDFObjRef:2>, 'MediaBox': b'\\x00\\x00\\x01\\x02', 'CropBox': [1, 2, 3]}",
+null
+],
+[
+"4",
+"!PSSyntaxError",
+null
+],
+[
+"5",
+"!PSSyntaxError",
+null
+],
+[
+"6",
+"{'Type': /'Pages', 'Kids': [<PDFObjRef:4>, <PDFObjRef:5>], \"b'Medi\\\\xf4Box'\": [0, 0, 100, b'200']}",
+null
+],
+[
+"7",
+"{'Type': /'Page', 'MediaBox': [0.5, 1.25, -3, 1, /b'e3'], 'LastModified': b'D:2020', 'Annots': [1, 2], 'B': 3}",
+null
+],
+[
+"8",
+"{'Type': /'Page', 'MediaBox': <PDFObjRef:99>}",
+null
+],
+[
+"9",
+"<PDFStream(9): raw=2, {'Length': 2}>",
+"6cf2ef110471150d29cb72a3379622da7f9242dd5ad59a0f6c2cdb6846919b0d"
+]
+],
+"pages": [
+{
+"pageid": "3",
+"label": null,
+"mediabox": "(0.0, 0.0, 1.0, 2.0)",
+"cropbox": "(0.0, 0.0, 1.0, 2.0)",
+"rotate": 0,
+"resources": [
+"Font"
+],
+"contents": [],
+"attrs": [
+"Type",
+"Parent",
+"MediaBox",
+"CropBox",
+"Resources"
+],
+"repr": "<PDFPage: Resources={'Font': {}}, MediaBox=(0.0, 0.0, 1.0, 2.0)>"
+},
+"!PSSyntaxError"
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "corrupt2",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRef: offsets=dict_keys([1, 2, 3, 4, 5, 6, 7, 8, 9])>",
+"trailer": "{'Size': 10, 'Root': <PDFObjRef:1>}",
+"ids": [
+[
+"1",
+"(None, 9, 0)"
+],
+[
+"2",
+"(None, 58, 0)"
+],
+[
+"3",
+"(None, 185, 0)"
+],
+[
+"4",
+"(None, 350, 0)"
+],
+[
+"5",
+"(None, 417, 0)"
+],
+[
+"6",
+"(None, 270, 0)"
+],
+[
+"7",
+"(None, 496, 0)"
+],
+[
+"8",
+"(None, 599, 0)"
+],
+[
+"9",
+"(None, 649, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /'Catalog', 'Pages': 2, '0': /b'\\x16'}",
+"info": "[]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"1",
+"{'Type': /'Catalog', 'Pages': 2, '0': /b'\\x16'}",
+null
+],
+[
+"2",
+"{'Type': /'Pages', 'Kids': [<PDFObjRef:3>, <PDFObjRef:6>, <PDFObjRef:2>, <PDFObjRef:7>, <PDFObjRef:3>, <PDFObjRef:8>], 'Count': 4, 'Resources': {'Font': {}}, 'Rotate': 90}",
+null
+],
+[
+"3",
+"!PSSyntaxError",
+null
+],
+[
+"4",
+"!PSSyntaxError",
+null
+],
+[
+"5",
+"{'Type': /'Page', 'MediaBox': [0, 0, 1, 2, 3], 'Contents': [<PDFObjRef:9>, <PDFObjRef:9>]}",
+null
+],
+[
+"6",
+"!PSSyntaxError",
+null
+],
+[
+"7",
+"{'Type': /'Page', 'MediaBox': [0.5, 1.25, -3, 1, /b'e3'], 'LastModified': b'D:2020', 'Annots': [1, 2], 'B': 3}",
+null
+],
+[
+"8",
+"{'Type': /'Page', 'MediaBox': <PDFObjRef:99>}",
+null
+],
+[
+"9",
+"<PDFStream(9): raw=2, {'Length': 2}>",
+"6cf2ef110471150d29cb72a3379622da7f9242dd5ad59a0f6c2cdb6846919b0d"
+]
+],
+"pages": [
+"!PSSyntaxError"
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "corrupt3",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRefFallback: offsets=dict_keys([2, 3, 6, 5, 7, 8, 9])>",
+"trailer": "{'Size': 10, 'Root': <PDFObjRef:1>}",
+"ids": [
+[
+"2",
+"(None, 58, 0)"
+],
+[
+"3",
+"(None, 185, 0)"
+],
+[
+"6",
+"(None, 270, 0)"
+],
+[
+"5",
+"(None, 417, 0)"
+],
+[
+"7",
+"(None, 496, 0)"
+],
+[
+"8",
+"(None, 599, 0)"
+],
+[
+"9",
+"(None, 649, 0)"
+]
+]
+}
+],
+"catalog": "{}",
+"info": "[]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"2",
+"{'Type': /'Pages', 'Kids': [<PDFObjRef:3>, <PDFObjRef:6>, <PDFObjRef:2>, <PDFObjRef:7>, <PDFObjRef:3>, <PDFObjRef:8>], 'Count': 4, 'Resources': {'Font': {}}, 'Rotate': 90}",
+null
+],
+[
+"3",
+"{'Type': /'Page', 'Parent': <PDFObjRef:2>, 'MediaBox': b'\\x00\\x00\\x01\\x02', 'CropBox': [1, 2, 3]}",
+null
+],
+[
+"6",
+"[b'a', 0, 0, 0]",
+null
+],
+[
+"5",
+"{'Type': /'Page', 'MediaBox': [0, 0, 1, 2, 3], 'Contents': [<PDFObjRef:9>, <PDFObjRef:9>]}",
+null
+],
+[
+"7",
+"{'Type': /'Page', 'MediaBox': [0.5, 1.25, -3, 1, /b'e3'], 'LastModified': b'\\xb0:2020', 'Annots': [1, 2], 'B': 3}",
+null
+],
+[
+"8",
+"{'Type': /'Page', 'MediaBox': <PDFObjRef:99>}",
+null
+],
+[
+"9",
+"<PDFStream(9): raw=4, {'Length': 2}>",
+"9a6fc0745c2df6e575817ab6f836ae6fd7263f6811d1d365c9e6934ac8cf008e"
+]
+],
+"pages": [
+{
+"pageid": "3",
+"label": null,
+"mediabox": "(0.0, 0.0, 1.0, 2.0)",
+"cropbox": "(0.0, 0.0, 1.0, 2.0)",
+"rotate": 0,
+"resources": [],
+"contents": [],
+"attrs": [
+"Type",
+"Parent",
+"MediaBox",
+"CropBox"
+],
+"repr": "<PDFPage: Resources={}, MediaBox=(0.0, 0.0, 1.0, 2.0)>"
+},
+{
+"pageid": "5",
+"label": null,
+"mediabox": "(0.0, 0.0, 612.0, 792.0)",
+"cropbox": "(0.0, 0.0, 612.0, 792.0)",
+"rotate": 0,
+"resources": [],
+"contents": [
+"<PDFObjRef:9>",
+"<PDFObjRef:9>"
+],
+"attrs": [
+"Type",
+"MediaBox",
+"Contents"
+],
+"repr": "<PDFPage: Resources={}, MediaBox=(0.0, 0.0, 612.0, 792.0)>"
+},
+{
+"pageid": "7",
+"label": null,
+"mediabox": "(0.0, 0.0, 612.0, 792.0)",
+"cropbox": "(0.0, 0.0, 612.0, 792.0)",
+"rotate": 0,
+"resources": [],
+"contents": [],
+"attrs": [
+"Type",
+"MediaBox",
+"LastModified",
+"Annots",
+"B"
+],
+"repr": "<PDFPage: Resources={}, MediaBox=(0.0, 0.0, 612.0, 792.0)>"
+},
+"!TypeError"
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+}
+]
+}

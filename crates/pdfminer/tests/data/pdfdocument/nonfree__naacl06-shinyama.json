@@ -1,0 +1,8905 @@
+{
+"path": "nonfree/naacl06-shinyama.pdf",
+"runs": [
+{
+"password": "",
+"variant": "orig",
+"open": "ok",
+"xrefs": [
+{
+"repr": "sha256:81bd6f748320bd6f14d783883e73b64bf1a98b8ac0cdb6d8d0693a61c6ab5a11",
+"trailer": "{'Size': 139, 'Root': <PDFObjRef:2>, 'Info': <PDFObjRef:1>}",
+"ids": [
+[
+"1",
+"(None, 188586, 0)"
+],
+[
+"2",
+"(None, 190267, 0)"
+],
+[
+"3",
+"(None, 189913, 0)"
+],
+[
+"4",
+"(None, 190117, 0)"
+],
+[
+"5",
+"(None, 188750, 0)"
+],
+[
+"6",
+"(None, 11070, 0)"
+],
+[
+"7",
+"(None, 9, 0)"
+],
+[
+"8",
+"(None, 65473, 0)"
+],
+[
+"9",
+"(None, 65273, 0)"
+],
+[
+"10",
+"(None, 1823, 0)"
+],
+[
+"11",
+"(None, 83592, 0)"
+],
+[
+"12",
+"(None, 83391, 0)"
+],
+[
+"13",
+"(None, 2966, 0)"
+],
+[
+"14",
+"(None, 4105, 0)"
+],
+[
+"15",
+"(None, 105941, 0)"
+],
+[
+"16",
+"(None, 105746, 0)"
+],
+[
+"17",
+"(None, 5721, 0)"
+],
+[
+"18",
+"(None, 108132, 0)"
+],
+[
+"19",
+"(None, 107936, 0)"
+],
+[
+"20",
+"(None, 6672, 0)"
+],
+[
+"21",
+"(None, 190017, 0)"
+],
+[
+"22",
+"(None, 7805, 0)"
+],
+[
+"23",
+"(None, 190067, 0)"
+],
+[
+"24",
+"(None, 11004, 0)"
+],
+[
+"25",
+"(None, 188853, 0)"
+],
+[
+"26",
+"(None, 21441, 0)"
+],
+[
+"27",
+"(None, 11131, 0)"
+],
+[
+"28",
+"(None, 125352, 0)"
+],
+[
+"29",
+"(None, 125158, 0)"
+],
+[
+"30",
+"(None, 12085, 0)"
+],
+[
+"31",
+"(None, 133634, 0)"
+],
+[
+"32",
+"(None, 133424, 0)"
+],
+[
+"33",
+"(None, 13031, 0)"
+],
+[
+"34",
+"(None, 14172, 0)"
+],
+[
+"35",
+"(None, 15179, 0)"
+],
+[
+"36",
+"(None, 15212, 0)"
+],
+[
+"37",
+"(None, 15281, 0)"
+],
+[
+"38",
+"(None, 15341, 0)"
+],
+[
+"39",
+"(None, 15423, 0)"
+],
+[
+"40",
+"(None, 15509, 0)"
+],
+[
+"41",
+"(None, 15587, 0)"
+],
+[
+"42",
+"(None, 15677, 0)"
+],
+[
+"43",
+"(None, 17418, 0)"
+],
+[
+"44",
+"(None, 17451, 0)"
+],
+[
+"45",
+"(None, 17520, 0)"
+],
+[
+"46",
+"(None, 17580, 0)"
+],
+[
+"47",
+"(None, 17662, 0)"
+],
+[
+"48",
+"(None, 17748, 0)"
+],
+[
+"49",
+"(None, 17838, 0)"
+],
+[
+"50",
+"(None, 17916, 0)"
+],
+[
+"51",
+"(None, 21318, 0)"
+],
+[
+"52",
+"(None, 21395, 0)"
+],
+[
+"53",
+"(None, 189036, 0)"
+],
+[
+"54",
+"(None, 25741, 0)"
+],
+[
+"55",
+"(None, 21519, 0)"
+],
+[
+"56",
+"(None, 25675, 0)"
+],
+[
+"57",
+"(None, 189141, 0)"
+],
+[
+"58",
+"(None, 37867, 0)"
+],
+[
+"59",
+"(None, 25803, 0)"
+],
+[
+"60",
+"(None, 26806, 0)"
+],
+[
+"61",
+"(None, 26839, 0)"
+],
+[
+"62",
+"(None, 26872, 0)"
+],
+[
+"63",
+"(None, 26932, 0)"
+],
+[
+"64",
+"(None, 27012, 0)"
+],
+[
+"65",
+"(None, 28707, 0)"
+],
+[
+"66",
+"(None, 28740, 0)"
+],
+[
+"67",
+"(None, 28773, 0)"
+],
+[
+"68",
+"(None, 28833, 0)"
+],
+[
+"69",
+"(None, 152470, 0)"
+],
+[
+"70",
+"(None, 152277, 0)"
+],
+[
+"71",
+"(None, 28915, 0)"
+],
+[
+"72",
+"(None, 29914, 0)"
+],
+[
+"73",
+"(None, 156289, 0)"
+],
+[
+"74",
+"(None, 156101, 0)"
+],
+[
+"75",
+"(None, 30819, 0)"
+],
+[
+"76",
+"(None, 162191, 0)"
+],
+[
+"77",
+"(None, 162002, 0)"
+],
+[
+"78",
+"(None, 31737, 0)"
+],
+[
+"79",
+"(None, 164405, 0)"
+],
+[
+"80",
+"(None, 164211, 0)"
+],
+[
+"81",
+"(None, 32713, 0)"
+],
+[
+"82",
+"(None, 165882, 0)"
+],
+[
+"83",
+"(None, 165696, 0)"
+],
+[
+"84",
+"(None, 33721, 0)"
+],
+[
+"85",
+"(None, 34723, 0)"
+],
+[
+"86",
+"(None, 37687, 0)"
+],
+[
+"87",
+"(None, 37821, 0)"
+],
+[
+"88",
+"(None, 189325, 0)"
+],
+[
+"89",
+"(None, 43865, 0)"
+],
+[
+"90",
+"(None, 37945, 0)"
+],
+[
+"91",
+"(None, 39632, 0)"
+],
+[
+"92",
+"(None, 39665, 0)"
+],
+[
+"93",
+"(None, 39710, 0)"
+],
+[
+"94",
+"(None, 39770, 0)"
+],
+[
+"95",
+"(None, 39850, 0)"
+],
+[
+"96",
+"(None, 39926, 0)"
+],
+[
+"97",
+"(None, 43698, 0)"
+],
+[
+"98",
+"(None, 43831, 0)"
+],
+[
+"99",
+"(None, 189430, 0)"
+],
+[
+"100",
+"(None, 48190, 0)"
+],
+[
+"101",
+"(None, 43943, 0)"
+],
+[
+"102",
+"(None, 48079, 0)"
+],
+[
+"103",
+"(None, 189616, 0)"
+],
+[
+"104",
+"(None, 59668, 0)"
+],
+[
+"105",
+"(None, 168305, 0)"
+],
+[
+"106",
+"(None, 168110, 0)"
+],
+[
+"107",
+"(None, 48254, 0)"
+],
+[
+"108",
+"(None, 173633, 0)"
+],
+[
+"109",
+"(None, 173439, 0)"
+],
+[
+"110",
+"(None, 49258, 0)"
+],
+[
+"111",
+"(None, 177195, 0)"
+],
+[
+"112",
+"(None, 176999, 0)"
+],
+[
+"113",
+"(None, 50249, 0)"
+],
+[
+"114",
+"(None, 179459, 0)"
+],
+[
+"115",
+"(None, 179271, 0)"
+],
+[
+"116",
+"(None, 51251, 0)"
+],
+[
+"117",
+"(None, 182021, 0)"
+],
+[
+"118",
+"(None, 181833, 0)"
+],
+[
+"119",
+"(None, 52223, 0)"
+],
+[
+"120",
+"(None, 184602, 0)"
+],
+[
+"121",
+"(None, 184407, 0)"
+],
+[
+"122",
+"(None, 53227, 0)"
+],
+[
+"123",
+"(None, 186163, 0)"
+],
+[
+"124",
+"(None, 185969, 0)"
+],
+[
+"125",
+"(None, 54169, 0)"
+],
+[
+"126",
+"(None, 55176, 0)"
+],
+[
+"127",
+"(None, 59510, 0)"
+],
+[
+"128",
+"(None, 189724, 0)"
+],
+[
+"129",
+"(None, 65209, 0)"
+],
+[
+"130",
+"(None, 59732, 0)"
+],
+[
+"131",
+"(None, 65140, 0)"
+],
+[
+"132",
+"(None, 188958, 0)"
+],
+[
+"133",
+"(None, 189246, 0)"
+],
+[
+"134",
+"(None, 189537, 0)"
+],
+[
+"135",
+"(None, 189832, 0)"
+],
+[
+"136",
+"(None, 190199, 0)"
+],
+[
+"137",
+"(None, 190222, 0)"
+],
+[
+"138",
+"(None, 190244, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /'Catalog', 'Pages': <PDFObjRef:3>, 'Outlines': <PDFObjRef:136>, 'Threads': <PDFObjRef:137>, 'Names': <PDFObjRef:138>}",
+"info": "[{'Creator': b' TeX output 2006.04.14:1650', 'Producer': b'dvipdfm 0.13.2c, Copyright \\xa9 1998, by Mark A. Wicks', 'CreationDate': b\"D:20060414165500+00'00'\"}]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"1",
+"{'Creator': b' TeX output 2006.04.14:1650', 'Producer': b'dvipdfm 0.13.2c, Copyright \\xa9 1998, by Mark A. Wicks', 'CreationDate': b\"D:20060414165500+00'00'\"}",
+null
+],
+[
+"2",
+"{'Type': /'Catalog', 'Pages': <PDFObjRef:3>, 'Outlines': <PDFObjRef:136>, 'Threads': <PDFObjRef:137>, 'Names': <PDFObjRef:138>}",
+null
+],
+[
+"3",
+"{'Type': /'Pages', 'Count': 8, 'Kids': [<PDFObjRef:132>, <PDFObjRef:133>, <PDFObjRef:134>, <PDFObjRef:135>], 'MediaBox': [0, 0, 595, 842]}",
+null
+],
+[
+"4",
+"<PDFStream(4): raw=33, {'Length': 33}>",
+"912ea1a0c58127e2c435aa9ef9dc4e7afc0b05e60e5eec3cbe8f5f08a1a797ed"
+],
+[
+"5",
+"{'Type': /'Page', 'Resources': <PDFObjRef:6>, 'Contents': [<PDFObjRef:21>, <PDFObjRef:4>, <PDFObjRef:22>, <PDFObjRef:23>], 'Parent': <PDFObjRef:132>}",
+null
+],
+[
+"6",
+"{'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:24>}",
+null
+],
+[
+"7",
+"sha256:8a6277970f245ee6a7deaeb9ee50ff617391c99e4fe692a6f5b488783d0caf92",
+null
+],
+[
+"8",
+"<PDFStream(8): raw=17802, {'Filter': [/'FlateDecode'], 'Length1': 1658, 'Length2': 16861, 'Length3': 532, 'Length': 17802}>",
+"55170b70d99536038edc608240ea51a5a7d3f841c1fe1ff5d808627ab59608dc"
+],
+[
+"9",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-168, -341, 1000, 960], 'FontName': /'MZSZGI+NimbusRomNo9L-Medi', 'ItalicAngle': 0, 'StemV': 140, 'FontFile': <PDFObjRef:8>, 'Flags': 4}",
+null
+],
+[
+"10",
+"sha256:d45ad94b66a6b8d7a2edfd54ca0d2af4c5a1b69ce831a61acc42d6ffc7df58fd",
+null
+],
+[
+"11",
+"<PDFStream(11): raw=22037, {'Filter': [/'FlateDecode'], 'Length1': 1662, 'Length2': 21096, 'Length3': 532, 'Length': 22037}>",
+"e0ca7d96dccd7c5255e5a3c1e94060237fc176f58b6935b29f7b0662184c4c80"
+],
+[
+"12",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-168, -281, 1000, 924], 'FontName': /'QTLIUY+NimbusRomNo9L-Regu', 'ItalicAngle': 0, 'StemV': 85, 'FontFile': <PDFObjRef:11>, 'Flags': 4}",
+null
+],
+[
+"13",
+"sha256:e79bac2930131ca72c22fa050b19ec742ed7721bc362e1922d7eea7c19df29ab",
+null
+],
+[
+"14",
+"sha256:1eb17949589a1a93616703d9e7f044ab50ebb3be5f4ea73d90e5492af609bcde",
+null
+],
+[
+"15",
+"<PDFStream(15): raw=1881, {'Filter': [/'FlateDecode'], 'Length1': 724, 'Length2': 1345, 'Length3': 533, 'Length': 1881}>",
+"b84a6ef352f798ecd7d1a31785c84ab26d76a7e1752b05df14fa68ce4ee21d15"
+],
+[
+"16",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-29, -960, 1116, 775], 'FontName': /'ZNQAHA+CMSY10', 'ItalicAngle': -14.035, 'StemV': 85, 'FontFile': <PDFObjRef:15>, 'Flags': 68}",
+null
+],
+[
+"17",
+"sha256:fa96daee6c36d1afc09f6f278ff96b8f9dfcefa15acbd57ac6dd3cbb6a9f95f1",
+null
+],
+[
+"18",
+"<PDFStream(18): raw=16909, {'Filter': [/'FlateDecode'], 'Length1': 1644, 'Length2': 16017, 'Length3': 532, 'Length': 16909}>",
+"55c523fae9a4b6f1e30add70d40f58d6f4dc3c99f1e322ef399a9af3f5f9e6a1"
+],
+[
+"19",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-12, -237, 650, 811], 'FontName': /'CXOZYQ+NimbusMonL-Regu', 'ItalicAngle': 0, 'StemV': 41, 'FontFile': <PDFObjRef:18>, 'Flags': 4}",
+null
+],
+[
+"20",
+"sha256:079b6b220dfbd706adb09b34ae92927f94b3e0ea461c7e047574b7e01858e6bd",
+null
+],
+[
+"21",
+"<PDFStream(21): raw=1, {'Length': 1}>",
+"01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+],
+[
+"22",
+"<PDFStream(22): raw=3125, {'Filter': [/'FlateDecode'], 'Length': 3125}>",
+"7312925e5cb11cc3f5b4cebc09db2408b4b13c162b6f77141085e2aa767cde43"
+],
+[
+"23",
+"<PDFStream(23): raw=1, {'Length': 1}>",
+"01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+],
+[
+"24",
+"{'F1': <PDFObjRef:10>, 'F2': <PDFObjRef:13>, 'F3': <PDFObjRef:17>, 'F4': <PDFObjRef:20>}",
+null
+],
+[
+"25",
+"{'Type': /'Page', 'Resources': <PDFObjRef:26>, 'Contents': [<PDFObjRef:21>, <PDFObjRef:4>, <PDFObjRef:50>, <PDFObjRef:23>], 'Parent': <PDFObjRef:132>}",
+null
+],
+[
+"26",
+"{'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:51>, 'XObject': <PDFObjRef:52>}",
+null
+],
+[
+"27",
+"sha256:c106fcd779f12bac39a1b9763f5549240d2130ee5aef8a3b7968d4cb2b8a85c1",
+null
+],
+[
+"28",
+"<PDFStream(28): raw=7958, {'Filter': [/'FlateDecode'], 'Length1': 727, 'Length2': 7392, 'Length3': 533, 'Length': 7958}>",
+"fe8d5e066f8e2046ca138dd83ae1a27e74bddcbe8179a2c4636f616268c74d7c"
+],
+[
+"29",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-32, -250, 1048, 750], 'FontName': /'HAUISC+CMMI10', 'ItalicAngle': -14.04, 'StemV': 72, 'FontFile': <PDFObjRef:28>, 'Flags': 68}",
+null
+],
+[
+"30",
+"sha256:99c2d6c6595d567f5bd8f0ddf8ee7c96eb369a2ec08677c87e47361e28acf3f7",
+null
+],
+[
+"31",
+"<PDFStream(31): raw=18526, {'Filter': [/'FlateDecode'], 'Length1': 1679, 'Length2': 17567, 'Length3': 532, 'Length': 18526}>",
+"8c34ed0830d0517f20236bdea89b4def7df0bfe09835401c502b5fd12a7a5804"
+],
+[
+"32",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-169, -270, 1010, 924], 'FontName': /'HGTKKD+NimbusRomNo9L-ReguItal', 'ItalicAngle': -15.5, 'StemV': 78, 'FontFile': <PDFObjRef:31>, 'Flags': 68}",
+null
+],
+[
+"33",
+"sha256:6d68b63520de9ce053ebed95b85a9c5864550ac52bbb3214d8e7b6925f6f9565",
+null
+],
+[
+"34",
+"<PDFStream(34): raw=772, {'Length': 772, 'Filter': /'FlateDecode', 'Name': /'Im1', 'Type': /'XObject', 'Subtype': /'Form', 'BBox': [0, 0, 2384, 3370], 'FormType': 1, 'Matrix': [1, 0, 0, 1, -74, -619], 'Resources': {'ProcSet': [/'PDF', /'Text'], 'ExtGState': <PDFObjRef:35>, 'Font': <PDFObjRef:36>}}>",
+"661306f149560498381a19802856bb9e801c14da7133a244809a082e1dd1d96c"
+],
+[
+"35",
+"{'R4': <PDFObjRef:37>}",
+null
+],
+[
+"36",
+"{'R9': <PDFObjRef:38>, 'R11': <PDFObjRef:39>, 'R13': <PDFObjRef:40>, 'R15': <PDFObjRef:41>}",
+null
+],
+[
+"37",
+"{'Type': /'ExtGState', 'Name': /'R4', 'TR': /'Identity'}",
+null
+],
+[
+"38",
+"{'Subtype': /'Type1', 'BaseFont': /'Helvetica-Bold', 'Type': /'Font', 'Name': /'R9'}",
+null
+],
+[
+"39",
+"{'Subtype': /'Type1', 'BaseFont': /'Helvetica-Oblique', 'Type': /'Font', 'Name': /'R11'}",
+null
+],
+[
+"40",
+"{'Subtype': /'Type1', 'BaseFont': /'Helvetica', 'Type': /'Font', 'Name': /'R13'}",
+null
+],
+[
+"41",
+"{'Subtype': /'Type1', 'BaseFont': /'Helvetica-BoldOblique', 'Type': /'Font', 'Name': /'R15'}",
+null
+],
+[
+"42",
+"sha256:3d8700a1adf6b9c0880aa2aa62aed5c407189fe5db40f4fcdb0306c185151603",
+"cc36e3c818b9ec4ec934b6b5e3d15530674580647e8d9debd609302c22aeb5fd"
+],
+[
+"43",
+"{'R4': <PDFObjRef:45>}",
+null
+],
+[
+"44",
+"{'R9': <PDFObjRef:46>, 'R11': <PDFObjRef:47>, 'R13': <PDFObjRef:48>, 'R15': <PDFObjRef:49>}",
+null
+],
+[
+"45",
+"{'Type': /'ExtGState', 'Name': /'R4', 'TR': /'Identity'}",
+null
+],
+[
+"46",
+"{'Subtype': /'Type1', 'BaseFont': /'Helvetica-Bold', 'Type': /'Font', 'Name': /'R9'}",
+null
+],
+[
+"47",
+"{'Subtype': /'Type1', 'BaseFont': /'Helvetica-Oblique', 'Type': /'Font', 'Name': /'R11'}",
+null
+],
+[
+"48",
+"{'Subtype': /'Type1', 'BaseFont': /'Helvetica-BoldOblique', 'Type': /'Font', 'Name': /'R13'}",
+null
+],
+[
+"49",
+"{'Subtype': /'Type1', 'BaseFont': /'Helvetica', 'Type': /'Font', 'Name': /'R15'}",
+null
+],
+[
+"50",
+"<PDFStream(50): raw=3328, {'Filter': [/'FlateDecode'], 'Length': 3328}>",
+"5228fc295ebe83a97d6636418284686b63a486e40d6eb4950ba2404b759f7c2e"
+],
+[
+"51",
+"{'F2': <PDFObjRef:13>, 'F1': <PDFObjRef:10>, 'F5': <PDFObjRef:30>, 'F4': <PDFObjRef:20>, 'F6': <PDFObjRef:33>}",
+null
+],
+[
+"52",
+"{'Im1': <PDFObjRef:34>, 'Im2': <PDFObjRef:42>}",
+null
+],
+[
+"53",
+"{'Type': /'Page', 'Resources': <PDFObjRef:54>, 'Contents': [<PDFObjRef:21>, <PDFObjRef:4>, <PDFObjRef:55>, <PDFObjRef:23>], 'Parent': <PDFObjRef:133>}",
+null
+],
+[
+"54",
+"{'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:56>}",
+null
+],
+[
+"55",
+"<PDFStream(55): raw=4082, {'Filter': [/'FlateDecode'], 'Length': 4082}>",
+"b1d9e20dd7d9f0a4a08e97b84000d10391a4467ad15de015cc802b4d513376aa"
+],
+[
+"56",
+"{'F2': <PDFObjRef:13>, 'F6': <PDFObjRef:33>, 'F4': <PDFObjRef:20>, 'F1': <PDFObjRef:10>}",
+null
+],
+[
+"57",
+"{'Type': /'Page', 'Resources': <PDFObjRef:58>, 'Contents': [<PDFObjRef:21>, <PDFObjRef:4>, <PDFObjRef:85>, <PDFObjRef:23>], 'Parent': <PDFObjRef:133>}",
+null
+],
+[
+"58",
+"{'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:86>, 'XObject': <PDFObjRef:87>}",
+null
+],
+[
+"59",
+"<PDFStream(59): raw=768, {'Length': 768, 'Filter': /'FlateDecode', 'Name': /'Im3', 'Type': /'XObject', 'Subtype': /'Form', 'BBox': [0, 0, 2384, 3370], 'FormType': 1, 'Matrix': [1, 0, 0, 1, -65, -610], 'Resources': {'ProcSet': [/'PDF', /'Text'], 'ExtGState': <PDFObjRef:60>, 'Font': <PDFObjRef:61>}}>",
+"4f8ff946a84570655b9ba579e000a24fee722b5cc9509328cfbf8549e4df3e12"
+],
+[
+"60",
+"{'R4': <PDFObjRef:62>}",
+null
+],
+[
+"61",
+"{'R9': <PDFObjRef:63>}",
+null
+],
+[
+"62",
+"{'Type': /'ExtGState', 'Name': /'R4', 'TR': /'Identity'}",
+null
+],
+[
+"63",
+"{'Subtype': /'Type1', 'BaseFont': /'Courier-Bold', 'Type': /'Font', 'Name': /'R9'}",
+null
+],
+[
+"64",
+"sha256:61278f01517a8aaf908959e89ce4de1d31ecab1cec2631028243007877a33dfb",
+"4e2b5b1a0d75525faf9c1c20db0a5e297a9071b641a68acd67df393ce5acb295"
+],
+[
+"65",
+"{'R4': <PDFObjRef:67>}",
+null
+],
+[
+"66",
+"{'R9': <PDFObjRef:68>}",
+null
+],
+[
+"67",
+"{'Type': /'ExtGState', 'Name': /'R4', 'TR': /'Identity'}",
+null
+],
+[
+"68",
+"{'Subtype': /'Type1', 'BaseFont': /'Helvetica-Bold', 'Type': /'Font', 'Name': /'R9'}",
+null
+],
+[
+"69",
+"<PDFStream(69): raw=3517, {'Filter': [/'FlateDecode'], 'Length1': 724, 'Length2': 2965, 'Length3': 533, 'Length': 3517}>",
+"0236222b2ba636daa4af513aa251a932d6ccbfe85fbaa7ba8e5376ce71125823"
+],
+[
+"70",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-24, -250, 1110, 750], 'FontName': /'GUZBXZ+CMMI8', 'ItalicAngle': -14.04, 'StemV': 78, 'FontFile': <PDFObjRef:69>, 'Flags': 68}",
+null
+],
+[
+"71",
+"sha256:8d3bead43c4cb55f55dcf8de4b52b5a3e9279b21910d2ce96276dbcb5ee0c3ef",
+null
+],
+[
+"72",
+"sha256:7f912375e61878fce552151d95151c5bc4ad4f2e7953c4ccc5fa85d17fee1453",
+null
+],
+[
+"73",
+"<PDFStream(73): raw=5599, {'Filter': [/'FlateDecode'], 'Length1': 720, 'Length2': 5039, 'Length3': 533, 'Length': 5599}>",
+"a29a5e33efe1e60b45fa7d5909e3f707bfa3a5321d24328fe50b785141ba6971"
+],
+[
+"74",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-251, -250, 1009, 969], 'FontName': /'ZWKHFA+CMR10', 'ItalicAngle': 0, 'StemV': 69, 'FontFile': <PDFObjRef:73>, 'Flags': 4}",
+null
+],
+[
+"75",
+"sha256:f8095cb1ade534a52088b225f5be8b649843705ff8294684e36b05af91afde95",
+null
+],
+[
+"76",
+"<PDFStream(76): raw=1906, {'Filter': [/'FlateDecode'], 'Length1': 809, 'Length2': 1313, 'Length3': 534, 'Length': 1906}>",
+"65e10b2d7ef7b8d8f136a2b0d47f72cd5c7087b4478931905f045d166c0b0a99"
+],
+[
+"77",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-24, -2960, 1454, 772], 'FontName': /'RFVSJO+CMEX10', 'ItalicAngle': 0, 'StemV': 47, 'FontFile': <PDFObjRef:76>, 'Flags': 4}",
+null
+],
+[
+"78",
+"sha256:5051e7330ff6c77c9ae81bccfa4a487c30ebf4673223860b35e0843dea92bc72",
+null
+],
+[
+"79",
+"<PDFStream(79): raw=1178, {'Filter': [/'FlateDecode'], 'Length1': 721, 'Length2': 666, 'Length3': 533, 'Length': 1178}>",
+"bf355cfefb165d34abbc8131d76654f784b00b7637c06aa2423e6e91850ca1ec"
+],
+[
+"80",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-30, -955, 1185, 779], 'FontName': /'TXGKAB+CMSY8', 'ItalicAngle': -14.035, 'StemV': 89, 'FontFile': <PDFObjRef:79>, 'Flags': 68}",
+null
+],
+[
+"81",
+"sha256:f5bc462b3845d3b0490f2b5fef9003b75207c7191c4341a3390d510a8ac1af36",
+null
+],
+[
+"82",
+"<PDFStream(82): raw=2114, {'Filter': [/'FlateDecode'], 'Length1': 712, 'Length2': 1578, 'Length3': 533, 'Length': 2114}>",
+"831fa0f1fca87d4aeffbf75d40232eb990fbd80e85c202941c3b562a981bc64a"
+],
+[
+"83",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-36, -250, 1070, 750], 'FontName': /'XHEGHT+CMR8', 'ItalicAngle': 0, 'StemV': 76, 'FontFile': <PDFObjRef:82>, 'Flags': 4}",
+null
+],
+[
+"84",
+"sha256:d7f28daad840dec6a1188fd74c20ec3e3db2e3f0618715ec8f5b1c06e9237866",
+null
+],
+[
+"85",
+"<PDFStream(85): raw=2890, {'Filter': [/'FlateDecode'], 'Length': 2890}>",
+"af01fc2d5313c96a7694398ea41666063e4cb6120c88d40993e3c5ee9b0e0345"
+],
+[
+"86",
+"{'F2': <PDFObjRef:13>, 'F6': <PDFObjRef:33>, 'F1': <PDFObjRef:10>, 'F5': <PDFObjRef:30>, 'F7': <PDFObjRef:71>, 'F8': <PDFObjRef:75>, 'F9': <PDFObjRef:78>, 'F10': <PDFObjRef:81>, 'F11': <PDFObjRef:84>, 'F3': <PDFObjRef:17>}",
+null
+],
+[
+"87",
+"{'Im3': <PDFObjRef:59>, 'Im4': <PDFObjRef:64>}",
+null
+],
+[
+"88",
+"{'Type': /'Page', 'Resources': <PDFObjRef:89>, 'Contents': [<PDFObjRef:21>, <PDFObjRef:4>, <PDFObjRef:96>, <PDFObjRef:23>], 'Parent': <PDFObjRef:134>}",
+null
+],
+[
+"89",
+"{'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:97>, 'XObject': <PDFObjRef:98>}",
+null
+],
+[
+"90",
+"sha256:9f2cacfbf63af9b56bc19384fbce15832a47c487e2d250ad75abc8de5c00ea06",
+"71e9b6681ab4997babc4d75d4073eaee1ab2d907c5e82824f725d5bfc195467d"
+],
+[
+"91",
+"{'R4': <PDFObjRef:93>}",
+null
+],
+[
+"92",
+"{'R9': <PDFObjRef:94>, 'R11': <PDFObjRef:95>}",
+null
+],
+[
+"93",
+"{'Type': /'ExtGState', 'Name': /'R4', 'TR': /'Identity'}",
+null
+],
+[
+"94",
+"{'Subtype': /'Type1', 'BaseFont': /'Courier-Bold', 'Type': /'Font', 'Name': /'R9'}",
+null
+],
+[
+"95",
+"{'Subtype': /'Type1', 'BaseFont': /'Courier', 'Type': /'Font', 'Name': /'R11'}",
+null
+],
+[
+"96",
+"<PDFStream(96): raw=3698, {'Filter': [/'FlateDecode'], 'Length': 3698}>",
+"3b265a79d9b7ae6e7dbb35d21f55328a6cb550dda6dd87dba83a7d97300141e1"
+],
+[
+"97",
+"{'F2': <PDFObjRef:13>, 'F8': <PDFObjRef:75>, 'F5': <PDFObjRef:30>, 'F1': <PDFObjRef:10>, 'F7': <PDFObjRef:71>, 'F9': <PDFObjRef:78>, 'F10': <PDFObjRef:81>, 'F3': <PDFObjRef:17>, 'F6': <PDFObjRef:33>, 'F4': <PDFObjRef:20>}",
+null
+],
+[
+"98",
+"{'Im5': <PDFObjRef:90>}",
+null
+],
+[
+"99",
+"{'Type': /'Page', 'Resources': <PDFObjRef:100>, 'Contents': [<PDFObjRef:21>, <PDFObjRef:4>, <PDFObjRef:101>, <PDFObjRef:23>], 'Parent': <PDFObjRef:134>}",
+null
+],
+[
+"100",
+"{'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:102>}",
+null
+],
+[
+"101",
+"<PDFStream(101): raw=4061, {'Filter': [/'FlateDecode'], 'Length': 4061}>",
+"f6f96609f83284e6cd9bb913877e6951f87d7d43c4237e3b56e101c78f71d85a"
+],
+[
+"102",
+"{'F2': <PDFObjRef:13>, 'F6': <PDFObjRef:33>, 'F4': <PDFObjRef:20>, 'F1': <PDFObjRef:10>, 'F5': <PDFObjRef:30>, 'F7': <PDFObjRef:71>, 'F8': <PDFObjRef:75>, 'F3': <PDFObjRef:17>}",
+null
+],
+[
+"103",
+"{'Type': /'Page', 'Resources': <PDFObjRef:104>, 'Contents': [<PDFObjRef:21>, <PDFObjRef:4>, <PDFObjRef:126>, <PDFObjRef:23>], 'Parent': <PDFObjRef:135>}",
+null
+],
+[
+"104",
+"{'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:127>}",
+null
+],
+[
+"105",
+"<PDFStream(105): raw=5019, {'Filter': [/'FlateDecode'], 'Length1': 724, 'Length2': 4464, 'Length3': 533, 'Length': 5019}>",
+"e7343fbe76303cbb7fcefc21c9aaf7231d4d7c12badffe101ba0858934bbc6b7"
+],
+[
+"106",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-29, -250, 1075, 750], 'FontName': /'NUIFHB+CMMI9', 'ItalicAngle': -14.04, 'StemV': 74, 'FontFile': <PDFObjRef:105>, 'Flags': 68}",
+null
+],
+[
+"107",
+"sha256:aa48227390e9f60035fe804900ebe655c81b80805e47cbcbe2aff581a6d4a102",
+null
+],
+[
+"108",
+"<PDFStream(108): raw=3251, {'Filter': [/'FlateDecode'], 'Length1': 723, 'Length2': 2705, 'Length3': 533, 'Length': 3251}>",
+"170b799a77285d2d8fbbf4f6f5ea0bf577f2169c63b6570abcec71bdba356834"
+],
+[
+"109",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [11, -250, 1241, 750], 'FontName': /'VVFIIS+CMMI6', 'ItalicAngle': -14.04, 'StemV': 85, 'FontFile': <PDFObjRef:108>, 'Flags': 68}",
+null
+],
+[
+"110",
+"sha256:9aaa41de3988e2ac658cea6ed8aa1077eb45cad92a5da9899c0adff1f46093d6",
+null
+],
+[
+"111",
+"<PDFStream(111): raw=1961, {'Filter': [/'FlateDecode'], 'Length1': 721, 'Length2': 1420, 'Length3': 533, 'Length': 1961}>",
+"8874a97b184b737afc1d725c86841b4d9e694970251c8e192248bd41911d2d2e"
+],
+[
+"112",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-30, -958, 1146, 777], 'FontName': /'LZSPAE+CMSY9', 'ItalicAngle': -14.035, 'StemV': 87, 'FontFile': <PDFObjRef:111>, 'Flags': 68}",
+null
+],
+[
+"113",
+"sha256:68462e692d5edfdc96018dfc8c5d9f0d50ae80e9996e7bd0ea2da0477c82364a",
+null
+],
+[
+"114",
+"<PDFStream(114): raw=2259, {'Filter': [/'FlateDecode'], 'Length1': 712, 'Length2': 1727, 'Length3': 533, 'Length': 2259}>",
+"1c178c63102113aa6885b01fc514c2107be01e2974def5b7fa8edd66ef4ef97b"
+],
+[
+"115",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-39, -250, 1036, 750], 'FontName': /'WCHBLG+CMR9', 'ItalicAngle': 0, 'StemV': 74, 'FontFile': <PDFObjRef:114>, 'Flags': 4}",
+null
+],
+[
+"116",
+"sha256:77273c07686d95e35a7642cf65413bad0ad0edc30a3ef66ac9f9a6a2f625a73c",
+null
+],
+[
+"117",
+"<PDFStream(117): raw=2271, {'Filter': [/'FlateDecode'], 'Length1': 712, 'Length2': 1742, 'Length3': 533, 'Length': 2271}>",
+"07437fe0d483107964f9248056d502a9a104639f7902b9a56136f9b7ae785629"
+],
+[
+"118",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-20, -250, 1193, 750], 'FontName': /'GBBFVH+CMR6', 'ItalicAngle': 0, 'StemV': 83, 'FontFile': <PDFObjRef:117>, 'Flags': 4}",
+null
+],
+[
+"119",
+"sha256:259e93ad8907fcdc85d99e1f5afd3dbef352602c8401f83ef97401136830a297",
+null
+],
+[
+"120",
+"<PDFStream(120): raw=1253, {'Filter': [/'FlateDecode'], 'Length1': 720, 'Length2': 736, 'Length3': 533, 'Length': 1253}>",
+"869ee60736fe4e96af5413dafab45aeb52a573cc26f60baa20b7e4e10083f927"
+],
+[
+"121",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-4, -948, 1329, 786], 'FontName': /'KMQSUM+CMSY6', 'ItalicAngle': -14.035, 'StemV': 93, 'FontFile': <PDFObjRef:120>, 'Flags': 68}",
+null
+],
+[
+"122",
+"sha256:724a1d1484cda4c69d60bdc7053720108fde2b831a309b3fe34b8e24d186d176",
+null
+],
+[
+"123",
+"<PDFStream(123): raw=2308, {'Filter': [/'FlateDecode'], 'Length1': 723, 'Length2': 1768, 'Length3': 533, 'Length': 2308}>",
+"91e7fbb380f869d8cc850f5494b1751ba496b24448966020fe249996741d9cda"
+],
+[
+"124",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [37, -250, 1349, 750], 'FontName': /'IWMUZJ+CMMI5', 'ItalicAngle': -14.04, 'StemV': 90, 'FontFile': <PDFObjRef:123>, 'Flags': 68}",
+null
+],
+[
+"125",
+"sha256:506a28f1aa24dad9de3f04a3dd3cd52fcc6fb06c10ade70b450ea88b92ed6ad2",
+null
+],
+[
+"126",
+"<PDFStream(126): raw=4259, {'Filter': [/'FlateDecode'], 'Length': 4259}>",
+"9a8254c77e82200b99abab49dee330391875a8448899ae691f51f73d062a435b"
+],
+[
+"127",
+"{'F2': <PDFObjRef:13>, 'F12': <PDFObjRef:107>, 'F13': <PDFObjRef:110>, 'F14': <PDFObjRef:113>, 'F15': <PDFObjRef:116>, 'F16': <PDFObjRef:119>, 'F17': <PDFObjRef:122>, 'F18': <PDFObjRef:125>, 'F9': <PDFObjRef:78>, 'F1': <PDFObjRef:10>, 'F4': <PDFObjRef:20>}",
+null
+],
+[
+"128",
+"{'Type': /'Page', 'Resources': <PDFObjRef:129>, 'Contents': [<PDFObjRef:21>, <PDFObjRef:4>, <PDFObjRef:130>, <PDFObjRef:23>], 'Parent': <PDFObjRef:135>}",
+null
+],
+[
+"129",
+"{'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:131>}",
+null
+],
+[
+"130",
+"<PDFStream(130): raw=5333, {'Filter': [/'FlateDecode'], 'Length': 5333}>",
+"8204fbd71dc99d8f65ab7f5d49ac2ab0b458187d078dca21041d16b44020136b"
+],
+[
+"131",
+"{'F2': <PDFObjRef:13>, 'F16': <PDFObjRef:119>, 'F1': <PDFObjRef:10>, 'F6': <PDFObjRef:33>}",
+null
+],
+[
+"132",
+"{'Type': /'Pages', 'Count': 2, 'Kids': [<PDFObjRef:5>, <PDFObjRef:25>], 'Parent': <PDFObjRef:3>}",
+null
+],
+[
+"133",
+"{'Type': /'Pages', 'Count': 2, 'Kids': [<PDFObjRef:53>, <PDFObjRef:57>], 'Parent': <PDFObjRef:3>}",
+null
+],
+[
+"134",
+"{'Type': /'Pages', 'Count': 2, 'Kids': [<PDFObjRef:88>, <PDFObjRef:99>], 'Parent': <PDFObjRef:3>}",
+null
+],
+[
+"135",
+"{'Type': /'Pages', 'Count': 2, 'Kids': [<PDFObjRef:103>, <PDFObjRef:128>], 'Parent': <PDFObjRef:3>}",
+null
+],
+[
+"136",
+"{}",
+null
+],
+[
+"137",
+"None",
+null
+],
+[
+"138",
+"{}",
+null
+]
+],
+"pages": [
+{
+"pageid": "5",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [
+"Font",
+"ProcSet"
+],
+"contents": [
+"<PDFObjRef:21>",
+"<PDFObjRef:4>",
+"<PDFObjRef:22>",
+"<PDFObjRef:23>"
+],
+"attrs": [
+"Type",
+"Resources",
+"Contents",
+"Parent",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:24>}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+},
+{
+"pageid": "25",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [
+"Font",
+"ProcSet",
+"XObject"
+],
+"contents": [
+"<PDFObjRef:21>",
+"<PDFObjRef:4>",
+"<PDFObjRef:50>",
+"<PDFObjRef:23>"
+],
+"attrs": [
+"Type",
+"Resources",
+"Contents",
+"Parent",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:51>, 'XObject': <PDFObjRef:52>}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+},
+{
+"pageid": "53",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [
+"Font",
+"ProcSet"
+],
+"contents": [
+"<PDFObjRef:21>",
+"<PDFObjRef:4>",
+"<PDFObjRef:55>",
+"<PDFObjRef:23>"
+],
+"attrs": [
+"Type",
+"Resources",
+"Contents",
+"Parent",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:56>}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+},
+{
+"pageid": "57",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [
+"Font",
+"ProcSet",
+"XObject"
+],
+"contents": [
+"<PDFObjRef:21>",
+"<PDFObjRef:4>",
+"<PDFObjRef:85>",
+"<PDFObjRef:23>"
+],
+"attrs": [
+"Type",
+"Resources",
+"Contents",
+"Parent",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:86>, 'XObject': <PDFObjRef:87>}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+},
+{
+"pageid": "88",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [
+"Font",
+"ProcSet",
+"XObject"
+],
+"contents": [
+"<PDFObjRef:21>",
+"<PDFObjRef:4>",
+"<PDFObjRef:96>",
+"<PDFObjRef:23>"
+],
+"attrs": [
+"Type",
+"Resources",
+"Contents",
+"Parent",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:97>, 'XObject': <PDFObjRef:98>}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+},
+{
+"pageid": "99",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [
+"Font",
+"ProcSet"
+],
+"contents": [
+"<PDFObjRef:21>",
+"<PDFObjRef:4>",
+"<PDFObjRef:101>",
+"<PDFObjRef:23>"
+],
+"attrs": [
+"Type",
+"Resources",
+"Contents",
+"Parent",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:102>}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+},
+{
+"pageid": "103",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [
+"Font",
+"ProcSet"
+],
+"contents": [
+"<PDFObjRef:21>",
+"<PDFObjRef:4>",
+"<PDFObjRef:126>",
+"<PDFObjRef:23>"
+],
+"attrs": [
+"Type",
+"Resources",
+"Contents",
+"Parent",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:127>}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+},
+{
+"pageid": "128",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [
+"Font",
+"ProcSet"
+],
+"contents": [
+"<PDFObjRef:21>",
+"<PDFObjRef:4>",
+"<PDFObjRef:130>",
+"<PDFObjRef:23>"
+],
+"attrs": [
+"Type",
+"Resources",
+"Contents",
+"Parent",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:131>}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+}
+],
+"outlines": [],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "half",
+"open": "!PSEOF"
+},
+{
+"password": "",
+"variant": "3q",
+"open": "!PSEOF"
+},
+{
+"password": "",
+"variant": "noxref",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "shifted",
+"open": "ok",
+"xrefs": [
+{
+"repr": "sha256:690517c1c8ea33ae35e5e88447f7c84da69da5eb03eb14b0c8180849dec4b562",
+"trailer": "{'Size': 139, 'Root': <PDFObjRef:2>, 'Info': <PDFObjRef:1>}",
+"ids": [
+[
+"7",
+"(None, 15, 0)"
+],
+[
+"10",
+"(None, 1829, 0)"
+],
+[
+"13",
+"(None, 2972, 0)"
+],
+[
+"14",
+"(None, 4111, 0)"
+],
+[
+"17",
+"(None, 5727, 0)"
+],
+[
+"20",
+"(None, 6678, 0)"
+],
+[
+"22",
+"(None, 7811, 0)"
+],
+[
+"24",
+"(None, 11010, 0)"
+],
+[
+"6",
+"(None, 11076, 0)"
+],
+[
+"27",
+"(None, 11137, 0)"
+],
+[
+"30",
+"(None, 12091, 0)"
+],
+[
+"33",
+"(None, 13037, 0)"
+],
+[
+"34",
+"(None, 14178, 0)"
+],
+[
+"35",
+"(None, 15185, 0)"
+],
+[
+"36",
+"(None, 15218, 0)"
+],
+[
+"37",
+"(None, 15287, 0)"
+],
+[
+"38",
+"(None, 15347, 0)"
+],
+[
+"39",
+"(None, 15429, 0)"
+],
+[
+"40",
+"(None, 15515, 0)"
+],
+[
+"41",
+"(None, 15593, 0)"
+],
+[
+"42",
+"(None, 15683, 0)"
+],
+[
+"43",
+"(None, 17424, 0)"
+],
+[
+"44",
+"(None, 17457, 0)"
+],
+[
+"45",
+"(None, 17526, 0)"
+],
+[
+"46",
+"(None, 17586, 0)"
+],
+[
+"47",
+"(None, 17668, 0)"
+],
+[
+"48",
+"(None, 17754, 0)"
+],
+[
+"49",
+"(None, 17844, 0)"
+],
+[
+"50",
+"(None, 17922, 0)"
+],
+[
+"51",
+"(None, 21324, 0)"
+],
+[
+"52",
+"(None, 21401, 0)"
+],
+[
+"26",
+"(None, 21447, 0)"
+],
+[
+"55",
+"(None, 21525, 0)"
+],
+[
+"56",
+"(None, 25681, 0)"
+],
+[
+"54",
+"(None, 25747, 0)"
+],
+[
+"59",
+"(None, 25809, 0)"
+],
+[
+"60",
+"(None, 26812, 0)"
+],
+[
+"61",
+"(None, 26845, 0)"
+],
+[
+"62",
+"(None, 26878, 0)"
+],
+[
+"63",
+"(None, 26938, 0)"
+],
+[
+"64",
+"(None, 27018, 0)"
+],
+[
+"65",
+"(None, 28713, 0)"
+],
+[
+"66",
+"(None, 28746, 0)"
+],
+[
+"67",
+"(None, 28779, 0)"
+],
+[
+"68",
+"(None, 28839, 0)"
+],
+[
+"71",
+"(None, 28921, 0)"
+],
+[
+"72",
+"(None, 29920, 0)"
+],
+[
+"75",
+"(None, 30825, 0)"
+],
+[
+"78",
+"(None, 31743, 0)"
+],
+[
+"81",
+"(None, 32719, 0)"
+],
+[
+"84",
+"(None, 33727, 0)"
+],
+[
+"85",
+"(None, 34729, 0)"
+],
+[
+"86",
+"(None, 37693, 0)"
+],
+[
+"87",
+"(None, 37827, 0)"
+],
+[
+"58",
+"(None, 37873, 0)"
+],
+[
+"90",
+"(None, 37951, 0)"
+],
+[
+"91",
+"(None, 39638, 0)"
+],
+[
+"92",
+"(None, 39671, 0)"
+],
+[
+"93",
+"(None, 39716, 0)"
+],
+[
+"94",
+"(None, 39776, 0)"
+],
+[
+"95",
+"(None, 39856, 0)"
+],
+[
+"96",
+"(None, 39932, 0)"
+],
+[
+"97",
+"(None, 43704, 0)"
+],
+[
+"98",
+"(None, 43837, 0)"
+],
+[
+"89",
+"(None, 43871, 0)"
+],
+[
+"101",
+"(None, 43949, 0)"
+],
+[
+"102",
+"(None, 48085, 0)"
+],
+[
+"100",
+"(None, 48196, 0)"
+],
+[
+"107",
+"(None, 48260, 0)"
+],
+[
+"110",
+"(None, 49264, 0)"
+],
+[
+"113",
+"(None, 50255, 0)"
+],
+[
+"116",
+"(None, 51257, 0)"
+],
+[
+"119",
+"(None, 52229, 0)"
+],
+[
+"122",
+"(None, 53233, 0)"
+],
+[
+"125",
+"(None, 54175, 0)"
+],
+[
+"126",
+"(None, 55182, 0)"
+],
+[
+"127",
+"(None, 59516, 0)"
+],
+[
+"104",
+"(None, 59674, 0)"
+],
+[
+"130",
+"(None, 59738, 0)"
+],
+[
+"131",
+"(None, 65146, 0)"
+],
+[
+"129",
+"(None, 65215, 0)"
+],
+[
+"9",
+"(None, 65279, 0)"
+],
+[
+"8",
+"(None, 65479, 0)"
+],
+[
+"12",
+"(None, 83397, 0)"
+],
+[
+"11",
+"(None, 83598, 0)"
+],
+[
+"16",
+"(None, 105752, 0)"
+],
+[
+"15",
+"(None, 105947, 0)"
+],
+[
+"19",
+"(None, 107942, 0)"
+],
+[
+"18",
+"(None, 108138, 0)"
+],
+[
+"29",
+"(None, 125164, 0)"
+],
+[
+"28",
+"(None, 125358, 0)"
+],
+[
+"32",
+"(None, 133430, 0)"
+],
+[
+"31",
+"(None, 133640, 0)"
+],
+[
+"70",
+"(None, 152283, 0)"
+],
+[
+"69",
+"(None, 152476, 0)"
+],
+[
+"74",
+"(None, 156107, 0)"
+],
+[
+"73",
+"(None, 156295, 0)"
+],
+[
+"77",
+"(None, 162008, 0)"
+],
+[
+"76",
+"(None, 162197, 0)"
+],
+[
+"80",
+"(None, 164217, 0)"
+],
+[
+"79",
+"(None, 164411, 0)"
+],
+[
+"83",
+"(None, 165702, 0)"
+],
+[
+"82",
+"(None, 165888, 0)"
+],
+[
+"106",
+"(None, 168116, 0)"
+],
+[
+"105",
+"(None, 168311, 0)"
+],
+[
+"109",
+"(None, 173445, 0)"
+],
+[
+"108",
+"(None, 173639, 0)"
+],
+[
+"112",
+"(None, 177005, 0)"
+],
+[
+"111",
+"(None, 177201, 0)"
+],
+[
+"115",
+"(None, 179277, 0)"
+],
+[
+"114",
+"(None, 179465, 0)"
+],
+[
+"118",
+"(None, 181839, 0)"
+],
+[
+"117",
+"(None, 182027, 0)"
+],
+[
+"121",
+"(None, 184413, 0)"
+],
+[
+"120",
+"(None, 184608, 0)"
+],
+[
+"124",
+"(None, 185975, 0)"
+],
+[
+"123",
+"(None, 186169, 0)"
+],
+[
+"1",
+"(None, 188592, 0)"
+],
+[
+"5",
+"(None, 188756, 0)"
+],
+[
+"25",
+"(None, 188859, 0)"
+],
+[
+"132",
+"(None, 188964, 0)"
+],
+[
+"53",
+"(None, 189042, 0)"
+],
+[
+"57",
+"(None, 189147, 0)"
+],
+[
+"133",
+"(None, 189252, 0)"
+],
+[
+"88",
+"(None, 189331, 0)"
+],
+[
+"99",
+"(None, 189436, 0)"
+],
+[
+"134",
+"(None, 189543, 0)"
+],
+[
+"103",
+"(None, 189622, 0)"
+],
+[
+"128",
+"(None, 189730, 0)"
+],
+[
+"135",
+"(None, 189838, 0)"
+],
+[
+"3",
+"(None, 189919, 0)"
+],
+[
+"21",
+"(None, 190023, 0)"
+],
+[
+"23",
+"(None, 190073, 0)"
+],
+[
+"4",
+"(None, 190123, 0)"
+],
+[
+"136",
+"(None, 190205, 0)"
+],
+[
+"137",
+"(None, 190228, 0)"
+],
+[
+"138",
+"(None, 190250, 0)"
+],
+[
+"2",
+"(None, 190273, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /'Catalog', 'Pages': <PDFObjRef:3>, 'Outlines': <PDFObjRef:136>, 'Threads': <PDFObjRef:137>, 'Names': <PDFObjRef:138>}",
+"info": "[{'Creator': b' TeX output 2006.04.14:1650', 'Producer': b'dvipdfm 0.13.2c, Copyright \\xa9 1998, by Mark A. Wicks', 'CreationDate': b\"D:20060414165500+00'00'\"}]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"7",
+"sha256:8a6277970f245ee6a7deaeb9ee50ff617391c99e4fe692a6f5b488783d0caf92",
+null
+],
+[
+"10",
+"sha256:d45ad94b66a6b8d7a2edfd54ca0d2af4c5a1b69ce831a61acc42d6ffc7df58fd",
+null
+],
+[
+"13",
+"sha256:e79bac2930131ca72c22fa050b19ec742ed7721bc362e1922d7eea7c19df29ab",
+null
+],
+[
+"14",
+"sha256:1eb17949589a1a93616703d9e7f044ab50ebb3be5f4ea73d90e5492af609bcde",
+null
+],
+[
+"17",
+"sha256:fa96daee6c36d1afc09f6f278ff96b8f9dfcefa15acbd57ac6dd3cbb6a9f95f1",
+null
+],
+[
+"20",
+"sha256:079b6b220dfbd706adb09b34ae92927f94b3e0ea461c7e047574b7e01858e6bd",
+null
+],
+[
+"22",
+"<PDFStream(22): raw=3125, {'Filter': [/'FlateDecode'], 'Length': 3125}>",
+"7312925e5cb11cc3f5b4cebc09db2408b4b13c162b6f77141085e2aa767cde43"
+],
+[
+"24",
+"{'F1': <PDFObjRef:10>, 'F2': <PDFObjRef:13>, 'F3': <PDFObjRef:17>, 'F4': <PDFObjRef:20>}",
+null
+],
+[
+"6",
+"{'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:24>}",
+null
+],
+[
+"27",
+"sha256:c106fcd779f12bac39a1b9763f5549240d2130ee5aef8a3b7968d4cb2b8a85c1",
+null
+],
+[
+"30",
+"sha256:99c2d6c6595d567f5bd8f0ddf8ee7c96eb369a2ec08677c87e47361e28acf3f7",
+null
+],
+[
+"33",
+"sha256:6d68b63520de9ce053ebed95b85a9c5864550ac52bbb3214d8e7b6925f6f9565",
+null
+],
+[
+"34",
+"<PDFStream(34): raw=772, {'Length': 772, 'Filter': /'FlateDecode', 'Name': /'Im1', 'Type': /'XObject', 'Subtype': /'Form', 'BBox': [0, 0, 2384, 3370], 'FormType': 1, 'Matrix': [1, 0, 0, 1, -74, -619], 'Resources': {'ProcSet': [/'PDF', /'Text'], 'ExtGState': <PDFObjRef:35>, 'Font': <PDFObjRef:36>}}>",
+"661306f149560498381a19802856bb9e801c14da7133a244809a082e1dd1d96c"
+],
+[
+"35",
+"{'R4': <PDFObjRef:37>}",
+null
+],
+[
+"36",
+"{'R9': <PDFObjRef:38>, 'R11': <PDFObjRef:39>, 'R13': <PDFObjRef:40>, 'R15': <PDFObjRef:41>}",
+null
+],
+[
+"37",
+"{'Type': /'ExtGState', 'Name': /'R4', 'TR': /'Identity'}",
+null
+],
+[
+"38",
+"{'Subtype': /'Type1', 'BaseFont': /'Helvetica-Bold', 'Type': /'Font', 'Name': /'R9'}",
+null
+],
+[
+"39",
+"{'Subtype': /'Type1', 'BaseFont': /'Helvetica-Oblique', 'Type': /'Font', 'Name': /'R11'}",
+null
+],
+[
+"40",
+"{'Subtype': /'Type1', 'BaseFont': /'Helvetica', 'Type': /'Font', 'Name': /'R13'}",
+null
+],
+[
+"41",
+"{'Subtype': /'Type1', 'BaseFont': /'Helvetica-BoldOblique', 'Type': /'Font', 'Name': /'R15'}",
+null
+],
+[
+"42",
+"sha256:3d8700a1adf6b9c0880aa2aa62aed5c407189fe5db40f4fcdb0306c185151603",
+"cc36e3c818b9ec4ec934b6b5e3d15530674580647e8d9debd609302c22aeb5fd"
+],
+[
+"43",
+"{'R4': <PDFObjRef:45>}",
+null
+],
+[
+"44",
+"{'R9': <PDFObjRef:46>, 'R11': <PDFObjRef:47>, 'R13': <PDFObjRef:48>, 'R15': <PDFObjRef:49>}",
+null
+],
+[
+"45",
+"{'Type': /'ExtGState', 'Name': /'R4', 'TR': /'Identity'}",
+null
+],
+[
+"46",
+"{'Subtype': /'Type1', 'BaseFont': /'Helvetica-Bold', 'Type': /'Font', 'Name': /'R9'}",
+null
+],
+[
+"47",
+"{'Subtype': /'Type1', 'BaseFont': /'Helvetica-Oblique', 'Type': /'Font', 'Name': /'R11'}",
+null
+],
+[
+"48",
+"{'Subtype': /'Type1', 'BaseFont': /'Helvetica-BoldOblique', 'Type': /'Font', 'Name': /'R13'}",
+null
+],
+[
+"49",
+"{'Subtype': /'Type1', 'BaseFont': /'Helvetica', 'Type': /'Font', 'Name': /'R15'}",
+null
+],
+[
+"50",
+"<PDFStream(50): raw=3328, {'Filter': [/'FlateDecode'], 'Length': 3328}>",
+"5228fc295ebe83a97d6636418284686b63a486e40d6eb4950ba2404b759f7c2e"
+],
+[
+"51",
+"{'F2': <PDFObjRef:13>, 'F1': <PDFObjRef:10>, 'F5': <PDFObjRef:30>, 'F4': <PDFObjRef:20>, 'F6': <PDFObjRef:33>}",
+null
+],
+[
+"52",
+"{'Im1': <PDFObjRef:34>, 'Im2': <PDFObjRef:42>}",
+null
+],
+[
+"26",
+"{'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:51>, 'XObject': <PDFObjRef:52>}",
+null
+],
+[
+"55",
+"<PDFStream(55): raw=4082, {'Filter': [/'FlateDecode'], 'Length': 4082}>",
+"b1d9e20dd7d9f0a4a08e97b84000d10391a4467ad15de015cc802b4d513376aa"
+],
+[
+"56",
+"{'F2': <PDFObjRef:13>, 'F6': <PDFObjRef:33>, 'F4': <PDFObjRef:20>, 'F1': <PDFObjRef:10>}",
+null
+],
+[
+"54",
+"{'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:56>}",
+null
+],
+[
+"59",
+"<PDFStream(59): raw=768, {'Length': 768, 'Filter': /'FlateDecode', 'Name': /'Im3', 'Type': /'XObject', 'Subtype': /'Form', 'BBox': [0, 0, 2384, 3370], 'FormType': 1, 'Matrix': [1, 0, 0, 1, -65, -610], 'Resources': {'ProcSet': [/'PDF', /'Text'], 'ExtGState': <PDFObjRef:60>, 'Font': <PDFObjRef:61>}}>",
+"4f8ff946a84570655b9ba579e000a24fee722b5cc9509328cfbf8549e4df3e12"
+],
+[
+"60",
+"{'R4': <PDFObjRef:62>}",
+null
+],
+[
+"61",
+"{'R9': <PDFObjRef:63>}",
+null
+],
+[
+"62",
+"{'Type': /'ExtGState', 'Name': /'R4', 'TR': /'Identity'}",
+null
+],
+[
+"63",
+"{'Subtype': /'Type1', 'BaseFont': /'Courier-Bold', 'Type': /'Font', 'Name': /'R9'}",
+null
+],
+[
+"64",
+"sha256:61278f01517a8aaf908959e89ce4de1d31ecab1cec2631028243007877a33dfb",
+"4e2b5b1a0d75525faf9c1c20db0a5e297a9071b641a68acd67df393ce5acb295"
+],
+[
+"65",
+"{'R4': <PDFObjRef:67>}",
+null
+],
+[
+"66",
+"{'R9': <PDFObjRef:68>}",
+null
+],
+[
+"67",
+"{'Type': /'ExtGState', 'Name': /'R4', 'TR': /'Identity'}",
+null
+],
+[
+"68",
+"{'Subtype': /'Type1', 'BaseFont': /'Helvetica-Bold', 'Type': /'Font', 'Name': /'R9'}",
+null
+],
+[
+"71",
+"sha256:8d3bead43c4cb55f55dcf8de4b52b5a3e9279b21910d2ce96276dbcb5ee0c3ef",
+null
+],
+[
+"72",
+"sha256:7f912375e61878fce552151d95151c5bc4ad4f2e7953c4ccc5fa85d17fee1453",
+null
+],
+[
+"75",
+"sha256:f8095cb1ade534a52088b225f5be8b649843705ff8294684e36b05af91afde95",
+null
+],
+[
+"78",
+"sha256:5051e7330ff6c77c9ae81bccfa4a487c30ebf4673223860b35e0843dea92bc72",
+null
+],
+[
+"81",
+"sha256:f5bc462b3845d3b0490f2b5fef9003b75207c7191c4341a3390d510a8ac1af36",
+null
+],
+[
+"84",
+"sha256:d7f28daad840dec6a1188fd74c20ec3e3db2e3f0618715ec8f5b1c06e9237866",
+null
+],
+[
+"85",
+"<PDFStream(85): raw=2890, {'Filter': [/'FlateDecode'], 'Length': 2890}>",
+"af01fc2d5313c96a7694398ea41666063e4cb6120c88d40993e3c5ee9b0e0345"
+],
+[
+"86",
+"{'F2': <PDFObjRef:13>, 'F6': <PDFObjRef:33>, 'F1': <PDFObjRef:10>, 'F5': <PDFObjRef:30>, 'F7': <PDFObjRef:71>, 'F8': <PDFObjRef:75>, 'F9': <PDFObjRef:78>, 'F10': <PDFObjRef:81>, 'F11': <PDFObjRef:84>, 'F3': <PDFObjRef:17>}",
+null
+],
+[
+"87",
+"{'Im3': <PDFObjRef:59>, 'Im4': <PDFObjRef:64>}",
+null
+],
+[
+"58",
+"{'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:86>, 'XObject': <PDFObjRef:87>}",
+null
+],
+[
+"90",
+"sha256:9f2cacfbf63af9b56bc19384fbce15832a47c487e2d250ad75abc8de5c00ea06",
+"71e9b6681ab4997babc4d75d4073eaee1ab2d907c5e82824f725d5bfc195467d"
+],
+[
+"91",
+"{'R4': <PDFObjRef:93>}",
+null
+],
+[
+"92",
+"{'R9': <PDFObjRef:94>, 'R11': <PDFObjRef:95>}",
+null
+],
+[
+"93",
+"{'Type': /'ExtGState', 'Name': /'R4', 'TR': /'Identity'}",
+null
+],
+[
+"94",
+"{'Subtype': /'Type1', 'BaseFont': /'Courier-Bold', 'Type': /'Font', 'Name': /'R9'}",
+null
+],
+[
+"95",
+"{'Subtype': /'Type1', 'BaseFont': /'Courier', 'Type': /'Font', 'Name': /'R11'}",
+null
+],
+[
+"96",
+"<PDFStream(96): raw=3698, {'Filter': [/'FlateDecode'], 'Length': 3698}>",
+"3b265a79d9b7ae6e7dbb35d21f55328a6cb550dda6dd87dba83a7d97300141e1"
+],
+[
+"97",
+"{'F2': <PDFObjRef:13>, 'F8': <PDFObjRef:75>, 'F5': <PDFObjRef:30>, 'F1': <PDFObjRef:10>, 'F7': <PDFObjRef:71>, 'F9': <PDFObjRef:78>, 'F10': <PDFObjRef:81>, 'F3': <PDFObjRef:17>, 'F6': <PDFObjRef:33>, 'F4': <PDFObjRef:20>}",
+null
+],
+[
+"98",
+"{'Im5': <PDFObjRef:90>}",
+null
+],
+[
+"89",
+"{'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:97>, 'XObject': <PDFObjRef:98>}",
+null
+],
+[
+"101",
+"<PDFStream(101): raw=4061, {'Filter': [/'FlateDecode'], 'Length': 4061}>",
+"f6f96609f83284e6cd9bb913877e6951f87d7d43c4237e3b56e101c78f71d85a"
+],
+[
+"102",
+"{'F2': <PDFObjRef:13>, 'F6': <PDFObjRef:33>, 'F4': <PDFObjRef:20>, 'F1': <PDFObjRef:10>, 'F5': <PDFObjRef:30>, 'F7': <PDFObjRef:71>, 'F8': <PDFObjRef:75>, 'F3': <PDFObjRef:17>}",
+null
+],
+[
+"100",
+"{'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:102>}",
+null
+],
+[
+"107",
+"sha256:aa48227390e9f60035fe804900ebe655c81b80805e47cbcbe2aff581a6d4a102",
+null
+],
+[
+"110",
+"sha256:9aaa41de3988e2ac658cea6ed8aa1077eb45cad92a5da9899c0adff1f46093d6",
+null
+],
+[
+"113",
+"sha256:68462e692d5edfdc96018dfc8c5d9f0d50ae80e9996e7bd0ea2da0477c82364a",
+null
+],
+[
+"116",
+"sha256:77273c07686d95e35a7642cf65413bad0ad0edc30a3ef66ac9f9a6a2f625a73c",
+null
+],
+[
+"119",
+"sha256:259e93ad8907fcdc85d99e1f5afd3dbef352602c8401f83ef97401136830a297",
+null
+],
+[
+"122",
+"sha256:724a1d1484cda4c69d60bdc7053720108fde2b831a309b3fe34b8e24d186d176",
+null
+],
+[
+"125",
+"sha256:506a28f1aa24dad9de3f04a3dd3cd52fcc6fb06c10ade70b450ea88b92ed6ad2",
+null
+],
+[
+"126",
+"<PDFStream(126): raw=4259, {'Filter': [/'FlateDecode'], 'Length': 4259}>",
+"9a8254c77e82200b99abab49dee330391875a8448899ae691f51f73d062a435b"
+],
+[
+"127",
+"{'F2': <PDFObjRef:13>, 'F12': <PDFObjRef:107>, 'F13': <PDFObjRef:110>, 'F14': <PDFObjRef:113>, 'F15': <PDFObjRef:116>, 'F16': <PDFObjRef:119>, 'F17': <PDFObjRef:122>, 'F18': <PDFObjRef:125>, 'F9': <PDFObjRef:78>, 'F1': <PDFObjRef:10>, 'F4': <PDFObjRef:20>}",
+null
+],
+[
+"104",
+"{'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:127>}",
+null
+],
+[
+"130",
+"<PDFStream(130): raw=5333, {'Filter': [/'FlateDecode'], 'Length': 5333}>",
+"8204fbd71dc99d8f65ab7f5d49ac2ab0b458187d078dca21041d16b44020136b"
+],
+[
+"131",
+"{'F2': <PDFObjRef:13>, 'F16': <PDFObjRef:119>, 'F1': <PDFObjRef:10>, 'F6': <PDFObjRef:33>}",
+null
+],
+[
+"129",
+"{'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:131>}",
+null
+],
+[
+"9",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-168, -341, 1000, 960], 'FontName': /'MZSZGI+NimbusRomNo9L-Medi', 'ItalicAngle': 0, 'StemV': 140, 'FontFile': <PDFObjRef:8>, 'Flags': 4}",
+null
+],
+[
+"8",
+"<PDFStream(8): raw=17802, {'Filter': [/'FlateDecode'], 'Length1': 1658, 'Length2': 16861, 'Length3': 532, 'Length': 17802}>",
+"55170b70d99536038edc608240ea51a5a7d3f841c1fe1ff5d808627ab59608dc"
+],
+[
+"12",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-168, -281, 1000, 924], 'FontName': /'QTLIUY+NimbusRomNo9L-Regu', 'ItalicAngle': 0, 'StemV': 85, 'FontFile': <PDFObjRef:11>, 'Flags': 4}",
+null
+],
+[
+"11",
+"<PDFStream(11): raw=22037, {'Filter': [/'FlateDecode'], 'Length1': 1662, 'Length2': 21096, 'Length3': 532, 'Length': 22037}>",
+"e0ca7d96dccd7c5255e5a3c1e94060237fc176f58b6935b29f7b0662184c4c80"
+],
+[
+"16",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-29, -960, 1116, 775], 'FontName': /'ZNQAHA+CMSY10', 'ItalicAngle': -14.035, 'StemV': 85, 'FontFile': <PDFObjRef:15>, 'Flags': 68}",
+null
+],
+[
+"15",
+"<PDFStream(15): raw=1881, {'Filter': [/'FlateDecode'], 'Length1': 724, 'Length2': 1345, 'Length3': 533, 'Length': 1881}>",
+"b84a6ef352f798ecd7d1a31785c84ab26d76a7e1752b05df14fa68ce4ee21d15"
+],
+[
+"19",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-12, -237, 650, 811], 'FontName': /'CXOZYQ+NimbusMonL-Regu', 'ItalicAngle': 0, 'StemV': 41, 'FontFile': <PDFObjRef:18>, 'Flags': 4}",
+null
+],
+[
+"18",
+"<PDFStream(18): raw=16909, {'Filter': [/'FlateDecode'], 'Length1': 1644, 'Length2': 16017, 'Length3': 532, 'Length': 16909}>",
+"55c523fae9a4b6f1e30add70d40f58d6f4dc3c99f1e322ef399a9af3f5f9e6a1"
+],
+[
+"29",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-32, -250, 1048, 750], 'FontName': /'HAUISC+CMMI10', 'ItalicAngle': -14.04, 'StemV': 72, 'FontFile': <PDFObjRef:28>, 'Flags': 68}",
+null
+],
+[
+"28",
+"<PDFStream(28): raw=7958, {'Filter': [/'FlateDecode'], 'Length1': 727, 'Length2': 7392, 'Length3': 533, 'Length': 7958}>",
+"fe8d5e066f8e2046ca138dd83ae1a27e74bddcbe8179a2c4636f616268c74d7c"
+],
+[
+"32",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-169, -270, 1010, 924], 'FontName': /'HGTKKD+NimbusRomNo9L-ReguItal', 'ItalicAngle': -15.5, 'StemV': 78, 'FontFile': <PDFObjRef:31>, 'Flags': 68}",
+null
+],
+[
+"31",
+"<PDFStream(31): raw=18526, {'Filter': [/'FlateDecode'], 'Length1': 1679, 'Length2': 17567, 'Length3': 532, 'Length': 18526}>",
+"8c34ed0830d0517f20236bdea89b4def7df0bfe09835401c502b5fd12a7a5804"
+],
+[
+"70",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-24, -250, 1110, 750], 'FontName': /'GUZBXZ+CMMI8', 'ItalicAngle': -14.04, 'StemV': 78, 'FontFile': <PDFObjRef:69>, 'Flags': 68}",
+null
+],
+[
+"69",
+"<PDFStream(69): raw=3517, {'Filter': [/'FlateDecode'], 'Length1': 724, 'Length2': 2965, 'Length3': 533, 'Length': 3517}>",
+"0236222b2ba636daa4af513aa251a932d6ccbfe85fbaa7ba8e5376ce71125823"
+],
+[
+"74",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-251, -250, 1009, 969], 'FontName': /'ZWKHFA+CMR10', 'ItalicAngle': 0, 'StemV': 69, 'FontFile': <PDFObjRef:73>, 'Flags': 4}",
+null
+],
+[
+"73",
+"<PDFStream(73): raw=5599, {'Filter': [/'FlateDecode'], 'Length1': 720, 'Length2': 5039, 'Length3': 533, 'Length': 5599}>",
+"a29a5e33efe1e60b45fa7d5909e3f707bfa3a5321d24328fe50b785141ba6971"
+],
+[
+"77",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-24, -2960, 1454, 772], 'FontName': /'RFVSJO+CMEX10', 'ItalicAngle': 0, 'StemV': 47, 'FontFile': <PDFObjRef:76>, 'Flags': 4}",
+null
+],
+[
+"76",
+"<PDFStream(76): raw=1906, {'Filter': [/'FlateDecode'], 'Length1': 809, 'Length2': 1313, 'Length3': 534, 'Length': 1906}>",
+"65e10b2d7ef7b8d8f136a2b0d47f72cd5c7087b4478931905f045d166c0b0a99"
+],
+[
+"80",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-30, -955, 1185, 779], 'FontName': /'TXGKAB+CMSY8', 'ItalicAngle': -14.035, 'StemV': 89, 'FontFile': <PDFObjRef:79>, 'Flags': 68}",
+null
+],
+[
+"79",
+"<PDFStream(79): raw=1178, {'Filter': [/'FlateDecode'], 'Length1': 721, 'Length2': 666, 'Length3': 533, 'Length': 1178}>",
+"bf355cfefb165d34abbc8131d76654f784b00b7637c06aa2423e6e91850ca1ec"
+],
+[
+"83",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-36, -250, 1070, 750], 'FontName': /'XHEGHT+CMR8', 'ItalicAngle': 0, 'StemV': 76, 'FontFile': <PDFObjRef:82>, 'Flags': 4}",
+null
+],
+[
+"82",
+"<PDFStream(82): raw=2114, {'Filter': [/'FlateDecode'], 'Length1': 712, 'Length2': 1578, 'Length3': 533, 'Length': 2114}>",
+"831fa0f1fca87d4aeffbf75d40232eb990fbd80e85c202941c3b562a981bc64a"
+],
+[
+"106",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-29, -250, 1075, 750], 'FontName': /'NUIFHB+CMMI9', 'ItalicAngle': -14.04, 'StemV': 74, 'FontFile': <PDFObjRef:105>, 'Flags': 68}",
+null
+],
+[
+"105",
+"<PDFStream(105): raw=5019, {'Filter': [/'FlateDecode'], 'Length1': 724, 'Length2': 4464, 'Length3': 533, 'Length': 5019}>",
+"e7343fbe76303cbb7fcefc21c9aaf7231d4d7c12badffe101ba0858934bbc6b7"
+],
+[
+"109",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [11, -250, 1241, 750], 'FontName': /'VVFIIS+CMMI6', 'ItalicAngle': -14.04, 'StemV': 85, 'FontFile': <PDFObjRef:108>, 'Flags': 68}",
+null
+],
+[
+"108",
+"<PDFStream(108): raw=3251, {'Filter': [/'FlateDecode'], 'Length1': 723, 'Length2': 2705, 'Length3': 533, 'Length': 3251}>",
+"170b799a77285d2d8fbbf4f6f5ea0bf577f2169c63b6570abcec71bdba356834"
+],
+[
+"112",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-30, -958, 1146, 777], 'FontName': /'LZSPAE+CMSY9', 'ItalicAngle': -14.035, 'StemV': 87, 'FontFile': <PDFObjRef:111>, 'Flags': 68}",
+null
+],
+[
+"111",
+"<PDFStream(111): raw=1961, {'Filter': [/'FlateDecode'], 'Length1': 721, 'Length2': 1420, 'Length3': 533, 'Length': 1961}>",
+"8874a97b184b737afc1d725c86841b4d9e694970251c8e192248bd41911d2d2e"
+],
+[
+"115",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-39, -250, 1036, 750], 'FontName': /'WCHBLG+CMR9', 'ItalicAngle': 0, 'StemV': 74, 'FontFile': <PDFObjRef:114>, 'Flags': 4}",
+null
+],
+[
+"114",
+"<PDFStream(114): raw=2259, {'Filter': [/'FlateDecode'], 'Length1': 712, 'Length2': 1727, 'Length3': 533, 'Length': 2259}>",
+"1c178c63102113aa6885b01fc514c2107be01e2974def5b7fa8edd66ef4ef97b"
+],
+[
+"118",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-20, -250, 1193, 750], 'FontName': /'GBBFVH+CMR6', 'ItalicAngle': 0, 'StemV': 83, 'FontFile': <PDFObjRef:117>, 'Flags': 4}",
+null
+],
+[
+"117",
+"<PDFStream(117): raw=2271, {'Filter': [/'FlateDecode'], 'Length1': 712, 'Length2': 1742, 'Length3': 533, 'Length': 2271}>",
+"07437fe0d483107964f9248056d502a9a104639f7902b9a56136f9b7ae785629"
+],
+[
+"121",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-4, -948, 1329, 786], 'FontName': /'KMQSUM+CMSY6', 'ItalicAngle': -14.035, 'StemV': 93, 'FontFile': <PDFObjRef:120>, 'Flags': 68}",
+null
+],
+[
+"120",
+"<PDFStream(120): raw=1253, {'Filter': [/'FlateDecode'], 'Length1': 720, 'Length2': 736, 'Length3': 533, 'Length': 1253}>",
+"869ee60736fe4e96af5413dafab45aeb52a573cc26f60baa20b7e4e10083f927"
+],
+[
+"124",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [37, -250, 1349, 750], 'FontName': /'IWMUZJ+CMMI5', 'ItalicAngle': -14.04, 'StemV': 90, 'FontFile': <PDFObjRef:123>, 'Flags': 68}",
+null
+],
+[
+"123",
+"<PDFStream(123): raw=2308, {'Filter': [/'FlateDecode'], 'Length1': 723, 'Length2': 1768, 'Length3': 533, 'Length': 2308}>",
+"91e7fbb380f869d8cc850f5494b1751ba496b24448966020fe249996741d9cda"
+],
+[
+"1",
+"{'Creator': b' TeX output 2006.04.14:1650', 'Producer': b'dvipdfm 0.13.2c, Copyright \\xa9 1998, by Mark A. Wicks', 'CreationDate': b\"D:20060414165500+00'00'\"}",
+null
+],
+[
+"5",
+"{'Type': /'Page', 'Resources': <PDFObjRef:6>, 'Contents': [<PDFObjRef:21>, <PDFObjRef:4>, <PDFObjRef:22>, <PDFObjRef:23>], 'Parent': <PDFObjRef:132>}",
+null
+],
+[
+"25",
+"{'Type': /'Page', 'Resources': <PDFObjRef:26>, 'Contents': [<PDFObjRef:21>, <PDFObjRef:4>, <PDFObjRef:50>, <PDFObjRef:23>], 'Parent': <PDFObjRef:132>}",
+null
+],
+[
+"132",
+"{'Type': /'Pages', 'Count': 2, 'Kids': [<PDFObjRef:5>, <PDFObjRef:25>], 'Parent': <PDFObjRef:3>}",
+null
+],
+[
+"53",
+"{'Type': /'Page', 'Resources': <PDFObjRef:54>, 'Contents': [<PDFObjRef:21>, <PDFObjRef:4>, <PDFObjRef:55>, <PDFObjRef:23>], 'Parent': <PDFObjRef:133>}",
+null
+],
+[
+"57",
+"{'Type': /'Page', 'Resources': <PDFObjRef:58>, 'Contents': [<PDFObjRef:21>, <PDFObjRef:4>, <PDFObjRef:85>, <PDFObjRef:23>], 'Parent': <PDFObjRef:133>}",
+null
+],
+[
+"133",
+"{'Type': /'Pages', 'Count': 2, 'Kids': [<PDFObjRef:53>, <PDFObjRef:57>], 'Parent': <PDFObjRef:3>}",
+null
+],
+[
+"88",
+"{'Type': /'Page', 'Resources': <PDFObjRef:89>, 'Contents': [<PDFObjRef:21>, <PDFObjRef:4>, <PDFObjRef:96>, <PDFObjRef:23>], 'Parent': <PDFObjRef:134>}",
+null
+],
+[
+"99",
+"{'Type': /'Page', 'Resources': <PDFObjRef:100>, 'Contents': [<PDFObjRef:21>, <PDFObjRef:4>, <PDFObjRef:101>, <PDFObjRef:23>], 'Parent': <PDFObjRef:134>}",
+null
+],
+[
+"134",
+"{'Type': /'Pages', 'Count': 2, 'Kids': [<PDFObjRef:88>, <PDFObjRef:99>], 'Parent': <PDFObjRef:3>}",
+null
+],
+[
+"103",
+"{'Type': /'Page', 'Resources': <PDFObjRef:104>, 'Contents': [<PDFObjRef:21>, <PDFObjRef:4>, <PDFObjRef:126>, <PDFObjRef:23>], 'Parent': <PDFObjRef:135>}",
+null
+],
+[
+"128",
+"{'Type': /'Page', 'Resources': <PDFObjRef:129>, 'Contents': [<PDFObjRef:21>, <PDFObjRef:4>, <PDFObjRef:130>, <PDFObjRef:23>], 'Parent': <PDFObjRef:135>}",
+null
+],
+[
+"135",
+"{'Type': /'Pages', 'Count': 2, 'Kids': [<PDFObjRef:103>, <PDFObjRef:128>], 'Parent': <PDFObjRef:3>}",
+null
+],
+[
+"3",
+"{'Type': /'Pages', 'Count': 8, 'Kids': [<PDFObjRef:132>, <PDFObjRef:133>, <PDFObjRef:134>, <PDFObjRef:135>], 'MediaBox': [0, 0, 595, 842]}",
+null
+],
+[
+"21",
+"<PDFStream(21): raw=1, {'Length': 1}>",
+"01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+],
+[
+"23",
+"<PDFStream(23): raw=1, {'Length': 1}>",
+"01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+],
+[
+"4",
+"<PDFStream(4): raw=33, {'Length': 33}>",
+"912ea1a0c58127e2c435aa9ef9dc4e7afc0b05e60e5eec3cbe8f5f08a1a797ed"
+],
+[
+"136",
+"{}",
+null
+],
+[
+"137",
+"None",
+null
+],
+[
+"138",
+"{}",
+null
+],
+[
+"2",
+"{'Type': /'Catalog', 'Pages': <PDFObjRef:3>, 'Outlines': <PDFObjRef:136>, 'Threads': <PDFObjRef:137>, 'Names': <PDFObjRef:138>}",
+null
+]
+],
+"pages": [
+{
+"pageid": "5",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [
+"Font",
+"ProcSet"
+],
+"contents": [
+"<PDFObjRef:21>",
+"<PDFObjRef:4>",
+"<PDFObjRef:22>",
+"<PDFObjRef:23>"
+],
+"attrs": [
+"Type",
+"Resources",
+"Contents",
+"Parent",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:24>}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+},
+{
+"pageid": "25",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [
+"Font",
+"ProcSet",
+"XObject"
+],
+"contents": [
+"<PDFObjRef:21>",
+"<PDFObjRef:4>",
+"<PDFObjRef:50>",
+"<PDFObjRef:23>"
+],
+"attrs": [
+"Type",
+"Resources",
+"Contents",
+"Parent",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:51>, 'XObject': <PDFObjRef:52>}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+},
+{
+"pageid": "53",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [
+"Font",
+"ProcSet"
+],
+"contents": [
+"<PDFObjRef:21>",
+"<PDFObjRef:4>",
+"<PDFObjRef:55>",
+"<PDFObjRef:23>"
+],
+"attrs": [
+"Type",
+"Resources",
+"Contents",
+"Parent",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:56>}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+},
+{
+"pageid": "57",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [
+"Font",
+"ProcSet",
+"XObject"
+],
+"contents": [
+"<PDFObjRef:21>",
+"<PDFObjRef:4>",
+"<PDFObjRef:85>",
+"<PDFObjRef:23>"
+],
+"attrs": [
+"Type",
+"Resources",
+"Contents",
+"Parent",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:86>, 'XObject': <PDFObjRef:87>}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+},
+{
+"pageid": "88",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [
+"Font",
+"ProcSet",
+"XObject"
+],
+"contents": [
+"<PDFObjRef:21>",
+"<PDFObjRef:4>",
+"<PDFObjRef:96>",
+"<PDFObjRef:23>"
+],
+"attrs": [
+"Type",
+"Resources",
+"Contents",
+"Parent",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:97>, 'XObject': <PDFObjRef:98>}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+},
+{
+"pageid": "99",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [
+"Font",
+"ProcSet"
+],
+"contents": [
+"<PDFObjRef:21>",
+"<PDFObjRef:4>",
+"<PDFObjRef:101>",
+"<PDFObjRef:23>"
+],
+"attrs": [
+"Type",
+"Resources",
+"Contents",
+"Parent",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:102>}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+},
+{
+"pageid": "103",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [
+"Font",
+"ProcSet"
+],
+"contents": [
+"<PDFObjRef:21>",
+"<PDFObjRef:4>",
+"<PDFObjRef:126>",
+"<PDFObjRef:23>"
+],
+"attrs": [
+"Type",
+"Resources",
+"Contents",
+"Parent",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:127>}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+},
+{
+"pageid": "128",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [
+"Font",
+"ProcSet"
+],
+"contents": [
+"<PDFObjRef:21>",
+"<PDFObjRef:4>",
+"<PDFObjRef:130>",
+"<PDFObjRef:23>"
+],
+"attrs": [
+"Type",
+"Resources",
+"Contents",
+"Parent",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:131>}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+}
+],
+"outlines": [],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "tail",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "corrupt0",
+"open": "ok",
+"xrefs": [
+{
+"repr": "sha256:81bd6f748320bd6f14d783883e73b64bf1a98b8ac0cdb6d8d0693a61c6ab5a11",
+"trailer": "{'Size': 139, 'Root': <PDFObjRef:2>, 'Info': <PDFObjRef:1>}",
+"ids": [
+[
+"1",
+"(None, 188586, 0)"
+],
+[
+"2",
+"(None, 190267, 0)"
+],
+[
+"3",
+"(None, 189913, 0)"
+],
+[
+"4",
+"(None, 190117, 0)"
+],
+[
+"5",
+"(None, 188750, 0)"
+],
+[
+"6",
+"(None, 11070, 0)"
+],
+[
+"7",
+"(None, 9, 0)"
+],
+[
+"8",
+"(None, 65473, 0)"
+],
+[
+"9",
+"(None, 65273, 0)"
+],
+[
+"10",
+"(None, 1823, 0)"
+],
+[
+"11",
+"(None, 83592, 0)"
+],
+[
+"12",
+"(None, 83391, 0)"
+],
+[
+"13",
+"(None, 2966, 0)"
+],
+[
+"14",
+"(None, 4105, 0)"
+],
+[
+"15",
+"(None, 105941, 0)"
+],
+[
+"16",
+"(None, 105746, 0)"
+],
+[
+"17",
+"(None, 5721, 0)"
+],
+[
+"18",
+"(None, 108132, 0)"
+],
+[
+"19",
+"(None, 107936, 0)"
+],
+[
+"20",
+"(None, 6672, 0)"
+],
+[
+"21",
+"(None, 190017, 0)"
+],
+[
+"22",
+"(None, 7805, 0)"
+],
+[
+"23",
+"(None, 190067, 0)"
+],
+[
+"24",
+"(None, 11004, 0)"
+],
+[
+"25",
+"(None, 188853, 0)"
+],
+[
+"26",
+"(None, 21441, 0)"
+],
+[
+"27",
+"(None, 11131, 0)"
+],
+[
+"28",
+"(None, 125352, 0)"
+],
+[
+"29",
+"(None, 125158, 0)"
+],
+[
+"30",
+"(None, 12085, 0)"
+],
+[
+"31",
+"(None, 133634, 0)"
+],
+[
+"32",
+"(None, 133424, 0)"
+],
+[
+"33",
+"(None, 13031, 0)"
+],
+[
+"34",
+"(None, 14172, 0)"
+],
+[
+"35",
+"(None, 15179, 0)"
+],
+[
+"36",
+"(None, 15212, 0)"
+],
+[
+"37",
+"(None, 15281, 0)"
+],
+[
+"38",
+"(None, 15341, 0)"
+],
+[
+"39",
+"(None, 15423, 0)"
+],
+[
+"40",
+"(None, 15509, 0)"
+],
+[
+"41",
+"(None, 15587, 0)"
+],
+[
+"42",
+"(None, 15677, 0)"
+],
+[
+"43",
+"(None, 17418, 0)"
+],
+[
+"44",
+"(None, 17451, 0)"
+],
+[
+"45",
+"(None, 17520, 0)"
+],
+[
+"46",
+"(None, 17580, 0)"
+],
+[
+"47",
+"(None, 17662, 0)"
+],
+[
+"48",
+"(None, 17748, 0)"
+],
+[
+"49",
+"(None, 17838, 0)"
+],
+[
+"50",
+"(None, 17916, 0)"
+],
+[
+"51",
+"(None, 21318, 0)"
+],
+[
+"52",
+"(None, 21395, 0)"
+],
+[
+"53",
+"(None, 189036, 0)"
+],
+[
+"54",
+"(None, 25741, 0)"
+],
+[
+"55",
+"(None, 21519, 0)"
+],
+[
+"56",
+"(None, 25675, 0)"
+],
+[
+"57",
+"(None, 189141, 0)"
+],
+[
+"58",
+"(None, 37867, 0)"
+],
+[
+"59",
+"(None, 25803, 0)"
+],
+[
+"60",
+"(None, 26806, 0)"
+],
+[
+"61",
+"(None, 26839, 0)"
+],
+[
+"62",
+"(None, 26872, 0)"
+],
+[
+"63",
+"(None, 26932, 0)"
+],
+[
+"64",
+"(None, 27012, 0)"
+],
+[
+"65",
+"(None, 28707, 0)"
+],
+[
+"66",
+"(None, 28740, 0)"
+],
+[
+"67",
+"(None, 28773, 0)"
+],
+[
+"68",
+"(None, 28833, 0)"
+],
+[
+"69",
+"(None, 152470, 0)"
+],
+[
+"70",
+"(None, 152277, 0)"
+],
+[
+"71",
+"(None, 28915, 0)"
+],
+[
+"72",
+"(None, 29914, 0)"
+],
+[
+"73",
+"(None, 156289, 0)"
+],
+[
+"74",
+"(None, 156101, 0)"
+],
+[
+"75",
+"(None, 30819, 0)"
+],
+[
+"76",
+"(None, 162191, 0)"
+],
+[
+"77",
+"(None, 162002, 0)"
+],
+[
+"78",
+"(None, 31737, 0)"
+],
+[
+"79",
+"(None, 164405, 0)"
+],
+[
+"80",
+"(None, 164211, 0)"
+],
+[
+"81",
+"(None, 32713, 0)"
+],
+[
+"82",
+"(None, 165882, 0)"
+],
+[
+"83",
+"(None, 165696, 0)"
+],
+[
+"84",
+"(None, 33721, 0)"
+],
+[
+"85",
+"(None, 34723, 0)"
+],
+[
+"86",
+"(None, 37687, 0)"
+],
+[
+"87",
+"(None, 37821, 0)"
+],
+[
+"88",
+"(None, 189325, 0)"
+],
+[
+"89",
+"(None, 43865, 0)"
+],
+[
+"90",
+"(None, 37945, 0)"
+],
+[
+"91",
+"(None, 39632, 0)"
+],
+[
+"92",
+"(None, 39665, 0)"
+],
+[
+"93",
+"(None, 39710, 0)"
+],
+[
+"94",
+"(None, 39770, 0)"
+],
+[
+"95",
+"(None, 39850, 0)"
+],
+[
+"96",
+"(None, 39926, 0)"
+],
+[
+"97",
+"(None, 43698, 0)"
+],
+[
+"98",
+"(None, 43831, 0)"
+],
+[
+"99",
+"(None, 189430, 0)"
+],
+[
+"100",
+"(None, 48190, 0)"
+],
+[
+"101",
+"(None, 43943, 0)"
+],
+[
+"102",
+"(None, 48079, 0)"
+],
+[
+"103",
+"(None, 189616, 0)"
+],
+[
+"104",
+"(None, 59668, 0)"
+],
+[
+"105",
+"(None, 168305, 0)"
+],
+[
+"106",
+"(None, 168110, 0)"
+],
+[
+"107",
+"(None, 48254, 0)"
+],
+[
+"108",
+"(None, 173633, 0)"
+],
+[
+"109",
+"(None, 173439, 0)"
+],
+[
+"110",
+"(None, 49258, 0)"
+],
+[
+"111",
+"(None, 177195, 0)"
+],
+[
+"112",
+"(None, 176999, 0)"
+],
+[
+"113",
+"(None, 50249, 0)"
+],
+[
+"114",
+"(None, 179459, 0)"
+],
+[
+"115",
+"(None, 179271, 0)"
+],
+[
+"116",
+"(None, 51251, 0)"
+],
+[
+"117",
+"(None, 182021, 0)"
+],
+[
+"118",
+"(None, 181833, 0)"
+],
+[
+"119",
+"(None, 52223, 0)"
+],
+[
+"120",
+"(None, 184602, 0)"
+],
+[
+"121",
+"(None, 184407, 0)"
+],
+[
+"122",
+"(None, 53227, 0)"
+],
+[
+"123",
+"(None, 186163, 0)"
+],
+[
+"124",
+"(None, 185969, 0)"
+],
+[
+"125",
+"(None, 54169, 0)"
+],
+[
+"126",
+"(None, 55176, 0)"
+],
+[
+"127",
+"(None, 59510, 0)"
+],
+[
+"128",
+"(None, 189724, 0)"
+],
+[
+"129",
+"(None, 65209, 0)"
+],
+[
+"130",
+"(None, 59732, 0)"
+],
+[
+"131",
+"(None, 65140, 0)"
+],
+[
+"132",
+"(None, 188958, 0)"
+],
+[
+"133",
+"(None, 189246, 0)"
+],
+[
+"134",
+"(None, 189537, 0)"
+],
+[
+"135",
+"(None, 189832, 0)"
+],
+[
+"136",
+"(None, 190199, 0)"
+],
+[
+"137",
+"(None, 190222, 0)"
+],
+[
+"138",
+"(None, 190244, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /'Catalog', 'Pages': <PDFObjRef:3>, 'Outlines': <PDFObjRef:136>, 'Threads': <PDFObjRef:137>, 'Names': <PDFObjRef:138>}",
+"info": "[{'Creator': b' TeX output 2006.04.14:1650', 'Producer': b'dvipdfm 0.13.2c, Copyright \\xa9 1998, by Mark A. Wicks', 'CreationDate': b\"D:20060414165500+00'00'\"}]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"1",
+"{'Creator': b' TeX output 2006.04.14:1650', 'Producer': b'dvipdfm 0.13.2c, Copyright \\xa9 1998, by Mark A. Wicks', 'CreationDate': b\"D:20060414165500+00'00'\"}",
+null
+],
+[
+"2",
+"{'Type': /'Catalog', 'Pages': <PDFObjRef:3>, 'Outlines': <PDFObjRef:136>, 'Threads': <PDFObjRef:137>, 'Names': <PDFObjRef:138>}",
+null
+],
+[
+"3",
+"{'Type': /'Pages', 'Count': 8, 'Kids': [<PDFObjRef:132>, <PDFObjRef:133>, <PDFObjRef:134>, <PDFObjRef:135>], 'MediaBox': [0, 0, 595, 842]}",
+null
+],
+[
+"4",
+"<PDFStream(4): raw=33, {'Length': 33}>",
+"912ea1a0c58127e2c435aa9ef9dc4e7afc0b05e60e5eec3cbe8f5f08a1a797ed"
+],
+[
+"5",
+"{'Type': /'Page', 'Resources': <PDFObjRef:6>, 'Contents': [<PDFObjRef:21>, <PDFObjRef:4>, <PDFObjRef:22>, <PDFObjRef:23>], 'Parent': <PDFObjRef:132>}",
+null
+],
+[
+"6",
+"{'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:24>}",
+null
+],
+[
+"7",
+"sha256:8a6277970f245ee6a7deaeb9ee50ff617391c99e4fe692a6f5b488783d0caf92",
+null
+],
+[
+"8",
+"<PDFStream(8): raw=17802, {'Filter': [/'FlateDecode'], 'Length1': 1658, 'Length2': 16861, 'Length3': 532, 'Length': 17802}>",
+"42c46b13bc13ebca141de11643117b8262fc1217acd8c16716c9adb3f2411d1e"
+],
+[
+"9",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-168, -341, 1000, 960], 'FontName': /'MZSZGI+NimbusRomNo9L-Medi', 'ItalicAngle': 0, 'StemV': 140, 'FontFile': <PDFObjRef:8>, 'Flags': 4}",
+null
+],
+[
+"10",
+"sha256:d45ad94b66a6b8d7a2edfd54ca0d2af4c5a1b69ce831a61acc42d6ffc7df58fd",
+null
+],
+[
+"11",
+"<PDFStream(11): raw=22037, {'Filter': [/'FlateDecode'], 'Length1': 1662, 'Length2': 21096, 'Length3': 532, 'Length': 22037}>",
+"e0ca7d96dccd7c5255e5a3c1e94060237fc176f58b6935b29f7b0662184c4c80"
+],
+[
+"12",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-168, -281, 1000, 924], 'FontName': /'QTLIUY+NimbusRomNo9L-Regu', 'ItalicAngle': 0, 'StemV': 85, 'FontFile': <PDFObjRef:11>, 'Flags': 4}",
+null
+],
+[
+"13",
+"sha256:e79bac2930131ca72c22fa050b19ec742ed7721bc362e1922d7eea7c19df29ab",
+null
+],
+[
+"14",
+"sha256:1eb17949589a1a93616703d9e7f044ab50ebb3be5f4ea73d90e5492af609bcde",
+null
+],
+[
+"15",
+"<PDFStream(15): raw=1881, {'Filter': [/'FlateDecode'], 'Length1': 724, 'Length2': 1345, 'Length3': 533, 'Length': 1881}>",
+"b84a6ef352f798ecd7d1a31785c84ab26d76a7e1752b05df14fa68ce4ee21d15"
+],
+[
+"16",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-29, -960, 1116, 775], 'FontName': /'ZNQAHA+CMSY10', 'ItalicAngle': -14.035, 'StemV': 85, 'FontFile': <PDFObjRef:15>, 'Flags': 68}",
+null
+],
+[
+"17",
+"sha256:fa96daee6c36d1afc09f6f278ff96b8f9dfcefa15acbd57ac6dd3cbb6a9f95f1",
+null
+],
+[
+"18",
+"<PDFStream(18): raw=16909, {'Filter': [/'FlateDecode'], 'Length1': 1644, 'Length2': 16017, 'Length3': 532, 'Length': 16909}>",
+"b96c3de0d712f03bb9f6cf0b8c5990a220fb4d299c756e3cef1c6dacdf88c258"
+],
+[
+"19",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-12, -237, 650, 811], 'FontName': /'CXOZYQ+NimbusMonL-Regu', 'ItalicAngle': 0, 'StemV': 41, 'FontFile': <PDFObjRef:18>, 'Flags': 4}",
+null
+],
+[
+"20",
+"sha256:079b6b220dfbd706adb09b34ae92927f94b3e0ea461c7e047574b7e01858e6bd",
+null
+],
+[
+"21",
+"<PDFStream(21): raw=1, {'Length': 1}>",
+"01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+],
+[
+"22",
+"<PDFStream(22): raw=3125, {'Filter': [/'FlateDecode'], 'Length': 3125}>",
+"7312925e5cb11cc3f5b4cebc09db2408b4b13c162b6f77141085e2aa767cde43"
+],
+[
+"23",
+"<PDFStream(23): raw=1, {'Length': 1}>",
+"01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+],
+[
+"24",
+"{'F1': <PDFObjRef:10>, 'F2': <PDFObjRef:13>, 'F3': <PDFObjRef:17>, 'F4': <PDFObjRef:20>}",
+null
+],
+[
+"25",
+"{'Type': /'Page', 'Resources': <PDFObjRef:26>, 'Contents': [<PDFObjRef:21>, <PDFObjRef:4>, <PDFObjRef:50>, <PDFObjRef:23>], 'Parent': <PDFObjRef:132>}",
+null
+],
+[
+"26",
+"{'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:51>, 'XObject': <PDFObjRef:52>}",
+null
+],
+[
+"27",
+"sha256:c106fcd779f12bac39a1b9763f5549240d2130ee5aef8a3b7968d4cb2b8a85c1",
+null
+],
+[
+"28",
+"<PDFStream(28): raw=7958, {'Filter': [/'FlateDecode'], 'Length1': 727, 'Length2': 7392, 'Length3': 533, 'Length': 7958}>",
+"fe8d5e066f8e2046ca138dd83ae1a27e74bddcbe8179a2c4636f616268c74d7c"
+],
+[
+"29",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-32, -250, 1048, 750], 'FontName': /'HAUISC+CMMI10', 'ItalicAngle': -14.04, 'StemV': 72, 'FontFile': <PDFObjRef:28>, 'Flags': 68}",
+null
+],
+[
+"30",
+"sha256:99c2d6c6595d567f5bd8f0ddf8ee7c96eb369a2ec08677c87e47361e28acf3f7",
+null
+],
+[
+"31",
+"<PDFStream(31): raw=18526, {'Filter': [/'FlateDecode'], 'Length1': 1679, 'Length2': 17567, 'Length3': 532, 'Length': 18526}>",
+"8c34ed0830d0517f20236bdea89b4def7df0bfe09835401c502b5fd12a7a5804"
+],
+[
+"32",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-169, -270, 1010, 924], 'FontName': /'HGTKKD+NimbusRomNo9L-ReguItal', 'ItalicAngle': -15.5, 'StemV': 78, 'FontFile': <PDFObjRef:31>, 'Flags': 68}",
+null
+],
+[
+"33",
+"sha256:6d68b63520de9ce053ebed95b85a9c5864550ac52bbb3214d8e7b6925f6f9565",
+null
+],
+[
+"34",
+"<PDFStream(34): raw=772, {'Length': 772, 'Filter': /'FlateDecode', 'Name': /'Im1', 'Type': /'XObject', 'Subtype': /'Form', 'BBox': [0, 0, 2384, 3370], 'FormType': 1, 'Matrix': [1, 0, 0, 1, -74, -619], 'Resources': {'ProcSet': [/'PDF', /'Text'], 'ExtGState': <PDFObjRef:35>, 'Font': <PDFObjRef:36>}}>",
+"661306f149560498381a19802856bb9e801c14da7133a244809a082e1dd1d96c"
+],
+[
+"35",
+"{'R4': <PDFObjRef:37>}",
+null
+],
+[
+"36",
+"{'R9': <PDFObjRef:38>, 'R11': <PDFObjRef:39>, 'R13': <PDFObjRef:40>, 'R15': <PDFObjRef:41>}",
+null
+],
+[
+"37",
+"{'Type': /'ExtGState', 'Name': /'R4', 'TR': /'Identity'}",
+null
+],
+[
+"38",
+"{'Subtype': /'Type1', 'BaseFont': /'Helvetica-Bold', 'Type': /'Font', 'Name': /'R9'}",
+null
+],
+[
+"39",
+"{'Subtype': /'Type1', 'BaseFont': /'Helvetica-Oblique', 'Type': /'Font', 'Name': /'R11'}",
+null
+],
+[
+"40",
+"{'Subtype': /'Type1', 'BaseFont': /'Helvetica', 'Type': /'Font', 'Name': /'R13'}",
+null
+],
+[
+"41",
+"{'Subtype': /'Type1', 'BaseFont': /'Helvetica-BoldOblique', 'Type': /'Font', 'Name': /'R15'}",
+null
+],
+[
+"42",
+"sha256:3d8700a1adf6b9c0880aa2aa62aed5c407189fe5db40f4fcdb0306c185151603",
+"cc36e3c818b9ec4ec934b6b5e3d15530674580647e8d9debd609302c22aeb5fd"
+],
+[
+"43",
+"{'R4': <PDFObjRef:45>}",
+null
+],
+[
+"44",
+"{'R9': <PDFObjRef:46>, 'R11': <PDFObjRef:47>, 'R13': <PDFObjRef:48>, 'R15': <PDFObjRef:49>}",
+null
+],
+[
+"45",
+"{'Type': /'ExtGState', 'Name': /'R4', 'TR': /'Identity'}",
+null
+],
+[
+"46",
+"{'Subtype': /'Type1', 'BaseFont': /'Helvetica-Bold', 'Type': /'Font', 'Name': /'R9'}",
+null
+],
+[
+"47",
+"{'Subtype': /'Type1', 'BaseFont': /'Helvetica-Oblique', 'Type': /'Font', 'Name': /'R11'}",
+null
+],
+[
+"48",
+"{'Subtype': /'Type1', 'BaseFont': /'Helvetica-BoldOblique', 'Type': /'Font', 'Name': /'R13'}",
+null
+],
+[
+"49",
+"{'Subtype': /'Type1', 'BaseFont': /'Helvetica', 'Type': /'Font', 'Name': /'R15'}",
+null
+],
+[
+"50",
+"<PDFStream(50): raw=3328, {'Filter': [/'FlateDecode'], 'Length': 3328}>",
+"d35d8749434f896c0683bd538db074473f811d0073f8c8fa1a8a2e508bcbedbd"
+],
+[
+"51",
+"{'F2': <PDFObjRef:13>, 'F1': <PDFObjRef:10>, 'F5': <PDFObjRef:30>, 'F4': <PDFObjRef:20>, 'F6': <PDFObjRef:33>}",
+null
+],
+[
+"52",
+"{'Im1': <PDFObjRef:34>, 'Im2': <PDFObjRef:42>}",
+null
+],
+[
+"53",
+"{'Type': /'Page', 'Resources': <PDFObjRef:54>, 'Contents': [<PDFObjRef:21>, <PDFObjRef:4>, <PDFObjRef:55>, <PDFObjRef:23>], 'Parent': <PDFObjRef:133>}",
+null
+],
+[
+"54",
+"{'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:56>}",
+null
+],
+[
+"55",
+"<PDFStream(55): raw=4082, {'Filter': [/'FlateDecode'], 'Length': 4082}>",
+"e0ce2a5935290d38ed1fb7a8ed28e8d9165bbf7786a276d8e84a6beebf4f5c70"
+],
+[
+"56",
+"{'F2': <PDFObjRef:13>, 'F6': <PDFObjRef:33>, 'F4': <PDFObjRef:20>, 'F1': <PDFObjRef:10>}",
+null
+],
+[
+"57",
+"{'Type': /'Page', 'Resources': <PDFObjRef:58>, 'Contents': [<PDFObjRef:21>, <PDFObjRef:4>, <PDFObjRef:85>, <PDFObjRef:23>], 'Parent': <PDFObjRef:133>}",
+null
+],
+[
+"58",
+"{'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:86>, 'XObject': <PDFObjRef:87>}",
+null
+],
+[
+"59",
+"<PDFStream(59): raw=768, {'Length': 768, 'Filter': /'FlateDecode', 'Name': /'Im3', 'Type': /'XObject', 'Subtype': /'Form', 'BBox': [0, 0, 2384, 3370], 'FormType': 1, 'Matrix': [1, 0, 0, 1, -65, -610], 'Resources': {'ProcSet': [/'PDF', /'Text'], 'ExtGState': <PDFObjRef:60>, 'Font': <PDFObjRef:61>}}>",
+"4f8ff946a84570655b9ba579e000a24fee722b5cc9509328cfbf8549e4df3e12"
+],
+[
+"60",
+"{'R4': <PDFObjRef:62>}",
+null
+],
+[
+"61",
+"{'R9': <PDFObjRef:63>}",
+null
+],
+[
+"62",
+"{'Type': /'ExtGState', 'Name': /'R4', 'TR': /'Identity'}",
+null
+],
+[
+"63",
+"{'Subtype': /'Type1', 'BaseFont': /'Courier-Bold', 'Type': /'Font', 'Name': /'R9'}",
+null
+],
+[
+"64",
+"sha256:61278f01517a8aaf908959e89ce4de1d31ecab1cec2631028243007877a33dfb",
+"4e2b5b1a0d75525faf9c1c20db0a5e297a9071b641a68acd67df393ce5acb295"
+],
+[
+"65",
+"{'R4': <PDFObjRef:67>}",
+null
+],
+[
+"66",
+"{'R9': <PDFObjRef:68>}",
+null
+],
+[
+"67",
+"{'Type': /'ExtGState', 'Name': /'R4', 'TR': /'Identity'}",
+null
+],
+[
+"68",
+"{'Subtype': /'Type1', 'BaseFont': /'Helvetica-Bold', 'Type': /'Font', 'Name': /'R9'}",
+null
+],
+[
+"69",
+"<PDFStream(69): raw=3517, {'Filter': [/'FlateDecode'], 'Length1': 724, 'Length2': 2965, 'Length3': 533, 'Length': 3517}>",
+"0236222b2ba636daa4af513aa251a932d6ccbfe85fbaa7ba8e5376ce71125823"
+],
+[
+"70",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-24, -250, 1110, 750], 'FontName': /'GUZBXZ+CMMI8', 'ItalicAngle': -14.04, 'StemV': 78, 'FontFile': <PDFObjRef:69>, 'Flags': 68}",
+null
+],
+[
+"71",
+"sha256:8d3bead43c4cb55f55dcf8de4b52b5a3e9279b21910d2ce96276dbcb5ee0c3ef",
+null
+],
+[
+"72",
+"sha256:7f912375e61878fce552151d95151c5bc4ad4f2e7953c4ccc5fa85d17fee1453",
+null
+],
+[
+"73",
+"<PDFStream(73): raw=5599, {'Filter': [/'FlateDecode'], 'Length1': 720, 'Length2': 5039, 'Length3': 533, 'Length': 5599}>",
+"a29a5e33efe1e60b45fa7d5909e3f707bfa3a5321d24328fe50b785141ba6971"
+],
+[
+"74",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-251, -250, 1009, 969], 'FontName': /'ZWKHFA+CMR10', 'ItalicAngle': 0, 'StemV': 69, 'FontFile': <PDFObjRef:73>, 'Flags': 4}",
+null
+],
+[
+"75",
+"sha256:f8095cb1ade534a52088b225f5be8b649843705ff8294684e36b05af91afde95",
+null
+],
+[
+"76",
+"<PDFStream(76): raw=1906, {'Filter': [/'FlateDecode'], 'Length1': 809, 'Length2': 1313, 'Length3': 534, 'Length': 1906}>",
+"65e10b2d7ef7b8d8f136a2b0d47f72cd5c7087b4478931905f045d166c0b0a99"
+],
+[
+"77",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-24, -2960, 1454, 772], 'FontName': /'RFVSJO+CMEX10', 'ItalicAngle': 0, 'StemV': 47, 'FontFile': <PDFObjRef:76>, 'Flags': 4}",
+null
+],
+[
+"78",
+"sha256:5051e7330ff6c77c9ae81bccfa4a487c30ebf4673223860b35e0843dea92bc72",
+null
+],
+[
+"79",
+"<PDFStream(79): raw=1178, {'Filter': [/'FlateDecode'], 'Length1': 721, 'Length2': 666, 'Length3': 533, 'Length': 1178}>",
+"bf355cfefb165d34abbc8131d76654f784b00b7637c06aa2423e6e91850ca1ec"
+],
+[
+"80",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-30, -955, 1185, 779], 'FontName': /'TXGKAB+CMSY8', 'ItalicAngle': -14.035, 'StemV': 89, 'FontFile': <PDFObjRef:79>, 'Flags': 68}",
+null
+],
+[
+"81",
+"sha256:f5bc462b3845d3b0490f2b5fef9003b75207c7191c4341a3390d510a8ac1af36",
+null
+],
+[
+"82",
+"<PDFStream(82): raw=2114, {'Filter': [/'FlateDecode'], 'Length1': 712, 'Length2': 1578, 'Length3': 533, 'Length': 2114}>",
+"831fa0f1fca87d4aeffbf75d40232eb990fbd80e85c202941c3b562a981bc64a"
+],
+[
+"83",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-36, -250, 1070, 750], 'FontName': /'XHEGHT+CMR8', 'ItalicAngle': 0, 'StemV': 76, 'FontFile': <PDFObjRef:82>, 'Flags': 4}",
+null
+],
+[
+"84",
+"sha256:d7f28daad840dec6a1188fd74c20ec3e3db2e3f0618715ec8f5b1c06e9237866",
+null
+],
+[
+"85",
+"<PDFStream(85): raw=2890, {'Filter': [/'FlateDecode'], 'Length': 2890}>",
+"af01fc2d5313c96a7694398ea41666063e4cb6120c88d40993e3c5ee9b0e0345"
+],
+[
+"86",
+"{'F2': <PDFObjRef:13>, 'F6': <PDFObjRef:33>, 'F1': <PDFObjRef:10>, 'F5': <PDFObjRef:30>, 'F7': <PDFObjRef:71>, 'F8': <PDFObjRef:75>, 'F9': <PDFObjRef:78>, 'F10': <PDFObjRef:81>, 'F11': <PDFObjRef:84>, 'F3': <PDFObjRef:17>}",
+null
+],
+[
+"87",
+"{'Im3': <PDFObjRef:59>, 'Im4': <PDFObjRef:64>}",
+null
+],
+[
+"88",
+"{'Type': /'Page', 'Resources': <PDFObjRef:89>, 'Contents': [<PDFObjRef:21>, <PDFObjRef:4>, <PDFObjRef:96>, <PDFObjRef:23>], 'Parent': <PDFObjRef:134>}",
+null
+],
+[
+"89",
+"{'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:97>, 'XObject': <PDFObjRef:98>}",
+null
+],
+[
+"90",
+"sha256:9f2cacfbf63af9b56bc19384fbce15832a47c487e2d250ad75abc8de5c00ea06",
+"71e9b6681ab4997babc4d75d4073eaee1ab2d907c5e82824f725d5bfc195467d"
+],
+[
+"91",
+"{'R4': <PDFObjRef:93>}",
+null
+],
+[
+"92",
+"{'R9': <PDFObjRef:94>, 'R11': <PDFObjRef:95>}",
+null
+],
+[
+"93",
+"{'Type': /'ExtGState', 'Name': /'R4', 'TR': /'Identity'}",
+null
+],
+[
+"94",
+"{'Subtype': /'Type1', 'BaseFont': /'Courier-Bold', 'Type': /'Font', 'Name': /'R9'}",
+null
+],
+[
+"95",
+"{'Subtype': /'Type1', 'BaseFont': /'Courier', 'Type': /'Font', 'Name': /'R11'}",
+null
+],
+[
+"96",
+"<PDFStream(96): raw=3698, {'Filter': [/'FlateDecode'], 'Length': 3698}>",
+"3b265a79d9b7ae6e7dbb35d21f55328a6cb550dda6dd87dba83a7d97300141e1"
+],
+[
+"97",
+"{'F2': <PDFObjRef:13>, 'F8': <PDFObjRef:75>, 'F5': <PDFObjRef:30>, 'F1': <PDFObjRef:10>, 'F7': <PDFObjRef:71>, 'F9': <PDFObjRef:78>, 'F10': <PDFObjRef:81>, 'F3': <PDFObjRef:17>, 'F6': <PDFObjRef:33>, 'F4': <PDFObjRef:20>}",
+null
+],
+[
+"98",
+"{'Im5': <PDFObjRef:90>}",
+null
+],
+[
+"99",
+"{'Type': /'Page', 'Resources': <PDFObjRef:100>, 'Contents': [<PDFObjRef:21>, <PDFObjRef:4>, <PDFObjRef:101>, <PDFObjRef:23>], 'Parent': <PDFObjRef:134>}",
+null
+],
+[
+"100",
+"{'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:102>}",
+null
+],
+[
+"101",
+"<PDFStream(101): raw=4061, {'Filter': [/'FlateDecode'], 'Length': 4061}>",
+"f6f96609f83284e6cd9bb913877e6951f87d7d43c4237e3b56e101c78f71d85a"
+],
+[
+"102",
+"{'F2': <PDFObjRef:13>, 'F6': <PDFObjRef:33>, 'F4': <PDFObjRef:20>, 'F1': <PDFObjRef:10>, 'F5': <PDFObjRef:30>, 'F7': <PDFObjRef:71>, 'F8': <PDFObjRef:75>, 'F3': <PDFObjRef:17>}",
+null
+],
+[
+"103",
+"{'Type': /'Page', 'Resources': <PDFObjRef:104>, 'Contents': [<PDFObjRef:21>, <PDFObjRef:4>, <PDFObjRef:126>, <PDFObjRef:23>], 'Parent': <PDFObjRef:135>}",
+null
+],
+[
+"104",
+"{'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:127>}",
+null
+],
+[
+"105",
+"<PDFStream(105): raw=5019, {'Filter': [/'FlateDecode'], 'Length1': 724, 'Length2': 4464, 'Length3': 533, 'Length': 5019}>",
+"e7343fbe76303cbb7fcefc21c9aaf7231d4d7c12badffe101ba0858934bbc6b7"
+],
+[
+"106",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-29, -250, 1075, 750], 'FontName': /'NUIFHB+CMMI9', 'ItalicAngle': -14.04, 'StemV': 74, 'FontFile': <PDFObjRef:105>, 'Flags': 68}",
+null
+],
+[
+"107",
+"sha256:aa48227390e9f60035fe804900ebe655c81b80805e47cbcbe2aff581a6d4a102",
+null
+],
+[
+"108",
+"<PDFStream(108): raw=3251, {'Filter': [/'FlateDecode'], 'Length1': 723, 'Length2': 2705, 'Length3': 533, 'Length': 3251}>",
+"170b799a77285d2d8fbbf4f6f5ea0bf577f2169c63b6570abcec71bdba356834"
+],
+[
+"109",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [11, -250, 1241, 750], 'FontName': /'VVFIIS+CMMI6', 'ItalicAngle': -14.04, 'StemV': 85, 'FontFile': <PDFObjRef:108>, 'Flags': 68}",
+null
+],
+[
+"110",
+"sha256:9aaa41de3988e2ac658cea6ed8aa1077eb45cad92a5da9899c0adff1f46093d6",
+null
+],
+[
+"111",
+"<PDFStream(111): raw=1961, {'Filter': [/'FlateDecode'], 'Length1': 721, 'Length2': 1420, 'Length3': 533, 'Length': 1961}>",
+"8874a97b184b737afc1d725c86841b4d9e694970251c8e192248bd41911d2d2e"
+],
+[
+"112",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-30, -958, 1146, 777], 'FontName': /'LZSPAE+CMSY9', 'ItalicAngle': -14.035, 'StemV': 87, 'FontFile': <PDFObjRef:111>, 'Flags': 68}",
+null
+],
+[
+"113",
+"sha256:68462e692d5edfdc96018dfc8c5d9f0d50ae80e9996e7bd0ea2da0477c82364a",
+null
+],
+[
+"114",
+"<PDFStream(114): raw=2259, {'Filter': [/'FlateDecode'], 'Length1': 712, 'Length2': 1727, 'Length3': 533, 'Length': 2259}>",
+"1c178c63102113aa6885b01fc514c2107be01e2974def5b7fa8edd66ef4ef97b"
+],
+[
+"115",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-39, -250, 1036, 750], 'FontName': /'WCHBLG+CMR9', 'ItalicAngle': 0, 'StemV': 74, 'FontFile': <PDFObjRef:114>, 'Flags': 4}",
+null
+],
+[
+"116",
+"sha256:77273c07686d95e35a7642cf65413bad0ad0edc30a3ef66ac9f9a6a2f625a73c",
+null
+],
+[
+"117",
+"<PDFStream(117): raw=2271, {'Filter': [/'FlateDecode'], 'Length1': 712, 'Length2': 1742, 'Length3': 533, 'Length': 2271}>",
+"07437fe0d483107964f9248056d502a9a104639f7902b9a56136f9b7ae785629"
+],
+[
+"118",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-20, -250, 1193, 750], 'FontName': /'GBBFVH+CMR6', 'ItalicAngle': 0, 'StemV': 83, 'FontFile': <PDFObjRef:117>, 'Flags': 4}",
+null
+],
+[
+"119",
+"sha256:259e93ad8907fcdc85d99e1f5afd3dbef352602c8401f83ef97401136830a297",
+null
+],
+[
+"120",
+"<PDFStream(120): raw=1253, {'Filter': [/'FlateDecode'], 'Length1': 720, 'Length2': 736, 'Length3': 533, 'Length': 1253}>",
+"869ee60736fe4e96af5413dafab45aeb52a573cc26f60baa20b7e4e10083f927"
+],
+[
+"121",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-4, -948, 1329, 786], 'FontName': /'KMQSUM+CMSY6', 'ItalicAngle': -14.035, 'StemV': 93, 'FontFile': <PDFObjRef:120>, 'Flags': 68}",
+null
+],
+[
+"122",
+"sha256:724a1d1484cda4c69d60bdc7053720108fde2b831a309b3fe34b8e24d186d176",
+null
+],
+[
+"123",
+"<PDFStream(123): raw=2308, {'Filter': [/'FlateDecode'], 'Length1': 723, 'Length2': 1768, 'Length3': 533, 'Length': 2308}>",
+"91e7fbb380f869d8cc850f5494b1751ba496b24448966020fe249996741d9cda"
+],
+[
+"124",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [37, -250, 1349, 750], 'FontName': /'IWMUZJ+CMMI5', 'ItalicAngle': -14.04, 'StemV': 90, 'FontFile': <PDFObjRef:123>, 'Flags': 68}",
+null
+],
+[
+"125",
+"sha256:506a28f1aa24dad9de3f04a3dd3cd52fcc6fb06c10ade70b450ea88b92ed6ad2",
+null
+],
+[
+"126",
+"<PDFStream(126): raw=4259, {'Filter': [/'FlateDecode'], 'Length': 4259}>",
+"d20d1e6add8162f5a6d3ceecbb482e89e293d9d9cda82a916c90c8d402c9bcb1"
+],
+[
+"127",
+"{'F2': <PDFObjRef:13>, 'F12': <PDFObjRef:107>, 'F13': <PDFObjRef:110>, 'F14': <PDFObjRef:113>, 'F15': <PDFObjRef:116>, 'F16': <PDFObjRef:119>, 'F17': <PDFObjRef:122>, 'F18': <PDFObjRef:125>, 'F9': <PDFObjRef:78>, 'F1': <PDFObjRef:10>, 'F4': <PDFObjRef:20>}",
+null
+],
+[
+"128",
+"{'Type': /'Page', 'Resources': <PDFObjRef:129>, 'Contents': [<PDFObjRef:21>, <PDFObjRef:4>, <PDFObjRef:130>, <PDFObjRef:23>], 'Parent': <PDFObjRef:135>}",
+null
+],
+[
+"129",
+"{'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:131>}",
+null
+],
+[
+"130",
+"<PDFStream(130): raw=5333, {'Filter': [/'FlateDecode'], 'Length': 5333}>",
+"8204fbd71dc99d8f65ab7f5d49ac2ab0b458187d078dca21041d16b44020136b"
+],
+[
+"131",
+"{'F2': <PDFObjRef:13>, 'F16': <PDFObjRef:119>, 'F1': <PDFObjRef:10>, 'F6': <PDFObjRef:33>}",
+null
+],
+[
+"132",
+"{'Type': /'Pages', 'Count': 2, 'Kids': [<PDFObjRef:5>, <PDFObjRef:25>], 'Parent': <PDFObjRef:3>}",
+null
+],
+[
+"133",
+"{'Type': /'Pages', 'Count': 2, 'Kids': [<PDFObjRef:53>, <PDFObjRef:57>], 'Parent': <PDFObjRef:3>}",
+null
+],
+[
+"134",
+"{'Type': /'Pages', 'Count': 2, 'Kids': [<PDFObjRef:88>, <PDFObjRef:99>], 'Parent': <PDFObjRef:3>}",
+null
+],
+[
+"135",
+"{'Type': /'Pages', 'Count': 2, 'Kids': [<PDFObjRef:103>, <PDFObjRef:128>], 'Parent': <PDFObjRef:3>}",
+null
+],
+[
+"136",
+"{}",
+null
+],
+[
+"137",
+"None",
+null
+],
+[
+"138",
+"{}",
+null
+]
+],
+"pages": [
+{
+"pageid": "5",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [
+"Font",
+"ProcSet"
+],
+"contents": [
+"<PDFObjRef:21>",
+"<PDFObjRef:4>",
+"<PDFObjRef:22>",
+"<PDFObjRef:23>"
+],
+"attrs": [
+"Type",
+"Resources",
+"Contents",
+"Parent",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:24>}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+},
+{
+"pageid": "25",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [
+"Font",
+"ProcSet",
+"XObject"
+],
+"contents": [
+"<PDFObjRef:21>",
+"<PDFObjRef:4>",
+"<PDFObjRef:50>",
+"<PDFObjRef:23>"
+],
+"attrs": [
+"Type",
+"Resources",
+"Contents",
+"Parent",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:51>, 'XObject': <PDFObjRef:52>}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+},
+{
+"pageid": "53",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [
+"Font",
+"ProcSet"
+],
+"contents": [
+"<PDFObjRef:21>",
+"<PDFObjRef:4>",
+"<PDFObjRef:55>",
+"<PDFObjRef:23>"
+],
+"attrs": [
+"Type",
+"Resources",
+"Contents",
+"Parent",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:56>}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+},
+{
+"pageid": "57",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [
+"Font",
+"ProcSet",
+"XObject"
+],
+"contents": [
+"<PDFObjRef:21>",
+"<PDFObjRef:4>",
+"<PDFObjRef:85>",
+"<PDFObjRef:23>"
+],
+"attrs": [
+"Type",
+"Resources",
+"Contents",
+"Parent",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:86>, 'XObject': <PDFObjRef:87>}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+},
+{
+"pageid": "88",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [
+"Font",
+"ProcSet",
+"XObject"
+],
+"contents": [
+"<PDFObjRef:21>",
+"<PDFObjRef:4>",
+"<PDFObjRef:96>",
+"<PDFObjRef:23>"
+],
+"attrs": [
+"Type",
+"Resources",
+"Contents",
+"Parent",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:97>, 'XObject': <PDFObjRef:98>}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+},
+{
+"pageid": "99",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [
+"Font",
+"ProcSet"
+],
+"contents": [
+"<PDFObjRef:21>",
+"<PDFObjRef:4>",
+"<PDFObjRef:101>",
+"<PDFObjRef:23>"
+],
+"attrs": [
+"Type",
+"Resources",
+"Contents",
+"Parent",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:102>}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+},
+{
+"pageid": "103",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [
+"Font",
+"ProcSet"
+],
+"contents": [
+"<PDFObjRef:21>",
+"<PDFObjRef:4>",
+"<PDFObjRef:126>",
+"<PDFObjRef:23>"
+],
+"attrs": [
+"Type",
+"Resources",
+"Contents",
+"Parent",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:127>}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+},
+{
+"pageid": "128",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [
+"Font",
+"ProcSet"
+],
+"contents": [
+"<PDFObjRef:21>",
+"<PDFObjRef:4>",
+"<PDFObjRef:130>",
+"<PDFObjRef:23>"
+],
+"attrs": [
+"Type",
+"Resources",
+"Contents",
+"Parent",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:131>}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+}
+],
+"outlines": [],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "corrupt1",
+"open": "ok",
+"xrefs": [
+{
+"repr": "sha256:81bd6f748320bd6f14d783883e73b64bf1a98b8ac0cdb6d8d0693a61c6ab5a11",
+"trailer": "{'Size': 139, 'Root': <PDFObjRef:2>, 'Info': <PDFObjRef:1>}",
+"ids": [
+[
+"1",
+"(None, 188586, 0)"
+],
+[
+"2",
+"(None, 190267, 0)"
+],
+[
+"3",
+"(None, 189913, 0)"
+],
+[
+"4",
+"(None, 190117, 0)"
+],
+[
+"5",
+"(None, 188750, 0)"
+],
+[
+"6",
+"(None, 11070, 0)"
+],
+[
+"7",
+"(None, 9, 0)"
+],
+[
+"8",
+"(None, 65473, 0)"
+],
+[
+"9",
+"(None, 65273, 0)"
+],
+[
+"10",
+"(None, 1823, 0)"
+],
+[
+"11",
+"(None, 83592, 0)"
+],
+[
+"12",
+"(None, 83391, 0)"
+],
+[
+"13",
+"(None, 2966, 0)"
+],
+[
+"14",
+"(None, 4105, 0)"
+],
+[
+"15",
+"(None, 105941, 0)"
+],
+[
+"16",
+"(None, 105746, 0)"
+],
+[
+"17",
+"(None, 5721, 0)"
+],
+[
+"18",
+"(None, 108132, 0)"
+],
+[
+"19",
+"(None, 107936, 0)"
+],
+[
+"20",
+"(None, 6672, 0)"
+],
+[
+"21",
+"(None, 190017, 0)"
+],
+[
+"22",
+"(None, 7805, 0)"
+],
+[
+"23",
+"(None, 190067, 0)"
+],
+[
+"24",
+"(None, 11004, 0)"
+],
+[
+"25",
+"(None, 188853, 0)"
+],
+[
+"26",
+"(None, 21441, 0)"
+],
+[
+"27",
+"(None, 11131, 0)"
+],
+[
+"28",
+"(None, 125352, 0)"
+],
+[
+"29",
+"(None, 125158, 0)"
+],
+[
+"30",
+"(None, 12085, 0)"
+],
+[
+"31",
+"(None, 133634, 0)"
+],
+[
+"32",
+"(None, 133424, 0)"
+],
+[
+"33",
+"(None, 13031, 0)"
+],
+[
+"34",
+"(None, 14172, 0)"
+],
+[
+"35",
+"(None, 15179, 0)"
+],
+[
+"36",
+"(None, 15212, 0)"
+],
+[
+"37",
+"(None, 15281, 0)"
+],
+[
+"38",
+"(None, 15341, 0)"
+],
+[
+"39",
+"(None, 15423, 0)"
+],
+[
+"40",
+"(None, 15509, 0)"
+],
+[
+"41",
+"(None, 15587, 0)"
+],
+[
+"42",
+"(None, 15677, 0)"
+],
+[
+"43",
+"(None, 17418, 0)"
+],
+[
+"44",
+"(None, 17451, 0)"
+],
+[
+"45",
+"(None, 17520, 0)"
+],
+[
+"46",
+"(None, 17580, 0)"
+],
+[
+"47",
+"(None, 17662, 0)"
+],
+[
+"48",
+"(None, 17748, 0)"
+],
+[
+"49",
+"(None, 17838, 0)"
+],
+[
+"50",
+"(None, 17916, 0)"
+],
+[
+"51",
+"(None, 21318, 0)"
+],
+[
+"52",
+"(None, 21395, 0)"
+],
+[
+"53",
+"(None, 189036, 0)"
+],
+[
+"54",
+"(None, 25741, 0)"
+],
+[
+"55",
+"(None, 21519, 0)"
+],
+[
+"56",
+"(None, 25675, 0)"
+],
+[
+"57",
+"(None, 189141, 0)"
+],
+[
+"58",
+"(None, 37867, 0)"
+],
+[
+"59",
+"(None, 25803, 0)"
+],
+[
+"60",
+"(None, 26806, 0)"
+],
+[
+"61",
+"(None, 26839, 0)"
+],
+[
+"62",
+"(None, 26872, 0)"
+],
+[
+"63",
+"(None, 26932, 0)"
+],
+[
+"64",
+"(None, 27012, 0)"
+],
+[
+"65",
+"(None, 28707, 0)"
+],
+[
+"66",
+"(None, 28740, 0)"
+],
+[
+"67",
+"(None, 28773, 0)"
+],
+[
+"68",
+"(None, 28833, 0)"
+],
+[
+"69",
+"(None, 152470, 0)"
+],
+[
+"70",
+"(None, 152277, 0)"
+],
+[
+"71",
+"(None, 28915, 0)"
+],
+[
+"72",
+"(None, 29914, 0)"
+],
+[
+"73",
+"(None, 156289, 0)"
+],
+[
+"74",
+"(None, 156101, 0)"
+],
+[
+"75",
+"(None, 30819, 0)"
+],
+[
+"76",
+"(None, 162191, 0)"
+],
+[
+"77",
+"(None, 162002, 0)"
+],
+[
+"78",
+"(None, 31737, 0)"
+],
+[
+"79",
+"(None, 164405, 0)"
+],
+[
+"80",
+"(None, 164211, 0)"
+],
+[
+"81",
+"(None, 32713, 0)"
+],
+[
+"82",
+"(None, 165882, 0)"
+],
+[
+"83",
+"(None, 165696, 0)"
+],
+[
+"84",
+"(None, 33721, 0)"
+],
+[
+"85",
+"(None, 34723, 0)"
+],
+[
+"86",
+"(None, 37687, 0)"
+],
+[
+"87",
+"(None, 37821, 0)"
+],
+[
+"88",
+"(None, 189325, 0)"
+],
+[
+"89",
+"(None, 43865, 0)"
+],
+[
+"90",
+"(None, 37945, 0)"
+],
+[
+"91",
+"(None, 39632, 0)"
+],
+[
+"92",
+"(None, 39665, 0)"
+],
+[
+"93",
+"(None, 39710, 0)"
+],
+[
+"94",
+"(None, 39770, 0)"
+],
+[
+"95",
+"(None, 39850, 0)"
+],
+[
+"96",
+"(None, 39926, 0)"
+],
+[
+"97",
+"(None, 43698, 0)"
+],
+[
+"98",
+"(None, 43831, 0)"
+],
+[
+"99",
+"(None, 189430, 0)"
+],
+[
+"100",
+"(None, 48190, 0)"
+],
+[
+"101",
+"(None, 43943, 0)"
+],
+[
+"102",
+"(None, 48079, 0)"
+],
+[
+"103",
+"(None, 189616, 0)"
+],
+[
+"104",
+"(None, 59668, 0)"
+],
+[
+"105",
+"(None, 168305, 0)"
+],
+[
+"106",
+"(None, 168110, 0)"
+],
+[
+"107",
+"(None, 48254, 0)"
+],
+[
+"108",
+"(None, 173633, 0)"
+],
+[
+"109",
+"(None, 173439, 0)"
+],
+[
+"110",
+"(None, 49258, 0)"
+],
+[
+"111",
+"(None, 177195, 0)"
+],
+[
+"112",
+"(None, 176999, 0)"
+],
+[
+"113",
+"(None, 50249, 0)"
+],
+[
+"114",
+"(None, 179459, 0)"
+],
+[
+"115",
+"(None, 179271, 0)"
+],
+[
+"116",
+"(None, 51251, 0)"
+],
+[
+"117",
+"(None, 182021, 0)"
+],
+[
+"118",
+"(None, 181833, 0)"
+],
+[
+"119",
+"(None, 52223, 0)"
+],
+[
+"120",
+"(None, 184602, 0)"
+],
+[
+"121",
+"(None, 184407, 0)"
+],
+[
+"122",
+"(None, 53227, 0)"
+],
+[
+"123",
+"(None, 186163, 0)"
+],
+[
+"124",
+"(None, 185969, 0)"
+],
+[
+"125",
+"(None, 54169, 0)"
+],
+[
+"126",
+"(None, 55176, 0)"
+],
+[
+"127",
+"(None, 59510, 0)"
+],
+[
+"128",
+"(None, 189724, 0)"
+],
+[
+"129",
+"(None, 65209, 0)"
+],
+[
+"130",
+"(None, 59732, 0)"
+],
+[
+"131",
+"(None, 65140, 0)"
+],
+[
+"132",
+"(None, 188958, 0)"
+],
+[
+"133",
+"(None, 189246, 0)"
+],
+[
+"134",
+"(None, 189537, 0)"
+],
+[
+"135",
+"(None, 189832, 0)"
+],
+[
+"136",
+"(None, 190199, 0)"
+],
+[
+"137",
+"(None, 190222, 0)"
+],
+[
+"138",
+"(None, 190244, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /'Catalog', 'Pages': <PDFObjRef:3>, 'Outlines': <PDFObjRef:136>, 'Threads': <PDFObjRef:137>, 'Names': <PDFObjRef:138>}",
+"info": "[{'Creator': b' TeX output 2006.04.14:1650', 'Producer': b'dvipdfm 0.13.2c, Copyright \\xa9 1998, by Mark A. Wicks', 'CreationDate': b\"D:20060414165500+00'00'\"}]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"1",
+"{'Creator': b' TeX output 2006.04.14:1650', 'Producer': b'dvipdfm 0.13.2c, Copyright \\xa9 1998, by Mark A. Wicks', 'CreationDate': b\"D:20060414165500+00'00'\"}",
+null
+],
+[
+"2",
+"{'Type': /'Catalog', 'Pages': <PDFObjRef:3>, 'Outlines': <PDFObjRef:136>, 'Threads': <PDFObjRef:137>, 'Names': <PDFObjRef:138>}",
+null
+],
+[
+"3",
+"{'Type': /'Pages', 'Count': 8, 'Kids': [<PDFObjRef:132>, <PDFObjRef:133>, <PDFObjRef:134>, <PDFObjRef:135>], 'MediaBox': [0, 0, 595, 842]}",
+null
+],
+[
+"4",
+"<PDFStream(4): raw=33, {'Length': 33}>",
+"912ea1a0c58127e2c435aa9ef9dc4e7afc0b05e60e5eec3cbe8f5f08a1a797ed"
+],
+[
+"5",
+"{'Type': /'Page', 'Resources': <PDFObjRef:6>, 'Contents': [<PDFObjRef:21>, <PDFObjRef:4>, <PDFObjRef:22>, <PDFObjRef:23>], 'Parent': <PDFObjRef:132>}",
+null
+],
+[
+"6",
+"{'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:24>}",
+null
+],
+[
+"7",
+"sha256:8a6277970f245ee6a7deaeb9ee50ff617391c99e4fe692a6f5b488783d0caf92",
+null
+],
+[
+"8",
+"<PDFStream(8): raw=17802, {'Filter': [/'FlateDecode'], 'Length1': 1658, 'Length2': 16861, 'Length3': 532, 'Length': 17802}>",
+"a9955dfca29a18603c481254173dbdb10a6b8249a3333160b6b939c216b647a8"
+],
+[
+"9",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-168, -341, 1000, 960], 'FontName': /'MZSZGI+NimbusRomNo9L-Medi', 'ItalicAngle': 0, 'StemV': 140, 'FontFile': <PDFObjRef:8>, 'Flags': 4}",
+null
+],
+[
+"10",
+"sha256:d45ad94b66a6b8d7a2edfd54ca0d2af4c5a1b69ce831a61acc42d6ffc7df58fd",
+null
+],
+[
+"11",
+"<PDFStream(11): raw=22037, {'Filter': [/'FlateDecode'], 'Length1': 1662, 'Length2': 21096, 'Length3': 532, 'Length': 22037}>",
+"b11b146ba17b5dfe6f098246262a6185f5b9d17b2e1693a014aea5f3982286c7"
+],
+[
+"12",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-168, -281, 1000, 924], 'FontName': /'QTLIUY+NimbusRomNo9L-Regu', 'ItalicAngle': 0, 'StemV': 85, 'FontFile': <PDFObjRef:11>, 'Flags': 4}",
+null
+],
+[
+"13",
+"sha256:e79bac2930131ca72c22fa050b19ec742ed7721bc362e1922d7eea7c19df29ab",
+null
+],
+[
+"14",
+"sha256:1eb17949589a1a93616703d9e7f044ab50ebb3be5f4ea73d90e5492af609bcde",
+null
+],
+[
+"15",
+"<PDFStream(15): raw=1881, {'Filter': [/'FlateDecode'], 'Length1': 724, 'Length2': 1345, 'Length3': 533, 'Length': 1881}>",
+"b84a6ef352f798ecd7d1a31785c84ab26d76a7e1752b05df14fa68ce4ee21d15"
+],
+[
+"16",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-29, -960, 1116, 775], 'FontName': /'ZNQAHA+CMSY10', 'ItalicAngle': -14.035, 'StemV': 85, 'FontFile': <PDFObjRef:15>, 'Flags': 68}",
+null
+],
+[
+"17",
+"sha256:fa96daee6c36d1afc09f6f278ff96b8f9dfcefa15acbd57ac6dd3cbb6a9f95f1",
+null
+],
+[
+"18",
+"<PDFStream(18): raw=16909, {'Filter': [/'FlateDecode'], 'Length1': 1644, 'Length2': 16017, 'Length3': 532, 'Length': 16909}>",
+"ea559c40e4bd4e2e94f9fe99ae7c68320563cf623afac2ea5c1a6a13ec88692f"
+],
+[
+"19",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-12, -237, 650, 811], 'FontName': /'CXOZYQ+NimbusMonL-Regu', 'ItalicAngle': 0, 'StemV': 41, 'FontFile': <PDFObjRef:18>, 'Flags': 4}",
+null
+],
+[
+"20",
+"sha256:079b6b220dfbd706adb09b34ae92927f94b3e0ea461c7e047574b7e01858e6bd",
+null
+],
+[
+"21",
+"<PDFStream(21): raw=1, {'Length': 1}>",
+"01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+],
+[
+"22",
+"<PDFStream(22): raw=3125, {'Filter': [/'FlateDecode'], 'Length': 3125}>",
+"7312925e5cb11cc3f5b4cebc09db2408b4b13c162b6f77141085e2aa767cde43"
+],
+[
+"23",
+"<PDFStream(23): raw=1, {'Length': 1}>",
+"01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+],
+[
+"24",
+"{'F1': <PDFObjRef:10>, 'F2': <PDFObjRef:13>, 'F3': <PDFObjRef:17>, 'F4': <PDFObjRef:20>}",
+null
+],
+[
+"25",
+"{'Type': /'Page', 'Resources': <PDFObjRef:26>, 'Contents': [<PDFObjRef:21>, <PDFObjRef:4>, <PDFObjRef:50>, <PDFObjRef:23>], 'Parent': <PDFObjRef:132>}",
+null
+],
+[
+"26",
+"{'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:51>, 'XObject': <PDFObjRef:52>}",
+null
+],
+[
+"27",
+"sha256:c106fcd779f12bac39a1b9763f5549240d2130ee5aef8a3b7968d4cb2b8a85c1",
+null
+],
+[
+"28",
+"<PDFStream(28): raw=7958, {'Filter': [/'FlateDecode'], 'Length1': 727, 'Length2': 7392, 'Length3': 533, 'Length': 7958}>",
+"f818f5f05d3ca79cad710bf120873f710aafd784c14418654eeb1b60a55dd0ba"
+],
+[
+"29",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-32, -250, 1048, 750], 'FontName': /'HAUISC+CMMI10', 'ItalicAngle': -14.04, 'StemV': 72, 'FontFile': <PDFObjRef:28>, 'Flags': 68}",
+null
+],
+[
+"30",
+"sha256:99c2d6c6595d567f5bd8f0ddf8ee7c96eb369a2ec08677c87e47361e28acf3f7",
+null
+],
+[
+"31",
+"<PDFStream(31): raw=18526, {'Filter': [/'FlateDecode'], 'Length1': 1679, 'Length2': 17567, 'Length3': 532, 'Length': 18526}>",
+"8c34ed0830d0517f20236bdea89b4def7df0bfe09835401c502b5fd12a7a5804"
+],
+[
+"32",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-169, -270, 1010, 924], 'FontName': /'HGTKKD+NimbusRomNo9L-ReguItal', 'ItalicAngle': -15.5, 'StemV': 78, 'FontFile': <PDFObjRef:31>, 'Flags': 68}",
+null
+],
+[
+"33",
+"sha256:6d68b63520de9ce053ebed95b85a9c5864550ac52bbb3214d8e7b6925f6f9565",
+null
+],
+[
+"34",
+"<PDFStream(34): raw=772, {'Length': 772, 'Filter': /'FlateDecode', 'Name': /'Im1', 'Type': /'XObject', 'Subtype': /'Form', 'BBox': [0, 0, 2384, 3370], 'FormType': 1, 'Matrix': [1, 0, 0, 1, -74, -619], 'Resources': {'ProcSet': [/'PDF', /'Text'], 'ExtGState': <PDFObjRef:35>, 'Font': <PDFObjRef:36>}}>",
+"661306f149560498381a19802856bb9e801c14da7133a244809a082e1dd1d96c"
+],
+[
+"35",
+"{'R4': <PDFObjRef:37>}",
+null
+],
+[
+"36",
+"{'R9': <PDFObjRef:38>, 'R11': <PDFObjRef:39>, 'R13': <PDFObjRef:40>, 'R15': <PDFObjRef:41>}",
+null
+],
+[
+"37",
+"{'Type': /'ExtGState', 'Name': /'R4', 'TR': /'Identity'}",
+null
+],
+[
+"38",
+"{'Subtype': /'Type1', 'BaseFont': /'Helvetica-Bold', 'Type': /'Font', 'Name': /'R9'}",
+null
+],
+[
+"39",
+"{'Subtype': /'Type1', 'BaseFont': /'Helvetica-Oblique', 'Type': /'Font', 'Name': /'R11'}",
+null
+],
+[
+"40",
+"{'Subtype': /'Type1', 'BaseFont': /'Helvetica', 'Type': /'Font', 'Name': /'R13'}",
+null
+],
+[
+"41",
+"{'Subtype': /'Type1', 'BaseFont': /'Helvetica-BoldOblique', 'Type': /'Font', 'Name': /'R15'}",
+null
+],
+[
+"42",
+"sha256:3d8700a1adf6b9c0880aa2aa62aed5c407189fe5db40f4fcdb0306c185151603",
+"cc36e3c818b9ec4ec934b6b5e3d15530674580647e8d9debd609302c22aeb5fd"
+],
+[
+"43",
+"{'R4': <PDFObjRef:45>}",
+null
+],
+[
+"44",
+"{'R9': <PDFObjRef:46>, 'R11': <PDFObjRef:47>, 'R13': <PDFObjRef:48>, 'R15': <PDFObjRef:49>}",
+null
+],
+[
+"45",
+"{'Type': /'ExtGState', 'Name': /'R4', 'TR': /'Identity'}",
+null
+],
+[
+"46",
+"{'Subtype': /'Type1', 'BaseFont': /'Helvetica-Bold', 'Type': /'Font', 'Name': /'R9'}",
+null
+],
+[
+"47",
+"{'Subtype': /'Type1', 'BaseFont': /'Helvetica-Oblique', 'Type': /'Font', 'Name': /'R11'}",
+null
+],
+[
+"48",
+"{'Subtype': /'Type1', 'BaseFont': /'Helvetica-BoldOblique', 'Type': /'Font', 'Name': /'R13'}",
+null
+],
+[
+"49",
+"{'Subtype': /'Type1', 'BaseFont': /'Helvetica', 'Type': /'Font', 'Name': /'R15'}",
+null
+],
+[
+"50",
+"<PDFStream(50): raw=3328, {'Filter': [/'FlateDecode'], 'Length': 3328}>",
+"5228fc295ebe83a97d6636418284686b63a486e40d6eb4950ba2404b759f7c2e"
+],
+[
+"51",
+"{'F2': <PDFObjRef:13>, 'F1': <PDFObjRef:10>, 'F5': <PDFObjRef:30>, 'F4': <PDFObjRef:20>, 'F6': <PDFObjRef:33>}",
+null
+],
+[
+"52",
+"{'Im1': <PDFObjRef:34>, 'Im2': <PDFObjRef:42>}",
+null
+],
+[
+"53",
+"{'Type': /'Page', 'Resources': <PDFObjRef:54>, 'Contents': [<PDFObjRef:21>, <PDFObjRef:4>, <PDFObjRef:55>, <PDFObjRef:23>], 'Parent': <PDFObjRef:133>}",
+null
+],
+[
+"54",
+"{'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:56>}",
+null
+],
+[
+"55",
+"<PDFStream(55): raw=4082, {'Filter': [/'FlateDecode'], 'Length': 4082}>",
+"b1d9e20dd7d9f0a4a08e97b84000d10391a4467ad15de015cc802b4d513376aa"
+],
+[
+"56",
+"{'F2': <PDFObjRef:13>, 'F6': <PDFObjRef:33>, 'F4': <PDFObjRef:20>, 'F1': <PDFObjRef:10>}",
+null
+],
+[
+"57",
+"{'Type': /'Page', 'Resources': <PDFObjRef:58>, 'Contents': [<PDFObjRef:21>, <PDFObjRef:4>, <PDFObjRef:85>, <PDFObjRef:23>], 'Parent': <PDFObjRef:133>}",
+null
+],
+[
+"58",
+"{'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:86>, 'XObject': <PDFObjRef:87>}",
+null
+],
+[
+"59",
+"<PDFStream(59): raw=768, {'Length': 768, 'Filter': /'FlateDecode', 'Name': /'Im3', 'Type': /'XObject', 'Subtype': /'Form', 'BBox': [0, 0, 2384, 3370], 'FormType': 1, 'Matrix': [1, 0, 0, 1, -65, -610], 'Resources': {'ProcSet': [/'PDF', /'Text'], 'ExtGState': <PDFObjRef:60>, 'Font': <PDFObjRef:61>}}>",
+"4f8ff946a84570655b9ba579e000a24fee722b5cc9509328cfbf8549e4df3e12"
+],
+[
+"60",
+"{'R4': <PDFObjRef:62>}",
+null
+],
+[
+"61",
+"{'R9': <PDFObjRef:63>}",
+null
+],
+[
+"62",
+"{'Type': /'ExtGState', 'Name': /'R4', 'TR': /'Identity'}",
+null
+],
+[
+"63",
+"{'Subtype': /'Type1', 'BaseFont': /'Courier-Bold', 'Type': /'Font', 'Name': /'R9'}",
+null
+],
+[
+"64",
+"sha256:61278f01517a8aaf908959e89ce4de1d31ecab1cec2631028243007877a33dfb",
+"4e2b5b1a0d75525faf9c1c20db0a5e297a9071b641a68acd67df393ce5acb295"
+],
+[
+"65",
+"{'R4': <PDFObjRef:67>}",
+null
+],
+[
+"66",
+"{'R9': <PDFObjRef:68>}",
+null
+],
+[
+"67",
+"{'Type': /'ExtGState', 'Name': /'R4', 'TR': /'Identity'}",
+null
+],
+[
+"68",
+"{'Subtype': /'Type1', 'BaseFont': /'Helvetica-Bold', 'Type': /'Font', 'Name': /'R9'}",
+null
+],
+[
+"69",
+"<PDFStream(69): raw=3517, {'Filter': [/'FlateDecode'], 'Length1': 724, 'Length2': 2965, 'Length3': 533, 'Length': 3517}>",
+"0236222b2ba636daa4af513aa251a932d6ccbfe85fbaa7ba8e5376ce71125823"
+],
+[
+"70",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-24, -250, 1110, 750], 'FontName': /'GUZBXZ+CMMI8', 'ItalicAngle': -14.04, 'StemV': 78, 'FontFile': <PDFObjRef:69>, 'Flags': 68}",
+null
+],
+[
+"71",
+"sha256:8d3bead43c4cb55f55dcf8de4b52b5a3e9279b21910d2ce96276dbcb5ee0c3ef",
+null
+],
+[
+"72",
+"sha256:7f912375e61878fce552151d95151c5bc4ad4f2e7953c4ccc5fa85d17fee1453",
+null
+],
+[
+"73",
+"<PDFStream(73): raw=5599, {'Filter': [/'FlateDecode'], 'Length1': 720, 'Length2': 5039, 'Length3': 533, 'Length': 5599}>",
+"7c026cf1b8eddbd831f8396fb61a9865f7c81be2a09dbc9cfc7c4cc395ac570c"
+],
+[
+"74",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-251, -250, 1009, 969], 'FontName': /'ZWKHFA+CMR10', 'ItalicAngle': 0, 'StemV': 69, 'FontFile': <PDFObjRef:73>, 'Flags': 4}",
+null
+],
+[
+"75",
+"sha256:f8095cb1ade534a52088b225f5be8b649843705ff8294684e36b05af91afde95",
+null
+],
+[
+"76",
+"<PDFStream(76): raw=1906, {'Filter': [/'FlateDecode'], 'Length1': 809, 'Length2': 1313, 'Length3': 534, 'Length': 1906}>",
+"65e10b2d7ef7b8d8f136a2b0d47f72cd5c7087b4478931905f045d166c0b0a99"
+],
+[
+"77",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-24, -2960, 1454, 772], 'FontName': /'RFVSJO+CMEX10', 'ItalicAngle': 0, 'StemV': 47, 'FontFile': <PDFObjRef:76>, 'Flags': 4}",
+null
+],
+[
+"78",
+"sha256:5051e7330ff6c77c9ae81bccfa4a487c30ebf4673223860b35e0843dea92bc72",
+null
+],
+[
+"79",
+"<PDFStream(79): raw=1178, {'Filter': [/'FlateDecode'], 'Length1': 721, 'Length2': 666, 'Length3': 533, 'Length': 1178}>",
+"bf355cfefb165d34abbc8131d76654f784b00b7637c06aa2423e6e91850ca1ec"
+],
+[
+"80",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-30, -955, 1185, 779], 'FontName': /'TXGKAB+CMSY8', 'ItalicAngle': -14.035, 'StemV': 89, 'FontFile': <PDFObjRef:79>, 'Flags': 68}",
+null
+],
+[
+"81",
+"sha256:f5bc462b3845d3b0490f2b5fef9003b75207c7191c4341a3390d510a8ac1af36",
+null
+],
+[
+"82",
+"<PDFStream(82): raw=2114, {'Filter': [/'FlateDecode'], 'Length1': 712, 'Length2': 1578, 'Length3': 533, 'Length': 2114}>",
+"831fa0f1fca87d4aeffbf75d40232eb990fbd80e85c202941c3b562a981bc64a"
+],
+[
+"83",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-36, -250, 1070, 750], 'FontName': /'XHEGHT+CMR8', 'ItalicAngle': 0, 'StemV': 76, 'FontFile': <PDFObjRef:82>, 'Flags': 4}",
+null
+],
+[
+"84",
+"sha256:d7f28daad840dec6a1188fd74c20ec3e3db2e3f0618715ec8f5b1c06e9237866",
+null
+],
+[
+"85",
+"<PDFStream(85): raw=2890, {'Filter': [/'FlateDecode'], 'Length': 2890}>",
+"af01fc2d5313c96a7694398ea41666063e4cb6120c88d40993e3c5ee9b0e0345"
+],
+[
+"86",
+"{'F2': <PDFObjRef:13>, 'F6': <PDFObjRef:33>, 'F1': <PDFObjRef:10>, 'F5': <PDFObjRef:30>, 'F7': <PDFObjRef:71>, 'F8': <PDFObjRef:75>, 'F9': <PDFObjRef:78>, 'F10': <PDFObjRef:81>, 'F11': <PDFObjRef:84>, 'F3': <PDFObjRef:17>}",
+null
+],
+[
+"87",
+"{'Im3': <PDFObjRef:59>, 'Im4': <PDFObjRef:64>}",
+null
+],
+[
+"88",
+"{'Type': /'Page', 'Resources': <PDFObjRef:89>, 'Contents': [<PDFObjRef:21>, <PDFObjRef:4>, <PDFObjRef:96>, <PDFObjRef:23>], 'Parent': <PDFObjRef:134>}",
+null
+],
+[
+"89",
+"{'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:97>, 'XObject': <PDFObjRef:98>}",
+null
+],
+[
+"90",
+"sha256:9f2cacfbf63af9b56bc19384fbce15832a47c487e2d250ad75abc8de5c00ea06",
+"71e9b6681ab4997babc4d75d4073eaee1ab2d907c5e82824f725d5bfc195467d"
+],
+[
+"91",
+"{'R4': <PDFObjRef:93>}",
+null
+],
+[
+"92",
+"{'R9': <PDFObjRef:94>, 'R11': <PDFObjRef:95>}",
+null
+],
+[
+"93",
+"{'Type': /'ExtGState', 'Name': /'R4', 'TR': /'Identity'}",
+null
+],
+[
+"94",
+"{'Subtype': /'Type1', 'BaseFont': /'Courier-Bold', 'Type': /'Font', 'Name': /'R9'}",
+null
+],
+[
+"95",
+"{'Subtype': /'Type1', 'BaseFont': /'Courier', 'Type': /'Font', 'Name': /'R11'}",
+null
+],
+[
+"96",
+"<PDFStream(96): raw=3698, {'Filter': [/'FlateDecode'], 'Length': 3698}>",
+"3b265a79d9b7ae6e7dbb35d21f55328a6cb550dda6dd87dba83a7d97300141e1"
+],
+[
+"97",
+"{'F2': <PDFObjRef:13>, 'F8': <PDFObjRef:75>, 'F5': <PDFObjRef:30>, 'F1': <PDFObjRef:10>, 'F7': <PDFObjRef:71>, 'F9': <PDFObjRef:78>, 'F10': <PDFObjRef:81>, 'F3': <PDFObjRef:17>, 'F6': <PDFObjRef:33>, 'F4': <PDFObjRef:20>}",
+null
+],
+[
+"98",
+"{'Im5': <PDFObjRef:90>}",
+null
+],
+[
+"99",
+"{'Type': /'Page', 'Resources': <PDFObjRef:100>, 'Contents': [<PDFObjRef:21>, <PDFObjRef:4>, <PDFObjRef:101>, <PDFObjRef:23>], 'Parent': <PDFObjRef:134>}",
+null
+],
+[
+"100",
+"{'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:102>}",
+null
+],
+[
+"101",
+"<PDFStream(101): raw=4061, {'Filter': [/'FlateDecode'], 'Length': 4061}>",
+"f6f96609f83284e6cd9bb913877e6951f87d7d43c4237e3b56e101c78f71d85a"
+],
+[
+"102",
+"{'F2': <PDFObjRef:13>, 'F6': <PDFObjRef:33>, 'F4': <PDFObjRef:20>, 'F1': <PDFObjRef:10>, 'F5': <PDFObjRef:30>, 'F7': <PDFObjRef:71>, 'F8': <PDFObjRef:75>, 'F3': <PDFObjRef:17>}",
+null
+],
+[
+"103",
+"{'Type': /'Page', 'Resources': <PDFObjRef:104>, 'Contents': [<PDFObjRef:21>, <PDFObjRef:4>, <PDFObjRef:126>, <PDFObjRef:23>], 'Parent': <PDFObjRef:135>}",
+null
+],
+[
+"104",
+"{'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:127>}",
+null
+],
+[
+"105",
+"<PDFStream(105): raw=5019, {'Filter': [/'FlateDecode'], 'Length1': 724, 'Length2': 4464, 'Length3': 533, 'Length': 5019}>",
+"e7343fbe76303cbb7fcefc21c9aaf7231d4d7c12badffe101ba0858934bbc6b7"
+],
+[
+"106",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-29, -250, 1075, 750], 'FontName': /'NUIFHB+CMMI9', 'ItalicAngle': -14.04, 'StemV': 74, 'FontFile': <PDFObjRef:105>, 'Flags': 68}",
+null
+],
+[
+"107",
+"sha256:aa48227390e9f60035fe804900ebe655c81b80805e47cbcbe2aff581a6d4a102",
+null
+],
+[
+"108",
+"<PDFStream(108): raw=3251, {'Filter': [/'FlateDecode'], 'Length1': 723, 'Length2': 2705, 'Length3': 533, 'Length': 3251}>",
+"170b799a77285d2d8fbbf4f6f5ea0bf577f2169c63b6570abcec71bdba356834"
+],
+[
+"109",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [11, -250, 1241, 750], 'FontName': /'VVFIIS+CMMI6', 'ItalicAngle': -14.04, 'StemV': 85, 'FontFile': <PDFObjRef:108>, 'Flags': 68}",
+null
+],
+[
+"110",
+"sha256:9aaa41de3988e2ac658cea6ed8aa1077eb45cad92a5da9899c0adff1f46093d6",
+null
+],
+[
+"111",
+"<PDFStream(111): raw=1961, {'Filter': [/'FlateDecode'], 'Length1': 721, 'Length2': 1420, 'Length3': 533, 'Length': 1961}>",
+"8874a97b184b737afc1d725c86841b4d9e694970251c8e192248bd41911d2d2e"
+],
+[
+"112",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-30, -958, 1146, 777], 'FontName': /'LZSPAE+CMSY9', 'ItalicAngle': -14.035, 'StemV': 87, 'FontFile': <PDFObjRef:111>, 'Flags': 68}",
+null
+],
+[
+"113",
+"sha256:68462e692d5edfdc96018dfc8c5d9f0d50ae80e9996e7bd0ea2da0477c82364a",
+null
+],
+[
+"114",
+"<PDFStream(114): raw=2259, {'Filter': [/'FlateDecode'], 'Length1': 712, 'Length2': 1727, 'Length3': 533, 'Length': 2259}>",
+"1c178c63102113aa6885b01fc514c2107be01e2974def5b7fa8edd66ef4ef97b"
+],
+[
+"115",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-39, -250, 1036, 750], 'FontName': /'WCHBLG+CMR9', 'ItalicAngle': 0, 'StemV': 74, 'FontFile': <PDFObjRef:114>, 'Flags': 4}",
+null
+],
+[
+"116",
+"sha256:77273c07686d95e35a7642cf65413bad0ad0edc30a3ef66ac9f9a6a2f625a73c",
+null
+],
+[
+"117",
+"<PDFStream(117): raw=2271, {'Filter': [/'FlateDecode'], 'Length1': 712, 'Length2': 1742, 'Length3': 533, 'Length': 2271}>",
+"07437fe0d483107964f9248056d502a9a104639f7902b9a56136f9b7ae785629"
+],
+[
+"118",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-20, -250, 1193, 750], 'FontName': /'GBBFVH+CMR6', 'ItalicAngle': 0, 'StemV': 83, 'FontFile': <PDFObjRef:117>, 'Flags': 4}",
+null
+],
+[
+"119",
+"sha256:259e93ad8907fcdc85d99e1f5afd3dbef352602c8401f83ef97401136830a297",
+null
+],
+[
+"120",
+"<PDFStream(120): raw=1253, {'Filter': [/'FlateDecode'], 'Length1': 720, 'Length2': 736, 'Length3': 533, 'Length': 1253}>",
+"869ee60736fe4e96af5413dafab45aeb52a573cc26f60baa20b7e4e10083f927"
+],
+[
+"121",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-4, -948, 1329, 786], 'FontName': /'KMQSUM+CMSY6', 'ItalicAngle': -14.035, 'StemV': 93, 'FontFile': <PDFObjRef:120>, 'Flags': 68}",
+null
+],
+[
+"122",
+"sha256:724a1d1484cda4c69d60bdc7053720108fde2b831a309b3fe34b8e24d186d176",
+null
+],
+[
+"123",
+"<PDFStream(123): raw=2308, {'Filter': [/'FlateDecode'], 'Length1': 723, 'Length2': 1768, 'Length3': 533, 'Length': 2308}>",
+"91e7fbb380f869d8cc850f5494b1751ba496b24448966020fe249996741d9cda"
+],
+[
+"124",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [37, -250, 1349, 750], 'FontName': /'IWMUZJ+CMMI5', 'ItalicAngle': -14.04, 'StemV': 90, 'FontFile': <PDFObjRef:123>, 'Flags': 68}",
+null
+],
+[
+"125",
+"sha256:506a28f1aa24dad9de3f04a3dd3cd52fcc6fb06c10ade70b450ea88b92ed6ad2",
+null
+],
+[
+"126",
+"<PDFStream(126): raw=4259, {'Filter': [/'FlateDecode'], 'Length': 4259}>",
+"9a8254c77e82200b99abab49dee330391875a8448899ae691f51f73d062a435b"
+],
+[
+"127",
+"{'F2': <PDFObjRef:13>, 'F12': <PDFObjRef:107>, 'F13': <PDFObjRef:110>, 'F14': <PDFObjRef:113>, 'F15': <PDFObjRef:116>, 'F16': <PDFObjRef:119>, 'F17': <PDFObjRef:122>, 'F18': <PDFObjRef:125>, 'F9': <PDFObjRef:78>, 'F1': <PDFObjRef:10>, 'F4': <PDFObjRef:20>}",
+null
+],
+[
+"128",
+"{'Type': /'Page', 'Resources': <PDFObjRef:129>, 'Contents': [<PDFObjRef:21>, <PDFObjRef:4>, <PDFObjRef:130>, <PDFObjRef:23>], 'Parent': <PDFObjRef:135>}",
+null
+],
+[
+"129",
+"{'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:131>}",
+null
+],
+[
+"130",
+"<PDFStream(130): raw=5333, {'Filter': [/'FlateDecode'], 'Length': 5333}>",
+"8204fbd71dc99d8f65ab7f5d49ac2ab0b458187d078dca21041d16b44020136b"
+],
+[
+"131",
+"{'F2': <PDFObjRef:13>, 'F16': <PDFObjRef:119>, 'F1': <PDFObjRef:10>, 'F6': <PDFObjRef:33>}",
+null
+],
+[
+"132",
+"{'Type': /'Pages', 'Count': 2, 'Kids': [<PDFObjRef:5>, <PDFObjRef:25>], 'Parent': <PDFObjRef:3>}",
+null
+],
+[
+"133",
+"{'Type': /'Pages', 'Count': 2, 'Kids': [<PDFObjRef:53>, <PDFObjRef:57>], 'Parent': <PDFObjRef:3>}",
+null
+],
+[
+"134",
+"{'Type': /'Pages', 'Count': 2, 'Kids': [<PDFObjRef:88>, <PDFObjRef:99>], 'Parent': <PDFObjRef:3>}",
+null
+],
+[
+"135",
+"{'Type': /'Pages', 'Count': 2, 'Kids': [<PDFObjRef:103>, <PDFObjRef:128>], 'Parent': <PDFObjRef:3>}",
+null
+],
+[
+"136",
+"{}",
+null
+],
+[
+"137",
+"None",
+null
+],
+[
+"138",
+"{}",
+null
+]
+],
+"pages": [
+{
+"pageid": "5",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [
+"Font",
+"ProcSet"
+],
+"contents": [
+"<PDFObjRef:21>",
+"<PDFObjRef:4>",
+"<PDFObjRef:22>",
+"<PDFObjRef:23>"
+],
+"attrs": [
+"Type",
+"Resources",
+"Contents",
+"Parent",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:24>}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+},
+{
+"pageid": "25",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [
+"Font",
+"ProcSet",
+"XObject"
+],
+"contents": [
+"<PDFObjRef:21>",
+"<PDFObjRef:4>",
+"<PDFObjRef:50>",
+"<PDFObjRef:23>"
+],
+"attrs": [
+"Type",
+"Resources",
+"Contents",
+"Parent",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:51>, 'XObject': <PDFObjRef:52>}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+},
+{
+"pageid": "53",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [
+"Font",
+"ProcSet"
+],
+"contents": [
+"<PDFObjRef:21>",
+"<PDFObjRef:4>",
+"<PDFObjRef:55>",
+"<PDFObjRef:23>"
+],
+"attrs": [
+"Type",
+"Resources",
+"Contents",
+"Parent",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:56>}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+},
+{
+"pageid": "57",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [
+"Font",
+"ProcSet",
+"XObject"
+],
+"contents": [
+"<PDFObjRef:21>",
+"<PDFObjRef:4>",
+"<PDFObjRef:85>",
+"<PDFObjRef:23>"
+],
+"attrs": [
+"Type",
+"Resources",
+"Contents",
+"Parent",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:86>, 'XObject': <PDFObjRef:87>}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+},
+{
+"pageid": "88",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [
+"Font",
+"ProcSet",
+"XObject"
+],
+"contents": [
+"<PDFObjRef:21>",
+"<PDFObjRef:4>",
+"<PDFObjRef:96>",
+"<PDFObjRef:23>"
+],
+"attrs": [
+"Type",
+"Resources",
+"Contents",
+"Parent",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:97>, 'XObject': <PDFObjRef:98>}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+},
+{
+"pageid": "99",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [
+"Font",
+"ProcSet"
+],
+"contents": [
+"<PDFObjRef:21>",
+"<PDFObjRef:4>",
+"<PDFObjRef:101>",
+"<PDFObjRef:23>"
+],
+"attrs": [
+"Type",
+"Resources",
+"Contents",
+"Parent",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:102>}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+},
+{
+"pageid": "103",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [
+"Font",
+"ProcSet"
+],
+"contents": [
+"<PDFObjRef:21>",
+"<PDFObjRef:4>",
+"<PDFObjRef:126>",
+"<PDFObjRef:23>"
+],
+"attrs": [
+"Type",
+"Resources",
+"Contents",
+"Parent",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:127>}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+},
+{
+"pageid": "128",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [
+"Font",
+"ProcSet"
+],
+"contents": [
+"<PDFObjRef:21>",
+"<PDFObjRef:4>",
+"<PDFObjRef:130>",
+"<PDFObjRef:23>"
+],
+"attrs": [
+"Type",
+"Resources",
+"Contents",
+"Parent",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:131>}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+}
+],
+"outlines": [],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "corrupt2",
+"open": "ok",
+"xrefs": [
+{
+"repr": "sha256:81bd6f748320bd6f14d783883e73b64bf1a98b8ac0cdb6d8d0693a61c6ab5a11",
+"trailer": "{'Size': 139, 'Root': <PDFObjRef:2>, 'Info': <PDFObjRef:1>}",
+"ids": [
+[
+"1",
+"(None, 188586, 0)"
+],
+[
+"2",
+"(None, 190267, 0)"
+],
+[
+"3",
+"(None, 189913, 0)"
+],
+[
+"4",
+"(None, 190117, 0)"
+],
+[
+"5",
+"(None, 188750, 0)"
+],
+[
+"6",
+"(None, 11070, 0)"
+],
+[
+"7",
+"(None, 9, 0)"
+],
+[
+"8",
+"(None, 65473, 0)"
+],
+[
+"9",
+"(None, 65273, 0)"
+],
+[
+"10",
+"(None, 1823, 0)"
+],
+[
+"11",
+"(None, 83592, 0)"
+],
+[
+"12",
+"(None, 83391, 0)"
+],
+[
+"13",
+"(None, 2966, 0)"
+],
+[
+"14",
+"(None, 4105, 0)"
+],
+[
+"15",
+"(None, 105941, 0)"
+],
+[
+"16",
+"(None, 105746, 0)"
+],
+[
+"17",
+"(None, 5721, 0)"
+],
+[
+"18",
+"(None, 108132, 0)"
+],
+[
+"19",
+"(None, 107936, 0)"
+],
+[
+"20",
+"(None, 6672, 0)"
+],
+[
+"21",
+"(None, 190017, 0)"
+],
+[
+"22",
+"(None, 7805, 0)"
+],
+[
+"23",
+"(None, 190067, 0)"
+],
+[
+"24",
+"(None, 11004, 0)"
+],
+[
+"25",
+"(None, 188853, 0)"
+],
+[
+"26",
+"(None, 21441, 0)"
+],
+[
+"27",
+"(None, 11131, 0)"
+],
+[
+"28",
+"(None, 125352, 0)"
+],
+[
+"29",
+"(None, 125158, 0)"
+],
+[
+"30",
+"(None, 12085, 0)"
+],
+[
+"31",
+"(None, 133634, 0)"
+],
+[
+"32",
+"(None, 133424, 0)"
+],
+[
+"33",
+"(None, 13031, 0)"
+],
+[
+"34",
+"(None, 14172, 0)"
+],
+[
+"35",
+"(None, 15179, 0)"
+],
+[
+"36",
+"(None, 15212, 0)"
+],
+[
+"37",
+"(None, 15281, 0)"
+],
+[
+"38",
+"(None, 15341, 0)"
+],
+[
+"39",
+"(None, 15423, 0)"
+],
+[
+"40",
+"(None, 15509, 0)"
+],
+[
+"41",
+"(None, 15587, 0)"
+],
+[
+"42",
+"(None, 15677, 0)"
+],
+[
+"43",
+"(None, 17418, 0)"
+],
+[
+"44",
+"(None, 17451, 0)"
+],
+[
+"45",
+"(None, 17520, 0)"
+],
+[
+"46",
+"(None, 17580, 0)"
+],
+[
+"47",
+"(None, 17662, 0)"
+],
+[
+"48",
+"(None, 17748, 0)"
+],
+[
+"49",
+"(None, 17838, 0)"
+],
+[
+"50",
+"(None, 17916, 0)"
+],
+[
+"51",
+"(None, 21318, 0)"
+],
+[
+"52",
+"(None, 21395, 0)"
+],
+[
+"53",
+"(None, 189036, 0)"
+],
+[
+"54",
+"(None, 25741, 0)"
+],
+[
+"55",
+"(None, 21519, 0)"
+],
+[
+"56",
+"(None, 25675, 0)"
+],
+[
+"57",
+"(None, 189141, 0)"
+],
+[
+"58",
+"(None, 37867, 0)"
+],
+[
+"59",
+"(None, 25803, 0)"
+],
+[
+"60",
+"(None, 26806, 0)"
+],
+[
+"61",
+"(None, 26839, 0)"
+],
+[
+"62",
+"(None, 26872, 0)"
+],
+[
+"63",
+"(None, 26932, 0)"
+],
+[
+"64",
+"(None, 27012, 0)"
+],
+[
+"65",
+"(None, 28707, 0)"
+],
+[
+"66",
+"(None, 28740, 0)"
+],
+[
+"67",
+"(None, 28773, 0)"
+],
+[
+"68",
+"(None, 28833, 0)"
+],
+[
+"69",
+"(None, 152470, 0)"
+],
+[
+"70",
+"(None, 152277, 0)"
+],
+[
+"71",
+"(None, 28915, 0)"
+],
+[
+"72",
+"(None, 29914, 0)"
+],
+[
+"73",
+"(None, 156289, 0)"
+],
+[
+"74",
+"(None, 156101, 0)"
+],
+[
+"75",
+"(None, 30819, 0)"
+],
+[
+"76",
+"(None, 162191, 0)"
+],
+[
+"77",
+"(None, 162002, 0)"
+],
+[
+"78",
+"(None, 31737, 0)"
+],
+[
+"79",
+"(None, 164405, 0)"
+],
+[
+"80",
+"(None, 164211, 0)"
+],
+[
+"81",
+"(None, 32713, 0)"
+],
+[
+"82",
+"(None, 165882, 0)"
+],
+[
+"83",
+"(None, 165696, 0)"
+],
+[
+"84",
+"(None, 33721, 0)"
+],
+[
+"85",
+"(None, 34723, 0)"
+],
+[
+"86",
+"(None, 37687, 0)"
+],
+[
+"87",
+"(None, 37821, 0)"
+],
+[
+"88",
+"(None, 189325, 0)"
+],
+[
+"89",
+"(None, 43865, 0)"
+],
+[
+"90",
+"(None, 37945, 0)"
+],
+[
+"91",
+"(None, 39632, 0)"
+],
+[
+"92",
+"(None, 39665, 0)"
+],
+[
+"93",
+"(None, 39710, 0)"
+],
+[
+"94",
+"(None, 39770, 0)"
+],
+[
+"95",
+"(None, 39850, 0)"
+],
+[
+"96",
+"(None, 39926, 0)"
+],
+[
+"97",
+"(None, 43698, 0)"
+],
+[
+"98",
+"(None, 43831, 0)"
+],
+[
+"99",
+"(None, 189430, 0)"
+],
+[
+"100",
+"(None, 48190, 0)"
+],
+[
+"101",
+"(None, 43943, 0)"
+],
+[
+"102",
+"(None, 48079, 0)"
+],
+[
+"103",
+"(None, 189616, 0)"
+],
+[
+"104",
+"(None, 59668, 0)"
+],
+[
+"105",
+"(None, 168305, 0)"
+],
+[
+"106",
+"(None, 168110, 0)"
+],
+[
+"107",
+"(None, 48254, 0)"
+],
+[
+"108",
+"(None, 173633, 0)"
+],
+[
+"109",
+"(None, 173439, 0)"
+],
+[
+"110",
+"(None, 49258, 0)"
+],
+[
+"111",
+"(None, 177195, 0)"
+],
+[
+"112",
+"(None, 176999, 0)"
+],
+[
+"113",
+"(None, 50249, 0)"
+],
+[
+"114",
+"(None, 179459, 0)"
+],
+[
+"115",
+"(None, 179271, 0)"
+],
+[
+"116",
+"(None, 51251, 0)"
+],
+[
+"117",
+"(None, 182021, 0)"
+],
+[
+"118",
+"(None, 181833, 0)"
+],
+[
+"119",
+"(None, 52223, 0)"
+],
+[
+"120",
+"(None, 184602, 0)"
+],
+[
+"121",
+"(None, 184407, 0)"
+],
+[
+"122",
+"(None, 53227, 0)"
+],
+[
+"123",
+"(None, 186163, 0)"
+],
+[
+"124",
+"(None, 185969, 0)"
+],
+[
+"125",
+"(None, 54169, 0)"
+],
+[
+"126",
+"(None, 55176, 0)"
+],
+[
+"127",
+"(None, 59510, 0)"
+],
+[
+"128",
+"(None, 189724, 0)"
+],
+[
+"129",
+"(None, 65209, 0)"
+],
+[
+"130",
+"(None, 59732, 0)"
+],
+[
+"131",
+"(None, 65140, 0)"
+],
+[
+"132",
+"(None, 188958, 0)"
+],
+[
+"133",
+"(None, 189246, 0)"
+],
+[
+"134",
+"(None, 189537, 0)"
+],
+[
+"135",
+"(None, 189832, 0)"
+],
+[
+"136",
+"(None, 190199, 0)"
+],
+[
+"137",
+"(None, 190222, 0)"
+],
+[
+"138",
+"(None, 190244, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /'Catalog', 'Pages': <PDFObjRef:3>, 'Outlines': <PDFObjRef:136>, 'Threads': <PDFObjRef:137>, 'Names': <PDFObjRef:138>}",
+"info": "[{'Creator': b' TeX output 2006.04.14:1650', 'Producer': b'dvipdfm 0.13.2c, Copyright \\xa9 1998, by Mark A. Wicks', 'CreationDate': b\"D:20060414165500+00'00'\"}]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"1",
+"{'Creator': b' TeX output 2006.04.14:1650', 'Producer': b'dvipdfm 0.13.2c, Copyright \\xa9 1998, by Mark A. Wicks', 'CreationDate': b\"D:20060414165500+00'00'\"}",
+null
+],
+[
+"2",
+"{'Type': /'Catalog', 'Pages': <PDFObjRef:3>, 'Outlines': <PDFObjRef:136>, 'Threads': <PDFObjRef:137>, 'Names': <PDFObjRef:138>}",
+null
+],
+[
+"3",
+"{'Type': /'Pages', 'Count': 8, 'Kids': [<PDFObjRef:132>, <PDFObjRef:133>, <PDFObjRef:134>, <PDFObjRef:135>], 'MediaBox': [0, 0, 595, 842]}",
+null
+],
+[
+"4",
+"<PDFStream(4): raw=33, {'Length': 33}>",
+"912ea1a0c58127e2c435aa9ef9dc4e7afc0b05e60e5eec3cbe8f5f08a1a797ed"
+],
+[
+"5",
+"{'Type': /'Page', 'Resources': <PDFObjRef:6>, 'Contents': [<PDFObjRef:21>, <PDFObjRef:4>, <PDFObjRef:22>, <PDFObjRef:23>], 'Parent': <PDFObjRef:132>}",
+null
+],
+[
+"6",
+"{'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:24>}",
+null
+],
+[
+"7",
+"sha256:8a6277970f245ee6a7deaeb9ee50ff617391c99e4fe692a6f5b488783d0caf92",
+null
+],
+[
+"8",
+"<PDFStream(8): raw=17802, {'Filter': [/'FlateDecode'], 'Length1': 1658, 'Length2': 16861, 'Length3': 532, 'Length': 17802}>",
+"7acdadff2e61371033d8a7e0ae53b28437e6181a739099efab1a04b13ff39478"
+],
+[
+"9",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-168, -341, 1000, 960], 'FontName': /'MZSZGI+NimbusRomNo9L-Medi', 'ItalicAngle': 0, 'StemV': 140, 'FontFile': <PDFObjRef:8>, 'Flags': 4}",
+null
+],
+[
+"10",
+"sha256:d45ad94b66a6b8d7a2edfd54ca0d2af4c5a1b69ce831a61acc42d6ffc7df58fd",
+null
+],
+[
+"11",
+"<PDFStream(11): raw=22037, {'Filter': [/'FlateDecode'], 'Length1': 1662, 'Length2': 21096, 'Length3': 532, 'Length': 22037}>",
+"e0ca7d96dccd7c5255e5a3c1e94060237fc176f58b6935b29f7b0662184c4c80"
+],
+[
+"12",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-168, -281, 1000, 924], 'FontName': /'QTLIUY+NimbusRomNo9L-Regu', 'ItalicAngle': 0, 'StemV': 85, 'FontFile': <PDFObjRef:11>, 'Flags': 4}",
+null
+],
+[
+"13",
+"sha256:e79bac2930131ca72c22fa050b19ec742ed7721bc362e1922d7eea7c19df29ab",
+null
+],
+[
+"14",
+"sha256:1eb17949589a1a93616703d9e7f044ab50ebb3be5f4ea73d90e5492af609bcde",
+null
+],
+[
+"15",
+"<PDFStream(15): raw=1881, {'Filter': [/'FlateDecode'], 'Length1': 724, 'Length2': 1345, 'Length3': 533, 'Length': 1881}>",
+"b84a6ef352f798ecd7d1a31785c84ab26d76a7e1752b05df14fa68ce4ee21d15"
+],
+[
+"16",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-29, -960, 1116, 775], 'FontName': /'ZNQAHA+CMSY10', 'ItalicAngle': -14.035, 'StemV': 85, 'FontFile': <PDFObjRef:15>, 'Flags': 68}",
+null
+],
+[
+"17",
+"sha256:fa96daee6c36d1afc09f6f278ff96b8f9dfcefa15acbd57ac6dd3cbb6a9f95f1",
+null
+],
+[
+"18",
+"<PDFStream(18): raw=16909, {'Filter': [/'FlateDecode'], 'Length1': 1644, 'Length2': 16017, 'Length3': 532, 'Length': 16909}>",
+"55c523fae9a4b6f1e30add70d40f58d6f4dc3c99f1e322ef399a9af3f5f9e6a1"
+],
+[
+"19",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-12, -237, 650, 811], 'FontName': /'CXOZYQ+NimbusMonL-Regu', 'ItalicAngle': 0, 'StemV': 41, 'FontFile': <PDFObjRef:18>, 'Flags': 4}",
+null
+],
+[
+"20",
+"sha256:079b6b220dfbd706adb09b34ae92927f94b3e0ea461c7e047574b7e01858e6bd",
+null
+],
+[
+"21",
+"<PDFStream(21): raw=1, {'Length': 1}>",
+"01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+],
+[
+"22",
+"<PDFStream(22): raw=3125, {'Filter': [/'FlateDecode'], 'Length': 3125}>",
+"7312925e5cb11cc3f5b4cebc09db2408b4b13c162b6f77141085e2aa767cde43"
+],
+[
+"23",
+"<PDFStream(23): raw=1, {'Length': 1}>",
+"01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+],
+[
+"24",
+"{'F1': <PDFObjRef:10>, 'F2': <PDFObjRef:13>, 'F3': <PDFObjRef:17>, 'F4': <PDFObjRef:20>}",
+null
+],
+[
+"25",
+"{'Type': /'Page', 'Resources': <PDFObjRef:26>, 'Contents': [<PDFObjRef:21>, <PDFObjRef:4>, <PDFObjRef:50>, <PDFObjRef:23>], 'Parent': <PDFObjRef:132>}",
+null
+],
+[
+"26",
+"{'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:51>, 'XObject': <PDFObjRef:52>}",
+null
+],
+[
+"27",
+"sha256:c106fcd779f12bac39a1b9763f5549240d2130ee5aef8a3b7968d4cb2b8a85c1",
+null
+],
+[
+"28",
+"<PDFStream(28): raw=7958, {'Filter': [/'FlateDecode'], 'Length1': 727, 'Length2': 7392, 'Length3': 533, 'Length': 7958}>",
+"891b3dbff6334634007363dd0772a02805690b2571aa5b127592c4432b2cfc4d"
+],
+[
+"29",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-32, -250, 1048, 750], 'FontName': /'HAUISC+CMMI10', 'ItalicAngle': -14.04, 'StemV': 72, 'FontFile': <PDFObjRef:28>, 'Flags': 68}",
+null
+],
+[
+"30",
+"sha256:99c2d6c6595d567f5bd8f0ddf8ee7c96eb369a2ec08677c87e47361e28acf3f7",
+null
+],
+[
+"31",
+"<PDFStream(31): raw=18526, {'Filter': [/'FlateDecode'], 'Length1': 1679, 'Length2': 17567, 'Length3': 532, 'Length': 18526}>",
+"9fd831e5db96c4076c91c82bcfcad2cafeed5e9348ae23946411515ac871cd44"
+],
+[
+"32",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-169, -270, 1010, 924], 'FontName': /'HGTKKD+NimbusRomNo9L-ReguItal', 'ItalicAngle': -15.5, 'StemV': 78, 'FontFile': <PDFObjRef:31>, 'Flags': 68}",
+null
+],
+[
+"33",
+"sha256:6d68b63520de9ce053ebed95b85a9c5864550ac52bbb3214d8e7b6925f6f9565",
+null
+],
+[
+"34",
+"<PDFStream(34): raw=772, {'Length': 772, 'Filter': /'FlateDecode', 'Name': /'Im1', 'Type': /'XObject', 'Subtype': /'Form', 'BBox': [0, 0, 2384, 3370], 'FormType': 1, 'Matrix': [1, 0, 0, 1, -74, -619], 'Resources': {'ProcSet': [/'PDF', /'Text'], 'ExtGState': <PDFObjRef:35>, 'Font': <PDFObjRef:36>}}>",
+"661306f149560498381a19802856bb9e801c14da7133a244809a082e1dd1d96c"
+],
+[
+"35",
+"{'R4': <PDFObjRef:37>}",
+null
+],
+[
+"36",
+"{'R9': <PDFObjRef:38>, 'R11': <PDFObjRef:39>, 'R13': <PDFObjRef:40>, 'R15': <PDFObjRef:41>}",
+null
+],
+[
+"37",
+"{'Type': /'ExtGState', 'Name': /'R4', 'TR': /'Identity'}",
+null
+],
+[
+"38",
+"{'Subtype': /'Type1', 'BaseFont': /'Helvetica-Bold', 'Type': /'Font', 'Name': /'R9'}",
+null
+],
+[
+"39",
+"{'Subtype': /'Type1', 'BaseFont': /'Helvetica-Oblique', 'Type': /'Font', 'Name': /'R11'}",
+null
+],
+[
+"40",
+"{'Subtype': /'Type1', 'BaseFont': /'Helvetica', 'Type': /'Font', 'Name': /'R13'}",
+null
+],
+[
+"41",
+"{'Subtype': /'Type1', 'BaseFont': /'Helvetica-BoldOblique', 'Type': /'Font', 'Name': /'R15'}",
+null
+],
+[
+"42",
+"sha256:3d8700a1adf6b9c0880aa2aa62aed5c407189fe5db40f4fcdb0306c185151603",
+"cc36e3c818b9ec4ec934b6b5e3d15530674580647e8d9debd609302c22aeb5fd"
+],
+[
+"43",
+"{'R4': <PDFObjRef:45>}",
+null
+],
+[
+"44",
+"{'R9': <PDFObjRef:46>, 'R11': <PDFObjRef:47>, 'R13': <PDFObjRef:48>, 'R15': <PDFObjRef:49>}",
+null
+],
+[
+"45",
+"{'Type': /'ExtGState', 'Name': /'R4', 'TR': /'Identity'}",
+null
+],
+[
+"46",
+"{'Subtype': /'Type1', 'BaseFont': /'Helvetica-Bold', 'Type': /'Font', 'Name': /'R9'}",
+null
+],
+[
+"47",
+"{'Subtype': /'Type1', 'BaseFont': /'Helvetica-Oblique', 'Type': /'Font', 'Name': /'R11'}",
+null
+],
+[
+"48",
+"{'Subtype': /'Type1', 'BaseFont': /'Helvetica-BoldOblique', 'Type': /'Font', 'Name': /'R13'}",
+null
+],
+[
+"49",
+"{'Subtype': /'Type1', 'BaseFont': /'Helvetica', 'Type': /'Font', 'Name': /'R15'}",
+null
+],
+[
+"50",
+"<PDFStream(50): raw=3328, {'Filter': [/'FlateDecode'], 'Length': 3328}>",
+"5228fc295ebe83a97d6636418284686b63a486e40d6eb4950ba2404b759f7c2e"
+],
+[
+"51",
+"{'F2': <PDFObjRef:13>, 'F1': <PDFObjRef:10>, 'F5': <PDFObjRef:30>, 'F4': <PDFObjRef:20>, 'F6': <PDFObjRef:33>}",
+null
+],
+[
+"52",
+"{'Im1': <PDFObjRef:34>, 'Im2': <PDFObjRef:42>}",
+null
+],
+[
+"53",
+"{'Type': /'Page', 'Resources': <PDFObjRef:54>, 'Contents': [<PDFObjRef:21>, <PDFObjRef:4>, <PDFObjRef:55>, <PDFObjRef:23>], 'Parent': <PDFObjRef:133>}",
+null
+],
+[
+"54",
+"{'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:56>}",
+null
+],
+[
+"55",
+"<PDFStream(55): raw=4082, {'Filter': [/'FlateDecode'], 'Length': 4082}>",
+"b1d9e20dd7d9f0a4a08e97b84000d10391a4467ad15de015cc802b4d513376aa"
+],
+[
+"56",
+"{'F2': <PDFObjRef:13>, 'F6': <PDFObjRef:33>, 'F4': <PDFObjRef:20>, 'F1': <PDFObjRef:10>}",
+null
+],
+[
+"57",
+"{'Type': /'Page', 'Resources': <PDFObjRef:58>, 'Contents': [<PDFObjRef:21>, <PDFObjRef:4>, <PDFObjRef:85>, <PDFObjRef:23>], 'Parent': <PDFObjRef:133>}",
+null
+],
+[
+"58",
+"{'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:86>, 'XObject': <PDFObjRef:87>}",
+null
+],
+[
+"59",
+"<PDFStream(59): raw=768, {'Length': 768, 'Filter': /'FlateDecode', 'Name': /'Im3', 'Type': /'XObject', 'Subtype': /'Form', 'BBox': [0, 0, 2384, 3370], 'FormType': 1, 'Matrix': [1, 0, 0, 1, -65, -610], 'Resources': {'ProcSet': [/'PDF', /'Text'], 'ExtGState': <PDFObjRef:60>, 'Font': <PDFObjRef:61>}}>",
+"4f8ff946a84570655b9ba579e000a24fee722b5cc9509328cfbf8549e4df3e12"
+],
+[
+"60",
+"{'R4': <PDFObjRef:62>}",
+null
+],
+[
+"61",
+"{'R9': <PDFObjRef:63>}",
+null
+],
+[
+"62",
+"{'Type': /'ExtGState', 'Name': /'R4', 'TR': /'Identity'}",
+null
+],
+[
+"63",
+"{'Subtype': /'Type1', 'BaseFont': /'Courier-Bold', 'Type': /'Font', 'Name': /'R9'}",
+null
+],
+[
+"64",
+"sha256:61278f01517a8aaf908959e89ce4de1d31ecab1cec2631028243007877a33dfb",
+"4e2b5b1a0d75525faf9c1c20db0a5e297a9071b641a68acd67df393ce5acb295"
+],
+[
+"65",
+"{'R4': <PDFObjRef:67>}",
+null
+],
+[
+"66",
+"{'R9': <PDFObjRef:68>}",
+null
+],
+[
+"67",
+"{'Type': /'ExtGState', 'Name': /'R4', 'TR': /'Identity'}",
+null
+],
+[
+"68",
+"{'Subtype': /'Type1', 'BaseFont': /'Helvetica-Bold', 'Type': /'Font', 'Name': /'R9'}",
+null
+],
+[
+"69",
+"<PDFStream(69): raw=3517, {'Filter': [/'FlateDecode'], 'Length1': 724, 'Length2': 2965, 'Length3': 533, 'Length': 3517}>",
+"0236222b2ba636daa4af513aa251a932d6ccbfe85fbaa7ba8e5376ce71125823"
+],
+[
+"70",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-24, -250, 1110, 750], 'FontName': /'GUZBXZ+CMMI8', 'ItalicAngle': -14.04, 'StemV': 78, 'FontFile': <PDFObjRef:69>, 'Flags': 68}",
+null
+],
+[
+"71",
+"sha256:8d3bead43c4cb55f55dcf8de4b52b5a3e9279b21910d2ce96276dbcb5ee0c3ef",
+null
+],
+[
+"72",
+"sha256:7f912375e61878fce552151d95151c5bc4ad4f2e7953c4ccc5fa85d17fee1453",
+null
+],
+[
+"73",
+"<PDFStream(73): raw=5599, {'Filter': [/'FlateDecode'], 'Length1': 720, 'Length2': 5039, 'Length3': 533, 'Length': 5599}>",
+"a29a5e33efe1e60b45fa7d5909e3f707bfa3a5321d24328fe50b785141ba6971"
+],
+[
+"74",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-251, -250, 1009, 969], 'FontName': /'ZWKHFA+CMR10', 'ItalicAngle': 0, 'StemV': 69, 'FontFile': <PDFObjRef:73>, 'Flags': 4}",
+null
+],
+[
+"75",
+"sha256:f8095cb1ade534a52088b225f5be8b649843705ff8294684e36b05af91afde95",
+null
+],
+[
+"76",
+"<PDFStream(76): raw=1906, {'Filter': [/'FlateDecode'], 'Length1': 809, 'Length2': 1313, 'Length3': 534, 'Length': 1906}>",
+"65e10b2d7ef7b8d8f136a2b0d47f72cd5c7087b4478931905f045d166c0b0a99"
+],
+[
+"77",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-24, -2960, 1454, 772], 'FontName': /'RFVSJO+CMEX10', 'ItalicAngle': 0, 'StemV': 47, 'FontFile': <PDFObjRef:76>, 'Flags': 4}",
+null
+],
+[
+"78",
+"sha256:5051e7330ff6c77c9ae81bccfa4a487c30ebf4673223860b35e0843dea92bc72",
+null
+],
+[
+"79",
+"<PDFStream(79): raw=1178, {'Filter': [/'FlateDecode'], 'Length1': 721, 'Length2': 666, 'Length3': 533, 'Length': 1178}>",
+"bf355cfefb165d34abbc8131d76654f784b00b7637c06aa2423e6e91850ca1ec"
+],
+[
+"80",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-30, -955, 1185, 779], 'FontName': /'TXGKAB+CMSY8', 'ItalicAngle': -14.035, 'StemV': 89, 'FontFile': <PDFObjRef:79>, 'Flags': 68}",
+null
+],
+[
+"81",
+"sha256:f5bc462b3845d3b0490f2b5fef9003b75207c7191c4341a3390d510a8ac1af36",
+null
+],
+[
+"82",
+"<PDFStream(82): raw=2114, {'Filter': [/'FlateDecode'], 'Length1': 712, 'Length2': 1578, 'Length3': 533, 'Length': 2114}>",
+"831fa0f1fca87d4aeffbf75d40232eb990fbd80e85c202941c3b562a981bc64a"
+],
+[
+"83",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-36, -250, 1070, 750], 'FontName': /'XHEGHT+CMR8', 'ItalicAngle': 0, 'StemV': 76, 'FontFile': <PDFObjRef:82>, 'Flags': 4}",
+null
+],
+[
+"84",
+"sha256:d7f28daad840dec6a1188fd74c20ec3e3db2e3f0618715ec8f5b1c06e9237866",
+null
+],
+[
+"85",
+"<PDFStream(85): raw=2890, {'Filter': [/'FlateDecode'], 'Length': 2890}>",
+"af01fc2d5313c96a7694398ea41666063e4cb6120c88d40993e3c5ee9b0e0345"
+],
+[
+"86",
+"{'F2': <PDFObjRef:13>, 'F6': <PDFObjRef:33>, 'F1': <PDFObjRef:10>, 'F5': <PDFObjRef:30>, 'F7': <PDFObjRef:71>, 'F8': <PDFObjRef:75>, 'F9': <PDFObjRef:78>, 'F10': <PDFObjRef:81>, 'F11': <PDFObjRef:84>, 'F3': <PDFObjRef:17>}",
+null
+],
+[
+"87",
+"{'Im3': <PDFObjRef:59>, 'Im4': <PDFObjRef:64>}",
+null
+],
+[
+"88",
+"{'Type': /'Page', 'Resources': <PDFObjRef:89>, 'Contents': [<PDFObjRef:21>, <PDFObjRef:4>, <PDFObjRef:96>, <PDFObjRef:23>], 'Parent': <PDFObjRef:134>}",
+null
+],
+[
+"89",
+"{'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:97>, 'XObject': <PDFObjRef:98>}",
+null
+],
+[
+"90",
+"sha256:9f2cacfbf63af9b56bc19384fbce15832a47c487e2d250ad75abc8de5c00ea06",
+"71e9b6681ab4997babc4d75d4073eaee1ab2d907c5e82824f725d5bfc195467d"
+],
+[
+"91",
+"{'R4': <PDFObjRef:93>}",
+null
+],
+[
+"92",
+"{'R9': <PDFObjRef:94>, 'R11': <PDFObjRef:95>}",
+null
+],
+[
+"93",
+"{'Type': /'ExtGState', 'Name': /'R4', 'TR': /'Identity'}",
+null
+],
+[
+"94",
+"{'Subtype': /'Type1', 'BaseFont': /'Courier-Bold', 'Type': /'Font', 'Name': /'R9'}",
+null
+],
+[
+"95",
+"{'Subtype': /'Type1', 'BaseFont': /'Courier', 'Type': /'Font', 'Name': /'R11'}",
+null
+],
+[
+"96",
+"<PDFStream(96): raw=3698, {'Filter': [/'FlateDecode'], 'Length': 3698}>",
+"3b265a79d9b7ae6e7dbb35d21f55328a6cb550dda6dd87dba83a7d97300141e1"
+],
+[
+"97",
+"{'F2': <PDFObjRef:13>, 'F8': <PDFObjRef:75>, 'F5': <PDFObjRef:30>, 'F1': <PDFObjRef:10>, 'F7': <PDFObjRef:71>, 'F9': <PDFObjRef:78>, 'F10': <PDFObjRef:81>, 'F3': <PDFObjRef:17>, 'F6': <PDFObjRef:33>, 'F4': <PDFObjRef:20>}",
+null
+],
+[
+"98",
+"{'Im5': <PDFObjRef:90>}",
+null
+],
+[
+"99",
+"{'Type': /'Page', 'Resources': <PDFObjRef:100>, 'Contents': [<PDFObjRef:21>, <PDFObjRef:4>, <PDFObjRef:101>, <PDFObjRef:23>], 'Parent': <PDFObjRef:134>}",
+null
+],
+[
+"100",
+"{'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:102>}",
+null
+],
+[
+"101",
+"<PDFStream(101): raw=4061, {'Filter': [/'FlateDecode'], 'Length': 4061}>",
+"f6f96609f83284e6cd9bb913877e6951f87d7d43c4237e3b56e101c78f71d85a"
+],
+[
+"102",
+"{'F2': <PDFObjRef:13>, 'F6': <PDFObjRef:33>, 'F4': <PDFObjRef:20>, 'F1': <PDFObjRef:10>, 'F5': <PDFObjRef:30>, 'F7': <PDFObjRef:71>, 'F8': <PDFObjRef:75>, 'F3': <PDFObjRef:17>}",
+null
+],
+[
+"103",
+"{'Type': /'Page', 'Resources': <PDFObjRef:104>, 'Contents': [<PDFObjRef:21>, <PDFObjRef:4>, <PDFObjRef:126>, <PDFObjRef:23>], 'Parent': <PDFObjRef:135>}",
+null
+],
+[
+"104",
+"{'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:127>}",
+null
+],
+[
+"105",
+"<PDFStream(105): raw=5019, {'Filter': [/'FlateDecode'], 'Length1': 724, 'Length2': 4464, 'Length3': 533, 'Length': 5019}>",
+"e7343fbe76303cbb7fcefc21c9aaf7231d4d7c12badffe101ba0858934bbc6b7"
+],
+[
+"106",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-29, -250, 1075, 750], 'FontName': /'NUIFHB+CMMI9', 'ItalicAngle': -14.04, 'StemV': 74, 'FontFile': <PDFObjRef:105>, 'Flags': 68}",
+null
+],
+[
+"107",
+"sha256:aa48227390e9f60035fe804900ebe655c81b80805e47cbcbe2aff581a6d4a102",
+null
+],
+[
+"108",
+"<PDFStream(108): raw=3251, {'Filter': [/'FlateDecode'], 'Length1': 723, 'Length2': 2705, 'Length3': 533, 'Length': 3251}>",
+"170b799a77285d2d8fbbf4f6f5ea0bf577f2169c63b6570abcec71bdba356834"
+],
+[
+"109",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [11, -250, 1241, 750], 'FontName': /'VVFIIS+CMMI6', 'ItalicAngle': -14.04, 'StemV': 85, 'FontFile': <PDFObjRef:108>, 'Flags': 68}",
+null
+],
+[
+"110",
+"sha256:9aaa41de3988e2ac658cea6ed8aa1077eb45cad92a5da9899c0adff1f46093d6",
+null
+],
+[
+"111",
+"<PDFStream(111): raw=1961, {'Filter': [/'FlateDecode'], 'Length1': 721, 'Length2': 1420, 'Length3': 533, 'Length': 1961}>",
+"4348c5323ce9e0275843a3871543611f3e9fcf0b7fa63dd0dafa5ef9ee363b63"
+],
+[
+"112",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-30, -958, 1146, 777], 'FontName': /'LZSPAE+CMSY9', 'ItalicAngle': -14.035, 'StemV': 87, 'FontFile': <PDFObjRef:111>, 'Flags': 68}",
+null
+],
+[
+"113",
+"sha256:68462e692d5edfdc96018dfc8c5d9f0d50ae80e9996e7bd0ea2da0477c82364a",
+null
+],
+[
+"114",
+"<PDFStream(114): raw=2259, {'Filter': [/'FlateDecode'], 'Length1': 712, 'Length2': 1727, 'Length3': 533, 'Length': 2259}>",
+"1c178c63102113aa6885b01fc514c2107be01e2974def5b7fa8edd66ef4ef97b"
+],
+[
+"115",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-39, -250, 1036, 750], 'FontName': /'WCHBLG+CMR9', 'ItalicAngle': 0, 'StemV': 74, 'FontFile': <PDFObjRef:114>, 'Flags': 4}",
+null
+],
+[
+"116",
+"sha256:77273c07686d95e35a7642cf65413bad0ad0edc30a3ef66ac9f9a6a2f625a73c",
+null
+],
+[
+"117",
+"<PDFStream(117): raw=2271, {'Filter': [/'FlateDecode'], 'Length1': 712, 'Length2': 1742, 'Length3': 533, 'Length': 2271}>",
+"07437fe0d483107964f9248056d502a9a104639f7902b9a56136f9b7ae785629"
+],
+[
+"118",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-20, -250, 1193, 750], 'FontName': /'GBBFVH+CMR6', 'ItalicAngle': 0, 'StemV': 83, 'FontFile': <PDFObjRef:117>, 'Flags': 4}",
+null
+],
+[
+"119",
+"sha256:259e93ad8907fcdc85d99e1f5afd3dbef352602c8401f83ef97401136830a297",
+null
+],
+[
+"120",
+"<PDFStream(120): raw=1253, {'Filter': [/'FlateDecode'], 'Length1': 720, 'Length2': 736, 'Length3': 533, 'Length': 1253}>",
+"869ee60736fe4e96af5413dafab45aeb52a573cc26f60baa20b7e4e10083f927"
+],
+[
+"121",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-4, -948, 1329, 786], 'FontName': /'KMQSUM+CMSY6', 'ItalicAngle': -14.035, 'StemV': 93, 'FontFile': <PDFObjRef:120>, 'Flags': 68}",
+null
+],
+[
+"122",
+"sha256:0b2ddce638ca61738223ea773017c4f3803db5c86aacd10f4b6d6c8b186ea386",
+null
+],
+[
+"123",
+"<PDFStream(123): raw=2308, {'Filter': [/'FlateDecode'], 'Length1': 723, 'Length2': 1768, 'Length3': 533, 'Length': 2308}>",
+"91e7fbb380f869d8cc850f5494b1751ba496b24448966020fe249996741d9cda"
+],
+[
+"124",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [37, -250, 1349, 750], 'FontName': /'IWMUZJ+CMMI5', 'ItalicAngle': -14.04, 'StemV': 90, 'FontFile': <PDFObjRef:123>, 'Flags': 68}",
+null
+],
+[
+"125",
+"sha256:506a28f1aa24dad9de3f04a3dd3cd52fcc6fb06c10ade70b450ea88b92ed6ad2",
+null
+],
+[
+"126",
+"<PDFStream(126): raw=4259, {'Filter': [/'FlateDecode'], 'Length': 4259}>",
+"9a8254c77e82200b99abab49dee330391875a8448899ae691f51f73d062a435b"
+],
+[
+"127",
+"{'F2': <PDFObjRef:13>, 'F12': <PDFObjRef:107>, 'F13': <PDFObjRef:110>, 'F14': <PDFObjRef:113>, 'F15': <PDFObjRef:116>, 'F16': <PDFObjRef:119>, 'F17': <PDFObjRef:122>, 'F18': <PDFObjRef:125>, 'F9': <PDFObjRef:78>, 'F1': <PDFObjRef:10>, 'F4': <PDFObjRef:20>}",
+null
+],
+[
+"128",
+"{'Type': /'Page', 'Resources': <PDFObjRef:129>, 'Contents': [<PDFObjRef:21>, <PDFObjRef:4>, <PDFObjRef:130>, <PDFObjRef:23>], 'Parent': <PDFObjRef:135>}",
+null
+],
+[
+"129",
+"{'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:131>}",
+null
+],
+[
+"130",
+"<PDFStream(130): raw=5333, {'Filter': [/'FlateDecode'], 'Length': 5333}>",
+"8204fbd71dc99d8f65ab7f5d49ac2ab0b458187d078dca21041d16b44020136b"
+],
+[
+"131",
+"{'F2': <PDFObjRef:13>, 'F16': <PDFObjRef:119>, 'F1': <PDFObjRef:10>, 'F6': <PDFObjRef:33>}",
+null
+],
+[
+"132",
+"{'Type': /'Pages', 'Count': 2, 'Kids': [<PDFObjRef:5>, <PDFObjRef:25>], 'Parent': <PDFObjRef:3>}",
+null
+],
+[
+"133",
+"{'Type': /'Pages', 'Count': 2, 'Kids': [<PDFObjRef:53>, <PDFObjRef:57>], 'Parent': <PDFObjRef:3>}",
+null
+],
+[
+"134",
+"{'Type': /'Pages', 'Count': 2, 'Kids': [<PDFObjRef:88>, <PDFObjRef:99>], 'Parent': <PDFObjRef:3>}",
+null
+],
+[
+"135",
+"{'Type': /'Pages', 'Count': 2, 'Kids': [<PDFObjRef:103>, <PDFObjRef:128>], 'Parent': <PDFObjRef:3>}",
+null
+],
+[
+"136",
+"{}",
+null
+],
+[
+"137",
+"None",
+null
+],
+[
+"138",
+"{}",
+null
+]
+],
+"pages": [
+{
+"pageid": "5",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [
+"Font",
+"ProcSet"
+],
+"contents": [
+"<PDFObjRef:21>",
+"<PDFObjRef:4>",
+"<PDFObjRef:22>",
+"<PDFObjRef:23>"
+],
+"attrs": [
+"Type",
+"Resources",
+"Contents",
+"Parent",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:24>}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+},
+{
+"pageid": "25",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [
+"Font",
+"ProcSet",
+"XObject"
+],
+"contents": [
+"<PDFObjRef:21>",
+"<PDFObjRef:4>",
+"<PDFObjRef:50>",
+"<PDFObjRef:23>"
+],
+"attrs": [
+"Type",
+"Resources",
+"Contents",
+"Parent",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:51>, 'XObject': <PDFObjRef:52>}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+},
+{
+"pageid": "53",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [
+"Font",
+"ProcSet"
+],
+"contents": [
+"<PDFObjRef:21>",
+"<PDFObjRef:4>",
+"<PDFObjRef:55>",
+"<PDFObjRef:23>"
+],
+"attrs": [
+"Type",
+"Resources",
+"Contents",
+"Parent",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:56>}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+},
+{
+"pageid": "57",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [
+"Font",
+"ProcSet",
+"XObject"
+],
+"contents": [
+"<PDFObjRef:21>",
+"<PDFObjRef:4>",
+"<PDFObjRef:85>",
+"<PDFObjRef:23>"
+],
+"attrs": [
+"Type",
+"Resources",
+"Contents",
+"Parent",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:86>, 'XObject': <PDFObjRef:87>}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+},
+{
+"pageid": "88",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [
+"Font",
+"ProcSet",
+"XObject"
+],
+"contents": [
+"<PDFObjRef:21>",
+"<PDFObjRef:4>",
+"<PDFObjRef:96>",
+"<PDFObjRef:23>"
+],
+"attrs": [
+"Type",
+"Resources",
+"Contents",
+"Parent",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:97>, 'XObject': <PDFObjRef:98>}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+},
+{
+"pageid": "99",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [
+"Font",
+"ProcSet"
+],
+"contents": [
+"<PDFObjRef:21>",
+"<PDFObjRef:4>",
+"<PDFObjRef:101>",
+"<PDFObjRef:23>"
+],
+"attrs": [
+"Type",
+"Resources",
+"Contents",
+"Parent",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:102>}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+},
+{
+"pageid": "103",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [
+"Font",
+"ProcSet"
+],
+"contents": [
+"<PDFObjRef:21>",
+"<PDFObjRef:4>",
+"<PDFObjRef:126>",
+"<PDFObjRef:23>"
+],
+"attrs": [
+"Type",
+"Resources",
+"Contents",
+"Parent",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:127>}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+},
+{
+"pageid": "128",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [
+"Font",
+"ProcSet"
+],
+"contents": [
+"<PDFObjRef:21>",
+"<PDFObjRef:4>",
+"<PDFObjRef:130>",
+"<PDFObjRef:23>"
+],
+"attrs": [
+"Type",
+"Resources",
+"Contents",
+"Parent",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:131>}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+}
+],
+"outlines": [],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "corrupt3",
+"open": "ok",
+"xrefs": [
+{
+"repr": "sha256:81bd6f748320bd6f14d783883e73b64bf1a98b8ac0cdb6d8d0693a61c6ab5a11",
+"trailer": "{'Size': 139, 'Root': <PDFObjRef:2>, 'Info': <PDFObjRef:1>}",
+"ids": [
+[
+"1",
+"(None, 188586, 0)"
+],
+[
+"2",
+"(None, 190267, 0)"
+],
+[
+"3",
+"(None, 189913, 0)"
+],
+[
+"4",
+"(None, 190117, 0)"
+],
+[
+"5",
+"(None, 188750, 0)"
+],
+[
+"6",
+"(None, 11070, 0)"
+],
+[
+"7",
+"(None, 9, 0)"
+],
+[
+"8",
+"(None, 65473, 0)"
+],
+[
+"9",
+"(None, 65273, 0)"
+],
+[
+"10",
+"(None, 1823, 0)"
+],
+[
+"11",
+"(None, 83592, 0)"
+],
+[
+"12",
+"(None, 83391, 0)"
+],
+[
+"13",
+"(None, 2966, 0)"
+],
+[
+"14",
+"(None, 4105, 0)"
+],
+[
+"15",
+"(None, 105941, 0)"
+],
+[
+"16",
+"(None, 105746, 0)"
+],
+[
+"17",
+"(None, 5721, 0)"
+],
+[
+"18",
+"(None, 108132, 0)"
+],
+[
+"19",
+"(None, 107936, 0)"
+],
+[
+"20",
+"(None, 6672, 0)"
+],
+[
+"21",
+"(None, 190017, 0)"
+],
+[
+"22",
+"(None, 7805, 0)"
+],
+[
+"23",
+"(None, 190067, 0)"
+],
+[
+"24",
+"(None, 11004, 0)"
+],
+[
+"25",
+"(None, 188853, 0)"
+],
+[
+"26",
+"(None, 21441, 0)"
+],
+[
+"27",
+"(None, 11131, 0)"
+],
+[
+"28",
+"(None, 125352, 0)"
+],
+[
+"29",
+"(None, 125158, 0)"
+],
+[
+"30",
+"(None, 12085, 0)"
+],
+[
+"31",
+"(None, 133634, 0)"
+],
+[
+"32",
+"(None, 133424, 0)"
+],
+[
+"33",
+"(None, 13031, 0)"
+],
+[
+"34",
+"(None, 14172, 0)"
+],
+[
+"35",
+"(None, 15179, 0)"
+],
+[
+"36",
+"(None, 15212, 0)"
+],
+[
+"37",
+"(None, 15281, 0)"
+],
+[
+"38",
+"(None, 15341, 0)"
+],
+[
+"39",
+"(None, 15423, 0)"
+],
+[
+"40",
+"(None, 15509, 0)"
+],
+[
+"41",
+"(None, 15587, 0)"
+],
+[
+"42",
+"(None, 15677, 0)"
+],
+[
+"43",
+"(None, 17418, 0)"
+],
+[
+"44",
+"(None, 17451, 0)"
+],
+[
+"45",
+"(None, 17520, 0)"
+],
+[
+"46",
+"(None, 17580, 0)"
+],
+[
+"47",
+"(None, 17662, 0)"
+],
+[
+"48",
+"(None, 17748, 0)"
+],
+[
+"49",
+"(None, 17838, 0)"
+],
+[
+"50",
+"(None, 17916, 0)"
+],
+[
+"51",
+"(None, 21318, 0)"
+],
+[
+"52",
+"(None, 21395, 0)"
+],
+[
+"53",
+"(None, 189036, 0)"
+],
+[
+"54",
+"(None, 25741, 0)"
+],
+[
+"55",
+"(None, 21519, 0)"
+],
+[
+"56",
+"(None, 25675, 0)"
+],
+[
+"57",
+"(None, 189141, 0)"
+],
+[
+"58",
+"(None, 37867, 0)"
+],
+[
+"59",
+"(None, 25803, 0)"
+],
+[
+"60",
+"(None, 26806, 0)"
+],
+[
+"61",
+"(None, 26839, 0)"
+],
+[
+"62",
+"(None, 26872, 0)"
+],
+[
+"63",
+"(None, 26932, 0)"
+],
+[
+"64",
+"(None, 27012, 0)"
+],
+[
+"65",
+"(None, 28707, 0)"
+],
+[
+"66",
+"(None, 28740, 0)"
+],
+[
+"67",
+"(None, 28773, 0)"
+],
+[
+"68",
+"(None, 28833, 0)"
+],
+[
+"69",
+"(None, 152470, 0)"
+],
+[
+"70",
+"(None, 152277, 0)"
+],
+[
+"71",
+"(None, 28915, 0)"
+],
+[
+"72",
+"(None, 29914, 0)"
+],
+[
+"73",
+"(None, 156289, 0)"
+],
+[
+"74",
+"(None, 156101, 0)"
+],
+[
+"75",
+"(None, 30819, 0)"
+],
+[
+"76",
+"(None, 162191, 0)"
+],
+[
+"77",
+"(None, 162002, 0)"
+],
+[
+"78",
+"(None, 31737, 0)"
+],
+[
+"79",
+"(None, 164405, 0)"
+],
+[
+"80",
+"(None, 164211, 0)"
+],
+[
+"81",
+"(None, 32713, 0)"
+],
+[
+"82",
+"(None, 165882, 0)"
+],
+[
+"83",
+"(None, 165696, 0)"
+],
+[
+"84",
+"(None, 33721, 0)"
+],
+[
+"85",
+"(None, 34723, 0)"
+],
+[
+"86",
+"(None, 37687, 0)"
+],
+[
+"87",
+"(None, 37821, 0)"
+],
+[
+"88",
+"(None, 189325, 0)"
+],
+[
+"89",
+"(None, 43865, 0)"
+],
+[
+"90",
+"(None, 37945, 0)"
+],
+[
+"91",
+"(None, 39632, 0)"
+],
+[
+"92",
+"(None, 39665, 0)"
+],
+[
+"93",
+"(None, 39710, 0)"
+],
+[
+"94",
+"(None, 39770, 0)"
+],
+[
+"95",
+"(None, 39850, 0)"
+],
+[
+"96",
+"(None, 39926, 0)"
+],
+[
+"97",
+"(None, 43698, 0)"
+],
+[
+"98",
+"(None, 43831, 0)"
+],
+[
+"99",
+"(None, 189430, 0)"
+],
+[
+"100",
+"(None, 48190, 0)"
+],
+[
+"101",
+"(None, 43943, 0)"
+],
+[
+"102",
+"(None, 48079, 0)"
+],
+[
+"103",
+"(None, 189616, 0)"
+],
+[
+"104",
+"(None, 59668, 0)"
+],
+[
+"105",
+"(None, 168305, 0)"
+],
+[
+"106",
+"(None, 168110, 0)"
+],
+[
+"107",
+"(None, 48254, 0)"
+],
+[
+"108",
+"(None, 173633, 0)"
+],
+[
+"109",
+"(None, 173439, 0)"
+],
+[
+"110",
+"(None, 49258, 0)"
+],
+[
+"111",
+"(None, 177195, 0)"
+],
+[
+"112",
+"(None, 176999, 0)"
+],
+[
+"113",
+"(None, 50249, 0)"
+],
+[
+"114",
+"(None, 179459, 0)"
+],
+[
+"115",
+"(None, 179271, 0)"
+],
+[
+"116",
+"(None, 51251, 0)"
+],
+[
+"117",
+"(None, 182021, 0)"
+],
+[
+"118",
+"(None, 181833, 0)"
+],
+[
+"119",
+"(None, 52223, 0)"
+],
+[
+"120",
+"(None, 184602, 0)"
+],
+[
+"121",
+"(None, 184407, 0)"
+],
+[
+"122",
+"(None, 53227, 0)"
+],
+[
+"123",
+"(None, 186163, 0)"
+],
+[
+"124",
+"(None, 185969, 0)"
+],
+[
+"125",
+"(None, 54169, 0)"
+],
+[
+"126",
+"(None, 55176, 0)"
+],
+[
+"127",
+"(None, 59510, 0)"
+],
+[
+"128",
+"(None, 189724, 0)"
+],
+[
+"129",
+"(None, 65209, 0)"
+],
+[
+"130",
+"(None, 59732, 0)"
+],
+[
+"131",
+"(None, 65140, 0)"
+],
+[
+"132",
+"(None, 188958, 0)"
+],
+[
+"133",
+"(None, 189246, 0)"
+],
+[
+"134",
+"(None, 189537, 0)"
+],
+[
+"135",
+"(None, 189832, 0)"
+],
+[
+"136",
+"(None, 190199, 0)"
+],
+[
+"137",
+"(None, 190222, 0)"
+],
+[
+"138",
+"(None, 190244, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /'Catalog', 'Pages': <PDFObjRef:3>, 'Outlines': <PDFObjRef:136>, 'Threads': <PDFObjRef:137>, 'Names': <PDFObjRef:138>}",
+"info": "[{'Creator': b' TeX output 2006.04.14:1650', 'Producer': b'dvipdfm 0.13.2c, Copyright \\xa9 1998, by Mark A. Wicks', 'CreationDate': b\"D:20060414165500+00'00'\"}]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"1",
+"{'Creator': b' TeX output 2006.04.14:1650', 'Producer': b'dvipdfm 0.13.2c, Copyright \\xa9 1998, by Mark A. Wicks', 'CreationDate': b\"D:20060414165500+00'00'\"}",
+null
+],
+[
+"2",
+"{'Type': /'Catalog', 'Pages': <PDFObjRef:3>, 'Outlines': <PDFObjRef:136>, 'Threads': <PDFObjRef:137>, 'Names': <PDFObjRef:138>}",
+null
+],
+[
+"3",
+"{'Type': /'Pages', 'Count': 8, 'Kids': [<PDFObjRef:132>, <PDFObjRef:133>, <PDFObjRef:134>, <PDFObjRef:135>], 'MediaBox': [0, 0, 595, 842]}",
+null
+],
+[
+"4",
+"<PDFStream(4): raw=33, {'Length': 33}>",
+"912ea1a0c58127e2c435aa9ef9dc4e7afc0b05e60e5eec3cbe8f5f08a1a797ed"
+],
+[
+"5",
+"{'Type': /'Page', 'Resources': <PDFObjRef:6>, 'Contents': [<PDFObjRef:21>, <PDFObjRef:4>, <PDFObjRef:22>, <PDFObjRef:23>], 'Parent': <PDFObjRef:132>}",
+null
+],
+[
+"6",
+"{'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:24>}",
+null
+],
+[
+"7",
+"sha256:8a6277970f245ee6a7deaeb9ee50ff617391c99e4fe692a6f5b488783d0caf92",
+null
+],
+[
+"8",
+"<PDFStream(8): raw=17802, {'Filter': [/'FlateDecode'], 'Length1': 1658, 'Length2': 16861, 'Length3': 532, 'Length': 17802}>",
+"55170b70d99536038edc608240ea51a5a7d3f841c1fe1ff5d808627ab59608dc"
+],
+[
+"9",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-168, -341, 1000, 960], 'FontName': /'MZSZGI+NimbusRomNo9L-Medi', 'ItalicAngle': 0, 'StemV': 140, 'FontFile': <PDFObjRef:8>, 'Flags': 4}",
+null
+],
+[
+"10",
+"sha256:d45ad94b66a6b8d7a2edfd54ca0d2af4c5a1b69ce831a61acc42d6ffc7df58fd",
+null
+],
+[
+"11",
+"<PDFStream(11): raw=22037, {'Filter': [/'FlateDecode'], 'Length1': 1662, 'Length2': 21096, 'Length3': 532, 'Length': 22037}>",
+"215cf14d421f9d691ccb5547cb37067dbd5c33d8eec5a44239709ee3ad863586"
+],
+[
+"12",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-168, -281, 1000, 924], 'FontName': /'QTLIUY+NimbusRomNo9L-Regu', 'ItalicAngle': 0, 'StemV': 85, 'FontFile': <PDFObjRef:11>, 'Flags': 4}",
+null
+],
+[
+"13",
+"sha256:e79bac2930131ca72c22fa050b19ec742ed7721bc362e1922d7eea7c19df29ab",
+null
+],
+[
+"14",
+"sha256:1eb17949589a1a93616703d9e7f044ab50ebb3be5f4ea73d90e5492af609bcde",
+null
+],
+[
+"15",
+"<PDFStream(15): raw=1881, {'Filter': [/'FlateDecode'], 'Length1': 724, 'Length2': 1345, 'Length3': 533, 'Length': 1881}>",
+"b84a6ef352f798ecd7d1a31785c84ab26d76a7e1752b05df14fa68ce4ee21d15"
+],
+[
+"16",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-29, -960, 1116, 775], 'FontName': /'ZNQAHA+CMSY10', 'ItalicAngle': -14.035, 'StemV': 85, 'FontFile': <PDFObjRef:15>, 'Flags': 68}",
+null
+],
+[
+"17",
+"sha256:fa96daee6c36d1afc09f6f278ff96b8f9dfcefa15acbd57ac6dd3cbb6a9f95f1",
+null
+],
+[
+"18",
+"<PDFStream(18): raw=16909, {'Filter': [/'FlateDecode'], 'Length1': 1644, 'Length2': 16017, 'Length3': 532, 'Length': 16909}>",
+"55c523fae9a4b6f1e30add70d40f58d6f4dc3c99f1e322ef399a9af3f5f9e6a1"
+],
+[
+"19",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-12, -237, 650, 811], 'FontName': /'CXOZYQ+NimbusMonL-Regu', 'ItalicAngle': 0, 'StemV': 41, 'FontFile': <PDFObjRef:18>, 'Flags': 4}",
+null
+],
+[
+"20",
+"sha256:079b6b220dfbd706adb09b34ae92927f94b3e0ea461c7e047574b7e01858e6bd",
+null
+],
+[
+"21",
+"<PDFStream(21): raw=1, {'Length': 1}>",
+"01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+],
+[
+"22",
+"<PDFStream(22): raw=3125, {'Filter': [/'FlateDecode'], 'Length': 3125}>",
+"7312925e5cb11cc3f5b4cebc09db2408b4b13c162b6f77141085e2aa767cde43"
+],
+[
+"23",
+"<PDFStream(23): raw=1, {'Length': 1}>",
+"01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+],
+[
+"24",
+"{'F1': <PDFObjRef:10>, 'F2': <PDFObjRef:13>, 'F3': <PDFObjRef:17>, 'F4': <PDFObjRef:20>}",
+null
+],
+[
+"25",
+"{'Type': /'Page', 'Resources': <PDFObjRef:26>, 'Contents': [<PDFObjRef:21>, <PDFObjRef:4>, <PDFObjRef:50>, <PDFObjRef:23>], 'Parent': <PDFObjRef:132>}",
+null
+],
+[
+"26",
+"{'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:51>, 'XObject': <PDFObjRef:52>}",
+null
+],
+[
+"27",
+"sha256:c106fcd779f12bac39a1b9763f5549240d2130ee5aef8a3b7968d4cb2b8a85c1",
+null
+],
+[
+"28",
+"<PDFStream(28): raw=7958, {'Filter': [/'FlateDecode'], 'Length1': 727, 'Length2': 7392, 'Length3': 533, 'Length': 7958}>",
+"fe8d5e066f8e2046ca138dd83ae1a27e74bddcbe8179a2c4636f616268c74d7c"
+],
+[
+"29",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-32, -250, 1048, 750], 'FontName': /'HAUISC+CMMI10', 'ItalicAngle': -14.04, 'StemV': 72, 'FontFile': <PDFObjRef:28>, 'Flags': 68}",
+null
+],
+[
+"30",
+"sha256:99c2d6c6595d567f5bd8f0ddf8ee7c96eb369a2ec08677c87e47361e28acf3f7",
+null
+],
+[
+"31",
+"<PDFStream(31): raw=18526, {'Filter': [/'FlateDecode'], 'Length1': 1679, 'Length2': 17567, 'Length3': 532, 'Length': 18526}>",
+"393a86b396d86423830a4cd57f124ab8c6c88852b1dfacbd7a8b0115d0f066d8"
+],
+[
+"32",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-169, -270, 1010, 924], 'FontName': /'HGTKKD+NimbusRomNo9L-ReguItal', 'ItalicAngle': -15.5, 'StemV': 78, 'FontFile': <PDFObjRef:31>, 'Flags': 68}",
+null
+],
+[
+"33",
+"sha256:6d68b63520de9ce053ebed95b85a9c5864550ac52bbb3214d8e7b6925f6f9565",
+null
+],
+[
+"34",
+"<PDFStream(34): raw=772, {'Length': 772, 'Filter': /'FlateDecode', 'Name': /'Im1', 'Type': /'XObject', 'Subtype': /'Form', 'BBox': [0, 0, 2384, 3370], 'FormType': 1, 'Matrix': [1, 0, 0, 1, -74, -619], 'Resources': {'ProcSet': [/'PDF', /'Text'], 'ExtGState': <PDFObjRef:35>, 'Font': <PDFObjRef:36>}}>",
+"661306f149560498381a19802856bb9e801c14da7133a244809a082e1dd1d96c"
+],
+[
+"35",
+"{'R4': <PDFObjRef:37>}",
+null
+],
+[
+"36",
+"{'R9': <PDFObjRef:38>, 'R11': <PDFObjRef:39>, 'R13': <PDFObjRef:40>, 'R15': <PDFObjRef:41>}",
+null
+],
+[
+"37",
+"{'Type': /'ExtGState', 'Name': /'R4', 'TR': /'Identity'}",
+null
+],
+[
+"38",
+"{'Subtype': /'Type1', 'BaseFont': /'Helvetica-Bold', 'Type': /'Font', 'Name': /'R9'}",
+null
+],
+[
+"39",
+"{'Subtype': /'Type1', 'BaseFont': /'Helvetica-Oblique', 'Type': /'Font', 'Name': /'R11'}",
+null
+],
+[
+"40",
+"{'Subtype': /'Type1', 'BaseFont': /'Helvetica', 'Type': /'Font', 'Name': /'R13'}",
+null
+],
+[
+"41",
+"{'Subtype': /'Type1', 'BaseFont': /'Helvetica-BoldOblique', 'Type': /'Font', 'Name': /'R15'}",
+null
+],
+[
+"42",
+"sha256:3d8700a1adf6b9c0880aa2aa62aed5c407189fe5db40f4fcdb0306c185151603",
+"cc36e3c818b9ec4ec934b6b5e3d15530674580647e8d9debd609302c22aeb5fd"
+],
+[
+"43",
+"{'R4': <PDFObjRef:45>}",
+null
+],
+[
+"44",
+"{'R9': <PDFObjRef:46>, 'R11': <PDFObjRef:47>, 'R13': <PDFObjRef:48>, 'R15': <PDFObjRef:49>}",
+null
+],
+[
+"45",
+"{'Type': /'ExtGState', 'Name': /'R4', 'TR': /'Identity'}",
+null
+],
+[
+"46",
+"{'Subtype': /'Type1', 'BaseFont': /'Helvetica-Bold', 'Type': /'Font', 'Name': /'R9'}",
+null
+],
+[
+"47",
+"{'Subtype': /'Type1', 'BaseFont': /'Helvetica-Oblique', 'Type': /'Font', 'Name': /'R11'}",
+null
+],
+[
+"48",
+"{'Subtype': /'Type1', 'BaseFont': /'Helvetica-BoldOblique', 'Type': /'Font', 'Name': /'R13'}",
+null
+],
+[
+"49",
+"{'Subtype': /'Type1', 'BaseFont': /'Helvetica', 'Type': /'Font', 'Name': /'R15'}",
+null
+],
+[
+"50",
+"<PDFStream(50): raw=3328, {'Filter': [/'FlateDecode'], 'Length': 3328}>",
+"5228fc295ebe83a97d6636418284686b63a486e40d6eb4950ba2404b759f7c2e"
+],
+[
+"51",
+"{'F2': <PDFObjRef:13>, 'F1': <PDFObjRef:10>, 'F5': <PDFObjRef:30>, 'F4': <PDFObjRef:20>, 'F6': <PDFObjRef:33>}",
+null
+],
+[
+"52",
+"{'Im1': <PDFObjRef:34>, 'Im2': <PDFObjRef:42>}",
+null
+],
+[
+"53",
+"{'Type': /'Page', 'Resources': <PDFObjRef:54>, 'Contents': [<PDFObjRef:21>, <PDFObjRef:4>, <PDFObjRef:55>, <PDFObjRef:23>], 'Parent': <PDFObjRef:133>}",
+null
+],
+[
+"54",
+"{'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:56>}",
+null
+],
+[
+"55",
+"<PDFStream(55): raw=4082, {'Filter': [/'FlateDecode'], 'Length': 4082}>",
+"b1d9e20dd7d9f0a4a08e97b84000d10391a4467ad15de015cc802b4d513376aa"
+],
+[
+"56",
+"{'F2': <PDFObjRef:13>, 'F6': <PDFObjRef:33>, 'F4': <PDFObjRef:20>, 'F1': <PDFObjRef:10>}",
+null
+],
+[
+"57",
+"{'Type': /'Page', 'Resources': <PDFObjRef:58>, 'Contents': [<PDFObjRef:21>, <PDFObjRef:4>, <PDFObjRef:85>, <PDFObjRef:23>], 'Parent': <PDFObjRef:133>}",
+null
+],
+[
+"58",
+"{'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:86>, 'XObject': <PDFObjRef:87>}",
+null
+],
+[
+"59",
+"<PDFStream(59): raw=768, {'Length': 768, 'Filter': /'FlateDecode', 'Name': /'Im3', 'Type': /'XObject', 'Subtype': /'Form', 'BBox': [0, 0, 2384, 3370], 'FormType': 1, 'Matrix': [1, 0, 0, 1, -65, -610], 'Resources': {'ProcSet': [/'PDF', /'Text'], 'ExtGState': <PDFObjRef:60>, 'Font': <PDFObjRef:61>}}>",
+"4f8ff946a84570655b9ba579e000a24fee722b5cc9509328cfbf8549e4df3e12"
+],
+[
+"60",
+"{'R4': <PDFObjRef:62>}",
+null
+],
+[
+"61",
+"{'R9': <PDFObjRef:63>}",
+null
+],
+[
+"62",
+"{'Type': /'ExtGState', 'Name': /'R4', 'TR': /'Identity'}",
+null
+],
+[
+"63",
+"{'Subtype': /'Type1', 'BaseFont': /'Courier-Bold', 'Type': /'Font', 'Name': /'R9'}",
+null
+],
+[
+"64",
+"sha256:61278f01517a8aaf908959e89ce4de1d31ecab1cec2631028243007877a33dfb",
+"4e2b5b1a0d75525faf9c1c20db0a5e297a9071b641a68acd67df393ce5acb295"
+],
+[
+"65",
+"{'R4': <PDFObjRef:67>}",
+null
+],
+[
+"66",
+"{'R9': <PDFObjRef:68>}",
+null
+],
+[
+"67",
+"{'Type': /'ExtGState', 'Name': /'R4', 'TR': /'Identity'}",
+null
+],
+[
+"68",
+"{'Subtype': /'Type1', 'BaseFont': /'Helvetica-Bold', 'Type': /'Font', 'Name': /'R9'}",
+null
+],
+[
+"69",
+"!PDFObjectNotFound",
+null
+],
+[
+"70",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-24, -250, 1110, 750], 'FontName': /'GUZBXZ+CMMI8', 'ItalicAngle': -14.04, 'StemV': 78, 'FontFile': <PDFObjRef:69>, 'Flags': 68}",
+null
+],
+[
+"71",
+"sha256:8d3bead43c4cb55f55dcf8de4b52b5a3e9279b21910d2ce96276dbcb5ee0c3ef",
+null
+],
+[
+"72",
+"sha256:7f912375e61878fce552151d95151c5bc4ad4f2e7953c4ccc5fa85d17fee1453",
+null
+],
+[
+"73",
+"<PDFStream(73): raw=5599, {'Filter': [/'FlateDecode'], 'Length1': 720, 'Length2': 5039, 'Length3': 533, 'Length': 5599}>",
+"a29a5e33efe1e60b45fa7d5909e3f707bfa3a5321d24328fe50b785141ba6971"
+],
+[
+"74",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-251, -250, 1009, 969], 'FontName': /'ZWKHFA+CMR10', 'ItalicAngle': 0, 'StemV': 69, 'FontFile': <PDFObjRef:73>, 'Flags': 4}",
+null
+],
+[
+"75",
+"sha256:f8095cb1ade534a52088b225f5be8b649843705ff8294684e36b05af91afde95",
+null
+],
+[
+"76",
+"<PDFStream(76): raw=1906, {'Filter': [/'FlateDecode'], 'Length1': 809, 'Length2': 1313, 'Length3': 534, 'Length': 1906}>",
+"65e10b2d7ef7b8d8f136a2b0d47f72cd5c7087b4478931905f045d166c0b0a99"
+],
+[
+"77",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-24, -2960, 1454, 772], 'FontName': /'RFVSJO+CMEX10', 'ItalicAngle': 0, 'StemV': 47, 'FontFile': <PDFObjRef:76>, 'Flags': 4}",
+null
+],
+[
+"78",
+"sha256:5051e7330ff6c77c9ae81bccfa4a487c30ebf4673223860b35e0843dea92bc72",
+null
+],
+[
+"79",
+"<PDFStream(79): raw=1178, {'Filter': [/'FlateDecode'], 'Length1': 721, 'Length2': 666, 'Length3': 533, 'Length': 1178}>",
+"bf355cfefb165d34abbc8131d76654f784b00b7637c06aa2423e6e91850ca1ec"
+],
+[
+"80",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-30, -955, 1185, 779], 'FontName': /'TXGKAB+CMSY8', 'ItalicAngle': -14.035, 'StemV': 89, 'FontFile': <PDFObjRef:79>, 'Flags': 68}",
+null
+],
+[
+"81",
+"sha256:f5bc462b3845d3b0490f2b5fef9003b75207c7191c4341a3390d510a8ac1af36",
+null
+],
+[
+"82",
+"<PDFStream(82): raw=2114, {'Filter': [/'FlateDecode'], 'Length1': 712, 'Length2': 1578, 'Length3': 533, 'Length': 2114}>",
+"831fa0f1fca87d4aeffbf75d40232eb990fbd80e85c202941c3b562a981bc64a"
+],
+[
+"83",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-36, -250, 1070, 750], 'FontName': /'XHEGHT+CMR8', 'ItalicAngle': 0, 'StemV': 76, 'FontFile': <PDFObjRef:82>, 'Flags': 4}",
+null
+],
+[
+"84",
+"sha256:d7f28daad840dec6a1188fd74c20ec3e3db2e3f0618715ec8f5b1c06e9237866",
+null
+],
+[
+"85",
+"<PDFStream(85): raw=2890, {'Filter': [/'FlateDecode'], 'Length': 2890}>",
+"af01fc2d5313c96a7694398ea41666063e4cb6120c88d40993e3c5ee9b0e0345"
+],
+[
+"86",
+"{'F2': <PDFObjRef:13>, 'F6': <PDFObjRef:33>, 'F1': <PDFObjRef:10>, 'F5': <PDFObjRef:30>, 'F7': <PDFObjRef:71>, 'F8': <PDFObjRef:75>, 'F9': <PDFObjRef:78>, 'F10': <PDFObjRef:81>, 'F11': <PDFObjRef:84>, 'F3': <PDFObjRef:17>}",
+null
+],
+[
+"87",
+"{'Im3': <PDFObjRef:59>, 'Im4': <PDFObjRef:64>}",
+null
+],
+[
+"88",
+"{'Type': /'Page', 'Resources': <PDFObjRef:89>, 'Contents': [<PDFObjRef:21>, <PDFObjRef:4>, <PDFObjRef:96>, <PDFObjRef:23>], 'Parent': <PDFObjRef:134>}",
+null
+],
+[
+"89",
+"{'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:97>, 'XObject': <PDFObjRef:98>}",
+null
+],
+[
+"90",
+"sha256:9f2cacfbf63af9b56bc19384fbce15832a47c487e2d250ad75abc8de5c00ea06",
+"71e9b6681ab4997babc4d75d4073eaee1ab2d907c5e82824f725d5bfc195467d"
+],
+[
+"91",
+"{'R4': <PDFObjRef:93>}",
+null
+],
+[
+"92",
+"{'R9': <PDFObjRef:94>, 'R11': <PDFObjRef:95>}",
+null
+],
+[
+"93",
+"{'Type': /'ExtGState', 'Name': /'R4', 'TR': /'Identity'}",
+null
+],
+[
+"94",
+"{'Subtype': /'Type1', 'BaseFont': /'Courier-Bold', 'Type': /'Font', 'Name': /'R9'}",
+null
+],
+[
+"95",
+"{'Subtype': /'Type1', 'BaseFont': /'Courier', 'Type': /'Font', 'Name': /'R11'}",
+null
+],
+[
+"96",
+"<PDFStream(96): raw=3698, {'Filter': [/'FlateDecode'], 'Length': 3698}>",
+"3b265a79d9b7ae6e7dbb35d21f55328a6cb550dda6dd87dba83a7d97300141e1"
+],
+[
+"97",
+"{'F2': <PDFObjRef:13>, 'F8': <PDFObjRef:75>, 'F5': <PDFObjRef:30>, 'F1': <PDFObjRef:10>, 'F7': <PDFObjRef:71>, 'F9': <PDFObjRef:78>, 'F10': <PDFObjRef:81>, 'F3': <PDFObjRef:17>, 'F6': <PDFObjRef:33>, 'F4': <PDFObjRef:20>}",
+null
+],
+[
+"98",
+"{'Im5': <PDFObjRef:90>}",
+null
+],
+[
+"99",
+"{'Type': /'Page', 'Resources': <PDFObjRef:100>, 'Contents': [<PDFObjRef:21>, <PDFObjRef:4>, <PDFObjRef:101>, <PDFObjRef:23>], 'Parent': <PDFObjRef:134>}",
+null
+],
+[
+"100",
+"{'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:102>}",
+null
+],
+[
+"101",
+"<PDFStream(101): raw=4061, {'Filter': [/'FlateDecode'], 'Length': 4061}>",
+"f6f96609f83284e6cd9bb913877e6951f87d7d43c4237e3b56e101c78f71d85a"
+],
+[
+"102",
+"{'F2': <PDFObjRef:13>, 'F6': <PDFObjRef:33>, 'F4': <PDFObjRef:20>, 'F1': <PDFObjRef:10>, 'F5': <PDFObjRef:30>, 'F7': <PDFObjRef:71>, 'F8': <PDFObjRef:75>, 'F3': <PDFObjRef:17>}",
+null
+],
+[
+"103",
+"{'Type': /'Page', 'Resources': <PDFObjRef:104>, 'Contents': [<PDFObjRef:21>, <PDFObjRef:4>, <PDFObjRef:126>, <PDFObjRef:23>], 'Parent': <PDFObjRef:135>}",
+null
+],
+[
+"104",
+"{'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:127>}",
+null
+],
+[
+"105",
+"<PDFStream(105): raw=5019, {'Filter': [/'FlateDecode'], 'Length1': 724, 'Length2': 4464, 'Length3': 533, 'Length': 5019}>",
+"d1881fb4a9e03306b8e6afd22eec7881ff06ad848b04be995990b10654e5a7fb"
+],
+[
+"106",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-29, -250, 1075, 750], 'FontName': /'NUIFHB+CMMI9', 'ItalicAngle': -14.04, 'StemV': 74, 'FontFile': <PDFObjRef:105>, 'Flags': 68}",
+null
+],
+[
+"107",
+"sha256:aa48227390e9f60035fe804900ebe655c81b80805e47cbcbe2aff581a6d4a102",
+null
+],
+[
+"108",
+"<PDFStream(108): raw=3251, {'Filter': [/'FlateDecode'], 'Length1': 723, 'Length2': 2705, 'Length3': 533, 'Length': 3251}>",
+"170b799a77285d2d8fbbf4f6f5ea0bf577f2169c63b6570abcec71bdba356834"
+],
+[
+"109",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [11, -250, 1241, 750], 'FontName': /'VVFIIS+CMMI6', 'ItalicAngle': -14.04, 'StemV': 85, 'FontFile': <PDFObjRef:108>, 'Flags': 68}",
+null
+],
+[
+"110",
+"sha256:9aaa41de3988e2ac658cea6ed8aa1077eb45cad92a5da9899c0adff1f46093d6",
+null
+],
+[
+"111",
+"<PDFStream(111): raw=1961, {'Filter': [/'FlateDecode'], 'Length1': 721, 'Length2': 1420, 'Length3': 533, 'Length': 1961}>",
+"8874a97b184b737afc1d725c86841b4d9e694970251c8e192248bd41911d2d2e"
+],
+[
+"112",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-30, -958, 1146, 777], 'FontName': /'LZSPAE+CMSY9', 'ItalicAngle': -14.035, 'StemV': 87, 'FontFile': <PDFObjRef:111>, 'Flags': 68}",
+null
+],
+[
+"113",
+"sha256:68462e692d5edfdc96018dfc8c5d9f0d50ae80e9996e7bd0ea2da0477c82364a",
+null
+],
+[
+"114",
+"<PDFStream(114): raw=2259, {'Filter': [/'FlateDecode'], 'Length1': 712, 'Length2': 1727, 'Length3': 533, 'Length': 2259}>",
+"1c178c63102113aa6885b01fc514c2107be01e2974def5b7fa8edd66ef4ef97b"
+],
+[
+"115",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-39, -250, 1036, 750], 'FontName': /'WCHBLG+CMR9', 'ItalicAngle': 0, 'StemV': 74, 'FontFile': <PDFObjRef:114>, 'Flags': 4}",
+null
+],
+[
+"116",
+"sha256:2023609fdd4835c42f33d6782c036a76c358755018f314efc8fd733a041a21ed",
+null
+],
+[
+"117",
+"<PDFStream(117): raw=2271, {'Filter': [/'FlateDecode'], 'Length1': 712, 'Length2': 1742, 'Length3': 533, 'Length': 2271}>",
+"07437fe0d483107964f9248056d502a9a104639f7902b9a56136f9b7ae785629"
+],
+[
+"118",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-20, -250, 1193, 750], 'FontName': /'GBBFVH+CMR6', 'ItalicAngle': 0, 'StemV': 83, 'FontFile': <PDFObjRef:117>, 'Flags': 4}",
+null
+],
+[
+"119",
+"sha256:259e93ad8907fcdc85d99e1f5afd3dbef352602c8401f83ef97401136830a297",
+null
+],
+[
+"120",
+"<PDFStream(120): raw=1253, {'Filter': [/'FlateDecode'], 'Length1': 720, 'Length2': 736, 'Length3': 533, 'Length': 1253}>",
+"869ee60736fe4e96af5413dafab45aeb52a573cc26f60baa20b7e4e10083f927"
+],
+[
+"121",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [-4, -948, 1329, 786], 'FontName': /'KMQSUM+CMSY6', 'ItalicAngle': -14.035, 'StemV': 93, 'FontFile': <PDFObjRef:120>, 'Flags': 68}",
+null
+],
+[
+"122",
+"sha256:724a1d1484cda4c69d60bdc7053720108fde2b831a309b3fe34b8e24d186d176",
+null
+],
+[
+"123",
+"<PDFStream(123): raw=2308, {'Filter': [/'FlateDecode'], 'Length1': 723, 'Length2': 1768, 'Length3': 533, 'Length': 2308}>",
+"91e7fbb380f869d8cc850f5494b1751ba496b24448966020fe249996741d9cda"
+],
+[
+"124",
+"{'Type': /'FontDescriptor', 'CapHeight': 850, 'Ascent': 850, 'Descent': -200, 'FontBBox': [37, -250, 1349, 750], 'FontName': /'IWMUZJ+CMMI5', 'ItalicAngle': -14.04, 'StemV': 90, 'FontFile': <PDFObjRef:123>, 'Flags': 68}",
+null
+],
+[
+"125",
+"sha256:506a28f1aa24dad9de3f04a3dd3cd52fcc6fb06c10ade70b450ea88b92ed6ad2",
+null
+],
+[
+"126",
+"<PDFStream(126): raw=4259, {'Filter': [/'FlateDecode'], 'Length': 4259}>",
+"9a8254c77e82200b99abab49dee330391875a8448899ae691f51f73d062a435b"
+],
+[
+"127",
+"{'F2': <PDFObjRef:13>, 'F12': <PDFObjRef:107>, 'F13': <PDFObjRef:110>, 'F14': <PDFObjRef:113>, 'F15': <PDFObjRef:116>, 'F16': <PDFObjRef:119>, 'F17': <PDFObjRef:122>, 'F18': <PDFObjRef:125>, 'F9': <PDFObjRef:78>, 'F1': <PDFObjRef:10>, 'F4': <PDFObjRef:20>}",
+null
+],
+[
+"128",
+"{'Type': /'Page', 'Resources': <PDFObjRef:129>, 'Contents': [<PDFObjRef:21>, <PDFObjRef:4>, <PDFObjRef:130>, <PDFObjRef:23>], 'Parent': <PDFObjRef:135>}",
+null
+],
+[
+"129",
+"{'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:131>}",
+null
+],
+[
+"130",
+"<PDFStream(130): raw=5333, {'Filter': [/'FlateDecode'], 'Length': 5333}>",
+"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+],
+[
+"131",
+"{'F2': <PDFObjRef:13>, 'F16': <PDFObjRef:119>, 'F1': <PDFObjRef:10>, 'F6': <PDFObjRef:33>}",
+null
+],
+[
+"132",
+"{'Type': /'Pages', 'Count': 2, 'Kids': [<PDFObjRef:5>, <PDFObjRef:25>], 'Parent': <PDFObjRef:3>}",
+null
+],
+[
+"133",
+"{'Type': /'Pages', 'Count': 2, 'Kids': [<PDFObjRef:53>, <PDFObjRef:57>], 'Parent': <PDFObjRef:3>}",
+null
+],
+[
+"134",
+"{'Type': /'Pages', 'Count': 2, 'Kids': [<PDFObjRef:88>, <PDFObjRef:99>], 'Parent': <PDFObjRef:3>}",
+null
+],
+[
+"135",
+"{'Type': /'Pages', 'Count': 2, 'Kids': [<PDFObjRef:103>, <PDFObjRef:128>], 'Parent': <PDFObjRef:3>}",
+null
+],
+[
+"136",
+"{}",
+null
+],
+[
+"137",
+"None",
+null
+],
+[
+"138",
+"{}",
+null
+]
+],
+"pages": [
+{
+"pageid": "5",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [
+"Font",
+"ProcSet"
+],
+"contents": [
+"<PDFObjRef:21>",
+"<PDFObjRef:4>",
+"<PDFObjRef:22>",
+"<PDFObjRef:23>"
+],
+"attrs": [
+"Type",
+"Resources",
+"Contents",
+"Parent",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:24>}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+},
+{
+"pageid": "25",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [
+"Font",
+"ProcSet",
+"XObject"
+],
+"contents": [
+"<PDFObjRef:21>",
+"<PDFObjRef:4>",
+"<PDFObjRef:50>",
+"<PDFObjRef:23>"
+],
+"attrs": [
+"Type",
+"Resources",
+"Contents",
+"Parent",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:51>, 'XObject': <PDFObjRef:52>}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+},
+{
+"pageid": "53",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [
+"Font",
+"ProcSet"
+],
+"contents": [
+"<PDFObjRef:21>",
+"<PDFObjRef:4>",
+"<PDFObjRef:55>",
+"<PDFObjRef:23>"
+],
+"attrs": [
+"Type",
+"Resources",
+"Contents",
+"Parent",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:56>}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+},
+{
+"pageid": "57",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [
+"Font",
+"ProcSet",
+"XObject"
+],
+"contents": [
+"<PDFObjRef:21>",
+"<PDFObjRef:4>",
+"<PDFObjRef:85>",
+"<PDFObjRef:23>"
+],
+"attrs": [
+"Type",
+"Resources",
+"Contents",
+"Parent",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:86>, 'XObject': <PDFObjRef:87>}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+},
+{
+"pageid": "88",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [
+"Font",
+"ProcSet",
+"XObject"
+],
+"contents": [
+"<PDFObjRef:21>",
+"<PDFObjRef:4>",
+"<PDFObjRef:96>",
+"<PDFObjRef:23>"
+],
+"attrs": [
+"Type",
+"Resources",
+"Contents",
+"Parent",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:97>, 'XObject': <PDFObjRef:98>}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+},
+{
+"pageid": "99",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [
+"Font",
+"ProcSet"
+],
+"contents": [
+"<PDFObjRef:21>",
+"<PDFObjRef:4>",
+"<PDFObjRef:101>",
+"<PDFObjRef:23>"
+],
+"attrs": [
+"Type",
+"Resources",
+"Contents",
+"Parent",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:102>}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+},
+{
+"pageid": "103",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [
+"Font",
+"ProcSet"
+],
+"contents": [
+"<PDFObjRef:21>",
+"<PDFObjRef:4>",
+"<PDFObjRef:126>",
+"<PDFObjRef:23>"
+],
+"attrs": [
+"Type",
+"Resources",
+"Contents",
+"Parent",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:127>}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+},
+{
+"pageid": "128",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [
+"Font",
+"ProcSet"
+],
+"contents": [
+"<PDFObjRef:21>",
+"<PDFObjRef:4>",
+"<PDFObjRef:130>",
+"<PDFObjRef:23>"
+],
+"attrs": [
+"Type",
+"Resources",
+"Contents",
+"Parent",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'Text', /'ImageC'], 'Font': <PDFObjRef:131>}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+}
+],
+"outlines": [],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+}
+]
+}

@@ -1,0 +1,48 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R 6 0 R 2 0 R 7 0 R 3 0 R 8 0 R] /Count 4 /Resources << /Font << >> >> /Rotate 90 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox <00000102> /CropBox [1 2 3] >>
+endobj
+6 0 obj
+<< /Type /Pages /Kids [4 0 R 5 0 R] /MediaBox [0 0 100 (200)] >>
+endobj
+4 0 obj
+<< /type /Page /Rotate -450 /CropBox [(a) 0 0 0] >>
+endobj
+5 0 obj
+<< /Type /Page /MediaBox [0 0 1 2 3] /Contents [9 0 R 9 0 R] >>
+endobj
+7 0 obj
+<< /Type /Page /MediaBox [0.5 1.25 -3 1e3] /LastModified (D:2020) /Annots [1 2] /B 3 >>
+endobj
+8 0 obj
+<< /Type /Page /MediaBox 99 0 R >>
+endobj
+9 0 obj
+<< /Length 2 >>
+stream
+q Q
+endstream
+endobj
+xref
+0 10
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000185 00000 n 
+0000000350 00000 n 
+0000000417 00000 n 
+0000000270 00000 n 
+0000000496 00000 n 
+0000000599 00000 n 
+0000000649 00000 n 
+trailer
+<< /Size 10 /Root 1 0 R >>
+startxref
+701
+%%EOF

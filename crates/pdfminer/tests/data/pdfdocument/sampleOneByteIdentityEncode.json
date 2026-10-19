@@ -1,0 +1,1313 @@
+{
+"path": "sampleOneByteIdentityEncode.pdf",
+"runs": [
+{
+"password": "",
+"variant": "orig",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRef: offsets=dict_keys([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14])>",
+"trailer": "{'Size': 15, 'Root': <PDFObjRef:13>, 'Info': <PDFObjRef:14>, 'ID': [b'\\x9di*\\x15B\\xa5|L\\xc0\\xdfd\\x95\\xf8$\\x06\\xa2', b'\\xfb\\xf4!\\xb5\\x85+k\\x98\\xd9\\xac\\x98\\xb2\\\\\\x94\\xa2\\x80']}",
+"ids": [
+[
+"1",
+"(None, 13054, 0)"
+],
+[
+"2",
+"(None, 15, 0)"
+],
+[
+"3",
+"(None, 13024, 0)"
+],
+[
+"4",
+"(None, 12902, 0)"
+],
+[
+"5",
+"(None, 204, 0)"
+],
+[
+"6",
+"(None, 136, 0)"
+],
+[
+"7",
+"(None, 593, 0)"
+],
+[
+"8",
+"(None, 12422, 0)"
+],
+[
+"9",
+"(None, 11981, 0)"
+],
+[
+"10",
+"(None, 977, 0)"
+],
+[
+"11",
+"(None, 12174, 0)"
+],
+[
+"12",
+"(None, 13175, 0)"
+],
+[
+"13",
+"(None, 13227, 0)"
+],
+[
+"14",
+"(None, 13274, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /'Catalog', 'Pages': <PDFObjRef:12>}",
+"info": "[{'Producer': b'iTextSharp\\x92 5.4.4 \\xa92000-2013 1T3XT BVBA (internet access GmbH; licensed version)', 'CreationDate': b\"D:20160630145301+02'00'\", 'ModDate': b\"D:20160630145301+02'00'\"}]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"1",
+"{'Contents': <PDFObjRef:2>, 'Type': /'Page', 'Resources': {'Font': <PDFObjRef:3>}, 'Rotate': 0, 'MediaBox': [0, 0, 595.28, 841.89], 'Parent': <PDFObjRef:12>}",
+null
+],
+[
+"2",
+"<PDFStream(2): raw=55, {'Filter': /'FlateDecode', 'Length': 55}>",
+"d36c9ae007c45eafb40b1f57a1364330d215fd6db027ee8f4090c310369b0456"
+],
+[
+"3",
+"{'R25': <PDFObjRef:4>}",
+null
+],
+[
+"4",
+"{'Subtype': /'Type0', 'BaseFont': /'VGOQEA+SegoeUI', 'Type': /'Font', 'Encoding': <PDFObjRef:5>, 'ToUnicode': <PDFObjRef:7>, 'DescendantFonts': [<PDFObjRef:8>]}",
+null
+],
+[
+"5",
+"<PDFStream(5): raw=266, {'CIDSystemInfo': <PDFObjRef:6>, 'Filter': /'FlateDecode', 'Length': 266, 'CMapName': /'OneByteIdentityH', 'Type': /'CMap'}>",
+"d2498a71d72d0aa14f1f3cfc8d95f5da6cb187468f70dd8048374d9b62e89c3e"
+],
+[
+"6",
+"{'Supplement': 0, 'Registry': b'Adobe', 'Ordering': b'Identity'}",
+null
+],
+[
+"7",
+"<PDFStream(7): raw=317, {'Filter': /'FlateDecode', 'Length': 317}>",
+"816d71148d2a1f8d6925b1baaa04794d5aeeb92e336be214c2b030a87d4cb8a9"
+],
+[
+"8",
+"sha256:e7ec9fc66c04ec85f8fc161eaf4079fe2ab3ed1243b1050552bf857ec12f35f4",
+null
+],
+[
+"9",
+"{'Descent': -235, 'MissingWidth': 645, 'CapHeight': 750, 'StemV': 138, 'Type': /'FontDescriptor', 'FontFile2': <PDFObjRef:10>, 'Flags': 4, 'FontName': /'VGOQEA+SegoeUI', 'FontBBox': [0, -235, 921, 861], 'ItalicAngle': 0, 'Ascent': 750}",
+null
+],
+[
+"10",
+"<PDFStream(10): raw=10934, {'Filter': /'FlateDecode', 'Length': 10934}>",
+"e6a62ad2bd188045ea59a0ed079a243ce5a48d0cb38fce0fa34ff3c12ad966f0"
+],
+[
+"11",
+"<PDFStream(11): raw=180, {'Filter': /'FlateDecode', 'Length': 180}>",
+"8d58b45bbccf09fb6eaacb4e956555b80ac4ceb561708f6d08f8ba09414668e4"
+],
+[
+"12",
+"{'Type': /'Pages', 'Count': 1, 'Kids': [<PDFObjRef:1>]}",
+null
+],
+[
+"13",
+"{'Type': /'Catalog', 'Pages': <PDFObjRef:12>}",
+null
+],
+[
+"14",
+"{'Producer': b'iTextSharp\\x92 5.4.4 \\xa92000-2013 1T3XT BVBA (internet access GmbH; licensed version)', 'CreationDate': b\"D:20160630145301+02'00'\", 'ModDate': b\"D:20160630145301+02'00'\"}",
+null
+]
+],
+"pages": [
+{
+"pageid": "1",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.28, 841.89)",
+"cropbox": "(0.0, 0.0, 595.28, 841.89)",
+"rotate": 0,
+"resources": [
+"Font"
+],
+"contents": [
+"<PDFStream(2): len=55, {'Filter': /'FlateDecode', 'Length': 55}>"
+],
+"attrs": [
+"Contents",
+"Type",
+"Resources",
+"Rotate",
+"MediaBox",
+"Parent"
+],
+"repr": "<PDFPage: Resources={'Font': <PDFObjRef:3>}, MediaBox=(0.0, 0.0, 595.28, 841.89)>"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "half",
+"open": "!PSEOF"
+},
+{
+"password": "",
+"variant": "3q",
+"open": "!PSEOF"
+},
+{
+"password": "",
+"variant": "noxref",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "shifted",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRefFallback: offsets=dict_keys([2, 6, 5, 7, 10, 9, 11, 8, 4, 3, 1, 12, 13, 14])>",
+"trailer": "{'Size': 15, 'Root': <PDFObjRef:13>, 'Info': <PDFObjRef:14>, 'ID': [b'\\x9di*\\x15B\\xa5|L\\xc0\\xdfd\\x95\\xf8$\\x06\\xa2', b'\\xfb\\xf4!\\xb5\\x85+k\\x98\\xd9\\xac\\x98\\xb2\\\\\\x94\\xa2\\x80']}",
+"ids": [
+[
+"2",
+"(None, 21, 0)"
+],
+[
+"6",
+"(None, 142, 0)"
+],
+[
+"5",
+"(None, 210, 0)"
+],
+[
+"7",
+"(None, 599, 0)"
+],
+[
+"10",
+"(None, 983, 0)"
+],
+[
+"9",
+"(None, 11987, 0)"
+],
+[
+"11",
+"(None, 12180, 0)"
+],
+[
+"8",
+"(None, 12428, 0)"
+],
+[
+"4",
+"(None, 12908, 0)"
+],
+[
+"3",
+"(None, 13030, 0)"
+],
+[
+"1",
+"(None, 13060, 0)"
+],
+[
+"12",
+"(None, 13181, 0)"
+],
+[
+"13",
+"(None, 13233, 0)"
+],
+[
+"14",
+"(None, 13280, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /'Catalog', 'Pages': <PDFObjRef:12>}",
+"info": "[{'Producer': b'iTextSharp\\x92 5.4.4 \\xa92000-2013 1T3XT BVBA (internet access GmbH; licensed version)', 'CreationDate': b\"D:20160630145301+02'00'\", 'ModDate': b\"D:20160630145301+02'00'\"}]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"2",
+"<PDFStream(2): raw=56, {'Filter': /'FlateDecode', 'Length': 55}>",
+"d36c9ae007c45eafb40b1f57a1364330d215fd6db027ee8f4090c310369b0456"
+],
+[
+"6",
+"{'Supplement': 0, 'Registry': b'Adobe', 'Ordering': b'Identity'}",
+null
+],
+[
+"5",
+"<PDFStream(5): raw=267, {'CIDSystemInfo': <PDFObjRef:6>, 'Filter': /'FlateDecode', 'Length': 266, 'CMapName': /'OneByteIdentityH', 'Type': /'CMap'}>",
+"d2498a71d72d0aa14f1f3cfc8d95f5da6cb187468f70dd8048374d9b62e89c3e"
+],
+[
+"7",
+"<PDFStream(7): raw=318, {'Filter': /'FlateDecode', 'Length': 317}>",
+"816d71148d2a1f8d6925b1baaa04794d5aeeb92e336be214c2b030a87d4cb8a9"
+],
+[
+"10",
+"<PDFStream(10): raw=10935, {'Filter': /'FlateDecode', 'Length': 10934}>",
+"e6a62ad2bd188045ea59a0ed079a243ce5a48d0cb38fce0fa34ff3c12ad966f0"
+],
+[
+"9",
+"{'Descent': -235, 'MissingWidth': 645, 'CapHeight': 750, 'StemV': 138, 'Type': /'FontDescriptor', 'FontFile2': <PDFObjRef:10>, 'Flags': 4, 'FontName': /'VGOQEA+SegoeUI', 'FontBBox': [0, -235, 921, 861], 'ItalicAngle': 0, 'Ascent': 750}",
+null
+],
+[
+"11",
+"<PDFStream(11): raw=181, {'Filter': /'FlateDecode', 'Length': 180}>",
+"8d58b45bbccf09fb6eaacb4e956555b80ac4ceb561708f6d08f8ba09414668e4"
+],
+[
+"8",
+"sha256:e7ec9fc66c04ec85f8fc161eaf4079fe2ab3ed1243b1050552bf857ec12f35f4",
+null
+],
+[
+"4",
+"{'Subtype': /'Type0', 'BaseFont': /'VGOQEA+SegoeUI', 'Type': /'Font', 'Encoding': <PDFObjRef:5>, 'ToUnicode': <PDFObjRef:7>, 'DescendantFonts': [<PDFObjRef:8>]}",
+null
+],
+[
+"3",
+"{'R25': <PDFObjRef:4>}",
+null
+],
+[
+"1",
+"{'Contents': <PDFObjRef:2>, 'Type': /'Page', 'Resources': {'Font': <PDFObjRef:3>}, 'Rotate': 0, 'MediaBox': [0, 0, 595.28, 841.89], 'Parent': <PDFObjRef:12>}",
+null
+],
+[
+"12",
+"{'Type': /'Pages', 'Count': 1, 'Kids': [<PDFObjRef:1>]}",
+null
+],
+[
+"13",
+"{'Type': /'Catalog', 'Pages': <PDFObjRef:12>}",
+null
+],
+[
+"14",
+"{'Producer': b'iTextSharp\\x92 5.4.4 \\xa92000-2013 1T3XT BVBA (internet access GmbH; licensed version)', 'CreationDate': b\"D:20160630145301+02'00'\", 'ModDate': b\"D:20160630145301+02'00'\"}",
+null
+]
+],
+"pages": [
+{
+"pageid": "1",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.28, 841.89)",
+"cropbox": "(0.0, 0.0, 595.28, 841.89)",
+"rotate": 0,
+"resources": [
+"Font"
+],
+"contents": [
+"<PDFStream(2): len=55, {'Filter': /'FlateDecode', 'Length': 55}>"
+],
+"attrs": [
+"Contents",
+"Type",
+"Resources",
+"Rotate",
+"MediaBox",
+"Parent"
+],
+"repr": "<PDFPage: Resources={'Font': <PDFObjRef:3>}, MediaBox=(0.0, 0.0, 595.28, 841.89)>"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "tail",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRefFallback: offsets=dict_keys([2, 6, 5, 7, 10, 9, 11, 8, 4, 3, 1, 12, 13, 14])>",
+"trailer": "{'Size': 15, 'Root': <PDFObjRef:13>, 'Info': <PDFObjRef:14>, 'ID': [b'\\x9di*\\x15B\\xa5|L\\xc0\\xdfd\\x95\\xf8$\\x06\\xa2', b'\\xfb\\xf4!\\xb5\\x85+k\\x98\\xd9\\xac\\x98\\xb2\\\\\\x94\\xa2\\x80']}",
+"ids": [
+[
+"2",
+"(None, 15, 0)"
+],
+[
+"6",
+"(None, 136, 0)"
+],
+[
+"5",
+"(None, 204, 0)"
+],
+[
+"7",
+"(None, 593, 0)"
+],
+[
+"10",
+"(None, 977, 0)"
+],
+[
+"9",
+"(None, 11981, 0)"
+],
+[
+"11",
+"(None, 12174, 0)"
+],
+[
+"8",
+"(None, 12422, 0)"
+],
+[
+"4",
+"(None, 12902, 0)"
+],
+[
+"3",
+"(None, 13024, 0)"
+],
+[
+"1",
+"(None, 13054, 0)"
+],
+[
+"12",
+"(None, 13175, 0)"
+],
+[
+"13",
+"(None, 13227, 0)"
+],
+[
+"14",
+"(None, 13274, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /'Catalog', 'Pages': <PDFObjRef:12>}",
+"info": "[{'Producer': b'iTextSharp\\x92 5.4.4 \\xa92000-2013 1T3XT BVBA (internet access GmbH; licensed version)', 'CreationDate': b\"D:20160630145301+02'00'\", 'ModDate': b\"D:20160630145301+02'00'\"}]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"2",
+"<PDFStream(2): raw=56, {'Filter': /'FlateDecode', 'Length': 55}>",
+"d36c9ae007c45eafb40b1f57a1364330d215fd6db027ee8f4090c310369b0456"
+],
+[
+"6",
+"{'Supplement': 0, 'Registry': b'Adobe', 'Ordering': b'Identity'}",
+null
+],
+[
+"5",
+"<PDFStream(5): raw=267, {'CIDSystemInfo': <PDFObjRef:6>, 'Filter': /'FlateDecode', 'Length': 266, 'CMapName': /'OneByteIdentityH', 'Type': /'CMap'}>",
+"d2498a71d72d0aa14f1f3cfc8d95f5da6cb187468f70dd8048374d9b62e89c3e"
+],
+[
+"7",
+"<PDFStream(7): raw=318, {'Filter': /'FlateDecode', 'Length': 317}>",
+"816d71148d2a1f8d6925b1baaa04794d5aeeb92e336be214c2b030a87d4cb8a9"
+],
+[
+"10",
+"<PDFStream(10): raw=10935, {'Filter': /'FlateDecode', 'Length': 10934}>",
+"e6a62ad2bd188045ea59a0ed079a243ce5a48d0cb38fce0fa34ff3c12ad966f0"
+],
+[
+"9",
+"{'Descent': -235, 'MissingWidth': 645, 'CapHeight': 750, 'StemV': 138, 'Type': /'FontDescriptor', 'FontFile2': <PDFObjRef:10>, 'Flags': 4, 'FontName': /'VGOQEA+SegoeUI', 'FontBBox': [0, -235, 921, 861], 'ItalicAngle': 0, 'Ascent': 750}",
+null
+],
+[
+"11",
+"<PDFStream(11): raw=181, {'Filter': /'FlateDecode', 'Length': 180}>",
+"8d58b45bbccf09fb6eaacb4e956555b80ac4ceb561708f6d08f8ba09414668e4"
+],
+[
+"8",
+"sha256:e7ec9fc66c04ec85f8fc161eaf4079fe2ab3ed1243b1050552bf857ec12f35f4",
+null
+],
+[
+"4",
+"{'Subtype': /'Type0', 'BaseFont': /'VGOQEA+SegoeUI', 'Type': /'Font', 'Encoding': <PDFObjRef:5>, 'ToUnicode': <PDFObjRef:7>, 'DescendantFonts': [<PDFObjRef:8>]}",
+null
+],
+[
+"3",
+"{'R25': <PDFObjRef:4>}",
+null
+],
+[
+"1",
+"{'Contents': <PDFObjRef:2>, 'Type': /'Page', 'Resources': {'Font': <PDFObjRef:3>}, 'Rotate': 0, 'MediaBox': [0, 0, 595.28, 841.89], 'Parent': <PDFObjRef:12>}",
+null
+],
+[
+"12",
+"{'Type': /'Pages', 'Count': 1, 'Kids': [<PDFObjRef:1>]}",
+null
+],
+[
+"13",
+"{'Type': /'Catalog', 'Pages': <PDFObjRef:12>}",
+null
+],
+[
+"14",
+"{'Producer': b'iTextSharp\\x92 5.4.4 \\xa92000-2013 1T3XT BVBA (internet access GmbH; licensed version)', 'CreationDate': b\"D:20160630145301+02'00'\", 'ModDate': b\"D:20160630145301+02'00'\"}",
+null
+]
+],
+"pages": [
+{
+"pageid": "1",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.28, 841.89)",
+"cropbox": "(0.0, 0.0, 595.28, 841.89)",
+"rotate": 0,
+"resources": [
+"Font"
+],
+"contents": [
+"<PDFStream(2): len=55, {'Filter': /'FlateDecode', 'Length': 55}>"
+],
+"attrs": [
+"Contents",
+"Type",
+"Resources",
+"Rotate",
+"MediaBox",
+"Parent"
+],
+"repr": "<PDFPage: Resources={'Font': <PDFObjRef:3>}, MediaBox=(0.0, 0.0, 595.28, 841.89)>"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "corrupt0",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRef: offsets=dict_keys([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14])>",
+"trailer": "{'Size': 15, 'Root': <PDFObjRef:13>, 'Info': <PDFObjRef:14>, 'ID': [b'\\x9di*\\x15B\\xa5|L\\xc0\\xdfd\\x95\\xf8$\\x06\\xa2', b'\\xfb\\xf4!\\xb5\\x85+k\\x98\\xd9\\xac\\x98\\xb2\\\\\\x94\\xa2\\x80']}",
+"ids": [
+[
+"1",
+"(None, 13054, 0)"
+],
+[
+"2",
+"(None, 15, 0)"
+],
+[
+"3",
+"(None, 13024, 0)"
+],
+[
+"4",
+"(None, 12902, 0)"
+],
+[
+"5",
+"(None, 204, 0)"
+],
+[
+"6",
+"(None, 136, 0)"
+],
+[
+"7",
+"(None, 593, 0)"
+],
+[
+"8",
+"(None, 12422, 0)"
+],
+[
+"9",
+"(None, 11981, 0)"
+],
+[
+"10",
+"(None, 977, 0)"
+],
+[
+"11",
+"(None, 12174, 0)"
+],
+[
+"12",
+"(None, 13175, 0)"
+],
+[
+"13",
+"(None, 13227, 0)"
+],
+[
+"14",
+"(None, 13274, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /'Catalog', 'Pages': <PDFObjRef:12>}",
+"info": "[{'Producer': b'iTextSharp\\x92 5.4.4 \\xa92000-2013 1T3XT BVBA (internet access GmbH; licens\\xced version)', 'CreationDate': b\"D:20160630145301+02'00'\", 'ModDate': b\"D:20160630145301+02'00'\"}]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"1",
+"{'Contents': <PDFObjRef:2>, 'Type': /'Page', 'Resources': {'Font': <PDFObjRef:3>}, 'Rotate': 0, 'MediaBox': [0, 0, 595.28, 841.89], 'Parent': <PDFObjRef:12>}",
+null
+],
+[
+"2",
+"<PDFStream(2): raw=55, {'Filter': /'FlateDecode', 'Length': 55}>",
+"d36c9ae007c45eafb40b1f57a1364330d215fd6db027ee8f4090c310369b0456"
+],
+[
+"3",
+"{'R25': <PDFObjRef:4>}",
+null
+],
+[
+"4",
+"{'Subtype': /'Type0', 'BaseFont': /'VGOQEA+SegoeUI', 'Type': /'Font', 'Encoding': <PDFObjRef:5>, 'ToUnicode': <PDFObjRef:7>, 'DescendantFonts': [<PDFObjRef:8>]}",
+null
+],
+[
+"5",
+"<PDFStream(5): raw=266, {'CIDSystemInfo': <PDFObjRef:6>, 'Filter': /'FlateDecode', 'Length': 266, 'CMapName': /'OneByteIdentityH', 'Type': /'CMap'}>",
+"d2498a71d72d0aa14f1f3cfc8d95f5da6cb187468f70dd8048374d9b62e89c3e"
+],
+[
+"6",
+"{'Supplement': 0, 'Registry': b'Adobe', 'Ordering': b'Identity'}",
+null
+],
+[
+"7",
+"<PDFStream(7): raw=317, {'Filter': /'FlateDecode', 'Length': 317}>",
+"816d71148d2a1f8d6925b1baaa04794d5aeeb92e336be214c2b030a87d4cb8a9"
+],
+[
+"8",
+"sha256:e7ec9fc66c04ec85f8fc161eaf4079fe2ab3ed1243b1050552bf857ec12f35f4",
+null
+],
+[
+"9",
+"{'Descent': -235, 'MissingWidth': 645, 'CapHeight': 750, 'StemV': 138, 'Type': /'FontDescriptor', 'FontFile2': <PDFObjRef:10>, 'Flags': 4, 'FontName': /'VGOQEA+SegoeUI', 'FontBBox': [0, -235, 921, 861], 'ItalicAngle': 0, 'Ascent': 750}",
+null
+],
+[
+"10",
+"<PDFStream(10): raw=10934, {'Filter': /'FlateDecode', 'Length': 10934}>",
+"b78f47b4fb493f0ec2466c12e3e3f818c0f290451ba299c36bf83c64377599c4"
+],
+[
+"11",
+"<PDFStream(11): raw=180, {'Filter': /'FlateDecode', 'Length': 180}>",
+"8d58b45bbccf09fb6eaacb4e956555b80ac4ceb561708f6d08f8ba09414668e4"
+],
+[
+"12",
+"{'Type': /'Pages', 'Count': 1, 'Kids': [<PDFObjRef:1>]}",
+null
+],
+[
+"13",
+"{'Type': /'Catalog', 'Pages': <PDFObjRef:12>}",
+null
+],
+[
+"14",
+"{'Producer': b'iTextSharp\\x92 5.4.4 \\xa92000-2013 1T3XT BVBA (internet access GmbH; licens\\xced version)', 'CreationDate': b\"D:20160630145301+02'00'\", 'ModDate': b\"D:20160630145301+02'00'\"}",
+null
+]
+],
+"pages": [
+{
+"pageid": "1",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.28, 841.89)",
+"cropbox": "(0.0, 0.0, 595.28, 841.89)",
+"rotate": 0,
+"resources": [
+"Font"
+],
+"contents": [
+"<PDFStream(2): len=55, {'Filter': /'FlateDecode', 'Length': 55}>"
+],
+"attrs": [
+"Contents",
+"Type",
+"Resources",
+"Rotate",
+"MediaBox",
+"Parent"
+],
+"repr": "<PDFPage: Resources={'Font': <PDFObjRef:3>}, MediaBox=(0.0, 0.0, 595.28, 841.89)>"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "corrupt1",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRef: offsets=dict_keys([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14])>",
+"trailer": "{'Size': 15, 'Root': <PDFObjRef:13>, 'Info': <PDFObjRef:14>, 'ID': [b'\\x9di*\\x15B\\xa5|L\\xc0\\xdfd\\x95\\xf8$\\x06\\xa2', b'\\xfb\\xf4!\\xb5\\x85+k\\x98\\xd9\\xac\\x98\\xb2\\\\\\x94\\xa2\\x80']}",
+"ids": [
+[
+"1",
+"(None, 13054, 0)"
+],
+[
+"2",
+"(None, 15, 0)"
+],
+[
+"3",
+"(None, 13024, 0)"
+],
+[
+"4",
+"(None, 12902, 0)"
+],
+[
+"5",
+"(None, 204, 0)"
+],
+[
+"6",
+"(None, 136, 0)"
+],
+[
+"7",
+"(None, 593, 0)"
+],
+[
+"8",
+"(None, 12422, 0)"
+],
+[
+"9",
+"(None, 11981, 0)"
+],
+[
+"10",
+"(None, 977, 0)"
+],
+[
+"11",
+"(None, 12174, 0)"
+],
+[
+"12",
+"(None, 13175, 0)"
+],
+[
+"13",
+"(None, 13227, 0)"
+],
+[
+"14",
+"(None, 13274, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /'Catalog', 'Pages': <PDFObjRef:12>}",
+"info": "[{'Producer': b'iTextSharp\\x92 5.4.4 \\xa92000-2013 1T3XT BVBA (internet access GmbH; licensed version)', 'CreationDate': b\"D:20160630145301+02'00'\", 'ModDate': b\"D:20160630145301+02'00'\"}]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"1",
+"{'Contents': <PDFObjRef:2>, 'Type': /'Page', 'Resources': {'Font': <PDFObjRef:3>}, 'Rotate': 0, 'MediaBox': [0, 0, 595.28, 841.89], 'Parent': <PDFObjRef:12>}",
+null
+],
+[
+"2",
+"<PDFStream(2): raw=55, {'Filter': /'FlateDecode', 'Length': 55}>",
+"d36c9ae007c45eafb40b1f57a1364330d215fd6db027ee8f4090c310369b0456"
+],
+[
+"3",
+"{'R25': <PDFObjRef:4>}",
+null
+],
+[
+"4",
+"{'Subtype': /'Type0', 'BaseFont': /'VGOQEA+SegoeUI', 'Type': /'Font', 'Encoding': <PDFObjRef:5>, 'ToUnicode': <PDFObjRef:7>, 'DescendantFonts': [<PDFObjRef:8>]}",
+null
+],
+[
+"5",
+"<PDFStream(5): raw=266, {'CIDSystemInfo': <PDFObjRef:6>, 'Filter': /'FlateDecode', 'Length': 266, 'CMapName': /'OneByteIdentityH', 'Type': /'CMap'}>",
+"d2498a71d72d0aa14f1f3cfc8d95f5da6cb187468f70dd8048374d9b62e89c3e"
+],
+[
+"6",
+"{'Supplement': 0, 'Registry': b'Adobe', 'Ordering': b'Identity'}",
+null
+],
+[
+"7",
+"<PDFStream(7): raw=317, {'Filter': /'FlateDecode', 'Length': 317}>",
+"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+],
+[
+"8",
+"sha256:e7ec9fc66c04ec85f8fc161eaf4079fe2ab3ed1243b1050552bf857ec12f35f4",
+null
+],
+[
+"9",
+"{'Descent': -235, 'MissingWidth': 645, 'CapHeight': 750, 'StemV': 138, 'Type': /'FontDescriptor', 'FontFile2': <PDFObjRef:10>, 'Flags': 4, 'FontName': /'VGOQEA+SegoeUI', 'FontBBox': [0, -235, 921, 861], 'ItalicAngle': 0, 'Ascent': 750}",
+null
+],
+[
+"10",
+"<PDFStream(10): raw=10934, {'Filter': /'FlateDecode', 'Length': 10934}>",
+"1fa5e45a214a68375a4463dfc4da5ba009afade2b3a0622c3ae22867f1ee52ba"
+],
+[
+"11",
+"<PDFStream(11): raw=180, {'Filter': /'FlateDecode', 'Length': 180}>",
+"8d58b45bbccf09fb6eaacb4e956555b80ac4ceb561708f6d08f8ba09414668e4"
+],
+[
+"12",
+"{'Type': /'Pages', 'Count': 1, 'Kids': [<PDFObjRef:1>]}",
+null
+],
+[
+"13",
+"{'Type': /'Catalog', 'Pages': <PDFObjRef:12>}",
+null
+],
+[
+"14",
+"{'Producer': b'iTextSharp\\x92 5.4.4 \\xa92000-2013 1T3XT BVBA (internet access GmbH; licensed version)', 'CreationDate': b\"D:20160630145301+02'00'\", 'ModDate': b\"D:20160630145301+02'00'\"}",
+null
+]
+],
+"pages": [
+{
+"pageid": "1",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.28, 841.89)",
+"cropbox": "(0.0, 0.0, 595.28, 841.89)",
+"rotate": 0,
+"resources": [
+"Font"
+],
+"contents": [
+"<PDFStream(2): len=55, {'Filter': /'FlateDecode', 'Length': 55}>"
+],
+"attrs": [
+"Contents",
+"Type",
+"Resources",
+"Rotate",
+"MediaBox",
+"Parent"
+],
+"repr": "<PDFPage: Resources={'Font': <PDFObjRef:3>}, MediaBox=(0.0, 0.0, 595.28, 841.89)>"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "corrupt2",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRef: offsets=dict_keys([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14])>",
+"trailer": "{'Size': 15, 'Root': <PDFObjRef:13>, 'Info': <PDFObjRef:14>, 'ID': [b'\\x9di*\\x15B\\xa5|L\\xc0\\xdfd\\x95\\xf8$\\x06\\xa2', b'\\xfb\\xf4!\\xb5\\x85+k\\x98\\xd9\\xac\\x98\\xb2\\\\\\x94\\xa2\\x80']}",
+"ids": [
+[
+"1",
+"(None, 13054, 0)"
+],
+[
+"2",
+"(None, 15, 0)"
+],
+[
+"3",
+"(None, 13024, 0)"
+],
+[
+"4",
+"(None, 12902, 0)"
+],
+[
+"5",
+"(None, 204, 0)"
+],
+[
+"6",
+"(None, 136, 0)"
+],
+[
+"7",
+"(None, 593, 0)"
+],
+[
+"8",
+"(None, 12422, 0)"
+],
+[
+"9",
+"(None, 11981, 0)"
+],
+[
+"10",
+"(None, 977, 0)"
+],
+[
+"11",
+"(None, 12174, 0)"
+],
+[
+"12",
+"(None, 13175, 0)"
+],
+[
+"13",
+"(None, 13227, 0)"
+],
+[
+"14",
+"(None, 13274, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /'Catalog', 'Pages': <PDFObjRef:12>}",
+"info": "[{'Producer': b'iTextSharp\\x92 5.4.4 \\xa92000-2013 1T3XT BVBA (internet access GmbH; licensed version)', 'CreationDate': b\"D:20160630145301+02'00'\", 'ModDate': b\"D:20160630145301+02'00'\"}]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"1",
+"{'Contents': <PDFObjRef:2>, 'Type': /'Page', 'Resources': {'Font': <PDFObjRef:3>}, 'Rotate': 0, 'MediaBox': [0, 0, 595.28, 841.89], 'Parent': <PDFObjRef:12>}",
+null
+],
+[
+"2",
+"<PDFStream(2): raw=55, {'Filter': /'FlateDecode', 'Length': 55}>",
+"d36c9ae007c45eafb40b1f57a1364330d215fd6db027ee8f4090c310369b0456"
+],
+[
+"3",
+"{'R25': <PDFObjRef:4>}",
+null
+],
+[
+"4",
+"{'Subtype': /'Type0', 'BaseFont': /'VGOQEA+SegoeUI', 'Type': /'Font', 'Encoding': <PDFObjRef:5>, 'ToUnicode': <PDFObjRef:7>, 'DescendantFonts': [<PDFObjRef:8>]}",
+null
+],
+[
+"5",
+"<PDFStream(5): raw=266, {'CIDSystemInfo': <PDFObjRef:6>, 'Filter': /'FlateDecode', 'Length': 266, 'CMapName': /'OneByteIdentityH', 'Type': /'CMap'}>",
+"d2498a71d72d0aa14f1f3cfc8d95f5da6cb187468f70dd8048374d9b62e89c3e"
+],
+[
+"6",
+"{'Supplement': 0, 'Registry': b'Adobe', 'Ordering': b'Identity'}",
+null
+],
+[
+"7",
+"<PDFStream(7): raw=317, {'Filter': /'FlateDecode', 'Length': 317}>",
+"816d71148d2a1f8d6925b1baaa04794d5aeeb92e336be214c2b030a87d4cb8a9"
+],
+[
+"8",
+"sha256:e7ec9fc66c04ec85f8fc161eaf4079fe2ab3ed1243b1050552bf857ec12f35f4",
+null
+],
+[
+"9",
+"{'Descent': -235, 'MissingWidth': 645, 'CapHeight': 750, 'StemV': 138, 'Type': /'FontDescriptor', 'FontFile2': <PDFObjRef:10>, 'Flags': 4, 'FontName': /'VGOQEA+SegoeUI', 'FontBBox': [0, -235, 921, 861], 'ItalicAngle': 0, 'Ascent': 750}",
+null
+],
+[
+"10",
+"<PDFStream(10): raw=10934, {'Filter': /'FlateDecode', 'Length': 10934}>",
+"2bc152175f19cf5330218cc75e0a588be3004eae220c0c13c847b21b96571cf2"
+],
+[
+"11",
+"<PDFStream(11): raw=180, {'Filter': /'FlateDecode', 'Length': 180}>",
+"8d58b45bbccf09fb6eaacb4e956555b80ac4ceb561708f6d08f8ba09414668e4"
+],
+[
+"12",
+"{'Type': /'Pages', 'Count': 1, 'Kids': [<PDFObjRef:1>]}",
+null
+],
+[
+"13",
+"{'Type': /'Catalog', 'Pages': <PDFObjRef:12>}",
+null
+],
+[
+"14",
+"{'Producer': b'iTextSharp\\x92 5.4.4 \\xa92000-2013 1T3XT BVBA (internet access GmbH; licensed version)', 'CreationDate': b\"D:20160630145301+02'00'\", 'ModDate': b\"D:20160630145301+02'00'\"}",
+null
+]
+],
+"pages": [
+{
+"pageid": "1",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.28, 841.89)",
+"cropbox": "(0.0, 0.0, 595.28, 841.89)",
+"rotate": 0,
+"resources": [
+"Font"
+],
+"contents": [
+"<PDFStream(2): len=55, {'Filter': /'FlateDecode', 'Length': 55}>"
+],
+"attrs": [
+"Contents",
+"Type",
+"Resources",
+"Rotate",
+"MediaBox",
+"Parent"
+],
+"repr": "<PDFPage: Resources={'Font': <PDFObjRef:3>}, MediaBox=(0.0, 0.0, 595.28, 841.89)>"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "corrupt3",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRef: offsets=dict_keys([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14])>",
+"trailer": "{'Size': 15, 'Root': <PDFObjRef:13>, 'Info': <PDFObjRef:14>, 'ID': [b'\\x9di*\\x15B\\xa5|L\\xc0\\xdfd\\x95\\xf8$\\x06\\xa2', b'\\xfb\\xf4!\\xb5\\x85+k\\x98\\xd9\\xac\\x98\\xb2\\\\\\x94\\xa2\\x80']}",
+"ids": [
+[
+"1",
+"(None, 13054, 0)"
+],
+[
+"2",
+"(None, 15, 0)"
+],
+[
+"3",
+"(None, 13024, 0)"
+],
+[
+"4",
+"(None, 12902, 0)"
+],
+[
+"5",
+"(None, 204, 0)"
+],
+[
+"6",
+"(None, 136, 0)"
+],
+[
+"7",
+"(None, 593, 0)"
+],
+[
+"8",
+"(None, 12422, 0)"
+],
+[
+"9",
+"(None, 11981, 0)"
+],
+[
+"10",
+"(None, 977, 0)"
+],
+[
+"11",
+"(None, 12174, 0)"
+],
+[
+"12",
+"(None, 13175, 0)"
+],
+[
+"13",
+"(None, 13227, 0)"
+],
+[
+"14",
+"(None, 13274, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /'Catalog', 'Pages': <PDFObjRef:12>}",
+"info": "[{'Producer': b'iTextSharp\\x92 5.4.4 \\xa92000-2013 1T3XT BVBA (internet access GmbH; licensed version)', 'CreationDate': b\"D:20160630145301+02'00'\", 'ModDate': b\"D:20160630145301+02'00'\"}]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"1",
+"{'Contents': <PDFObjRef:2>, 'Type': /'Page', \"b'\\\\x86esources'\": {'Font': <PDFObjRef:3>}, 'Rotate': 0, 'MediaBox': [0, 0, 595.28, 841.89], 'Parent': <PDFObjRef:12>}",
+null
+],
+[
+"2",
+"<PDFStream(2): raw=55, {'Filter': /'FlateDecode', 'Length': 55}>",
+"d36c9ae007c45eafb40b1f57a1364330d215fd6db027ee8f4090c310369b0456"
+],
+[
+"3",
+"{'R25': <PDFObjRef:4>}",
+null
+],
+[
+"4",
+"!PSSyntaxError",
+null
+],
+[
+"5",
+"<PDFStream(5): raw=266, {'CIDSystemInfo': <PDFObjRef:6>, 'Filter': /'FlateDecode', 'Length': 266, 'CMapName': /'OneByteIdentityH', 'Type': /'CMap'}>",
+"d2498a71d72d0aa14f1f3cfc8d95f5da6cb187468f70dd8048374d9b62e89c3e"
+],
+[
+"6",
+"{'Supplement': 0, 'Registry': b'Adobe', 'Ordering': b'Identity'}",
+null
+],
+[
+"7",
+"<PDFStream(7): raw=317, {\"b'Fi\\\\x8fter'\": /'FlateDecode', 'Length': 317}>",
+"24bded5da80bb22c2d833ae7962628ab47c910cbd9d30313cfd85acfa31b63ee"
+],
+[
+"8",
+"sha256:e7ec9fc66c04ec85f8fc161eaf4079fe2ab3ed1243b1050552bf857ec12f35f4",
+null
+],
+[
+"9",
+"{'Descent': -235, 'MissingWidth': 645, 'CapHeight': 750, 'StemV': 138, 'Type': /'FontDescriptor', 'FontFile2': <PDFObjRef:10>, 'Flags': 4, 'FontName': /'VGOQEA+SegoeUI', 'FontBBox': [0, -235, 921, 861], 'ItalicAngle': 0, 'Ascent': 750}",
+null
+],
+[
+"10",
+"<PDFStream(10): raw=10934, {'Filter': /'FlateDecode', 'Length': 10934}>",
+"32dcc6eb3df6172d2a77c7d66694d2c3a147bc2f1a716ec5381e81d3d08ddff7"
+],
+[
+"11",
+"<PDFStream(11): raw=180, {'Filter': /'FlateDecode', 'Length': 180}>",
+"8d58b45bbccf09fb6eaacb4e956555b80ac4ceb561708f6d08f8ba09414668e4"
+],
+[
+"12",
+"{'Type': /'Pages', 'Count': 1, 'Kids': [<PDFObjRef:1>]}",
+null
+],
+[
+"13",
+"{'Type': /'Catalog', 'Pages': <PDFObjRef:12>}",
+null
+],
+[
+"14",
+"{'Producer': b'iTextSharp\\x92 5.4.4 \\xa92000-2013 1T3XT BVBA (internet access GmbH; licensed version)', 'CreationDate': b\"D:20160630145301+02'00'\", 'ModDate': b\"D:20160630145301+02'00'\"}",
+null
+]
+],
+"pages": [
+{
+"pageid": "1",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.28, 841.89)",
+"cropbox": "(0.0, 0.0, 595.28, 841.89)",
+"rotate": 0,
+"resources": [],
+"contents": [
+"<PDFStream(2): len=55, {'Filter': /'FlateDecode', 'Length': 55}>"
+],
+"attrs": [
+"Contents",
+"Type",
+"b'\\x86esources'",
+"Rotate",
+"MediaBox",
+"Parent"
+],
+"repr": "<PDFPage: Resources={}, MediaBox=(0.0, 0.0, 595.28, 841.89)>"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+}
+]
+}

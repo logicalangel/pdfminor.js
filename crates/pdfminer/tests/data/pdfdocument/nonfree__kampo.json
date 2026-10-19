@@ -1,0 +1,3391 @@
+{
+"path": "nonfree/kampo.pdf",
+"runs": [
+{
+"password": "",
+"variant": "orig",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRef: offsets=dict_keys([1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55])>",
+"trailer": "{'Size': 56, 'Root': <PDFObjRef:7>, 'Info': <PDFObjRef:4>, 'Encrypt': <PDFObjRef:55>, 'ID': [b'\\xf4_\\x97\\x80D\\xb9\\x8d7\\xd8\\xff\\x94P\\xa4k\\x91&', b'_*\\xb7u\\xf6\\xf1\\xb42\\xdeQN\\xa4\\xb6\\x14-)']}",
+"ids": [
+[
+"1",
+"(None, 17, 0)"
+],
+[
+"2",
+"(None, 44, 0)"
+],
+[
+"3",
+"(None, 81, 0)"
+],
+[
+"4",
+"(None, 135, 0)"
+],
+[
+"5",
+"(None, 275, 0)"
+],
+[
+"7",
+"(None, 1002, 0)"
+],
+[
+"8",
+"(None, 1098, 0)"
+],
+[
+"9",
+"(None, 1293, 0)"
+],
+[
+"10",
+"(None, 1435, 0)"
+],
+[
+"11",
+"(None, 1561, 0)"
+],
+[
+"12",
+"(None, 1687, 0)"
+],
+[
+"13",
+"(None, 1725, 0)"
+],
+[
+"14",
+"(None, 1749, 0)"
+],
+[
+"15",
+"(None, 2805, 0)"
+],
+[
+"16",
+"(None, 2829, 0)"
+],
+[
+"17",
+"(None, 3881, 0)"
+],
+[
+"18",
+"(None, 4159, 0)"
+],
+[
+"19",
+"(None, 4960, 0)"
+],
+[
+"20",
+"(None, 5287, 0)"
+],
+[
+"21",
+"(None, 5419, 0)"
+],
+[
+"22",
+"(None, 6584, 0)"
+],
+[
+"23",
+"(None, 6608, 0)"
+],
+[
+"24",
+"(None, 7483, 0)"
+],
+[
+"25",
+"(None, 7507, 0)"
+],
+[
+"26",
+"(None, 8315, 0)"
+],
+[
+"27",
+"(None, 8339, 0)"
+],
+[
+"28",
+"(None, 8940, 0)"
+],
+[
+"29",
+"(None, 9070, 0)"
+],
+[
+"30",
+"(None, 9094, 0)"
+],
+[
+"31",
+"(None, 9915, 0)"
+],
+[
+"32",
+"(None, 9939, 0)"
+],
+[
+"33",
+"(None, 10483, 0)"
+],
+[
+"34",
+"(None, 10507, 0)"
+],
+[
+"35",
+"(None, 11292, 0)"
+],
+[
+"36",
+"(None, 11520, 0)"
+],
+[
+"37",
+"(None, 11691, 0)"
+],
+[
+"38",
+"(None, 11866, 0)"
+],
+[
+"39",
+"(None, 12098, 0)"
+],
+[
+"40",
+"(None, 12269, 0)"
+],
+[
+"41",
+"(None, 14942, 0)"
+],
+[
+"42",
+"(None, 15010, 0)"
+],
+[
+"43",
+"(None, 15200, 0)"
+],
+[
+"44",
+"(None, 15223, 0)"
+],
+[
+"45",
+"(None, 22091, 0)"
+],
+[
+"46",
+"(None, 22258, 0)"
+],
+[
+"47",
+"(None, 22338, 0)"
+],
+[
+"48",
+"(None, 23533, 0)"
+],
+[
+"49",
+"(None, 23626, 0)"
+],
+[
+"50",
+"(None, 25303, 0)"
+],
+[
+"51",
+"(None, 25811, 0)"
+],
+[
+"52",
+"(None, 26306, 0)"
+],
+[
+"53",
+"(None, 26462, 0)"
+],
+[
+"54",
+"(None, 26652, 0)"
+],
+[
+"55",
+"(None, 26798, 0)"
+]
+]
+}
+],
+"catalog": "{'Pages': <PDFObjRef:3>, 'PageLabels': <PDFObjRef:2>, 'Metadata': <PDFObjRef:5>, 'Type': /'Catalog', 'AcroForm': <PDFObjRef:45>}",
+"info": "[{'CreationDate': b\"D:20080424142424+09'00'\", 'ModDate': b\"D:20080424142424+09'00'\", 'Producer': b'Acrobat Distiller 5.0.5 (Windows)'}]",
+"flags": [
+true,
+false,
+true
+],
+"objects": [
+[
+"1",
+"{'S': /'D'}",
+null
+],
+[
+"2",
+"{'Nums': [0, <PDFObjRef:1>]}",
+null
+],
+[
+"3",
+"{'Kids': [<PDFObjRef:8>], 'Count': 1, 'Type': /'Pages'}",
+null
+],
+[
+"4",
+"{'CreationDate': b\"D:20080424142424+09'00'\", 'ModDate': b\"D:20080424142424+09'00'\", 'Producer': b'Acrobat Distiller 5.0.5 (Windows)'}",
+null
+],
+[
+"5",
+"<PDFStream(5): raw=648, {'Type': /'Metadata', 'Subtype': /'XML', 'Length': 648}>",
+"9e7abce4019edb82fd1685741ca5e94da8514d1ace05ba0da3bbd2034c257e46"
+],
+[
+"7",
+"{'Pages': <PDFObjRef:3>, 'PageLabels': <PDFObjRef:2>, 'Metadata': <PDFObjRef:5>, 'Type': /'Catalog', 'AcroForm': <PDFObjRef:45>}",
+null
+],
+[
+"8",
+"sha256:85830be6c6096f4fbba76ff5c21fea7c09b70c7cade4e8b6e8314146338a5629",
+null
+],
+[
+"9",
+"{'ProcSet': [/'PDF', /'Text'], 'Font': {'F2': <PDFObjRef:18>, 'G1': <PDFObjRef:11>, 'G2': <PDFObjRef:10>, 'G3': <PDFObjRef:28>}, 'ExtGState': {'GS1': <PDFObjRef:41>}, 'ColorSpace': {'Cs6': <PDFObjRef:12>}}",
+null
+],
+[
+"10",
+"{'Type': /'Font', 'Subtype': /'Type0', 'BaseFont': /'Ryumin-Light-Identity-V', 'Encoding': /'Identity-V', 'DescendantFonts': [<PDFObjRef:39>]}",
+null
+],
+[
+"11",
+"{'Type': /'Font', 'Subtype': /'Type0', 'BaseFont': /'Ryumin-Light-Identity-H', 'Encoding': /'Identity-H', 'DescendantFonts': [<PDFObjRef:36>]}",
+null
+],
+[
+"12",
+"[/'ICCBased', <PDFObjRef:40>]",
+null
+],
+[
+"13",
+"980",
+null
+],
+[
+"14",
+"<PDFStream(14): raw=980, {'Filter': /'FlateDecode', 'Length': <PDFObjRef:13>}>",
+"57260edc6a4a5b3a77f0f6497e2cd586644db6fda76832587edaa831c943655d"
+],
+[
+"15",
+"976",
+null
+],
+[
+"16",
+"<PDFStream(16): raw=976, {'Filter': /'FlateDecode', 'Length': <PDFObjRef:15>}>",
+"51a7b2d4dc461393e7f0ff6e42a5ac306af9e1747f04f471b98e889f7949d6e6"
+],
+[
+"17",
+"sha256:6e01699aaf343009e351f4a007aa9579d195bf5df645a9c24fcc23fec4ea3def",
+null
+],
+[
+"18",
+"sha256:29be23abfbaf60dd29d64608386cf9787d31e419e712d9605d20f72cd9817002",
+null
+],
+[
+"19",
+"<PDFStream(19): raw=254, {'Filter': /'FlateDecode', 'Length': 254}>",
+"4241ee66f3a68e72f1b9708521241c871443de9fb22087416a087966514728d4"
+],
+[
+"20",
+"{'Type': /'Encoding', 'Differences': [1, /'c158', 31, /'tilde', 132, /'emdash', 137, /'guilsinglright', 146, /'trademark', 152, /'Ydieresis', 156, /'oe']}",
+null
+],
+[
+"21",
+"<PDFStream(21): raw=1095, {'Length': 1095, 'Subtype': /'Type1C'}>",
+"00cc207e250a21bad182857e8f14fbd5127aa952417de86ed5f6afdf298c2911"
+],
+[
+"22",
+"799",
+null
+],
+[
+"23",
+"<PDFStream(23): raw=799, {'Filter': /'FlateDecode', 'Length': <PDFObjRef:22>}>",
+"db9817e4357e18d346931ff4126243bf4c42a18db5233ed19b35ddaf4b014781"
+],
+[
+"24",
+"732",
+null
+],
+[
+"25",
+"<PDFStream(25): raw=732, {'Filter': /'FlateDecode', 'Length': <PDFObjRef:24>}>",
+"cb237dff356ef1e47707a3769081647f004fc929618fd7d3cddff84855724bc1"
+],
+[
+"26",
+"525",
+null
+],
+[
+"27",
+"<PDFStream(27): raw=525, {'Filter': /'FlateDecode', 'Length': <PDFObjRef:26>}>",
+"6e3aa4d4578798513b2d324199aea926195b2016e1911895d3bb10f077b5a6df"
+],
+[
+"28",
+"{'Type': /'Font', 'Subtype': /'Type0', 'BaseFont': /'GothicBBB-Medium-Identity-H', 'Encoding': /'Identity-H', 'DescendantFonts': [<PDFObjRef:37>]}",
+null
+],
+[
+"29",
+"745",
+null
+],
+[
+"30",
+"<PDFStream(30): raw=745, {'Filter': /'FlateDecode', 'Length': <PDFObjRef:29>}>",
+"45467ca59cdd58a0175bf7ebbc31d5524844dd679a3862c61b6b5f4f220b1020"
+],
+[
+"31",
+"468",
+null
+],
+[
+"32",
+"<PDFStream(32): raw=468, {'Filter': /'FlateDecode', 'Length': <PDFObjRef:31>}>",
+"ac43a0c85cd8800b150e2acc29bea9295706c3c9fe2ee18364b49d5ef8ff19ae"
+],
+[
+"33",
+"709",
+null
+],
+[
+"34",
+"<PDFStream(34): raw=709, {'Filter': /'FlateDecode', 'Length': <PDFObjRef:33>}>",
+"f1aa88bb6e35c8e13e3003e09fef37a9fcb9f8069baa267496aa57d957714f05"
+],
+[
+"35",
+"{'Type': /'FontDescriptor', 'Ascent': 723, 'CapHeight': 709, 'Descent': -241, 'Flags': 6, 'FontBBox': [-170, -331, 1024, 903], 'FontName': /'Ryumin-Light', 'ItalicAngle': 0, 'StemV': 69, 'XHeight': 450, 'StemH': 34, 'Style': {'Panose': b'\\x01\\x05\\x02\\x02\\x03\\x00\\x00\\x00\\x00\\x00\\x00\\x00'}}",
+null
+],
+[
+"36",
+"{'Type': /'Font', 'Subtype': /'CIDFontType0', 'BaseFont': /'Ryumin-Light', 'FontDescriptor': <PDFObjRef:35>, 'CIDSystemInfo': {'Registry': b'Adobe', 'Ordering': b'Japan1', 'Supplement': 2}, 'DW': 1000}",
+null
+],
+[
+"37",
+"{'Type': /'Font', 'Subtype': /'CIDFontType0', 'BaseFont': /'GothicBBB-Medium', 'FontDescriptor': <PDFObjRef:38>, 'CIDSystemInfo': {'Registry': b'Adobe', 'Ordering': b'Japan1', 'Supplement': 2}, 'DW': 1000}",
+null
+],
+[
+"38",
+"{'Type': /'FontDescriptor', 'Ascent': 752, 'CapHeight': 737, 'Descent': -271, 'Flags': 4, 'FontBBox': [-174, -268, 1001, 944], 'FontName': /'GothicBBB-Medium', 'ItalicAngle': 0, 'StemV': 99, 'XHeight': 553, 'StemH': 72, 'Style': {'Panose': b'\\x08\\x01\\x02\\x0b\\x05\\x00\\x00\\x00\\x00\\x00\\x00\\x00'}}",
+null
+],
+[
+"39",
+"{'Type': /'Font', 'Subtype': /'CIDFontType0', 'BaseFont': /'Ryumin-Light', 'FontDescriptor': <PDFObjRef:35>, 'CIDSystemInfo': {'Registry': b'Adobe', 'Ordering': b'Japan1', 'Supplement': 2}, 'DW': 1000}",
+null
+],
+[
+"40",
+"<PDFStream(40): raw=2575, {'N': 3, 'Alternate': /'DeviceRGB', 'Length': 2575, 'Filter': /'FlateDecode'}>",
+"2b3aa1645779a9e634744faf9b01e9102b0c9b88fd6deced7934df86b949af7e"
+],
+[
+"41",
+"{'Type': /'ExtGState', 'SA': False, 'SM': 0.02, 'TR2': /'Default'}",
+null
+],
+[
+"42",
+"<PDFStream(42): raw=103, {'S': 36, 'L': 116, 'Filter': /'FlateDecode', 'Length': <PDFObjRef:43>}>",
+"e44d1d79d541b76c668f5dd71575cc830ad06181729e418e3add7cfad0c4bc98"
+],
+[
+"43",
+"103",
+null
+],
+[
+"44",
+"sha256:3faecda53e726cbcadf223fb4f8ea0c1132918e9d4b54e01a817e6f3b1bcd557",
+null
+],
+[
+"45",
+"{'DA': b'/Helv 0 Tf 0 g', 'SigFlags': 3, 'DR': {'XObject': {'DSz': <PDFObjRef:52>, 'DSy': <PDFObjRef:51>, 'DSx': <PDFObjRef:50>}, 'Font': {'Helv': <PDFObjRef:48>, 'ZaDb': <PDFObjRef:46>, 'KaGo': <PDFObjRef:49>}}, 'Fields': [<PDFObjRef:54>]}",
+null
+],
+[
+"46",
+"{'Type': /'Font', 'Name': /'ZaDb', 'BaseFont': /'ZapfDingbats', 'Subtype': /'Type1'}",
+null
+],
+[
+"47",
+"sha256:add549085adb6438b13b9bb7b5c9b82dbe817da7762655eaf680d5332e71095d",
+null
+],
+[
+"48",
+"{'Type': /'Font', 'Name': /'Helv', 'BaseFont': /'Helvetica', 'Subtype': /'Type1', 'Encoding': <PDFObjRef:47>}",
+null
+],
+[
+"49",
+"sha256:789b350745003624daa3d13b4d751c4e341afde4f5ed0815bf21ecefdb378e0b",
+null
+],
+[
+"50",
+"<PDFStream(50): raw=330, {'Resources': {'ProcSet': [/'PDF']}, 'Matrix': [1, 0, 0, 1, 0, 0], 'Subtype': /'Form', 'Filter': /'FlateDecode', 'Length': 330, 'FormType': 1, 'Type': /'XObject', 'BBox': [0, 0, 100, 100]}>",
+"a5b1055195ad3d253e306e4b27ca4c5c3d6043dfdee69344f4a6735cba14e07f"
+],
+[
+"51",
+"<PDFStream(51): raw=317, {'Resources': {'ProcSet': [/'PDF']}, 'Matrix': [1, 0, 0, 1, 0, 0], 'Subtype': /'Form', 'Filter': /'FlateDecode', 'Length': 317, 'FormType': 1, 'Type': /'XObject', 'BBox': [0, 0, 100, 100]}>",
+"bdc4da714f6e19c3f4f70200c58eff72f10555a88535f6389484ec03ca2fd10c"
+],
+[
+"52",
+"<PDFStream(52): raw=0, {'Resources': {'ProcSet': [/'PDF']}, 'Matrix': [1, 0, 0, 1, 0, 0], 'Subtype': /'Form', 'Length': 0, 'FormType': 1, 'Type': /'XObject', 'BBox': [0, 0, 100, 100]}>",
+"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+],
+[
+"53",
+"<PDFStream(53): raw=26, {'Resources': {'ProcSet': [/'PDF']}, 'Subtype': /'Form', 'Filter': /'FlateDecode', 'Length': 26, 'FormType': 1, 'Type': /'XObject', 'BBox': [0.0, 0.0, 0.0, 0.0]}>",
+"625bafdcc5fb9e01b4ac3aad3a9ba86d7d0a27aa61029997bec405ff6397fa4f"
+],
+[
+"54",
+"{'P': <PDFObjRef:8>, 'FT': /'Sig', 'TU': b'', 'Ff': 36, 'F': 132, 'DA': b'/KaGo 0 Tf 0 g', 'Subtype': /'Widget', 'V': <PDFObjRef:44>, 'Type': /'Annot', 'Rect': [0.0, 0.0, 0.0, 0.0], 'T': b'Signature1'}",
+null
+],
+[
+"55",
+"{'R': 2, 'Length': 40, 'Filter': /'Standard', 'O': b'v\\xf1\\xc1\\x163\\x07\\x12\\x0c\\x10\\xe9h\\x9b\\xc9Qm\\xff1\\x03\\x94eJ]\\xbf\\xd36\\xb7wwKl\\xca\\xee', 'P': -44, 'U': b\"\\x7f\\xfc\\xe3\\x8a\\x98\\x11\\xe0\\xb7'\\x9d\\xc7\\x00\\x01W\\x9d\\x1a\\xd1\\xf2\\xcfK\\xf9\\x1b\\r\\x14w%\\x0c\\r\\xc1\\xc7\\xf0s\", 'V': 1}",
+null
+]
+],
+"pages": [
+{
+"pageid": "8",
+"label": "1",
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [
+"ColorSpace",
+"ExtGState",
+"Font",
+"ProcSet"
+],
+"contents": [
+"<PDFObjRef:14>",
+"<PDFObjRef:16>",
+"<PDFObjRef:23>",
+"<PDFObjRef:25>",
+"<PDFObjRef:27>",
+"<PDFObjRef:30>",
+"<PDFObjRef:32>",
+"<PDFObjRef:34>"
+],
+"attrs": [
+"Resources",
+"Rotate",
+"Parent",
+"Annots",
+"MediaBox",
+"CropBox",
+"Contents",
+"Type"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'Text'], 'Font': {'F2': <PDFObjRef:18>, 'G1': <PDFObjRef:11>, 'G2': <PDFObjRef:10>, 'G3': <PDFObjRef:28>}, 'ExtGState': {'GS1': <PDFObjRef:41>}, 'ColorSpace': {'Cs6': <PDFObjRef:12>}}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"1",
+"2",
+"3",
+"4",
+"5",
+"6",
+"7",
+"8",
+"9",
+"10",
+"11",
+"12"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "half",
+"open": "!PSEOF"
+},
+{
+"password": "",
+"variant": "3q",
+"open": "!PSEOF"
+},
+{
+"password": "",
+"variant": "noxref",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "shifted",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRefFallback: offsets=dict_keys([1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55])>",
+"trailer": "{'Size': 56, 'Root': <PDFObjRef:7>, 'Info': <PDFObjRef:4>, 'Encrypt': <PDFObjRef:55>, 'ID': [b'\\xf4_\\x97\\x80D\\xb9\\x8d7\\xd8\\xff\\x94P\\xa4k\\x91&', b'_*\\xb7u\\xf6\\xf1\\xb42\\xdeQN\\xa4\\xb6\\x14-)']}",
+"ids": [
+[
+"1",
+"(None, 23, 0)"
+],
+[
+"2",
+"(None, 50, 0)"
+],
+[
+"3",
+"(None, 87, 0)"
+],
+[
+"4",
+"(None, 141, 0)"
+],
+[
+"5",
+"(None, 281, 0)"
+],
+[
+"7",
+"(None, 1008, 0)"
+],
+[
+"8",
+"(None, 1104, 0)"
+],
+[
+"9",
+"(None, 1299, 0)"
+],
+[
+"10",
+"(None, 1441, 0)"
+],
+[
+"11",
+"(None, 1567, 0)"
+],
+[
+"12",
+"(None, 1693, 0)"
+],
+[
+"13",
+"(None, 1731, 0)"
+],
+[
+"14",
+"(None, 1755, 0)"
+],
+[
+"15",
+"(None, 2811, 0)"
+],
+[
+"16",
+"(None, 2835, 0)"
+],
+[
+"17",
+"(None, 3887, 0)"
+],
+[
+"18",
+"(None, 4165, 0)"
+],
+[
+"19",
+"(None, 4966, 0)"
+],
+[
+"20",
+"(None, 5293, 0)"
+],
+[
+"21",
+"(None, 5425, 0)"
+],
+[
+"22",
+"(None, 6590, 0)"
+],
+[
+"23",
+"(None, 6614, 0)"
+],
+[
+"24",
+"(None, 7489, 0)"
+],
+[
+"25",
+"(None, 7513, 0)"
+],
+[
+"26",
+"(None, 8321, 0)"
+],
+[
+"27",
+"(None, 8345, 0)"
+],
+[
+"28",
+"(None, 8946, 0)"
+],
+[
+"29",
+"(None, 9076, 0)"
+],
+[
+"30",
+"(None, 9100, 0)"
+],
+[
+"31",
+"(None, 9921, 0)"
+],
+[
+"32",
+"(None, 9945, 0)"
+],
+[
+"33",
+"(None, 10489, 0)"
+],
+[
+"34",
+"(None, 10513, 0)"
+],
+[
+"35",
+"(None, 11298, 0)"
+],
+[
+"36",
+"(None, 11526, 0)"
+],
+[
+"37",
+"(None, 11697, 0)"
+],
+[
+"38",
+"(None, 11872, 0)"
+],
+[
+"39",
+"(None, 12104, 0)"
+],
+[
+"40",
+"(None, 12275, 0)"
+],
+[
+"41",
+"(None, 14948, 0)"
+],
+[
+"42",
+"(None, 15016, 0)"
+],
+[
+"43",
+"(None, 15206, 0)"
+],
+[
+"44",
+"(None, 15229, 0)"
+],
+[
+"45",
+"(None, 22097, 0)"
+],
+[
+"46",
+"(None, 22264, 0)"
+],
+[
+"47",
+"(None, 22344, 0)"
+],
+[
+"48",
+"(None, 23539, 0)"
+],
+[
+"49",
+"(None, 23632, 0)"
+],
+[
+"50",
+"(None, 25309, 0)"
+],
+[
+"51",
+"(None, 25817, 0)"
+],
+[
+"52",
+"(None, 26312, 0)"
+],
+[
+"53",
+"(None, 26468, 0)"
+],
+[
+"54",
+"(None, 26658, 0)"
+],
+[
+"55",
+"(None, 26804, 0)"
+]
+]
+}
+],
+"catalog": "{'Pages': <PDFObjRef:3>, 'PageLabels': <PDFObjRef:2>, 'Metadata': <PDFObjRef:5>, 'Type': /'Catalog', 'AcroForm': <PDFObjRef:45>}",
+"info": "[{'CreationDate': b\"D:20080424142424+09'00'\", 'ModDate': b\"D:20080424142424+09'00'\", 'Producer': b'Acrobat Distiller 5.0.5 (Windows)'}]",
+"flags": [
+true,
+false,
+true
+],
+"objects": [
+[
+"1",
+"{'S': /'D'}",
+null
+],
+[
+"2",
+"{'Nums': [0, <PDFObjRef:1>]}",
+null
+],
+[
+"3",
+"{'Kids': [<PDFObjRef:8>], 'Count': 1, 'Type': /'Pages'}",
+null
+],
+[
+"4",
+"{'CreationDate': b\"D:20080424142424+09'00'\", 'ModDate': b\"D:20080424142424+09'00'\", 'Producer': b'Acrobat Distiller 5.0.5 (Windows)'}",
+null
+],
+[
+"5",
+"<PDFStream(5): raw=648, {'Type': /'Metadata', 'Subtype': /'XML', 'Length': 648}>",
+"9e7abce4019edb82fd1685741ca5e94da8514d1ace05ba0da3bbd2034c257e46"
+],
+[
+"7",
+"{'Pages': <PDFObjRef:3>, 'PageLabels': <PDFObjRef:2>, 'Metadata': <PDFObjRef:5>, 'Type': /'Catalog', 'AcroForm': <PDFObjRef:45>}",
+null
+],
+[
+"8",
+"sha256:85830be6c6096f4fbba76ff5c21fea7c09b70c7cade4e8b6e8314146338a5629",
+null
+],
+[
+"9",
+"{'ProcSet': [/'PDF', /'Text'], 'Font': {'F2': <PDFObjRef:18>, 'G1': <PDFObjRef:11>, 'G2': <PDFObjRef:10>, 'G3': <PDFObjRef:28>}, 'ExtGState': {'GS1': <PDFObjRef:41>}, 'ColorSpace': {'Cs6': <PDFObjRef:12>}}",
+null
+],
+[
+"10",
+"{'Type': /'Font', 'Subtype': /'Type0', 'BaseFont': /'Ryumin-Light-Identity-V', 'Encoding': /'Identity-V', 'DescendantFonts': [<PDFObjRef:39>]}",
+null
+],
+[
+"11",
+"{'Type': /'Font', 'Subtype': /'Type0', 'BaseFont': /'Ryumin-Light-Identity-H', 'Encoding': /'Identity-H', 'DescendantFonts': [<PDFObjRef:36>]}",
+null
+],
+[
+"12",
+"[/'ICCBased', <PDFObjRef:40>]",
+null
+],
+[
+"13",
+"980",
+null
+],
+[
+"14",
+"<PDFStream(14): raw=980, {'Filter': /'FlateDecode', 'Length': <PDFObjRef:13>}>",
+"57260edc6a4a5b3a77f0f6497e2cd586644db6fda76832587edaa831c943655d"
+],
+[
+"15",
+"976",
+null
+],
+[
+"16",
+"<PDFStream(16): raw=976, {'Filter': /'FlateDecode', 'Length': <PDFObjRef:15>}>",
+"51a7b2d4dc461393e7f0ff6e42a5ac306af9e1747f04f471b98e889f7949d6e6"
+],
+[
+"17",
+"sha256:6e01699aaf343009e351f4a007aa9579d195bf5df645a9c24fcc23fec4ea3def",
+null
+],
+[
+"18",
+"sha256:29be23abfbaf60dd29d64608386cf9787d31e419e712d9605d20f72cd9817002",
+null
+],
+[
+"19",
+"<PDFStream(19): raw=254, {'Filter': /'FlateDecode', 'Length': 254}>",
+"4241ee66f3a68e72f1b9708521241c871443de9fb22087416a087966514728d4"
+],
+[
+"20",
+"{'Type': /'Encoding', 'Differences': [1, /'c158', 31, /'tilde', 132, /'emdash', 137, /'guilsinglright', 146, /'trademark', 152, /'Ydieresis', 156, /'oe']}",
+null
+],
+[
+"21",
+"<PDFStream(21): raw=1095, {'Length': 1095, 'Subtype': /'Type1C'}>",
+"00cc207e250a21bad182857e8f14fbd5127aa952417de86ed5f6afdf298c2911"
+],
+[
+"22",
+"799",
+null
+],
+[
+"23",
+"<PDFStream(23): raw=799, {'Filter': /'FlateDecode', 'Length': <PDFObjRef:22>}>",
+"db9817e4357e18d346931ff4126243bf4c42a18db5233ed19b35ddaf4b014781"
+],
+[
+"24",
+"732",
+null
+],
+[
+"25",
+"<PDFStream(25): raw=732, {'Filter': /'FlateDecode', 'Length': <PDFObjRef:24>}>",
+"cb237dff356ef1e47707a3769081647f004fc929618fd7d3cddff84855724bc1"
+],
+[
+"26",
+"525",
+null
+],
+[
+"27",
+"<PDFStream(27): raw=525, {'Filter': /'FlateDecode', 'Length': <PDFObjRef:26>}>",
+"6e3aa4d4578798513b2d324199aea926195b2016e1911895d3bb10f077b5a6df"
+],
+[
+"28",
+"{'Type': /'Font', 'Subtype': /'Type0', 'BaseFont': /'GothicBBB-Medium-Identity-H', 'Encoding': /'Identity-H', 'DescendantFonts': [<PDFObjRef:37>]}",
+null
+],
+[
+"29",
+"745",
+null
+],
+[
+"30",
+"<PDFStream(30): raw=745, {'Filter': /'FlateDecode', 'Length': <PDFObjRef:29>}>",
+"45467ca59cdd58a0175bf7ebbc31d5524844dd679a3862c61b6b5f4f220b1020"
+],
+[
+"31",
+"468",
+null
+],
+[
+"32",
+"<PDFStream(32): raw=468, {'Filter': /'FlateDecode', 'Length': <PDFObjRef:31>}>",
+"ac43a0c85cd8800b150e2acc29bea9295706c3c9fe2ee18364b49d5ef8ff19ae"
+],
+[
+"33",
+"709",
+null
+],
+[
+"34",
+"<PDFStream(34): raw=709, {'Filter': /'FlateDecode', 'Length': <PDFObjRef:33>}>",
+"f1aa88bb6e35c8e13e3003e09fef37a9fcb9f8069baa267496aa57d957714f05"
+],
+[
+"35",
+"{'Type': /'FontDescriptor', 'Ascent': 723, 'CapHeight': 709, 'Descent': -241, 'Flags': 6, 'FontBBox': [-170, -331, 1024, 903], 'FontName': /'Ryumin-Light', 'ItalicAngle': 0, 'StemV': 69, 'XHeight': 450, 'StemH': 34, 'Style': {'Panose': b'\\x01\\x05\\x02\\x02\\x03\\x00\\x00\\x00\\x00\\x00\\x00\\x00'}}",
+null
+],
+[
+"36",
+"{'Type': /'Font', 'Subtype': /'CIDFontType0', 'BaseFont': /'Ryumin-Light', 'FontDescriptor': <PDFObjRef:35>, 'CIDSystemInfo': {'Registry': b'Adobe', 'Ordering': b'Japan1', 'Supplement': 2}, 'DW': 1000}",
+null
+],
+[
+"37",
+"{'Type': /'Font', 'Subtype': /'CIDFontType0', 'BaseFont': /'GothicBBB-Medium', 'FontDescriptor': <PDFObjRef:38>, 'CIDSystemInfo': {'Registry': b'Adobe', 'Ordering': b'Japan1', 'Supplement': 2}, 'DW': 1000}",
+null
+],
+[
+"38",
+"{'Type': /'FontDescriptor', 'Ascent': 752, 'CapHeight': 737, 'Descent': -271, 'Flags': 4, 'FontBBox': [-174, -268, 1001, 944], 'FontName': /'GothicBBB-Medium', 'ItalicAngle': 0, 'StemV': 99, 'XHeight': 553, 'StemH': 72, 'Style': {'Panose': b'\\x08\\x01\\x02\\x0b\\x05\\x00\\x00\\x00\\x00\\x00\\x00\\x00'}}",
+null
+],
+[
+"39",
+"{'Type': /'Font', 'Subtype': /'CIDFontType0', 'BaseFont': /'Ryumin-Light', 'FontDescriptor': <PDFObjRef:35>, 'CIDSystemInfo': {'Registry': b'Adobe', 'Ordering': b'Japan1', 'Supplement': 2}, 'DW': 1000}",
+null
+],
+[
+"40",
+"<PDFStream(40): raw=2575, {'N': 3, 'Alternate': /'DeviceRGB', 'Length': 2575, 'Filter': /'FlateDecode'}>",
+"2b3aa1645779a9e634744faf9b01e9102b0c9b88fd6deced7934df86b949af7e"
+],
+[
+"41",
+"{'Type': /'ExtGState', 'SA': False, 'SM': 0.02, 'TR2': /'Default'}",
+null
+],
+[
+"42",
+"<PDFStream(42): raw=103, {'S': 36, 'L': 116, 'Filter': /'FlateDecode', 'Length': <PDFObjRef:43>}>",
+"e44d1d79d541b76c668f5dd71575cc830ad06181729e418e3add7cfad0c4bc98"
+],
+[
+"43",
+"103",
+null
+],
+[
+"44",
+"sha256:3faecda53e726cbcadf223fb4f8ea0c1132918e9d4b54e01a817e6f3b1bcd557",
+null
+],
+[
+"45",
+"{'DA': b'/Helv 0 Tf 0 g', 'SigFlags': 3, 'DR': {'XObject': {'DSz': <PDFObjRef:52>, 'DSy': <PDFObjRef:51>, 'DSx': <PDFObjRef:50>}, 'Font': {'Helv': <PDFObjRef:48>, 'ZaDb': <PDFObjRef:46>, 'KaGo': <PDFObjRef:49>}}, 'Fields': [<PDFObjRef:54>]}",
+null
+],
+[
+"46",
+"{'Type': /'Font', 'Name': /'ZaDb', 'BaseFont': /'ZapfDingbats', 'Subtype': /'Type1'}",
+null
+],
+[
+"47",
+"sha256:add549085adb6438b13b9bb7b5c9b82dbe817da7762655eaf680d5332e71095d",
+null
+],
+[
+"48",
+"{'Type': /'Font', 'Name': /'Helv', 'BaseFont': /'Helvetica', 'Subtype': /'Type1', 'Encoding': <PDFObjRef:47>}",
+null
+],
+[
+"49",
+"sha256:789b350745003624daa3d13b4d751c4e341afde4f5ed0815bf21ecefdb378e0b",
+null
+],
+[
+"50",
+"<PDFStream(50): raw=330, {'Resources': {'ProcSet': [/'PDF']}, 'Matrix': [1, 0, 0, 1, 0, 0], 'Subtype': /'Form', 'Filter': /'FlateDecode', 'Length': 330, 'FormType': 1, 'Type': /'XObject', 'BBox': [0, 0, 100, 100]}>",
+"a5b1055195ad3d253e306e4b27ca4c5c3d6043dfdee69344f4a6735cba14e07f"
+],
+[
+"51",
+"<PDFStream(51): raw=317, {'Resources': {'ProcSet': [/'PDF']}, 'Matrix': [1, 0, 0, 1, 0, 0], 'Subtype': /'Form', 'Filter': /'FlateDecode', 'Length': 317, 'FormType': 1, 'Type': /'XObject', 'BBox': [0, 0, 100, 100]}>",
+"bdc4da714f6e19c3f4f70200c58eff72f10555a88535f6389484ec03ca2fd10c"
+],
+[
+"52",
+"<PDFStream(52): raw=0, {'Resources': {'ProcSet': [/'PDF']}, 'Matrix': [1, 0, 0, 1, 0, 0], 'Subtype': /'Form', 'Length': 0, 'FormType': 1, 'Type': /'XObject', 'BBox': [0, 0, 100, 100]}>",
+"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+],
+[
+"53",
+"<PDFStream(53): raw=26, {'Resources': {'ProcSet': [/'PDF']}, 'Subtype': /'Form', 'Filter': /'FlateDecode', 'Length': 26, 'FormType': 1, 'Type': /'XObject', 'BBox': [0.0, 0.0, 0.0, 0.0]}>",
+"625bafdcc5fb9e01b4ac3aad3a9ba86d7d0a27aa61029997bec405ff6397fa4f"
+],
+[
+"54",
+"{'P': <PDFObjRef:8>, 'FT': /'Sig', 'TU': b'', 'Ff': 36, 'F': 132, 'DA': b'/KaGo 0 Tf 0 g', 'Subtype': /'Widget', 'V': <PDFObjRef:44>, 'Type': /'Annot', 'Rect': [0.0, 0.0, 0.0, 0.0], 'T': b'Signature1'}",
+null
+],
+[
+"55",
+"{'R': 2, 'Length': 40, 'Filter': /'Standard', 'O': b'v\\xf1\\xc1\\x163\\x07\\x12\\x0c\\x10\\xe9h\\x9b\\xc9Qm\\xff1\\x03\\x94eJ]\\xbf\\xd36\\xb7wwKl\\xca\\xee', 'P': -44, 'U': b\"\\x7f\\xfc\\xe3\\x8a\\x98\\x11\\xe0\\xb7'\\x9d\\xc7\\x00\\x01W\\x9d\\x1a\\xd1\\xf2\\xcfK\\xf9\\x1b\\r\\x14w%\\x0c\\r\\xc1\\xc7\\xf0s\", 'V': 1}",
+null
+]
+],
+"pages": [
+{
+"pageid": "8",
+"label": "1",
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [
+"ColorSpace",
+"ExtGState",
+"Font",
+"ProcSet"
+],
+"contents": [
+"<PDFObjRef:14>",
+"<PDFObjRef:16>",
+"<PDFObjRef:23>",
+"<PDFObjRef:25>",
+"<PDFObjRef:27>",
+"<PDFObjRef:30>",
+"<PDFObjRef:32>",
+"<PDFObjRef:34>"
+],
+"attrs": [
+"Resources",
+"Rotate",
+"Parent",
+"Annots",
+"MediaBox",
+"CropBox",
+"Contents",
+"Type"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'Text'], 'Font': {'F2': <PDFObjRef:18>, 'G1': <PDFObjRef:11>, 'G2': <PDFObjRef:10>, 'G3': <PDFObjRef:28>}, 'ExtGState': {'GS1': <PDFObjRef:41>}, 'ColorSpace': {'Cs6': <PDFObjRef:12>}}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"1",
+"2",
+"3",
+"4",
+"5",
+"6",
+"7",
+"8",
+"9",
+"10",
+"11",
+"12"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "tail",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "corrupt0",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRef: offsets=dict_keys([1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55])>",
+"trailer": "{'Size': 56, 'Root': <PDFObjRef:7>, 'Info': <PDFObjRef:4>, 'Encrypt': <PDFObjRef:55>, 'ID': [b'\\xf4_\\x97\\x80D\\xb9\\x8d7\\xd8\\xff\\x94P\\xa4k\\x91&', b'_*\\xb7u\\xf6\\xf1\\xb42\\xdeQN\\xa4\\xb6\\x14-)']}",
+"ids": [
+[
+"1",
+"(None, 17, 0)"
+],
+[
+"2",
+"(None, 44, 0)"
+],
+[
+"3",
+"(None, 81, 0)"
+],
+[
+"4",
+"(None, 135, 0)"
+],
+[
+"5",
+"(None, 275, 0)"
+],
+[
+"7",
+"(None, 1002, 0)"
+],
+[
+"8",
+"(None, 1098, 0)"
+],
+[
+"9",
+"(None, 1293, 0)"
+],
+[
+"10",
+"(None, 1435, 0)"
+],
+[
+"11",
+"(None, 1561, 0)"
+],
+[
+"12",
+"(None, 1687, 0)"
+],
+[
+"13",
+"(None, 1725, 0)"
+],
+[
+"14",
+"(None, 1749, 0)"
+],
+[
+"15",
+"(None, 2805, 0)"
+],
+[
+"16",
+"(None, 2829, 0)"
+],
+[
+"17",
+"(None, 3881, 0)"
+],
+[
+"18",
+"(None, 4159, 0)"
+],
+[
+"19",
+"(None, 4960, 0)"
+],
+[
+"20",
+"(None, 5287, 0)"
+],
+[
+"21",
+"(None, 5419, 0)"
+],
+[
+"22",
+"(None, 6584, 0)"
+],
+[
+"23",
+"(None, 6608, 0)"
+],
+[
+"24",
+"(None, 7483, 0)"
+],
+[
+"25",
+"(None, 7507, 0)"
+],
+[
+"26",
+"(None, 8315, 0)"
+],
+[
+"27",
+"(None, 8339, 0)"
+],
+[
+"28",
+"(None, 8940, 0)"
+],
+[
+"29",
+"(None, 9070, 0)"
+],
+[
+"30",
+"(None, 9094, 0)"
+],
+[
+"31",
+"(None, 9915, 0)"
+],
+[
+"32",
+"(None, 9939, 0)"
+],
+[
+"33",
+"(None, 10483, 0)"
+],
+[
+"34",
+"(None, 10507, 0)"
+],
+[
+"35",
+"(None, 11292, 0)"
+],
+[
+"36",
+"(None, 11520, 0)"
+],
+[
+"37",
+"(None, 11691, 0)"
+],
+[
+"38",
+"(None, 11866, 0)"
+],
+[
+"39",
+"(None, 12098, 0)"
+],
+[
+"40",
+"(None, 12269, 0)"
+],
+[
+"41",
+"(None, 14942, 0)"
+],
+[
+"42",
+"(None, 15010, 0)"
+],
+[
+"43",
+"(None, 15200, 0)"
+],
+[
+"44",
+"(None, 15223, 0)"
+],
+[
+"45",
+"(None, 22091, 0)"
+],
+[
+"46",
+"(None, 22258, 0)"
+],
+[
+"47",
+"(None, 22338, 0)"
+],
+[
+"48",
+"(None, 23533, 0)"
+],
+[
+"49",
+"(None, 23626, 0)"
+],
+[
+"50",
+"(None, 25303, 0)"
+],
+[
+"51",
+"(None, 25811, 0)"
+],
+[
+"52",
+"(None, 26306, 0)"
+],
+[
+"53",
+"(None, 26462, 0)"
+],
+[
+"54",
+"(None, 26652, 0)"
+],
+[
+"55",
+"(None, 26798, 0)"
+]
+]
+}
+],
+"catalog": "{'Pages': <PDFObjRef:3>, 'PageLabels': <PDFObjRef:2>, 'Metadata': <PDFObjRef:5>, 'Type': /'Catalog', 'AcroForm': <PDFObjRef:45>}",
+"info": "[{'CreationDate': b\"D:20080424142424+09'00'\", 'ModDate': b\"D:20080424142424+09'00'\", 'Producer': b'Acrobat Distiller 5.0.5 (Windows)'}]",
+"flags": [
+true,
+false,
+true
+],
+"objects": [
+[
+"1",
+"{'S': /'D'}",
+null
+],
+[
+"2",
+"{'Nums': [0, <PDFObjRef:1>]}",
+null
+],
+[
+"3",
+"{'Kids': [<PDFObjRef:8>], 'Count': 1, 'Type': /'Pages'}",
+null
+],
+[
+"4",
+"{'CreationDate': b\"D:20080424142424+09'00'\", 'ModDate': b\"D:20080424142424+09'00'\", 'Producer': b'Acrobat Distiller 5.0.5 (Windows)'}",
+null
+],
+[
+"5",
+"<PDFStream(5): raw=648, {'Type': /'Metadata', 'Subtype': /'XML', 'Length': 648}>",
+"9e7abce4019edb82fd1685741ca5e94da8514d1ace05ba0da3bbd2034c257e46"
+],
+[
+"7",
+"{'Pages': <PDFObjRef:3>, 'PageLabels': <PDFObjRef:2>, 'Metadata': <PDFObjRef:5>, 'Type': /'Catalog', 'AcroForm': <PDFObjRef:45>}",
+null
+],
+[
+"8",
+"sha256:85830be6c6096f4fbba76ff5c21fea7c09b70c7cade4e8b6e8314146338a5629",
+null
+],
+[
+"9",
+"{'ProcSet': [/'PDF', /'Text'], 'Font': {'F2': <PDFObjRef:18>, 'G1': <PDFObjRef:11>, 'G2': <PDFObjRef:10>, 'G3': <PDFObjRef:28>}, 'ExtGState': {'GS1': <PDFObjRef:41>}, 'ColorSpace': {'Cs6': <PDFObjRef:12>}}",
+null
+],
+[
+"10",
+"{'Type': /'Font', 'Subtype': /'Type0', 'BaseFont': /'Ryumin-Light-Identity-V', 'Encoding': /'Identity-V', 'DescendantFonts': [<PDFObjRef:39>]}",
+null
+],
+[
+"11",
+"{'Type': /'Font', 'Subtype': /'Type0', 'BaseFont': /'Ryumin-Light-Identity-H', 'Encoding': /'Identity-H', 'DescendantFonts': [<PDFObjRef:36>]}",
+null
+],
+[
+"12",
+"[/'ICCBased', <PDFObjRef:40>]",
+null
+],
+[
+"13",
+"980",
+null
+],
+[
+"14",
+"<PDFStream(14): raw=980, {'Filter': /'FlateDecode', 'Length': <PDFObjRef:13>}>",
+"57260edc6a4a5b3a77f0f6497e2cd586644db6fda76832587edaa831c943655d"
+],
+[
+"15",
+"976",
+null
+],
+[
+"16",
+"<PDFStream(16): raw=976, {'Filter': /'FlateDecode', 'Length': <PDFObjRef:15>}>",
+"51a7b2d4dc461393e7f0ff6e42a5ac306af9e1747f04f471b98e889f7949d6e6"
+],
+[
+"17",
+"sha256:6e01699aaf343009e351f4a007aa9579d195bf5df645a9c24fcc23fec4ea3def",
+null
+],
+[
+"18",
+"sha256:29be23abfbaf60dd29d64608386cf9787d31e419e712d9605d20f72cd9817002",
+null
+],
+[
+"19",
+"<PDFStream(19): raw=254, {\"b'\\\\xffilter'\": /'FlateDecode', 'Length': 254}>",
+"70f2940d7016b77d8a4a19f25105aeaab2c78b5d0e3931b42ba36f90812ad4cf"
+],
+[
+"20",
+"{'Type': /'Encoding', 'Differences': [1, /'c158', 31, /'tilde', 132, /'emdash', 137, /'guilsinglright', 146, /'trademark', 152, /'Ydieresis', 156, /'oe']}",
+null
+],
+[
+"21",
+"<PDFStream(21): raw=1095, {'Length': 1095, 'Subtype': /'Type1C'}>",
+"00cc207e250a21bad182857e8f14fbd5127aa952417de86ed5f6afdf298c2911"
+],
+[
+"22",
+"799",
+null
+],
+[
+"23",
+"<PDFStream(23): raw=799, {'Filter': /'FlateDecode', 'Length': <PDFObjRef:22>}>",
+"db9817e4357e18d346931ff4126243bf4c42a18db5233ed19b35ddaf4b014781"
+],
+[
+"24",
+"732",
+null
+],
+[
+"25",
+"<PDFStream(25): raw=732, {'Filter': /'FlateDecode', 'Length': <PDFObjRef:24>}>",
+"cb237dff356ef1e47707a3769081647f004fc929618fd7d3cddff84855724bc1"
+],
+[
+"26",
+"525",
+null
+],
+[
+"27",
+"<PDFStream(27): raw=525, {'Filter': /'FlateDecode', 'Length': <PDFObjRef:26>}>",
+"6e3aa4d4578798513b2d324199aea926195b2016e1911895d3bb10f077b5a6df"
+],
+[
+"28",
+"{'Type': /'Font', 'Subtype': /'Type0', 'BaseFont': /'GothicBBB-Medium-Identity-H', 'Encoding': /'Identity-H', 'DescendantFonts': [<PDFObjRef:37>]}",
+null
+],
+[
+"29",
+"745",
+null
+],
+[
+"30",
+"<PDFStream(30): raw=745, {'Filter': /'FlateDecode', 'Length': <PDFObjRef:29>}>",
+"45467ca59cdd58a0175bf7ebbc31d5524844dd679a3862c61b6b5f4f220b1020"
+],
+[
+"31",
+"468",
+null
+],
+[
+"32",
+"<PDFStream(32): raw=468, {'Filter': /'FlateDecode', 'Length': <PDFObjRef:31>}>",
+"ac43a0c85cd8800b150e2acc29bea9295706c3c9fe2ee18364b49d5ef8ff19ae"
+],
+[
+"33",
+"709",
+null
+],
+[
+"34",
+"<PDFStream(34): raw=709, {'Filter': /'FlateDecode', 'Length': <PDFObjRef:33>}>",
+"f1aa88bb6e35c8e13e3003e09fef37a9fcb9f8069baa267496aa57d957714f05"
+],
+[
+"35",
+"{'Type': /'FontDescriptor', 'Ascent': 723, 'CapHeight': 709, 'Descent': -241, 'Flags': 6, 'FontBBox': [-170, -331, 1024, 903], 'FontName': /'Ryumin-Light', 'ItalicAngle': 0, 'StemV': 69, 'XHeight': 450, 'StemH': 34, 'Style': {'Panose': b'\\x01\\x05\\x02\\x02\\x03\\x00\\x00\\x00\\x00\\x00\\x00\\x00'}}",
+null
+],
+[
+"36",
+"{'Type': /'Font', 'Subtype': /'CIDFontType0', 'BaseFont': /'Ryumin-Light', 'FontDescriptor': <PDFObjRef:35>, 'CIDSystemInfo': {'Registry': b'Adobe', 'Ordering': b'Japan1', 'Supplement': 2}, 'DW': 1000}",
+null
+],
+[
+"37",
+"{'Type': /'Font', 'Subtype': /'CIDFontType0', 'BaseFont': /'GothicBBB-Medium', 'FontDesc1iptor': <PDFObjRef:38>, 'CIDSystemInfo': {'Registry': b'Adobe', 'Ordering': b'Japan1', 'Supplement': 2}, 'DW': 1000}",
+null
+],
+[
+"38",
+"{'Type': /'FontDescriptor', 'Ascent': 752, 'CapHeight': 737, 'Descent': -271, 'Flags': 4, 'FontBBox': [-174, -268, 1001, 944], 'FontName': /'GothicBBB-Medium', 'ItalicAngle': 0, 'StemV': 99, 'XHeight': 553, 'StemH': 72, 'Style': {'Panose': b'\\x08\\x01\\x02\\x0b\\x05\\x00\\x00\\x00\\x00\\x00\\x00\\x00'}}",
+null
+],
+[
+"39",
+"{'Type': /'Font', 'Subtype': /'CIDFontType0', 'BaseFont': /'Ryumin-Light', 'FontDescriptor': <PDFObjRef:35>, 'CIDSystemInfo': {'Registry': b'Adobe', 'Ordering': b'Japan1', 'Supplement': 2}, 'DW': 1000}",
+null
+],
+[
+"40",
+"<PDFStream(40): raw=2575, {'N': 3, 'Alternate': /'DeviceRGB', 'Length': 2575, 'Filter': /'FlateDecode'}>",
+"158bb677dc77c5a4665cf1e0f2ff75543a1b649cb25ffe5c8b684b33053a0e7c"
+],
+[
+"41",
+"{'Type': /'ExtGState', 'SA': False, 'SM': 0.02, 'TR2': /'Default'}",
+null
+],
+[
+"42",
+"<PDFStream(42): raw=0, {'S': 36, 'L': 116, 'Filter': /'FlateDecode', 'Length': <PDFObjRef:43>}>",
+"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+],
+[
+"43",
+"!PDFObjectNotFound",
+null
+],
+[
+"44",
+"sha256:3faecda53e726cbcadf223fb4f8ea0c1132918e9d4b54e01a817e6f3b1bcd557",
+null
+],
+[
+"45",
+"{'DA': b'/Helv 0 Tf 0 g', 'SigFlags': 3, 'DR': {'XObject': {'DSz': <PDFObjRef:52>, 'DSy': <PDFObjRef:51>, 'DSx': <PDFObjRef:50>}, 'Font': {'Helv': <PDFObjRef:48>, 'ZaDb': <PDFObjRef:46>, 'KaGo': <PDFObjRef:49>}}, 'Fields': [<PDFObjRef:54>]}",
+null
+],
+[
+"46",
+"{'Type': /'Font', 'Name': /'ZaDb', 'BaseFont': /'ZapfDingbats', 'Subtype': /'Type1'}",
+null
+],
+[
+"47",
+"sha256:f7f3187e83e6117b91a246f5eff023c1c60aeba65d8a4d5c34defcb9a1afff85",
+null
+],
+[
+"48",
+"{'Type': /'Font', 'Name': /'Helv', 'BaseFont': /'Helvetica', 'Subtype': /'Type1', 'Encoding': <PDFObjRef:47>}",
+null
+],
+[
+"49",
+"sha256:08bb3deb2b1dd06a98648482e610f6ec11b669e53e667534071bee346d89505f",
+null
+],
+[
+"50",
+"<PDFStream(50): raw=330, {'Resources': {'ProcSet': [/'PDF']}, 'Matrix': [1, 0, 0, 1, 0, 0], 'Subtype': /'Form', 'Filter': /'FlateDecode', 'Length': 330, 'FormType': 1, 'Type': /'XObject', 'BBox': [0, 0, 100, 100]}>",
+"a5b1055195ad3d253e306e4b27ca4c5c3d6043dfdee69344f4a6735cba14e07f"
+],
+[
+"51",
+"<PDFStream(51): raw=317, {'Resources': {'ProcSet': [/'PDF']}, 'Matrix': [1, 0, 0, 1, 0, 0], 'Subtype': /'Form', 'Filter': /'FlateDecode', 'Length': 317, 'FormType': 1, 'Type': /'XObject', 'BBox': [0, 0, 100, 100]}>",
+"bdc4da714f6e19c3f4f70200c58eff72f10555a88535f6389484ec03ca2fd10c"
+],
+[
+"52",
+"<PDFStream(52): raw=0, {'Resources': {'ProcSet': [/'PDF']}, 'Matrix': [1, 0, 0, 1, 0, 0], 'Subtype': /'Form', 'Length': 0, 'FormType': 1, 'Type': /'XObject', 'BBox': [0, 0, 100, 100]}>",
+"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+],
+[
+"53",
+"<PDFStream(53): raw=26, {'Resources': {'ProcSet': [/'PDF']}, 'Subtype': /'Form', 'Filter': /'FlateDecode', 'Length': 26, 'FormType': 1, 'Type': /'XObject', 'BBox': [0.0, 0.0, 0.0, 0.0]}>",
+"625bafdcc5fb9e01b4ac3aad3a9ba86d7d0a27aa61029997bec405ff6397fa4f"
+],
+[
+"54",
+"{'P': <PDFObjRef:8>, 'FT': /'Sig', 'TU': b'', 'Ff': 36, 'F': 132, 'DA': b'/KaGo 0 Tf 0 g', 'Subtype': /'Widget', 'V': <PDFObjRef:44>, 'Type': /'Annot', 'Rect': [0.0, 0.0, 0.0, 0.0], 'T': b'Signature1'}",
+null
+],
+[
+"55",
+"{'R': 2, 'Length': 40, 'Filter': /'Standard', 'O': b'v\\xf1\\xc1\\x163\\x07\\x12\\x0c\\x10\\xe9h\\x9b\\xc9Qm\\xff1\\x03\\x94eJ]\\xbf\\xd36\\xb7wwKl\\xca\\xee', 'P': -44, 'U': b\"\\x7f\\xfc\\xe3\\x8a\\x98\\x11\\xe0\\xb7'\\x9d\\xc7\\x00\\x01W\\x9d\\x1a\\xd1\\xf2\\xcfK\\xf9\\x1b\\r\\x14w%\\x0c\\r\\xc1\\xc7\\xf0s\", 'V': 1}",
+null
+]
+],
+"pages": [
+{
+"pageid": "8",
+"label": "1",
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [
+"ColorSpace",
+"ExtGState",
+"Font",
+"ProcSet"
+],
+"contents": [
+"<PDFObjRef:14>",
+"<PDFObjRef:16>",
+"<PDFObjRef:23>",
+"<PDFObjRef:25>",
+"<PDFObjRef:27>",
+"<PDFObjRef:30>",
+"<PDFObjRef:32>",
+"<PDFObjRef:34>"
+],
+"attrs": [
+"Resources",
+"Rotate",
+"Parent",
+"Annots",
+"MediaBox",
+"CropBox",
+"Contents",
+"Type"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'Text'], 'Font': {'F2': <PDFObjRef:18>, 'G1': <PDFObjRef:11>, 'G2': <PDFObjRef:10>, 'G3': <PDFObjRef:28>}, 'ExtGState': {'GS1': <PDFObjRef:41>}, 'ColorSpace': {'Cs6': <PDFObjRef:12>}}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"1",
+"2",
+"3",
+"4",
+"5",
+"6",
+"7",
+"8",
+"9",
+"10",
+"11",
+"12"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "corrupt1",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRef: offsets=dict_keys([1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 54, 55])>",
+"trailer": "{'Size': 56, 'Root': <PDFObjRef:7>, 'Info': <PDFObjRef:4>, 'Encrypt': <PDFObjRef:55>, 'ID': [b'\\xf4_\\x97\\x80D\\xb9\\x8d7\\xd8\\xff\\x94P\\xa4k\\x91&', b'_*\\xb7u\\xf6\\xf1\\xb42\\xdeQN\\xa4\\xb6\\x14-)']}",
+"ids": [
+[
+"1",
+"(None, 17, 0)"
+],
+[
+"2",
+"(None, 44, 0)"
+],
+[
+"3",
+"(None, 81, 0)"
+],
+[
+"4",
+"(None, 135, 0)"
+],
+[
+"5",
+"(None, 275, 0)"
+],
+[
+"7",
+"(None, 1002, 0)"
+],
+[
+"8",
+"(None, 1098, 0)"
+],
+[
+"9",
+"(None, 1293, 0)"
+],
+[
+"10",
+"(None, 1435, 0)"
+],
+[
+"11",
+"(None, 1561, 0)"
+],
+[
+"12",
+"(None, 1687, 0)"
+],
+[
+"13",
+"(None, 1725, 0)"
+],
+[
+"14",
+"(None, 1749, 0)"
+],
+[
+"15",
+"(None, 2805, 0)"
+],
+[
+"16",
+"(None, 2829, 0)"
+],
+[
+"17",
+"(None, 3881, 0)"
+],
+[
+"18",
+"(None, 4159, 0)"
+],
+[
+"19",
+"(None, 4960, 0)"
+],
+[
+"20",
+"(None, 5287, 0)"
+],
+[
+"21",
+"(None, 5419, 0)"
+],
+[
+"22",
+"(None, 6584, 0)"
+],
+[
+"23",
+"(None, 6608, 0)"
+],
+[
+"24",
+"(None, 7483, 0)"
+],
+[
+"25",
+"(None, 7507, 0)"
+],
+[
+"26",
+"(None, 8315, 0)"
+],
+[
+"27",
+"(None, 8339, 0)"
+],
+[
+"28",
+"(None, 8940, 0)"
+],
+[
+"29",
+"(None, 9070, 0)"
+],
+[
+"30",
+"(None, 9094, 0)"
+],
+[
+"31",
+"(None, 9915, 0)"
+],
+[
+"32",
+"(None, 9939, 0)"
+],
+[
+"33",
+"(None, 10483, 0)"
+],
+[
+"34",
+"(None, 10507, 0)"
+],
+[
+"35",
+"(None, 11292, 0)"
+],
+[
+"36",
+"(None, 11520, 0)"
+],
+[
+"37",
+"(None, 11691, 0)"
+],
+[
+"38",
+"(None, 11866, 0)"
+],
+[
+"39",
+"(None, 12098, 0)"
+],
+[
+"40",
+"(None, 12269, 0)"
+],
+[
+"41",
+"(None, 14942, 0)"
+],
+[
+"42",
+"(None, 15010, 0)"
+],
+[
+"43",
+"(None, 15200, 0)"
+],
+[
+"44",
+"(None, 15223, 0)"
+],
+[
+"45",
+"(None, 22091, 0)"
+],
+[
+"46",
+"(None, 22258, 0)"
+],
+[
+"47",
+"(None, 22338, 0)"
+],
+[
+"48",
+"(None, 23533, 0)"
+],
+[
+"49",
+"(None, 23626, 0)"
+],
+[
+"50",
+"(None, 25303, 0)"
+],
+[
+"51",
+"(None, 25811, 0)"
+],
+[
+"52",
+"(None, 26306, 0)"
+],
+[
+"54",
+"(None, 26652, 0)"
+],
+[
+"55",
+"(None, 26798, 0)"
+]
+]
+}
+],
+"catalog": "{'Pages': <PDFObjRef:3>, 'PageLabels': <PDFObjRef:2>, 'Metadata': <PDFObjRef:5>, 'Type': /'Catalog', 'AcroForm': <PDFObjRef:45>}",
+"info": "[{'CreationDate': b\"D:20080424142424+09'00'\", 'ModDate': b\"D:20080424142424+09'00'\", 'Producer': b'Acrobat Distiller 5.0.5 (Windows)'}]",
+"flags": [
+true,
+false,
+true
+],
+"objects": [
+[
+"1",
+"{'S': /'D'}",
+null
+],
+[
+"2",
+"{'Nums': [0, <PDFObjRef:1>]}",
+null
+],
+[
+"3",
+"{'Kids': [<PDFObjRef:8>], 'Count': 1, 'Type': /'Pages'}",
+null
+],
+[
+"4",
+"{'CreationDate': b\"D:20080424142424+09'00'\", 'ModDate': b\"D:20080424142424+09'00'\", 'Producer': b'Acrobat Distiller 5.0.5 (Windows)'}",
+null
+],
+[
+"5",
+"<PDFStream(5): raw=648, {'Type': /'Metadata', 'Subtype': /'XML', 'Length': 648}>",
+"9e7abce4019edb82fd1685741ca5e94da8514d1ace05ba0da3bbd2034c257e46"
+],
+[
+"7",
+"{'Pages': <PDFObjRef:3>, 'PageLabels': <PDFObjRef:2>, 'Metadata': <PDFObjRef:5>, 'Type': /'Catalog', 'AcroForm': <PDFObjRef:45>}",
+null
+],
+[
+"8",
+"sha256:85830be6c6096f4fbba76ff5c21fea7c09b70c7cade4e8b6e8314146338a5629",
+null
+],
+[
+"9",
+"!PSSyntaxError",
+null
+],
+[
+"10",
+"{'Type': /'Font', 'Subtype': /'Type0', 'BaseFont': /'Ryumin-Light-Identity-V', 'Encoding': /'Identity-V', 'DescendantFonts': [<PDFObjRef:39>]}",
+null
+],
+[
+"11",
+"{'Type': /'Font', 'Subtype': /'Type0', 'BaseFont': /'Ryumin-Light-Identity-H', 'Encoding': /'Identity-H', 'DescendantFonts': [<PDFObjRef:36>]}",
+null
+],
+[
+"12",
+"[/'ICCBased', <PDFObjRef:40>]",
+null
+],
+[
+"13",
+"980",
+null
+],
+[
+"14",
+"<PDFStream(14): raw=980, {'Filter': /'FlateDecode', 'Length': <PDFObjRef:13>}>",
+"57260edc6a4a5b3a77f0f6497e2cd586644db6fda76832587edaa831c943655d"
+],
+[
+"15",
+"976",
+null
+],
+[
+"16",
+"<PDFStream(16): raw=976, {'Filter': /'FlateDecode', 'Length': <PDFObjRef:15>}>",
+"51a7b2d4dc461393e7f0ff6e42a5ac306af9e1747f04f471b98e889f7949d6e6"
+],
+[
+"17",
+"sha256:6e01699aaf343009e351f4a007aa9579d195bf5df645a9c24fcc23fec4ea3def",
+null
+],
+[
+"18",
+"sha256:29be23abfbaf60dd29d64608386cf9787d31e419e712d9605d20f72cd9817002",
+null
+],
+[
+"19",
+"<PDFStream(19): raw=254, {'Filter': /'FlateDecode', 'Length': 254}>",
+"4241ee66f3a68e72f1b9708521241c871443de9fb22087416a087966514728d4"
+],
+[
+"20",
+"{'Type': /'Encoding', 'Differences': [1, /'c158', 31, /'tilde', 132, /'emdash', 137, /'guilsinglright', 146, /'trademark', 152, /'Ydieresis', 156, /'oe']}",
+null
+],
+[
+"21",
+"<PDFStream(21): raw=1095, {'Length': 1095, 'Subtype': /'Type1C'}>",
+"e832387b7f1c8f5c4dd95880765277d3656b1d26a3e7352ba9a2c4fd1d5a7b5d"
+],
+[
+"22",
+"799",
+null
+],
+[
+"23",
+"<PDFStream(23): raw=799, {'Filter': /'FlateDecode', 'Length': <PDFObjRef:22>}>",
+"db9817e4357e18d346931ff4126243bf4c42a18db5233ed19b35ddaf4b014781"
+],
+[
+"24",
+"732",
+null
+],
+[
+"25",
+"<PDFStream(25): raw=732, {'Filter': /'FlateDecode', 'Length': <PDFObjRef:24>}>",
+"cb237dff356ef1e47707a3769081647f004fc929618fd7d3cddff84855724bc1"
+],
+[
+"26",
+"525",
+null
+],
+[
+"27",
+"<PDFStream(27): raw=525, {'Filter': /'FlateDecode', 'Length': <PDFObjRef:26>}>",
+"6e3aa4d4578798513b2d324199aea926195b2016e1911895d3bb10f077b5a6df"
+],
+[
+"28",
+"{'Type': /'Font', 'Subtype': /'Type0', 'BaseFont': /'GothicBBB-Medium-Identity-H', 'Encoding': /'Identity-H', 'DescendantFonts': [<PDFObjRef:37>]}",
+null
+],
+[
+"29",
+"745",
+null
+],
+[
+"30",
+"<PDFStream(30): raw=745, {'Filter': /'FlateDecode', 'Length': <PDFObjRef:29>}>",
+"45467ca59cdd58a0175bf7ebbc31d5524844dd679a3862c61b6b5f4f220b1020"
+],
+[
+"31",
+"468",
+null
+],
+[
+"32",
+"<PDFStream(32): raw=468, {'Filter': /'FlateDecode', 'Length': <PDFObjRef:31>}>",
+"ac43a0c85cd8800b150e2acc29bea9295706c3c9fe2ee18364b49d5ef8ff19ae"
+],
+[
+"33",
+"709",
+null
+],
+[
+"34",
+"<PDFStream(34): raw=709, {'Filter': /'FlateDecode', 'Length': <PDFObjRef:33>}>",
+"f1aa88bb6e35c8e13e3003e09fef37a9fcb9f8069baa267496aa57d957714f05"
+],
+[
+"35",
+"{'Type': /'FontDescriptor', 'Ascent': 723, 'CapHeight': 709, 'Descent': -241, 'Flags': 6, 'FontBBox': [-170, -331, 1024, 903], 'FontName': /'Ryumin-Light', 'ItalicAngle': 0, 'StemV': 69, 'XHeight': 450, 'StemH': 34, 'Style': {'Panose': b'\\x01\\x05\\x02\\x02\\x03\\x00\\x00\\x00\\x00\\x00\\x00\\x00'}}",
+null
+],
+[
+"36",
+"{'Type': /'Font', 'Subtype': /'CIDFontType0', 'BaseFont': /'Ryumin-Light', 'FontDescriptor': <PDFObjRef:35>, 'CIDSystemInfo': {'Registry': b'Adobe', 'Ordering': b'Japan1', 'Supplement': 2}, 'DW': 1000}",
+null
+],
+[
+"37",
+"{'Type': /'Font', 'Subtype': /'CIDFontType0', 'BaseFont': /'GothicBBB-Medium', 'FontDescriptor': <PDFObjRef:38>, 'CIDSystemInfo': {'Registry': b'Adobe', 'Ordering': b'Japan1', 'Supplement': 2}, 'DW': 1000}",
+null
+],
+[
+"38",
+"{'Type': /'FontDescriptor', 'Ascent': 752, 'CapHeight': 737, 'Descent': -271, 'Flags': 4, 'FontBBox': [-174, -268, 1001, 944], 'FontName': /'GothicBBB-Medium', 'ItalicAngle': 0, 'StemV': 99, 'XHeight': 553, 'StemH': 72, 'Style': {'Panose': b'\\x08\\x01\\x02\\x0b\\x05\\x00\\x00\\x00\\x00\\x00\\x00\\x00'}}",
+null
+],
+[
+"39",
+"{'Type': /'Font', 'Subtype': /'CIDFontType0', 'BaseFont': /'Ryumin-Light', 'FontDescriptor': <PDFObjRef:35>, 'CIDSystemInfo': {'Registry': b'Adobe', 'Ordering': b'Japan1', 'Supplement': 2}, 'DW': 1000}",
+null
+],
+[
+"40",
+"<PDFStream(40): raw=2575, {'N': 3, 'Alternate': /'DeviceRGB', 'Length': 2575, 'Filter': /'FlateDecode'}>",
+"2b3aa1645779a9e634744faf9b01e9102b0c9b88fd6deced7934df86b949af7e"
+],
+[
+"41",
+"{'Type': /'ExtGState', 'SA': False, 'SM': 0.02, 'TR2': /'Default'}",
+null
+],
+[
+"42",
+"<PDFStream(42): raw=103, {'S': 36, 'L': 116, 'Filter': /'FlateDecode', 'Length': <PDFObjRef:43>}>",
+"e44d1d79d541b76c668f5dd71575cc830ad06181729e418e3add7cfad0c4bc98"
+],
+[
+"43",
+"103",
+null
+],
+[
+"44",
+"sha256:b440b1d1c5c6d59abeccfba5564d732179d7ed9e3b5bc19665a43f1b3b538fbb",
+null
+],
+[
+"45",
+"{'DA': b'/Helv 0 Tf 0 g', 'SigFlags': 3, 'DR': {'XObject': {'DSz': <PDFObjRef:52>, 'DSy': <PDFObjRef:51>, 'DSx': <PDFObjRef:50>}, 'Font': {'Helv': <PDFObjRef:48>, 'ZaDb': <PDFObjRef:46>, 'KaGo': <PDFObjRef:49>}}, 'Fields': [<PDFObjRef:54>]}",
+null
+],
+[
+"46",
+"{'Type': /'Font', 'Name': /'ZaDb', 'BaseFont': /'ZapfDingbats', 'Subtype': /'Type1'}",
+null
+],
+[
+"47",
+"sha256:add549085adb6438b13b9bb7b5c9b82dbe817da7762655eaf680d5332e71095d",
+null
+],
+[
+"48",
+"{'Type': /'Font', 'Name': /'Helv', 'BaseFont': /'Helvetica', 'Subtype': /'Type1', 'Encoding': <PDFObjRef:47>}",
+null
+],
+[
+"49",
+"sha256:789b350745003624daa3d13b4d751c4e341afde4f5ed0815bf21ecefdb378e0b",
+null
+],
+[
+"50",
+"<PDFStream(50): raw=330, {'Resources': {'ProcSet': [/'PDF']}, 'Matrix': [1, 0, 0, 1, 0, 0], 'Subtype': /'Form', 'Filter': /'FlateDecode', 'Length': 330, 'FormType': 1, 'Type': /'XObject', 'BBox': [0, 0, 100, 100]}>",
+"a5b1055195ad3d253e306e4b27ca4c5c3d6043dfdee69344f4a6735cba14e07f"
+],
+[
+"51",
+"<PDFStream(51): raw=317, {'Resources': {'ProcSet': [/'PDF']}, 'Matrix': [1, 0, 0, 1, 0, 0], 'Subtype': /'Form', 'Filter': /'FlateDecode', 'Length': 317, 'FormType': 1, 'Type': /'XObject', 'BBox': [0, 0, 100, 100]}>",
+"bdc4da714f6e19c3f4f70200c58eff72f10555a88535f6389484ec03ca2fd10c"
+],
+[
+"52",
+"<PDFStream(52): raw=0, {'Resources': {'ProcSet': [/'PDF']}, 'Matrix': [1, 0, 0, 1, 0, 0], 'Subtype': /'Form', 'Length': 0, 'FormType': 1, 'Type': /'XObject', 'BBox': [0, 0, 100, 100]}>",
+"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+],
+[
+"54",
+"{'P': <PDFObjRef:8>, 'FT': /'Sig', 'TU': b'', 'Ff': 36, 'F': 132, 'DA': b'/KaGo 0 Tf 0 g', 'Subtype': /'Widget', 'V': <PDFObjRef:44>, 'Type': /'Annot', 'Rect': [0.0, 0.0, 0.0, 0.0], 'T': b'Signature1'}",
+null
+],
+[
+"55",
+"{'R': 2, 'Length': 40, 'Filter': /'Standard', 'O': b'v\\xf1\\xc1\\x163\\x07\\x12\\x0c\\x10\\xe9h\\x9b\\xc9Qm\\xff1\\x03\\x94eJ]\\xbf\\xd36\\xb7wwKl\\xca\\xee', 'P': -44, 'U': b\"\\x7f\\xfc\\xe3\\x8a\\x98\\x11\\xe0\\xb7'\\x9d\\xc7\\x00\\x01W\\x9d\\x1a\\xd1\\xf2\\xcfK\\xf9\\x1b\\r\\x14w%\\x0c\\r\\xc1\\xc7\\xf0s\", 'V': 1}",
+null
+]
+],
+"pages": [
+"!PSSyntaxError"
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"1",
+"2",
+"3",
+"4",
+"5",
+"6",
+"7",
+"8",
+"9",
+"10",
+"11",
+"12"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "corrupt2",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRef: offsets=dict_keys([1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55])>",
+"trailer": "{'Size': 56, 'Root': <PDFObjRef:7>, 'Info': <PDFObjRef:4>, 'Encrypt': <PDFObjRef:55>, 'ID': [b'\\xf4_\\x97\\x80D\\xb9\\x8d7\\xd8\\xff\\x94P\\xa4k\\x91&', b'_*\\xb7u\\xf6\\xf1\\xb42\\xdeQN\\xa4\\xb6\\x14-)']}",
+"ids": [
+[
+"1",
+"(None, 17, 0)"
+],
+[
+"2",
+"(None, 44, 0)"
+],
+[
+"3",
+"(None, 81, 0)"
+],
+[
+"4",
+"(None, 135, 0)"
+],
+[
+"5",
+"(None, 275, 0)"
+],
+[
+"7",
+"(None, 1002, 0)"
+],
+[
+"8",
+"(None, 1098, 0)"
+],
+[
+"9",
+"(None, 1293, 0)"
+],
+[
+"10",
+"(None, 1435, 0)"
+],
+[
+"11",
+"(None, 1561, 0)"
+],
+[
+"12",
+"(None, 1687, 0)"
+],
+[
+"13",
+"(None, 1725, 0)"
+],
+[
+"14",
+"(None, 1749, 0)"
+],
+[
+"15",
+"(None, 2805, 0)"
+],
+[
+"16",
+"(None, 2829, 0)"
+],
+[
+"17",
+"(None, 3881, 0)"
+],
+[
+"18",
+"(None, 4159, 0)"
+],
+[
+"19",
+"(None, 4960, 0)"
+],
+[
+"20",
+"(None, 5287, 0)"
+],
+[
+"21",
+"(None, 5419, 0)"
+],
+[
+"22",
+"(None, 6584, 0)"
+],
+[
+"23",
+"(None, 6608, 0)"
+],
+[
+"24",
+"(None, 7483, 0)"
+],
+[
+"25",
+"(None, 7507, 0)"
+],
+[
+"26",
+"(None, 8315, 0)"
+],
+[
+"27",
+"(None, 8339, 0)"
+],
+[
+"28",
+"(None, 8940, 0)"
+],
+[
+"29",
+"(None, 9070, 0)"
+],
+[
+"30",
+"(None, 9094, 0)"
+],
+[
+"31",
+"(None, 9915, 0)"
+],
+[
+"32",
+"(None, 9939, 0)"
+],
+[
+"33",
+"(None, 10483, 0)"
+],
+[
+"34",
+"(None, 10507, 0)"
+],
+[
+"35",
+"(None, 11292, 0)"
+],
+[
+"36",
+"(None, 11520, 0)"
+],
+[
+"37",
+"(None, 11691, 0)"
+],
+[
+"38",
+"(None, 11866, 0)"
+],
+[
+"39",
+"(None, 12098, 0)"
+],
+[
+"40",
+"(None, 12269, 0)"
+],
+[
+"41",
+"(None, 14942, 0)"
+],
+[
+"42",
+"(None, 15010, 0)"
+],
+[
+"43",
+"(None, 15200, 0)"
+],
+[
+"44",
+"(None, 15223, 0)"
+],
+[
+"45",
+"(None, 22091, 0)"
+],
+[
+"46",
+"(None, 22258, 0)"
+],
+[
+"47",
+"(None, 22338, 0)"
+],
+[
+"48",
+"(None, 23533, 0)"
+],
+[
+"49",
+"(None, 23626, 0)"
+],
+[
+"50",
+"(None, 25303, 0)"
+],
+[
+"51",
+"(None, 25811, 0)"
+],
+[
+"52",
+"(None, 26306, 0)"
+],
+[
+"53",
+"(None, 26462, 0)"
+],
+[
+"54",
+"(None, 26652, 0)"
+],
+[
+"55",
+"(None, 26798, 0)"
+]
+]
+}
+],
+"catalog": "{'Pages': <PDFObjRef:3>, 'PageLabels': <PDFObjRef:2>, 'Metadata': <PDFObjRef:5>, 'Type': /'Catalog', 'AcroForm': <PDFObjRef:45>}",
+"info": "[{'CreationDate': b\"D:20080424142424+09'00'\", 'ModDate': b\"D:20080424142424+09'00'\", 'Producer': b'Acrobat Distiller 5.0.5 (Windows)'}]",
+"flags": [
+true,
+false,
+true
+],
+"objects": [
+[
+"1",
+"{'S': /'D'}",
+null
+],
+[
+"2",
+"{'Nums': [0, <PDFObjRef:1>]}",
+null
+],
+[
+"3",
+"{'Kids': [<PDFObjRef:8>], 'Count': 1, 'Type': /'Pages'}",
+null
+],
+[
+"4",
+"{'CreationDate': b\"D:20080424142424+09'00'\", 'ModDate': b\"D:20080424142424+09'00'\", 'Producer': b'Acrobat Distiller 5.0.5 (Windows)'}",
+null
+],
+[
+"5",
+"<PDFStream(5): raw=0, {'Type': /'Metadata', 'Subtype': /'XML', \"b'\\\\xe6ength'\": 648}>",
+"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+],
+[
+"7",
+"{'Pages': <PDFObjRef:3>, 'PageLabels': <PDFObjRef:2>, 'Metadata': <PDFObjRef:5>, 'Type': /'Catalog', 'AcroForm': <PDFObjRef:45>}",
+null
+],
+[
+"8",
+"sha256:85830be6c6096f4fbba76ff5c21fea7c09b70c7cade4e8b6e8314146338a5629",
+null
+],
+[
+"9",
+"{'ProcSet': [/'PDF', /'Text'], 'Font': {'F2': <PDFObjRef:18>, 'G1': <PDFObjRef:11>, 'G2': <PDFObjRef:10>, 'G3': <PDFObjRef:28>}, 'ExtGState': {'GS1': <PDFObjRef:41>}, 'ColorSpace': {'Cs6': <PDFObjRef:12>}}",
+null
+],
+[
+"10",
+"{'Type': /'Font', 'Subtype': /'Type0', 'BaseFont': /'Ryumin-Light-Identity-V', 'Encoding': /'Identity-V', 'DescendantFonts': [<PDFObjRef:39>]}",
+null
+],
+[
+"11",
+"{'Type': /'Font', 'Subtype': /'Type0', 'BaseFont': /'Ryumin-Light-Identity-H', 'Encoding': /'Identity-H', 'DescendantFonts': [<PDFObjRef:36>]}",
+null
+],
+[
+"12",
+"[/'ICCBased', <PDFObjRef:40>]",
+null
+],
+[
+"13",
+"980",
+null
+],
+[
+"14",
+"<PDFStream(14): raw=980, {'Filter': /'FlateDecode', 'Length': <PDFObjRef:13>}>",
+"57260edc6a4a5b3a77f0f6497e2cd586644db6fda76832587edaa831c943655d"
+],
+[
+"15",
+"976",
+null
+],
+[
+"16",
+"<PDFStream(16): raw=976, {'Filter': /'FlateDecode', 'Length': <PDFObjRef:15>}>",
+"51a7b2d4dc461393e7f0ff6e42a5ac306af9e1747f04f471b98e889f7949d6e6"
+],
+[
+"17",
+"sha256:6e01699aaf343009e351f4a007aa9579d195bf5df645a9c24fcc23fec4ea3def",
+null
+],
+[
+"18",
+"sha256:29be23abfbaf60dd29d64608386cf9787d31e419e712d9605d20f72cd9817002",
+null
+],
+[
+"19",
+"<PDFStream(19): raw=254, {'Filter': /'FlateDecode', 'Length': 254}>",
+"4241ee66f3a68e72f1b9708521241c871443de9fb22087416a087966514728d4"
+],
+[
+"20",
+"{'Type': /'Encoding', 'Differences': [1, /'c158', 31, /'tilde', 132, /'emdash', 137, /'guilsinglright', 146, /'trademark', 152, /'Ydieresis', 156, /'oe']}",
+null
+],
+[
+"21",
+"<PDFStream(21): raw=1095, {'Length': 1095, 'Subtype': /'Type1C'}>",
+"00cc207e250a21bad182857e8f14fbd5127aa952417de86ed5f6afdf298c2911"
+],
+[
+"22",
+"799",
+null
+],
+[
+"23",
+"<PDFStream(23): raw=799, {'Filter': /'FlateDecode', 'Length': <PDFObjRef:22>}>",
+"db9817e4357e18d346931ff4126243bf4c42a18db5233ed19b35ddaf4b014781"
+],
+[
+"24",
+"732",
+null
+],
+[
+"25",
+"<PDFStream(25): raw=732, {'Filter': /'FlateDec\\x00de', 'Length': <PDFObjRef:24>}>",
+null
+],
+[
+"26",
+"525",
+null
+],
+[
+"27",
+"<PDFStream(27): raw=525, {'Filter': /'FlateDecode', 'Length': <PDFObjRef:26>}>",
+"6e3aa4d4578798513b2d324199aea926195b2016e1911895d3bb10f077b5a6df"
+],
+[
+"28",
+"{'Type': /'Font', 'Subtype': /'Type0', 'BaseFont': /'GothicBBB-Medium-Identity\\x0fH', 'Encoding': /'Identity-H', 'DescendantFonts': [<PDFObjRef:37>]}",
+null
+],
+[
+"29",
+"745",
+null
+],
+[
+"30",
+"<PDFStream(30): raw=745, {'Filter': /'FlateDecode', 'Length': <PDFObjRef:29>}>",
+"45467ca59cdd58a0175bf7ebbc31d5524844dd679a3862c61b6b5f4f220b1020"
+],
+[
+"31",
+"468",
+null
+],
+[
+"32",
+"<PDFStream(32): raw=468, {'Filter': /'FlateDecode', 'Length': <PDFObjRef:31>}>",
+"ac43a0c85cd8800b150e2acc29bea9295706c3c9fe2ee18364b49d5ef8ff19ae"
+],
+[
+"33",
+"709",
+null
+],
+[
+"34",
+"<PDFStream(34): raw=709, {'Filter': /'FlateDecode', 'Length': <PDFObjRef:33>}>",
+"f1aa88bb6e35c8e13e3003e09fef37a9fcb9f8069baa267496aa57d957714f05"
+],
+[
+"35",
+"{'Type': /'FontDescriptor', 'Ascent': 723, 'CapHeight': 709, 'Descent': -241, 'Flags': 6, 'FontBBox': [-170, -331, 1024, 903], 'FontName': /'Ryumin-Light', 'ItalicAngle': 0, 'StemV': 69, 'XHeight': 450, 'StemH': 34, 'Style': {'Panose': b'\\x01\\x05\\x02\\x02\\x03\\x00\\x00\\x00\\x00\\x00\\x00\\x00'}}",
+null
+],
+[
+"36",
+"{'Type': /'Font', 'Subtype': /'CIDFontType0', 'BaseFont': /'Ryumin-Light', 'FontDescriptor': <PDFObjRef:35>, 'CIDSystemInfo': {'Registry': b'Adobe', 'Ordering': b'Japan1', 'Supplement': 2}, 'DW': 1000}",
+null
+],
+[
+"37",
+"{'Type': /'Font', 'Subtype': /'CIDFontType0', 'BaseFont': /'GothicBBB-Medium', 'FontDescriptor': <PDFObjRef:38>, 'CIDSystemInfo': {'Registry': b'Adobe', 'Ordering': b'Japan1', 'Supplement': 2}, 'DW': 1000}",
+null
+],
+[
+"38",
+"{'Type': /'FontDescriptor', 'Ascent': 752, 'CapHeight': 737, 'Descent': -271, 'Flags': 4, 'FontBBox': [-174, -268, 1001, 944], 'FontName': /'GothicBBB-Medium', 'ItalicAngle': 0, 'StemV': 99, 'XHeight': 553, 'StemH': 72, 'Style': {'Panose': b'\\x08\\x01\\x02\\x0b\\x05\\x00\\x00\\x00\\x00\\x00\\x00\\x00'}}",
+null
+],
+[
+"39",
+"{'Type': /'Font', 'Subtype': /'CIDFontType0', 'BaseFont': /'Ryumin-Light', 'FontDescriptor': <PDFObjRef:35>, 'CIDSystemInfo': {'Registry': b'Adobe', 'Ordering': b'Japan1', 'Supplement': 2}, 'DW': 1000}",
+null
+],
+[
+"40",
+"<PDFStream(40): raw=2575, {'N': 3, 'Alternate': /'DeviceRGB', 'Length': 2575, 'Filter': /'FlateDecode'}>",
+"40c8dc2dc9860a6ad4f2612f049494899541b20cd33146d0691adcc13a5a962b"
+],
+[
+"41",
+"{'Type': /'ExtGState', 'SA': False, 'SM': 0.02, 'TR2': /'Default'}",
+null
+],
+[
+"42",
+"<PDFStream(42): raw=103, {'S': 36, 'L': 116, 'Filter': /'FlateDecode', 'Length': <PDFObjRef:43>}>",
+"e44d1d79d541b76c668f5dd71575cc830ad06181729e418e3add7cfad0c4bc98"
+],
+[
+"43",
+"103",
+null
+],
+[
+"44",
+"sha256:3faecda53e726cbcadf223fb4f8ea0c1132918e9d4b54e01a817e6f3b1bcd557",
+null
+],
+[
+"45",
+"{'DA': b'/Helv 0 Tf 0 g', 'SigFlags': 3, 'DR': {'XObject': {'DSz': <PDFObjRef:52>, 'DSy': <PDFObjRef:51>, 'DSx': <PDFObjRef:50>}, 'Font': {'Helv': <PDFObjRef:48>, 'ZaDb': <PDFObjRef:46>, 'KaGo': <PDFObjRef:49>}}, 'Fields': [<PDFObjRef:54>]}",
+null
+],
+[
+"46",
+"{'Type': /'Font', 'Name': /'ZaDb', 'BaseFont': /'ZapfDingbats', 'Subtype': /'Type1'}",
+null
+],
+[
+"47",
+"sha256:99bbdaadc1343eb472daf974b8fc70d6cb1fc17a4e8c6b2e529b30bd1c62fa77",
+null
+],
+[
+"48",
+"{'Type': /'Font', 'Name': /'Helv', 'BaseFont': /'Helvetica', 'Subtype': /'Type1', 'Encoding': <PDFObjRef:47>}",
+null
+],
+[
+"49",
+"sha256:789b350745003624daa3d13b4d751c4e341afde4f5ed0815bf21ecefdb378e0b",
+null
+],
+[
+"50",
+"<PDFStream(50): raw=330, {'Resources': {'ProcSet': [/'PDF']}, 'Matrix': [1, 0, 0, 1, 0, 0], 'Subtype': /'Form', 'Filter': /'FlateDecode', 'Length': 330, 'FormType': 1, 'Type': /'XObject', 'BBox': [0, 0, 100, 100]}>",
+"a5b1055195ad3d253e306e4b27ca4c5c3d6043dfdee69344f4a6735cba14e07f"
+],
+[
+"51",
+"<PDFStream(51): raw=317, {'Resources': {'ProcSet': [/'PDF']}, 'Matrix': [1, 0, 0, 1, 0, 0], 'Subtype': /'Form', 'Filter': /'FlateDecode', 'Length': 317, 'FormType': 1, 'Type': /'XObject', 'BBox': [0, 0, 100, 100]}>",
+"bdc4da714f6e19c3f4f70200c58eff72f10555a88535f6389484ec03ca2fd10c"
+],
+[
+"52",
+"<PDFStream(52): raw=0, {'Resources': {'ProcSet': [/'PDF']}, 'Matrix': [1, 0, 0, 1, 0, 0], 'Subtype': /'Form', 'Length': 0, 'FormType': 1, 'Type': /'XObject', 'BBox': [0, 0, 100, 100]}>",
+"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+],
+[
+"53",
+"<PDFStream(53): raw=26, {'Resources': {'ProcSet': [/'PDF']}, 'Subtype': /'Form', 'Filter': /'FlateDecode', 'Length': 26, 'FormType': 1, 'Type': /'XObject', 'BBox': [0.0, 0.0, 0.0, 0.0]}>",
+"625bafdcc5fb9e01b4ac3aad3a9ba86d7d0a27aa61029997bec405ff6397fa4f"
+],
+[
+"54",
+"{'P': <PDFObjRef:8>, 'FT': /'Sig', 'TU': b'', 'Ff': 36, 'F': 132, 'DA': b'/KaGo 0 Tf 0 g', 'Subtype': /'Widget', 'V': <PDFObjRef:44>, 'Type': /'Annot', 'Rect': [0.0, 0.0, 0.0, 0.0], 'T': b'Signature1'}",
+null
+],
+[
+"55",
+"{'R': 2, 'Length': 40, 'Filter': /'Standard', 'O': b'v\\xf1\\xc1\\x163\\x07\\x12\\x0c\\x10\\xe9h\\x9b\\xc9Qm\\xff1\\x03\\x94eJ]\\xbf\\xd36\\xb7wwKl\\xca\\xee', 'P': -44, 'U': b\"\\x7f\\xfc\\xe3\\x8a\\x98\\x11\\xe0\\xb7'\\x9d\\xc7\\x00\\x01W\\x9d\\x1a\\xd1\\xf2\\xcfK\\xf9\\x1b\\r\\x14w%\\x0c\\r\\xc1\\xc7\\xf0s\", 'V': 1}",
+null
+]
+],
+"pages": [
+{
+"pageid": "8",
+"label": "1",
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [
+"ColorSpace",
+"ExtGState",
+"Font",
+"ProcSet"
+],
+"contents": [
+"<PDFObjRef:14>",
+"<PDFObjRef:16>",
+"<PDFObjRef:23>",
+"<PDFObjRef:25>",
+"<PDFObjRef:27>",
+"<PDFObjRef:30>",
+"<PDFObjRef:32>",
+"<PDFObjRef:34>"
+],
+"attrs": [
+"Resources",
+"Rotate",
+"Parent",
+"Annots",
+"MediaBox",
+"CropBox",
+"Contents",
+"Type"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'Text'], 'Font': {'F2': <PDFObjRef:18>, 'G1': <PDFObjRef:11>, 'G2': <PDFObjRef:10>, 'G3': <PDFObjRef:28>}, 'ExtGState': {'GS1': <PDFObjRef:41>}, 'ColorSpace': {'Cs6': <PDFObjRef:12>}}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"1",
+"2",
+"3",
+"4",
+"5",
+"6",
+"7",
+"8",
+"9",
+"10",
+"11",
+"12"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "corrupt3",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRef: offsets=dict_keys([1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55])>",
+"trailer": "{'Size': 56, 'Root': <PDFObjRef:7>, 'Info': <PDFObjRef:4>, 'Encrypt': <PDFObjRef:55>, 'ID': [b'\\xf4_\\x97\\x80D\\xb9\\x8d7\\xd8\\xff\\x94P\\xa4k\\x91&', b'_*\\xb7u\\xf6\\xf1\\xb42\\xdeQN\\xa4\\xb6\\x14-)']}",
+"ids": [
+[
+"1",
+"(None, 50000000017, 0)"
+],
+[
+"2",
+"(None, 44, 0)"
+],
+[
+"3",
+"(None, 81, 0)"
+],
+[
+"4",
+"(None, 135, 0)"
+],
+[
+"5",
+"(None, 275, 0)"
+],
+[
+"7",
+"(None, 1002, 0)"
+],
+[
+"8",
+"(None, 1098, 0)"
+],
+[
+"9",
+"(None, 1293, 0)"
+],
+[
+"10",
+"(None, 1435, 0)"
+],
+[
+"11",
+"(None, 1561, 0)"
+],
+[
+"12",
+"(None, 1687, 0)"
+],
+[
+"13",
+"(None, 1725, 0)"
+],
+[
+"14",
+"(None, 1749, 0)"
+],
+[
+"15",
+"(None, 2805, 0)"
+],
+[
+"16",
+"(None, 2829, 0)"
+],
+[
+"17",
+"(None, 3881, 0)"
+],
+[
+"18",
+"(None, 4159, 0)"
+],
+[
+"19",
+"(None, 4960, 0)"
+],
+[
+"20",
+"(None, 5287, 0)"
+],
+[
+"21",
+"(None, 5419, 0)"
+],
+[
+"22",
+"(None, 6584, 0)"
+],
+[
+"23",
+"(None, 6608, 0)"
+],
+[
+"24",
+"(None, 7483, 0)"
+],
+[
+"25",
+"(None, 7507, 0)"
+],
+[
+"26",
+"(None, 8315, 0)"
+],
+[
+"27",
+"(None, 8339, 0)"
+],
+[
+"28",
+"(None, 8940, 0)"
+],
+[
+"29",
+"(None, 9070, 0)"
+],
+[
+"30",
+"(None, 9094, 0)"
+],
+[
+"31",
+"(None, 9915, 0)"
+],
+[
+"32",
+"(None, 9939, 0)"
+],
+[
+"33",
+"(None, 10483, 0)"
+],
+[
+"34",
+"(None, 10507, 0)"
+],
+[
+"35",
+"(None, 11292, 0)"
+],
+[
+"36",
+"(None, 11520, 0)"
+],
+[
+"37",
+"(None, 11691, 0)"
+],
+[
+"38",
+"(None, 11866, 0)"
+],
+[
+"39",
+"(None, 12098, 0)"
+],
+[
+"40",
+"(None, 12269, 0)"
+],
+[
+"41",
+"(None, 14942, 0)"
+],
+[
+"42",
+"(None, 15010, 0)"
+],
+[
+"43",
+"(None, 15200, 0)"
+],
+[
+"44",
+"(None, 15223, 0)"
+],
+[
+"45",
+"(None, 22091, 0)"
+],
+[
+"46",
+"(None, 22258, 0)"
+],
+[
+"47",
+"(None, 22338, 0)"
+],
+[
+"48",
+"(None, 23533, 0)"
+],
+[
+"49",
+"(None, 23626, 0)"
+],
+[
+"50",
+"(None, 25303, 0)"
+],
+[
+"51",
+"(None, 25811, 0)"
+],
+[
+"52",
+"(None, 26306, 0)"
+],
+[
+"53",
+"(None, 26462, 0)"
+],
+[
+"54",
+"(None, 26652, 0)"
+],
+[
+"55",
+"(None, 26798, 0)"
+]
+]
+}
+],
+"catalog": "{'Pages': <PDFObjRef:3>, 'PageLabels': <PDFObjRef:2>, 'Metadata': <PDFObjRef:5>, 'Type': /'Catalog', 'AcroForm': <PDFObjRef:45>}",
+"info": "[{'CreationDate': b\"D:20080424142424+09'00'\", 'ModDate': b\"D:20080424142424+09'00'\", 'Producer': b'Acrobat Distiller 5.0.5 (Windows)'}]",
+"flags": [
+true,
+false,
+true
+],
+"objects": [
+[
+"1",
+"!PDFObjectNotFound",
+null
+],
+[
+"2",
+"{'Nums': [0, <PDFObjRef:1>]}",
+null
+],
+[
+"3",
+"{'Kids': [<PDFObjRef:8>], 'Count': 1, 'Type': /'Pages'}",
+null
+],
+[
+"4",
+"{'CreationDate': b\"D:20080424142424+09'00'\", 'ModDate': b\"D:20080424142424+09'00'\", 'Producer': b'Acrobat Distiller 5.0.5 (Windows)'}",
+null
+],
+[
+"5",
+"<PDFStream(5): raw=648, {'Type': /'Metadata', 'Subtype': /'XML', 'Length': 648}>",
+"9e7abce4019edb82fd1685741ca5e94da8514d1ace05ba0da3bbd2034c257e46"
+],
+[
+"7",
+"{'Pages': <PDFObjRef:3>, 'PageLabels': <PDFObjRef:2>, 'Metadata': <PDFObjRef:5>, 'Type': /'Catalog', 'AcroForm': <PDFObjRef:45>}",
+null
+],
+[
+"8",
+"sha256:85830be6c6096f4fbba76ff5c21fea7c09b70c7cade4e8b6e8314146338a5629",
+null
+],
+[
+"9",
+"{'ProcSet': [/'PDF', /'Text'], 'Font': {'F2': <PDFObjRef:18>, 'G1': <PDFObjRef:11>, 'G2': <PDFObjRef:10>, 'G3': <PDFObjRef:28>}, 'ExtGState': {'GS1': <PDFObjRef:41>}, 'ColorSpace': {'Cs6': <PDFObjRef:12>}}",
+null
+],
+[
+"10",
+"{'Type': /'Font', 'Subtype': /'Type0', 'BaseFont': /'Ryumin-Light-Identity-V', 'Encoding': /'Identity-V', 'DescendantFonts': [<PDFObjRef:39>]}",
+null
+],
+[
+"11",
+"{'Type': /'Font', 'Subtype': /'Type0', 'BaseFont': /'Ryumin-Light-Identity-H', 'Encoding': /'Identity-H', 'DescendantFonts': [<PDFObjRef:36>]}",
+null
+],
+[
+"12",
+"[/'ICCBased', <PDFObjRef:40>]",
+null
+],
+[
+"13",
+"980",
+null
+],
+[
+"14",
+"<PDFStream(14): raw=980, {'Filter': /'FlateDecode', 'Length': <PDFObjRef:13>}>",
+"57260edc6a4a5b3a77f0f6497e2cd586644db6fda76832587edaa831c943655d"
+],
+[
+"15",
+"976",
+null
+],
+[
+"16",
+"<PDFStream(16): raw=976, {'Filter': /'FlateDecode', 'Length': <PDFObjRef:15>}>",
+"51a7b2d4dc461393e7f0ff6e42a5ac306af9e1747f04f471b98e889f7949d6e6"
+],
+[
+"17",
+"sha256:6e01699aaf343009e351f4a007aa9579d195bf5df645a9c24fcc23fec4ea3def",
+null
+],
+[
+"18",
+"sha256:29be23abfbaf60dd29d64608386cf9787d31e419e712d9605d20f72cd9817002",
+null
+],
+[
+"19",
+"<PDFStream(19): raw=254, {'Filter': /'FlateDecode', 'Length': 254}>",
+"4241ee66f3a68e72f1b9708521241c871443de9fb22087416a087966514728d4"
+],
+[
+"20",
+"{'Type': /'Encoding', 'Differences': [1, /'c158', 31, /'tilde', 132, /'emdash', 137, /'guilsinglright', 146, /'trademark', 152, /'Ydieresis', 156, /'oe']}",
+null
+],
+[
+"21",
+"<PDFStream(21): raw=1095, {'Length': 1095, 'Subtype': /'Type1C'}>",
+"00cc207e250a21bad182857e8f14fbd5127aa952417de86ed5f6afdf298c2911"
+],
+[
+"22",
+"799",
+null
+],
+[
+"23",
+"<PDFStream(23): raw=799, {'Filter': /'FlateDecode', 'Length': <PDFObjRef:22>}>",
+"db9817e4357e18d346931ff4126243bf4c42a18db5233ed19b35ddaf4b014781"
+],
+[
+"24",
+"732",
+null
+],
+[
+"25",
+"<PDFStream(25): raw=732, {'Filter': /'FlateDecode', 'Length': <PDFObjRef:24>}>",
+"cb237dff356ef1e47707a3769081647f004fc929618fd7d3cddff84855724bc1"
+],
+[
+"26",
+"525",
+null
+],
+[
+"27",
+"<PDFStream(27): raw=525, {'Filter': /'FlateDecode', 'Length': <PDFObjRef:26>}>",
+"6e3aa4d4578798513b2d324199aea926195b2016e1911895d3bb10f077b5a6df"
+],
+[
+"28",
+"{'Type': /'Font', 'Subtype': /'Type0', 'BaseFont': /'GothicBBB-Medium-Identity-H', 'Encoding': /'Identity-H', 'DescendantFonts': [<PDFObjRef:37>]}",
+null
+],
+[
+"29",
+"745",
+null
+],
+[
+"30",
+"<PDFStream(30): raw=745, {'Filter': /'FlateDecode', 'Length': <PDFObjRef:29>}>",
+"45467ca59cdd58a0175bf7ebbc31d5524844dd679a3862c61b6b5f4f220b1020"
+],
+[
+"31",
+"468",
+null
+],
+[
+"32",
+"<PDFStream(32): raw=468, {'Filter': /'FlateDecode', 'Length': <PDFObjRef:31>}>",
+"ac43a0c85cd8800b150e2acc29bea9295706c3c9fe2ee18364b49d5ef8ff19ae"
+],
+[
+"33",
+"709",
+null
+],
+[
+"34",
+"<PDFStream(34): raw=709, {'Filter': /'FlateDecode', 'Length': <PDFObjRef:33>}>",
+"f1aa88bb6e35c8e13e3003e09fef37a9fcb9f8069baa267496aa57d957714f05"
+],
+[
+"35",
+"{'Type': /'FontDescriptor', 'Ascent': 723, 'CapHeight': 709, 'Descent': -241, 'Flags': 6, 'FontBBox': [-170, -331, 1024, 903], 'FontName': /'Ryumin-Light', 'ItalicAngle': 0, 'StemV': 69, 'XHeight': 450, 'StemH': 34, 'Style': {'Panose': b'\\x01\\x05\\x02\\x02\\x03\\x00\\x00\\x00\\x00\\x00\\x00\\x00'}}",
+null
+],
+[
+"36",
+"{'Type': /'Font', 'Subtype': /'CIDFontType0', 'BaseFont': /'Ryumin-Light', 'FontDescriptor': <PDFObjRef:35>, 'CIDSystemInfo': {'Registry': b'Adobe', 'Ordering': b'Japan1', 'Supplement': 2}, 'DW': 1000}",
+null
+],
+[
+"37",
+"{'Type': /'Font', 'Subtype': /'CIDFontType0', 'BaseFont': /'GothicBBB-Medium', 'FontDescriptor': <PDFObjRef:38>, 'CIDSystemInfo': {'Registry': b'Adobe', 'Ordering': b'Japan1', 'Supplement': 2}, 'DW': 1000}",
+null
+],
+[
+"38",
+"{'Type': /'FontDescriptor', 'Ascent': 752, 'CapHeight': 737, 'Descent': -271, 'Flags': 4, 'FontBBox': [-174, -268, 1001, 944], 'FontName': /'GothicBBB-Medium', 'ItalicAngle': 0, 'StemV': 99, 'XHeight': 553, 'StemH': 72, 'Style': {'Panose': b'\\x08\\x01\\x02\\x0b\\x05\\x00\\x00\\x00\\x00\\x00\\x00\\x00'}}",
+null
+],
+[
+"39",
+"{'Type': /'Font', 'Subtype': /'CIDFontType0', 'BaseFont': /'Ryumin-Light', 'FontDescriptor': <PDFObjRef:35>, 'CIDSystemInfo': {'Registry': b'Adobe', 'Ordering': b'Japan1', 'Supplement': 2}, 'DW': 1000}",
+null
+],
+[
+"40",
+"<PDFStream(40): raw=2575, {'N': 3, 'Alternate': /'DeviceRGB', 'Length': 2575, 'Filter': /'FlateDecode'}>",
+"2b3aa1645779a9e634744faf9b01e9102b0c9b88fd6deced7934df86b949af7e"
+],
+[
+"41",
+"{'Type': /'ExtGState', 'SA': False, 'SM': 0.02, 'TR2': /'Default'}",
+null
+],
+[
+"42",
+"<PDFStream(42): raw=103, {'S': 36, 'L': 116, 'Filter': /'FlateDecode', 'Length': <PDFObjRef:43>}>",
+"e44d1d79d541b76c668f5dd71575cc830ad06181729e418e3add7cfad0c4bc98"
+],
+[
+"43",
+"103",
+null
+],
+[
+"44",
+"sha256:dbaad3bb9d8e9b658b47ed91311fb5f07bfc170187c3a4703a4d6c1ab405118f",
+null
+],
+[
+"45",
+"{'DA': b'/Helv 0 Tf 0 g', 'SigFlags': 3, 'DR': {'XObject': {'DSz': <PDFObjRef:52>, 'DSy': <PDFObjRef:51>, 'DSx': <PDFObjRef:50>}, 'Font': {'Helv': <PDFObjRef:48>, 'ZaDb': <PDFObjRef:46>, 'KaGo': <PDFObjRef:49>}}, 'Fields': [<PDFObjRef:54>]}",
+null
+],
+[
+"46",
+"{'Type': /'Font', 'Name': /'ZaDb', 'BaseFont': /'ZapfDingbats', 'Subtype': /'Type1'}",
+null
+],
+[
+"47",
+"sha256:c164b134d80405c8add96add3b043871dc3d6d76c8a8abf8de3eac94fd9ef9a9",
+null
+],
+[
+"48",
+"{'Type': /'Font', 'Name': /'Helv', 'BaseFont': /'Helvetica', 'Subtype': /'Type1', 'Encoding': <PDFObjRef:47>}",
+null
+],
+[
+"49",
+"sha256:789b350745003624daa3d13b4d751c4e341afde4f5ed0815bf21ecefdb378e0b",
+null
+],
+[
+"50",
+"<PDFStream(50): raw=330, {'Resources': {'ProcSet': [/'PDF']}, 'Matrix': [1, 0, 0, 1, 0, 0], 'Subtype': /'Form', 'Filter': /'FlateDecode', 'Length': 330, 'FormType': 1, 'Type': /'XObject', 'BBox': [0, 0, 100, 100]}>",
+"a5b1055195ad3d253e306e4b27ca4c5c3d6043dfdee69344f4a6735cba14e07f"
+],
+[
+"51",
+"<PDFStream(51): raw=317, {'Resources': {'ProcSet': [/'PDF']}, 'Matrix': [1, 0, 0, 1, 0, 0], 'Subtype': /'Form', 'Filter': /'FlateDecode', 'Length': 317, 'FormType': 1, 'Type': /'XObject', 'BBox': [0, 0, 100, 100]}>",
+"bdc4da714f6e19c3f4f70200c58eff72f10555a88535f6389484ec03ca2fd10c"
+],
+[
+"52",
+"<PDFStream(52): raw=0, {'Resources': {'ProcSet': [/'PDF']}, 'Matrix': [1, 0, 0, 1, 0, 0], 'Subtype': /'Form', 'Length': 0, 'FormType': 1, 'Type': /'XObject', 'BBox': [0, 0, 100, 100]}>",
+"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+],
+[
+"53",
+"<PDFStream(53): raw=0, {}>",
+"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+],
+[
+"54",
+"{'P': <PDFObjRef:8>, 'FT': /'Sig', 'TU': b'', 'Ff': 36, 'F': 132, 'DA': b'/KaGo 0 Tf 0 g', 'Subtype': /'Widget', 'V': <PDFObjRef:44>, 'Type': /'Annot', 'Rect': [0.0, 0.0, 0.0, 0.0], 'T': b'Signature1'}",
+null
+],
+[
+"55",
+"{'R': 2, 'Length': 40, 'Filter': /'Standard', 'O': b'v\\xf1\\xc1\\x163\\x07\\x12\\x0c\\x10\\xe9h\\x9b\\xc9Qm\\xff1\\x03\\x94eJ]\\xbf\\xd36\\xb7wwKl\\xca\\xee', 'P': -44, 'U': b\"\\x7f\\xfc\\xe3\\x8a\\x98\\x11\\xe0\\xb7'\\x9d\\xc7\\x00\\x01W\\x9d\\x1a\\xd1\\xf2\\xcfK\\xf9\\x1b\\r\\x14w%\\x0c\\r\\xc1\\xc7\\xf0s\", 'V': 1}",
+null
+]
+],
+"pages": [
+{
+"pageid": "8",
+"label": "",
+"mediabox": "(0.0, 0.0, 595.0, 842.0)",
+"cropbox": "(0.0, 0.0, 595.0, 842.0)",
+"rotate": 0,
+"resources": [
+"ColorSpace",
+"ExtGState",
+"Font",
+"ProcSet"
+],
+"contents": [
+"<PDFObjRef:14>",
+"<PDFObjRef:16>",
+"<PDFObjRef:23>",
+"<PDFObjRef:25>",
+"<PDFObjRef:27>",
+"<PDFObjRef:30>",
+"<PDFObjRef:32>",
+"<PDFObjRef:34>"
+],
+"attrs": [
+"Resources",
+"Rotate",
+"Parent",
+"Annots",
+"MediaBox",
+"CropBox",
+"Contents",
+"Type"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'Text'], 'Font': {'F2': <PDFObjRef:18>, 'G1': <PDFObjRef:11>, 'G2': <PDFObjRef:10>, 'G3': <PDFObjRef:28>}, 'ExtGState': {'GS1': <PDFObjRef:41>}, 'ColorSpace': {'Cs6': <PDFObjRef:12>}}, MediaBox=(0.0, 0.0, 595.0, 842.0)>"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+"",
+""
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+}
+]
+}

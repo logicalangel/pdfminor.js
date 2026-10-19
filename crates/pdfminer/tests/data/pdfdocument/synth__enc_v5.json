@@ -1,0 +1,122 @@
+{
+"path": "synth/enc_v5.pdf",
+"runs": [
+{
+"password": "",
+"variant": "orig",
+"open": "!PDFPasswordIncorrect"
+},
+{
+"password": "",
+"variant": "half",
+"open": "!PSEOF"
+},
+{
+"password": "",
+"variant": "3q",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "noxref",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "shifted",
+"open": "!PDFPasswordIncorrect"
+},
+{
+"password": "",
+"variant": "tail",
+"open": "!PDFException"
+},
+{
+"password": "",
+"variant": "corrupt0",
+"open": "!KeyError"
+},
+{
+"password": "",
+"variant": "corrupt1",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRef: offsets=dict_keys([1, 2, 3, 4])>",
+"trailer": "{'Size': 5, 'Root': <PDFObjRef:1>, 'ID': [b'\\x01', b'\\x01']}",
+"ids": [
+[
+"1",
+"(None, 9, 0)"
+],
+[
+"2",
+"(None, 58, 0)"
+],
+[
+"3",
+"(None, 115, 0)"
+],
+[
+"4",
+"(None, 186, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /b'Cata\\xd1og', 'Pages': <PDFObjRef:2>}",
+"info": "[]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"1",
+"{'Type': /b'Cata\\xd1og', 'Pages': <PDFObjRef:2>}",
+null
+],
+[
+"2",
+"{\"b'Ty\\\\x96e'\": /'Pages', 'Kids': [<PDFObjRef:3>], 'Count': 1}",
+null
+],
+[
+"3",
+"<PDFObjRef:2>",
+null
+],
+[
+"4",
+"sha256:88812d507eb0a89ad63d0b6318bbc6010c699e5c8d4b0557a729db7921d01a1f",
+null
+]
+],
+"pages": [],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "corrupt2",
+"open": "!PSSyntaxError"
+},
+{
+"password": "",
+"variant": "corrupt3",
+"open": "!PSSyntaxError"
+}
+]
+}

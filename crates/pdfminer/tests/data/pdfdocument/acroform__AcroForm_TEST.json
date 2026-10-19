@@ -1,0 +1,1461 @@
+{
+"path": "acroform/AcroForm_TEST.pdf",
+"runs": [
+{
+"password": "",
+"variant": "orig",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRefStream: ranges=[(0, 56)]>",
+"trailer": "sha256:4c4eda8d8efc8f822f537acc4dad89acb99827170ac1fe3d69858c3f0b37ef6e",
+"ids": [
+[
+"1",
+"(None, 17, 0)"
+],
+[
+"2",
+"(54, 0, 0)"
+],
+[
+"3",
+"(54, 1, 0)"
+],
+[
+"4",
+"(None, 99, 0)"
+],
+[
+"6",
+"(54, 2, 0)"
+],
+[
+"7",
+"(54, 3, 0)"
+],
+[
+"8",
+"(54, 4, 0)"
+],
+[
+"9",
+"(None, 308, 0)"
+],
+[
+"10",
+"(None, 513, 0)"
+],
+[
+"11",
+"(None, 719, 0)"
+],
+[
+"12",
+"(54, 5, 0)"
+],
+[
+"13",
+"(None, 925, 0)"
+],
+[
+"14",
+"(None, 1314, 0)"
+],
+[
+"15",
+"(None, 1529, 0)"
+],
+[
+"16",
+"(None, 1920, 0)"
+],
+[
+"22",
+"(54, 6, 0)"
+],
+[
+"23",
+"(None, 2141, 0)"
+],
+[
+"24",
+"(None, 2539, 0)"
+],
+[
+"25",
+"(None, 2873, 0)"
+],
+[
+"26",
+"(None, 3274, 0)"
+],
+[
+"27",
+"(54, 7, 0)"
+],
+[
+"28",
+"(None, 3611, 0)"
+],
+[
+"29",
+"(54, 8, 0)"
+],
+[
+"30",
+"(None, 3929, 0)"
+],
+[
+"31",
+"(54, 9, 0)"
+],
+[
+"32",
+"(None, 4301, 0)"
+],
+[
+"36",
+"(54, 10, 0)"
+],
+[
+"37",
+"(None, 4534, 0)"
+],
+[
+"41",
+"(54, 11, 0)"
+],
+[
+"43",
+"(None, 4854, 0)"
+],
+[
+"53",
+"(None, 5232, 0)"
+],
+[
+"54",
+"(None, 6177, 0)"
+],
+[
+"55",
+"(None, 7173, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /'Catalog', 'Pages': <PDFObjRef:2>, 'AcroForm': <PDFObjRef:7>, 'Metadata': <PDFObjRef:53>}",
+"info": "[{'Producer': b'', 'Author': b'', 'Title': b'AcroForm Test', 'CreationDate': b\"D:20200724101336+01'00'\", 'ModDate': b\"D:20200724105134+01'00'\", 'Creator': b'', 'Subject': b'', 'Keywords': b''}]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"1",
+"{'Type': /'Catalog', 'Pages': <PDFObjRef:2>, 'AcroForm': <PDFObjRef:7>, 'Metadata': <PDFObjRef:53>}",
+null
+],
+[
+"2",
+"{'Type': /'Pages', 'Count': 1, 'Kids': [<PDFObjRef:4>]}",
+null
+],
+[
+"3",
+"{'Producer': b'', 'Author': b'', 'Title': b'AcroForm Test', 'CreationDate': b\"D:20200724101336+01'00'\", 'ModDate': b\"D:20200724105134+01'00'\", 'Creator': b'', 'Subject': b'', 'Keywords': b''}",
+null
+],
+[
+"4",
+"sha256:cc70d98ee6432a8f40aa3ddadd139877711f7c2f31f8ca130c1c311cd6687613",
+null
+],
+[
+"6",
+"sha256:3099385ff86f43c7d4edbae5c3a12d2fc854997971ecb61571f92280232408f1",
+null
+],
+[
+"7",
+"{'DR': {'Font': {'Helv': <PDFObjRef:8>}}, 'DA': b'/Helv 0 Tf 0 g', 'Fields': [<PDFObjRef:6>, <PDFObjRef:12>, <PDFObjRef:22>, <PDFObjRef:27>, <PDFObjRef:29>, <PDFObjRef:31>, <PDFObjRef:41>]}",
+null
+],
+[
+"8",
+"{'Type': /'Font', 'Subtype': /'Type1', 'BaseFont': /'Helvetica', 'Encoding': /'WinAnsiEncoding'}",
+null
+],
+[
+"9",
+"<PDFStream(9): raw=51, {'Type': /'XObject', 'Subtype': /'Form', 'FormType': 1, 'Matrix': [1, 0, 0, 1, 0, 0], 'BBox': [0, 0, 81.293, 31.066], 'Length': 51, 'Filter': /'FlateDecode'}>",
+"c4b5d2862a94053eda116e4e8fb81dba59ec591814e40740dfd58767c42a74f3"
+],
+[
+"10",
+"<PDFStream(10): raw=51, {'Type': /'XObject', 'Subtype': /'Form', 'FormType': 1, 'Matrix': [1, 0, 0, 1, 0, 0], 'BBox': [0, 0, 81.293, 31.066], 'Length': 51, 'Filter': /'FlateDecode'}>",
+"c4b5d2862a94053eda116e4e8fb81dba59ec591814e40740dfd58767c42a74f3"
+],
+[
+"11",
+"<PDFStream(11): raw=51, {'Type': /'XObject', 'Subtype': /'Form', 'FormType': 1, 'Matrix': [1, 0, 0, 1, 0, 0], 'BBox': [0, 0, 81.293, 31.066], 'Length': 51, 'Filter': /'FlateDecode'}>",
+"7f81464d16e6ba32381ee0639b01879c88b1b7c69925dad30c450639e0e494ee"
+],
+[
+"12",
+"sha256:f3aa4117ce719e27d10b1d20f06afa173c3598881c791cfdba8c60bb04c39c18",
+null
+],
+[
+"13",
+"<PDFStream(13): raw=233, {'Type': /'XObject', 'Subtype': /'Form', 'FormType': 1, 'Matrix': [1, 0, 0, 1, 0, 0], 'BBox': [0, 0, 29.143, 28.382], 'Length': 233, 'Filter': /'FlateDecode'}>",
+"4a98470695224a3e5b37b3b2c2ed922a38985d68eb5eb8637fcd8277bde4b3f1"
+],
+[
+"14",
+"<PDFStream(14): raw=60, {'Type': /'XObject', 'Subtype': /'Form', 'FormType': 1, 'Matrix': [1, 0, 0, 1, 0, 0], 'BBox': [0, 0, 29.143, 28.382], 'Length': 60, 'Filter': /'FlateDecode'}>",
+"665828ef1926e40f492fb168e69d74a8beb058c26dd9b3d748d8001ea557d0f1"
+],
+[
+"15",
+"<PDFStream(15): raw=235, {'Type': /'XObject', 'Subtype': /'Form', 'FormType': 1, 'Matrix': [1, 0, 0, 1, 0, 0], 'BBox': [0, 0, 29.143, 28.382], 'Length': 235, 'Filter': /'FlateDecode'}>",
+"10a5ec06e4d8e695b755f781745421978233acfb00752426042d2c00438fdd8e"
+],
+[
+"16",
+"<PDFStream(16): raw=66, {'Type': /'XObject', 'Subtype': /'Form', 'FormType': 1, 'Matrix': [1, 0, 0, 1, 0, 0], 'BBox': [0, 0, 29.143, 28.382], 'Length': 66, 'Filter': /'FlateDecode'}>",
+"43c215a58ef1dee43e0e27a41b20d4b2f94510305dd546a172402e497b9e015e"
+],
+[
+"22",
+"sha256:da0906fb974a578a675c9e29f832d9ee16e484c42e15d968aae61bf9b5698873",
+null
+],
+[
+"23",
+"<PDFStream(23): raw=242, {'Type': /'XObject', 'Subtype': /'Form', 'FormType': 1, 'Matrix': [1, 0, 0, 1, 0, 0], 'BBox': [0, 0, 83.977, 21.094], 'Length': 242, 'Filter': /'FlateDecode'}>",
+"2a90720ba8e7a546611db551fb4e302a02bb59284baabb8c5c05208fa0bb2cc0"
+],
+[
+"24",
+"<PDFStream(24): raw=178, {'Type': /'XObject', 'Subtype': /'Form', 'FormType': 1, 'Matrix': [1, 0, 0, 1, 0, 0], 'BBox': [0, 0, 83.977, 21.094], 'Length': 178, 'Filter': /'FlateDecode'}>",
+"fd87e37dc5e240f17c0e9e3849aa0544b218eb2440ed7f0b5fdfcc8657c6aa10"
+],
+[
+"25",
+"<PDFStream(25): raw=245, {'Type': /'XObject', 'Subtype': /'Form', 'FormType': 1, 'Matrix': [1, 0, 0, 1, 0, 0], 'BBox': [0, 0, 83.977, 21.094], 'Length': 245, 'Filter': /'FlateDecode'}>",
+"7190ffd92200dfaabf8594e5415752ede496a0d1e2f40bfd8c8a4baa52421fab"
+],
+[
+"26",
+"<PDFStream(26): raw=181, {'Type': /'XObject', 'Subtype': /'Form', 'FormType': 1, 'Matrix': [1, 0, 0, 1, 0, 0], 'BBox': [0, 0, 83.977, 21.094], 'Length': 181, 'Filter': /'FlateDecode'}>",
+"94908e4aaeec8ad667c35ab7d7ea557849f3a570a4693b5624fe95808156ce52"
+],
+[
+"27",
+"sha256:6c3b8090f32e01c8119d56fbd286d2201dfad85069f2889d868e8342fd2c2012",
+null
+],
+[
+"28",
+"<PDFStream(28): raw=126, {'Type': /'XObject', 'Subtype': /'Form', 'FormType': 1, 'Matrix': [1, 0, 0, 1, 0, 0], 'BBox': [0, 0, 138.812, 54.079], 'Length': 126, 'Resources': {'Font': {'FXF0': <PDFObjRef:8>}}, 'Filter': /'FlateDecode'}>",
+"2d90867ba2814009ed7624d145785f2332055aa0befb5b5c7f170b1d03ea3354"
+],
+[
+"29",
+"sha256:f5903ba4b0ea16ddcdfeb58ab86c65d0991402ef9004c62c536b23bd435f8e0d",
+null
+],
+[
+"30",
+"<PDFStream(30): raw=180, {'Type': /'XObject', 'Subtype': /'Form', 'FormType': 1, 'Matrix': [1, 0, 0, 1, 0, 0], 'BBox': [0, 0, 129.992, 42.956], 'Length': 180, 'Resources': {'Font': {'FXF0': <PDFObjRef:8>}}, 'Filter': /'FlateDecode'}>",
+"c9f0ad3d5a681aa55e0ea087ac4066fa00d6dab5ea1e867c1c2525e6799c4992"
+],
+[
+"31",
+"sha256:96044befcd36fbcb1e97e4eb2286c2602657559553e9570a780d67e6814f9637",
+null
+],
+[
+"32",
+"<PDFStream(32): raw=77, {'Type': /'XObject', 'Subtype': /'Form', 'FormType': 1, 'Matrix': [1, 0, 0, 1, 0, 0], 'BBox': [0, 0, 350.098, 48.709], 'Length': 77, 'Filter': /'FlateDecode'}>",
+"9c14e8abc74ca8311996d2295440ac23a649bd76052fe646c9f9cc6c95c95909"
+],
+[
+"36",
+"{'Type': /'Font', 'Subtype': /'Type1', 'BaseFont': /'Helvetica', 'Encoding': /'WinAnsiEncoding'}",
+null
+],
+[
+"37",
+"<PDFStream(37): raw=247, {'Length': 247, 'Filter': /'FlateDecode'}>",
+"86441d0e3e02cc0a954eec2014f8be0ee1233965759006909610af32eb1fee53"
+],
+[
+"41",
+"sha256:95a1bf55cac0f835e6ed60059f495dc9fb5ccf2c3c6e803c3765df841ab5c942",
+null
+],
+[
+"43",
+"<PDFStream(43): raw=186, {'Type': /'XObject', 'Subtype': /'Form', 'FormType': 1, 'Matrix': [1, 0, 0, 1, 0, 0], 'BBox': [0, 0, 129.992, 42.956], 'Length': 186, 'Resources': {'Font': {'FXF0': <PDFObjRef:8>}}, 'Filter': /'FlateDecode'}>",
+"43799bea07acba48c92a84f85494a6281dcca6a9764acef88d9e475301b60c0f"
+],
+[
+"53",
+"<PDFStream(53): raw=865, {'Type': /'Metadata', 'Subtype': /'XML', 'Length': 865}>",
+"8bfc86e8baea269bf9da661e9d9985b16818c670c8708a886f491217ee27c402"
+],
+[
+"54",
+"<PDFStream(54): len=2499, {'Type': /'ObjStm', 'N': 12, 'First': 81, 'Length': 894, 'Filter': /'FlateDecode'}>",
+"13b9341473b2e82fce9ea45732addf9ca0b65d88015dc1b735a189290f858a21"
+],
+[
+"55",
+"sha256:c0409a16bb891c446138eb4047c962154c8b05700966e45ccb6257c3f8aec662",
+"da572266d76d8fd1a0fb025cdb84d9b16c914a83ab3391d7b331429b5ad61a14"
+]
+],
+"pages": [
+{
+"pageid": "4",
+"label": null,
+"mediabox": "(0.0, 0.0, 612.0, 792.0)",
+"cropbox": "(0.0, 0.0, 612.0, 792.0)",
+"rotate": 0,
+"resources": [
+"Font"
+],
+"contents": [
+"<PDFStream(37): len=552, {'Length': 247, 'Filter': /'FlateDecode'}>"
+],
+"attrs": [
+"Type",
+"Parent",
+"MediaBox",
+"CropBox",
+"Resources",
+"Annots",
+"Contents"
+],
+"repr": "<PDFPage: Resources={'Font': {'FXF1': <PDFObjRef:36>}}, MediaBox=(0.0, 0.0, 612.0, 792.0)>"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "half",
+"open": "!PSEOF"
+},
+{
+"password": "",
+"variant": "3q",
+"open": "!PSEOF"
+},
+{
+"password": "",
+"variant": "noxref",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "shifted",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "tail",
+"open": "!PSEOF"
+},
+{
+"password": "",
+"variant": "corrupt0",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRefStream: ranges=[(0, 56)]>",
+"trailer": "sha256:4c4eda8d8efc8f822f537acc4dad89acb99827170ac1fe3d69858c3f0b37ef6e",
+"ids": [
+[
+"1",
+"(None, 17, 0)"
+],
+[
+"2",
+"(54, 0, 0)"
+],
+[
+"3",
+"(54, 1, 0)"
+],
+[
+"4",
+"(None, 99, 0)"
+],
+[
+"6",
+"(54, 2, 0)"
+],
+[
+"7",
+"(54, 3, 0)"
+],
+[
+"8",
+"(54, 4, 0)"
+],
+[
+"9",
+"(None, 308, 0)"
+],
+[
+"10",
+"(None, 513, 0)"
+],
+[
+"11",
+"(None, 719, 0)"
+],
+[
+"12",
+"(54, 5, 0)"
+],
+[
+"13",
+"(None, 925, 0)"
+],
+[
+"14",
+"(None, 1314, 0)"
+],
+[
+"15",
+"(None, 1529, 0)"
+],
+[
+"16",
+"(None, 1920, 0)"
+],
+[
+"22",
+"(54, 6, 0)"
+],
+[
+"23",
+"(None, 2141, 0)"
+],
+[
+"24",
+"(None, 2539, 0)"
+],
+[
+"25",
+"(None, 2873, 0)"
+],
+[
+"26",
+"(None, 3274, 0)"
+],
+[
+"27",
+"(54, 7, 0)"
+],
+[
+"28",
+"(None, 3611, 0)"
+],
+[
+"29",
+"(54, 8, 0)"
+],
+[
+"30",
+"(None, 3929, 0)"
+],
+[
+"31",
+"(54, 9, 0)"
+],
+[
+"32",
+"(None, 4301, 0)"
+],
+[
+"36",
+"(54, 10, 0)"
+],
+[
+"37",
+"(None, 4534, 0)"
+],
+[
+"41",
+"(54, 11, 0)"
+],
+[
+"43",
+"(None, 4854, 0)"
+],
+[
+"53",
+"(None, 5232, 0)"
+],
+[
+"54",
+"(None, 6177, 0)"
+],
+[
+"55",
+"(None, 7173, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /'Catalog', 'Pages': <PDFObjRef:2>, 'AcroForm': <PDFObjRef:7>, 'Metadata': <PDFObjRef:53>}",
+"info": "[{'Producer': b'', 'Author': b'', 'Title': b'AcroForm Test', 'CreationDate': b\"D:20200724101336+01'00'\", 'ModDate': b\"D:20200724105134+01'00'\", 'Creator': b'', 'Subject': b'', 'Keywords': b''}]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"1",
+"{'Type': /'Catalog', 'Pages': <PDFObjRef:2>, 'AcroForm': <PDFObjRef:7>, 'Metadata': <PDFObjRef:53>}",
+null
+],
+[
+"2",
+"{'Type': /'Pages', 'Count': 1, 'Kids': [<PDFObjRef:4>]}",
+null
+],
+[
+"3",
+"{'Producer': b'', 'Author': b'', 'Title': b'AcroForm Test', 'CreationDate': b\"D:20200724101336+01'00'\", 'ModDate': b\"D:20200724105134+01'00'\", 'Creator': b'', 'Subject': b'', 'Keywords': b''}",
+null
+],
+[
+"4",
+"sha256:cc70d98ee6432a8f40aa3ddadd139877711f7c2f31f8ca130c1c311cd6687613",
+null
+],
+[
+"6",
+"sha256:3099385ff86f43c7d4edbae5c3a12d2fc854997971ecb61571f92280232408f1",
+null
+],
+[
+"7",
+"{'DR': {'Font': {'Helv': <PDFObjRef:8>}}, 'DA': b'/Helv 0 Tf 0 g', 'Fields': [<PDFObjRef:6>, <PDFObjRef:12>, <PDFObjRef:22>, <PDFObjRef:27>, <PDFObjRef:29>, <PDFObjRef:31>, <PDFObjRef:41>]}",
+null
+],
+[
+"8",
+"{'Type': /'Font', 'Subtype': /'Type1', 'BaseFont': /'Helvetica', 'Encoding': /'WinAnsiEncoding'}",
+null
+],
+[
+"9",
+"<PDFStream(9): raw=51, {'Type': /'XObject', 'Subtype': /'Form', 'FormType': 1, 'Matrix': [1, 0, 0, 1, 0, 0], 'BBox': [0, 0, 81.293, 31.066], 'Length': 51, 'Filter': /'FlateDecode'}>",
+"c4b5d2862a94053eda116e4e8fb81dba59ec591814e40740dfd58767c42a74f3"
+],
+[
+"10",
+"<PDFStream(10): raw=51, {'Type': /'XObject', 'Subtype': /'Form', 'FormType': 1, 'Matrix': [1, 0, 0, 1, 0, 0], 'BBox': [0, 0, 81.293, 31.066], 'Length': 51, 'Filter': /'FlateDecode'}>",
+"c4b5d2862a94053eda116e4e8fb81dba59ec591814e40740dfd58767c42a74f3"
+],
+[
+"11",
+"<PDFStream(11): raw=51, {'Type': /'XObject', 'Subtype': /'Form', 'FormType': 1, 'Matrix': [1, 0, 0, 1, 0, 0], 'BBox': [0, 0, 81.293, 31.066], 'Length': 51, 'Filter': /'FlateDecode'}>",
+"7f81464d16e6ba32381ee0639b01879c88b1b7c69925dad30c450639e0e494ee"
+],
+[
+"12",
+"sha256:f3aa4117ce719e27d10b1d20f06afa173c3598881c791cfdba8c60bb04c39c18",
+null
+],
+[
+"13",
+"<PDFStream(13): raw=233, {'Type': /'XObject', 'Subtype': /'Form', 'FormType': 1, 'Matrix': [1, 0, 0, 1, 0, 0], 'BBox': [0, 0, 29.143, 28.382], 'Length': 233, 'Filter': /'FlateDecode'}>",
+"4a98470695224a3e5b37b3b2c2ed922a38985d68eb5eb8637fcd8277bde4b3f1"
+],
+[
+"14",
+"!PDFObjectNotFound",
+null
+],
+[
+"15",
+"<PDFStream(15): raw=235, {'Type': /'XObject', 'Subtype': /'Form', 'FormType': 1, 'Matrix': [1, 0, 0, 1, 0, 0], 'BBox': [0, 0, 29.143, 28.382], 'Length': 235, \"b'Fil\\\\xffer'\": /'FlateDecode'}>",
+"3fca65f3e1f854e151f18c3ff56b2f9bbbccec417c585aea0245647026bc35e5"
+],
+[
+"16",
+"<PDFStream(16): raw=66, {'Type': /'XObject', 'Subtype': /'Form', 'FormType': 1, 'Matrix': [1, 0, 0, 1, 0, 0], 'BBox': [0, 0, 29.143, 28.382], 'Length': 66, 'Filter': /'FlateDecode'}>",
+"43c215a58ef1dee43e0e27a41b20d4b2f94510305dd546a172402e497b9e015e"
+],
+[
+"22",
+"sha256:da0906fb974a578a675c9e29f832d9ee16e484c42e15d968aae61bf9b5698873",
+null
+],
+[
+"23",
+"<PDFStream(23): raw=242, {'Type': /'XObject', 'Subtype': /'Form', 'FormType': 1, 'Matrix': [1, 0, 0, 1, 0, 0], 'BBox': [0, 0, 83.977, 21.094], 'Length': 242, 'Filter': /'FlateDecode'}>",
+"2a90720ba8e7a546611db551fb4e302a02bb59284baabb8c5c05208fa0bb2cc0"
+],
+[
+"24",
+"<PDFStream(24): raw=178, {'Type': /'XObject', 'Subtype': /'Form', 'FormType': 1, 'Matrix': [1, 0, 0, 1, 0, 0], 'BBox': [0, 0, 83.977, 21.094], 'Length': 178, 'Filter': /'FlateDecode'}>",
+"fd87e37dc5e240f17c0e9e3849aa0544b218eb2440ed7f0b5fdfcc8657c6aa10"
+],
+[
+"25",
+"<PDFStream(25): raw=245, {'Type': /'XObject', 'Subtype': /'Form', 'FormType': 1, 'Matrix': [1, 0, 0, 1, 0, 0], 'BBox': [0, 0, 83.977, 21.094], 'Length': 245, 'Filter': /'FlateDecode'}>",
+"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+],
+[
+"26",
+"<PDFStream(26): raw=181, {'Type': /'XObject', 'Subtype': /'Form', 'FormType': 1, 'Matrix': [1, 0, 0, 1, 0, 0], 'BBox': [0, 0, 83.977, 21.094], 'Length': 181, 'Filter': /'FlateDecode'}>",
+"94908e4aaeec8ad667c35ab7d7ea557849f3a570a4693b5624fe95808156ce52"
+],
+[
+"27",
+"sha256:6c3b8090f32e01c8119d56fbd286d2201dfad85069f2889d868e8342fd2c2012",
+null
+],
+[
+"28",
+"<PDFStream(28): raw=126, {'Type': /'XObject', 'Subtype': /'Form', 'FormType': 1, 'Matrix': [1, 0, 0, 1, 0, 0], 'BBox': [0, 0, 138.812, 54.079], 'Length': 126, 'Resources': {'Font': {'FXF0': <PDFObjRef:8>}}, 'Filter': /'FlateDecode'}>",
+"2d90867ba2814009ed7624d145785f2332055aa0befb5b5c7f170b1d03ea3354"
+],
+[
+"29",
+"sha256:f5903ba4b0ea16ddcdfeb58ab86c65d0991402ef9004c62c536b23bd435f8e0d",
+null
+],
+[
+"30",
+"<PDFStream(30): raw=180, {'Type': /'XObject', 'Subtype': /'Form', 'FormType': 1, 'Matrix': [1, 0, 0, 1, 0, 0], 'BBox': [0, 0, 129.992, 42.956], 'Length': 180, 'Resources': {'Font': {'FXF0': <PDFObjRef:8>}}, 'Filter': /'FlateDecode'}>",
+"c9f0ad3d5a681aa55e0ea087ac4066fa00d6dab5ea1e867c1c2525e6799c4992"
+],
+[
+"31",
+"sha256:96044befcd36fbcb1e97e4eb2286c2602657559553e9570a780d67e6814f9637",
+null
+],
+[
+"32",
+"<PDFStream(32): raw=77, {'Type': /'XObject', 'Subtype': /'Form', 'FormType': 1, 'Matrix': [1, 0, 0, 1, 0, 0], 'BBox': [0, 0, 350.098, 48.709], 'Length': 77, 'Filter': /'FlateDecode'}>",
+"9c14e8abc74ca8311996d2295440ac23a649bd76052fe646c9f9cc6c95c95909"
+],
+[
+"36",
+"{'Type': /'Font', 'Subtype': /'Type1', 'BaseFont': /'Helvetica', 'Encoding': /'WinAnsiEncoding'}",
+null
+],
+[
+"37",
+"<PDFStream(37): raw=247, {'Length': 247, 'Filter': /'FlateDecode'}>",
+"86441d0e3e02cc0a954eec2014f8be0ee1233965759006909610af32eb1fee53"
+],
+[
+"41",
+"sha256:95a1bf55cac0f835e6ed60059f495dc9fb5ccf2c3c6e803c3765df841ab5c942",
+null
+],
+[
+"43",
+"<PDFStream(43): raw=186, {'Type': /'XObject', 'Subtype': /'Form', 'FormType': 1, 'Matrix': [1, 0, 0, 1, 0, 0], 'BBox': [0, 0, 129.992, 42.956], 'Length': 186, 'Resources': {'Font': {'FXF0': <PDFObjRef:8>}}, 'Filter': /'FlateDecode'}>",
+"43799bea07acba48c92a84f85494a6281dcca6a9764acef88d9e475301b60c0f"
+],
+[
+"53",
+"<PDFStream(53): raw=865, {'Type': /'Metadata', 'Subtype': /'XML', 'Length': 865}>",
+"09187822adf40742b5794a2d2f2b391b17398b62e132a0d9e34bd7d7f49b84f6"
+],
+[
+"54",
+"<PDFStream(54): len=2499, {'Type': /'ObjStm', 'N': 12, 'First': 81, 'Length': 894, 'Filter': /'FlateDecode'}>",
+"13b9341473b2e82fce9ea45732addf9ca0b65d88015dc1b735a189290f858a21"
+],
+[
+"55",
+"sha256:c0409a16bb891c446138eb4047c962154c8b05700966e45ccb6257c3f8aec662",
+"da572266d76d8fd1a0fb025cdb84d9b16c914a83ab3391d7b331429b5ad61a14"
+]
+],
+"pages": [
+{
+"pageid": "4",
+"label": null,
+"mediabox": "(0.0, 0.0, 612.0, 792.0)",
+"cropbox": "(0.0, 0.0, 612.0, 792.0)",
+"rotate": 0,
+"resources": [
+"Font"
+],
+"contents": [
+"<PDFStream(37): len=552, {'Length': 247, 'Filter': /'FlateDecode'}>"
+],
+"attrs": [
+"Type",
+"Parent",
+"MediaBox",
+"CropBox",
+"Resources",
+"Annots",
+"Contents"
+],
+"repr": "<PDFPage: Resources={'Font': {'FXF1': <PDFObjRef:36>}}, MediaBox=(0.0, 0.0, 612.0, 792.0)>"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "corrupt1",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "corrupt2",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRefStream: ranges=[(0, 56)]>",
+"trailer": "sha256:4c4eda8d8efc8f822f537acc4dad89acb99827170ac1fe3d69858c3f0b37ef6e",
+"ids": [
+[
+"1",
+"(None, 17, 0)"
+],
+[
+"2",
+"(54, 0, 0)"
+],
+[
+"3",
+"(54, 1, 0)"
+],
+[
+"4",
+"(None, 99, 0)"
+],
+[
+"6",
+"(54, 2, 0)"
+],
+[
+"7",
+"(54, 3, 0)"
+],
+[
+"8",
+"(54, 4, 0)"
+],
+[
+"9",
+"(None, 308, 0)"
+],
+[
+"10",
+"(None, 513, 0)"
+],
+[
+"11",
+"(None, 719, 0)"
+],
+[
+"12",
+"(54, 5, 0)"
+],
+[
+"13",
+"(None, 925, 0)"
+],
+[
+"14",
+"(None, 1314, 0)"
+],
+[
+"15",
+"(None, 1529, 0)"
+],
+[
+"16",
+"(None, 1920, 0)"
+],
+[
+"22",
+"(54, 6, 0)"
+],
+[
+"23",
+"(None, 2141, 0)"
+],
+[
+"24",
+"(None, 2539, 0)"
+],
+[
+"25",
+"(None, 2873, 0)"
+],
+[
+"26",
+"(None, 3274, 0)"
+],
+[
+"27",
+"(54, 7, 0)"
+],
+[
+"28",
+"(None, 3611, 0)"
+],
+[
+"29",
+"(54, 8, 0)"
+],
+[
+"30",
+"(None, 3929, 0)"
+],
+[
+"31",
+"(54, 9, 0)"
+],
+[
+"32",
+"(None, 4301, 0)"
+],
+[
+"36",
+"(54, 10, 0)"
+],
+[
+"37",
+"(None, 4534, 0)"
+],
+[
+"41",
+"(54, 11, 0)"
+],
+[
+"43",
+"(None, 4854, 0)"
+],
+[
+"53",
+"(None, 5232, 0)"
+],
+[
+"54",
+"(None, 6177, 0)"
+],
+[
+"55",
+"(None, 7173, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /'Catalog', 'Pages': <PDFObjRef:2>, 'AcroForm': <PDFObjRef:7>, 'Metadata': <PDFObjRef:53>}",
+"info": "[{'Producer': b'', 'Author': b'', 'Title': b'AcroForm Test', 'CreationDate': b\"D:20200724101336+01'00'\", 'ModDate': b\"D:20200724105134+01'00'\", 'Creator': b'', 'Subject': b'', 'Keywords': b''}]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"1",
+"{'Type': /'Catalog', 'Pages': <PDFObjRef:2>, 'AcroForm': <PDFObjRef:7>, 'Metadata': <PDFObjRef:53>}",
+null
+],
+[
+"2",
+"{'Type': /'Pages', 'Count': 1, 'Kids': [<PDFObjRef:4>]}",
+null
+],
+[
+"3",
+"{'Producer': b'', 'Author': b'', 'Title': b'AcroForm Test', 'CreationDate': b\"D:20200724101336+01'00'\", 'ModDate': b\"D:20200724105134+01'00'\", 'Creator': b'', 'Subject': b'', 'Keywords': b''}",
+null
+],
+[
+"4",
+"sha256:8d2f71df0f6a4c79cc439999a1eac233d8fbcf992fb192a3e4dd930a49257f01",
+null
+],
+[
+"6",
+"sha256:3099385ff86f43c7d4edbae5c3a12d2fc854997971ecb61571f92280232408f1",
+null
+],
+[
+"7",
+"{'DR': {'Font': {'Helv': <PDFObjRef:8>}}, 'DA': b'/Helv 0 Tf 0 g', 'Fields': [<PDFObjRef:6>, <PDFObjRef:12>, <PDFObjRef:22>, <PDFObjRef:27>, <PDFObjRef:29>, <PDFObjRef:31>, <PDFObjRef:41>]}",
+null
+],
+[
+"8",
+"{'Type': /'Font', 'Subtype': /'Type1', 'BaseFont': /'Helvetica', 'Encoding': /'WinAnsiEncoding'}",
+null
+],
+[
+"9",
+"<PDFStream(9): raw=51, {'Type': /'XObject', 'Subtype': /'Form', 'FormType': 1, 'Matrix': [1, 0, 0, 1, 0, 0], 'BBox': [0, 0, 81.293, 31.066], 'Length': 51, 'Filter': /'FlateDecode'}>",
+"c4b5d2862a94053eda116e4e8fb81dba59ec591814e40740dfd58767c42a74f3"
+],
+[
+"10",
+"<PDFStream(10): raw=51, {'Type': /'XObject', 'Subtype': /'Form', 'FormType': 1, 'Matrix': [1, 0, 0, 1, 0, 0], 'BBox': [0, 0, 81.293, 31.066], 'Length': 51, 'Filter': /'FlateDecode'}>",
+"c4b5d2862a94053eda116e4e8fb81dba59ec591814e40740dfd58767c42a74f3"
+],
+[
+"11",
+"<PDFStream(11): raw=51, {'Type': /'XObject', 'Subtype': /'Form', 'FormType': 1, 'Matrix': [1, 0, 0, 1, 0, 0], 'BBox': [0, 0, 81.293, 31.066], 'Length': 51, 'Filter': /'FlateDecode'}>",
+"7f81464d16e6ba32381ee0639b01879c88b1b7c69925dad30c450639e0e494ee"
+],
+[
+"12",
+"sha256:f3aa4117ce719e27d10b1d20f06afa173c3598881c791cfdba8c60bb04c39c18",
+null
+],
+[
+"13",
+"<PDFStream(13): raw=233, {'Type': /'XObject', 'Subtype': /'Form', 'FormType': 1, 'Matrix': [1, 0, 0, 1, 0, 0], 'BBox': [0, 0, 29.143, 28.382], 'Length': 233, 'Filter': /'FlateDecode'}>",
+"4a98470695224a3e5b37b3b2c2ed922a38985d68eb5eb8637fcd8277bde4b3f1"
+],
+[
+"14",
+"<PDFStream(14): raw=60, {'Type': /'XObject', 'Subtype': /'Form', 'FormType': 1, 'Matrix': [1, 0, 0, 1, 0, 0], 'BBox': [0, 0, 29.143, 28.382], 'Length': 60, 'Filter': /'FlateDecode'}>",
+"665828ef1926e40f492fb168e69d74a8beb058c26dd9b3d748d8001ea557d0f1"
+],
+[
+"15",
+"<PDFStream(15): raw=235, {'Type': /'XObject', 'Subtype': /'Form', 'FormType': 1, 'Matrix': [1, 0, 0, 1, 0, 0], 'BBox': [0, 0, 29.143, 28.382], 'Length': 235, 'Filter': /'FlateDecode'}>",
+"16fee2a3e7bb0701a1e7d79c724695512a5033708183344720c8db6add6d7678"
+],
+[
+"16",
+"<PDFStream(16): raw=66, {'Type': /'XObject', 'Subtype': /'Form', 'FormType': 1, 'Matrix': [1, 0, 0, 1, 0, 0], 'BBox': [0, 0, 29.143, 28.382], 'Length': 66, 'Filter': /'FlateDecode'}>",
+"43c215a58ef1dee43e0e27a41b20d4b2f94510305dd546a172402e497b9e015e"
+],
+[
+"22",
+"sha256:da0906fb974a578a675c9e29f832d9ee16e484c42e15d968aae61bf9b5698873",
+null
+],
+[
+"23",
+"<PDFStream(23): raw=242, {'Type': /'XObject', 'Subtype': /'Form', 'FormType': 1, 'Matrix': [1, 0, 0, 1, 0, 0], 'BBox': [0, 0, 83.977, 21.094], 'Length': 242, 'Filter': /'FlateDecode'}>",
+"2a90720ba8e7a546611db551fb4e302a02bb59284baabb8c5c05208fa0bb2cc0"
+],
+[
+"24",
+"<PDFStream(24): raw=178, {'Type': /'XObject', 'Subtype': /'Form', 'FormType': 1, 'Matrix': [1, 0, 0, 1, 0, 0], 'BBox': [0, 0, 83.977, 21.094], 'Length': 178, 'Filter': /'FlateDecode'}>",
+"fd87e37dc5e240f17c0e9e3849aa0544b218eb2440ed7f0b5fdfcc8657c6aa10"
+],
+[
+"25",
+"<PDFStream(25): raw=245, {'Type': /'XObject', 'Subtype': /'Form', 'FormType': 1, 'Matrix': [1, 0, 0, 1, 0, 0], 'BBox': [0, 0, 83.977, 21.094], 'Length': 245, 'Filter': /'FlateDecode'}>",
+"7190ffd92200dfaabf8594e5415752ede496a0d1e2f40bfd8c8a4baa52421fab"
+],
+[
+"26",
+"<PDFStream(26): raw=181, {'Type': /'XObjecq', 'Subtype': /'Form', 'FormType': 1, 'Matrix': [1, 0, 0, 1, 0, 0], 'BBox': [0, 0, 83.977, 21.094], 'Length': 181, 'Filter': /'FlateDecode'}>",
+"94908e4aaeec8ad667c35ab7d7ea557849f3a570a4693b5624fe95808156ce52"
+],
+[
+"27",
+"sha256:6c3b8090f32e01c8119d56fbd286d2201dfad85069f2889d868e8342fd2c2012",
+null
+],
+[
+"28",
+"<PDFStream(28): raw=126, {'Type': /b'XO\\x86ject', 'Subtype': /'Form', 'FormType': 1, 'Matrix': [1, 0, 0, 1, 0, 0], 'BBox': [0, 0, 138.812, 54.079], 'Length': 126, 'Resources': {'Font': {'FXF0': <PDFObjRef:8>}}, 'Filter': /'FlateDecode'}>",
+"2d90867ba2814009ed7624d145785f2332055aa0befb5b5c7f170b1d03ea3354"
+],
+[
+"29",
+"sha256:f5903ba4b0ea16ddcdfeb58ab86c65d0991402ef9004c62c536b23bd435f8e0d",
+null
+],
+[
+"30",
+"<PDFStream(30): raw=180, {'Type': /'XObject', 'Subtype': /'Form', 'FormType': 1, 'Matrix': [1, 0, 0, 1, 0, 0], 'BBox': [0, 0, 129.992, 42.956], 'Length': 180, 'Resources': {'Font': {'FXF0': <PDFObjRef:8>}}, 'Filter': /'FlateDecode'}>",
+"c9f0ad3d5a681aa55e0ea087ac4066fa00d6dab5ea1e867c1c2525e6799c4992"
+],
+[
+"31",
+"sha256:96044befcd36fbcb1e97e4eb2286c2602657559553e9570a780d67e6814f9637",
+null
+],
+[
+"32",
+"<PDFStream(32): raw=77, {'Type': /'XObject', 'Subtype': /'Form', 'FormType': 1, 'Matrix': [1, 0, 0, 1, 0, 0], 'BBox': [0, 0, 350.098, 48.709], 'Length': 77, 'Filter': /'FlateDecode'}>",
+"c9b8ce33c74269fde6310b7db65ddec9ae97021f6410970a07ae2a910f8089c1"
+],
+[
+"36",
+"{'Type': /'Font', 'Subtype': /'Type1', 'BaseFont': /'Helvetica', 'Encoding': /'WinAnsiEncoding'}",
+null
+],
+[
+"37",
+"<PDFStream(37): raw=247, {'Length': 247, 'Filter': /'FlateDecode'}>",
+"86441d0e3e02cc0a954eec2014f8be0ee1233965759006909610af32eb1fee53"
+],
+[
+"41",
+"sha256:95a1bf55cac0f835e6ed60059f495dc9fb5ccf2c3c6e803c3765df841ab5c942",
+null
+],
+[
+"43",
+"<PDFStream(43): raw=865, {'Type': /'Metadata', 'Subtype': /'XML', 'Length': 865}>",
+"8bfc86e8baea269bf9da661e9d9985b16818c670c8708a886f491217ee27c402"
+],
+[
+"53",
+"<PDFStream(53): raw=865, {'Type': /'Metadata', 'Subtype': /'XML', 'Length': 865}>",
+"8bfc86e8baea269bf9da661e9d9985b16818c670c8708a886f491217ee27c402"
+],
+[
+"54",
+"<PDFStream(54): len=2499, {'Type': /'ObjStm', 'N': 12, 'First': 81, 'Length': 894, 'Filter': /'FlateDecode'}>",
+"13b9341473b2e82fce9ea45732addf9ca0b65d88015dc1b735a189290f858a21"
+],
+[
+"55",
+"sha256:c0409a16bb891c446138eb4047c962154c8b05700966e45ccb6257c3f8aec662",
+"da572266d76d8fd1a0fb025cdb84d9b16c914a83ab3391d7b331429b5ad61a14"
+]
+],
+"pages": [
+{
+"pageid": "4",
+"label": null,
+"mediabox": "(0.0, 0.0, 612.0, 792.0)",
+"cropbox": "(0.0, 0.0, 612.0, 792.0)",
+"rotate": 0,
+"resources": [],
+"contents": [
+"<PDFStream(37): len=552, {'Length': 247, 'Filter': /'FlateDecode'}>"
+],
+"attrs": [
+"Type",
+"Parent",
+"MediaBox",
+"CropBox",
+"b'Resourc\\xf1s'",
+"Annots",
+"Contents"
+],
+"repr": "<PDFPage: Resources={}, MediaBox=(0.0, 0.0, 612.0, 792.0)>"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "corrupt3",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRefStream: ranges=[(0, 56)]>",
+"trailer": "sha256:c2ce1e6fc00946691d60bc3adcf5822044ffaa8bd1e4bfe3f5e1feb58f7795c9",
+"ids": [
+[
+"1",
+"(None, 17, 0)"
+],
+[
+"2",
+"(54, 0, 0)"
+],
+[
+"3",
+"(54, 1, 0)"
+],
+[
+"4",
+"(None, 99, 0)"
+],
+[
+"6",
+"(54, 2, 0)"
+],
+[
+"7",
+"(54, 3, 0)"
+],
+[
+"8",
+"(54, 4, 0)"
+],
+[
+"9",
+"(None, 308, 0)"
+],
+[
+"10",
+"(None, 513, 0)"
+],
+[
+"11",
+"(None, 719, 0)"
+],
+[
+"12",
+"(54, 5, 0)"
+],
+[
+"13",
+"(None, 925, 0)"
+],
+[
+"14",
+"(None, 1314, 0)"
+],
+[
+"15",
+"(None, 1529, 0)"
+],
+[
+"16",
+"(None, 1920, 0)"
+],
+[
+"22",
+"(54, 6, 0)"
+],
+[
+"23",
+"(None, 2141, 0)"
+],
+[
+"24",
+"(None, 2539, 0)"
+],
+[
+"25",
+"(None, 2873, 0)"
+],
+[
+"26",
+"(None, 3274, 0)"
+],
+[
+"27",
+"(54, 7, 0)"
+],
+[
+"28",
+"(None, 3611, 0)"
+],
+[
+"29",
+"(54, 8, 0)"
+],
+[
+"30",
+"(None, 3929, 0)"
+],
+[
+"31",
+"(54, 9, 0)"
+],
+[
+"32",
+"(None, 4301, 0)"
+],
+[
+"36",
+"(54, 10, 0)"
+],
+[
+"37",
+"(None, 4534, 0)"
+],
+[
+"41",
+"(54, 11, 0)"
+],
+[
+"43",
+"(None, 4854, 0)"
+],
+[
+"53",
+"(None, 5232, 0)"
+],
+[
+"54",
+"(None, 6177, 0)"
+],
+[
+"55",
+"(None, 7173, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /'Catalog', 'Pages': <PDFObjRef:2>, 'AcroForm': <PDFObjRef:7>, 'Metadata': <PDFObjRef:53>}",
+"info": "[{'Producer': b'', 'Author': b'', 'Title': b'AcroForm Test', 'CreationDate': b\"D:20200724101336+01'00'\", 'ModDate': b\"D:20200724105134+01'00'\", 'Creator': b'', 'Subject': b'', 'Keywords': b''}]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"1",
+"{'Type': /'Catalog', 'Pages': <PDFObjRef:2>, 'AcroForm': <PDFObjRef:7>, 'Metadata': <PDFObjRef:53>}",
+null
+],
+[
+"2",
+"{'Type': /'Pages', 'Count': 1, 'Kids': [<PDFObjRef:4>]}",
+null
+],
+[
+"3",
+"{'Producer': b'', 'Author': b'', 'Title': b'AcroForm Test', 'CreationDate': b\"D:20200724101336+01'00'\", 'ModDate': b\"D:20200724105134+01'00'\", 'Creator': b'', 'Subject': b'', 'Keywords': b''}",
+null
+],
+[
+"4",
+"sha256:cc70d98ee6432a8f40aa3ddadd139877711f7c2f31f8ca130c1c311cd6687613",
+null
+],
+[
+"6",
+"sha256:3099385ff86f43c7d4edbae5c3a12d2fc854997971ecb61571f92280232408f1",
+null
+],
+[
+"7",
+"{'DR': {'Font': {'Helv': <PDFObjRef:8>}}, 'DA': b'/Helv 0 Tf 0 g', 'Fields': [<PDFObjRef:6>, <PDFObjRef:12>, <PDFObjRef:22>, <PDFObjRef:27>, <PDFObjRef:29>, <PDFObjRef:31>, <PDFObjRef:41>]}",
+null
+],
+[
+"8",
+"{'Type': /'Font', 'Subtype': /'Type1', 'BaseFont': /'Helvetica', 'Encoding': /'WinAnsiEncoding'}",
+null
+],
+[
+"9",
+"<PDFStream(9): raw=51, {'Type': /'XObject', 'Subtype': /'Form', 'FormType': 1, 'Matrix': [1, 0, 0, 1, 0, 0], 'BBox': [0, 0, 81.293, 31.066], 'Length': 51, 'Filter': /'FlateDecode'}>",
+"c4b5d2862a94053eda116e4e8fb81dba59ec591814e40740dfd58767c42a74f3"
+],
+[
+"10",
+"<PDFStream(10): raw=51, {'Type': /'XObject', 'Subtype': /'Form', 'FormType': 1, 'Matrix': [1, 0, 0, 1, 0, 0], 'BBox': [0, 0, 81.293, 31.066], 'Length': 51, 'Filter': /'FlateDecode'}>",
+"c4b5d2862a94053eda116e4e8fb81dba59ec591814e40740dfd58767c42a74f3"
+],
+[
+"11",
+"<PDFStream(11): raw=51, {'Type': /'XObject', 'Subtype': /'Form', 'FormType': 1, 'Matrix': [1, 0, 0, 1, 0, 0], 'BBox': [0, 0, 81.293, 31.066], 'Length': 51, 'Filter': /'FlateDecode'}>",
+"7f81464d16e6ba32381ee0639b01879c88b1b7c69925dad30c450639e0e494ee"
+],
+[
+"12",
+"sha256:f3aa4117ce719e27d10b1d20f06afa173c3598881c791cfdba8c60bb04c39c18",
+null
+],
+[
+"13",
+"<PDFStream(13): raw=233, {'Type': /'XObject', 'Subtype': /'Form', 'FormType': 1, 'Matrix': [1, 0, 0, 1, 0, 0], 'BBox': [0, 0, 29.143, 28.382], 'Length': 233, 'Filter': /'FlateDecode'}>",
+"4a98470695224a3e5b37b3b2c2ed922a38985d68eb5eb8637fcd8277bde4b3f1"
+],
+[
+"14",
+"<PDFStream(14): raw=60, {'Type': /'XObject', 'Subtype': /'Form', 'FormType': 1, 'Matrix': [1, 0, 0, 1, 0, 0], 'BBox': [0, 0, 29.143, 28.382], 'Length': 60, 'Filter': /'FlateDecode'}>",
+"665828ef1926e40f492fb168e69d74a8beb058c26dd9b3d748d8001ea557d0f1"
+],
+[
+"15",
+"<PDFStream(15): raw=235, {'Type': /'XObject', 'Subtype': /'Form', 'FormType': 1, 'Matrix': [1, 0, 0, 1, 0, 0], 'BBox': [0, 0, 29.143, 28.382], 'Length': 235, 'Filter': /'FlateDecode'}>",
+"2e0a5557560e257e5498e31b997dc38f55211246340a7d86d30e60d14548969c"
+],
+[
+"16",
+"<PDFStream(16): raw=66, {'Type': /'XObject', 'Subtype': /'Form', 'FormType': 1, 'Matrix': [1, 0, 0, 1, 0, 0], 'BBox': [0, 0, 29.143, 28.382], 'Length': 66, 'Filter': /'FlateDecode'}>",
+"43c215a58ef1dee43e0e27a41b20d4b2f94510305dd546a172402e497b9e015e"
+],
+[
+"22",
+"sha256:da0906fb974a578a675c9e29f832d9ee16e484c42e15d968aae61bf9b5698873",
+null
+],
+[
+"23",
+"<PDFStream(23): raw=242, {'Type': /'XObject', 'Subtype': /'Form', 'FormType': 1, 'Matrix': [1, 0, 0, 1, 0, 0], 'BBox': [0, 0, 83.977, 21.094], 'Length': 242, 'Filter': /'FlateDecode'}>",
+"10fd0b5161b9d99627545ca80e98c6fbeff99f69bce1e71e07159538920e99b7"
+],
+[
+"24",
+"<PDFStream(24): raw=178, {'Type': /'XObject', 'Subtype': /'Form', 'FormType': 1, 'Matrix': [1, 0, 0, 1, 0, 0], 'BBox': [0, 0, 83.977, 21.094], 'Length': 178, 'Filter': /'FlateDecode'}>",
+"fd87e37dc5e240f17c0e9e3849aa0544b218eb2440ed7f0b5fdfcc8657c6aa10"
+],
+[
+"25",
+"<PDFStream(25): raw=245, {'Type': /'XObject', 'Subtype': /'Form', 'FormType': 1, 'Matrix': [1, 0, 0, 1, 0, 0], 'BBox': [0, 0, 83.977, 21.094], 'Length': 245, 'Filter': /'FlateDecode'}>",
+"7190ffd92200dfaabf8594e5415752ede496a0d1e2f40bfd8c8a4baa52421fab"
+],
+[
+"26",
+"<PDFStream(26): raw=181, {'Type': /'XObject', 'Subtype': /'Form', 'FormType': 1, 'Matrix': [1, 0, 0, 1, 0, 0], 'BBox': [0, 0, 83.977, 21.094], 'Length': 181, 'Filter': /'FlateDecode'}>",
+"94908e4aaeec8ad667c35ab7d7ea557849f3a570a4693b5624fe95808156ce52"
+],
+[
+"27",
+"sha256:6c3b8090f32e01c8119d56fbd286d2201dfad85069f2889d868e8342fd2c2012",
+null
+],
+[
+"28",
+"<PDFStream(28): raw=126, {'Type': /'XObject', 'Subtype': /'Form', 'FormType': 1, 'Matrix': [1, 0, 0, 1, 0, 0], 'BBox': [0, 0, 138.812, 54.079], 'Length': 126, 'Resources': {'Font': {'FXF0': <PDFObjRef:8>}}, 'Filter': /'FlateDecode'}>",
+"2d90867ba2814009ed7624d145785f2332055aa0befb5b5c7f170b1d03ea3354"
+],
+[
+"29",
+"sha256:f5903ba4b0ea16ddcdfeb58ab86c65d0991402ef9004c62c536b23bd435f8e0d",
+null
+],
+[
+"30",
+"<PDFStream(30): raw=180, {'Type': /'XObject', 'Subtype': /'Form', 'FormType': 1, 'Matrix': [1, 0, 0, 1, 0, 0], 'BBox': [0, 0, 129.992, 42.956], 'Length': 180, 'Resources': {'Font': {'FXF0': <PDFObjRef:8>}}, 'Filter': /'FlateDecode'}>",
+"c9f0ad3d5a681aa55e0ea087ac4066fa00d6dab5ea1e867c1c2525e6799c4992"
+],
+[
+"31",
+"sha256:96044befcd36fbcb1e97e4eb2286c2602657559553e9570a780d67e6814f9637",
+null
+],
+[
+"32",
+"<PDFStream(32): raw=247, {'Length': 247, 'Filter': /'FlateDecode'}>",
+"fe3057b7e44823043b7743e3637df7046c4ae6b8a9c7ebc4bf41533f36d18b18"
+],
+[
+"36",
+"{'Type': /'Font', 'Subtype': /'Type1', 'BaseFont': /'Helvetica', 'Encoding': /'WinAnsiEncoding'}",
+null
+],
+[
+"37",
+"<PDFStream(37): raw=247, {'Length': 247, 'Filter': /'FlateDecode'}>",
+"fe3057b7e44823043b7743e3637df7046c4ae6b8a9c7ebc4bf41533f36d18b18"
+],
+[
+"41",
+"sha256:95a1bf55cac0f835e6ed60059f495dc9fb5ccf2c3c6e803c3765df841ab5c942",
+null
+],
+[
+"43",
+"<PDFStream(43): raw=186, {'Type': /'XObject', 'Subtype': /'Form', 'FormType': 1, 'Matrix': [1, 0, 0, 1, 0, 0], 'BBox': [0, 0, 129.992, 42.956], 'Length': 186, 'Resources': {'Font': {'FXF0': <PDFObjRef:8>}}, 'Filter': /'FlateDecode'}>",
+"43799bea07acba48c92a84f85494a6281dcca6a9764acef88d9e475301b60c0f"
+],
+[
+"53",
+"<PDFStream(53): raw=865, {'Type': /'Metadata', 'Subtype': /'XML', 'Length': 865}>",
+"bbd05cbe3f419618fb3fd2948575f1ef830efbd9e8cb0cba15288447f2895b28"
+],
+[
+"54",
+"<PDFStream(54): len=2499, {'Type': /'ObjStm', 'N': 12, 'First': 81, 'Length': 894, 'Filter': /'FlateDecode'}>",
+"13b9341473b2e82fce9ea45732addf9ca0b65d88015dc1b735a189290f858a21"
+],
+[
+"55",
+"sha256:f215769afdf083daf54144df72bf8db8bbb81aab5afc3481c4acf3f6ef35d114",
+"da572266d76d8fd1a0fb025cdb84d9b16c914a83ab3391d7b331429b5ad61a14"
+]
+],
+"pages": [
+{
+"pageid": "4",
+"label": null,
+"mediabox": "(0.0, 0.0, 612.0, 792.0)",
+"cropbox": "(0.0, 0.0, 612.0, 792.0)",
+"rotate": 0,
+"resources": [
+"Font"
+],
+"contents": [
+"<PDFStream(37): len=555, {'Length': 247, 'Filter': /'FlateDecode'}>"
+],
+"attrs": [
+"Type",
+"Parent",
+"MediaBox",
+"CropBox",
+"Resources",
+"Annots",
+"Contents"
+],
+"repr": "<PDFPage: Resources={'Font': {'FXF1': <PDFObjRef:36>}}, MediaBox=(0.0, 0.0, 612.0, 792.0)>"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+}
+]
+}

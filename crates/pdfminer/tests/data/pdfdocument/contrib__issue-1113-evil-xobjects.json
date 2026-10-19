@@ -1,0 +1,427 @@
+{
+"path": "contrib/issue-1113-evil-xobjects.pdf",
+"runs": [
+{
+"password": "",
+"variant": "orig",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRefFallback: offsets=dict_keys([1, 2, 3, 4, 5, 6, 7, 8])>",
+"trailer": "{'Size': 8, 'Root': <PDFObjRef:1>}",
+"ids": [
+[
+"1",
+"(None, 9, 0)"
+],
+[
+"2",
+"(None, 77, 0)"
+],
+[
+"3",
+"(None, 125, 0)"
+],
+[
+"4",
+"(None, 187, 0)"
+],
+[
+"5",
+"(None, 352, 0)"
+],
+[
+"6",
+"(None, 425, 0)"
+],
+[
+"7",
+"(None, 687, 0)"
+],
+[
+"8",
+"(None, 800, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /'Catalog', 'Outlines': <PDFObjRef:2>, 'Pages': <PDFObjRef:3>}",
+"info": "[]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"1",
+"{'Type': /'Catalog', 'Outlines': <PDFObjRef:2>, 'Pages': <PDFObjRef:3>}",
+null
+],
+[
+"2",
+"{'Type': /'Outlines', 'Count': 0}",
+null
+],
+[
+"3",
+"{'Type': /'Pages', 'Kids': [<PDFObjRef:4>], 'Count': 1}",
+null
+],
+[
+"4",
+"{'Type': /'Page', 'Parent': <PDFObjRef:3>, 'MediaBox': [0, 0, 500, 300], 'Contents': <PDFObjRef:5>, 'Resources': {'ProcSet': [/'PDF', /'Text'], 'XObject': {'X1': <PDFObjRef:6>}}}",
+null
+],
+[
+"5",
+"<PDFStream(5): raw=24, {'Length': 24}>",
+"fca4c05b8f85ed6bef888e1540e42672e4fe74d8e5ec8193be630362c38b0c71"
+],
+[
+"6",
+"<PDFStream(6): raw=61, {'Subtype': /'Form', 'BBox': [0, 0, 1000, 1000], 'Length': 61, 'Resources': {'ProcSet': [/'PDF', /'Text'], 'Font': {'F1': <PDFObjRef:7>}, 'XObject': {'X0': <PDFObjRef:8>}}}>",
+"f212f2a97505c66ce3d54a38aaccf4958d298356ce75fac788eda29395407bd1"
+],
+[
+"7",
+"{'Type': /'Font', 'Subtype': /'Type1', 'Name': /'F1', 'BaseFont': /'Helvetica', 'Encoding': /'MacRomanEncoding'}",
+null
+],
+[
+"8",
+"<PDFStream(8): raw=61, {'Subtype': /'Form', 'BBox': [0, 0, 1000, 1000], 'Length': 61, 'Resources': {'ProcSet': [/'PDF', /'Text'], 'Font': {'F1': <PDFObjRef:7>}, 'XObject': {'X1': <PDFObjRef:6>}}}>",
+"d4e02f1a77bdce0ffc7dc5858de28148188c19bd33faeebb55554de5f5740a17"
+]
+],
+"pages": [
+{
+"pageid": "4",
+"label": null,
+"mediabox": "(0.0, 0.0, 500.0, 300.0)",
+"cropbox": "(0.0, 0.0, 500.0, 300.0)",
+"rotate": 0,
+"resources": [
+"ProcSet",
+"XObject"
+],
+"contents": [
+"<PDFStream(5): len=24, {'Length': 24}>"
+],
+"attrs": [
+"Type",
+"Parent",
+"MediaBox",
+"Contents",
+"Resources"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'Text'], 'XObject': {'X1': <PDFObjRef:6>}}, MediaBox=(0.0, 0.0, 500.0, 300.0)>"
+}
+],
+"outlines": [],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "half",
+"open": "!PSEOF"
+},
+{
+"password": "",
+"variant": "3q",
+"open": "!PSEOF"
+},
+{
+"password": "",
+"variant": "noxref",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRefFallback: offsets=dict_keys([1, 2, 3, 4, 5, 6, 7, 8])>",
+"trailer": "{'Size': 8, 'Root': <PDFObjRef:1>}",
+"ids": [
+[
+"1",
+"(None, 9, 0)"
+],
+[
+"2",
+"(None, 77, 0)"
+],
+[
+"3",
+"(None, 125, 0)"
+],
+[
+"4",
+"(None, 187, 0)"
+],
+[
+"5",
+"(None, 352, 0)"
+],
+[
+"6",
+"(None, 425, 0)"
+],
+[
+"7",
+"(None, 687, 0)"
+],
+[
+"8",
+"(None, 800, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /'Catalog', 'Outlines': <PDFObjRef:2>, 'Pages': <PDFObjRef:3>}",
+"info": "[]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"1",
+"{'Type': /'Catalog', 'Outlines': <PDFObjRef:2>, 'Pages': <PDFObjRef:3>}",
+null
+],
+[
+"2",
+"{'Type': /'Outlines', 'Count': 0}",
+null
+],
+[
+"3",
+"{'Type': /'Pages', 'Kids': [<PDFObjRef:4>], 'Count': 1}",
+null
+],
+[
+"4",
+"{'Type': /'Page', 'Parent': <PDFObjRef:3>, 'MediaBox': [0, 0, 500, 300], 'Contents': <PDFObjRef:5>, 'Resources': {'ProcSet': [/'PDF', /'Text'], 'XObject': {'X1': <PDFObjRef:6>}}}",
+null
+],
+[
+"5",
+"<PDFStream(5): raw=24, {'Length': 24}>",
+"fca4c05b8f85ed6bef888e1540e42672e4fe74d8e5ec8193be630362c38b0c71"
+],
+[
+"6",
+"<PDFStream(6): raw=61, {'Subtype': /'Form', 'BBox': [0, 0, 1000, 1000], 'Length': 61, 'Resources': {'ProcSet': [/'PDF', /'Text'], 'Font': {'F1': <PDFObjRef:7>}, 'XObject': {'X0': <PDFObjRef:8>}}}>",
+"f212f2a97505c66ce3d54a38aaccf4958d298356ce75fac788eda29395407bd1"
+],
+[
+"7",
+"{'Type': /'Font', 'Subtype': /'Type1', 'Name': /'F1', 'BaseFont': /'Helvetica', 'Encoding': /'MacRomanEncoding'}",
+null
+],
+[
+"8",
+"<PDFStream(8): raw=61, {'Subtype': /'Form', 'BBox': [0, 0, 1000, 1000], 'Length': 61, 'Resources': {'ProcSet': [/'PDF', /'Text'], 'Font': {'F1': <PDFObjRef:7>}, 'XObject': {'X1': <PDFObjRef:6>}}}>",
+"d4e02f1a77bdce0ffc7dc5858de28148188c19bd33faeebb55554de5f5740a17"
+]
+],
+"pages": [
+{
+"pageid": "4",
+"label": null,
+"mediabox": "(0.0, 0.0, 500.0, 300.0)",
+"cropbox": "(0.0, 0.0, 500.0, 300.0)",
+"rotate": 0,
+"resources": [
+"ProcSet",
+"XObject"
+],
+"contents": [
+"<PDFStream(5): len=24, {'Length': 24}>"
+],
+"attrs": [
+"Type",
+"Parent",
+"MediaBox",
+"Contents",
+"Resources"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'Text'], 'XObject': {'X1': <PDFObjRef:6>}}, MediaBox=(0.0, 0.0, 500.0, 300.0)>"
+}
+],
+"outlines": [],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "shifted",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRefFallback: offsets=dict_keys([1, 2, 3, 4, 5, 6, 7, 8])>",
+"trailer": "{'Size': 8, 'Root': <PDFObjRef:1>}",
+"ids": [
+[
+"1",
+"(None, 15, 0)"
+],
+[
+"2",
+"(None, 83, 0)"
+],
+[
+"3",
+"(None, 131, 0)"
+],
+[
+"4",
+"(None, 193, 0)"
+],
+[
+"5",
+"(None, 358, 0)"
+],
+[
+"6",
+"(None, 431, 0)"
+],
+[
+"7",
+"(None, 693, 0)"
+],
+[
+"8",
+"(None, 806, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /'Catalog', 'Outlines': <PDFObjRef:2>, 'Pages': <PDFObjRef:3>}",
+"info": "[]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"1",
+"{'Type': /'Catalog', 'Outlines': <PDFObjRef:2>, 'Pages': <PDFObjRef:3>}",
+null
+],
+[
+"2",
+"{'Type': /'Outlines', 'Count': 0}",
+null
+],
+[
+"3",
+"{'Type': /'Pages', 'Kids': [<PDFObjRef:4>], 'Count': 1}",
+null
+],
+[
+"4",
+"{'Type': /'Page', 'Parent': <PDFObjRef:3>, 'MediaBox': [0, 0, 500, 300], 'Contents': <PDFObjRef:5>, 'Resources': {'ProcSet': [/'PDF', /'Text'], 'XObject': {'X1': <PDFObjRef:6>}}}",
+null
+],
+[
+"5",
+"<PDFStream(5): raw=24, {'Length': 24}>",
+"fca4c05b8f85ed6bef888e1540e42672e4fe74d8e5ec8193be630362c38b0c71"
+],
+[
+"6",
+"<PDFStream(6): raw=61, {'Subtype': /'Form', 'BBox': [0, 0, 1000, 1000], 'Length': 61, 'Resources': {'ProcSet': [/'PDF', /'Text'], 'Font': {'F1': <PDFObjRef:7>}, 'XObject': {'X0': <PDFObjRef:8>}}}>",
+"f212f2a97505c66ce3d54a38aaccf4958d298356ce75fac788eda29395407bd1"
+],
+[
+"7",
+"{'Type': /'Font', 'Subtype': /'Type1', 'Name': /'F1', 'BaseFont': /'Helvetica', 'Encoding': /'MacRomanEncoding'}",
+null
+],
+[
+"8",
+"<PDFStream(8): raw=61, {'Subtype': /'Form', 'BBox': [0, 0, 1000, 1000], 'Length': 61, 'Resources': {'ProcSet': [/'PDF', /'Text'], 'Font': {'F1': <PDFObjRef:7>}, 'XObject': {'X1': <PDFObjRef:6>}}}>",
+"d4e02f1a77bdce0ffc7dc5858de28148188c19bd33faeebb55554de5f5740a17"
+]
+],
+"pages": [
+{
+"pageid": "4",
+"label": null,
+"mediabox": "(0.0, 0.0, 500.0, 300.0)",
+"cropbox": "(0.0, 0.0, 500.0, 300.0)",
+"rotate": 0,
+"resources": [
+"ProcSet",
+"XObject"
+],
+"contents": [
+"<PDFStream(5): len=24, {'Length': 24}>"
+],
+"attrs": [
+"Type",
+"Parent",
+"MediaBox",
+"Contents",
+"Resources"
+],
+"repr": "<PDFPage: Resources={'ProcSet': [/'PDF', /'Text'], 'XObject': {'X1': <PDFObjRef:6>}}, MediaBox=(0.0, 0.0, 500.0, 300.0)>"
+}
+],
+"outlines": [],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "tail",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "corrupt0",
+"open": "!PSSyntaxError"
+},
+{
+"password": "",
+"variant": "corrupt1",
+"open": "!PSSyntaxError"
+},
+{
+"password": "",
+"variant": "corrupt2",
+"open": "!PSSyntaxError"
+},
+{
+"password": "",
+"variant": "corrupt3",
+"open": "!PSSyntaxError"
+}
+]
+}

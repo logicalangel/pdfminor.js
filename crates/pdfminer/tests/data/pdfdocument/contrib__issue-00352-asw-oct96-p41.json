@@ -1,0 +1,2311 @@
+{
+"path": "contrib/issue-00352-asw-oct96-p41.pdf",
+"runs": [
+{
+"password": "",
+"variant": "orig",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRef: offsets=dict_keys([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35])>",
+"trailer": "{'Size': 36, 'Info': <PDFObjRef:14>, 'Root': <PDFObjRef:16>, 'ID': [b'\\x02\\x1a\\x81jUz\\x11\\xdb\\x9d\\x1b\\x00\\x17\\xf2\\x01\\x90\\x9e', b'\\xa2\\x1b\\x93\\xaf\\xcdu\\xfa5\\xff\\xde`\\xaa\\x18\\xae\\n<'], 'Encrypt': <PDFObjRef:15>}",
+"ids": [
+[
+"1",
+"(None, 16, 0)"
+],
+[
+"2",
+"(None, 376, 0)"
+],
+[
+"3",
+"(None, 18788, 0)"
+],
+[
+"4",
+"(None, 18898, 0)"
+],
+[
+"5",
+"(None, 19558, 0)"
+],
+[
+"6",
+"(None, 19656, 0)"
+],
+[
+"7",
+"(None, 25640, 0)"
+],
+[
+"8",
+"(None, 28907, 0)"
+],
+[
+"9",
+"(None, 29178, 0)"
+],
+[
+"10",
+"(None, 29907, 0)"
+],
+[
+"11",
+"(None, 30177, 0)"
+],
+[
+"12",
+"(None, 30603, 0)"
+],
+[
+"13",
+"(None, 31055, 0)"
+],
+[
+"14",
+"(None, 31108, 0)"
+],
+[
+"15",
+"(None, 31531, 0)"
+],
+[
+"16",
+"(None, 31732, 0)"
+],
+[
+"17",
+"(None, 31780, 0)"
+],
+[
+"18",
+"(None, 32290, 0)"
+],
+[
+"19",
+"(None, 32791, 0)"
+],
+[
+"20",
+"(None, 33211, 0)"
+],
+[
+"21",
+"(None, 33319, 0)"
+],
+[
+"22",
+"(None, 33438, 0)"
+],
+[
+"23",
+"(None, 33548, 0)"
+],
+[
+"24",
+"(None, 33829, 0)"
+],
+[
+"25",
+"(None, 34261, 0)"
+],
+[
+"26",
+"(None, 34530, 0)"
+],
+[
+"27",
+"(None, 35032, 0)"
+],
+[
+"28",
+"(None, 35329, 0)"
+],
+[
+"29",
+"(None, 35748, 0)"
+],
+[
+"30",
+"(None, 36065, 0)"
+],
+[
+"31",
+"(None, 36366, 0)"
+],
+[
+"32",
+"(None, 36733, 0)"
+],
+[
+"33",
+"(None, 38129, 0)"
+],
+[
+"34",
+"(None, 40248, 0)"
+],
+[
+"35",
+"(None, 43865, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /'Catalog', 'Pages': <PDFObjRef:13>}",
+"info": "[{'CreationDate': b\"D:20061006163404-04'00'\", 'Subject': b'Aviation Safety World October 2006', 'Author': b'Mark Lacagnina', 'Creator': b'Adobe InDesign CS2 (4.0.4)', 'Producer': b'Adobe PDF Library 7.0', 'ModDate': b\"D:20070109150956-05'00'\", 'Title': b'Losing the Cabin', 'Trapped': /'False'}]",
+"flags": [
+true,
+false,
+false
+],
+"objects": [
+[
+"1",
+"sha256:fbd5dbb53a99a35fcbf375713b797240ca327ed388529bd910290b79dad01c7e",
+null
+],
+[
+"2",
+"<PDFStream(2): raw=18360, {'Length': 18360}>",
+"e152e7c31863a651bae18162046742241f89d0b520ce4f508317d0f4ef5dc80c"
+],
+[
+"3",
+"{'OPM': 1, 'BM': /'Normal', 'CA': 1, 'OP': False, 'SMask': /'None', 'ca': 1, 'AIS': False, 'op': False, 'Type': /'ExtGState', 'SA': False}",
+null
+],
+[
+"4",
+"<PDFStream(4): raw=591, {'Length': 591, 'Filter': /'FlateDecode'}>",
+"0a63e1a35f03717879e9d399417323cc3706f992e3d625d85a7cbe1c377434a8"
+],
+[
+"5",
+"{'Differences': [28, /'f_f_i', /'f_f', /'f_i', /'f_l'], 'BaseEncoding': /'WinAnsiEncoding', 'Type': /'Encoding'}",
+null
+],
+[
+"6",
+"<PDFStream(6): raw=5899, {'Subtype': /'Type1C', 'Length': 5899, 'Filter': /'FlateDecode'}>",
+"59f64a69b4316b00fe786b3a0a2ac61034cd97a069c908bed177620f0eeb8e65"
+],
+[
+"7",
+"<PDFStream(7): raw=3182, {'Subtype': /'Type1C', 'Length': 3182, 'Filter': /'FlateDecode'}>",
+"da3d346257625fede1a8a08d8fc70e3ffcedbcffc9dce33444d64520bbdef4f9"
+],
+[
+"8",
+"sha256:8ef1dc76a5369a721dfc412da03c694cc4d11067b281df34e2880c8e17985dfc",
+null
+],
+[
+"9",
+"sha256:8dccf18f42b3853cae2c8c5ab04a542a36b30ffa79b5dc3cc192aefb76eecec1",
+null
+],
+[
+"10",
+"sha256:136f6f640adbf04626fce8d0c9caa48e5c8e931209d376132f0c0e9255010204",
+null
+],
+[
+"11",
+"sha256:b6a182d9aafc7733ae79db1fc8f11203698fd67c55bd110db0d6075c9e01324b",
+null
+],
+[
+"12",
+"<PDFStream(12): raw=382, {'Length': 382, 'Filter': /'FlateDecode'}>",
+"0b466473216ee6591d20a5bb8c18201e6022e044733b4b96f8d4d4a3b0f8617e"
+],
+[
+"13",
+"{'Count': 1, 'Type': /'Pages', 'Kids': [<PDFObjRef:1>]}",
+null
+],
+[
+"14",
+"{'CreationDate': b\"D:20061006163404-04'00'\", 'Subject': b'Aviation Safety World October 2006', 'Author': b'Mark Lacagnina', 'Creator': b'Adobe InDesign CS2 (4.0.4)', 'Producer': b'Adobe PDF Library 7.0', 'ModDate': b\"D:20070109150956-05'00'\", 'Title': b'Losing the Cabin', 'Trapped': /'False'}",
+null
+],
+[
+"15",
+"{'Length': 128, 'Filter': /'Standard', 'O': b'Qs&\\x96\\xca\\xee\\x1ee\\xa1\\xacI\\xcf\\xe7\\xd6@Q\\x84k\\xaf\\x86\\xd4\\xbf.\\x8c\\xbd\\xd2\\x88\\xbd\\xd2O\\xf1\\x1f', 'P': -1340, 'R': 3, 'U': b'\\xfcY{aBl\\t!\\xa2-\\x00 \\xe9\\xe2\\xd3\\x90\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00', 'V': 2}",
+null
+],
+[
+"16",
+"{'Type': /'Catalog', 'Pages': <PDFObjRef:13>}",
+null
+],
+[
+"17",
+"sha256:5a5409cae4b200ab78530ca2e8a1e63e2a94d558a699ec3f0f248a69cc94af08",
+null
+],
+[
+"18",
+"sha256:b17e09359f4c18b4528d1bd9f0f24fc94cfdffb839be6163b39fc1b6bf613e32",
+null
+],
+[
+"19",
+"sha256:9c6b796006e24e6433a224b9bf40c5674ae1101f127aeacc135e21497249ca46",
+null
+],
+[
+"20",
+"{'OPM': 0, 'BM': /'Normal', 'CA': 1, 'OP': True, 'SMask': /'None', 'ca': 1, 'AIS': False, 'op': True, 'Type': /'ExtGState', 'SA': True}",
+null
+],
+[
+"21",
+"[/'Separation', /'All', /'DeviceRGB', {'C0': [1, 1, 1], 'C1': [0, 0, 0], 'FunctionType': 2, 'N': 1, 'Domain': [0, 1], 'Range': [0, 1, 0, 1, 0, 1]}]",
+null
+],
+[
+"22",
+"{'OPM': 1, 'BM': /'Normal', 'CA': 1, 'OP': False, 'SMask': /'None', 'ca': 1, 'AIS': False, 'op': False, 'Type': /'ExtGState', 'SA': True}",
+null
+],
+[
+"23",
+"sha256:9221cb0484fc2ebfa60b5b2286673a031464fd60b1c09022818aff06c564ce73",
+null
+],
+[
+"24",
+"<PDFStream(24): raw=362, {'Length': 362, 'Filter': /'FlateDecode'}>",
+"8d4be7a1a5a7270d8eed26e7d17c88cd5d93e426c41fe5ffab68d85717aca894"
+],
+[
+"25",
+"sha256:d91aac37adc908c4210dc01d391bbf75b36416c4fce4f8e05012bd8f71e26d3d",
+null
+],
+[
+"26",
+"<PDFStream(26): raw=432, {'Length': 432, 'Filter': /'FlateDecode'}>",
+"d53f05ab13a0f7bd8f9350fc809297245a625a0b1bbfdd7b7984a1d0666264ee"
+],
+[
+"27",
+"sha256:22a15ae51523058ec982c1258c1583b4e98d81c75aaa87847e04dd128709c284",
+null
+],
+[
+"28",
+"<PDFStream(28): raw=349, {'Length': 349, 'Filter': /'FlateDecode'}>",
+"5025a6dedfcd306e06eb3dcd47ffe05789d96bccb80af66bfbe0b8f72979d7f0"
+],
+[
+"29",
+"sha256:f9632b066f2b2514d8cb6d70fe367a3e2effa32b96feb4ffe2dce25feca5d7f2",
+null
+],
+[
+"30",
+"sha256:67c9f5997551d0c5bc3f8c47fabb905f7c963533f52e7fb194f939a58269bfe8",
+null
+],
+[
+"31",
+"<PDFStream(31): raw=297, {'Length': 297, 'Filter': /'FlateDecode'}>",
+"737afd0063aaa9877e00f842ac70bd9c4229c56d871a5800e60b06f6c4c95930"
+],
+[
+"32",
+"<PDFStream(32): raw=1310, {'Subtype': /'Type1C', 'Length': 1310, 'Filter': /'FlateDecode'}>",
+"ef6f2938ea1d6720cfd43f19a12f6076fa5a21cc3acc3d2d7cfc74d3235916ce"
+],
+[
+"33",
+"<PDFStream(33): raw=2033, {'Subtype': /'Type1C', 'Length': 2033, 'Filter': /'FlateDecode'}>",
+"d5415bc060c34948c4e546d57dcfe76bbb5b4426e21f5cc13e36487ba83349da"
+],
+[
+"34",
+"<PDFStream(34): raw=3531, {'Subtype': /'Type1C', 'Length': 3531, 'Filter': /'FlateDecode'}>",
+"c9c6b358d1abbd3651fc61d890966bfd34d0b853397a7d081f2054b9cb616db0"
+],
+[
+"35",
+"<PDFStream(35): raw=2589, {'Subtype': /'Type1C', 'Length': 2589, 'Filter': /'FlateDecode'}>",
+"3c06a4a53ba7d60a6321e7928c706e2e69807c3ebfcf30f5e2db1e9f07004aa7"
+]
+],
+"pages": [
+{
+"pageid": "1",
+"label": null,
+"mediabox": "(0.0, 0.0, 612.0, 792.0)",
+"cropbox": "(0.0, 0.0, 612.0, 792.0)",
+"rotate": 0,
+"resources": [
+"ColorSpace",
+"ExtGState",
+"Font",
+"ProcSet"
+],
+"contents": [
+"<PDFStream(2): len=18360, {'Length': 18360}>"
+],
+"attrs": [
+"CropBox",
+"Parent",
+"Contents",
+"Rotate",
+"BleedBox",
+"ArtBox",
+"MediaBox",
+"TrimBox",
+"Resources",
+"Type"
+],
+"repr": "sha256:a5ee3a1ed8d4a0e79a401ffee5f8a967477424126c106bd86850af9b9322b36a"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "half",
+"open": "!PSEOF"
+},
+{
+"password": "",
+"variant": "3q",
+"open": "!PSEOF"
+},
+{
+"password": "",
+"variant": "noxref",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "shifted",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRefFallback: offsets=dict_keys([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35])>",
+"trailer": "{'Size': 36, 'Info': <PDFObjRef:14>, 'Root': <PDFObjRef:16>, 'ID': [b'\\x02\\x1a\\x81jUz\\x11\\xdb\\x9d\\x1b\\x00\\x17\\xf2\\x01\\x90\\x9e', b'\\xa2\\x1b\\x93\\xaf\\xcdu\\xfa5\\xff\\xde`\\xaa\\x18\\xae\\n<'], 'Encrypt': <PDFObjRef:15>}",
+"ids": [
+[
+"1",
+"(None, 22, 0)"
+],
+[
+"2",
+"(None, 382, 0)"
+],
+[
+"3",
+"(None, 18794, 0)"
+],
+[
+"4",
+"(None, 18904, 0)"
+],
+[
+"5",
+"(None, 19564, 0)"
+],
+[
+"6",
+"(None, 19662, 0)"
+],
+[
+"7",
+"(None, 25646, 0)"
+],
+[
+"8",
+"(None, 28913, 0)"
+],
+[
+"9",
+"(None, 29184, 0)"
+],
+[
+"10",
+"(None, 29913, 0)"
+],
+[
+"11",
+"(None, 30183, 0)"
+],
+[
+"12",
+"(None, 30609, 0)"
+],
+[
+"13",
+"(None, 31061, 0)"
+],
+[
+"14",
+"(None, 31114, 0)"
+],
+[
+"15",
+"(None, 31537, 0)"
+],
+[
+"16",
+"(None, 31738, 0)"
+],
+[
+"17",
+"(None, 31786, 0)"
+],
+[
+"18",
+"(None, 32296, 0)"
+],
+[
+"19",
+"(None, 32797, 0)"
+],
+[
+"20",
+"(None, 33217, 0)"
+],
+[
+"21",
+"(None, 33325, 0)"
+],
+[
+"22",
+"(None, 33444, 0)"
+],
+[
+"23",
+"(None, 33554, 0)"
+],
+[
+"24",
+"(None, 33835, 0)"
+],
+[
+"25",
+"(None, 34267, 0)"
+],
+[
+"26",
+"(None, 34536, 0)"
+],
+[
+"27",
+"(None, 35038, 0)"
+],
+[
+"28",
+"(None, 35335, 0)"
+],
+[
+"29",
+"(None, 35754, 0)"
+],
+[
+"30",
+"(None, 36071, 0)"
+],
+[
+"31",
+"(None, 36372, 0)"
+],
+[
+"32",
+"(None, 36739, 0)"
+],
+[
+"33",
+"(None, 38135, 0)"
+],
+[
+"34",
+"(None, 40254, 0)"
+],
+[
+"35",
+"(None, 43871, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /'Catalog', 'Pages': <PDFObjRef:13>}",
+"info": "[{'CreationDate': b\"D:20061006163404-04'00'\", 'Subject': b'Aviation Safety World October 2006', 'Author': b'Mark Lacagnina', 'Creator': b'Adobe InDesign CS2 (4.0.4)', 'Producer': b'Adobe PDF Library 7.0', 'ModDate': b\"D:20070109150956-05'00'\", 'Title': b'Losing the Cabin', 'Trapped': /'False'}]",
+"flags": [
+true,
+false,
+false
+],
+"objects": [
+[
+"1",
+"sha256:fbd5dbb53a99a35fcbf375713b797240ca327ed388529bd910290b79dad01c7e",
+null
+],
+[
+"2",
+"<PDFStream(2): raw=18360, {'Length': 18360}>",
+"e152e7c31863a651bae18162046742241f89d0b520ce4f508317d0f4ef5dc80c"
+],
+[
+"3",
+"{'OPM': 1, 'BM': /'Normal', 'CA': 1, 'OP': False, 'SMask': /'None', 'ca': 1, 'AIS': False, 'op': False, 'Type': /'ExtGState', 'SA': False}",
+null
+],
+[
+"4",
+"<PDFStream(4): raw=591, {'Length': 591, 'Filter': /'FlateDecode'}>",
+"0a63e1a35f03717879e9d399417323cc3706f992e3d625d85a7cbe1c377434a8"
+],
+[
+"5",
+"{'Differences': [28, /'f_f_i', /'f_f', /'f_i', /'f_l'], 'BaseEncoding': /'WinAnsiEncoding', 'Type': /'Encoding'}",
+null
+],
+[
+"6",
+"<PDFStream(6): raw=5899, {'Subtype': /'Type1C', 'Length': 5899, 'Filter': /'FlateDecode'}>",
+"59f64a69b4316b00fe786b3a0a2ac61034cd97a069c908bed177620f0eeb8e65"
+],
+[
+"7",
+"<PDFStream(7): raw=3182, {'Subtype': /'Type1C', 'Length': 3182, 'Filter': /'FlateDecode'}>",
+"da3d346257625fede1a8a08d8fc70e3ffcedbcffc9dce33444d64520bbdef4f9"
+],
+[
+"8",
+"sha256:8ef1dc76a5369a721dfc412da03c694cc4d11067b281df34e2880c8e17985dfc",
+null
+],
+[
+"9",
+"sha256:8dccf18f42b3853cae2c8c5ab04a542a36b30ffa79b5dc3cc192aefb76eecec1",
+null
+],
+[
+"10",
+"sha256:136f6f640adbf04626fce8d0c9caa48e5c8e931209d376132f0c0e9255010204",
+null
+],
+[
+"11",
+"sha256:b6a182d9aafc7733ae79db1fc8f11203698fd67c55bd110db0d6075c9e01324b",
+null
+],
+[
+"12",
+"<PDFStream(12): raw=382, {'Length': 382, 'Filter': /'FlateDecode'}>",
+"0b466473216ee6591d20a5bb8c18201e6022e044733b4b96f8d4d4a3b0f8617e"
+],
+[
+"13",
+"{'Count': 1, 'Type': /'Pages', 'Kids': [<PDFObjRef:1>]}",
+null
+],
+[
+"14",
+"{'CreationDate': b\"D:20061006163404-04'00'\", 'Subject': b'Aviation Safety World October 2006', 'Author': b'Mark Lacagnina', 'Creator': b'Adobe InDesign CS2 (4.0.4)', 'Producer': b'Adobe PDF Library 7.0', 'ModDate': b\"D:20070109150956-05'00'\", 'Title': b'Losing the Cabin', 'Trapped': /'False'}",
+null
+],
+[
+"15",
+"{'Length': 128, 'Filter': /'Standard', 'O': b'Qs&\\x96\\xca\\xee\\x1ee\\xa1\\xacI\\xcf\\xe7\\xd6@Q\\x84k\\xaf\\x86\\xd4\\xbf.\\x8c\\xbd\\xd2\\x88\\xbd\\xd2O\\xf1\\x1f', 'P': -1340, 'R': 3, 'U': b'\\xfcY{aBl\\t!\\xa2-\\x00 \\xe9\\xe2\\xd3\\x90\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00', 'V': 2}",
+null
+],
+[
+"16",
+"{'Type': /'Catalog', 'Pages': <PDFObjRef:13>}",
+null
+],
+[
+"17",
+"sha256:5a5409cae4b200ab78530ca2e8a1e63e2a94d558a699ec3f0f248a69cc94af08",
+null
+],
+[
+"18",
+"sha256:b17e09359f4c18b4528d1bd9f0f24fc94cfdffb839be6163b39fc1b6bf613e32",
+null
+],
+[
+"19",
+"sha256:9c6b796006e24e6433a224b9bf40c5674ae1101f127aeacc135e21497249ca46",
+null
+],
+[
+"20",
+"{'OPM': 0, 'BM': /'Normal', 'CA': 1, 'OP': True, 'SMask': /'None', 'ca': 1, 'AIS': False, 'op': True, 'Type': /'ExtGState', 'SA': True}",
+null
+],
+[
+"21",
+"[/'Separation', /'All', /'DeviceRGB', {'C0': [1, 1, 1], 'C1': [0, 0, 0], 'FunctionType': 2, 'N': 1, 'Domain': [0, 1], 'Range': [0, 1, 0, 1, 0, 1]}]",
+null
+],
+[
+"22",
+"{'OPM': 1, 'BM': /'Normal', 'CA': 1, 'OP': False, 'SMask': /'None', 'ca': 1, 'AIS': False, 'op': False, 'Type': /'ExtGState', 'SA': True}",
+null
+],
+[
+"23",
+"sha256:9221cb0484fc2ebfa60b5b2286673a031464fd60b1c09022818aff06c564ce73",
+null
+],
+[
+"24",
+"<PDFStream(24): raw=362, {'Length': 362, 'Filter': /'FlateDecode'}>",
+"8d4be7a1a5a7270d8eed26e7d17c88cd5d93e426c41fe5ffab68d85717aca894"
+],
+[
+"25",
+"sha256:d91aac37adc908c4210dc01d391bbf75b36416c4fce4f8e05012bd8f71e26d3d",
+null
+],
+[
+"26",
+"<PDFStream(26): raw=432, {'Length': 432, 'Filter': /'FlateDecode'}>",
+"d53f05ab13a0f7bd8f9350fc809297245a625a0b1bbfdd7b7984a1d0666264ee"
+],
+[
+"27",
+"sha256:22a15ae51523058ec982c1258c1583b4e98d81c75aaa87847e04dd128709c284",
+null
+],
+[
+"28",
+"<PDFStream(28): raw=349, {'Length': 349, 'Filter': /'FlateDecode'}>",
+"5025a6dedfcd306e06eb3dcd47ffe05789d96bccb80af66bfbe0b8f72979d7f0"
+],
+[
+"29",
+"sha256:f9632b066f2b2514d8cb6d70fe367a3e2effa32b96feb4ffe2dce25feca5d7f2",
+null
+],
+[
+"30",
+"sha256:67c9f5997551d0c5bc3f8c47fabb905f7c963533f52e7fb194f939a58269bfe8",
+null
+],
+[
+"31",
+"<PDFStream(31): raw=297, {'Length': 297, 'Filter': /'FlateDecode'}>",
+"737afd0063aaa9877e00f842ac70bd9c4229c56d871a5800e60b06f6c4c95930"
+],
+[
+"32",
+"<PDFStream(32): raw=1310, {'Subtype': /'Type1C', 'Length': 1310, 'Filter': /'FlateDecode'}>",
+"ef6f2938ea1d6720cfd43f19a12f6076fa5a21cc3acc3d2d7cfc74d3235916ce"
+],
+[
+"33",
+"<PDFStream(33): raw=2033, {'Subtype': /'Type1C', 'Length': 2033, 'Filter': /'FlateDecode'}>",
+"d5415bc060c34948c4e546d57dcfe76bbb5b4426e21f5cc13e36487ba83349da"
+],
+[
+"34",
+"<PDFStream(34): raw=3531, {'Subtype': /'Type1C', 'Length': 3531, 'Filter': /'FlateDecode'}>",
+"c9c6b358d1abbd3651fc61d890966bfd34d0b853397a7d081f2054b9cb616db0"
+],
+[
+"35",
+"<PDFStream(35): raw=2589, {'Subtype': /'Type1C', 'Length': 2589, 'Filter': /'FlateDecode'}>",
+"3c06a4a53ba7d60a6321e7928c706e2e69807c3ebfcf30f5e2db1e9f07004aa7"
+]
+],
+"pages": [
+{
+"pageid": "1",
+"label": null,
+"mediabox": "(0.0, 0.0, 612.0, 792.0)",
+"cropbox": "(0.0, 0.0, 612.0, 792.0)",
+"rotate": 0,
+"resources": [
+"ColorSpace",
+"ExtGState",
+"Font",
+"ProcSet"
+],
+"contents": [
+"<PDFStream(2): len=18360, {'Length': 18360}>"
+],
+"attrs": [
+"CropBox",
+"Parent",
+"Contents",
+"Rotate",
+"BleedBox",
+"ArtBox",
+"MediaBox",
+"TrimBox",
+"Resources",
+"Type"
+],
+"repr": "sha256:a5ee3a1ed8d4a0e79a401ffee5f8a967477424126c106bd86850af9b9322b36a"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "tail",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "corrupt0",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRef: offsets=dict_keys([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35])>",
+"trailer": "{'Size': 36, 'Info': <PDFObjRef:14>, 'Root': <PDFObjRef:16>, 'ID': [b'\\x02\\x1a\\x81jUz\\x11\\xdb\\x9d\\x1b\\x00\\x17\\xf2\\x01\\x90\\x9e', b'\\xa2\\x1b\\x93\\xaf\\xcdu\\xfa5\\xff\\xde`\\xaa\\x18\\xae\\n<'], 'Encrypt': <PDFObjRef:15>}",
+"ids": [
+[
+"1",
+"(None, 16, 0)"
+],
+[
+"2",
+"(None, 376, 0)"
+],
+[
+"3",
+"(None, 18788, 0)"
+],
+[
+"4",
+"(None, 18898, 0)"
+],
+[
+"5",
+"(None, 19558, 0)"
+],
+[
+"6",
+"(None, 19656, 0)"
+],
+[
+"7",
+"(None, 25640, 0)"
+],
+[
+"8",
+"(None, 28907, 0)"
+],
+[
+"9",
+"(None, 29178, 0)"
+],
+[
+"10",
+"(None, 29907, 0)"
+],
+[
+"11",
+"(None, 30177, 0)"
+],
+[
+"12",
+"(None, 30603, 0)"
+],
+[
+"13",
+"(None, 31055, 0)"
+],
+[
+"14",
+"(None, 31108, 0)"
+],
+[
+"15",
+"(None, 31531, 0)"
+],
+[
+"16",
+"(None, 31732, 0)"
+],
+[
+"17",
+"(None, 31780, 0)"
+],
+[
+"18",
+"(None, 32290, 0)"
+],
+[
+"19",
+"(None, 32791, 0)"
+],
+[
+"20",
+"(None, 33211, 0)"
+],
+[
+"21",
+"(None, 33319, 0)"
+],
+[
+"22",
+"(None, 33438, 0)"
+],
+[
+"23",
+"(None, 33548, 0)"
+],
+[
+"24",
+"(None, 33829, 0)"
+],
+[
+"25",
+"(None, 34261, 0)"
+],
+[
+"26",
+"(None, 34530, 0)"
+],
+[
+"27",
+"(None, 35032, 0)"
+],
+[
+"28",
+"(None, 35329, 0)"
+],
+[
+"29",
+"(None, 35748, 0)"
+],
+[
+"30",
+"(None, 36065, 0)"
+],
+[
+"31",
+"(None, 36366, 0)"
+],
+[
+"32",
+"(None, 36733, 0)"
+],
+[
+"33",
+"(None, 38129, 0)"
+],
+[
+"34",
+"(None, 40248, 0)"
+],
+[
+"35",
+"(None, 43865, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /'Catalog', 'Pages': <PDFObjRef:13>}",
+"info": "[{'CreationDate': b\"D:20061006163404-04'00'\", 'Subject': b'Aviation Safety World October 2006', 'Author': b'Mark Lacagnina', 'Creator': b'Adobe InDesign CS2 (4.0.4)', 'Producer': b'Adobe PDF Library 7.0', 'ModDate': b\"D:20070109150956-05'00'\", 'Title': b'Losing the Cabin', 'Trapped': /'False'}]",
+"flags": [
+true,
+false,
+false
+],
+"objects": [
+[
+"1",
+"sha256:fbd5dbb53a99a35fcbf375713b797240ca327ed388529bd910290b79dad01c7e",
+null
+],
+[
+"2",
+"<PDFStream(2): raw=18360, {'Length': 18360}>",
+"9f44fefc9aaf09e557bcab876e19cea73c3f04a7f9320129ff5f1896ad78877f"
+],
+[
+"3",
+"{'OPM': 1, 'BM': /'Normal', 'CA': 1, 'OP': False, 'SMask': /'None', 'ca': 1, 'AIS': False, 'op': False, 'Type': /'ExtGState', 'SA': False}",
+null
+],
+[
+"4",
+"<PDFStream(4): raw=591, {'Length': 591, 'Filter': /'FlateDecode'}>",
+"0a63e1a35f03717879e9d399417323cc3706f992e3d625d85a7cbe1c377434a8"
+],
+[
+"5",
+"{'Differences': [28, /'f_f_i', /'f_f', /'f_i', /'f_l'], 'BaseEncoding': /b'WinAnsiEncodin\\xbf', 'Type': /'Encoding'}",
+null
+],
+[
+"6",
+"<PDFStream(6): raw=5899, {'Subtype': /'Type1C', 'Length': 5899, 'Filter': /'FlateDecode'}>",
+"59f64a69b4316b00fe786b3a0a2ac61034cd97a069c908bed177620f0eeb8e65"
+],
+[
+"7",
+"<PDFStream(7): raw=3182, {'Subtype': /'Type1C', 'Length': 3182, 'Filter': /'FlateDecode'}>",
+"cd9bd9f0c5a842be6568667ff29ef0d598317a89d4aa55d7f2bc607b91cc6ccc"
+],
+[
+"8",
+"sha256:8ef1dc76a5369a721dfc412da03c694cc4d11067b281df34e2880c8e17985dfc",
+null
+],
+[
+"9",
+"sha256:8dccf18f42b3853cae2c8c5ab04a542a36b30ffa79b5dc3cc192aefb76eecec1",
+null
+],
+[
+"10",
+"sha256:136f6f640adbf04626fce8d0c9caa48e5c8e931209d376132f0c0e9255010204",
+null
+],
+[
+"11",
+"sha256:b6a182d9aafc7733ae79db1fc8f11203698fd67c55bd110db0d6075c9e01324b",
+null
+],
+[
+"12",
+"<PDFStream(12): raw=382, {'Length': 382, 'Filter': /'FlateDecode'}>",
+"0b466473216ee6591d20a5bb8c18201e6022e044733b4b96f8d4d4a3b0f8617e"
+],
+[
+"13",
+"{'Count': 1, 'Type': /'Pages', 'Kids': [<PDFObjRef:1>]}",
+null
+],
+[
+"14",
+"{'CreationDate': b\"D:20061006163404-04'00'\", 'Subject': b'Aviation Safety World October 2006', 'Author': b'Mark Lacagnina', 'Creator': b'Adobe InDesign CS2 (4.0.4)', 'Producer': b'Adobe PDF Library 7.0', 'ModDate': b\"D:20070109150956-05'00'\", 'Title': b'Losing the Cabin', 'Trapped': /'False'}",
+null
+],
+[
+"15",
+"{'Length': 128, 'Filter': /'Standard', 'O': b'Qs&\\x96\\xca\\xee\\x1ee\\xa1\\xacI\\xcf\\xe7\\xd6@Q\\x84k\\xaf\\x86\\xd4\\xbf.\\x8c\\xbd\\xd2\\x88\\xbd\\xd2O\\xf1\\x1f', 'P': -1340, 'R': 3, 'U': b'\\xfcY{aBl\\t!\\xa2-\\x00 \\xe9\\xe2\\xd3\\x90\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00', 'V': 2}",
+null
+],
+[
+"16",
+"{'Type': /'Catalog', 'Pages': <PDFObjRef:13>}",
+null
+],
+[
+"17",
+"sha256:5a5409cae4b200ab78530ca2e8a1e63e2a94d558a699ec3f0f248a69cc94af08",
+null
+],
+[
+"18",
+"sha256:b17e09359f4c18b4528d1bd9f0f24fc94cfdffb839be6163b39fc1b6bf613e32",
+null
+],
+[
+"19",
+"sha256:9c6b796006e24e6433a224b9bf40c5674ae1101f127aeacc135e21497249ca46",
+null
+],
+[
+"20",
+"{'OPM': 0, 'BM': /'Normal', 'CA': 1, 'OP': True, 'SMask': /'None', 'ca': 1, 'AIS': False, 'op': True, 'Type': /'ExtGState', 'SA': True}",
+null
+],
+[
+"21",
+"[/'Separation', /'All', /'DeviceRGB', {'C0': [1, 1, 1], 'C1': [0, 0, 0], 'FunctionType': 2, 'N': 1, 'Domain': [0, 1], 'Range': [0, 1, 0, 1, 0, 1]}]",
+null
+],
+[
+"22",
+"{'OPM': 1, 'BM': /'Normal', 'CA': 1, 'OP': False, 'SMask': /'None', 'ca': 1, 'AIS': False, 'op': False, 'Type': /'ExtGState', 'SA': True}",
+null
+],
+[
+"23",
+"sha256:9221cb0484fc2ebfa60b5b2286673a031464fd60b1c09022818aff06c564ce73",
+null
+],
+[
+"24",
+"<PDFStream(24): raw=362, {'Length': 362, 'Filter': /'FlateDecode'}>",
+"8d4be7a1a5a7270d8eed26e7d17c88cd5d93e426c41fe5ffab68d85717aca894"
+],
+[
+"25",
+"sha256:d91aac37adc908c4210dc01d391bbf75b36416c4fce4f8e05012bd8f71e26d3d",
+null
+],
+[
+"26",
+"<PDFStream(26): raw=432, {'Length': 432, 'Filter': /'FlateDecode'}>",
+"d42562779770faba1e69b9417031ea9b07efed63c9832b87e093ecfa80c3ca3b"
+],
+[
+"27",
+"sha256:22a15ae51523058ec982c1258c1583b4e98d81c75aaa87847e04dd128709c284",
+null
+],
+[
+"28",
+"<PDFStream(28): raw=349, {'Length': 349, 'Filter': /'FlateDecode'}>",
+"5025a6dedfcd306e06eb3dcd47ffe05789d96bccb80af66bfbe0b8f72979d7f0"
+],
+[
+"29",
+"sha256:f9632b066f2b2514d8cb6d70fe367a3e2effa32b96feb4ffe2dce25feca5d7f2",
+null
+],
+[
+"30",
+"sha256:67c9f5997551d0c5bc3f8c47fabb905f7c963533f52e7fb194f939a58269bfe8",
+null
+],
+[
+"31",
+"<PDFStream(31): raw=297, {'Length': 297, 'Filter': /'FlateDecode'}>",
+"737afd0063aaa9877e00f842ac70bd9c4229c56d871a5800e60b06f6c4c95930"
+],
+[
+"32",
+"<PDFStream(32): raw=1310, {'Subtype': /'Type1C', 'Length': 1310, 'Filter': /'FlateDecode'}>",
+"ef6f2938ea1d6720cfd43f19a12f6076fa5a21cc3acc3d2d7cfc74d3235916ce"
+],
+[
+"33",
+"<PDFStream(33): raw=2033, {'Subtype': /'Type1C', 'Length': 2033, 'Filter': /'FlateDecode'}>",
+"d5415bc060c34948c4e546d57dcfe76bbb5b4426e21f5cc13e36487ba83349da"
+],
+[
+"34",
+"<PDFStream(34): raw=3531, {'Subtype': /'Type1C', 'Length': 3531, 'Filter': /'FlateDecode'}>",
+"39ae3f8b592d67d7c08142988fe55d14d2e9c565f0ce48e31c1e033bffac5139"
+],
+[
+"35",
+"<PDFStream(35): raw=2589, {'Subtype': /'Type1C', 'Length': 2589, 'Filter': /'FlateDecode'}>",
+"3c06a4a53ba7d60a6321e7928c706e2e69807c3ebfcf30f5e2db1e9f07004aa7"
+]
+],
+"pages": [
+{
+"pageid": "1",
+"label": null,
+"mediabox": "(0.0, 0.0, 612.0, 792.0)",
+"cropbox": "(0.0, 0.0, 612.0, 792.0)",
+"rotate": 0,
+"resources": [
+"ColorSpace",
+"ExtGState",
+"Font",
+"ProcSet"
+],
+"contents": [
+"<PDFStream(2): len=18360, {'Length': 18360}>"
+],
+"attrs": [
+"CropBox",
+"Parent",
+"Contents",
+"Rotate",
+"BleedBox",
+"ArtBox",
+"MediaBox",
+"TrimBox",
+"Resources",
+"Type"
+],
+"repr": "sha256:a5ee3a1ed8d4a0e79a401ffee5f8a967477424126c106bd86850af9b9322b36a"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "corrupt1",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRef: offsets=dict_keys([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35])>",
+"trailer": "{'Size': 36, 'Info': <PDFObjRef:14>, 'Root': <PDFObjRef:16>, 'ID': [b'\\x02\\x1a\\x81jUz\\x11\\xdb\\x9d\\x1b\\x00\\x17\\xf2\\x01\\x90\\x9e', b'\\xa2\\x1b\\x93\\xaf\\xcdu\\xfa5\\xff\\xde`\\xaa\\x18\\xae\\n<'], 'Encrypt': <PDFObjRef:15>}",
+"ids": [
+[
+"1",
+"(None, 16, 0)"
+],
+[
+"2",
+"(None, 376, 0)"
+],
+[
+"3",
+"(None, 18788, 0)"
+],
+[
+"4",
+"(None, 18898, 0)"
+],
+[
+"5",
+"(None, 19558, 0)"
+],
+[
+"6",
+"(None, 19656, 0)"
+],
+[
+"7",
+"(None, 25640, 0)"
+],
+[
+"8",
+"(None, 28907, 0)"
+],
+[
+"9",
+"(None, 29178, 0)"
+],
+[
+"10",
+"(None, 29907, 0)"
+],
+[
+"11",
+"(None, 30177, 0)"
+],
+[
+"12",
+"(None, 30603, 0)"
+],
+[
+"13",
+"(None, 31055, 0)"
+],
+[
+"14",
+"(None, 31108, 0)"
+],
+[
+"15",
+"(None, 31531, 0)"
+],
+[
+"16",
+"(None, 31732, 0)"
+],
+[
+"17",
+"(None, 31780, 0)"
+],
+[
+"18",
+"(None, 32290, 0)"
+],
+[
+"19",
+"(None, 32791, 0)"
+],
+[
+"20",
+"(None, 33211, 0)"
+],
+[
+"21",
+"(None, 33319, 0)"
+],
+[
+"22",
+"(None, 33438, 0)"
+],
+[
+"23",
+"(None, 33548, 0)"
+],
+[
+"24",
+"(None, 33829, 0)"
+],
+[
+"25",
+"(None, 34261, 0)"
+],
+[
+"26",
+"(None, 34530, 0)"
+],
+[
+"27",
+"(None, 35032, 0)"
+],
+[
+"28",
+"(None, 35329, 0)"
+],
+[
+"29",
+"(None, 35748, 0)"
+],
+[
+"30",
+"(None, 36065, 0)"
+],
+[
+"31",
+"(None, 36366, 0)"
+],
+[
+"32",
+"(None, 36733, 0)"
+],
+[
+"33",
+"(None, 38129, 0)"
+],
+[
+"34",
+"(None, 40248, 0)"
+],
+[
+"35",
+"(None, 43865, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /'Catalog', 'Pages': <PDFObjRef:13>}",
+"info": "[{'CreationDate': b\"D:20061006163404-04'00'\", 'Subject': b'Aviation Safety World October 2006', 'Author': b'Mark Lacagnina', 'Creator': b'Adobe InDesign CS2 (4.0.4)', 'Producer': b'Adobe PDF Library 7.0', 'ModDate': b\"D:20070109150956-05'00'\", 'Title': b'Losing the Cabin', 'Trapped': /'False'}]",
+"flags": [
+true,
+false,
+false
+],
+"objects": [
+[
+"1",
+"sha256:fbd5dbb53a99a35fcbf375713b797240ca327ed388529bd910290b79dad01c7e",
+null
+],
+[
+"2",
+"<PDFStream(2): raw=18360, {'Length': 18360}>",
+"f1402cb744672e44bb867a9c90b3b79fed3b58ba2611fcb582c6cfa53bbad244"
+],
+[
+"3",
+"{'OPM': 1, 'BM': /'Normal', 'CA': 1, 'OP': False, 'SMask': /'None', 'ca': 1, 'AIS': False, 'op': False, 'Type': /'ExtGState', 'SA': False}",
+null
+],
+[
+"4",
+"<PDFStream(4): raw=591, {'Length': 591, 'Filter': /'FlateDecode'}>",
+"0a63e1a35f03717879e9d399417323cc3706f992e3d625d85a7cbe1c377434a8"
+],
+[
+"5",
+"{'Differences': [28, /'f_f_i', /'f_f', /'f_i', /'f_l'], 'BaseEncoding': /'WinAnsiEncoding', 'Type': /'Encoding'}",
+null
+],
+[
+"6",
+"<PDFStream(6): raw=5899, {'Subtype': /'Type1C', 'Length': 5899, 'Filter': /'FlateDecode'}>",
+"59f64a69b4316b00fe786b3a0a2ac61034cd97a069c908bed177620f0eeb8e65"
+],
+[
+"7",
+"<PDFStream(7): raw=3182, {'Subtype': /'Type1C', 'Length': 3182, 'Filter': /'FlateDecode'}>",
+"b044213320c4cb1b9eead22fdbee12cf94848c86847d3545931920cabddb85d9"
+],
+[
+"8",
+"sha256:8ef1dc76a5369a721dfc412da03c694cc4d11067b281df34e2880c8e17985dfc",
+null
+],
+[
+"9",
+"sha256:8dccf18f42b3853cae2c8c5ab04a542a36b30ffa79b5dc3cc192aefb76eecec1",
+null
+],
+[
+"10",
+"sha256:136f6f640adbf04626fce8d0c9caa48e5c8e931209d376132f0c0e9255010204",
+null
+],
+[
+"11",
+"sha256:b6a182d9aafc7733ae79db1fc8f11203698fd67c55bd110db0d6075c9e01324b",
+null
+],
+[
+"12",
+"<PDFStream(12): raw=382, {'Length': 382, 'Filter': /'FlateDecode'}>",
+"0b466473216ee6591d20a5bb8c18201e6022e044733b4b96f8d4d4a3b0f8617e"
+],
+[
+"13",
+"{'Count': 1, 'Type': /'Pages', 'Kids': [<PDFObjRef:1>]}",
+null
+],
+[
+"14",
+"{'CreationDate': b\"D:20061006163404-04'00'\", 'Subject': b'Aviation Safety World October 2006', 'Author': b'Mark Lacagnina', 'Creator': b'Adobe InDesign CS2 (4.0.4)', 'Producer': b'Adobe PDF Library 7.0', 'ModDate': b\"D:20070109150956-05'00'\", 'Title': b'Losing the Cabin', 'Trapped': /'False'}",
+null
+],
+[
+"15",
+"{'Length': 128, 'Filter': /'Standard', 'O': b'Qs&\\x96\\xca\\xee\\x1ee\\xa1\\xacI\\xcf\\xe7\\xd6@Q\\x84k\\xaf\\x86\\xd4\\xbf.\\x8c\\xbd\\xd2\\x88\\xbd\\xd2O\\xf1\\x1f', 'P': -1340, 'R': 3, 'U': b'\\xfcY{aBl\\t!\\xa2-\\x00 \\xe9\\xe2\\xd3\\x90\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00', 'V': 2}",
+null
+],
+[
+"16",
+"{'Type': /'Catalog', 'Pages': <PDFObjRef:13>}",
+null
+],
+[
+"17",
+"sha256:5a5409cae4b200ab78530ca2e8a1e63e2a94d558a699ec3f0f248a69cc94af08",
+null
+],
+[
+"18",
+"sha256:b17e09359f4c18b4528d1bd9f0f24fc94cfdffb839be6163b39fc1b6bf613e32",
+null
+],
+[
+"19",
+"sha256:9c6b796006e24e6433a224b9bf40c5674ae1101f127aeacc135e21497249ca46",
+null
+],
+[
+"20",
+"{'OPM': 0, 'BM': /'Normal', 'CA': 1, 'OP': True, 'SMask': /'None', 'ca': 1, 'AIS': False, 'op': True, 'Type': /'ExtGState', 'SA': True}",
+null
+],
+[
+"21",
+"[/'Separation', /'All', /'DeviceRGB', {'C0': [1, 1, 1], 'C1': [0, 0, 0], 'FunctionType': 2, 'N': 1, 'Domain': [0, 1], 'Range': [0, 1, 0, 1, 0, 1]}]",
+null
+],
+[
+"22",
+"{'OPM': 1, 'BM': /'Normal', 'CA': 1, 'OP': False, 'SMask': /'None', 'ca': 1, 'AIS': False, 'op': False, 'Type': /'ExtGState', 'SA': True}",
+null
+],
+[
+"23",
+"/'Type'",
+null
+],
+[
+"24",
+"<PDFStream(24): raw=362, {'Length': 362, 'Filter': /'FlateDecode'}>",
+"8d4be7a1a5a7270d8eed26e7d17c88cd5d93e426c41fe5ffab68d85717aca894"
+],
+[
+"25",
+"sha256:d91aac37adc908c4210dc01d391bbf75b36416c4fce4f8e05012bd8f71e26d3d",
+null
+],
+[
+"26",
+"<PDFStream(26): raw=432, {'Length': 432, 'Filter': /'FlateDecode'}>",
+"d53f05ab13a0f7bd8f9350fc809297245a625a0b1bbfdd7b7984a1d0666264ee"
+],
+[
+"27",
+"sha256:22a15ae51523058ec982c1258c1583b4e98d81c75aaa87847e04dd128709c284",
+null
+],
+[
+"28",
+"<PDFStream(28): raw=349, {'Length': 349, 'Filter': /'FlateDecode'}>",
+"5025a6dedfcd306e06eb3dcd47ffe05789d96bccb80af66bfbe0b8f72979d7f0"
+],
+[
+"29",
+"sha256:f9632b066f2b2514d8cb6d70fe367a3e2effa32b96feb4ffe2dce25feca5d7f2",
+null
+],
+[
+"30",
+"sha256:67c9f5997551d0c5bc3f8c47fabb905f7c963533f52e7fb194f939a58269bfe8",
+null
+],
+[
+"31",
+"<PDFStream(31): raw=297, {'Length': 297, 'Filter': /'FlateDecode'}>",
+"737afd0063aaa9877e00f842ac70bd9c4229c56d871a5800e60b06f6c4c95930"
+],
+[
+"32",
+"<PDFStream(32): raw=1310, {'Subtype': /'Type1C', 'Length': 1310, 'Filter': /'FlateDecode'}>",
+"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+],
+[
+"33",
+"<PDFStream(33): raw=2033, {'Subtype': /'Type1C', 'Length': 2033, 'Filter': /'FlateDecode'}>",
+"d5415bc060c34948c4e546d57dcfe76bbb5b4426e21f5cc13e36487ba83349da"
+],
+[
+"34",
+"<PDFStream(34): raw=3531, {'Subtype': /'Type1C', 'Length': 3531, 'Filter': /'FlateDecode'}>",
+"c9c6b358d1abbd3651fc61d890966bfd34d0b853397a7d081f2054b9cb616db0"
+],
+[
+"35",
+"<PDFStream(35): raw=2589, {'Subtype': /'Type1C', 'Length': 2589, 'Filter': /'FlateDecode'}>",
+"15986eddc100564c6bfb53e2c6dca777d275320e9a2e5843898ea06aa4adc109"
+]
+],
+"pages": [
+{
+"pageid": "1",
+"label": null,
+"mediabox": "(0.0, 0.0, 612.0, 792.0)",
+"cropbox": "(0.0, 0.0, 612.0, 792.0)",
+"rotate": 0,
+"resources": [
+"ColorSpace",
+"ExtGState",
+"Font",
+"ProcSet"
+],
+"contents": [
+"<PDFStream(2): len=18360, {'Length': 18360}>"
+],
+"attrs": [
+"CropBox",
+"Parent",
+"Contents",
+"Rotate",
+"BleedBox",
+"ArtBox",
+"MediaBox",
+"TrimBox",
+"Resources",
+"Type"
+],
+"repr": "sha256:a5ee3a1ed8d4a0e79a401ffee5f8a967477424126c106bd86850af9b9322b36a"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "corrupt2",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRef: offsets=dict_keys([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35])>",
+"trailer": "{'Size': 36, 'Info': <PDFObjRef:14>, 'Root': <PDFObjRef:16>, 'ID': [b'\\x02\\x1a\\x81jUz\\x11\\xdb\\x9d\\x1b\\x00\\x17\\xf2\\x01\\x90\\x9e', b'\\xa2\\x1b\\x93\\xaf\\xcdu\\xfa5\\xff\\xde`\\xaa\\x18\\xae\\n<'], 'Encrypt': <PDFObjRef:15>}",
+"ids": [
+[
+"1",
+"(None, 16, 0)"
+],
+[
+"2",
+"(None, 376, 0)"
+],
+[
+"3",
+"(None, 18788, 0)"
+],
+[
+"4",
+"(None, 18898, 0)"
+],
+[
+"5",
+"(None, 19558, 0)"
+],
+[
+"6",
+"(None, 19656, 0)"
+],
+[
+"7",
+"(None, 25640, 0)"
+],
+[
+"8",
+"(None, 28907, 0)"
+],
+[
+"9",
+"(None, 29178, 0)"
+],
+[
+"10",
+"(None, 29907, 0)"
+],
+[
+"11",
+"(None, 30177, 0)"
+],
+[
+"12",
+"(None, 30603, 0)"
+],
+[
+"13",
+"(None, 31055, 0)"
+],
+[
+"14",
+"(None, 31108, 0)"
+],
+[
+"15",
+"(None, 31531, 0)"
+],
+[
+"16",
+"(None, 31732, 0)"
+],
+[
+"17",
+"(None, 31780, 0)"
+],
+[
+"18",
+"(None, 32290, 0)"
+],
+[
+"19",
+"(None, 32791, 0)"
+],
+[
+"20",
+"(None, 33211, 0)"
+],
+[
+"21",
+"(None, 33319, 0)"
+],
+[
+"22",
+"(None, 33438, 0)"
+],
+[
+"23",
+"(None, 33548, 0)"
+],
+[
+"24",
+"(None, 33829, 0)"
+],
+[
+"25",
+"(None, 34261, 0)"
+],
+[
+"26",
+"(None, 34530, 0)"
+],
+[
+"27",
+"(None, 35032, 0)"
+],
+[
+"28",
+"(None, 35329, 0)"
+],
+[
+"29",
+"(None, 35748, 0)"
+],
+[
+"30",
+"(None, 36065, 0)"
+],
+[
+"31",
+"(None, 36366, 0)"
+],
+[
+"32",
+"(None, 36733, 0)"
+],
+[
+"33",
+"(None, 38129, 0)"
+],
+[
+"34",
+"(None, 40248, 0)"
+],
+[
+"35",
+"(None, 43865, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /'Catalog', 'Pages': <PDFObjRef:13>}",
+"info": "sha256:cff848dbd3c12f9b67ea05ba2e0b3bad52e5b9e55222cce9d25078a7b976071a",
+"flags": [
+true,
+false,
+false
+],
+"objects": [
+[
+"1",
+"sha256:fbd5dbb53a99a35fcbf375713b797240ca327ed388529bd910290b79dad01c7e",
+null
+],
+[
+"2",
+"<PDFStream(2): raw=18360, {'Length': 18360}>",
+"26f6869ea4ec13ff397f8a010b089b0982fc9eb0bb1766f4c9384c1963625829"
+],
+[
+"3",
+"{'OPM': 1, 'BM': /'Normal', 'CA': 1, 'OP': False, 'SMask': /'None', 'ca': 1, 'AIS': False, 'op': False, 'Type': /'ExtGState', 'SA': False}",
+null
+],
+[
+"4",
+"<PDFStream(4): raw=591, {'Length': 591, 'Filter': /'FlateDecode'}>",
+"0a63e1a35f03717879e9d399417323cc3706f992e3d625d85a7cbe1c377434a8"
+],
+[
+"5",
+"{'Differences': [28, /'f_f_i', /'f_f', /'f_i', /'f_l'], 'BaseEncoding': /'WinAnsiEncoding', 'Type': /'Encoding'}",
+null
+],
+[
+"6",
+"<PDFStream(6): raw=5899, {'Subtype': /'Type1C', 'Length': 5899, 'Filter': /'FlateDecode'}>",
+"59f64a69b4316b00fe786b3a0a2ac61034cd97a069c908bed177620f0eeb8e65"
+],
+[
+"7",
+"<PDFStream(7): raw=3182, {'Subtype': /'Type1C', 'Length': 3182, 'Filter': /'FlateDecode'}>",
+"da3d346257625fede1a8a08d8fc70e3ffcedbcffc9dce33444d64520bbdef4f9"
+],
+[
+"8",
+"sha256:8ef1dc76a5369a721dfc412da03c694cc4d11067b281df34e2880c8e17985dfc",
+null
+],
+[
+"9",
+"sha256:8dccf18f42b3853cae2c8c5ab04a542a36b30ffa79b5dc3cc192aefb76eecec1",
+null
+],
+[
+"10",
+"sha256:136f6f640adbf04626fce8d0c9caa48e5c8e931209d376132f0c0e9255010204",
+null
+],
+[
+"11",
+"sha256:b6a182d9aafc7733ae79db1fc8f11203698fd67c55bd110db0d6075c9e01324b",
+null
+],
+[
+"12",
+"<PDFStream(12): raw=382, {'Length': 382, 'Filter': /'FlateDecode'}>",
+"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+],
+[
+"13",
+"{'Count': 1, 'Type': /'Pages', 'Kids': [<PDFObjRef:1>]}",
+null
+],
+[
+"14",
+"sha256:3e1aefae9b6656326d08c512447418ebc9bfb9d6541ebdd1d516d3f619323a4b",
+null
+],
+[
+"15",
+"{'Length': 128, 'Filter': /'Standard', 'O': b'Qs&\\x96\\xca\\xee\\x1ee\\xa1\\xacI\\xcf\\xe7\\xd6@Q\\x84k\\xaf\\x86\\xd4\\xbf.\\x8c\\xbd\\xd2\\x88\\xbd\\xd2O\\xf1\\x1f', 'P': -1340, 'R': 3, 'U': b'\\xfcY{aBl\\t!\\xa2-\\x00 \\xe9\\xe2\\xd3\\x90\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00', 'V': 2}",
+null
+],
+[
+"16",
+"{'Type': /'Catalog', 'Pages': <PDFObjRef:13>}",
+null
+],
+[
+"17",
+"sha256:5a5409cae4b200ab78530ca2e8a1e63e2a94d558a699ec3f0f248a69cc94af08",
+null
+],
+[
+"18",
+"sha256:b17e09359f4c18b4528d1bd9f0f24fc94cfdffb839be6163b39fc1b6bf613e32",
+null
+],
+[
+"19",
+"sha256:9c6b796006e24e6433a224b9bf40c5674ae1101f127aeacc135e21497249ca46",
+null
+],
+[
+"20",
+"{'OPM': 0, 'BM': /'Normal', 'CA': 1, 'OP': True, 'SMask': /'None', 'ca': 1, 'AIS': False, 'op': True, 'Type': /'ExtGState', 'SA': True}",
+null
+],
+[
+"21",
+"[/'Separation', /'All', /'DeviceRGB', {'C0': [1, 1, 1], 'C1': [0, 0, 0], 'FunctionType': 2, 'N': 1, 'Domain': [0, 1], 'Range': [0, 1, 0, 1, 0, 1]}]",
+null
+],
+[
+"22",
+"{'OPM': 1, 'BM': /'Normal', 'CA': 1, 'OP': False, 'SMask': /'None', 'ca': 1, 'AIS': False, 'op': False, 'Type': /'ExtGState', 'SA': True}",
+null
+],
+[
+"23",
+"sha256:9221cb0484fc2ebfa60b5b2286673a031464fd60b1c09022818aff06c564ce73",
+null
+],
+[
+"24",
+"<PDFStream(24): raw=362, {'Length': 362, 'Filter': /'FlateDecode'}>",
+"133cb700a5f1026979727bde140bea0f7aec6e38a913405151f0b7b468893208"
+],
+[
+"25",
+"sha256:d91aac37adc908c4210dc01d391bbf75b36416c4fce4f8e05012bd8f71e26d3d",
+null
+],
+[
+"26",
+"<PDFStream(26): raw=432, {'Length': 432, 'Filter': /'FlateDecode'}>",
+"d53f05ab13a0f7bd8f9350fc809297245a625a0b1bbfdd7b7984a1d0666264ee"
+],
+[
+"27",
+"sha256:22a15ae51523058ec982c1258c1583b4e98d81c75aaa87847e04dd128709c284",
+null
+],
+[
+"28",
+"<PDFStream(28): raw=349, {'Length': 349, 'Filter': /'FlateDecode'}>",
+"5025a6dedfcd306e06eb3dcd47ffe05789d96bccb80af66bfbe0b8f72979d7f0"
+],
+[
+"29",
+"sha256:f9632b066f2b2514d8cb6d70fe367a3e2effa32b96feb4ffe2dce25feca5d7f2",
+null
+],
+[
+"30",
+"sha256:67c9f5997551d0c5bc3f8c47fabb905f7c963533f52e7fb194f939a58269bfe8",
+null
+],
+[
+"31",
+"<PDFStream(31): raw=297, {'Length': 297, 'Filter': /'FlateDecode'}>",
+"737afd0063aaa9877e00f842ac70bd9c4229c56d871a5800e60b06f6c4c95930"
+],
+[
+"32",
+"<PDFStream(32): raw=1310, {'Subtype': /'Type1C', 'Length': 1310, 'Filter': /'FlateDecode'}>",
+"b7aadd4f0d0c1882c9dd21a624b58825881fd57fcd03247443e6c0d9627aa24b"
+],
+[
+"33",
+"<PDFStream(33): raw=2033, {'Subtype': /'Type1C', 'Length': 2033, 'Filter': /'FlateDecode'}>",
+"d5415bc060c34948c4e546d57dcfe76bbb5b4426e21f5cc13e36487ba83349da"
+],
+[
+"34",
+"<PDFStream(34): raw=3531, {'Subtype': /'Type1C', 'Length': 3531, 'Filter': /'FlateDecode'}>",
+"2ec4aee52612f405a5f8a9499ec00bc801518142cbffb5fc688714ce523a7512"
+],
+[
+"35",
+"<PDFStream(35): raw=2589, {'Subtype': /'Type1C', 'Length': 2589, 'Filter': /'FlateDecode'}>",
+"3c06a4a53ba7d60a6321e7928c706e2e69807c3ebfcf30f5e2db1e9f07004aa7"
+]
+],
+"pages": [
+{
+"pageid": "1",
+"label": null,
+"mediabox": "(0.0, 0.0, 612.0, 792.0)",
+"cropbox": "(0.0, 0.0, 612.0, 792.0)",
+"rotate": 0,
+"resources": [
+"ColorSpace",
+"ExtGState",
+"Font",
+"ProcSet"
+],
+"contents": [
+"<PDFStream(2): len=18360, {'Length': 18360}>"
+],
+"attrs": [
+"CropBox",
+"Parent",
+"Contents",
+"Rotate",
+"BleedBox",
+"ArtBox",
+"MediaBox",
+"TrimBox",
+"Resources",
+"Type"
+],
+"repr": "sha256:a5ee3a1ed8d4a0e79a401ffee5f8a967477424126c106bd86850af9b9322b36a"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "corrupt3",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRef: offsets=dict_keys([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35])>",
+"trailer": "{'Size': 36, 'Info': <PDFObjRef:14>, 'Root': <PDFObjRef:16>, 'ID': [b'\\x02\\x1a\\x81jUz\\x11\\xdb\\x9d\\x1b\\x00\\x17\\xf2\\x01\\x90\\x9e', b'\\xa2\\x1b\\x93\\xaf\\xcdu\\xfa5\\xff\\xde`\\xaa\\x18\\xae\\n<'], 'Encrypt': <PDFObjRef:15>}",
+"ids": [
+[
+"1",
+"(None, 16, 0)"
+],
+[
+"2",
+"(None, 376, 0)"
+],
+[
+"3",
+"(None, 18788, 0)"
+],
+[
+"4",
+"(None, 18898, 0)"
+],
+[
+"5",
+"(None, 19558, 0)"
+],
+[
+"6",
+"(None, 19656, 0)"
+],
+[
+"7",
+"(None, 25640, 0)"
+],
+[
+"8",
+"(None, 28907, 0)"
+],
+[
+"9",
+"(None, 29178, 0)"
+],
+[
+"10",
+"(None, 29907, 0)"
+],
+[
+"11",
+"(None, 30177, 0)"
+],
+[
+"12",
+"(None, 30603, 0)"
+],
+[
+"13",
+"(None, 31055, 0)"
+],
+[
+"14",
+"(None, 31108, 0)"
+],
+[
+"15",
+"(None, 31531, 0)"
+],
+[
+"16",
+"(None, 31732, 0)"
+],
+[
+"17",
+"(None, 31780, 0)"
+],
+[
+"18",
+"(None, 32290, 0)"
+],
+[
+"19",
+"(None, 32791, 0)"
+],
+[
+"20",
+"(None, 33211, 0)"
+],
+[
+"21",
+"(None, 33319, 0)"
+],
+[
+"22",
+"(None, 33438, 0)"
+],
+[
+"23",
+"(None, 33548, 0)"
+],
+[
+"24",
+"(None, 33829, 0)"
+],
+[
+"25",
+"(None, 34261, 0)"
+],
+[
+"26",
+"(None, 34530, 0)"
+],
+[
+"27",
+"(None, 35032, 0)"
+],
+[
+"28",
+"(None, 35329, 0)"
+],
+[
+"29",
+"(None, 35748, 0)"
+],
+[
+"30",
+"(None, 36065, 0)"
+],
+[
+"31",
+"(None, 36366, 0)"
+],
+[
+"32",
+"(None, 36733, 0)"
+],
+[
+"33",
+"(None, 38129, 0)"
+],
+[
+"34",
+"(None, 40248, 0)"
+],
+[
+"35",
+"(None, 43865, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /'Catalog', 'Pages': <PDFObjRef:13>}",
+"info": "[{'CreationDate': b\"D:20061006163404-04'00'\", 'Subject': b'Aviation Safety World October 2006', 'Author': b'Mark Lacagnina', 'Creator': b'Adobe InDesign CS2 (4.0.4)', 'Producer': b'Adobe PDF Library 7.0', 'ModDate': b\"D:20070109150956-05'00'\", 'Title': b'Losing the Cabin', 'Trapped': /'False'}]",
+"flags": [
+true,
+false,
+false
+],
+"objects": [
+[
+"1",
+"sha256:fbd5dbb53a99a35fcbf375713b797240ca327ed388529bd910290b79dad01c7e",
+null
+],
+[
+"2",
+"<PDFStream(2): raw=18360, {'Length': 18360}>",
+"b2913a659c4abc56ccc44e473def382e484788d62a6dfc194f2cd6d2f81406fa"
+],
+[
+"3",
+"{'OPM': 1, 'BM': /'Normal', 'CA': 1, 'OP': False, 'SMask': /'None', 'ca': 1, 'AIS': False, 'op': False, 'Type': /'ExtGState', 'SA': False}",
+null
+],
+[
+"4",
+"<PDFStream(4): raw=591, {'Length': 591, 'Filter': /'FlateDecode'}>",
+"0a63e1a35f03717879e9d399417323cc3706f992e3d625d85a7cbe1c377434a8"
+],
+[
+"5",
+"{'Differences': [28, /'f_f_i', /'f_f', /'f_i', /'f_l'], 'BaseEncoding': /'WinAnsiEncoding', 'Type': /'Encoding'}",
+null
+],
+[
+"6",
+"<PDFStream(6): raw=5899, {'Subtype': /'Type1C', 'Length': 5899, 'Filter': /'FlateDecode'}>",
+"59f64a69b4316b00fe786b3a0a2ac61034cd97a069c908bed177620f0eeb8e65"
+],
+[
+"7",
+"<PDFStream(7): raw=3182, {'Subtype': /'Type1C', 'Length': 3182, 'Filter': /'FlateDecode'}>",
+"fb1abf471072854a600edc0f3f9a70147ce424e940626d07b22cd87cadc97039"
+],
+[
+"8",
+"sha256:8ef1dc76a5369a721dfc412da03c694cc4d11067b281df34e2880c8e17985dfc",
+null
+],
+[
+"9",
+"sha256:41f5560a4bedcd30e510fc4963ed4152fcbff4c1553d721b7dcf6dde7e57fd64",
+null
+],
+[
+"10",
+"sha256:136f6f640adbf04626fce8d0c9caa48e5c8e931209d376132f0c0e9255010204",
+null
+],
+[
+"11",
+"sha256:b6a182d9aafc7733ae79db1fc8f11203698fd67c55bd110db0d6075c9e01324b",
+null
+],
+[
+"12",
+"<PDFStream(12): raw=382, {'Length': 382, 'Filter': /'FlateDecode'}>",
+"0b466473216ee6591d20a5bb8c18201e6022e044733b4b96f8d4d4a3b0f8617e"
+],
+[
+"13",
+"{'Count': 1, 'Type': /'Pages', 'Kids': [<PDFObjRef:1>]}",
+null
+],
+[
+"14",
+"{'CreationDate': b\"D:20061006163404-04'00'\", 'Subject': b'Aviation Safety World October 2006', 'Author': b'Mark Lacagnina', 'Creator': b'Adobe InDesign CS2 (4.0.4)', 'Producer': b'Adobe PDF Library 7.0', 'ModDate': b\"D:20070109150956-05'00'\", 'Title': b'Losing the Cabin', 'Trapped': /'False'}",
+null
+],
+[
+"15",
+"{'Length': 128, 'Filter': /'Standard', 'O': b'Qs&\\x96\\xca\\xee\\x1ee\\xa1\\xacI\\xcf\\xe7\\xd6@Q\\x84k\\xaf\\x86\\xd4\\xbf.\\x8c\\xbd\\xd2\\x88\\xbd\\xd2O\\xf1\\x1f', 'P': -1340, 'R': 3, 'U': b'\\xfcY{aBl\\t!\\xa2-\\x00 \\xe9\\xe2\\xd3\\x90\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00', 'V': 2}",
+null
+],
+[
+"16",
+"{'Type': /'Catalog', 'Pages': <PDFObjRef:13>}",
+null
+],
+[
+"17",
+"sha256:5a5409cae4b200ab78530ca2e8a1e63e2a94d558a699ec3f0f248a69cc94af08",
+null
+],
+[
+"18",
+"sha256:b17e09359f4c18b4528d1bd9f0f24fc94cfdffb839be6163b39fc1b6bf613e32",
+null
+],
+[
+"19",
+"sha256:9c6b796006e24e6433a224b9bf40c5674ae1101f127aeacc135e21497249ca46",
+null
+],
+[
+"20",
+"{'OPM': 0, 'BM': /'Normal', 'CA': 1, 'OP': True, 'SMask': /'None', 'ca': 1, 'AIS': False, 'op': True, 'Type': /'ExtGState', 'SA': True}",
+null
+],
+[
+"21",
+"[/'Separation', /'All', /'DeviceRGB', {'C0': [1, 1, 1], 'C1': [0, 0, 0], 'FunctionType': 2, 'N': 1, 'Domain': [0, 1], 'Range': [0, 1, 0, 1, 0, 1]}]",
+null
+],
+[
+"22",
+"{'OPM': 1, 'BM': /'Normal', 'CA': 1, 'OP': False, 'SMask': /'None', 'ca': 1, 'AIS': False, 'op': False, 'Type': /'ExtGState', 'SA': True}",
+null
+],
+[
+"23",
+"sha256:9221cb0484fc2ebfa60b5b2286673a031464fd60b1c09022818aff06c564ce73",
+null
+],
+[
+"24",
+"<PDFStream(24): raw=362, {'Length': 362, 'Filter': /'FlateDecode'}>",
+"8d4be7a1a5a7270d8eed26e7d17c88cd5d93e426c41fe5ffab68d85717aca894"
+],
+[
+"25",
+"sha256:d91aac37adc908c4210dc01d391bbf75b36416c4fce4f8e05012bd8f71e26d3d",
+null
+],
+[
+"26",
+"<PDFStream(26): raw=432, {'Length': 432, 'Filter': /'FlateDecode'}>",
+"d53f05ab13a0f7bd8f9350fc809297245a625a0b1bbfdd7b7984a1d0666264ee"
+],
+[
+"27",
+"sha256:22a15ae51523058ec982c1258c1583b4e98d81c75aaa87847e04dd128709c284",
+null
+],
+[
+"28",
+"<PDFStream(28): raw=349, {'Length': 349, 'Filter': /'FlateDecode'}>",
+"5025a6dedfcd306e06eb3dcd47ffe05789d96bccb80af66bfbe0b8f72979d7f0"
+],
+[
+"29",
+"sha256:f9632b066f2b2514d8cb6d70fe367a3e2effa32b96feb4ffe2dce25feca5d7f2",
+null
+],
+[
+"30",
+"sha256:67c9f5997551d0c5bc3f8c47fabb905f7c963533f52e7fb194f939a58269bfe8",
+null
+],
+[
+"31",
+"<PDFStream(31): raw=297, {'Length': 297, 'Filter': /'FlateDecode'}>",
+"d84219a43258fb05e9914a1269f82792dde8896089292147fb3bae20fa1088d0"
+],
+[
+"32",
+"<PDFStream(32): raw=1310, {'Subtype': /'Type1C', 'Length': 1310, 'Filter': /'FlateDecode'}>",
+"ef6f2938ea1d6720cfd43f19a12f6076fa5a21cc3acc3d2d7cfc74d3235916ce"
+],
+[
+"33",
+"<PDFStream(33): raw=2033, {'Subtype': /'Type1C', 'Length': 2033, 'Filter': /'FlateDecode'}>",
+"1bd5457b57332e043c8c955cb3661f6bdab7d85e3102c40ec0263c28fc457ed0"
+],
+[
+"34",
+"<PDFStream(34): raw=3531, {'Subtype': /'Type1C', 'Length': 3531, 'Filter': /'FlateDecode'}>",
+"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+],
+[
+"35",
+"<PDFStream(35): raw=2589, {'Subtype': /'Type1C', 'Length': 2589, 'Filter': /'FlateDecode'}>",
+"3c06a4a53ba7d60a6321e7928c706e2e69807c3ebfcf30f5e2db1e9f07004aa7"
+]
+],
+"pages": [
+{
+"pageid": "1",
+"label": null,
+"mediabox": "(0.0, 0.0, 612.0, 792.0)",
+"cropbox": "(0.0, 0.0, 612.0, 792.0)",
+"rotate": 0,
+"resources": [
+"ColorSpace",
+"ExtGState",
+"Font",
+"ProcSet"
+],
+"contents": [
+"<PDFStream(2): len=18360, {'Length': 18360}>"
+],
+"attrs": [
+"CropBox",
+"Parent",
+"Contents",
+"Rotate",
+"BleedBox",
+"ArtBox",
+"MediaBox",
+"TrimBox",
+"Resources",
+"Type"
+],
+"repr": "sha256:a5ee3a1ed8d4a0e79a401ffee5f8a967477424126c106bd86850af9b9322b36a"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+}
+]
+}

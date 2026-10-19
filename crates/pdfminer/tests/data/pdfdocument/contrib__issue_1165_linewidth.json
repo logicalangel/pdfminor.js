@@ -1,0 +1,409 @@
+{
+"path": "contrib/issue_1165_linewidth.pdf",
+"runs": [
+{
+"password": "",
+"variant": "orig",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRefFallback: offsets=dict_keys([1, 2, 3, 4, 5, 6, 7])>",
+"trailer": "{'Info': <PDFObjRef:2>, 'Root': <PDFObjRef:1>, 'Size': 8, 'ID': [b'\\x97\\xb1\\xec-.\\x8b\\xea;\\xc3~N\\x9d6\\\\\\xa3\\x8c', b'\\x97\\xb1\\xec-.\\x8b\\xea;\\xc3~N\\x9d6\\\\\\xa3\\x8c']}",
+"ids": [
+[
+"1",
+"(None, 61, 0)"
+],
+[
+"2",
+"(None, 143, 0)"
+],
+[
+"3",
+"(None, 343, 0)"
+],
+[
+"4",
+"(None, 452, 0)"
+],
+[
+"5",
+"(None, 756, 0)"
+],
+[
+"6",
+"(None, 967, 0)"
+],
+[
+"7",
+"(None, 1014, 0)"
+]
+]
+}
+],
+"catalog": "{'Pages': <PDFObjRef:3>, 'Type': /'Catalog'}",
+"info": "[{'CreationDate': b\"D:20250923101750+02'00\", 'Creator': b'Inkscape 1.2.2 (https://inkscape.org)', 'Producer': b'cairo 1.18.0 (https://cairographics.org)'}]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"1",
+"{'Pages': <PDFObjRef:3>, 'Type': /'Catalog'}",
+null
+],
+[
+"2",
+"{'CreationDate': b\"D:20250923101750+02'00\", 'Creator': b'Inkscape 1.2.2 (https://inkscape.org)', 'Producer': b'cairo 1.18.0 (https://cairographics.org)'}",
+null
+],
+[
+"3",
+"{'Count': 1, 'Kids': [<PDFObjRef:4>], 'Type': /'Pages'}",
+null
+],
+[
+"4",
+"{'Contents': <PDFObjRef:5>, 'Group': {'CS': /'DeviceRGB', 'I': True, 'S': /'Transparency', 'Type': /'Group'}, 'MediaBox': [0, 0, 595.275601, 841.889705], 'Parent': <PDFObjRef:3>, 'Resources': <PDFObjRef:7>, 'StructParents': 0, 'Type': /'Page'}",
+null
+],
+[
+"5",
+"<PDFStream(5): raw=156, {'Length': <PDFObjRef:6>}>",
+"70b9b495fe83ad2bc7d66d9e5e06ebd093927808842fe042a7bc128eab928ad7"
+],
+[
+"6",
+"131",
+null
+],
+[
+"7",
+"{'ExtGState': {'a0': {'CA': 1, 'ca': 1}}}",
+null
+]
+],
+"pages": [
+{
+"pageid": "4",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.275601, 841.889705)",
+"cropbox": "(0.0, 0.0, 595.275601, 841.889705)",
+"rotate": 0,
+"resources": [
+"ExtGState"
+],
+"contents": [
+"<PDFStream(5): len=156, {'Length': <PDFObjRef:6>}>"
+],
+"attrs": [
+"Contents",
+"Group",
+"MediaBox",
+"Parent",
+"Resources",
+"StructParents",
+"Type"
+],
+"repr": "<PDFPage: Resources={'ExtGState': {'a0': {'CA': 1, 'ca': 1}}}, MediaBox=(0.0, 0.0, 595.275601, 841.889705)>"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "half",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "3q",
+"open": "!PSEOF"
+},
+{
+"password": "",
+"variant": "noxref",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "shifted",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRefFallback: offsets=dict_keys([1, 2, 3, 4, 5, 6, 7])>",
+"trailer": "{'Info': <PDFObjRef:2>, 'Root': <PDFObjRef:1>, 'Size': 8, 'ID': [b'\\x97\\xb1\\xec-.\\x8b\\xea;\\xc3~N\\x9d6\\\\\\xa3\\x8c', b'\\x97\\xb1\\xec-.\\x8b\\xea;\\xc3~N\\x9d6\\\\\\xa3\\x8c']}",
+"ids": [
+[
+"1",
+"(None, 67, 0)"
+],
+[
+"2",
+"(None, 149, 0)"
+],
+[
+"3",
+"(None, 349, 0)"
+],
+[
+"4",
+"(None, 458, 0)"
+],
+[
+"5",
+"(None, 762, 0)"
+],
+[
+"6",
+"(None, 973, 0)"
+],
+[
+"7",
+"(None, 1020, 0)"
+]
+]
+}
+],
+"catalog": "{'Pages': <PDFObjRef:3>, 'Type': /'Catalog'}",
+"info": "[{'CreationDate': b\"D:20250923101750+02'00\", 'Creator': b'Inkscape 1.2.2 (https://inkscape.org)', 'Producer': b'cairo 1.18.0 (https://cairographics.org)'}]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"1",
+"{'Pages': <PDFObjRef:3>, 'Type': /'Catalog'}",
+null
+],
+[
+"2",
+"{'CreationDate': b\"D:20250923101750+02'00\", 'Creator': b'Inkscape 1.2.2 (https://inkscape.org)', 'Producer': b'cairo 1.18.0 (https://cairographics.org)'}",
+null
+],
+[
+"3",
+"{'Count': 1, 'Kids': [<PDFObjRef:4>], 'Type': /'Pages'}",
+null
+],
+[
+"4",
+"{'Contents': <PDFObjRef:5>, 'Group': {'CS': /'DeviceRGB', 'I': True, 'S': /'Transparency', 'Type': /'Group'}, 'MediaBox': [0, 0, 595.275601, 841.889705], 'Parent': <PDFObjRef:3>, 'Resources': <PDFObjRef:7>, 'StructParents': 0, 'Type': /'Page'}",
+null
+],
+[
+"5",
+"<PDFStream(5): raw=156, {'Length': <PDFObjRef:6>}>",
+"70b9b495fe83ad2bc7d66d9e5e06ebd093927808842fe042a7bc128eab928ad7"
+],
+[
+"6",
+"131",
+null
+],
+[
+"7",
+"{'ExtGState': {'a0': {'CA': 1, 'ca': 1}}}",
+null
+]
+],
+"pages": [
+{
+"pageid": "4",
+"label": null,
+"mediabox": "(0.0, 0.0, 595.275601, 841.889705)",
+"cropbox": "(0.0, 0.0, 595.275601, 841.889705)",
+"rotate": 0,
+"resources": [
+"ExtGState"
+],
+"contents": [
+"<PDFStream(5): len=156, {'Length': <PDFObjRef:6>}>"
+],
+"attrs": [
+"Contents",
+"Group",
+"MediaBox",
+"Parent",
+"Resources",
+"StructParents",
+"Type"
+],
+"repr": "<PDFPage: Resources={'ExtGState': {'a0': {'CA': 1, 'ca': 1}}}, MediaBox=(0.0, 0.0, 595.275601, 841.889705)>"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "tail",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "corrupt0",
+"open": "!PSSyntaxError"
+},
+{
+"password": "",
+"variant": "corrupt1",
+"open": "!PSSyntaxError"
+},
+{
+"password": "",
+"variant": "corrupt2",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRefFallback: offsets=dict_keys([1, 2, 3, 4, 5, 6, 7])>",
+"trailer": "{'Info': <PDFObjRef:2>, 'Root': <PDFObjRef:1>, 'Size': 8, 'ID': [b'\\x97\\xb1\\xec-.\\x8b\\xea;\\xc3~N\\x9d6\\\\\\xa3\\x8c', b'\\x97\\xb1\\xec-.\\x8b\\xea;\\xc3~N\\x9d6\\\\\\xa3\\x8c']}",
+"ids": [
+[
+"1",
+"(None, 61, 0)"
+],
+[
+"2",
+"(None, 143, 0)"
+],
+[
+"3",
+"(None, 343, 0)"
+],
+[
+"4",
+"(None, 452, 0)"
+],
+[
+"5",
+"(None, 756, 0)"
+],
+[
+"6",
+"(None, 967, 0)"
+],
+[
+"7",
+"(None, 1014, 0)"
+]
+]
+}
+],
+"catalog": "{'Pages': <PDFObjRef:3>, 'Type': /'Catalog'}",
+"info": "[{'CreationDate': b\"D:20250923101750+02'00\", 'Creator': b'Inkscape 1.2.2 (https://inkscape.org)', 'Producerg': b'cairo 1.18.0 (https://cairographics.org)'}]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"1",
+"{'Pages': <PDFObjRef:3>, 'Type': /'Catalog'}",
+null
+],
+[
+"2",
+"{'CreationDate': b\"D:20250923101750+02'00\", 'Creator': b'Inkscape 1.2.2 (https://inkscape.org)', 'Producerg': b'cairo 1.18.0 (https://cairographics.org)'}",
+null
+],
+[
+"3",
+"{'Count': 1, 'Kids': [<PDFObjRef:4>], 'Type': /'Pages'}",
+null
+],
+[
+"4",
+"{'Contents': <PDFObjRef:5>, 'Group': {'CS': /'DeviceRGB', 'I': True, 'S': /'Transparency', 'Type': /'Group'}, 'MediaBox': [0, 0, 595.275601, 841.8897, /b'\\xdf', 5], 'Parent': <PDFObjRef:3>, 'Resources': <PDFObjRef:7>, 'StructParents': 0, 'Type': /'Page'}",
+null
+],
+[
+"5",
+"<PDFStream(5): raw=156, {'Length': <PDFObjRef:6>}>",
+"7092320bdc7408fbb607947c0c8e39db36c16ed6251a3756986d6f8eea3c25c9"
+],
+[
+"6",
+"131",
+null
+],
+[
+"7",
+"{'ExtGState': {'a0': {'CA': 1, 'ca': 1}}}",
+null
+]
+],
+"pages": [
+{
+"pageid": "4",
+"label": null,
+"mediabox": "(0.0, 0.0, 612.0, 792.0)",
+"cropbox": "(0.0, 0.0, 612.0, 792.0)",
+"rotate": 0,
+"resources": [
+"ExtGState"
+],
+"contents": [
+"<PDFStream(5): len=156, {'Length': <PDFObjRef:6>}>"
+],
+"attrs": [
+"Contents",
+"Group",
+"MediaBox",
+"Parent",
+"Resources",
+"StructParents",
+"Type"
+],
+"repr": "<PDFPage: Resources={'ExtGState': {'a0': {'CA': 1, 'ca': 1}}}, MediaBox=(0.0, 0.0, 612.0, 792.0)>"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "corrupt3",
+"open": "!PDFSyntaxError"
+}
+]
+}

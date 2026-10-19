@@ -1,0 +1,680 @@
+{
+"path": "synth/page_labels.pdf",
+"runs": [
+{
+"password": "",
+"variant": "orig",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRef: offsets=dict_keys([1, 2, 3, 4, 5, 10, 11, 12])>",
+"trailer": "{'Size': 13, 'Root': <PDFObjRef:1>}",
+"ids": [
+[
+"1",
+"(None, 9, 0)"
+],
+[
+"2",
+"(None, 77, 0)"
+],
+[
+"3",
+"(None, 146, 0)"
+],
+[
+"4",
+"(None, 217, 0)"
+],
+[
+"5",
+"(None, 288, 0)"
+],
+[
+"10",
+"(None, 359, 0)"
+],
+[
+"11",
+"(None, 403, 0)"
+],
+[
+"12",
+"(None, 475, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /'Catalog', 'Pages': <PDFObjRef:2>, 'PageLabels': <PDFObjRef:10>}",
+"info": "[]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"1",
+"{'Type': /'Catalog', 'Pages': <PDFObjRef:2>, 'PageLabels': <PDFObjRef:10>}",
+null
+],
+[
+"2",
+"{'Type': /'Pages', 'Kids': [<PDFObjRef:3>, <PDFObjRef:4>, <PDFObjRef:5>], 'Count': 3}",
+null
+],
+[
+"3",
+"{'Type': /'Page', 'Parent': <PDFObjRef:2>, 'MediaBox': [0, 0, 612, 792]}",
+null
+],
+[
+"4",
+"{'Type': /'Page', 'Parent': <PDFObjRef:2>, 'MediaBox': [0, 0, 612, 792]}",
+null
+],
+[
+"5",
+"{'Type': /'Page', 'Parent': <PDFObjRef:2>, 'MediaBox': [0, 0, 612, 792]}",
+null
+],
+[
+"10",
+"{'Kids': [<PDFObjRef:11>, <PDFObjRef:12>]}",
+null
+],
+[
+"11",
+"{'Nums': [2, {'S': /'D', 'St': 7, 'P': b'A-'}, 0, {'S': /'r'}]}",
+null
+],
+[
+"12",
+"{'Nums': [4, {'S': /'A', 'St': 25}, 6, {'S': /'a'}, 7, {'S': /'R', 'St': 3999}, 8, {'S': /'X'}, 9, {}, 10, {'S': /'D', 'P': b'\\xfe\\xff\\x00A\\x00B'}, 11, {'S': /'r', 'St': 0}]}",
+null
+]
+],
+"pages": [
+{
+"pageid": "3",
+"label": "i",
+"mediabox": "(0.0, 0.0, 612.0, 792.0)",
+"cropbox": "(0.0, 0.0, 612.0, 792.0)",
+"rotate": 0,
+"resources": [],
+"contents": [],
+"attrs": [
+"Type",
+"Parent",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={}, MediaBox=(0.0, 0.0, 612.0, 792.0)>"
+},
+{
+"pageid": "4",
+"label": "ii",
+"mediabox": "(0.0, 0.0, 612.0, 792.0)",
+"cropbox": "(0.0, 0.0, 612.0, 792.0)",
+"rotate": 0,
+"resources": [],
+"contents": [],
+"attrs": [
+"Type",
+"Parent",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={}, MediaBox=(0.0, 0.0, 612.0, 792.0)>"
+},
+{
+"pageid": "5",
+"label": "A-7",
+"mediabox": "(0.0, 0.0, 612.0, 792.0)",
+"cropbox": "(0.0, 0.0, 612.0, 792.0)",
+"rotate": 0,
+"resources": [],
+"contents": [],
+"attrs": [
+"Type",
+"Parent",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={}, MediaBox=(0.0, 0.0, 612.0, 792.0)>"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"i",
+"ii",
+"A-7",
+"A-8",
+"Y",
+"Z",
+"a",
+"MMMCMXCIX",
+"",
+"",
+"AB1",
+"!AssertionError"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "half",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "3q",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "noxref",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "shifted",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRefFallback: offsets=dict_keys([1, 2, 3, 4, 5, 10, 11, 12])>",
+"trailer": "{'Size': 13, 'Root': <PDFObjRef:1>}",
+"ids": [
+[
+"1",
+"(None, 15, 0)"
+],
+[
+"2",
+"(None, 83, 0)"
+],
+[
+"3",
+"(None, 152, 0)"
+],
+[
+"4",
+"(None, 223, 0)"
+],
+[
+"5",
+"(None, 294, 0)"
+],
+[
+"10",
+"(None, 365, 0)"
+],
+[
+"11",
+"(None, 409, 0)"
+],
+[
+"12",
+"(None, 481, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /'Catalog', 'Pages': <PDFObjRef:2>, 'PageLabels': <PDFObjRef:10>}",
+"info": "[]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"1",
+"{'Type': /'Catalog', 'Pages': <PDFObjRef:2>, 'PageLabels': <PDFObjRef:10>}",
+null
+],
+[
+"2",
+"{'Type': /'Pages', 'Kids': [<PDFObjRef:3>, <PDFObjRef:4>, <PDFObjRef:5>], 'Count': 3}",
+null
+],
+[
+"3",
+"{'Type': /'Page', 'Parent': <PDFObjRef:2>, 'MediaBox': [0, 0, 612, 792]}",
+null
+],
+[
+"4",
+"{'Type': /'Page', 'Parent': <PDFObjRef:2>, 'MediaBox': [0, 0, 612, 792]}",
+null
+],
+[
+"5",
+"{'Type': /'Page', 'Parent': <PDFObjRef:2>, 'MediaBox': [0, 0, 612, 792]}",
+null
+],
+[
+"10",
+"{'Kids': [<PDFObjRef:11>, <PDFObjRef:12>]}",
+null
+],
+[
+"11",
+"{'Nums': [2, {'S': /'D', 'St': 7, 'P': b'A-'}, 0, {'S': /'r'}]}",
+null
+],
+[
+"12",
+"{'Nums': [4, {'S': /'A', 'St': 25}, 6, {'S': /'a'}, 7, {'S': /'R', 'St': 3999}, 8, {'S': /'X'}, 9, {}, 10, {'S': /'D', 'P': b'\\xfe\\xff\\x00A\\x00B'}, 11, {'S': /'r', 'St': 0}]}",
+null
+]
+],
+"pages": [
+{
+"pageid": "3",
+"label": "i",
+"mediabox": "(0.0, 0.0, 612.0, 792.0)",
+"cropbox": "(0.0, 0.0, 612.0, 792.0)",
+"rotate": 0,
+"resources": [],
+"contents": [],
+"attrs": [
+"Type",
+"Parent",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={}, MediaBox=(0.0, 0.0, 612.0, 792.0)>"
+},
+{
+"pageid": "4",
+"label": "ii",
+"mediabox": "(0.0, 0.0, 612.0, 792.0)",
+"cropbox": "(0.0, 0.0, 612.0, 792.0)",
+"rotate": 0,
+"resources": [],
+"contents": [],
+"attrs": [
+"Type",
+"Parent",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={}, MediaBox=(0.0, 0.0, 612.0, 792.0)>"
+},
+{
+"pageid": "5",
+"label": "A-7",
+"mediabox": "(0.0, 0.0, 612.0, 792.0)",
+"cropbox": "(0.0, 0.0, 612.0, 792.0)",
+"rotate": 0,
+"resources": [],
+"contents": [],
+"attrs": [
+"Type",
+"Parent",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={}, MediaBox=(0.0, 0.0, 612.0, 792.0)>"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"i",
+"ii",
+"A-7",
+"A-8",
+"Y",
+"Z",
+"a",
+"MMMCMXCIX",
+"",
+"",
+"AB1",
+"!AssertionError"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "tail",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "corrupt0",
+"open": "!PSSyntaxError"
+},
+{
+"password": "",
+"variant": "corrupt1",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "corrupt2",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRefFallback: offsets=dict_keys([1, 2, 3, 4, 5, 10, 11, 12])>",
+"trailer": "{'Size': 13, 'Root': <PDFObjRef:1>}",
+"ids": [
+[
+"1",
+"(None, 9, 0)"
+],
+[
+"2",
+"(None, 77, 0)"
+],
+[
+"3",
+"(None, 146, 0)"
+],
+[
+"4",
+"(None, 217, 0)"
+],
+[
+"5",
+"(None, 288, 0)"
+],
+[
+"10",
+"(None, 359, 0)"
+],
+[
+"11",
+"(None, 403, 0)"
+],
+[
+"12",
+"(None, 475, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /'Catalog', 'Pages': <PDFObjRef:2>, 'PageLabels': <PDFObjRef:10>}",
+"info": "[]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"1",
+"{'Type': /'Catalog', 'Pages': <PDFObjRef:2>, 'PageLabels': <PDFObjRef:10>}",
+null
+],
+[
+"2",
+"{'Type': /'Pages', 'Kids': [<PDFObjRef:3>, <PDFObjRef:4>, <PDFObjRef:5>], 'Count': 3}",
+null
+],
+[
+"3",
+"<PDFObjRef:2>",
+null
+],
+[
+"4",
+"{'Type': /'Page', 'Parent': <PDFObjRef:2>, 'MediaBox': [0, 0, 612, 792]}",
+null
+],
+[
+"5",
+"{'Type': /'Page', 'Parent': <PDFObjRef:2>, 'MediaBox': [0, 0, 612, 792]}",
+null
+],
+[
+"10",
+"{'Kids': [11, 0, /b'\\xa5', <PDFObjRef:12>]}",
+null
+],
+[
+"11",
+"{'Nums': [2, {'S': /'D', 'St': 7, 'P': b'A-'}, 0, {'S': /'r'}]}",
+null
+],
+[
+"12",
+"{'Nums': [4, {'S': /'A', 'St': 25}, 6, {'S': /'a'}, 7, {'S': /'R', 'St': 3999}, 8, {'S': /'X'}, 9, {}, 10, {'S': /'D', 'P': b'\\xfe\\xff\\x00A\\x00B'}, 11, {'S': /'r', 'St': 0}]}",
+null
+]
+],
+"pages": [
+{
+"pageid": "4",
+"label": "",
+"mediabox": "(0.0, 0.0, 612.0, 792.0)",
+"cropbox": "(0.0, 0.0, 612.0, 792.0)",
+"rotate": 0,
+"resources": [],
+"contents": [],
+"attrs": [
+"Type",
+"Parent",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={}, MediaBox=(0.0, 0.0, 612.0, 792.0)>"
+},
+{
+"pageid": "5",
+"label": "",
+"mediabox": "(0.0, 0.0, 612.0, 792.0)",
+"cropbox": "(0.0, 0.0, 612.0, 792.0)",
+"rotate": 0,
+"resources": [],
+"contents": [],
+"attrs": [
+"Type",
+"Parent",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={}, MediaBox=(0.0, 0.0, 612.0, 792.0)>"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"",
+"",
+"",
+"",
+"Y",
+"Z",
+"a",
+"MMMCMXCIX",
+"",
+"",
+"AB1",
+"!AssertionError"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "corrupt3",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRef: offsets=dict_keys([1, 2, 3, 4, 5, 10, 11, 12])>",
+"trailer": "{'Size': 13, 'Root': <PDFObjRef:1>}",
+"ids": [
+[
+"1",
+"(None, 9, 0)"
+],
+[
+"2",
+"(None, 77, 0)"
+],
+[
+"3",
+"(None, 146, 0)"
+],
+[
+"4",
+"(None, 217, 0)"
+],
+[
+"5",
+"(None, 288, 0)"
+],
+[
+"10",
+"(None, 359, 0)"
+],
+[
+"11",
+"(None, 403, 0)"
+],
+[
+"12",
+"(None, 475, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /'Catalog', 'Pages': <PDFObjRef:2>, 'PageLabels': <PDFObjRef:10>}",
+"info": "[]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"1",
+"{'Type': /'Catalog', 'Pages': <PDFObjRef:2>, 'PageLabels': <PDFObjRef:10>}",
+null
+],
+[
+"2",
+"{'Typ\\x1e': /'Pages', 'Kids': [<PDFObjRef:3>, <PDFObjRef:4>, <PDFObjRef:5>], 'Count': 3}",
+null
+],
+[
+"3",
+"{'Type': /'Page', 'Parent': <PDFObjRef:2>, 'MediaBox': [0, 0, 612, 792]}",
+null
+],
+[
+"4",
+"{'Type': /'Page', 'Parent': <PDFObjRef:2>, 'MediaBox|': [0, 0, 612, 792]}",
+null
+],
+[
+"5",
+"{'Type': /'Page', 'Parent': <PDFObjRef:2>, \"b'\\\\xadediaBox'\": [0, 0, 612, 792]}",
+null
+],
+[
+"10",
+"{'Kids': [<PDFObjRef:11>, <PDFObjRef:12>]}",
+null
+],
+[
+"11",
+"{'Nums': [2, {'S': /'D', 'St': 7, 'P': b'A-'}, 0, {'S': /'r'}]}",
+null
+],
+[
+"12",
+"{'Nums': [4, {'S': /'A', 'St': 25}, 6, {'S': /'a'}, 7, {'S': /'R', 'SL': 3, \"/b'\\\\x06'\": 99}, 8, {'S': /'X'}, 9, {}, 10, {'S': /'D', 'P': b'\\xfe\\xff\\x00A\\x00B'}, 11, {'S': /'r', 'St': 0}]}",
+null
+]
+],
+"pages": [
+{
+"pageid": "3",
+"label": "i",
+"mediabox": "(0.0, 0.0, 612.0, 792.0)",
+"cropbox": "(0.0, 0.0, 612.0, 792.0)",
+"rotate": 0,
+"resources": [],
+"contents": [],
+"attrs": [
+"Type",
+"Parent",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={}, MediaBox=(0.0, 0.0, 612.0, 792.0)>"
+},
+{
+"pageid": "4",
+"label": "ii",
+"mediabox": "(0.0, 0.0, 612.0, 792.0)",
+"cropbox": "(0.0, 0.0, 612.0, 792.0)",
+"rotate": 0,
+"resources": [],
+"contents": [],
+"attrs": [
+"Type",
+"Parent",
+"MediaBox|"
+],
+"repr": "<PDFPage: Resources={}, MediaBox=(0.0, 0.0, 612.0, 792.0)>"
+},
+{
+"pageid": "5",
+"label": "A-7",
+"mediabox": "(0.0, 0.0, 612.0, 792.0)",
+"cropbox": "(0.0, 0.0, 612.0, 792.0)",
+"rotate": 0,
+"resources": [],
+"contents": [],
+"attrs": [
+"Type",
+"Parent",
+"b'\\xadediaBox'"
+],
+"repr": "<PDFPage: Resources={}, MediaBox=(0.0, 0.0, 612.0, 792.0)>"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"i",
+"ii",
+"A-7",
+"A-8",
+"Y",
+"Z",
+"a",
+"I",
+"",
+"",
+"AB1",
+"!AssertionError"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+}
+]
+}

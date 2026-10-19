@@ -1,0 +1,55 @@
+{
+"path": "synth/enc_v4_bad_cf.pdf",
+"runs": [
+{
+"password": "",
+"variant": "orig",
+"open": "!PDFEncryptionError"
+},
+{
+"password": "",
+"variant": "half",
+"open": "!PSEOF"
+},
+{
+"password": "",
+"variant": "3q",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "noxref",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "shifted",
+"open": "!PDFEncryptionError"
+},
+{
+"password": "",
+"variant": "tail",
+"open": "!PDFException"
+},
+{
+"password": "",
+"variant": "corrupt0",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "corrupt1",
+"open": "!PSSyntaxError"
+},
+{
+"password": "",
+"variant": "corrupt2",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "corrupt3",
+"open": "!PDFEncryptionError"
+}
+]
+}

@@ -1,0 +1,398 @@
+{
+"path": "synth/length_ref.pdf",
+"runs": [
+{
+"password": "",
+"variant": "orig",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRef: offsets=dict_keys([1, 2, 3, 4, 5])>",
+"trailer": "{'Size': 6, 'Root': <PDFObjRef:1>, 'Info': {'Title': b't'}}",
+"ids": [
+[
+"1",
+"(None, 9, 0)"
+],
+[
+"2",
+"(None, 58, 0)"
+],
+[
+"3",
+"(None, 115, 0)"
+],
+[
+"4",
+"(None, 190, 0)"
+],
+[
+"5",
+"(None, 266, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /'Catalog', 'Pages': <PDFObjRef:2>}",
+"info": "[{'Title': b't'}]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"1",
+"{'Type': /'Catalog', 'Pages': <PDFObjRef:2>}",
+null
+],
+[
+"2",
+"{'Type': /'Pages', 'Kids': [<PDFObjRef:3>], 'Count': 1}",
+null
+],
+[
+"3",
+"{'Type': /'Page', 'Parent': <PDFObjRef:2>, 'Contents': <PDFObjRef:4>, 'Rotate': -90}",
+null
+],
+[
+"4",
+"<PDFStream(4): raw=23, {'Length': <PDFObjRef:5>}>",
+"8ba16e091d85b0a523e53bfaba3bb253fd9f074a70dccb60197bc753c45f9c40"
+],
+[
+"5",
+"23",
+null
+]
+],
+"pages": [
+{
+"pageid": "3",
+"label": null,
+"mediabox": "(0.0, 0.0, 612.0, 792.0)",
+"cropbox": "(0.0, 0.0, 612.0, 792.0)",
+"rotate": 270,
+"resources": [],
+"contents": [
+"<PDFStream(4): len=23, {'Length': <PDFObjRef:5>}>"
+],
+"attrs": [
+"Type",
+"Parent",
+"Contents",
+"Rotate"
+],
+"repr": "<PDFPage: Resources={}, MediaBox=(0.0, 0.0, 612.0, 792.0)>"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "half",
+"open": "!PSEOF"
+},
+{
+"password": "",
+"variant": "3q",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "noxref",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "shifted",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRefFallback: offsets=dict_keys([1, 2, 3, 4, 5])>",
+"trailer": "{'Size': 6, 'Root': <PDFObjRef:1>, 'Info': {'Title': b't'}}",
+"ids": [
+[
+"1",
+"(None, 15, 0)"
+],
+[
+"2",
+"(None, 64, 0)"
+],
+[
+"3",
+"(None, 121, 0)"
+],
+[
+"4",
+"(None, 196, 0)"
+],
+[
+"5",
+"(None, 272, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /'Catalog', 'Pages': <PDFObjRef:2>}",
+"info": "[{'Title': b't'}]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"1",
+"{'Type': /'Catalog', 'Pages': <PDFObjRef:2>}",
+null
+],
+[
+"2",
+"{'Type': /'Pages', 'Kids': [<PDFObjRef:3>], 'Count': 1}",
+null
+],
+[
+"3",
+"{'Type': /'Page', 'Parent': <PDFObjRef:2>, 'Contents': <PDFObjRef:4>, 'Rotate': -90}",
+null
+],
+[
+"4",
+"<PDFStream(4): raw=24, {'Length': <PDFObjRef:5>}>",
+"b7a2e26355cb36d8c27a5e3bed7ed71b8455f8f94e113e73b706e449bdb14f55"
+],
+[
+"5",
+"23",
+null
+]
+],
+"pages": [
+{
+"pageid": "3",
+"label": null,
+"mediabox": "(0.0, 0.0, 612.0, 792.0)",
+"cropbox": "(0.0, 0.0, 612.0, 792.0)",
+"rotate": 270,
+"resources": [],
+"contents": [
+"<PDFStream(4): len=24, {'Length': <PDFObjRef:5>}>"
+],
+"attrs": [
+"Type",
+"Parent",
+"Contents",
+"Rotate"
+],
+"repr": "<PDFPage: Resources={}, MediaBox=(0.0, 0.0, 612.0, 792.0)>"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "tail",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "corrupt0",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "corrupt1",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRefFallback: offsets=dict_keys([1, 2, 4, 5])>",
+"trailer": "{'Size': 6, 'Root': <PDFObjRef:1>, 'Info': {'Title': b't'}}",
+"ids": [
+[
+"1",
+"(None, 9, 0)"
+],
+[
+"2",
+"(None, 58, 0)"
+],
+[
+"4",
+"(None, 190, 0)"
+],
+[
+"5",
+"(None, 266, 0)"
+]
+]
+}
+],
+"catalog": "{'-ype': /'Catalog'}",
+"info": "[{'Title': b't'}]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"1",
+"{'-ype': /'Catalog'}",
+null
+],
+[
+"2",
+"{'Type': /'Pages', 'Kids': [<PDFObjRef:3>], 'Count': 1}",
+null
+],
+[
+"4",
+"<PDFStream(4): raw=24, {'Length': <PDFObjRef:5>}>",
+"600e2d7eed6a524d8421e3a87528f18e1d714f4aa1582ffb7491913da7a780a6"
+],
+[
+"5",
+"23",
+null
+]
+],
+"pages": [],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "corrupt2",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRef: offsets=dict_keys([1, 2, 3, 5])>",
+"trailer": "{'Size': 6, 'Root': <PDFObjRef:1>, 'Info': {'Title': /b'\\xa8', \"/b't'\": /b')'}}",
+"ids": [
+[
+"1",
+"(None, 9, 0)"
+],
+[
+"2",
+"(None, 58, 0)"
+],
+[
+"3",
+"(None, 115, 0)"
+],
+[
+"5",
+"(None, 266, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /'Catalog', 'Pages': <PDFObjRef:2>}",
+"info": "[{'Title': /b'\\xa8', \"/b't'\": /b')'}]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"1",
+"{'Type': /'Catalog', 'Pages': <PDFObjRef:2>}",
+null
+],
+[
+"2",
+"{'Type': /'Pages', 'Kids': [<PDFObjRef:3>], 'Count': 1}",
+null
+],
+[
+"3",
+"{'Type': /'Page', 'Parent': <PDFObjRef:2>, 'Contents': <PDFObjRef:4>, \"b'Rota\\\\xe7e'\": -90}",
+null
+],
+[
+"5",
+"23",
+null
+]
+],
+"pages": [
+{
+"pageid": "3",
+"label": null,
+"mediabox": "(0.0, 0.0, 612.0, 792.0)",
+"cropbox": "(0.0, 0.0, 612.0, 792.0)",
+"rotate": 0,
+"resources": [],
+"contents": [
+"None"
+],
+"attrs": [
+"Type",
+"Parent",
+"Contents",
+"b'Rota\\xe7e'"
+],
+"repr": "<PDFPage: Resources={}, MediaBox=(0.0, 0.0, 612.0, 792.0)>"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "corrupt3",
+"open": "!AssertionError"
+}
+]
+}

@@ -1,0 +1,1141 @@
+{
+"path": "scancode/patchelf.pdf",
+"runs": [
+{
+"password": "",
+"variant": "orig",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRefFallback: offsets=dict_keys([3, 4, 2, 6, 7, 8, 9, 10, 11, 12, 5, 1, 13, 14])>",
+"trailer": "{'Size': 15, 'Root': <PDFObjRef:14>, 'Info': <PDFObjRef:13>}",
+"ids": [
+[
+"3",
+"(None, 20, 0)"
+],
+[
+"4",
+"(None, 11182, 0)"
+],
+[
+"2",
+"(None, 11205, 0)"
+],
+[
+"6",
+"(None, 11342, 0)"
+],
+[
+"7",
+"(None, 11544, 0)"
+],
+[
+"8",
+"(None, 58934, 0)"
+],
+[
+"9",
+"(None, 58958, 0)"
+],
+[
+"10",
+"(None, 59824, 0)"
+],
+[
+"11",
+"(None, 59847, 0)"
+],
+[
+"12",
+"(None, 60083, 0)"
+],
+[
+"5",
+"(None, 60506, 0)"
+],
+[
+"1",
+"(None, 60661, 0)"
+],
+[
+"13",
+"(None, 60726, 0)"
+],
+[
+"14",
+"(None, 60854, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /'Catalog', 'Pages': <PDFObjRef:1>}",
+"info": "[{'Creator': b'cairo 1.8.10 (http://cairographics.org)', 'Producer': b'cairo 1.8.10 (http://cairographics.org)'}]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"3",
+"<PDFStream(3): raw=11086, {'Length': <PDFObjRef:4>, 'Filter': /'FlateDecode'}>",
+"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+],
+[
+"4",
+"6332",
+null
+],
+[
+"2",
+"{'ExtGState': {'a0': {'CA': 1, 'ca': 1}, 'a1': {'CA': 0, 'ca': 0}}, 'Font': {'f-0-0': <PDFObjRef:5>}}",
+null
+],
+[
+"6",
+"{'Type': /'Page', 'Parent': <PDFObjRef:1>, 'MediaBox': [0, 0, 3146, 1529], 'Contents': <PDFObjRef:3>, 'Group': {'Type': /'Group', 'S': /'Transparency', 'CS': /'DeviceRGB'}, 'Resources': <PDFObjRef:2>}",
+null
+],
+[
+"7",
+"<PDFStream(7): raw=47296, {'Length': <PDFObjRef:8>, 'Filter': /'FlateDecode', 'Length1': 36392}>",
+"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+],
+[
+"8",
+"26142",
+null
+],
+[
+"9",
+"<PDFStream(9): raw=789, {'Length': <PDFObjRef:10>, 'Filter': /'FlateDecode'}>",
+"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+],
+[
+"10",
+"435",
+null
+],
+[
+"11",
+"{'Type': /'FontDescriptor', 'FontName': /'TimesNewRoman', 'Flags': 4, 'FontBBox': [-568, -306, 2000, 1006], 'ItalicAngle': 0, 'Ascent': 891, 'Descent': -216, 'CapHeight': 1006, 'StemV': 80, 'StemH': 80, 'FontFile2': <PDFObjRef:7>}",
+null
+],
+[
+"12",
+"sha256:488be256810ac677d1b5247d7ad91888de9bbf6875faef176e2441679d90206c",
+null
+],
+[
+"5",
+"{'Type': /'Font', 'Subtype': /'Type0', 'BaseFont': /'TimesNewRoman', 'Encoding': /'Identity-H', 'DescendantFonts': [<PDFObjRef:12>], 'ToUnicode': <PDFObjRef:9>}",
+null
+],
+[
+"1",
+"{'Type': /'Pages', 'Kids': [<PDFObjRef:6>], 'Count': 1}",
+null
+],
+[
+"13",
+"{'Creator': b'cairo 1.8.10 (http://cairographics.org)', 'Producer': b'cairo 1.8.10 (http://cairographics.org)'}",
+null
+],
+[
+"14",
+"{'Type': /'Catalog', 'Pages': <PDFObjRef:1>}",
+null
+]
+],
+"pages": [
+{
+"pageid": "6",
+"label": null,
+"mediabox": "(0.0, 0.0, 3146.0, 1529.0)",
+"cropbox": "(0.0, 0.0, 3146.0, 1529.0)",
+"rotate": 0,
+"resources": [
+"ExtGState",
+"Font"
+],
+"contents": [
+"<PDFStream(3): len=0, {'Length': <PDFObjRef:4>, 'Filter': /'FlateDecode'}>"
+],
+"attrs": [
+"Type",
+"Parent",
+"MediaBox",
+"Contents",
+"Group",
+"Resources"
+],
+"repr": "<PDFPage: Resources={'ExtGState': {'a0': {'CA': 1, 'ca': 1}, 'a1': {'CA': 0, 'ca': 0}}, 'Font': {'f-0-0': <PDFObjRef:5>}}, MediaBox=(0.0, 0.0, 3146.0, 1529.0)>"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "half",
+"open": "!PSEOF"
+},
+{
+"password": "",
+"variant": "3q",
+"open": "!PSEOF"
+},
+{
+"password": "",
+"variant": "noxref",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "shifted",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRefFallback: offsets=dict_keys([3, 4, 2, 6, 7, 8, 9, 10, 11, 12, 5, 1, 13, 14])>",
+"trailer": "{'Size': 15, 'Root': <PDFObjRef:14>, 'Info': <PDFObjRef:13>}",
+"ids": [
+[
+"3",
+"(None, 26, 0)"
+],
+[
+"4",
+"(None, 11188, 0)"
+],
+[
+"2",
+"(None, 11211, 0)"
+],
+[
+"6",
+"(None, 11348, 0)"
+],
+[
+"7",
+"(None, 11550, 0)"
+],
+[
+"8",
+"(None, 58940, 0)"
+],
+[
+"9",
+"(None, 58964, 0)"
+],
+[
+"10",
+"(None, 59830, 0)"
+],
+[
+"11",
+"(None, 59853, 0)"
+],
+[
+"12",
+"(None, 60089, 0)"
+],
+[
+"5",
+"(None, 60512, 0)"
+],
+[
+"1",
+"(None, 60667, 0)"
+],
+[
+"13",
+"(None, 60732, 0)"
+],
+[
+"14",
+"(None, 60860, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /'Catalog', 'Pages': <PDFObjRef:1>}",
+"info": "[{'Creator': b'cairo 1.8.10 (http://cairographics.org)', 'Producer': b'cairo 1.8.10 (http://cairographics.org)'}]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"3",
+"<PDFStream(3): raw=11086, {'Length': <PDFObjRef:4>, 'Filter': /'FlateDecode'}>",
+"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+],
+[
+"4",
+"6332",
+null
+],
+[
+"2",
+"{'ExtGState': {'a0': {'CA': 1, 'ca': 1}, 'a1': {'CA': 0, 'ca': 0}}, 'Font': {'f-0-0': <PDFObjRef:5>}}",
+null
+],
+[
+"6",
+"{'Type': /'Page', 'Parent': <PDFObjRef:1>, 'MediaBox': [0, 0, 3146, 1529], 'Contents': <PDFObjRef:3>, 'Group': {'Type': /'Group', 'S': /'Transparency', 'CS': /'DeviceRGB'}, 'Resources': <PDFObjRef:2>}",
+null
+],
+[
+"7",
+"<PDFStream(7): raw=47296, {'Length': <PDFObjRef:8>, 'Filter': /'FlateDecode', 'Length1': 36392}>",
+"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+],
+[
+"8",
+"26142",
+null
+],
+[
+"9",
+"<PDFStream(9): raw=789, {'Length': <PDFObjRef:10>, 'Filter': /'FlateDecode'}>",
+"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+],
+[
+"10",
+"435",
+null
+],
+[
+"11",
+"{'Type': /'FontDescriptor', 'FontName': /'TimesNewRoman', 'Flags': 4, 'FontBBox': [-568, -306, 2000, 1006], 'ItalicAngle': 0, 'Ascent': 891, 'Descent': -216, 'CapHeight': 1006, 'StemV': 80, 'StemH': 80, 'FontFile2': <PDFObjRef:7>}",
+null
+],
+[
+"12",
+"sha256:488be256810ac677d1b5247d7ad91888de9bbf6875faef176e2441679d90206c",
+null
+],
+[
+"5",
+"{'Type': /'Font', 'Subtype': /'Type0', 'BaseFont': /'TimesNewRoman', 'Encoding': /'Identity-H', 'DescendantFonts': [<PDFObjRef:12>], 'ToUnicode': <PDFObjRef:9>}",
+null
+],
+[
+"1",
+"{'Type': /'Pages', 'Kids': [<PDFObjRef:6>], 'Count': 1}",
+null
+],
+[
+"13",
+"{'Creator': b'cairo 1.8.10 (http://cairographics.org)', 'Producer': b'cairo 1.8.10 (http://cairographics.org)'}",
+null
+],
+[
+"14",
+"{'Type': /'Catalog', 'Pages': <PDFObjRef:1>}",
+null
+]
+],
+"pages": [
+{
+"pageid": "6",
+"label": null,
+"mediabox": "(0.0, 0.0, 3146.0, 1529.0)",
+"cropbox": "(0.0, 0.0, 3146.0, 1529.0)",
+"rotate": 0,
+"resources": [
+"ExtGState",
+"Font"
+],
+"contents": [
+"<PDFStream(3): len=0, {'Length': <PDFObjRef:4>, 'Filter': /'FlateDecode'}>"
+],
+"attrs": [
+"Type",
+"Parent",
+"MediaBox",
+"Contents",
+"Group",
+"Resources"
+],
+"repr": "<PDFPage: Resources={'ExtGState': {'a0': {'CA': 1, 'ca': 1}, 'a1': {'CA': 0, 'ca': 0}}, 'Font': {'f-0-0': <PDFObjRef:5>}}, MediaBox=(0.0, 0.0, 3146.0, 1529.0)>"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "tail",
+"open": "!PDFException"
+},
+{
+"password": "",
+"variant": "corrupt0",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRefFallback: offsets=dict_keys([3, 4, 2, 6, 7, 8, 9, 10, 11, 12, 5, 1, 13, 14])>",
+"trailer": "{'Size': 15, 'Root': <PDFObjRef:14>, 'Info': <PDFObjRef:13>}",
+"ids": [
+[
+"3",
+"(None, 20, 0)"
+],
+[
+"4",
+"(None, 11182, 0)"
+],
+[
+"2",
+"(None, 11205, 0)"
+],
+[
+"6",
+"(None, 11342, 0)"
+],
+[
+"7",
+"(None, 11544, 0)"
+],
+[
+"8",
+"(None, 58934, 0)"
+],
+[
+"9",
+"(None, 58958, 0)"
+],
+[
+"10",
+"(None, 59824, 0)"
+],
+[
+"11",
+"(None, 59847, 0)"
+],
+[
+"12",
+"(None, 60083, 0)"
+],
+[
+"5",
+"(None, 60506, 0)"
+],
+[
+"1",
+"(None, 60661, 0)"
+],
+[
+"13",
+"(None, 60726, 0)"
+],
+[
+"14",
+"(None, 60854, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /'Catalog', 'Pages': <PDFObjRef:1>}",
+"info": "[{'Creator': b'cairo 1.8.10 (http://cairographics.org)', 'Producer': b'cairo 1.8.10 (http://cairographics.org)'}]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"3",
+"<PDFStream(3): raw=11086, {'Length': <PDFObjRef:4>, 'Filter': /'FlateDecode'}>",
+"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+],
+[
+"4",
+"6332",
+null
+],
+[
+"2",
+"{'ExtGState': {'a0': {'CA': 1, 'ca': 1}, 'a1': {'CA': 0, 'ca': 0}}, 'Font': {'f-0-0': <PDFObjRef:5>}}",
+null
+],
+[
+"6",
+"{'Type': /'Page', 'Parent': <PDFObjRef:1>, 'MediaBox': [0, 0, 3146, 1529], 'Contents': <PDFObjRef:3>, 'Group': {'Type': /'Group', 'S': /'Transparency', 'CS': /'DeviceRGB'}, 'Resources': <PDFObjRef:2>}",
+null
+],
+[
+"7",
+"<PDFStream(7): raw=47296, {'Length': <PDFObjRef:8>, 'Filter': /'FlateDecode', 'Length1': 36392}>",
+"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+],
+[
+"8",
+"26142",
+null
+],
+[
+"9",
+"<PDFStream(9): raw=789, {'Length': <PDFObjRef:10>, 'Filter': /'FlateDecode'}>",
+"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+],
+[
+"10",
+"435",
+null
+],
+[
+"11",
+"{'Type': /'FontDescriptor', 'FontName': /'TimesNewRoman', 'Flags': 4, 'FontBBox': [-568, -306, 2000, 1006], 'ItalicAngle': 0, 'Ascent': 891, 'Descent': -216, 'CapHeight': 1006, 'StemV': 80, 'StemH': 80, 'FontFile2': <PDFObjRef:7>}",
+null
+],
+[
+"12",
+"sha256:488be256810ac677d1b5247d7ad91888de9bbf6875faef176e2441679d90206c",
+null
+],
+[
+"5",
+"{'Type': /'Font', 'Subtype': /'Type0', 'BaseFont': /'TimesNewRoman', 'Encoding': /'Identity-H', 'DescendantFonts': [<PDFObjRef:12>], 'ToUnicode': <PDFObjRef:9>}",
+null
+],
+[
+"1",
+"{'Type': /'Pages', 'Kids': [<PDFObjRef:6>], 'Count': 1}",
+null
+],
+[
+"13",
+"{'Creator': b'cairo 1.8.10 (http://cairographics.org)', 'Producer': b'cairo 1.8.10 (http://cairographics.org)'}",
+null
+],
+[
+"14",
+"{'Type': /'Catalog', 'Pages': <PDFObjRef:1>}",
+null
+]
+],
+"pages": [
+{
+"pageid": "6",
+"label": null,
+"mediabox": "(0.0, 0.0, 3146.0, 1529.0)",
+"cropbox": "(0.0, 0.0, 3146.0, 1529.0)",
+"rotate": 0,
+"resources": [
+"ExtGState",
+"Font"
+],
+"contents": [
+"<PDFStream(3): len=0, {'Length': <PDFObjRef:4>, 'Filter': /'FlateDecode'}>"
+],
+"attrs": [
+"Type",
+"Parent",
+"MediaBox",
+"Contents",
+"Group",
+"Resources"
+],
+"repr": "<PDFPage: Resources={'ExtGState': {'a0': {'CA': 1, 'ca': 1}, 'a1': {'CA': 0, 'ca': 0}}, 'Font': {'f-0-0': <PDFObjRef:5>}}, MediaBox=(0.0, 0.0, 3146.0, 1529.0)>"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "corrupt1",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRefFallback: offsets=dict_keys([3, 4, 2, 6, 7, 8, 9, 10, 11, 12, 5, 1, 13, 14])>",
+"trailer": "{'Size': 15, 'Root': <PDFObjRef:14>, 'Info': <PDFObjRef:13>}",
+"ids": [
+[
+"3",
+"(None, 20, 0)"
+],
+[
+"4",
+"(None, 11182, 0)"
+],
+[
+"2",
+"(None, 11205, 0)"
+],
+[
+"6",
+"(None, 11342, 0)"
+],
+[
+"7",
+"(None, 11544, 0)"
+],
+[
+"8",
+"(None, 58934, 0)"
+],
+[
+"9",
+"(None, 58958, 0)"
+],
+[
+"10",
+"(None, 59824, 0)"
+],
+[
+"11",
+"(None, 59847, 0)"
+],
+[
+"12",
+"(None, 60083, 0)"
+],
+[
+"5",
+"(None, 60506, 0)"
+],
+[
+"1",
+"(None, 60661, 0)"
+],
+[
+"13",
+"(None, 60726, 0)"
+],
+[
+"14",
+"(None, 60854, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /'Catalog', 'Pages': <PDFObjRef:1>}",
+"info": "[{'Creator': b'cairo 1.8.10 (http://cairographics.org)', 'Producer': b'cairo 1.8.10 (http://cairographics.org)'}]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"3",
+"<PDFStream(3): raw=11086, {'Length': <PDFObjRef:4>, 'Filter': /'FlateDecode'}>",
+"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+],
+[
+"4",
+"6332",
+null
+],
+[
+"2",
+"{'ExtGState': {'a0': {'CA': 1, 'ca': 1}, 'a1': {'CA': 0, 'ca': 0}}, 'Font': {'f-0-0': <PDFObjRef:5>}}",
+null
+],
+[
+"6",
+"{'Type': /'Page', 'Parent': <PDFObjRef:1>, 'MediaBox': [0, 0, 3146, 1529], 'Contents': <PDFObjRef:3>, 'Group': {'Type': /'Group', 'S': /'Transparency', 'CS': /'DeviceRGB'}, 'Resources': <PDFObjRef:2>}",
+null
+],
+[
+"7",
+"<PDFStream(7): raw=47296, {'Length': <PDFObjRef:8>, 'Filter': /'FlateDecode', 'Length1': 36392}>",
+"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+],
+[
+"8",
+"26142",
+null
+],
+[
+"9",
+"<PDFStream(9): raw=789, {'Length': <PDFObjRef:10>, 'Filter': /'FlateDecode'}>",
+"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+],
+[
+"10",
+"435",
+null
+],
+[
+"11",
+"{'Type': /'FontDescriptor', 'FontName': /'TimesNewRoman', 'Flags': 4, 'FontBBox': [-568, -306, 2000, 1006], 'ItalicAngle': 0, 'Ascent': 891, 'Descent': -216, 'CapHeight': 1006, 'StemV': 80, 'StemH': 80, 'FontFile2': <PDFObjRef:7>}",
+null
+],
+[
+"12",
+"sha256:488be256810ac677d1b5247d7ad91888de9bbf6875faef176e2441679d90206c",
+null
+],
+[
+"5",
+"{'Type': /'Font', 'Subtype': /'Type0', 'BaseFont': /'TimesNewRoman', 'Encoding': /'Identity-H', 'DescendantFonts': [<PDFObjRef:12>], 'ToUnicode': <PDFObjRef:9>}",
+null
+],
+[
+"1",
+"{'Type': /'Pages', 'Kids': [<PDFObjRef:6>], 'Count': 1}",
+null
+],
+[
+"13",
+"{'Creator': b'cairo 1.8.10 (http://cairographics.org)', 'Producer': b'cairo 1.8.10 (http://cairographics.org)'}",
+null
+],
+[
+"14",
+"{'Type': /'Catalog', 'Pages': <PDFObjRef:1>}",
+null
+]
+],
+"pages": [
+{
+"pageid": "6",
+"label": null,
+"mediabox": "(0.0, 0.0, 3146.0, 1529.0)",
+"cropbox": "(0.0, 0.0, 3146.0, 1529.0)",
+"rotate": 0,
+"resources": [
+"ExtGState",
+"Font"
+],
+"contents": [
+"<PDFStream(3): len=0, {'Length': <PDFObjRef:4>, 'Filter': /'FlateDecode'}>"
+],
+"attrs": [
+"Type",
+"Parent",
+"MediaBox",
+"Contents",
+"Group",
+"Resources"
+],
+"repr": "<PDFPage: Resources={'ExtGState': {'a0': {'CA': 1, 'ca': 1}, 'a1': {'CA': 0, 'ca': 0}}, 'Font': {'f-0-0': <PDFObjRef:5>}}, MediaBox=(0.0, 0.0, 3146.0, 1529.0)>"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "corrupt2",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRefFallback: offsets=dict_keys([3, 4, 2, 6, 7, 8, 9, 10, 11, 12, 5, 1, 13, 14])>",
+"trailer": "{'Size': 15, 'Root': <PDFObjRef:14>, 'Info': <PDFObjRef:13>}",
+"ids": [
+[
+"3",
+"(None, 20, 0)"
+],
+[
+"4",
+"(None, 11182, 0)"
+],
+[
+"2",
+"(None, 11205, 0)"
+],
+[
+"6",
+"(None, 11342, 0)"
+],
+[
+"7",
+"(None, 11544, 0)"
+],
+[
+"8",
+"(None, 58934, 0)"
+],
+[
+"9",
+"(None, 58958, 0)"
+],
+[
+"10",
+"(None, 59824, 0)"
+],
+[
+"11",
+"(None, 59847, 0)"
+],
+[
+"12",
+"(None, 60083, 0)"
+],
+[
+"5",
+"(None, 60506, 0)"
+],
+[
+"1",
+"(None, 60661, 0)"
+],
+[
+"13",
+"(None, 60726, 0)"
+],
+[
+"14",
+"(None, 60854, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /'Catalog', 'Pages': <PDFObjRef:1>}",
+"info": "[{'Creator': b'cairo 1.8.10 (http://cairographics.org)', 'Producer': b'cairo 1.8.10 (http://cairographics.org)'}]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"3",
+"<PDFStream(3): raw=11086, {'Length': <PDFObjRef:4>, 'Filter': /'FlateDecode'}>",
+"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+],
+[
+"4",
+"6332",
+null
+],
+[
+"2",
+"{'ExtGState': {'a0': {'CA': 1, 'ca': 1}, 'a1': {'CA': 0, 'ca': 0}}, 'Font': {'f-0-0': <PDFObjRef:5>}}",
+null
+],
+[
+"6",
+"{'Type': /'Page', 'Parent': <PDFObjRef:1>, 'MediaBox': [0, 0, 3146, 1529], 'Contents': <PDFObjRef:3>, 'Group': {'Type': /'Group', 'S': /'Transparency', 'CS': /'DeviceRGB'}, 'Resources': <PDFObjRef:2>}",
+null
+],
+[
+"7",
+"<PDFStream(7): raw=47296, {'Length': <PDFObjRef:8>, 'Filter': /'FlateDecode', 'Length1': 36392}>",
+"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+],
+[
+"8",
+"26142",
+null
+],
+[
+"9",
+"<PDFStream(9): raw=789, {'Length': <PDFObjRef:10>, 'Filter': /'FlateDecode'}>",
+"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+],
+[
+"10",
+"435",
+null
+],
+[
+"11",
+"{'Type': /'FontDescriptor', 'FontName': /'TimesNewRoman', 'Flags': 4, 'FontBBox': [-568, -306, 2000, 1006], 'ItalicAngle': 0, 'Ascent': 891, 'Descent': -216, 'CapHeight': 1006, 'StemV': 80, 'StemH': 80, 'FontFile2': <PDFObjRef:7>}",
+null
+],
+[
+"12",
+"sha256:488be256810ac677d1b5247d7ad91888de9bbf6875faef176e2441679d90206c",
+null
+],
+[
+"5",
+"{'Type': /'Font', 'Subtype': /'Type0', 'BaseFont': /'TimesNewRoman', 'Encoding': /'Identity-H', 'DescendantFonts': [<PDFObjRef:12>], 'ToUnicode': <PDFObjRef:9>}",
+null
+],
+[
+"1",
+"{'Type': /'Pages', 'Kids': [<PDFObjRef:6>], 'Count': 1}",
+null
+],
+[
+"13",
+"{'Creator': b'cairo 1.8.10 (http://cairographics.org)', 'Producer': b'cairo 1.8.10 (http://cairographics.org)'}",
+null
+],
+[
+"14",
+"{'Type': /'Catalog', 'Pages': <PDFObjRef:1>}",
+null
+]
+],
+"pages": [
+{
+"pageid": "6",
+"label": null,
+"mediabox": "(0.0, 0.0, 3146.0, 1529.0)",
+"cropbox": "(0.0, 0.0, 3146.0, 1529.0)",
+"rotate": 0,
+"resources": [
+"ExtGState",
+"Font"
+],
+"contents": [
+"<PDFStream(3): len=0, {'Length': <PDFObjRef:4>, 'Filter': /'FlateDecode'}>"
+],
+"attrs": [
+"Type",
+"Parent",
+"MediaBox",
+"Contents",
+"Group",
+"Resources"
+],
+"repr": "<PDFPage: Resources={'ExtGState': {'a0': {'CA': 1, 'ca': 1}, 'a1': {'CA': 0, 'ca': 0}}, 'Font': {'f-0-0': <PDFObjRef:5>}}, MediaBox=(0.0, 0.0, 3146.0, 1529.0)>"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "corrupt3",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRefFallback: offsets=dict_keys([3, 4, 2, 6, 7, 8, 9, 10, 11, 12, 5, 1, 13, 14])>",
+"trailer": "{'Size': 15, 'Root': <PDFObjRef:14>, 'Info': <PDFObjRef:13>}",
+"ids": [
+[
+"3",
+"(None, 20, 0)"
+],
+[
+"4",
+"(None, 11182, 0)"
+],
+[
+"2",
+"(None, 11205, 0)"
+],
+[
+"6",
+"(None, 11342, 0)"
+],
+[
+"7",
+"(None, 11544, 0)"
+],
+[
+"8",
+"(None, 58934, 0)"
+],
+[
+"9",
+"(None, 58958, 0)"
+],
+[
+"10",
+"(None, 59824, 0)"
+],
+[
+"11",
+"(None, 59847, 0)"
+],
+[
+"12",
+"(None, 60083, 0)"
+],
+[
+"5",
+"(None, 60506, 0)"
+],
+[
+"1",
+"(None, 60661, 0)"
+],
+[
+"13",
+"(None, 60726, 0)"
+],
+[
+"14",
+"(None, 60854, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /'Catalog', 'Pages': <PDFObjRef:1>}",
+"info": "[{'Creator': b'cairo 1.8.10 (http://cairographics.org)', 'Producer': b'cairo 1.8.10 (http://cairographics.org)'}]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"3",
+"<PDFStream(3): raw=11086, {'Length': <PDFObjRef:4>, 'Filter': /'FlateDecode'}>",
+"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+],
+[
+"4",
+"6332",
+null
+],
+[
+"2",
+"{'ExtGState': {'a0': {'CA': 1, 'ca': 1}, 'a1': {'CA': 0, 'ca': 0}}, 'Font': {'f-0-0': <PDFObjRef:5>}}",
+null
+],
+[
+"6",
+"{'Type': /'Page', 'Parent': <PDFObjRef:1>, 'MediaBox': [0, 0, 3146, 1529], 'Contents': <PDFObjRef:3>, 'Group': {'Type': /'Group', 'S': /'Transparency', 'CS': /'DeviceRGB'}, 'Resources': <PDFObjRef:2>}",
+null
+],
+[
+"7",
+"<PDFStream(7): raw=47296, {'Length': <PDFObjRef:8>, 'Filter': /'FlateDecode', 'Length1': 36392}>",
+"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+],
+[
+"8",
+"26142",
+null
+],
+[
+"9",
+"<PDFStream(9): raw=789, {'Length': <PDFObjRef:10>, 'Filter': /'FlateDecode'}>",
+"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+],
+[
+"10",
+"435",
+null
+],
+[
+"11",
+"{'Type': /'FontDescriptor', 'FontName': /'TimesNewRoman', 'Flags': 4, 'FontBBox': [-568, -306, 2000, 1006], 'ItalicAngle': 0, 'Ascent': 891, 'Descent': -216, 'CapHeight': 1006, 'StemV': 80, 'StemH': 80, 'FontFile2': <PDFObjRef:7>}",
+null
+],
+[
+"12",
+"sha256:488be256810ac677d1b5247d7ad91888de9bbf6875faef176e2441679d90206c",
+null
+],
+[
+"5",
+"{'Type': /'Font', 'Subtype': /'Type0', 'BaseFont': /'TimesNewRoman', 'Encoding': /'Identity-H', 'DescendantFonts': [<PDFObjRef:12>], 'ToUnicode': <PDFObjRef:9>}",
+null
+],
+[
+"1",
+"{'Type': /'Pages', 'Kids': [<PDFObjRef:6>], 'Count': 1}",
+null
+],
+[
+"13",
+"{'Creator': b'cairo 1.8.10 (http://cairographics.org)', 'Producer': b'cairo 1.8.10 (http://cairographics.org)'}",
+null
+],
+[
+"14",
+"{'Type': /'Catalog', 'Pages': <PDFObjRef:1>}",
+null
+]
+],
+"pages": [
+{
+"pageid": "6",
+"label": null,
+"mediabox": "(0.0, 0.0, 3146.0, 1529.0)",
+"cropbox": "(0.0, 0.0, 3146.0, 1529.0)",
+"rotate": 0,
+"resources": [
+"ExtGState",
+"Font"
+],
+"contents": [
+"<PDFStream(3): len=0, {'Length': <PDFObjRef:4>, 'Filter': /'FlateDecode'}>"
+],
+"attrs": [
+"Type",
+"Parent",
+"MediaBox",
+"Contents",
+"Group",
+"Resources"
+],
+"repr": "<PDFPage: Resources={'ExtGState': {'a0': {'CA': 1, 'ca': 1}, 'a1': {'CA': 0, 'ca': 0}}, 'Font': {'f-0-0': <PDFObjRef:5>}}, MediaBox=(0.0, 0.0, 3146.0, 1529.0)>"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+}
+]
+}

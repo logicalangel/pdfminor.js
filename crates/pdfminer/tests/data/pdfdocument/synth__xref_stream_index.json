@@ -1,0 +1,138 @@
+{
+"path": "synth/xref_stream_index.pdf",
+"runs": [
+{
+"password": "",
+"variant": "orig",
+"open": "ok",
+"xrefs": [
+{
+"repr": "<PDFXRefStream: ranges=[(0, 3), (3, 3)]>",
+"trailer": "{'Type': /'XRef', 'W': [1, 4, 2], 'Length': 42, 'Size': 6, 'Index': [0, 3, 3, 3], 'Root': <PDFObjRef:1>}",
+"ids": [
+[
+"1",
+"(5, 0, 0)"
+],
+[
+"2",
+"(5, 1, 0)"
+],
+[
+"4",
+"(5, 2, 0)"
+],
+[
+"5",
+"(None, 80, 0)"
+]
+]
+}
+],
+"catalog": "{'Type': /'Catalog', 'Pages': <PDFObjRef:2>}",
+"info": "[]",
+"flags": [
+true,
+true,
+true
+],
+"objects": [
+[
+"1",
+"{'Type': /'Catalog', 'Pages': <PDFObjRef:2>}",
+null
+],
+[
+"2",
+"{'Type': /'Pages', 'Kids': [<PDFObjRef:3>], 'Count': 1}",
+null
+],
+[
+"4",
+"b'in stream'",
+null
+],
+[
+"5",
+"<PDFStream(5): len=102, {'Type': /'ObjStm', 'N': 3, 'First': 14, 'Length': 102}>",
+"471d2791f7d5b70f7fea91ea13d8e607f7a830e74de13294baa4916186a6f9fd"
+]
+],
+"pages": [
+{
+"pageid": "3",
+"label": null,
+"mediabox": "(0.0, 0.0, 612.0, 792.0)",
+"cropbox": "(0.0, 0.0, 612.0, 792.0)",
+"rotate": 0,
+"resources": [],
+"contents": [],
+"attrs": [
+"Type",
+"Parent",
+"MediaBox"
+],
+"repr": "<PDFPage: Resources={}, MediaBox=(0.0, 0.0, 612.0, 792.0)>"
+}
+],
+"outlines": [
+"!PDFNoOutlines"
+],
+"labels": [
+"!PDFNoPageLabels"
+],
+"dests": [
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound",
+"!PDFDestinationNotFound"
+]
+},
+{
+"password": "",
+"variant": "half",
+"open": "!PSEOF"
+},
+{
+"password": "",
+"variant": "3q",
+"open": "!PSEOF"
+},
+{
+"password": "",
+"variant": "noxref",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "shifted",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "tail",
+"open": "!PSEOF"
+},
+{
+"password": "",
+"variant": "corrupt0",
+"open": "!PDFSyntaxError"
+},
+{
+"password": "",
+"variant": "corrupt1",
+"open": "!PSSyntaxError"
+},
+{
+"password": "",
+"variant": "corrupt2",
+"open": "!PSSyntaxError"
+},
+{
+"password": "",
+"variant": "corrupt3",
+"open": "!PSEOF"
+}
+]
+}
