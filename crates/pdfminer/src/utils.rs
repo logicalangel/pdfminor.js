@@ -17,6 +17,14 @@ pub type Point = (f64, f64);
 pub type Rect = (f64, f64, f64, f64);
 pub type Matrix = (f64, f64, f64, f64, f64, f64);
 
+/// `PathSegment`: a path operator (`'m'`, `'l'`, `'c'`, `'v'`, `'y'`, `'h'`) and its operands,
+/// as the interpreter builds them (`("m", x, y)`, `("c", x1, y1, x2, y2, x3, y3)`, `("h",)`).
+#[derive(Clone, Debug, PartialEq)]
+pub struct PathSegment {
+    pub op: char,
+    pub args: Vec<f64>,
+}
+
 /// `make_compat_bytes(in_str)`: encodes to UTF-8.
 pub fn make_compat_bytes(in_str: &str) -> Vec<u8> {
     in_str.as_bytes().to_vec()

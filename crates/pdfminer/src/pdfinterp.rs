@@ -150,3 +150,35 @@ impl PDFGraphicState {
         Rc::new(RefCell::new(self.clone()))
     }
 }
+
+// --- Interface of the rest of the module (ported next) -----------------------------------------
+
+/// `PDFResourceManager`: repository of shared resources (fonts, cmaps).
+pub struct PDFResourceManager {
+    pub caching: bool,
+}
+
+impl PDFResourceManager {
+    /// `PDFResourceManager(caching=True)`.
+    pub fn new(caching: bool) -> Rc<PDFResourceManager> {
+        Rc::new(PDFResourceManager { caching })
+    }
+}
+
+/// `PDFPageInterpreter`: processes page contents and sends them to a device.
+pub struct PDFPageInterpreter {
+    pub rsrcmgr: Rc<PDFResourceManager>,
+    pub device: Rc<RefCell<dyn crate::pdfdevice::PDFDevice>>,
+}
+
+impl PDFPageInterpreter {
+    /// `PDFPageInterpreter(rsrcmgr, device)`.
+    pub fn new(rsrcmgr: Rc<PDFResourceManager>, device: Rc<RefCell<dyn crate::pdfdevice::PDFDevice>>) -> Self {
+        PDFPageInterpreter { rsrcmgr, device }
+    }
+
+    /// `interpreter.process_page(page)`.
+    pub fn process_page(&mut self, _page: &crate::pdfpage::PDFPage) -> crate::pyrt::error::PyResult<()> {
+        todo!("port pdfminer/pdfinterp.py")
+    }
+}
