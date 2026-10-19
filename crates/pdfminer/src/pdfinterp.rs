@@ -62,6 +62,9 @@ impl PDFTextState {
 /// A standard color: gray, RGB or CMYK (`StandardColor`).
 #[derive(Clone, Debug, PartialEq)]
 pub enum StandardColor {
+    /// The initial color: Python's int `0` (printed `0`, not `0.0`, by the XML converter).
+    /// Every operator that sets a color produces floats.
+    IntGray(i64),
     Gray(f64),
     Rgb(f64, f64, f64),
     Cmyk(f64, f64, f64, f64),
@@ -79,6 +82,7 @@ pub enum Color {
 impl StandardColor {
     pub fn repr(&self) -> String {
         match self {
+            StandardColor::IntGray(g) => g.to_string(),
             StandardColor::Gray(g) => float_repr(*g),
             StandardColor::Rgb(r, g, b) => format!("({}, {}, {})", float_repr(*r), float_repr(*g), float_repr(*b)),
             StandardColor::Cmyk(c, m, y, k) => {
@@ -101,7 +105,8 @@ pub type PDFGraphicStateRef = Rc<RefCell<PDFGraphicState>>;
 /// `PDFGraphicState`.
 #[derive(Clone)]
 pub struct PDFGraphicState {
-    pub linewidth: f64,
+    /// The int `0` until `w` sets a float: the XML converter prints it with `str()`.
+    pub linewidth: Value,
     pub linecap: Value,
     pub linejoin: Value,
     pub miterlimit: Value,
@@ -126,16 +131,16 @@ impl Default for PDFGraphicState {
 impl PDFGraphicState {
     pub fn new() -> Self {
         PDFGraphicState {
-            linewidth: 0.0,
+            linewidth: Value::Int(0),
             linecap: Value::None,
             linejoin: Value::None,
             miterlimit: Value::None,
             dash: None,
             intent: Value::None,
             flatness: Value::None,
-            scolor: Color::Standard(StandardColor::Gray(0.0)),
+            scolor: Color::Standard(StandardColor::IntGray(0)),
             scs: predefined("DeviceGray").unwrap(),
-            ncolor: Color::Standard(StandardColor::Gray(0.0)),
+            ncolor: Color::Standard(StandardColor::IntGray(0)),
             ncs: predefined("DeviceGray").unwrap(),
         }
     }
