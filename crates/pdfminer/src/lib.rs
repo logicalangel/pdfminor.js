@@ -17,6 +17,7 @@ pub mod ccitt;
 pub mod cmapdb;
 pub mod converter;
 pub mod data_structures;
+pub mod dump;
 pub mod encodingdb;
 pub mod fontmetrics;
 pub mod glyphlist;

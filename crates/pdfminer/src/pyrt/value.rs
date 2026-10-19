@@ -238,11 +238,7 @@ impl Value {
             }
             Value::Tuple(t) => {
                 let items: Vec<String> = t.iter().map(|v| v.repr()).collect();
-                if items.len() == 1 {
-                    format!("({},)", items[0])
-                } else {
-                    format!("({})", items.join(", "))
-                }
+                if items.len() == 1 { format!("({},)", items[0]) } else { format!("({})", items.join(", ")) }
             }
             Value::Dict(d) => dict_repr(&d.borrow()),
             Value::Stream(s) => s.repr(),
@@ -352,9 +348,7 @@ pub fn py_eq(a: &Value, b: &Value) -> bool {
         (Value::Str(x), Value::Str(y)) => x == y,
         (Value::Literal(x), Value::Literal(y)) => x == y,
         (Value::Keyword(x), Value::Keyword(y)) => x == y,
-        (Value::List(x), Value::List(y)) => {
-            Rc::ptr_eq(x, y) || seq_eq(&x.borrow(), &y.borrow())
-        }
+        (Value::List(x), Value::List(y)) => Rc::ptr_eq(x, y) || seq_eq(&x.borrow(), &y.borrow()),
         (Value::Tuple(x), Value::Tuple(y)) => seq_eq(x, y),
         (Value::Dict(x), Value::Dict(y)) => {
             if Rc::ptr_eq(x, y) {
@@ -388,12 +382,7 @@ pub fn py_cmp(a: &Value, b: &Value, op: &str) -> PyResult<bool> {
             _ => {
                 return Err(PyErr::new(
                     ExcKind::TypeError,
-                    format!(
-                        "'{}' not supported between instances of '{}' and '{}'",
-                        op,
-                        a.type_name(),
-                        b.type_name()
-                    ),
+                    format!("'{}' not supported between instances of '{}' and '{}'", op, a.type_name(), b.type_name()),
                 ));
             }
         }
@@ -472,6 +461,12 @@ pub fn py_add(a: &Value, b: &Value) -> PyResult<Value> {
             v.extend(y.iter().cloned());
             Ok(Value::tuple(v))
         }
+        // A sequence's own `__add__` raises, with its own message.
+        (Value::Bytes(_), _) => Err(PyErr::new(ExcKind::TypeError, format!("can't concat {} to bytes", b.type_name()))),
+        (Value::Str(_) | Value::List(_) | Value::Tuple(_), _) => Err(PyErr::new(
+            ExcKind::TypeError,
+            format!("can only concatenate {} (not \"{}\") to {}", a.type_name(), b.type_name(), a.type_name()),
+        )),
         _ => Err(binop_type_error("+", a, b)),
     }
 }
@@ -501,9 +496,7 @@ pub fn py_mul(a: &Value, b: &Value) -> PyResult<Value> {
         (Value::Bytes(x), n) | (n, Value::Bytes(x)) if n.is_int() => {
             Ok(Value::Bytes(x.repeat(repeat_count(n).unwrap()).into()))
         }
-        (Value::Str(x), n) | (n, Value::Str(x)) if n.is_int() => {
-            Ok(Value::str(&x.repeat(repeat_count(n).unwrap())))
-        }
+        (Value::Str(x), n) | (n, Value::Str(x)) if n.is_int() => Ok(Value::str(&x.repeat(repeat_count(n).unwrap()))),
         (Value::List(x), n) | (n, Value::List(x)) if n.is_int() => {
             let items = x.borrow();
             let mut v = Vec::new();
@@ -711,8 +704,8 @@ fn parse_py_float(text: &str) -> Option<f64> {
         return t.to_ascii_lowercase().parse::<f64>().ok();
     }
     // Python's grammar: digits, optional fraction, optional exponent; nothing else.
-    let ok = !body.is_empty()
-        && body.bytes().all(|c| c.is_ascii_digit() || matches!(c, b'.' | b'e' | b'E' | b'+' | b'-'));
+    let ok =
+        !body.is_empty() && body.bytes().all(|c| c.is_ascii_digit() || matches!(c, b'.' | b'e' | b'E' | b'+' | b'-'));
     if !ok {
         return None;
     }
@@ -748,10 +741,7 @@ pub fn py_int(x: &Value) -> PyResult<i64> {
         }
         _ => Err(PyErr::new(
             ExcKind::TypeError,
-            format!(
-                "int() argument must be a string, a bytes-like object or a real number, not '{}'",
-                x.type_name()
-            ),
+            format!("int() argument must be a string, a bytes-like object or a real number, not '{}'", x.type_name()),
         )),
     }
 }
@@ -765,7 +755,7 @@ pub fn float_to_int(f: f64) -> PyResult<i64> {
         return Err(PyErr::new(ExcKind::OverflowError, "cannot convert float infinity to integer"));
     }
     let t = f.trunc();
-    if t >= 9.223372036854775807e18 || t < -9.223372036854775808e18 {
+    if t >= 9.223_372_036_854_776e18 || t < -9.223_372_036_854_776e18 {
         // Python returns a big int here: recorded divergence.
         return Err(PyErr::new(ExcKind::OverflowError, "int too large for the port (i64)"));
     }
