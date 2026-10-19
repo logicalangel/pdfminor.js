@@ -51,10 +51,10 @@ pub fn py_islice(value: &Value, n: usize) -> PyResult<Option<Vec<Value>>> {
             }
             return Err(crate::pyrt::error::PyErr::new(
                 ExcKind::PDFKeyError,
-                format!(
+                crate::pyrt::fmt::str_repr(&format!(
                     "PDF stream object {} does not have attribute '0'",
                     s.objid.get().map_or("None".to_string(), |o| o.to_string())
-                ),
+                )),
             ));
         }
         _ => return Ok(None),

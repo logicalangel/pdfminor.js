@@ -20,6 +20,7 @@ import argparse
 import hashlib
 import json
 import os
+import re
 import subprocess
 import sys
 from concurrent.futures import ThreadPoolExecutor
@@ -59,6 +60,26 @@ KNOWN_DIVERGENCES = {
     # A tag property Python decodes with charset_normalizer's heuristics (BOM + U+FF09).
     ("contrib/issue-598-cmap-other-fonts.pdf", "txt-tag"): "charset-normalizer",
 }
+
+# DIVERGE(bigint): Python ints beyond i64 are floats in the port. Fuzzed files make them at
+# random, so instead of listing files, a difference counts as this divergence when it goes away
+# once every int of 19+ digits is written as the float the port keeps (repr(float(n))).
+BIG_INT = re.compile(rb"(?<![\w.])-?[0-9]{19,}(?![\w.])")
+
+
+def _as_float(m: re.Match[bytes]) -> bytes:
+    n = int(m.group())
+    if abs(n) < 2**63:
+        return m.group()
+    try:
+        return repr(float(n)).encode()
+    except OverflowError:
+        return m.group()  # inf in the port: behaviour differs too, not only the text
+
+
+def only_bigint(py: bytes, rs: bytes) -> bool:
+    return BIG_INT.sub(_as_float, py) == BIG_INT.sub(_as_float, rs)
+
 
 PDF2TXT_MODES = {
     "txt-text": ["-t", "text"],
@@ -197,6 +218,8 @@ def main() -> int:
     commit = upstream_commit()
     todo = cases(corpus(args.corpus, args.files), args.keyword)
 
+    bigint: dict[str, str] = {}
+
     def check(case: Case) -> tuple[Case, str | None]:
         py = python_result(case, commit)
         if py == TIMED_OUT:
@@ -204,6 +227,8 @@ def main() -> int:
         rs = run(rust_cmd(case))
         if py == rs:
             return (case, None)
+        if py[0] == rs[0] and only_bigint(py[1], rs[1]):
+            bigint[case.name] = "bigint"
         if py[0] != rs[0]:
             return (case, f"exit code: python {py[0]}, rust {rs[0]}\n" + first_difference(py[1], rs[1]))
         return (case, first_difference(py[1], rs[1]))
@@ -215,7 +240,7 @@ def main() -> int:
             if diff is None:
                 continue
             rel = str(case.pdf.relative_to(SAMPLES)) if case.pdf.is_relative_to(SAMPLES) else str(case.pdf)
-            divergence = KNOWN_DIVERGENCES.get((rel, case.mode))
+            divergence = KNOWN_DIVERGENCES.get((rel, case.mode)) or bigint.get(case.name)
             if divergence:
                 known.append(case)
                 print(f"KNOWN {case.name} (DIVERGE({divergence}))", flush=True)
