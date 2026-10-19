@@ -216,13 +216,19 @@ pub fn apply_png_predictor(
 //  Matrix operations
 pub const MATRIX_IDENTITY: Matrix = (1.0, 0.0, 0.0, 1.0, 0.0, 0.0);
 
-/// `parse_rect(o)`.
+/// `parse_rect(o)`: a `ValueError` (wrong length, or `float()` of a bad string) becomes
+/// `PDFValueError`; a `TypeError` (`float(None)`) propagates as is.
 pub fn parse_rect(o: &[crate::pyrt::Value]) -> PyResult<Rect> {
-    if o.len() != 4 {
-        return Err(PyErr::new(ExcKind::PDFValueError, "Could not parse rectangle"));
-    }
-    let f = |v: &crate::pyrt::Value| crate::pyrt::value::py_float(v);
-    Ok((f(&o[0])?, f(&o[1])?, f(&o[2])?, f(&o[3])?))
+    let conv = || -> PyResult<Rect> {
+        if o.len() != 4 {
+            return Err(PyErr::new(ExcKind::ValueError, "wrong number of values to unpack"));
+        }
+        let f = |v: &crate::pyrt::Value| crate::pyrt::value::py_float(v);
+        Ok((f(&o[0])?, f(&o[1])?, f(&o[2])?, f(&o[3])?))
+    };
+    conv().map_err(|e| {
+        if e.is(ExcKind::ValueError) { PyErr::new(ExcKind::PDFValueError, "Could not parse rectangle") } else { e }
+    })
 }
 
 /// `mult_matrix(m1, m0)`: returns the multiplication of two matrices.
