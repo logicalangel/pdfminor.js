@@ -28,11 +28,7 @@ fn push_cp(out: &mut Vec<u8>, cp: u32) {
     } else if cp < 0x800 {
         out.extend_from_slice(&[0xC0 | (cp >> 6) as u8, 0x80 | (cp & 0x3F) as u8]);
     } else if cp < 0x10000 {
-        out.extend_from_slice(&[
-            0xE0 | (cp >> 12) as u8,
-            0x80 | ((cp >> 6) & 0x3F) as u8,
-            0x80 | (cp & 0x3F) as u8,
-        ]);
+        out.extend_from_slice(&[0xE0 | (cp >> 12) as u8, 0x80 | ((cp >> 6) & 0x3F) as u8, 0x80 | (cp & 0x3F) as u8]);
     } else {
         out.extend_from_slice(&[
             0xF0 | (cp >> 18) as u8,
@@ -106,12 +102,10 @@ impl PyStr {
     /// `bytes.decode("utf-16be", "ignore")`: lone surrogates are dropped (Python's UTF-16 codec
     /// never yields them), a trailing odd byte is dropped.
     pub fn decode_utf16be_ignore(data: &[u8]) -> PyStr {
-        let units = data.chunks_exact(2).map(|c| u16::from_be_bytes([c[0], c[1]]));
+        let units = data.as_chunks::<2>().0.iter().map(|&c| u16::from_be_bytes(c));
         let mut s = PyStr::new();
-        for r in char::decode_utf16(units) {
-            if let Ok(c) = r {
-                s.push_char(c);
-            }
+        for c in char::decode_utf16(units).flatten() {
+            s.push_char(c);
         }
         s
     }

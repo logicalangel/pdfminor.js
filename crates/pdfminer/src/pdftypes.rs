@@ -301,30 +301,24 @@ pub fn py_contains_str(container: &Value, name: &str) -> PyResult<bool> {
         Value::Tuple(t) => Ok(t.iter().any(|v| py_eq(v, &Value::str(name)))),
         Value::Str(s) => Ok(s.contains(name)),
         Value::Bytes(_) => Err(PyErr::new(ExcKind::TypeError, "a bytes-like object is required, not 'str'")),
-        other => Err(PyErr::new(
-            ExcKind::TypeError,
-            format!("argument of type '{}' is not iterable", other.type_name()),
-        )),
+        other => {
+            Err(PyErr::new(ExcKind::TypeError, format!("argument of type '{}' is not iterable", other.type_name())))
+        }
     }
 }
 
 /// `container["name"]` for the objects a filter's `params` can be.
 pub fn py_getitem_str(container: &Value, name: &str) -> PyResult<Value> {
     match container {
-        Value::Dict(d) => d
-            .borrow()
-            .get(name)
-            .cloned()
-            .ok_or_else(|| PyErr::new(ExcKind::KeyError, crate::pyrt::fmt::str_repr(name))),
+        Value::Dict(d) => {
+            d.borrow().get(name).cloned().ok_or_else(|| PyErr::new(ExcKind::KeyError, crate::pyrt::fmt::str_repr(name)))
+        }
         Value::Stream(s) => s.getitem(name),
         Value::List(_) | Value::Tuple(_) | Value::Str(_) | Value::Bytes(_) => Err(PyErr::new(
             ExcKind::TypeError,
             format!("{} indices must be integers or slices, not str", container.type_name()),
         )),
-        other => Err(PyErr::new(
-            ExcKind::TypeError,
-            format!("'{}' object is not subscriptable", other.type_name()),
-        )),
+        other => Err(PyErr::new(ExcKind::TypeError, format!("'{}' object is not subscriptable", other.type_name()))),
     }
 }
 
@@ -333,10 +327,9 @@ pub fn py_get_str(container: &Value, name: &str, default: Value) -> PyResult<Val
     match container {
         Value::Dict(d) => Ok(d.borrow().get(name).cloned().unwrap_or(default)),
         Value::Stream(s) => Ok(s.get(name).unwrap_or(default)),
-        other => Err(PyErr::new(
-            ExcKind::AttributeError,
-            format!("'{}' object has no attribute 'get'", other.type_name()),
-        )),
+        other => {
+            Err(PyErr::new(ExcKind::AttributeError, format!("'{}' object has no attribute 'get'", other.type_name())))
+        }
     }
 }
 
@@ -503,10 +496,7 @@ impl PDFStream {
                 // not yet..
                 return Err(PyErr::new(ExcKind::PDFNotImplementedError, "/Crypt filter is unsupported"));
             } else {
-                return Err(PyErr::new(
-                    ExcKind::PDFNotImplementedError,
-                    format!("Unsupported filter: {}", f.repr()),
-                ));
+                return Err(PyErr::new(ExcKind::PDFNotImplementedError, format!("Unsupported filter: {}", f.repr())));
             }
             // apply predictors
             if params.truthy() && py_contains_str(&params, "Predictor")? {

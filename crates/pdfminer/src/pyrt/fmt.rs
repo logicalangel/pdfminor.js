@@ -33,8 +33,14 @@ pub fn float_repr(x: f64) -> String {
     if x == 0.0 {
         return if x.is_sign_negative() { "-0.0".into() } else { "0.0".into() };
     }
-    // Rust's `{:e}` prints the shortest round-tripping digits: "-1.2345e-5".
-    let e = format!("{:e}", x);
+    // Rust's `{:e}` prints the shortest round-tripping digits ("-1.2345e-5"), but when two
+    // strings of that length are equally close to `x` it may pick the upper one, where Python
+    // (David Gay's dtoa) rounds half to even: 605.96002197265625 is "605.9600219726562". So
+    // take only the length from it and let the exact formatter, which rounds half to even, make
+    // the digits (the nearest string of the shortest length always round-trips).
+    let shortest = format!("{:e}", x);
+    let ndigits = shortest.split_once('e').expect("exponent").0.chars().filter(|c| c.is_ascii_digit()).count();
+    let e = format!("{:.*e}", ndigits - 1, x);
     let (mant, exp) = e.split_once('e').expect("exponent");
     let exp: i32 = exp.parse().expect("exponent");
     let (neg, mant) = match mant.strip_prefix('-') {
@@ -114,11 +120,7 @@ pub fn general_prec(x: f64, prec: usize) -> String {
 }
 
 fn strip_trailing_zeros(s: &str) -> &str {
-    if s.contains('.') {
-        s.trim_end_matches('0').trim_end_matches('.')
-    } else {
-        s
-    }
+    if s.contains('.') { s.trim_end_matches('0').trim_end_matches('.') } else { s }
 }
 
 /// `repr(b)` of a Python `bytes`.
@@ -206,6 +208,9 @@ mod tests {
             (100.0, "100.0"),
             (12.5, "12.5"),
             (0.3333333333333333, "0.3333333333333333"),
+            // Ties between two shortest strings: Python rounds half to even.
+            (f64::from_bits(0x4082_EFAE_2000_0000), "605.9600219726562"), // 605.96002197265625
+            (1241.0 - 635.0399780273438, "605.9600219726562"),
         ];
         for (x, s) in cases {
             assert_eq!(float_repr(x), s);

@@ -10,15 +10,24 @@ ported as small diffs.
 ## Use it from Node
 
 ```js
-const { extractPages, extractText } = require("@fuelfwd/pdfminer");
+const { extractPages, extractText, extractTextAsync, convert, PdfminerError } = require("@fuelfwd/pdfminer");
 
-const pages = await extractPages("file.pdf", { laparams: { charMargin: 2.0 } });
+// Sync and async (`extractPagesAsync`, ... run on a worker thread) variants of each function.
+// Input: a path, Buffer, Uint8Array or ArrayBuffer.
+const pages = extractPages("file.pdf", { laparams: { charMargin: 2.0 }, pageNumbers: [0, 1] });
 for (const page of pages) {
   for (const item of page.items) {
     if (item.type === "LTTextBoxHorizontal") console.log(item.index, item.bbox);
   }
 }
-const text = await extractText(fs.readFileSync("file.pdf"));
+const text = await extractTextAsync(fs.readFileSync("file.pdf"), { password: "secret" });
+const xml = convert("file.pdf", { outputType: "xml" }); // Buffer, as pdf2txt.py writes it
+
+try {
+  extractText("broken.pdf");
+} catch (err) {
+  if (err instanceof PdfminerError) console.log(err.pythonClass, err.pythonMessage); // e.g. "PDFSyntaxError"
+}
 ```
 
 Pages are plain objects with the same class names and attributes as pdfminer's layout objects

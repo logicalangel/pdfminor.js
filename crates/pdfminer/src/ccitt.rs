@@ -115,7 +115,9 @@ fn trees() -> &'static BitTrees {
         for _ in 0..4 {
             t.new_node();
         }
-        for (root, codes) in [(MODE, MODE_CODES), (WHITE, WHITE_CODES), (BLACK, BLACK_CODES), (UNCOMPRESSED, UNCOMPRESSED_CODES)] {
+        for (root, codes) in
+            [(MODE, MODE_CODES), (WHITE, WHITE_CODES), (BLACK, BLACK_CODES), (UNCOMPRESSED, UNCOMPRESSED_CODES)]
+        {
             for &(v, bits) in codes {
                 BitParser::add(&mut t, root, v, bits);
             }

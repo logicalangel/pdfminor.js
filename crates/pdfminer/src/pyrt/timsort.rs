@@ -694,11 +694,7 @@ fn merge_at<T: Clone>(ms: &mut MergeState<T>, v: &mut [T], i: usize, lt: &impl F
 
     // Merge what remains of the runs, using a temp array with
     // min(na, nb) elements.
-    if na <= nb {
-        merge_lo(ms, v, ssa, na, ssb, nb, lt)
-    } else {
-        merge_hi(ms, v, ssa, na, ssb, nb, lt)
-    }
+    if na <= nb { merge_lo(ms, v, ssa, na, ssb, nb, lt) } else { merge_hi(ms, v, ssa, na, ssb, nb, lt) }
 }
 
 /// `powerloop`: the "power" of the first of two adjacent runs (s1, n1) and (s1+n1, n2) in a

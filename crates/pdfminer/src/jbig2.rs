@@ -14,13 +14,8 @@ use crate::pyrt::fmt::str_repr;
 use crate::pyrt::io::BytesIO;
 
 // segment structure base
-pub const SEG_STRUCT: [(&str, &str); 5] = [
-    (">L", "number"),
-    (">B", "flags"),
-    (">B", "retention_flags"),
-    (">B", "page_assoc"),
-    (">L", "data_length"),
-];
+pub const SEG_STRUCT: [(&str, &str); 5] =
+    [(">L", "number"), (">B", "flags"), (">B", "retention_flags"), (">B", "page_assoc"), (">L", "data_length")];
 
 // segment header literals
 pub const HEADER_FLAG_DEFERRED: i64 = 0b10000000;
@@ -100,10 +95,7 @@ fn pack(codes: &str, values: &[i64]) -> PyResult<Vec<u8>> {
             _ => unreachable!("code {code}"),
         };
         if !(0..=max).contains(&v) {
-            return Err(PyErr::new(
-                ExcKind::StructError,
-                format!("'{code}' format requires 0 <= number <= {max}"),
-            ));
+            return Err(PyErr::new(ExcKind::StructError, format!("'{code}' format requires 0 <= number <= {max}")));
         }
         out.extend_from_slice(&(v as u64).to_be_bytes()[8 - size..]);
     }

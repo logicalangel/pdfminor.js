@@ -41,6 +41,13 @@ pub enum ExcKind {
     ZlibError,
     /// `binascii.Error` (a `ValueError`)
     BinasciiError,
+    ImportError,
+    FileNotFoundError,
+    FileExistsError,
+    PermissionError,
+    IsADirectoryError,
+    NotADirectoryError,
+    BrokenPipeError,
     // psexceptions.py
     PSException,
     PSEOF,
@@ -94,7 +101,11 @@ impl ExcKind {
         match self {
             Exception => &[],
             ArithmeticError | AssertionError | AttributeError | EOFError | LookupError | MemoryError | OSError
-            | RuntimeError | StopIteration | TypeError | ValueError | StructError | ZlibError => &[Exception],
+            | RuntimeError | StopIteration | TypeError | ValueError | StructError | ZlibError | ImportError => {
+                &[Exception]
+            }
+            FileNotFoundError | FileExistsError | PermissionError | IsADirectoryError | NotADirectoryError
+            | BrokenPipeError => &[OSError],
             IndexError | KeyError => &[LookupError],
             NotImplementedError | RecursionError => &[RuntimeError],
             OverflowError | ZeroDivisionError => &[ArithmeticError],
@@ -113,9 +124,7 @@ impl ExcKind {
             PDFIOError => &[PDFException, OSError],
             PDFSyntaxError => &[PDFException],
             PDFNoValidXRef => &[PDFSyntaxError],
-            PDFNoOutlines | PDFNoPageLabels | PDFDestinationNotFound | PDFEncryptionError => {
-                &[PDFException]
-            }
+            PDFNoOutlines | PDFNoPageLabels | PDFDestinationNotFound | PDFEncryptionError => &[PDFException],
             PDFPasswordIncorrect | PDFTextExtractionNotAllowed => &[PDFEncryptionError],
             CMapError => &[PDFException],
             CMapNotFound => &[CMapError],
@@ -148,22 +157,112 @@ impl ExcKind {
         }
     }
 
+    /// The name a traceback prints: `module.qualname` for classes outside `builtins`
+    /// (`pdfminer.pdfparser.PDFSyntaxError`, `struct.error`).
+    pub fn qualified_name(self) -> String {
+        let module = match self {
+            StructError => "struct",
+            ZlibError => "zlib",
+            BinasciiError => "binascii",
+            PSException | PSEOF | PSSyntaxError | PSTypeError | PSValueError => "pdfminer.psexceptions",
+            PDFException
+            | PDFTypeError
+            | PDFValueError
+            | PDFObjectNotFound
+            | PDFNotImplementedError
+            | PDFKeyError
+            | PDFEOFError
+            | PDFIOError => "pdfminer.pdfexceptions",
+            PDFSyntaxError => "pdfminer.pdfparser",
+            PDFNoValidXRef
+            | PDFNoOutlines
+            | PDFNoPageLabels
+            | PDFDestinationNotFound
+            | PDFEncryptionError
+            | PDFPasswordIncorrect
+            | PDFTextExtractionNotAllowed => "pdfminer.pdfdocument",
+            CMapError => "pdfminer.cmapdb",
+            CMapNotFound => return "pdfminer.cmapdb.CMapDB.CMapNotFound".into(),
+            CorruptDataError => "pdfminer.lzw",
+            PDFFontError | PDFUnicodeNotDefined => "pdfminer.pdffont",
+            TTFCMapNotFound => return "pdfminer.pdffont.TrueTypeFont.CMapNotFound".into(),
+            PDFResourceError | PDFInterpreterError => "pdfminer.pdfinterp",
+            CCITTInvalidData | CCITTByteSkip | CCITTEOFB => {
+                return format!("pdfminer.ccitt.CCITTG4Parser.{}", self.name());
+            }
+            _ => return self.name().into(),
+        };
+        format!("{module}.{}", self.name())
+    }
+
     fn debug_name(self) -> &'static str {
         macro_rules! names {
             ($($k:ident),* $(,)?) => { match self { $($k => stringify!($k),)* } };
         }
         names!(
-            Exception, ArithmeticError, AssertionError, AttributeError, EOFError, IndexError, KeyError,
-            LookupError, MemoryError, NotImplementedError, OSError, OverflowError, RecursionError,
-            RuntimeError, StopIteration, TypeError, UnicodeDecodeError, UnicodeEncodeError, UnicodeError,
-            ValueError, ZeroDivisionError, StructError, ZlibError, BinasciiError, PSException,
-            PSEOF, PSSyntaxError, PSTypeError, PSValueError, PDFException, PDFTypeError,
-            PDFValueError, PDFObjectNotFound, PDFNotImplementedError, PDFKeyError, PDFEOFError,
-            PDFIOError, PDFSyntaxError, PDFNoValidXRef, PDFNoOutlines, PDFNoPageLabels,
-            PDFDestinationNotFound, PDFEncryptionError, PDFPasswordIncorrect,
-            PDFTextExtractionNotAllowed, CMapError, CMapNotFound, TTFCMapNotFound, CorruptDataError, PDFFontError,
-            PDFUnicodeNotDefined, PDFResourceError, PDFInterpreterError, CCITTInvalidData,
-            CCITTByteSkip, CCITTEOFB,
+            Exception,
+            ArithmeticError,
+            AssertionError,
+            AttributeError,
+            EOFError,
+            IndexError,
+            KeyError,
+            LookupError,
+            MemoryError,
+            NotImplementedError,
+            OSError,
+            OverflowError,
+            RecursionError,
+            RuntimeError,
+            StopIteration,
+            TypeError,
+            UnicodeDecodeError,
+            UnicodeEncodeError,
+            UnicodeError,
+            ValueError,
+            ZeroDivisionError,
+            StructError,
+            ZlibError,
+            BinasciiError,
+            ImportError,
+            FileNotFoundError,
+            FileExistsError,
+            PermissionError,
+            IsADirectoryError,
+            NotADirectoryError,
+            BrokenPipeError,
+            PSException,
+            PSEOF,
+            PSSyntaxError,
+            PSTypeError,
+            PSValueError,
+            PDFException,
+            PDFTypeError,
+            PDFValueError,
+            PDFObjectNotFound,
+            PDFNotImplementedError,
+            PDFKeyError,
+            PDFEOFError,
+            PDFIOError,
+            PDFSyntaxError,
+            PDFNoValidXRef,
+            PDFNoOutlines,
+            PDFNoPageLabels,
+            PDFDestinationNotFound,
+            PDFEncryptionError,
+            PDFPasswordIncorrect,
+            PDFTextExtractionNotAllowed,
+            CMapError,
+            CMapNotFound,
+            TTFCMapNotFound,
+            CorruptDataError,
+            PDFFontError,
+            PDFUnicodeNotDefined,
+            PDFResourceError,
+            PDFInterpreterError,
+            CCITTInvalidData,
+            CCITTByteSkip,
+            CCITTEOFB,
         )
     }
 }

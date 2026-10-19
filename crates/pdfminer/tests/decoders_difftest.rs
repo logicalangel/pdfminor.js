@@ -15,8 +15,7 @@ use serde_json::Value as J;
 use sha2::{Digest, Sha256};
 
 fn load(module: &str, name: &str) -> Vec<J> {
-    let path: PathBuf =
-        [env!("CARGO_MANIFEST_DIR"), "tests", "data", module, &format!("{name}.json")].iter().collect();
+    let path: PathBuf = [env!("CARGO_MANIFEST_DIR"), "tests", "data", module, &format!("{name}.json")].iter().collect();
     let text = std::fs::read_to_string(&path).unwrap_or_else(|e| panic!("{}: {e}", path.display()));
     let doc: J = serde_json::from_str(&text).unwrap();
     doc["cases"].as_array().unwrap().clone()
