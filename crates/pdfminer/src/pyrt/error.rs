@@ -28,6 +28,7 @@ pub enum ExcKind {
     OverflowError,
     RecursionError,
     RuntimeError,
+    StopIteration,
     TypeError,
     UnicodeDecodeError,
     UnicodeEncodeError,
@@ -89,7 +90,7 @@ impl ExcKind {
         match self {
             Exception => &[],
             ArithmeticError | AssertionError | AttributeError | EOFError | LookupError | MemoryError | OSError
-            | RuntimeError | TypeError | ValueError | StructError | ZlibError => &[Exception],
+            | RuntimeError | StopIteration | TypeError | ValueError | StructError | ZlibError => &[Exception],
             IndexError | KeyError => &[LookupError],
             NotImplementedError | RecursionError => &[RuntimeError],
             OverflowError | ZeroDivisionError => &[ArithmeticError],
@@ -117,7 +118,8 @@ impl ExcKind {
             PDFFontError => &[PDFException],
             PDFUnicodeNotDefined => &[PDFFontError],
             PDFResourceError | PDFInterpreterError => &[PDFException],
-            CCITTInvalidData | CCITTByteSkip | CCITTEOFB => &[Exception],
+            // CCITTG4Parser.CCITTException(PDFException)
+            CCITTInvalidData | CCITTByteSkip | CCITTEOFB => &[PDFException],
         }
     }
 
@@ -146,7 +148,7 @@ impl ExcKind {
         names!(
             Exception, ArithmeticError, AssertionError, AttributeError, EOFError, IndexError, KeyError,
             LookupError, MemoryError, NotImplementedError, OSError, OverflowError, RecursionError,
-            RuntimeError, TypeError, UnicodeDecodeError, UnicodeEncodeError, UnicodeError,
+            RuntimeError, StopIteration, TypeError, UnicodeDecodeError, UnicodeEncodeError, UnicodeError,
             ValueError, ZeroDivisionError, StructError, ZlibError, BinasciiError, PSException,
             PSEOF, PSSyntaxError, PSTypeError, PSValueError, PDFException, PDFTypeError,
             PDFValueError, PDFObjectNotFound, PDFNotImplementedError, PDFKeyError, PDFEOFError,
