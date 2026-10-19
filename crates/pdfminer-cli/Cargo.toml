@@ -1,0 +1,13 @@
+[package]
+name = "pdfminer-cli"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+publish = false
+
+[[bin]]
+name = "pdfminer-rs"
+path = "src/main.rs"
+
+[dependencies]
+pdfminer.workspace = true

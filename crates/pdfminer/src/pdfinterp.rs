@@ -1,0 +1,136 @@
+//! Port of `pdfminer/pdfinterp.py`: only the text and graphic states so far.
+
+use std::rc::Rc;
+
+use crate::pdfcolor::{PDFColorSpace, predefined};
+use crate::pdffont::PDFFont;
+use crate::pyrt::fmt::float_repr;
+use crate::pyrt::value::Value;
+use crate::utils::{MATRIX_IDENTITY, Matrix, Point};
+
+/// `PDFTextState`.
+#[derive(Clone)]
+pub struct PDFTextState {
+    pub font: Option<Rc<PDFFont>>,
+    pub fontsize: f64,
+    pub charspace: f64,
+    pub wordspace: f64,
+    pub scaling: f64,
+    pub leading: f64,
+    pub render: i64,
+    pub rise: f64,
+    pub matrix: Matrix,
+    pub linematrix: Point,
+}
+
+impl Default for PDFTextState {
+    fn default() -> Self {
+        Self::new()
+    }
+}
+
+impl PDFTextState {
+    pub fn new() -> Self {
+        let mut s = PDFTextState {
+            font: None,
+            fontsize: 0.0,
+            charspace: 0.0,
+            wordspace: 0.0,
+            scaling: 100.0,
+            leading: 0.0,
+            render: 0,
+            rise: 0.0,
+            matrix: MATRIX_IDENTITY,
+            linematrix: (0.0, 0.0),
+        };
+        s.reset();
+        s
+    }
+
+    /// `textstate.copy()`.
+    pub fn copy(&self) -> Self {
+        self.clone()
+    }
+
+    pub fn reset(&mut self) {
+        self.matrix = MATRIX_IDENTITY;
+        self.linematrix = (0.0, 0.0);
+    }
+}
+
+/// A standard color: gray, RGB or CMYK (`StandardColor`).
+#[derive(Clone, Debug, PartialEq)]
+pub enum StandardColor {
+    Gray(f64),
+    Rgb(f64, f64, f64),
+    Cmyk(f64, f64, f64, f64),
+}
+
+/// `Color`: a standard color, a pattern name (colored pattern), or `(base_color, pattern_name)`
+/// (uncolored pattern).
+#[derive(Clone, Debug, PartialEq)]
+pub enum Color {
+    Standard(StandardColor),
+    Pattern(String),
+    UncoloredPattern(StandardColor, String),
+}
+
+impl StandardColor {
+    pub fn repr(&self) -> String {
+        match self {
+            StandardColor::Gray(g) => float_repr(*g),
+            StandardColor::Rgb(r, g, b) => format!("({}, {}, {})", float_repr(*r), float_repr(*g), float_repr(*b)),
+            StandardColor::Cmyk(c, m, y, k) => {
+                format!("({}, {}, {}, {})", float_repr(*c), float_repr(*m), float_repr(*y), float_repr(*k))
+            }
+        }
+    }
+}
+
+/// `PDFGraphicState`.
+#[derive(Clone)]
+pub struct PDFGraphicState {
+    pub linewidth: f64,
+    pub linecap: Value,
+    pub linejoin: Value,
+    pub miterlimit: Value,
+    /// `(dash, phase)` or `None`.
+    pub dash: Option<(Value, Value)>,
+    pub intent: Value,
+    pub flatness: Value,
+    /// stroking color
+    pub scolor: Color,
+    pub scs: PDFColorSpace,
+    /// non stroking color
+    pub ncolor: Color,
+    pub ncs: PDFColorSpace,
+}
+
+impl Default for PDFGraphicState {
+    fn default() -> Self {
+        Self::new()
+    }
+}
+
+impl PDFGraphicState {
+    pub fn new() -> Self {
+        PDFGraphicState {
+            linewidth: 0.0,
+            linecap: Value::None,
+            linejoin: Value::None,
+            miterlimit: Value::None,
+            dash: None,
+            intent: Value::None,
+            flatness: Value::None,
+            scolor: Color::Standard(StandardColor::Gray(0.0)),
+            scs: predefined("DeviceGray").unwrap(),
+            ncolor: Color::Standard(StandardColor::Gray(0.0)),
+            ncs: predefined("DeviceGray").unwrap(),
+        }
+    }
+
+    /// `graphicstate.copy()`.
+    pub fn copy(&self) -> Self {
+        self.clone()
+    }
+}

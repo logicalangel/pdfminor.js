@@ -1,0 +1,3 @@
+[submodule "upstream/pdfminer.six"]
+	path = upstream/pdfminer.six
+	url = https://github.com/pdfminer/pdfminer.six.git

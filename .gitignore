@@ -1,0 +1,9 @@
+/target
+/.venv
+__pycache__/
+*.node
+/crates/pdfminer-node/index.js
+/crates/pdfminer-node/index.d.ts
+/crates/pdfminer-node/node_modules
+/tests/out
+.DS_Store

@@ -1,0 +1,16 @@
+# Python side of the repo: the reference pdfminer.six (the pinned submodule) and the tools that
+# compare it with the Rust port. Not a package; run everything with `uv run`.
+[project]
+name = "pdfminer-rs-tools"
+version = "0"
+requires-python = "==3.14.*"
+dependencies = [
+    "pdfminer.six",
+    "pytest",
+]
+
+[tool.uv]
+package = false
+
+[tool.uv.sources]
+"pdfminer.six" = { path = "upstream/pdfminer.six", editable = true }

@@ -1,0 +1,344 @@
+# The pdfminer.six release this port follows, and for every upstream file the git blob
+# its Rust counterpart was last synced with. Maintained by tools/upstream.py; see
+# docs/UPDATING.md.
+
+[upstream]
+version = "20260107"
+commit = "9e1243c4ad000bf9bbe60e81fc8dde2fccc0ed3b"
+
+[[file]]
+python = "pdfminer/_saslprep.py"
+rust = "crates/pdfminer/src/_saslprep.rs"
+how = "port"
+synced_blob = "81ffb5d3aad484f5180e698a9f27cef70d2d96a1"
+
+[[file]]
+python = "pdfminer/arcfour.py"
+rust = "crates/pdfminer/src/arcfour.rs"
+how = "port"
+synced_blob = "7f44260c5b6b46be82e4d48fc85dba919ed0f531"
+
+[[file]]
+python = "pdfminer/ascii85.py"
+rust = "crates/pdfminer/src/ascii85.rs"
+how = "port"
+synced_blob = "719cb86eebec88db32b5c7a075388e5d7ffc46bf"
+
+[[file]]
+python = "pdfminer/casting.py"
+rust = "crates/pdfminer/src/casting.rs"
+how = "port"
+synced_blob = "24357b8185a50a6c4fb63fa02af4a9b8feefb6af"
+
+[[file]]
+python = "pdfminer/ccitt.py"
+rust = "crates/pdfminer/src/ccitt.rs"
+how = "port"
+synced_blob = "1dba88110ed3e3da8c2aaed14a1e4f2e616b3a3b"
+
+[[file]]
+python = "pdfminer/cmapdb.py"
+rust = "crates/pdfminer/src/cmapdb.rs"
+how = "port"
+synced_blob = "a007a821149bab4845985f2ad9dedfd42b0413d4"
+
+[[file]]
+python = "pdfminer/converter.py"
+rust = "crates/pdfminer/src/converter.rs"
+how = "port"
+synced_blob = "ad2c2108b22a55062a0e2c7c0ea5ed3477cb164b"
+
+[[file]]
+python = "pdfminer/data_structures.py"
+rust = "crates/pdfminer/src/data_structures.rs"
+how = "port"
+synced_blob = "1ef36f08ac0b2025f67b5a008686c8abe52a8609"
+
+[[file]]
+python = "pdfminer/encodingdb.py"
+rust = "crates/pdfminer/src/encodingdb.rs"
+how = "port"
+synced_blob = "85d8c1f6030ac350678f56e8ea8e987be9a208d1"
+
+[[file]]
+python = "pdfminer/fontmetrics.py"
+rust = "crates/pdfminer/src/fontmetrics.rs"
+how = "generated"
+synced_blob = "b6780b963a5599f9ba3cc6269b34b5bd42fa3c79"
+note = "tools/codegen.py"
+
+[[file]]
+python = "pdfminer/glyphlist.py"
+rust = "crates/pdfminer/src/glyphlist.rs"
+how = "generated"
+synced_blob = "7e5482ef62568270c64026dd9cc0a7666e2798c3"
+note = "tools/codegen.py"
+
+[[file]]
+python = "pdfminer/high_level.py"
+rust = "crates/pdfminer/src/high_level.rs"
+how = "port"
+synced_blob = "50c354793c899fc1998e40df37248eb4197eec93"
+
+[[file]]
+python = "pdfminer/image.py"
+rust = "crates/pdfminer/src/image.rs"
+how = "port"
+synced_blob = "7d98620390188d5599f610dd49cadbe86b743697"
+
+[[file]]
+python = "pdfminer/jbig2.py"
+rust = "crates/pdfminer/src/jbig2.rs"
+how = "port"
+synced_blob = "514d72c799e096fb163e10baf9f848ec0ff3236a"
+
+[[file]]
+python = "pdfminer/latin_enc.py"
+rust = "crates/pdfminer/src/latin_enc.rs"
+how = "generated"
+synced_blob = "e83c09cfdde9b13ca7fb65adffdac7ef6d4963c8"
+note = "tools/codegen.py"
+
+[[file]]
+python = "pdfminer/layout.py"
+rust = "crates/pdfminer/src/layout.rs"
+how = "port"
+synced_blob = "df818a15ca7156e9f1aa2fa344a3053b38a73bf3"
+
+[[file]]
+python = "pdfminer/lzw.py"
+rust = "crates/pdfminer/src/lzw.rs"
+how = "port"
+synced_blob = "05c9ab7e447278d9fe96e1063806d863fc3e225f"
+
+[[file]]
+python = "pdfminer/pdfcolor.py"
+rust = "crates/pdfminer/src/pdfcolor.rs"
+how = "port"
+synced_blob = "b0e640720251a8fad5fb563c8163b5efe0cad80f"
+
+[[file]]
+python = "pdfminer/pdfdevice.py"
+rust = "crates/pdfminer/src/pdfdevice.rs"
+how = "port"
+synced_blob = "89ebebe35bb978a45d8dbbad5df282ce4d007f78"
+
+[[file]]
+python = "pdfminer/pdfdocument.py"
+rust = "crates/pdfminer/src/pdfdocument.rs"
+how = "port"
+synced_blob = "9287d0c7d64b6192139ee3645f6119784fa14d03"
+
+[[file]]
+python = "pdfminer/pdfexceptions.py"
+rust = "crates/pdfminer/src/pdfexceptions.rs"
+how = "port"
+synced_blob = "224c28fe2b19640a3e499dc464c09c3072e42f39"
+
+[[file]]
+python = "pdfminer/pdffont.py"
+rust = "crates/pdfminer/src/pdffont.rs"
+how = "port"
+synced_blob = "03a75e873498786fdf6e3ea98db71af5fac9ae0f"
+
+[[file]]
+python = "pdfminer/pdfinterp.py"
+rust = "crates/pdfminer/src/pdfinterp.rs"
+how = "port"
+synced_blob = "167051ac012a3f0d33a96fb290afce732167a674"
+
+[[file]]
+python = "pdfminer/pdfpage.py"
+rust = "crates/pdfminer/src/pdfpage.rs"
+how = "port"
+synced_blob = "8643a06d4a278c67f0421decfee3551ac686f7d6"
+
+[[file]]
+python = "pdfminer/pdfparser.py"
+rust = "crates/pdfminer/src/pdfparser.rs"
+how = "port"
+synced_blob = "cb45e52072b54cca621a228e5fa4c216d1e674fd"
+
+[[file]]
+python = "pdfminer/pdftypes.py"
+rust = "crates/pdfminer/src/pdftypes.rs"
+how = "port"
+synced_blob = "ba2c245a3a7f676c0bcc40df2504b97700a5cba2"
+
+[[file]]
+python = "pdfminer/psexceptions.py"
+rust = "crates/pdfminer/src/psexceptions.rs"
+how = "port"
+synced_blob = "b8291dc0915cd48c0d63f7a29f877476f1c39220"
+
+[[file]]
+python = "pdfminer/psparser.py"
+rust = "crates/pdfminer/src/psparser.rs"
+how = "port"
+synced_blob = "0b9248d7cf7c3c97b30b2cdc162e95121c34a71c"
+
+[[file]]
+python = "pdfminer/runlength.py"
+rust = "crates/pdfminer/src/runlength.rs"
+how = "port"
+synced_blob = "c821e7cc2416fa0751d17b5ec2c2e459c27b649c"
+
+[[file]]
+python = "pdfminer/settings.py"
+rust = "crates/pdfminer/src/settings.rs"
+how = "port"
+synced_blob = "810077a0718f9fa29556b23009550b37a29cafab"
+
+[[file]]
+python = "pdfminer/utils.py"
+rust = "crates/pdfminer/src/utils.rs"
+how = "port"
+synced_blob = "934f574f52efbeb43ebafea65e830be04aaf1bc6"
+
+[[file]]
+python = "tests/helpers.py"
+rust = "-"
+how = "not-needed"
+synced_blob = "f6c8d6208c601bc3741cebcfb1e83d8a598067a8"
+note = "test helper"
+
+[[file]]
+python = "tests/tempfilepath.py"
+rust = "-"
+how = "not-needed"
+synced_blob = "a84ebd0c577dc1b860fd6df3bb589d84b08e7680"
+note = "test helper"
+
+[[file]]
+python = "tests/test_casting.py"
+rust = "crates/pdfminer/tests/test_casting.rs"
+how = "test"
+synced_blob = "7cf0b888a7aa773f482cc020aa016efb41cc6bdb"
+
+[[file]]
+python = "tests/test_cmapdb.py"
+rust = "crates/pdfminer/tests/test_cmapdb.rs"
+how = "test"
+synced_blob = "47b0ff88f2f3b95d1fd3562971c691fbb0658ce0"
+
+[[file]]
+python = "tests/test_cmapdb_security.py"
+rust = "crates/pdfminer/tests/test_cmapdb_security.rs"
+how = "test"
+synced_blob = "c91a298a2a1e7021040a2aa4f994a74773b2a336"
+
+[[file]]
+python = "tests/test_converter.py"
+rust = "crates/pdfminer/tests/test_converter.rs"
+how = "test"
+synced_blob = "40fbf44e2c115f73df889e6bb2ef0fecbe6e0c0b"
+
+[[file]]
+python = "tests/test_encodingdb.py"
+rust = "crates/pdfminer/tests/test_encodingdb.rs"
+how = "test"
+synced_blob = "2e30fbaf76ebf8684c2487d97466882dc1b2e5c4"
+
+[[file]]
+python = "tests/test_font_size.py"
+rust = "crates/pdfminer/tests/test_font_size.rs"
+how = "test"
+synced_blob = "2553df9fbc91723ea864f577e3b3b255c222c2c2"
+
+[[file]]
+python = "tests/test_highlevel_extracttext.py"
+rust = "crates/pdfminer/tests/test_highlevel_extracttext.rs"
+how = "test"
+synced_blob = "91c27ce225eb4d820476824543178c8e6c65b793"
+
+[[file]]
+python = "tests/test_layout.py"
+rust = "crates/pdfminer/tests/test_layout.rs"
+how = "test"
+synced_blob = "1fc45f95da467ff3057b5f82dacc33e9a4fb2392"
+
+[[file]]
+python = "tests/test_pdfdocument.py"
+rust = "crates/pdfminer/tests/test_pdfdocument.rs"
+how = "test"
+synced_blob = "d555ec7e22e1bff93df7b1f8cef12caea0b0e0b7"
+
+[[file]]
+python = "tests/test_pdfencoding.py"
+rust = "crates/pdfminer/tests/test_pdfencoding.rs"
+how = "test"
+synced_blob = "30715e099770a69126b8d9a6c6c65a553ffa2463"
+
+[[file]]
+python = "tests/test_pdffont.py"
+rust = "crates/pdfminer/tests/test_pdffont.rs"
+how = "test"
+synced_blob = "6af42fd4f05f7b46facb07e72af53c999f920164"
+
+[[file]]
+python = "tests/test_pdfminer_ccitt.py"
+rust = "crates/pdfminer/tests/test_pdfminer_ccitt.rs"
+how = "test"
+synced_blob = "685b043f7b5fe85bb43d445b14ff3a6b987694c7"
+
+[[file]]
+python = "tests/test_pdfminer_crypto.py"
+rust = "crates/pdfminer/tests/test_pdfminer_crypto.rs"
+how = "test"
+synced_blob = "e7acf4ddc64d840a696d30216dd80f0f9412ef5b"
+
+[[file]]
+python = "tests/test_pdfminer_psparser.py"
+rust = "crates/pdfminer/tests/test_pdfminer_psparser.rs"
+how = "test"
+synced_blob = "3543de92c95f1f8685cfd4c2e6c3b2d12a2f1cac"
+
+[[file]]
+python = "tests/test_pdfpage.py"
+rust = "crates/pdfminer/tests/test_pdfpage.rs"
+how = "test"
+synced_blob = "bb12fedf7e3a9094e4f7fe86cfef4f5815ec4129"
+
+[[file]]
+python = "tests/test_tools_dumppdf.py"
+rust = "crates/pdfminer/tests/test_tools_dumppdf.rs"
+how = "test"
+synced_blob = "1d23eb7f80bd5dcf46499064c69c607e9849f597"
+
+[[file]]
+python = "tests/test_tools_pdf2txt.py"
+rust = "crates/pdfminer/tests/test_tools_pdf2txt.rs"
+how = "test"
+synced_blob = "e8a875a4361884b9e3c84cd8b186534cc76e1b50"
+
+[[file]]
+python = "tests/test_utils.py"
+rust = "crates/pdfminer/tests/test_utils.rs"
+how = "test"
+synced_blob = "94906e5e5f11d56f0a968a34f9e9ec275c3889bb"
+
+[[file]]
+python = "tools/conv_cmap.py"
+rust = "-"
+how = "not-needed"
+synced_blob = "180bd6099695b05263b535a978be2e5aa4009917"
+note = "builds the cmap JSON files, which are embedded as is"
+
+[[file]]
+python = "tools/convert_cmaps_to_json.py"
+rust = "-"
+how = "not-needed"
+synced_blob = "93e66823f91a90a15a1d528bd480af3b4ebcbbb0"
+note = "builds the cmap JSON files, which are embedded as is"
+
+[[file]]
+python = "tools/dumppdf.py"
+rust = "crates/pdfminer-cli/src/dumppdf.rs"
+how = "port"
+synced_blob = "96911a9c714d8838f142fd399a54af0a4d9ea34c"
+
+[[file]]
+python = "tools/pdf2txt.py"
+rust = "crates/pdfminer-cli/src/pdf2txt.rs"
+how = "port"
+synced_blob = "95214d7ad8526f4bb61bffd7813aaaddb2046d2f"
