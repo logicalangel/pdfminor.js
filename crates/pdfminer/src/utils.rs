@@ -548,3 +548,259 @@ pub fn unpad_aes(padded: &[u8]) -> &[u8] {
 }
 
 // --- Plane and vecBetweenBoxes (they need the layout objects) -------------------------------
+
+use crate::layout::LTItem;
+
+/// `vecBetweenBoxes(obj1, obj2)`: a distance function between two TextBoxes.
+///
+/// Consider the bounding rectangle for obj1 and obj2.
+/// Return vector between 2 boxes boundaries if they don't overlap, otherwise
+/// returns vector between boxes centers
+///
+/// ```text
+///          +------+..........+ (x1, y1)
+///          | obj1 |          :
+///          +------+www+------+
+///          :          | obj2 |
+/// (x0, y0) +..........+------+
+/// ```
+#[allow(non_snake_case)]
+pub fn vecBetweenBoxes(obj1: &LTItem, obj2: &LTItem) -> Point {
+    let (x0, y0) = (pymin(obj1.x0(), obj2.x0()), pymin(obj1.y0(), obj2.y0()));
+    let (x1, y1) = (pymax(obj1.x1(), obj2.x1()), pymax(obj1.y1(), obj2.y1()));
+    let (ow, oh) = (x1 - x0, y1 - y0);
+    let (iw, ih) = (ow - obj1.width() - obj2.width(), oh - obj1.height() - obj2.height());
+    if iw < 0.0 && ih < 0.0 {
+        // if one is inside another we compute euclidean distance
+        let (xc1, yc1) = ((obj1.x0() + obj1.x1()) / 2.0, (obj1.y0() + obj1.y1()) / 2.0);
+        let (xc2, yc2) = ((obj2.x0() + obj2.x1()) / 2.0, (obj2.y0() + obj2.y1()) / 2.0);
+        (xc1 - xc2, yc1 - yc2)
+    } else {
+        (pymax(0.0, iw), pymax(0.0, ih))
+    }
+}
+
+/// `Plane`: a set-like data structure for objects placed on a plane.
+///
+/// Can efficiently find objects in a certain rectangular area.
+/// It maintains two parallel lists of objects, each of
+/// which is sorted by its x or y coordinate.
+pub struct Plane {
+    /// preserve the object order.
+    _seq: Vec<LTItem>,
+    _objs: HashSet<LTItem>,
+    _grid: indexmap::IndexMap<(i64, i64), Vec<LTItem>>,
+    pub gridsize: i64,
+    pub x0: f64,
+    pub y0: f64,
+    pub x1: f64,
+    pub y1: f64,
+}
+
+impl Plane {
+    /// `Plane(bbox, gridsize)` (pdfminer passes the default `gridsize=50`).
+    pub fn new(bbox: Rect, gridsize: i64) -> Self {
+        let (x0, y0, x1, y1) = bbox;
+        Plane { _seq: Vec::new(), _objs: HashSet::new(), _grid: indexmap::IndexMap::new(), gridsize, x0, y0, x1, y1 }
+    }
+
+    pub fn repr(&self) -> String {
+        let items: Vec<String> = self.iter().map(|o| o.repr()).collect();
+        format!("<Plane objs=[{}]>", items.join(", "))
+    }
+
+    /// `iter(plane)`: the objects in the order they were added.
+    pub fn iter(&self) -> impl Iterator<Item = &LTItem> {
+        self._seq.iter().filter(|obj| self._objs.contains(*obj))
+    }
+
+    /// `len(plane)`.
+    pub fn len(&self) -> usize {
+        self._objs.len()
+    }
+
+    pub fn is_empty(&self) -> bool {
+        self._objs.is_empty()
+    }
+
+    /// `obj in plane`.
+    pub fn contains(&self, obj: &LTItem) -> bool {
+        self._objs.contains(obj)
+    }
+
+    /// `drange(v0, v1, self.gridsize)`.
+    fn drange(&self, v0: f64, v1: f64) -> PyResult<std::ops::Range<i64>> {
+        if self.gridsize == 0 {
+            // `int(v0) // 0`
+            float_to_int(v0)?;
+            return Err(PyErr::new(ExcKind::ZeroDivisionError, "division by zero"));
+        }
+        drange(v0, v1, self.gridsize)
+    }
+
+    /// `_getrange(bbox)`: the grid cells the rectangle covers, row by row. Like Python's
+    /// generator, the x range is only computed (and only raises) when there is a row.
+    fn _getrange(&self, bbox: Rect) -> PyResult<impl Iterator<Item = (i64, i64)> + use<>> {
+        let (x0, y0, x1, y1) = bbox;
+        let (ys, xs) = if x1 <= self.x0 || self.x1 <= x0 || y1 <= self.y0 || self.y1 <= y0 {
+            (0..0, 0..0)
+        } else {
+            let x0 = pymax(self.x0, x0);
+            let y0 = pymax(self.y0, y0);
+            let x1 = pymin(self.x1, x1);
+            let y1 = pymin(self.y1, y1);
+            let ys = self.drange(y0, y1)?;
+            let xs = if ys.is_empty() { 0..0 } else { self.drange(x0, x1)? };
+            (ys, xs)
+        };
+        Ok(ys.flat_map(move |grid_y| xs.clone().map(move |grid_x| (grid_x, grid_y))))
+    }
+
+    /// `extend(objs)`.
+    pub fn extend(&mut self, objs: impl IntoIterator<Item = LTItem>) -> PyResult<()> {
+        for obj in objs {
+            self.add(obj)?;
+        }
+        Ok(())
+    }
+
+    /// `add(obj)`: place an object.
+    pub fn add(&mut self, obj: LTItem) -> PyResult<()> {
+        for k in self._getrange((obj.x0(), obj.y0(), obj.x1(), obj.y1()))? {
+            self._grid.entry(k).or_default().push(obj.clone());
+        }
+        self._seq.push(obj.clone());
+        self._objs.insert(obj);
+        Ok(())
+    }
+
+    /// `remove(obj)`: displace an object (`KeyError` if it is not in the plane).
+    pub fn remove(&mut self, obj: &LTItem) -> PyResult<()> {
+        for k in self._getrange((obj.x0(), obj.y0(), obj.x1(), obj.y1()))? {
+            // with contextlib.suppress(KeyError, ValueError): self._grid[k].remove(obj)
+            if let Some(r) = self._grid.get_mut(&k)
+                && let Some(i) = r.iter().position(|o| o == obj)
+            {
+                r.remove(i);
+            }
+        }
+        if !self._objs.remove(obj) {
+            return Err(PyErr::new(ExcKind::KeyError, obj.repr()));
+        }
+        Ok(())
+    }
+
+    /// `find(bbox)`: finds objects that are in a certain area, in grid order.
+    #[allow(clippy::mutable_key_type)] // LTItem hashes by identity, which never changes
+    pub fn find(&self, bbox: Rect) -> PyResult<Vec<LTItem>> {
+        let (x0, y0, x1, y1) = bbox;
+        let mut done: HashSet<&LTItem> = HashSet::new();
+        let mut out = Vec::new();
+        for k in self._getrange(bbox)? {
+            let Some(objs) = self._grid.get(&k) else {
+                continue;
+            };
+            for obj in objs {
+                if !done.insert(obj) {
+                    continue;
+                }
+                if obj.x1() <= x0 || x1 <= obj.x0() || obj.y1() <= y0 || y1 <= obj.y0() {
+                    continue;
+                }
+                out.push(obj.clone());
+            }
+        }
+        Ok(out)
+    }
+}
+
+#[cfg(test)]
+mod plane_tests {
+    use super::*;
+    use crate::layout::LTComponent;
+
+    fn given_plane_with_one_object(object_size: f64, gridsize: i64) -> (Plane, LTItem) {
+        let bounding_box = (0.0, 0.0, 100.0, 100.0);
+        let mut plane = Plane::new(bounding_box, gridsize);
+        let obj = LTComponent((0.0, 0.0, object_size, object_size));
+        plane.add(obj.clone()).unwrap();
+        (plane, obj)
+    }
+
+    #[test]
+    fn test_find_nothing_in_empty_bbox() {
+        let (plane, _) = given_plane_with_one_object(50.0, 50);
+        let result = plane.find((50.0, 50.0, 100.0, 100.0)).unwrap();
+        assert!(result.is_empty());
+    }
+
+    #[test]
+    fn test_find_nothing_after_removing() {
+        let (mut plane, obj) = given_plane_with_one_object(50.0, 50);
+        plane.remove(&obj).unwrap();
+        let result = plane.find((0.0, 0.0, 100.0, 100.0)).unwrap();
+        assert!(result.is_empty());
+    }
+
+    #[test]
+    fn test_find_object_in_whole_plane() {
+        let (plane, obj) = given_plane_with_one_object(50.0, 50);
+        let result = plane.find((0.0, 0.0, 100.0, 100.0)).unwrap();
+        assert_eq!(result, vec![obj]);
+    }
+
+    #[test]
+    fn test_find_if_object_is_smaller_than_gridsize() {
+        let (plane, obj) = given_plane_with_one_object(1.0, 100);
+        let result = plane.find((0.0, 0.0, 100.0, 100.0)).unwrap();
+        assert_eq!(result, vec![obj]);
+    }
+
+    #[test]
+    fn test_find_object_if_much_larger_than_gridsize() {
+        let (plane, obj) = given_plane_with_one_object(100.0, 10);
+        let result = plane.find((0.0, 0.0, 100.0, 100.0)).unwrap();
+        assert_eq!(result, vec![obj]);
+    }
+
+    #[test]
+    fn remove_missing_raises_key_error() {
+        let (mut plane, obj) = given_plane_with_one_object(50.0, 50);
+        plane.remove(&obj).unwrap();
+        let e = plane.remove(&obj).unwrap_err();
+        assert!(e.is(ExcKind::KeyError));
+        assert_eq!(e.msg, "<LTComponent 0.000,0.000,50.000,50.000>");
+    }
+
+    #[test]
+    fn nan_and_inf_bboxes() {
+        // NaN and infinite coordinates of an object are clamped to the plane
+        // (`max(self.x0, nan)` keeps self.x0) ...
+        let mut plane = Plane::new((0.0, 0.0, 100.0, 100.0), 50);
+        plane.add(LTComponent((f64::NAN, 0.0, f64::INFINITY, 10.0))).unwrap();
+        assert_eq!(plane.len(), 1);
+        // ... but a NaN or infinite plane makes `int()` raise.
+        let mut plane = Plane::new((0.0, 0.0, f64::NAN, 100.0), 50);
+        let e = plane.add(LTComponent((0.0, 0.0, 10.0, 10.0))).unwrap_err();
+        assert!(e.is(ExcKind::ValueError));
+        let mut plane = Plane::new((0.0, 0.0, f64::INFINITY, 100.0), 50);
+        plane.add(LTComponent((0.0, 0.0, 10.0, 10.0))).unwrap();
+        let e = plane.add(LTComponent((0.0, 0.0, f64::INFINITY, 10.0))).unwrap_err();
+        assert!(e.is(ExcKind::OverflowError));
+        // No row: the x range is never computed.
+        let mut plane = Plane::new((0.0, 100.0, f64::NAN, 0.0), 50);
+        plane.add(LTComponent((0.0, 0.0, 10.0, 10.0))).unwrap();
+        let mut plane = Plane::new((0.0, 0.0, 100.0, 100.0), 0);
+        let e = plane.add(LTComponent((0.0, 0.0, 10.0, 10.0))).unwrap_err();
+        assert!(e.is(ExcKind::ZeroDivisionError));
+    }
+
+    #[test]
+    fn vec_between_boxes() {
+        let a = LTComponent((0.0, 0.0, 10.0, 10.0));
+        let b = LTComponent((20.0, 5.0, 30.0, 8.0));
+        assert_eq!(vecBetweenBoxes(&a, &b), (10.0, 0.0));
+        let c = LTComponent((2.0, 2.0, 4.0, 4.0));
+        assert_eq!(vecBetweenBoxes(&a, &c), (2.0, 2.0));
+    }
+}
