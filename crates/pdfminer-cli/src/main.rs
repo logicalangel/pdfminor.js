@@ -24,6 +24,12 @@ use pdfminer::pyrt::error::PyErr;
 #[derive(Clone)]
 pub struct Stdout(Rc<RefCell<std::io::BufWriter<std::io::Stdout>>>);
 
+impl Default for Stdout {
+    fn default() -> Self {
+        Self::new()
+    }
+}
+
 impl Stdout {
     pub fn new() -> Self {
         Stdout(Rc::new(RefCell::new(std::io::BufWriter::with_capacity(1 << 16, std::io::stdout()))))
@@ -41,7 +47,8 @@ impl Write for Stdout {
 
 /// What Python prints for an uncaught exception (without the frames).
 pub fn traceback(e: &PyErr) -> String {
-    let last = if e.msg.is_empty() { e.kind.name().to_string() } else { format!("{}: {}", e.kind.name(), e.msg) };
+    let name = e.kind.qualified_name();
+    let last = if e.msg.is_empty() { name } else { format!("{name}: {}", e.msg) };
     format!("Traceback (most recent call last):\n  File \"<pdfminer-rs>\", line 0, in <module>\n{last}\n")
 }
 
