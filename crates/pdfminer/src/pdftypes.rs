@@ -11,7 +11,7 @@ use crate::lzw::lzwdecode;
 use crate::pdfdocument::PDFDocument;
 use crate::pyrt::error::{ExcKind, PyErr, PyResult};
 use crate::pyrt::fmt::{bytes_repr, str_repr};
-use crate::pyrt::value::{DictRef, Value, dict_repr, py_eq};
+use crate::pyrt::value::{DictRef, Value, dict_repr, py_add, py_cmp, py_eq};
 use crate::pyrt::zlib;
 use crate::runlength::rldecode;
 use crate::settings;
@@ -192,18 +192,32 @@ pub fn decipher_all(decipher: &DecipherCallable, objid: i64, genno: i64, x: &Val
     }
 }
 
-/// `int_value(x)`: the int (bools count as ints), or 0 in non-strict mode.
+/// `int_value(x)` where the port needs an i64: an int beyond i64 raises `OverflowError`
+/// (DIVERGE(bigint)); callers where Python goes on with it use [`int_value_obj`].
 pub fn int_value(x: &Value) -> PyResult<i64> {
+    let v = int_value_obj(x)?;
+    v.as_int().ok_or_else(|| PyErr::new(ExcKind::OverflowError, "int too large for the port (i64)"))
+}
+
+/// `int_value(x)`: the int itself (bools count as ints; exact beyond i64), or 0 in non-strict
+/// mode.
+pub fn int_value_obj(x: &Value) -> PyResult<Value> {
     let x = resolve1(x)?;
-    match x.as_int() {
-        Some(i) => Ok(i),
-        None => {
-            if settings::STRICT {
-                return Err(PyErr::new(ExcKind::PDFTypeError, format!("Integer required: {}", x.repr())));
-            }
-            Ok(0)
-        }
+    if x.is_int() {
+        return Ok(x);
     }
+    if settings::STRICT {
+        return Err(PyErr::new(ExcKind::PDFTypeError, format!("Integer required: {}", x.repr())));
+    }
+    Ok(Value::Int(0))
+}
+
+/// An int saturated to i64, for uses where every value beyond i64 behaves alike (a slice bound,
+/// a later range check).
+pub fn saturate_i64(v: &Value) -> i64 {
+    v.as_int().unwrap_or_else(|| {
+        if v.as_bigint().is_some_and(|b| num_traits::Signed::is_negative(&b)) { i64::MIN } else { i64::MAX }
+    })
 }
 
 /// `float_value(x)`: the float (ints are *not* accepted), or 0.0 in non-strict mode.
@@ -233,9 +247,9 @@ pub fn num_value(x: &Value) -> PyResult<Value> {
 }
 
 /// `uint_value(x, n_bits)`: resolves a number and reads it as a two's-complement unsigned number.
-pub fn uint_value(x: &Value, n_bits: u32) -> PyResult<i64> {
-    let xi = int_value(x)?;
-    if xi > 0 { Ok(xi) } else { Ok(xi + (1i64 << n_bits)) }
+pub fn uint_value(x: &Value, n_bits: u32) -> PyResult<Value> {
+    let xi = int_value_obj(x)?;
+    if py_cmp(&xi, &Value::Int(0), ">")? { Ok(xi) } else { py_add(&xi, &Value::Int(1i64 << n_bits)) }
 }
 
 /// `str_value(x)`: the bytes, or `b""` in non-strict mode.
@@ -528,23 +542,24 @@ impl PDFStream {
             }
             // apply predictors
             if params.truthy() && py_contains_str(&params, "Predictor")? {
-                let pred = int_value(&py_getitem_str(&params, "Predictor")?)?;
+                // compared with small ints: every int beyond i64 behaves alike
+                let pred = saturate_i64(&int_value_obj(&py_getitem_str(&params, "Predictor")?)?);
                 if pred == 1 {
                     // no predictor
                 } else if pred == 2 {
                     // TIFF predictor 2
-                    let colors = int_value(&py_get_str(&params, "Colors", Value::Int(1))?)?;
-                    let columns = int_value(&py_get_str(&params, "Columns", Value::Int(1))?)?;
+                    let colors = int_value_obj(&py_get_str(&params, "Colors", Value::Int(1))?)?;
+                    let columns = int_value_obj(&py_get_str(&params, "Columns", Value::Int(1))?)?;
                     let raw_bits_per_component = py_get_str(&params, "BitsPerComponent", Value::Int(8))?;
-                    let bitspercomponent = int_value(&raw_bits_per_component)?;
-                    data = Rc::from(apply_tiff_predictor(colors, columns, bitspercomponent, &data)?);
+                    let bitspercomponent = int_value_obj(&raw_bits_per_component)?;
+                    data = Rc::from(apply_tiff_predictor(&colors, &columns, &bitspercomponent, &data)?);
                 } else if pred >= 10 {
                     // PNG predictor
-                    let colors = int_value(&py_get_str(&params, "Colors", Value::Int(1))?)?;
-                    let columns = int_value(&py_get_str(&params, "Columns", Value::Int(1))?)?;
+                    let colors = int_value_obj(&py_get_str(&params, "Colors", Value::Int(1))?)?;
+                    let columns = int_value_obj(&py_get_str(&params, "Columns", Value::Int(1))?)?;
                     let raw_bits_per_component = py_get_str(&params, "BitsPerComponent", Value::Int(8))?;
-                    let bitspercomponent = int_value(&raw_bits_per_component)?;
-                    data = Rc::from(apply_png_predictor(pred, colors, columns, bitspercomponent, &data)?);
+                    let bitspercomponent = int_value_obj(&raw_bits_per_component)?;
+                    data = Rc::from(apply_png_predictor(pred, &colors, &columns, &bitspercomponent, &data)?);
                 } else {
                     let error_msg = format!("Unsupported predictor: {}", pred);
                     return Err(PyErr::new(ExcKind::PDFNotImplementedError, error_msg));

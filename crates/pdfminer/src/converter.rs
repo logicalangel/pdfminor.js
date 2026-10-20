@@ -41,7 +41,7 @@ use crate::pyrt::error::{ExcKind, PyErr, PyResult};
 use crate::pyrt::fmt::{fixed, float_repr};
 use crate::pyrt::pystr::PyStr;
 use crate::pyrt::textio::{AnyIO, Codec, Errors, encode, lookup};
-use crate::pyrt::value::{Value, float_to_int, py_add, py_eq, py_mul};
+use crate::pyrt::value::{Value, float_to_int_obj, py_add, py_eq, py_mul};
 use crate::utils::{Matrix, PathSegment, Point, Rect, apply_matrix_pt, apply_matrix_rect, bbox2str, enc, enc_pystr};
 
 /// `RecursionError` when a Python frame at `depth` would exceed the recursion limit.
@@ -1366,10 +1366,10 @@ impl HOCRConverter {
     pub fn bbox_repr(&self, bbox: Rect) -> PyResult<String> {
         let (in_x0, in_y0, in_x1, in_y1) = bbox;
         // PDF y-coordinates are the other way round from hOCR coordinates
-        let out_x0 = float_to_int(in_x0)?;
-        let out_y0 = float_to_int(self.page_bbox.3 - in_y1)?;
-        let out_x1 = float_to_int(in_x1)?;
-        let out_y1 = float_to_int(self.page_bbox.3 - in_y0)?;
+        let out_x0 = float_to_int_obj(in_x0)?.repr();
+        let out_y0 = float_to_int_obj(self.page_bbox.3 - in_y1)?.repr();
+        let out_x1 = float_to_int_obj(in_x1)?.repr();
+        let out_y1 = float_to_int_obj(self.page_bbox.3 - in_y0)?.repr();
         Ok(format!("bbox {out_x0} {out_y0} {out_x1} {out_y1}"))
     }
 

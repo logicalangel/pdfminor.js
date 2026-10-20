@@ -6,7 +6,7 @@ use log::debug;
 
 use crate::casting::safe_int_obj;
 use crate::pdfdocument::PDFDocument;
-use crate::pdftypes::{PDFObjRef, PDFStream, dict_value, int_value};
+use crate::pdftypes::{PDFObjRef, PDFStream, dict_value, int_value_obj};
 use crate::psparser::{PSKeyword, PSStackParser, PSStackParserImpl};
 use crate::pyrt::error::{ExcKind, PyErr, PyResult};
 use crate::pyrt::fmt::bytes_repr;
@@ -67,11 +67,11 @@ impl PDFParser {
                 ));
             }
             let dic = dict_value(&popped_data[0].1)?;
-            let mut objlen: i64 = 0;
+            let mut objlen_v = Value::Int(0);
             if !self.fallback {
                 let length = dic.borrow().get("Length").cloned();
                 match length {
-                    Some(v) => objlen = int_value(&v)?,
+                    Some(v) => objlen_v = int_value_obj(&v)?,
                     None => {
                         if settings::STRICT {
                             return Err(PyErr::new(ExcKind::PDFSyntaxError, "/Length is undefined"));
@@ -92,6 +92,10 @@ impl PDFParser {
             };
             let pos = pos + line.len() as i64;
             self.fp().seek(pos)?;
+            // `fp.read(objlen)` of an int beyond i64
+            let Some(mut objlen) = objlen_v.as_int() else {
+                return Err(PyErr::new(ExcKind::OverflowError, "cannot fit 'int' into an index-sized integer"));
+            };
             let mut data: Vec<u8> = self.fp().read(objlen).to_vec();
             self.seek(pos + objlen)?;
             loop {

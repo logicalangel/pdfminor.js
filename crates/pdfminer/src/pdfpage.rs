@@ -8,11 +8,11 @@ use log::{debug, warn};
 
 use crate::pdfdocument::{ObjKey, ObjidIter, PDFDocument, PageLabelsIter, RECURSION_LIMIT, obj_key, py_iter_items};
 use crate::pdfparser::PDFParser;
-use crate::pdftypes::{dict_value, int_value, list_value, resolve1};
+use crate::pdftypes::{dict_value, int_value_obj, list_value, resolve1};
 use crate::pyrt::error::{ExcKind, PyErr, PyResult};
 use crate::pyrt::fmt::float_repr;
 use crate::pyrt::io::BytesIO;
-use crate::pyrt::value::{DictRef, Value, py_float};
+use crate::pyrt::value::{DictRef, Value, py_add, py_float, py_mod};
 use crate::settings;
 use crate::utils::Rect;
 
@@ -99,9 +99,9 @@ impl PDFPage {
         let mediabox = Self::_parse_mediabox(dget(&attrs, "MediaBox"))?;
         let cropbox = Self::_parse_cropbox(dget(&attrs, "CropBox"), mediabox)?;
         let contents = Self::_parse_contents(dget(&attrs, "Contents"))?;
-        let rotate = int_value(&dget(&attrs, "Rotate").unwrap_or(Value::Int(0)))?;
-        // (rotate + 360) % 360, without overflowing i64.
-        let rotate = (rotate as i128 + 360).rem_euclid(360) as i64;
+        let rotate = int_value_obj(&dget(&attrs, "Rotate").unwrap_or(Value::Int(0)))?;
+        // (rotate + 360) % 360, exact
+        let rotate = py_mod(&py_add(&rotate, &Value::Int(360))?, &Value::Int(360))?.as_int().expect("in 0..360");
         let annots = dget(&attrs, "Annots").unwrap_or(Value::None);
         let beads = dget(&attrs, "B").unwrap_or(Value::None);
         Ok(PDFPage {
@@ -215,7 +215,7 @@ impl PDFPage {
 }
 
 enum Labels {
-    Labels(PageLabelsIter),
+    Labels(Box<PageLabelsIter>),
     /// `itertools.repeat(None)`
     Repeat,
 }
@@ -325,7 +325,7 @@ impl CreatePages {
         if !self.started {
             self.started = true;
             self.page_labels = Some(match self.doc.get_page_labels() {
-                Ok(it) => Labels::Labels(it),
+                Ok(it) => Labels::Labels(Box::new(it)),
                 Err(e) if e.is(ExcKind::PDFNoPageLabels) => Labels::Repeat,
                 Err(e) => return Err(e),
             });
