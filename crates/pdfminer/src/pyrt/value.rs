@@ -887,6 +887,17 @@ pub fn py_float(x: &Value) -> PyResult<f64> {
     }
 }
 
+/// The `ValueError` of `a, b, ... = x` with more than `n` items: Python 3.14 adds the count for
+/// a `list`, `tuple` or `dict` (not for `bytes`, `str` or iterators).
+pub fn too_many_values(x: &Value, n: usize, got: usize) -> PyErr {
+    let msg = if matches!(x, Value::List(_) | Value::Tuple(_) | Value::Dict(_)) {
+        format!("too many values to unpack (expected {n}, got {got})")
+    } else {
+        format!("too many values to unpack (expected {n})")
+    };
+    PyErr::new(ExcKind::ValueError, msg)
+}
+
 // ---------------------------------------------------------------------------------------------
 // min / max with Python's NaN behaviour
 

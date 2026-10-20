@@ -732,11 +732,10 @@ impl PDFXRefStream {
             Err(e) => return Err(e),
         };
         if items.len() != 3 {
-            let msg = if items.len() < 3 {
-                format!("not enough values to unpack (expected 3, got {})", items.len())
-            } else {
-                "too many values to unpack (expected 3)".to_string()
-            };
+            if items.len() > 3 {
+                return Err(crate::pyrt::value::too_many_values(&w, 3, items.len()));
+            }
+            let msg = format!("not enough values to unpack (expected 3, got {})", items.len());
             return Err(PyErr::new(ExcKind::ValueError, msg));
         }
         self.fl1 = Some(items[0].clone());
@@ -1836,7 +1835,8 @@ impl PDFDocument {
                     let msg = if limits.len() < 2 {
                         format!("not enough values to unpack (expected 2, got {})", limits.len())
                     } else {
-                        "too many values to unpack (expected 2)".to_string()
+                        // a list
+                        format!("too many values to unpack (expected 2, got {})", limits.len())
                     };
                     return Err(PyErr::new(ExcKind::ValueError, msg));
                 }

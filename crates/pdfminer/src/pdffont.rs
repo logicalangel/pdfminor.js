@@ -98,7 +98,7 @@ pub(crate) fn py_unpack(x: &Value, n: usize) -> PyResult<Vec<Value>> {
         ));
     }
     if items.len() > n {
-        return Err(PyErr::new(ExcKind::ValueError, format!("too many values to unpack (expected {n})")));
+        return Err(crate::pyrt::value::too_many_values(x, n, items.len()));
     }
     Ok(items)
 }
@@ -559,7 +559,8 @@ fn unpack1(v: &[Value]) -> PyResult<Value> {
     match v.len() {
         1 => Ok(v[0].clone()),
         0 => Err(PyErr::new(ExcKind::ValueError, "not enough values to unpack (expected 1, got 0)")),
-        _ => Err(PyErr::new(ExcKind::ValueError, "too many values to unpack (expected 1)")),
+        // a list
+        n => Err(PyErr::new(ExcKind::ValueError, format!("too many values to unpack (expected 1, got {n})"))),
     }
 }
 
@@ -1059,7 +1060,8 @@ fn apply_matrix_norm_values(m: &[Value]) -> PyResult<(Value, Value)> {
             if m.len() < 6 {
                 format!("not enough values to unpack (expected 6, got {})", m.len())
             } else {
-                "too many values to unpack (expected 6)".to_string()
+                // a tuple
+                format!("too many values to unpack (expected 6, got {})", m.len())
             },
         ));
     }
