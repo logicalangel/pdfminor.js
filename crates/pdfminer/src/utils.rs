@@ -5,11 +5,13 @@
 use std::collections::HashSet;
 use std::hash::Hash;
 
+use crate::pdftypes::saturate_i64;
 use crate::pyrt::error::{ExcKind, PyErr, PyResult};
 use crate::pyrt::fmt::fixed;
 use crate::pyrt::pystr::PyStr;
 use crate::pyrt::value::{
-    Value, float_to_int, float_to_int_obj, int_floordiv, py_cmp, py_floordiv, pymax, pymax_iter, pymin, pymin_iter,
+    Value, float_to_int, float_to_int_obj, int_floordiv, py_cmp, py_floordiv, py_mul, pymax, pymax_iter, pymin,
+    pymin_iter,
 };
 use num_traits::ToPrimitive;
 
@@ -114,6 +116,15 @@ fn at<T: Copy>(seq: &[T], i: i64) -> PyResult<T> {
     Ok(seq[j as usize])
 }
 
+/// The longest `/Columns` of a PNG predictor (`list(b"\x00" * columns)`). DIVERGE(predictor-alloc):
+/// Python allocates any size until memory runs out; the port raises `MemoryError` beyond.
+const MAX_PREDICTOR_COLUMNS: i64 = 1 << 27;
+
+/// `i - j` of an index and a saturated int: an overflow is an index beyond every sequence.
+fn index_sub(i: i64, j: i64) -> i64 {
+    i.checked_sub(j).unwrap_or(i64::MAX)
+}
+
 /// `range(start, stop, step)` as a Vec of indices (Python raises `ValueError` for step 0).
 fn py_range(start: i64, stop: i64, step: i64) -> PyResult<Vec<i64>> {
     if step == 0 {
@@ -124,32 +135,41 @@ fn py_range(start: i64, stop: i64, step: i64) -> PyResult<Vec<i64>> {
     if step > 0 {
         while i < stop {
             out.push(i);
-            i += step;
+            i = i.saturating_add(step);
         }
     } else {
         while i > stop {
             out.push(i);
-            i += step;
+            i = i.saturating_add(step);
         }
     }
     Ok(out)
 }
 
 /// `apply_tiff_predictor(colors, columns, bitspercomponent, data)`: reverses TIFF predictor 2.
-pub fn apply_tiff_predictor(colors: i64, columns: i64, bitspercomponent: i64, data: &[u8]) -> PyResult<Vec<u8>> {
-    if bitspercomponent != 8 {
-        let error_msg = format!("Unsupported `bitspercomponent': {bitspercomponent}");
+///
+/// The ints are Python's (exact); the products are computed exactly and then saturated to i64,
+/// where every value beyond behaves alike (range bounds and comparisons with indexes).
+pub fn apply_tiff_predictor(
+    colors: &Value,
+    columns: &Value,
+    bitspercomponent: &Value,
+    data: &[u8],
+) -> PyResult<Vec<u8>> {
+    if bitspercomponent.as_int() != Some(8) {
+        let error_msg = format!("Unsupported `bitspercomponent': {}", bitspercomponent.repr());
         return Err(PyErr::new(ExcKind::PDFValueError, error_msg));
     }
-    let bpp = colors * int_floordiv(bitspercomponent, 8);
-    let nbytes = columns * bpp;
+    let bpp_v = py_mul(colors, &py_floordiv(bitspercomponent, &Value::Int(8))?)?;
+    let nbytes = saturate_i64(&py_mul(columns, &bpp_v)?);
+    let bpp = saturate_i64(&bpp_v);
     let mut buf: Vec<u8> = Vec::new();
     for scanline_i in py_range(0, data.len() as i64, nbytes)? {
         let mut raw: Vec<i64> = Vec::new();
         for i in 0..nbytes.max(0) {
-            let mut new_value = at(data, scanline_i + i)? as i64;
+            let mut new_value = at(data, scanline_i.saturating_add(i))? as i64;
             if i >= bpp {
-                new_value += at(&raw, i - bpp)?;
+                new_value += at(&raw, index_sub(i, bpp))?;
                 new_value = new_value.rem_euclid(256);
             }
             raw.push(new_value);
@@ -162,25 +182,38 @@ pub fn apply_tiff_predictor(colors: i64, columns: i64, bitspercomponent: i64, da
 
 /// `apply_png_predictor(pred, colors, columns, bitspercomponent, data)`: reverses the PNG
 /// predictor.
+///
+/// The ints are exact as in [`apply_tiff_predictor`].
 pub fn apply_png_predictor(
     _pred: i64,
-    colors: i64,
-    columns: i64,
-    bitspercomponent: i64,
+    colors: &Value,
+    columns: &Value,
+    bitspercomponent: &Value,
     data: &[u8],
 ) -> PyResult<Vec<u8>> {
-    if bitspercomponent != 8 && bitspercomponent != 1 {
-        let msg = format!("Unsupported `bitspercomponent': {bitspercomponent}");
+    if !matches!(bitspercomponent.as_int(), Some(8 | 1)) {
+        let msg = format!("Unsupported `bitspercomponent': {}", bitspercomponent.repr());
         return Err(PyErr::new(ExcKind::PDFValueError, msg));
     }
-    let nbytes = int_floordiv(colors * columns * bitspercomponent, 8);
-    let bpp = int_floordiv(colors * bitspercomponent, 8); // number of bytes per complete pixel
+    let eight = Value::Int(8);
+    let nbytes = saturate_i64(&py_floordiv(&py_mul(&py_mul(colors, columns)?, bitspercomponent)?, &eight)?);
+    // number of bytes per complete pixel
+    let bpp = saturate_i64(&py_floordiv(&py_mul(colors, bitspercomponent)?, &eight)?);
     let mut buf: Vec<u8> = Vec::new();
-    let mut line_above: Vec<i64> = vec![0; columns.max(0) as usize];
-    for scanline_i in py_range(0, data.len() as i64, nbytes + 1)? {
+    // `list(b"\x00" * columns)`
+    let ncolumns = match columns.as_int() {
+        Some(n) => n.max(0),
+        None if columns.as_bigint().is_some_and(|b| num_traits::Signed::is_negative(&b)) => 0,
+        None => return Err(PyErr::new(ExcKind::OverflowError, "cannot fit 'int' into an index-sized integer")),
+    };
+    if ncolumns > MAX_PREDICTOR_COLUMNS {
+        return Err(PyErr::new(ExcKind::MemoryError, ""));
+    }
+    let mut line_above: Vec<i64> = vec![0; ncolumns as usize];
+    for scanline_i in py_range(0, data.len() as i64, nbytes.saturating_add(1))? {
         let filter_type = at(data, scanline_i)?;
         let start = (scanline_i + 1) as usize;
-        let end = (scanline_i + 1 + nbytes).max(0) as usize;
+        let end = scanline_i.saturating_add(1).saturating_add(nbytes).max(0) as usize;
         let line_encoded: &[u8] = &data[start.min(data.len())..end.min(data.len()).max(start.min(data.len()))];
         let mut raw: Vec<i64> = Vec::new();
 
@@ -191,7 +224,7 @@ pub fn apply_png_predictor(
             1 => {
                 for (j, &sub_x) in line_encoded.iter().enumerate() {
                     let j = j as i64;
-                    let raw_x_bpp = if j - bpp < 0 { 0 } else { at(&raw, j - bpp)? };
+                    let raw_x_bpp = if index_sub(j, bpp) < 0 { 0 } else { at(&raw, index_sub(j, bpp))? };
                     let raw_x = (sub_x as i64 + raw_x_bpp) & 255;
                     raw.push(raw_x);
                 }
@@ -207,7 +240,7 @@ pub fn apply_png_predictor(
             3 => {
                 for (j, &average_x) in line_encoded.iter().enumerate() {
                     let j = j as i64;
-                    let raw_x_bpp = if j - bpp < 0 { 0 } else { at(&raw, j - bpp)? };
+                    let raw_x_bpp = if index_sub(j, bpp) < 0 { 0 } else { at(&raw, index_sub(j, bpp))? };
                     let prior_x = at(&line_above, j)?;
                     let raw_x = (average_x as i64 + int_floordiv(raw_x_bpp + prior_x, 2)) & 255;
                     raw.push(raw_x);
@@ -217,8 +250,11 @@ pub fn apply_png_predictor(
             4 => {
                 for (j, &paeth_x) in line_encoded.iter().enumerate() {
                     let j = j as i64;
-                    let (raw_x_bpp, prior_x_bpp) =
-                        if j - bpp < 0 { (0, 0) } else { (at(&raw, j - bpp)?, at(&line_above, j - bpp)?) };
+                    let (raw_x_bpp, prior_x_bpp) = if index_sub(j, bpp) < 0 {
+                        (0, 0)
+                    } else {
+                        (at(&raw, index_sub(j, bpp))?, at(&line_above, index_sub(j, bpp))?)
+                    };
                     let prior_x = at(&line_above, j)?;
                     let paeth = paeth_predictor(raw_x_bpp, prior_x, prior_x_bpp);
                     let raw_x = (paeth_x as i64 + paeth) & 255;

@@ -189,7 +189,7 @@ impl PDFDevice for Recorder {
             f(ts.wordspace),
             f(ts.scaling),
             f(ts.leading),
-            ts.render,
+            ts.render.repr(),
             f(ts.rise),
             m6(ts.matrix),
             mat(&[ts.linematrix.0, ts.linematrix.1]),

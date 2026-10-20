@@ -22,7 +22,8 @@ use crate::cmapdb::{CMapBase, CMapClass, CMapDB, CMapParser, is_cmap_not_found, 
 use crate::encodingdb::{Cid2Unicode, EncodingDB, name2unicode};
 use crate::fontmetrics::{FontMetricValue, font_metrics};
 use crate::pdftypes::{
-    PDFStream, dict_value, int_value, list_value, num_value, py_getitem_str, resolve_all, resolve1, stream_value,
+    PDFStream, dict_value, int_value_obj, list_value, num_value, py_getitem_str, resolve_all, resolve1, saturate_i64,
+    stream_value,
 };
 use crate::psparser::{LIT, PSKeyword, PSStackParser, PSStackParserImpl, literal_name};
 use crate::pyrt::codecs::latin1_decode;
@@ -986,7 +987,8 @@ pub struct PDFFont {
     pub descriptor: DictRef,
     pub widths: FontWidthDict,
     pub fontname: Value,
-    pub flags: i64,
+    /// An int (exact).
+    pub flags: Value,
     pub ascent: Value,
     pub descent: Value,
     pub italic_angle: Value,
@@ -1152,7 +1154,7 @@ impl PDFFont {
         if let Value::Literal(_) = fontname {
             fontname = Value::str(&literal_name(&fontname)?);
         }
-        let flags = int_value(&dget_or(&descriptor, "Flags", Value::Int(0)))?;
+        let flags = int_value_obj(&dget_or(&descriptor, "Flags", Value::Int(0)))?;
         let ascent = num_value(&dget_or(&descriptor, "Ascent", Value::Int(0)))?;
         let mut descent = num_value(&dget_or(&descriptor, "Descent", Value::Int(0)))?;
         let italic_angle = num_value(&dget_or(&descriptor, "ItalicAngle", Value::Int(0)))?;
@@ -1265,12 +1267,13 @@ impl PDFFont {
             Err(_) => {
                 // KeyError
                 let descriptor = dict_value(&dget_or(spec, "FontDescriptor", Value::dict(Dict::new())))?;
-                let firstchar = int_value(&dget_or(spec, "FirstChar", Value::Int(0)))?;
+                let firstchar = int_value_obj(&dget_or(spec, "FirstChar", Value::Int(0)))?;
                 // lastchar = int_value(spec.get('LastChar', 255))
                 let width_list = list_value(&dget_or(spec, "Widths", Value::list(vec![Value::Int(0); 256])))?;
                 let mut widths = FontWidthDict::new();
                 for (i, w) in width_list.iter().enumerate() {
-                    widths.insert(WidthKey::Int(i as i64 + firstchar), resolve1(w)?);
+                    let k = py_add(&Value::Int(i as i64), &firstchar)?;
+                    widths.insert(WidthKey::from_number(&k), resolve1(w)?);
                 }
                 (descriptor, widths)
             }
@@ -1282,7 +1285,8 @@ impl PDFFont {
         if !dcontains(spec, "Encoding") && dcontains(&descriptor, "FontFile") {
             // try to recover the missing encoding info from the font file.
             let fontfile = stream_value(&dget_or(&descriptor, "FontFile", Value::None))?;
-            let length1 = int_value(&fontfile.getitem("Length1")?)?;
+            // a slice bound: every int beyond i64 clamps alike
+            let length1 = saturate_i64(&int_value_obj(&fontfile.getitem("Length1")?)?);
             let data = fontfile.get_data()?;
             let data = slice_to(&data, length1);
             let mut parser = Type1FontHeaderParser::new(BytesIO::from_vec(data.to_vec()));
@@ -1296,12 +1300,13 @@ impl PDFFont {
 
     /// `PDFType3Font(rsrcmgr, spec)`.
     pub fn new_type3(spec: &DictRef) -> PyResult<PDFFont> {
-        let firstchar = int_value(&dget_or(spec, "FirstChar", Value::Int(0)))?;
+        let firstchar = int_value_obj(&dget_or(spec, "FirstChar", Value::Int(0)))?;
         // lastchar = int_value(spec.get('LastChar', 0))
         let width_list = list_value(&dget_or(spec, "Widths", Value::list(vec![Value::Int(0); 256])))?;
         let mut widths = FontWidthDict::new();
         for (i, w) in width_list.into_iter().enumerate() {
-            widths.insert(WidthKey::Int(i as i64 + firstchar), w);
+            let k = py_add(&Value::Int(i as i64), &firstchar)?;
+            widths.insert(WidthKey::from_number(&k), w);
         }
         let descriptor = if dcontains(spec, "FontDescriptor") {
             dict_value(&dgetitem(spec, "FontDescriptor")?)?

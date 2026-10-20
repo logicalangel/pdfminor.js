@@ -19,7 +19,7 @@ use std::rc::Rc;
 use indexmap::IndexMap;
 use log::{debug, warn};
 
-use crate::casting::{safe_cmyk, safe_float, safe_int, safe_matrix, safe_rgb};
+use crate::casting::{safe_cmyk, safe_float, safe_int_obj, safe_matrix, safe_rgb};
 use crate::cmapdb::{CMapBase, CMapDB, is_cmap_not_found};
 use crate::pdfcolor::{PDFColorSpace, predefined, predefined_colorspace};
 use crate::pdfdevice::PDFDevice;
@@ -67,7 +67,8 @@ pub struct PDFTextState {
     pub wordspace: f64,
     pub scaling: f64,
     pub leading: f64,
-    pub render: i64,
+    /// An int (exact: only shown in the repr).
+    pub render: Value,
     pub rise: f64,
     pub matrix: Matrix,
     pub linematrix: Point,
@@ -88,7 +89,7 @@ impl PDFTextState {
             wordspace: 0.0,
             scaling: 100.0,
             leading: 0.0,
-            render: 0,
+            render: Value::Int(0),
             rise: 0.0,
             matrix: MATRIX_IDENTITY,
             linematrix: (0.0, 0.0),
@@ -108,7 +109,7 @@ impl PDFTextState {
             float_repr(self.wordspace),
             float_repr(self.scaling),
             float_repr(self.leading),
-            self.render,
+            self.render.repr(),
             float_repr(self.rise),
             matrix_repr(&self.matrix),
             float_repr(self.linematrix.0),
@@ -1540,7 +1541,7 @@ impl PDFPageInterpreter {
 
     /// Set the text rendering mode
     pub fn do_Tr(&mut self, render: &Value) -> PyResult<()> {
-        match safe_int(render)? {
+        match safe_int_obj(render)? {
             None => warn!("Could not set text rendering mode because {} is an invalid int value", render.repr()),
             Some(render_i) => self.textstate.render = render_i,
         }

@@ -31,8 +31,8 @@ use crate::casting::safe_int_obj;
 use crate::data_structures::NumberTree;
 use crate::pdfparser::{PDFParser, PDFStreamParser};
 use crate::pdftypes::{
-    DecipherCallable, PDFObjRef, PDFStream, decipher_all, dict_value, int_value, list_value, py_getitem_str, str_value,
-    stream_value, uint_value,
+    DecipherCallable, PDFObjRef, PDFStream, decipher_all, dict_value, int_value_obj, list_value, py_getitem_str,
+    saturate_i64, str_value, stream_value, uint_value,
 };
 use crate::psparser::{PSKeyword, PSLiteral, PSStackParserImpl, RevReadLines, literal_name};
 use crate::pyrt::ctype::{bytes_isdigit, bytes_strip, py_isspace};
@@ -604,14 +604,6 @@ impl PDFXRef {
     }
 }
 
-/// An int, saturated to i64 (for uses where only the range check of a later `struct.pack`
-/// matters, or a recorded divergence).
-fn saturate_i64(v: &Value) -> i64 {
-    v.as_int().unwrap_or_else(|| {
-        if v.as_bigint().is_some_and(|b| num_traits::Signed::is_negative(&b)) { i64::MIN } else { i64::MAX }
-    })
-}
-
 /// `int(s)` of a run of ASCII digits.
 fn parse_digits(s: &[u8]) -> Value {
     let text = std::str::from_utf8(s).expect("digits");
@@ -949,7 +941,8 @@ pub struct PDFStandardSecurityHandler {
     pub password: String,
     pub v: i64,
     pub r: i64,
-    pub p: i64,
+    /// An int (exact: permissions test its bits).
+    pub p: Value,
     pub o: Rc<[u8]>,
     pub u: Rc<[u8]>,
     pub length: i64,
@@ -1007,7 +1000,7 @@ impl PDFStandardSecurityHandler {
             password: password.to_string(),
             v: 0,
             r: 0,
-            p: 0,
+            p: Value::Int(0),
             o: empty.clone(),
             u: empty.clone(),
             length: 0,
@@ -1049,12 +1042,14 @@ impl PDFStandardSecurityHandler {
 
     fn init_params(&mut self) -> PyResult<()> {
         // PDFStandardSecurityHandler.init_params
-        self.v = int_value(&dget(&self.param, "V").unwrap_or(Value::Int(0)))?;
-        self.r = int_value(&ditem(&self.param, "R")?)?;
+        // V and R are only compared with small ints and Length is a slice bound: every int
+        // beyond i64 behaves alike.
+        self.v = saturate_i64(&int_value_obj(&dget(&self.param, "V").unwrap_or(Value::Int(0)))?);
+        self.r = saturate_i64(&int_value_obj(&ditem(&self.param, "R")?)?);
         self.p = uint_value(&ditem(&self.param, "P")?, 32)?;
         self.o = str_value(&ditem(&self.param, "O")?)?;
         self.u = str_value(&ditem(&self.param, "U")?)?;
-        self.length = int_value(&dget(&self.param, "Length").unwrap_or(Value::Int(40)))?;
+        self.length = saturate_i64(&int_value_obj(&dget(&self.param, "Length").unwrap_or(Value::Int(40)))?);
         if self.class == HandlerClass::Standard {
             return Ok(());
         }
@@ -1120,16 +1115,26 @@ impl PDFStandardSecurityHandler {
         Ok(())
     }
 
+    /// `bool(self.p & bit)` (Python's ints are two's complement without bound).
+    fn p_bit(&self, bit: i64) -> bool {
+        match self.p.as_int() {
+            Some(p) => p & bit != 0,
+            None => {
+                self.p.as_bigint().is_some_and(|p| p & num_bigint::BigInt::from(bit) != num_bigint::BigInt::from(0))
+            }
+        }
+    }
+
     pub fn is_printable(&self) -> bool {
-        self.p & 4 != 0
+        self.p_bit(4)
     }
 
     pub fn is_modifiable(&self) -> bool {
-        self.p & 8 != 0
+        self.p_bit(8)
     }
 
     pub fn is_extractable(&self) -> bool {
-        self.p & 16 != 0
+        self.p_bit(16)
     }
 
     fn docid0(&self) -> PyResult<&[u8]> {
@@ -1166,7 +1171,7 @@ impl PDFStandardSecurityHandler {
         hash.update(&password);
         hash.update(&self.o); // 3
         // See https://github.com/pdfminer/pdfminer.six/issues/186
-        hash.update(pack_l(self.p)?); // 4
+        hash.update(pack_l(saturate_i64(&self.p))?); // 4 (out of range alike beyond i64)
         hash.update(self.docid0()?); // 5
         if self.r >= 4 && !self.encrypt_metadata {
             hash.update(b"\xff\xff\xff\xff");
@@ -1565,7 +1570,8 @@ impl PDFDocument {
                 format!("Unknown filter: param={}", dict_repr(&param.borrow())),
             ));
         }
-        let v = int_value(&dget(&param, "V").unwrap_or(Value::Int(0)))?;
+        // a registry lookup: every int beyond i64 misses alike
+        let v = saturate_i64(&int_value_obj(&dget(&param, "V").unwrap_or(Value::Int(0)))?);
         let class = match v {
             1 | 2 => HandlerClass::Standard,
             4 => HandlerClass::V4,
@@ -1951,7 +1957,10 @@ impl PDFDocument {
             };
             top.1 += 1;
             if let Some(v) = dget(&top.0, key) {
-                let pos = int_value(&v)?;
+                // `parser.seek(pos)` of an int beyond i64 raises like the file does
+                let Some(pos) = int_value_obj(&v)?.as_int() else {
+                    return Err(self.fp.seek_beyond_i64_error());
+                };
                 if stack.len() > RECURSION_LIMIT {
                     return Err(recursion_error());
                 }
@@ -2096,24 +2105,26 @@ impl PageLabels {
     }
 
     /// `_format_page_label(value, style)`: format page label value in a specific style.
-    pub fn _format_page_label(value: i64, style: &Value) -> PyResult<String> {
+    pub fn _format_page_label(value: &Value, style: &Value) -> PyResult<String> {
+        // `format_int_roman` asserts 0 < value < 4000: an int beyond i64 fails it like any other
+        let roman = || format_int_roman(saturate_i64(value));
         Ok(if style.is_none() {
             String::new()
         } else if is_lit(style, "D") {
             // Decimal arabic numerals
-            value.to_string()
+            value.repr()
         } else if is_lit(style, "R") {
             // Uppercase roman numerals
-            format_int_roman(value)?.to_uppercase()
+            roman()?.to_uppercase()
         } else if is_lit(style, "r") {
             // Lowercase roman numerals
-            format_int_roman(value)?
+            roman()?
         } else if is_lit(style, "A") {
             // Uppercase letters A-Z, AA-ZZ...
-            format_int_alpha(value)?.to_uppercase()
+            format_int_alpha_value(value)?.to_uppercase()
         } else if is_lit(style, "a") {
             // Lowercase letters a-z, aa-zz...
-            format_int_alpha(value)?
+            format_int_alpha_value(value)?
         } else {
             warn!("Unknown page label style: {}", style.repr());
             String::new()
@@ -2121,14 +2132,35 @@ impl PageLabels {
     }
 }
 
+/// `format_int_alpha(value)` for any int: letters a-z, aa-zz, ... (`AssertionError` unless
+/// positive).
+fn format_int_alpha_value(value: &Value) -> PyResult<String> {
+    if let Some(v) = value.as_int() {
+        return format_int_alpha(v);
+    }
+    let mut v = value.as_bigint().expect("an int");
+    if v <= num_bigint::BigInt::from(0) {
+        return Err(PyErr::new(ExcKind::AssertionError, ""));
+    }
+    let mut result: Vec<char> = Vec::new();
+    let zero = num_bigint::BigInt::from(0);
+    while v != zero {
+        let (q, r) = num_integer::Integer::div_mod_floor(&(&v - 1), &num_bigint::BigInt::from(26));
+        result.push((b'a' + num_traits::ToPrimitive::to_u8(&r).expect("0..26")) as char);
+        v = q;
+    }
+    result.reverse();
+    Ok(result.into_iter().collect())
+}
+
 /// The generator `PageLabels.labels` returns (unbounded).
 pub struct PageLabelsIter {
     tree: NumberTree,
-    ranges: Option<Vec<(i64, Value)>>,
+    ranges: Option<Vec<(Value, Value)>>,
     /// Index of the next range to start.
     next: usize,
     /// `(prefix, style, next value, end)` of the current range (`None` end: `itertools.count`).
-    current: Option<(String, Value, i64, Option<i64>)>,
+    current: Option<(String, Value, Value, Option<Value>)>,
     done: bool,
 }
 
@@ -2137,21 +2169,21 @@ impl PageLabelsIter {
         if self.ranges.is_none() {
             let mut ranges = self.tree.values()?;
             // The tree must begin with page index 0
-            if ranges.is_empty() || ranges[0].0 != 0 {
+            if ranges.is_empty() || !py_eq(&ranges[0].0, &Value::Int(0)) {
                 if settings::STRICT {
                     return Err(PyErr::new(ExcKind::PDFSyntaxError, "PageLabels is missing page index 0"));
                 }
                 // Try to cope, by assuming empty labels for the initial pages
-                ranges.insert(0, (0, Value::Dict(Value::new_dict())));
+                ranges.insert(0, (Value::Int(0), Value::Dict(Value::new_dict())));
             }
             self.ranges = Some(ranges);
         }
         loop {
             if let Some((prefix, style, value, end)) = &mut self.current {
-                if end.is_none_or(|e| *value < e) {
-                    let v = *value;
-                    *value += 1;
-                    let label = PageLabels::_format_page_label(v, style)?;
+                if end.as_ref().map_or(Ok(true), |e| py_lt(value, e))? {
+                    let v = value.clone();
+                    *value = py_add(value, &Value::Int(1))?;
+                    let label = PageLabels::_format_page_label(&v, style)?;
                     return Ok(Some(format!("{prefix}{label}")));
                 }
                 self.current = None;
@@ -2166,15 +2198,15 @@ impl PageLabelsIter {
             let label_dict = dict_value(&label_dict_unchecked)?;
             let style = dget(&label_dict, "S").unwrap_or(Value::None);
             let prefix = decode_text(&str_value(&dget(&label_dict, "P").unwrap_or(Value::bytes(b"")))?);
-            let first_value = int_value(&dget(&label_dict, "St").unwrap_or(Value::Int(1)))?;
+            let first_value = int_value_obj(&dget(&label_dict, "St").unwrap_or(Value::Int(1)))?;
             let end = if next == ranges.len() {
                 // This is the last specified range. It continues until the end
                 // of the document.
                 None
             } else {
                 let (end, _) = &ranges[next];
-                let range_length = end - start;
-                Some(first_value.saturating_add(range_length))
+                let range_length = py_sub(end, &start)?;
+                Some(py_add(&first_value, &range_length)?)
             };
             self.current = Some((prefix, style, first_value, end));
         }
