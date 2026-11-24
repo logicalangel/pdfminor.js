@@ -66,5 +66,6 @@ module.exports = {
   convertAsync: async(native.convertAsyncNative),
   dumpLayout: sync(native.dumpLayoutNative),
   dumpLayoutAsync: async(native.dumpLayoutAsyncNative),
+  annotations: sync(native.annotationsNative),
   upstreamVersion: native.upstreamVersion(),
 }

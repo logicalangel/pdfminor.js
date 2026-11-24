@@ -206,6 +206,11 @@ function pagePdf(content, more = [], xobjects = '') {
     pdfStream('<<', Buffer.from(content)),
     ...more,
   ]
+  return pdfOf(objects)
+}
+
+// A PDF of these objects, numbered from 1 (the first is the catalog).
+function pdfOf(objects) {
   const parts = [Buffer.from('%PDF-1.4\n')], offsets = []
   let length = parts[0].length
   objects.forEach((body, k) => {
@@ -255,6 +260,55 @@ test('imageData reads an inline image by its short keys', () => {
   assert.deepEqual(image.decode, [1, 0])
   assert.equal(image.interpolate, true)
   assert.equal(image.smask, null)
+})
+
+// A filled-in form: on page 1, two checkboxes, two text fields (PDFDocEncoding and UTF-16), a radio group of two
+// buttons, a hidden checkbox and a link; on page 2, whose media box starts at 10, 20 and is turned a quarter, a checkbox
+// over a square drawn at the same place in the page's content.
+function formPdf() {
+  const ap = (on) => '<< /N << /' + on + ' 20 0 R /Off 20 0 R >> >>'
+  const objects = [
+    Buffer.from('<< /Type /Catalog /Pages 2 0 R /AcroForm << /Fields [5 0 R 6 0 R 7 0 R 8 0 R 9 0 R 12 0 R 13 0 R] >> >>'),
+    Buffer.from('<< /Type /Pages /Kids [3 0 R 4 0 R] /Count 2 >>'),
+    Buffer.from('<< /Type /Page /Parent 2 0 R /MediaBox [0 0 200 100] /Annots [5 0 R 6 0 R 7 0 R 8 0 R 10 0 R 11 0 R 12 0 R 14 0 R] >>'),
+    Buffer.from('<< /Type /Page /Parent 2 0 R /MediaBox [10 20 210 120] /Rotate 90 /Contents 15 0 R /Annots [13 0 R] >>'),
+    Buffer.from('<< /Type /Annot /Subtype /Widget /FT /Btn /T (agree) /V /Yes /AS /Yes /Rect [20 20 30 30] /AP ' + ap('Yes') + ' >>'),
+    Buffer.from('<< /Type /Annot /Subtype /Widget /FT /Btn /T (decline) /V /Off /AS /Off /Rect [20 40 30 50] /AP ' + ap('Yes') + ' >>'),
+    Buffer.from('<< /Type /Annot /Subtype /Widget /FT /Tx /T (name) /V (BioTrade SA) /DA (/Helv 10 Tf 0 g) /Rect [40 20 140 35] >>'),
+    Buffer.from('<< /Type /Annot /Subtype /Widget /FT /Tx /T (city) /V <FEFF00C5006C0062006F00720067> /Rect [40 40 140 55] >>'),
+    Buffer.from('<< /FT /Btn /Ff 49152 /T (kind) /V /B /Kids [10 0 R 11 0 R] >>'),
+    Buffer.from('<< /Type /Annot /Subtype /Widget /Parent 9 0 R /AS /Off /Rect [150 20 160 30] /AP ' + ap('A') + ' >>'),
+    Buffer.from('<< /Type /Annot /Subtype /Widget /Parent 9 0 R /AS /B /Rect [150 40 160 50] /AP ' + ap('B') + ' >>'),
+    Buffer.from('<< /Type /Annot /Subtype /Widget /FT /Btn /T (hidden) /F 2 /V /Yes /AS /Yes /Rect [170 20 180 30] >>'),
+    Buffer.from('<< /Type /Annot /Subtype /Widget /FT /Btn /T (turned) /V /Yes /AS /Yes /Rect [30 40 40 50] >>'),
+    Buffer.from('<< /Type /Annot /Subtype /Link /Rect [0 80 50 90] >>'),
+    pdfStream('<<', Buffer.from('0 G 1 w 30 40 10 10 re S')),
+  ]
+  while (objects.length < 19) objects.push(Buffer.from('null'))
+  objects.push(pdfStream('<< /Type /XObject /Subtype /Form /BBox [0 0 10 10]', Buffer.alloc(0)))
+  return pdfOf(objects)
+}
+
+test('annotations gives each page\'s annotations, with the form field of each widget', () => {
+  const pdf = formPdf()
+  const pages = pdfminer.annotations(pdf)
+  assert.equal(pages.length, 2)
+  const fields = pages[0].annotations.map((a) => ({ subtype: a.subtype, bbox: a.bbox, flags: a.flags, ...(a.field || {}) }))
+  assert.deepEqual(fields[0], { subtype: 'Widget', bbox: [20, 20, 30, 30], flags: 0, name: 'agree', type: 'Btn', flags: 0, value: 'Yes', appearance: null, state: 'Yes', states: ['Yes', 'Off'] })
+  assert.equal(fields[1].state, 'Off')
+  assert.deepEqual([fields[2].name, fields[2].value, fields[2].appearance], ['name', 'BioTrade SA', '/Helv 10 Tf 0 g'])
+  assert.deepEqual([fields[3].name, fields[3].value], ['city', 'Ålborg'])
+  // The radio buttons take their name, type, flags and value from their parent field.
+  assert.deepEqual([fields[4].name, fields[4].type, fields[4].flags, fields[4].value, fields[4].state, fields[4].states], ['kind', 'Btn', 49152, 'B', 'Off', ['A', 'Off']])
+  assert.deepEqual([fields[5].name, fields[5].state, fields[5].states], ['kind', 'B', ['B', 'Off']])
+  assert.equal(pages[0].annotations[6].flags, 2)
+  assert.deepEqual([pages[0].annotations[7].subtype, pages[0].annotations[7].field], ['Link', null])
+  // On the turned page the widget's bbox is where extractPages places the square drawn at the same rect.
+  const [turned] = pages[1].annotations
+  assert.deepEqual(turned.rect, [30, 40, 40, 50])
+  const square = pdfminer.extractPages(pdf, { pageNumbers: [1] })[0].items.find((i) => i.type === 'LTRect')
+  assert.deepEqual(turned.bbox, square.bbox)
+  assert.deepEqual(pdfminer.annotations(pdf, { pageNumbers: [1] }).map((p) => p.annotations.length), [1])
 })
 
 test('text keeps lone surrogates, like Python str', () => {
