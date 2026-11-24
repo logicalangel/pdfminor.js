@@ -29,6 +29,7 @@ use pdfminer::layout::LAParams;
 use pdfminer::pyrt::PyStr;
 use pdfminer::pyrt::error::PyErr;
 use pdfminer::pyrt::textio::BytesOut;
+use pdfminer::pyrt::value::Value;
 
 /// The stack of the threads the work runs on: Python's 1000 frames of recursion (deeply nested
 /// forms, text groups) need more than Node's main thread or a Windows thread has.
@@ -217,6 +218,8 @@ struct Options {
     layoutmode: String,
     output_dir: Option<String>,
     strip_control: bool,
+    /// `imageData`: the most pixels (width × height) an image can have to come with its data.
+    image_data: i64,
 }
 
 fn options(o: Option<Object>, default_laparams: Option<LAParams>) -> Result<Options> {
@@ -233,6 +236,7 @@ fn options(o: Option<Object>, default_laparams: Option<LAParams>) -> Result<Opti
         layoutmode: "normal".into(),
         output_dir: None,
         strip_control: false,
+        image_data: 0,
     };
     let Some(o) = o else { return Ok(r) };
     r.password = get_str(&o, "password")?.or(Some(r.password)).unwrap_or_default();
@@ -248,6 +252,7 @@ fn options(o: Option<Object>, default_laparams: Option<LAParams>) -> Result<Opti
     r.layoutmode = get_str(&o, "layoutmode")?.or(Some(r.layoutmode)).unwrap_or_default();
     r.output_dir = get_str(&o, "outputDir")?.or(None);
     r.strip_control = get_bool(&o, "stripControl")?.or(Some(false)).unwrap_or(false);
+    r.image_data = get_int(&o, "imageData")?.or(Some(0)).unwrap_or(0);
     Ok(r)
 }
 
@@ -363,9 +368,76 @@ fn do_extract_text(src: Source, o: Options) -> Result<PyStr> {
 fn do_extract_pages(src: Source, o: Options) -> Result<Vec<Node>> {
     on_big_stack(move || -> std::result::Result<Vec<Node>, PyErr> {
         let pages = extract_pages(src.file_or_name(), &o.password, o.page_numbers, o.maxpages, o.caching, o.laparams);
-        pages.map(|p| p.and_then(|p| pdfminer::dump::item(&p))).collect()
+        let image_data = o.image_data;
+        pages
+            .map(|p| {
+                p.and_then(|p| {
+                    let mut node = pdfminer::dump::item(&p)?;
+                    if image_data > 0 {
+                        add_image_data(&p, &mut node, image_data);
+                    }
+                    Ok(node)
+                })
+            })
+            .collect()
     })?
     .map_err(py_error)
+}
+
+/// With the `imageData` option: every `LTImage` of at most `max_pixels` pixels gets `filters`,
+/// the names of its stream's filters, `data`, the stream's data as hex (what
+/// `PDFStream.get_data()` gives, so decoded unless the last filter is one pdfminer leaves as it
+/// is: a `DCTDecode` image is its JPEG file), `decode`, its `/Decode` array or `null`,
+/// `interpolate`, its `/Interpolate`, and `smask`, its soft mask (the alpha of each pixel, an image
+/// itself) in the same form, or `null`.
+/// An image whose data cannot be read gets none of them. The rest of the dump is unchanged.
+fn add_image_data(item: &pdfminer::layout::LTItem, node: &mut Node, max_pixels: i64) {
+    let Node::Object(fields) = node else { return };
+    if let Some(image) = item.as_image() {
+        let (w, h) = (image.srcsize.0.as_int(), image.srcsize.1.as_int());
+        let small = matches!((w, h), (Some(w), Some(h)) if w > 0 && h > 0 && w.saturating_mul(h) <= max_pixels);
+        if small && let Some(data) = stream_data(&image.stream) {
+            let smask =
+                image.stream.get("SMask").and_then(|v| pdfminer::pdftypes::resolve1(&v).ok()).and_then(|v| match v {
+                    Value::Stream(s) => stream_data(&s).map(|mut d| {
+                        let size = |k: &str| s.get(k).map_or(Node::Null, |v| pdfminer::dump::enc(&v));
+                        d.insert(0, ("srcsize", Node::List(vec![size("Width"), size("Height")])));
+                        Node::Object(d)
+                    }),
+                    _ => None,
+                });
+            fields.extend(data);
+            fields.push(("smask", smask.unwrap_or(Node::Null)));
+        }
+        return;
+    }
+    if !item.is_ltcontainer() {
+        return;
+    }
+    let Some((_, Node::List(children))) = fields.iter_mut().find(|(k, _)| *k == "items") else { return };
+    for (child, child_node) in item.objs_ref().iter().zip(children.iter_mut()) {
+        add_image_data(child, child_node, max_pixels);
+    }
+}
+
+/// `filters`, `data`, `decode` and `interpolate` (its `/Interpolate`, `false` when missing) of an
+/// image stream (see [`add_image_data`]), or `None` when its filters or data cannot be read.
+fn stream_data(stream: &pdfminer::pdftypes::PDFStream) -> Option<Vec<(&'static str, Node)>> {
+    let filters = stream.get_filters().ok()?;
+    let data = stream.get_data().ok()?;
+    let names = filters.iter().map(|(f, _)| pdfminer::psparser::literal_name(f).unwrap_or_default());
+    let hex: String = data.iter().map(|b| format!("{b:02x}")).collect();
+    let decode = stream
+        .get("Decode")
+        .and_then(|v| pdfminer::pdftypes::resolve1(&v).ok())
+        .map_or(Node::Null, |v| pdfminer::dump::enc(&v));
+    let interpolate = stream.get_any(&["Interpolate", "I"], Value::Bool(false)).truthy();
+    Some(vec![
+        ("filters", Node::List(names.map(|f| Node::Str(PyStr::from(f.as_str()))).collect())),
+        ("data", Node::Str(PyStr::from(hex.as_str()))),
+        ("decode", decode),
+        ("interpolate", Node::Bool(interpolate)),
+    ])
 }
 
 fn do_convert(src: Source, o: Options) -> Result<Vec<u8>> {

@@ -30,6 +30,11 @@ try {
 }
 ```
 
+With `imageData: <pixels>`, an addition to pdfminer.six, every image of at most that many pixels
+also comes with its stream's data (hex, decoded as `PDFStream.get_data()` decodes it, so a
+`DCTDecode` image is its JPEG file), its filters, its `/Decode` and `/Interpolate` and its soft mask, so the
+caller can look at the image without rendering the page. The rest of the layout is unchanged.
+
 Pages are plain objects with the same class names and attributes as pdfminer's layout objects
 (`LTPage`, `LTTextBoxHorizontal`, `LTTextLineHorizontal`, `LTChar`, `LTAnno`, `LTCurve`,
 `LTRect`, `LTLine`, `LTImage`, `LTFigure`): `type`, `bbox`, `items`, and per type `text`,

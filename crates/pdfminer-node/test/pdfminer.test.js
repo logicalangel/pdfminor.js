@@ -182,6 +182,52 @@ test('page selection and inputs', () => {
   assert.equal(pdfminer.upstreamVersion, '20260107')
 })
 
+// A one-page PDF drawing an 8×8 grey image (a dark frame on white, its samples written out with no filter) through
+// a soft mask that is opaque on the frame only (its /Decode [1 0] turns the stored 0 into opaque).
+function imagePdf() {
+  const grey = Buffer.alloc(64, 255), mask = Buffer.alloc(64, 255)
+  for (let i = 0; i < 64; i++) {
+    const x = i % 8, y = Math.floor(i / 8)
+    if (x === 1 || x === 6 || y === 1 || y === 6) { grey[i] = 0; mask[i] = 0 }
+  }
+  const objects = [
+    Buffer.from('<< /Type /Catalog /Pages 2 0 R >>'),
+    Buffer.from('<< /Type /Pages /Kids [3 0 R] /Count 1 >>'),
+    Buffer.from('<< /Type /Page /Parent 2 0 R /MediaBox [0 0 100 100] /Contents 4 0 R /Resources << /XObject << /Im1 5 0 R >> >> >>'),
+  ]
+  const stream = (dict, data) => Buffer.concat([Buffer.from(dict + ' /Length ' + data.length + ' >>\nstream\n'), data, Buffer.from('\nendstream')])
+  const content = Buffer.from('q 20 0 0 20 10 10 cm /Im1 Do Q')
+  objects.push(stream('<<', content))
+  objects.push(stream('<< /Type /XObject /Subtype /Image /Width 8 /Height 8 /BitsPerComponent 8 /ColorSpace /DeviceGray /Interpolate true /SMask 6 0 R', grey))
+  objects.push(stream('<< /Type /XObject /Subtype /Image /Width 8 /Height 8 /BitsPerComponent 8 /ColorSpace /DeviceGray /Decode [1 0]', mask))
+  const parts = [Buffer.from('%PDF-1.4\n')], offsets = []
+  let length = parts[0].length
+  objects.forEach((body, k) => {
+    offsets.push(length)
+    const part = Buffer.concat([Buffer.from(k + 1 + ' 0 obj\n'), body, Buffer.from('\nendobj\n')])
+    parts.push(part)
+    length += part.length
+  })
+  const xref = 'xref\n0 ' + (objects.length + 1) + '\n0000000000 65535 f \n' + offsets.map((o) => String(o).padStart(10, '0') + ' 00000 n \n').join('')
+  parts.push(Buffer.from(xref + 'trailer\n<< /Size ' + (objects.length + 1) + ' /Root 1 0 R >>\nstartxref\n' + length + '\n%%EOF\n'))
+  return { pdf: Buffer.concat(parts), grey, mask }
+}
+
+test('imageData gives the data of images up to a size, and leaves the rest of the layout as it is', () => {
+  const { pdf, grey, mask } = imagePdf()
+  const images = (pages) => pages[0].items.filter((i) => i.type === 'LTFigure').flatMap((f) => f.items)
+  const plain = pdfminer.extractPages(pdf)
+  const [image] = images(pdfminer.extractPages(pdf, { imageData: 64 }))
+  assert.deepEqual(image.filters, [])
+  assert.equal(image.data, grey.toString('hex'))
+  assert.equal(image.decode, null)
+  assert.equal(image.interpolate, true)
+  assert.deepEqual(image.smask, { srcsize: [8, 8], filters: [], data: mask.toString('hex'), decode: [1, 0], interpolate: false })
+  const { filters, data, decode, interpolate, smask, ...rest } = image
+  assert.deepEqual(rest, images(plain)[0])
+  assert.deepEqual(images(pdfminer.extractPages(pdf, { imageData: 63 })), images(plain), 'an image of more pixels comes without its data')
+})
+
 test('text keeps lone surrogates, like Python str', () => {
   const file = path.join(CORPUS, 'surrogates-identity.pdf')
   const text = pdfminer.extractText(file)
