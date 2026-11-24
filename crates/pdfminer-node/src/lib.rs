@@ -421,17 +421,20 @@ fn add_image_data(item: &pdfminer::layout::LTItem, node: &mut Node, max_pixels: 
 }
 
 /// `filters`, `data`, `decode` and `interpolate` (its `/Interpolate`, `false` when missing) of an
-/// image stream (see [`add_image_data`]), or `None` when its filters or data cannot be read.
+/// image stream (see [`add_image_data`]), or `None` when its filters or data cannot be read. An
+/// inline image names them `/D` and `/I`.
 fn stream_data(stream: &pdfminer::pdftypes::PDFStream) -> Option<Vec<(&'static str, Node)>> {
     let filters = stream.get_filters().ok()?;
     let data = stream.get_data().ok()?;
     let names = filters.iter().map(|(f, _)| pdfminer::psparser::literal_name(f).unwrap_or_default());
     let hex: String = data.iter().map(|b| format!("{b:02x}")).collect();
-    let decode = stream
-        .get("Decode")
+    let decode = ["Decode", "D"]
+        .iter()
+        .find_map(|k| stream.get(k))
         .and_then(|v| pdfminer::pdftypes::resolve1(&v).ok())
         .map_or(Node::Null, |v| pdfminer::dump::enc(&v));
-    let interpolate = stream.get_any(&["Interpolate", "I"], Value::Bool(false)).truthy();
+    let interpolate = pdfminer::pdftypes::resolve1(&stream.get_any(&["Interpolate", "I"], Value::Bool(false)))
+        .is_ok_and(|v| v.truthy());
     Some(vec![
         ("filters", Node::List(names.map(|f| Node::Str(PyStr::from(f.as_str()))).collect())),
         ("data", Node::Str(PyStr::from(hex.as_str()))),
