@@ -47,6 +47,11 @@ export interface ExtractTextOptions extends CommonOptions {
 export interface ExtractPagesOptions extends CommonOptions {
   /** default `LAParams()`; `null` is `laparams=None` (replaced by `LAParams()`, as in Python) */
   laparams?: LAParamsOptions | null
+  /**
+   * An addition to pdfminer.six: images of at most this many pixels (width × height) come with
+   * their data (`ImageData`). Default 0: none do.
+   */
+  imageData?: number
 }
 
 /** `extract_text_to_fp(...)` into a buffer. */
@@ -147,7 +152,19 @@ export interface LTCurve {
   dashing_style: [PyValue, PyValue] | null
 }
 
-export interface LTImage {
+/**
+ * An image stream's data, with the `imageData` option: the names of its filters, its data as hex
+ * (`PDFStream.get_data()`: decoded, except that pdfminer leaves a `DCTDecode` image as its JPEG
+ * file), its `/Decode` array or `null`, and its `/Interpolate` (`false` when missing).
+ */
+export interface ImageData {
+  filters: string[]
+  data: string
+  decode: PyValue
+  interpolate: boolean
+}
+
+export interface LTImage extends Partial<ImageData> {
   type: 'LTImage'
   bbox: Bbox
   name: string
@@ -156,6 +173,8 @@ export interface LTImage {
   bits: PyValue
   colorspace: PyValue
   stream: { stream: number | null }
+  /** With `imageData`: the image's soft mask (the opacity of each pixel), or `null`. */
+  smask?: (ImageData & { srcsize: [PyValue, PyValue] }) | null
 }
 
 export interface LTTextLine {
