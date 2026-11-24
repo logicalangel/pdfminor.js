@@ -184,22 +184,28 @@ test('page selection and inputs', () => {
 
 // A one-page PDF drawing an 8×8 grey image (a dark frame on white, its samples written out with no filter) through
 // a soft mask that is opaque on the frame only (its /Decode [1 0] turns the stored 0 into opaque).
-function imagePdf() {
-  const grey = Buffer.alloc(64, 255), mask = Buffer.alloc(64, 255)
+const pdfStream = (dict, data) => Buffer.concat([Buffer.from(dict + ' /Length ' + data.length + ' >>\nstream\n'), data, Buffer.from('\nendstream')])
+
+// An 8 × 8 grey square with a frame drawn one pixel in from its edge.
+function frame() {
+  const grey = Buffer.alloc(64, 255)
   for (let i = 0; i < 64; i++) {
     const x = i % 8, y = Math.floor(i / 8)
-    if (x === 1 || x === 6 || y === 1 || y === 6) { grey[i] = 0; mask[i] = 0 }
+    if (x === 1 || x === 6 || y === 1 || y === 6) grey[i] = 0
   }
+  return grey
+}
+
+// One 100 × 100 page drawing `content` (objects 1 to 4: catalog, pages, page, content), with `xobjects` (its resources'
+// names to object numbers) among `more`, objects 5 on.
+function pagePdf(content, more = [], xobjects = '') {
   const objects = [
     Buffer.from('<< /Type /Catalog /Pages 2 0 R >>'),
     Buffer.from('<< /Type /Pages /Kids [3 0 R] /Count 1 >>'),
-    Buffer.from('<< /Type /Page /Parent 2 0 R /MediaBox [0 0 100 100] /Contents 4 0 R /Resources << /XObject << /Im1 5 0 R >> >> >>'),
+    Buffer.from('<< /Type /Page /Parent 2 0 R /MediaBox [0 0 100 100] /Contents 4 0 R /Resources << /XObject << ' + xobjects + ' >> >> >>'),
+    pdfStream('<<', Buffer.from(content)),
+    ...more,
   ]
-  const stream = (dict, data) => Buffer.concat([Buffer.from(dict + ' /Length ' + data.length + ' >>\nstream\n'), data, Buffer.from('\nendstream')])
-  const content = Buffer.from('q 20 0 0 20 10 10 cm /Im1 Do Q')
-  objects.push(stream('<<', content))
-  objects.push(stream('<< /Type /XObject /Subtype /Image /Width 8 /Height 8 /BitsPerComponent 8 /ColorSpace /DeviceGray /Interpolate true /SMask 6 0 R', grey))
-  objects.push(stream('<< /Type /XObject /Subtype /Image /Width 8 /Height 8 /BitsPerComponent 8 /ColorSpace /DeviceGray /Decode [1 0]', mask))
   const parts = [Buffer.from('%PDF-1.4\n')], offsets = []
   let length = parts[0].length
   objects.forEach((body, k) => {
@@ -210,7 +216,18 @@ function imagePdf() {
   })
   const xref = 'xref\n0 ' + (objects.length + 1) + '\n0000000000 65535 f \n' + offsets.map((o) => String(o).padStart(10, '0') + ' 00000 n \n').join('')
   parts.push(Buffer.from(xref + 'trailer\n<< /Size ' + (objects.length + 1) + ' /Root 1 0 R >>\nstartxref\n' + length + '\n%%EOF\n'))
-  return { pdf: Buffer.concat(parts), grey, mask }
+  return Buffer.concat(parts)
+}
+
+// An image with a soft mask; the mask's /Interpolate is an indirect object.
+function imagePdf() {
+  const grey = frame(), mask = frame()
+  const pdf = pagePdf('q 20 0 0 20 10 10 cm /Im1 Do Q', [
+    pdfStream('<< /Type /XObject /Subtype /Image /Width 8 /Height 8 /BitsPerComponent 8 /ColorSpace /DeviceGray /Interpolate true /SMask 6 0 R', grey),
+    pdfStream('<< /Type /XObject /Subtype /Image /Width 8 /Height 8 /BitsPerComponent 8 /ColorSpace /DeviceGray /Decode [1 0] /Interpolate 7 0 R', mask),
+    Buffer.from('false'),
+  ], '/Im1 5 0 R')
+  return { pdf, grey, mask }
 }
 
 test('imageData gives the data of images up to a size, and leaves the rest of the layout as it is', () => {
@@ -226,6 +243,18 @@ test('imageData gives the data of images up to a size, and leaves the rest of th
   const { filters, data, decode, interpolate, smask, ...rest } = image
   assert.deepEqual(rest, images(plain)[0])
   assert.deepEqual(images(pdfminer.extractPages(pdf, { imageData: 63 })), images(plain), 'an image of more pixels comes without its data')
+})
+
+test('imageData reads an inline image by its short keys', () => {
+  const grey = frame()
+  const pdf = pagePdf('q 20 0 0 20 10 10 cm BI /W 8 /H 8 /BPC 8 /CS /G /D [1 0] /I true /F /AHx ID ' + grey.toString('hex') + '> EI Q')
+  const [image] = pdfminer.extractPages(pdf, { imageData: 64 })[0].items.filter((i) => i.type === 'LTFigure').flatMap((f) => f.items)
+  assert.equal(image.type, 'LTImage')
+  assert.deepEqual(image.filters, ['AHx'])
+  assert.equal(image.data, grey.toString('hex'))
+  assert.deepEqual(image.decode, [1, 0])
+  assert.equal(image.interpolate, true)
+  assert.equal(image.smask, null)
 })
 
 test('text keeps lone surrogates, like Python str', () => {
