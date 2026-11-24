@@ -35,6 +35,12 @@ also comes with its stream's data (hex, decoded as `PDFStream.get_data()` decode
 `DCTDecode` image is its JPEG file), its filters, its `/Decode` and `/Interpolate` and its soft mask, so the
 caller can look at the image without rendering the page. The rest of the layout is unchanged.
 
+`annotations(pdf, options)`, another addition, gives the annotations of every page, with the form
+field of each widget: its full name, type, flags, value and default appearance, the widget's
+appearance state and the states it can show, and its rectangle both as written and where
+`extractPages` places the page's objects. A filled-in form's values live there, not in the
+pages' content.
+
 Pages are plain objects with the same class names and attributes as pdfminer's layout objects
 (`LTPage`, `LTTextBoxHorizontal`, `LTTextLineHorizontal`, `LTChar`, `LTAnno`, `LTCurve`,
 `LTRect`, `LTLine`, `LTImage`, `LTFigure`): `type`, `bbox`, `items`, and per type `text`,

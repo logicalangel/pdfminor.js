@@ -443,6 +443,173 @@ fn stream_data(stream: &pdfminer::pdftypes::PDFStream) -> Option<Vec<(&'static s
     ])
 }
 
+/// An addition to pdfminer.six: the annotations of each page (`page.annots`), as
+/// `{pageid, annotations: [...]}` per page. Each annotation has its `subtype`, its `rect` and its
+/// `bbox` (the rect where extract_pages places the page's objects: from the media box's corner,
+/// turned by the page's /Rotate), its `flags` (/F) and its `contents` (/Contents), and a widget its
+/// form field in `field` (else `null`): the full `name` (/T of the field and its parents, joined by
+/// dots), `type` (/FT), `flags` (/Ff), `value` (/V: a text, a name, or a list of them),
+/// `appearance` (/DA) — each from the widget or the nearest parent that has it —, the widget's
+/// `state` (/AS) and the `states` its appearance has (the names in /AP /N).
+fn do_annotations(src: Source, o: Options) -> Result<Vec<Node>> {
+    on_big_stack(move || -> std::result::Result<Vec<Node>, PyErr> {
+        let data = src.data()?;
+        let pages =
+            pdfminer::pdfpage::PDFPage::get_pages(data, o.page_numbers, o.maxpages, &o.password, o.caching, false);
+        pages.map(|p| p.and_then(|page| page_annotations(&page))).collect()
+    })?
+    .map_err(py_error)
+}
+
+/// The most parents a form field's attributes are looked up through (a malformed file can loop).
+const MAX_FIELD_DEPTH: usize = 32;
+
+fn page_annotations(page: &pdfminer::pdfpage::PDFPage) -> std::result::Result<Node, PyErr> {
+    use pdfminer::pdftypes::resolve1;
+    let (x0, y0, x1, y1) = page.mediabox;
+    // As PDFPageInterpreter.process_page sets the page's matrix.
+    let (a, b, c, d, e, f) = match page.rotate {
+        90 => (0.0, -1.0, 1.0, 0.0, -y0, x1),
+        180 => (-1.0, 0.0, 0.0, -1.0, x1, y1),
+        270 => (0.0, 1.0, -1.0, 0.0, y1, -x0),
+        _ => (1.0, 0.0, 0.0, 1.0, -x0, -y0),
+    };
+    let list = match resolve1(&page.annots)? {
+        Value::List(l) => l.borrow().clone(),
+        _ => vec![],
+    };
+    let mut annotations = vec![];
+    for item in list {
+        let Some(annot) = as_dict(&item) else { continue };
+        let rect: Vec<f64> = match dict_get(&annot, "Rect") {
+            Some(Value::List(r)) => {
+                r.borrow().iter().filter_map(|v| resolve1(v).ok().and_then(|v| number(&v))).collect()
+            }
+            _ => vec![],
+        };
+        if rect.len() != 4 {
+            continue;
+        }
+        let corners = [(rect[0], rect[1]), (rect[2], rect[3]), (rect[0], rect[3]), (rect[2], rect[1])];
+        let at: Vec<(f64, f64)> = corners.iter().map(|&(x, y)| (a * x + c * y + e, b * x + d * y + f)).collect();
+        let fold = |pick: fn(&(f64, f64)) -> f64, min: bool| {
+            at.iter()
+                .map(pick)
+                .fold(if min { f64::INFINITY } else { f64::NEG_INFINITY }, |m, v| if min { m.min(v) } else { m.max(v) })
+        };
+        let bbox = [fold(|p| p.0, true), fold(|p| p.1, true), fold(|p| p.0, false), fold(|p| p.1, false)];
+        let subtype = dict_get(&annot, "Subtype").map_or(Node::Null, |v| name_node(&v));
+        let widget = matches!(&subtype, Node::Str(s) if s.as_str() == Some("Widget"));
+        annotations.push(Node::Object(vec![
+            ("subtype", subtype),
+            ("rect", Node::List(rect.iter().map(|v| Node::Float(*v)).collect())),
+            ("bbox", Node::List(bbox.iter().map(|v| Node::Float(*v)).collect())),
+            ("flags", dict_get(&annot, "F").and_then(|v| number(&v)).map_or(Node::Int(0), |v| Node::Int(v as i64))),
+            (
+                "contents",
+                dict_get(&annot, "Contents")
+                    .and_then(|v| text_of(&v))
+                    .map_or(Node::Null, |t| Node::Str(PyStr::from(t.as_str()))),
+            ),
+            ("field", if widget { widget_field(&annot) } else { Node::Null }),
+        ]));
+    }
+    Ok(Node::Object(vec![("pageid", pdfminer::dump::enc(&page.pageid)), ("annotations", Node::List(annotations))]))
+}
+
+/// A widget's form field (see [`do_annotations`]).
+fn widget_field(annot: &pdfminer::pyrt::value::DictRef) -> Node {
+    let mut names = vec![];
+    let (mut kind, mut flags, mut value, mut appearance) = (None, None, None, None);
+    let mut at = Some(annot.clone());
+    for _ in 0..MAX_FIELD_DEPTH {
+        let Some(d) = at.take() else { break };
+        if let Some(t) = dict_get(&d, "T").and_then(|t| text_of(&t)) {
+            names.push(t);
+        }
+        kind = kind.or_else(|| dict_get(&d, "FT"));
+        flags = flags.or_else(|| dict_get(&d, "Ff"));
+        value = value.or_else(|| dict_get(&d, "V"));
+        appearance = appearance.or_else(|| dict_get(&d, "DA"));
+        let parent = d.borrow().get("Parent").cloned();
+        at = parent.and_then(|p| as_dict(&p));
+    }
+    names.reverse();
+    let states = dict_get(annot, "AP")
+        .and_then(|ap| match ap {
+            Value::Dict(ap) => dict_get(&ap, "N"),
+            _ => None,
+        })
+        .map_or(vec![], |n| match n {
+            Value::Dict(n) => n.borrow().keys().map(|k| Node::Str(PyStr::from(k.as_ref()))).collect(),
+            _ => vec![],
+        });
+    Node::Object(vec![
+        ("name", if names.is_empty() { Node::Null } else { Node::Str(PyStr::from(names.join(".").as_str())) }),
+        ("type", kind.map_or(Node::Null, |v| name_node(&v))),
+        ("flags", flags.and_then(|v| number(&v)).map_or(Node::Int(0), |v| Node::Int(v as i64))),
+        ("value", value.map_or(Node::Null, |v| field_value(&v))),
+        ("appearance", appearance.and_then(|v| text_of(&v)).map_or(Node::Null, |t| Node::Str(PyStr::from(t.as_str())))),
+        ("state", dict_get(annot, "AS").map_or(Node::Null, |v| name_node(&v))),
+        ("states", Node::List(states)),
+    ])
+}
+
+/// A dictionary's value for a key, resolved.
+fn dict_get(d: &pdfminer::pyrt::value::DictRef, key: &str) -> Option<Value> {
+    let v = d.borrow().get(key).cloned()?;
+    pdfminer::pdftypes::resolve1(&v).ok()
+}
+
+fn as_dict(v: &Value) -> Option<pdfminer::pyrt::value::DictRef> {
+    match pdfminer::pdftypes::resolve1(v).ok()? {
+        Value::Dict(d) => Some(d),
+        _ => None,
+    }
+}
+
+fn number(v: &Value) -> Option<f64> {
+    match v {
+        Value::Int(i) => Some(*i as f64),
+        Value::Float(f) => Some(*f),
+        _ => None,
+    }
+}
+
+/// A PDF text string (PDFDocEncoding, or UTF-16BE or UTF-8 after its byte order mark) as text.
+fn text_of(v: &Value) -> Option<String> {
+    match v {
+        Value::Bytes(b) if b.starts_with(b"\xef\xbb\xbf") => Some(String::from_utf8_lossy(&b[3..]).into_owned()),
+        Value::Bytes(b) => Some(pdfminer::utils::decode_text(b)),
+        Value::Str(s) => Some(s.to_string()),
+        _ => None,
+    }
+}
+
+/// A name as its text; anything else as the dump writes it.
+fn name_node(v: &Value) -> Node {
+    match v {
+        Value::Literal(_) => {
+            pdfminer::psparser::literal_name(v).map_or(Node::Null, |n| Node::Str(PyStr::from(n.as_str())))
+        }
+        other => pdfminer::dump::enc(other),
+    }
+}
+
+/// A field's value: a text, a name, or a list of them.
+fn field_value(v: &Value) -> Node {
+    if let Some(t) = text_of(v) {
+        return Node::Str(PyStr::from(t.as_str()));
+    }
+    match v {
+        Value::List(l) => Node::List(
+            l.borrow().iter().map(|x| field_value(&pdfminer::pdftypes::resolve1(x).unwrap_or(Value::None))).collect(),
+        ),
+        Value::None => Node::Null,
+        other => name_node(other),
+    }
+}
+
 fn do_convert(src: Source, o: Options) -> Result<Vec<u8>> {
     on_big_stack(move || -> std::result::Result<Vec<u8>, PyErr> {
         let data = src.data()?;
@@ -500,6 +667,13 @@ pub fn extract_text_native(pdf: Either<Buffer, String>, options: Option<Object>)
 pub fn extract_pages_native(pdf: Either<Buffer, String>, options: Option<Object>) -> Result<JsPages> {
     let o = self::options(options, Some(LAParams::default()))?;
     do_extract_pages(Source::from_js(pdf), o).map(JsPages)
+}
+
+/// An addition to pdfminer.six: each page's annotations and form fields (see [`do_annotations`]).
+#[napi(ts_args_type = "pdf: Buffer | string, options?: AnnotationsOptions", ts_return_type = "Array<PageAnnotations>")]
+pub fn annotations_native(pdf: Either<Buffer, String>, options: Option<Object>) -> Result<JsPages> {
+    let o = self::options(options, None)?;
+    do_annotations(Source::from_js(pdf), o).map(JsPages)
 }
 
 /// `extract_text_to_fp(inf, outfp=BytesIO(), ...)`: the bytes written (`laparams` defaults to

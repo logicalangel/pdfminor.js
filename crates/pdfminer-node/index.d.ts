@@ -54,6 +54,50 @@ export interface ExtractPagesOptions extends CommonOptions {
   imageData?: number
 }
 
+/** An addition to pdfminer.six: `annotations(...)`. */
+export interface AnnotationsOptions extends CommonOptions {}
+
+/**
+ * A widget's form field. Each of `name`, `type`, `flags`, `value` and `appearance` is the
+ * widget's own or that of its nearest parent field that has it.
+ */
+export interface FormField {
+  /** The full name: the /T of the field and its parents, joined by dots. */
+  name: string | null
+  /** /FT: 'Btn' (checkbox, radio button, push button), 'Tx' (text), 'Ch' (choice), 'Sig' */
+  type: string | null
+  /** /Ff */
+  flags: number
+  /** /V: a text, a name (a button's state), or a list of them (a choice of several) */
+  value: string | string[] | null
+  /** /DA, the default appearance (font and size) */
+  appearance: string | null
+  /** /AS, the widget's appearance state: a button's on state, or 'Off' */
+  state: string | null
+  /** The states the widget's normal appearance (/AP /N) has */
+  states: string[]
+}
+
+export interface Annotation {
+  /** /Subtype: 'Widget', 'Link', 'Text', ... */
+  subtype: string | null
+  /** /Rect as written */
+  rect: [number, number, number, number]
+  /** The rect where `extractPages` places the page's objects: from the media box's corner, turned by /Rotate */
+  bbox: [number, number, number, number]
+  /** /F: 2 hidden, 32 not viewed, ... */
+  flags: number
+  /** /Contents */
+  contents: string | null
+  /** A widget's form field; null for other annotations */
+  field: FormField | null
+}
+
+export interface PageAnnotations {
+  pageid: PyValue
+  annotations: Annotation[]
+}
+
 /** `extract_text_to_fp(...)` into a buffer. */
 export interface ConvertOptions extends CommonOptions {
   /** 'text' (default), 'html', 'xml', 'hocr' or 'tag' */
@@ -241,6 +285,12 @@ export declare function convertAsync(pdf: PdfInput, options?: ConvertOptions): P
  */
 export declare function dumpLayout(pdf: PdfInput, options?: DumpLayoutOptions): string
 export declare function dumpLayoutAsync(pdf: PdfInput, options?: DumpLayoutOptions): Promise<string>
+
+/**
+ * An addition to pdfminer.six: the annotations of every page (`page.annots`), with the form field
+ * of each widget, read without interpreting the pages.
+ */
+export declare function annotations(pdf: PdfInput, options?: AnnotationsOptions): PageAnnotations[]
 
 /** The pdfminer.six release the port follows, e.g. "20260107". */
 export declare const upstreamVersion: string
